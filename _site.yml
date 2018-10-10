@@ -4,6 +4,7 @@ description: |
   Exploring People Analytics topics using R & Python 
 output_dir: "_site"
 navbar:
+  logo: images/ludekstehlik.jpg
   right:
     - text: "Home"
       href: index.html
