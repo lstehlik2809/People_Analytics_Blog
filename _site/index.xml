@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Blog About People Analytics</title>
+    <link>https://blog-about-people-analytics.netlify.com/</link>
+    <atom:link href="https://blog-about-people-analytics.netlify.com/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Exploring People Analytics topics using R &amp; Python 
+</description>
+    <generator>Radix</generator>
+    <lastBuildDate>út, 09 øíj 2018 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to My Blog</title>
+      <dc:creator>Nora Jones</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/welcome</link>
+      <description>Welcome to our new blog, My Blog. We hope you enjoy 
+reading what we have to say!</description>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/welcome</guid>
+      <pubDate>út, 09 øíj 2018 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
