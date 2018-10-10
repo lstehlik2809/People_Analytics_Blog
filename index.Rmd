@@ -1,5 +1,5 @@
 ---
-title: "My Blog"
+title: "Blog About People Analytics"
 site: radix::radix_website
 listing: posts
 ---

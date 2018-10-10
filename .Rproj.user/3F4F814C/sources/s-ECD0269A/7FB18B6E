@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1435469092",
+    "hash" : "953592551",
     "id" : "7FB18B6E",
-    "lastKnownWriteTime" : 1539200952,
-    "last_content_update" : 1539200952,
+    "lastKnownWriteTime" : 1539203918,
+    "last_content_update" : 1539203918805,
     "path" : "~/_WORKFORCE_ANALYTICS/People_Analytics_Blog/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
+        "cursorPosition" : "1,35",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [

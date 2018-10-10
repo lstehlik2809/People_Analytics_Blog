@@ -1,7 +1,7 @@
 name: "People_Analytics_Blog"
-title: "My Blog"
+title: "Blog About People Analytics"
 description: |
-  My Blog
+  Exploring People Analytics topics using R & Python 
 output_dir: "_site"
 navbar:
   right:
