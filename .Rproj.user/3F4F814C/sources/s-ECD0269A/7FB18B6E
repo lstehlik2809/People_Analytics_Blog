@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539200964193.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1435469092",
+    "id" : "7FB18B6E",
+    "lastKnownWriteTime" : 1539200952,
+    "last_content_update" : 1539200952,
+    "path" : "~/_WORKFORCE_ANALYTICS/People_Analytics_Blog/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
