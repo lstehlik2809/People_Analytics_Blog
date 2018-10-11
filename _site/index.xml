@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics using R &amp; Python 
 </description>
     <generator>Radix</generator>
-    <lastBuildDate>út, 09 øíj 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>st, 10 øíj 2018 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Welcome to My Blog</title>
       <dc:creator>Nora Jones</dc:creator>
@@ -15,7 +15,16 @@
       <description>Welcome to our new blog, My Blog. We hope you enjoy 
 reading what we have to say!</description>
       <guid>https://blog-about-people-analytics.netlify.com/posts/welcome</guid>
-      <pubDate>út, 09 øíj 2018 00:00:00 +0000</pubDate>
+      <pubDate>st, 10 øíj 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moneyball v HR - od HR analytiky ke sportovnÃ­ analytice a zpÄ›t</title>
+      <dc:creator>LudÄ›k StehlÃ­k</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</link>
+      <description>A short description of the post.</description>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</guid>
+      <pubDate>st, 10 øíj 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
   </channel>
 </rss>

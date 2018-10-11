@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="radix" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</title>
+  
+  <meta property="description" itemprop="description" content="A short description of the post."/>
+  
+  
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2018-10-11"/>
+  <meta property="article:created" itemprop="dateCreated" content="2018-10-11"/>
+  <meta name="article:author" content="Luděk Stehlík"/>
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Moneyball v HR - od HR analytiky ke sportovní analytice a zpět"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A short description of the post."/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Moneyball v HR - od HR analytiky ke sportovní analytice a zpět"/>
+  <meta property="twitter:description" content="A short description of the post."/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Moneyball v HR - od HR analytiky ke sportovní analytice a zpět"]},{"type":"character","attributes":{},"value":["A short description of the post.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-11-2018"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["baseball.csv","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-12-1.png","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-2-1.png","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-3-1.png","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-4-1.png","moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-9-1.png","salaries.csv","teams.csv"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var css_prop = $(this).attr('data-layout') !== "l-body" ? 'width' : 'max-width';
+      $(this).find('img, .html-widget').css(css_prop, '100%');
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.radix-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Moneyball v HR - od HR analytiky ke sportovní analytice a zpět","description":"A short description of the post.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-10-11T00:00:00.000+02:00","citationText":"Stehlík, 2018"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</h1>
+<p>A short description of the post.</p>
+</div>
+
+<div class="d-byline">
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  
+<br/>10-11-2018
+</div>
+
+<div class="d-article">
+<p>HR analytika už dnes není ve světě HR žádnou horkou novinkou. Téměř všichni z oboru už o HR analytice něco slyšeli, něco o ní vědí a případně se jí už také pokouší ve svých organizacích v nějaké podobě zavádět. Zároveň většinou uznávají její důležitost při transformaci HR z podpůrné a administrativní funkce na funkci, která dokáže organizacím bezprostředně pomáhat dosahovat jejich strategických cílů. Navzdory tomuto všeobecnému povědomí o HR analytice a navzdory řadě úspěšně realizovaných HR analytických projektů (viz např. série článků od <a href="https://www.linkedin.com/in/davidrgreen/">Davida Greena</a> - <a href="https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-1-david-green/?trk=mp-author-card">článek 1</a>, <a href="https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-2-david-green/?published=t">článek 2</a>, <a href="https://www.linkedin.com/pulse/20-more-people-analytics-case-studies-part-i-david-green/">článek 3</a>, <a href="https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-ii-david-green/?published=t&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BFsCNnpkoSuyb52Adn9lUhw%3D%3D">článek 4</a>) překvapivě málo organizací HR analytiku reálně provozuje. Jak ukázaly výsledky výzkumu <a href="https://www2.deloitte.com/cz/en/pages/human-capital/articles/globalni-trendy-v-oblasti-lidskeho-kapitalu-pro-rok-2018.html">2018 Human Capital Trends</a> od společnosti Deloitte, organizace si většinou uvědomují strategickou důležitost výzvy, kterou představuje datifikace HR, zároveň ale platí, že se stále necítí být na čelení této výzvě příliš dobře připraveny. Už nějakou dobu platí, že když už se v organizaci s HR daty nějak pracuje, tak je to většinou pouze na úrovni nějakého základního reportingu vybraných HR metrik a “kápéíček” typu “time-to-hire”, ne/dobrovolná odchodovost zaměstnanců, počet zaměstnanců na jednoho HR business partnera apod. Slabinou tohoto přístupu je, že takto sledované metriky jsou často relevantní pouze pro monitorování (a ideálně zvyšování) efektivnosti HR coby nákladového střediska, ale již méně pro dosahování strategických cílů organizace. Spíše výjimečně se potom využívají nějaké pokročilejší analytiky, které mají větší potenciál přicházet s doporučeními s přímým dopadem na schopnost organizace dosahovat svých strategických cílů.</p>
+<p>Výsledky <a href="https://sloanreview.mit.edu/projects/the-hard-work-behind-data-analytics-strategy/">výzkumu provedeného společnostmi MIT Sloan Management Review a SAS</a> naznačují, že tento nevyužitý potenciál HR analytiky má dvě hlavní příčiny. První z nich je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů (přehled těchto kompetencí a důsledků jejich absence či nedostatečné úrovně viz např. <a href="https://mortenkamp.com/2016/06/06/six-must-have-competencies-in-a-world-class-analytics-team/">tento článek</a> od <a href="https://www.linkedin.com/in/mortenkampandersen/">Mortena Kamp Andersena</a>). Ve stejném duchu <a href="https://www.linkedin.com/in/bersin/">Josh Bersin</a> ve své zprávě <a href="http://marketing.bersin.com/rs/976-LMP-699/images/HRTechDisruptions2018-Report-100517.pdf">HR Technology Disruptions for 2018</a> konstatuje, že zvládnutí základních analytických dovedností patří mezi nejdůležitější prediktory efektivní implementace HR analytiky v organizacích: “<em>Equip all HR staff with basic data literacy skills. All HR practitioners should know basic statistical concepts, where to find data, how to slice and dice it, how to read a dashboard, and how to bring data and analytics to bear on business issues. Our research reveals that such basic skills are among the most important predictors of high-performing people analytics.</em>”</p>
+<p>Druhou hlavní příčinou je potom to, že HR analytické projekty nebývají ukotveny v rámci nějaké širší strategie, jak data systematicky využívat při řízení lidských zdrojů, a to způsobem, který by byl sladěný se strategickými cíli společnosti. Zde platí praxí osvědčená pravda projektového managementu, že při implementaci projektů je potřeba vždy začínat od konce. V kontextu HR analytických projektů to tedy znamená začínat nikoli od dat, ale od toho, k čemu mají být HR analytické výstupy použity. A očekávání managementu je, že HR analytika bude v posledku hlavně pomáhat zlepšovat obchodní výsledky společnosti. Názorně to ilustruje níže uvedené schéma (převzaté z <a href="https://www.hrzone.com/lead/strategy/why-hr-needs-to-up-its-game-in-strategic-people-analytics">článku</a> <a href="https://www.linkedin.com/in/maxblumberg/">Maxe Blumberga</a>), které zachycuje předpokládaný kauzální řetězec spojující HR procesy s obchodními výsledky. Úkolem HR analytiky je potom s pomocí dat a analytických nástrojů tyto dvě oblasti propojit a zjistit, jak optimalizací prvního zlepšit druhé.</p>
+<p><img src="images/HRValueChain.png"></p>
+<p>Řadě organizací by v tomto ohledu mohl být inspirací známý příběh <a href="https://en.wikipedia.org/wiki/Oakland_Athletics">oaklandského baseballového týmu „Áček“</a>, který se stal předlohou pro <a href="https://en.wikipedia.org/wiki/Moneyball">knihu Moneyball</a> a z ní vycházející stejnojmenný <a href="https://www.csfd.cz/film/255150-moneyball/prehled/">film</a>. Právě tento příběh jako jeden z prvních ukázal a mezi širokou veřejností zpopularizoval možnosti využití statistické analýzy ve světě sportu a potažmo také v rámci řízení lidských zdrojů. Díky radikální změně dosavadního přístupu k výběru nových hráčů, který se začal více opírat o výstupy statistické analýzy <a href="https://en.wikipedia.org/wiki/Sabermetrics">sabermetrických</a> dat o herním chování hráčů, dokázal management oaklandského baseballového týmu „Áček“ přijímat rozhodnutí, která z jednoho z nejchudších týmů americké baseballové ligy učinila jeden z nejúspěšnějších týmů soutěže (měřeno počtem vítězství v základní části soutěže a počtem postupů do play-off). Abychom mohli tento příběh plně vytěžit coby inspiraci, jak analyzovat svá vlastní zaměstnanecká data, bude užitečné, když se na jednotlivé analytické kroky, které stály v pozadí úspěchu oklandských “Áček”, podíváme trochu podrobněji. A učiníme tak za využití volně dostupného <a href="https://www.r-project.org/">statistického softwaru R</a> a veřejně dostupné <a href="https://drive.google.com/file/d/0B5YUO0Asd9KfMG1UaXpEVjJqQWc/view">databáze historických údajů o výsledcích v americké baseballové lize</a>.</p>
+<h2 id="krok-zacit-od-konce-aneb-strategicky-ramec-hr-analytiky">1. krok: Začít od konce aneb strategický rámec HR analytiky</h2>
+<p>Jak bylo uvedeno výše, často podceňovaným krokem při zavádění HR analytiky do firem a organizací je zasazení HR analytiky do nějakého širšího strategického rámce, ze kterého by jasně vyplývalo, čemu má vlastně HR analytika sloužit. HR analytika je pouze nástroj, konkrétně nástroj na zodpovídání otázek, resp. na testování různých hypotéz. To, zda bude tento nástroj užitečný, závisí na tom, zda si dokážeme klást ty správné otázky. To je přitom z velké části dáno tím, zda si jsme vědomi, jaké jsou strategické cíle naší organizace. Jen ve světle těchto cílů dává smysl klást si nějaké otázky, sbírat a analyzovat nějaká data za účelem nalezení odpovědí na položené otázky a posléze činit nějaká konkrétní rozhodnutí na základě nalezených odpovědí. V případě oaklandských „Áček“ byl cíl jasný – kvalifikovat se do play-off.</p>
+<h2 id="krok-definice-problemu-a-kvantifikace-cile">2. krok: Definice problému a kvantifikace cíle</h2>
+<p><a href="https://en.wikipedia.org/wiki/Paul_DePodesta">Paul DePodesta</a>, kterého generální manažer oaklandských „Áček“ <a href="https://en.wikipedia.org/wiki/Billy_Beane">Billy Beane</a> přijal do týmu jako statistického analytika, redukoval tento cíl na celkem jednoduchý matematický problém: Kolik zápasů musí tým vyhrát, aby se kvalifikoval do play-off? K zodpovězení této otázky DePodesta potřeboval historická data o počtu vítězství jednotlivých týmů v minulých sezónách a o tom, zda se jim podařilo postoupit do play-off, či nikoli.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Načtěme si knihovnu, která nám umožní si načíst a předpřipravit data k analýze a také je i vizualizovat. 
+library(tidyverse)
+
+# Načteme si naše data.
+baseball &lt;- read_csv(&quot;baseball.csv&quot;)
+
+# Pro získání lepší představy o nich se podívejme na jejich prvních deset řádků.
+head(baseball, 10)</code></pre>
+<pre><code>
+# A tibble: 10 x 15
+   Team  League  Year    RS    RA     W   OBP   SLG    BA Playoffs
+   &lt;chr&gt; &lt;chr&gt;  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;int&gt;
+ 1 ARI   NL      2012   734   688    81 0.328 0.418 0.259        0
+ 2 ATL   NL      2012   700   600    94 0.32  0.389 0.247        1
+ 3 BAL   AL      2012   712   705    93 0.311 0.417 0.247        1
+ 4 BOS   AL      2012   734   806    69 0.315 0.415 0.26         0
+ 5 CHC   NL      2012   613   759    61 0.302 0.378 0.24         0
+ 6 CHW   AL      2012   748   676    85 0.318 0.422 0.255        0
+ 7 CIN   NL      2012   669   588    97 0.315 0.411 0.251        1
+ 8 CLE   AL      2012   667   845    68 0.324 0.381 0.251        0
+ 9 COL   NL      2012   758   890    64 0.33  0.436 0.274        0
+10 DET   AL      2012   726   670    88 0.335 0.422 0.268        1
+# ... with 5 more variables: RankSeason &lt;int&gt;, RankPlayoffs &lt;int&gt;,
+#   G &lt;int&gt;, OOBP &lt;dbl&gt;, OSLG &lt;dbl&gt;</code></pre>
+<pre class="r"><code>
+# Pro následující analýzy si potom vytvořme podmnožinu dat, která měli k dispozici v Oaklandu v roce 2002, kdy se děj Moneyballu převážně odehrává.
+moneyball &lt;- baseball %&gt;%
+  filter(Year &lt; 2002)</code></pre>
+</div>
+<p>Podíváme-li se na data mezi lety 1996–2001, tj. na data z relativně nedávné minulosti (vztaženo k roku 2002, kdy se děj Moneyballu převážně odehrává), z grafického vyjádření vztahu mezi počtem vítězství v základní částí soutěže a postupem do play-off je dobře patrné, že čím více zápasů tým vyhraje v základní soutěži, tím větší je šance, že se také dostane do play-off.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Vytvořme si graf zachycující vztah mezi počtem vítězství v základní části soutěže a postupem do play-off
+moneyball %&gt;%
+  filter(Year &lt; 2002 &amp; Year &gt; 1995) %&gt;%
+  select (W, Playoffs) %&gt;%
+  mutate(rnd = runif(176,0,1)) %&gt;%
+  ggplot(aes(x = W, y = rnd, color = as.factor(Playoffs)))+
+  geom_point(size = 2)+
+  scale_x_continuous(limits=c(50,120), breaks = seq(50,120,5))+
+  scale_color_manual(values = c(&quot;#9e9e9e&quot;, &quot;#ff1919&quot;), labels = c(&quot;Tým nepostoupil do play-off&quot;,&quot;Tým postoupil do play-off&quot;))+
+  ggtitle(&quot;Postupy týmů do play-off mezi lety 1996-2001&quot;)+
+  ylab(&quot;&quot;)+
+  xlab(&quot;Počet vítězství v základní části soutěže&quot;)+
+  theme(legend.position = &quot;bottom&quot;,
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(size=11),
+        axis.title.x = element_text(size=11),
+        legend.text = element_text(size=11),
+        legend.title = element_blank())</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
+</div>
+<p>S daty, která máme k dispozici, máme tu výhodu, že můžeme vztah mezi počtem vítězství v základní části soutěže a šancí na postup do play-off přesně kvantifikovat. Provedeme-li podrobnější analýzu našich dat, ukáže se, že velkou (přibližně 95%) šanci na postup do play-off má tým tehdy, když v základní části vyhraje minimálně 95 zápasů. Těchto 95 vítězství představuje dobře definovaný a kvantifikovaný cíl, kterého by se oaklandská „Áčka“ měla snažit dosáhnout.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Vyfiltrujme si opět data mezi lety 1996-2001. 
+moneyball2 &lt;- moneyball %&gt;%
+  filter(Year &lt; 2002 &amp; Year &gt; 1995)
+
+# Vytvořme si seznam několika různých hodnot počtu vítězství v základní části soutěže.
+pocet_vitezstvi &lt;- seq(60,115,5)
+ucast_v_playoff &lt;- vector(mode=&quot;numeric&quot;, length=length(pocet_vitezstvi))
+playoff_data &lt;- data.frame(pocet_vitezstvi = pocet_vitezstvi, ucast_v_playoff = ucast_v_playoff)
+
+# Vypočtěme si, jaká je pravděpodobnost postupu do play-off při různém počtu vítězství v základní části soutěže.
+for(i in 1:nrow(playoff_data)){
+ playoff_data$ucast_v_playoff[i] &lt;- length(moneyball2$W[moneyball2$W &gt;= playoff_data$pocet_vitezstvi[i] &amp; moneyball2$Playoffs == 1])/length(moneyball2$W[moneyball2$W &gt;= playoff_data$pocet_vitezstvi[i]]) 
+}
+
+# A nyní si vztah mezi počtem vyhraných zápasů v základní části soutěže a pravděpodobností účasti v play-off vizualizujme.
+ggplot(playoff_data, aes(x = pocet_vitezstvi, y = ucast_v_playoff))+
+  geom_point(size = 2)+
+  geom_line()+
+  ggtitle(&quot;Souvislost mezi počtem výher v základní části soutěže a\npravděpodobností postupu týmu do play-off (1996-2001)&quot;)+
+  ylab(&quot;Pravděpodobnost postupu týmu do play-off&quot;)+
+  xlab(&quot;Počet vítězství v základní části soutěže&quot;)+
+  scale_x_continuous(limits=c(60,115), breaks = seq(60,115,5))+
+  scale_y_continuous(limits=c(0,1), breaks = seq(0,1,0.1))+
+  theme(axis.text = element_text(size=11),
+        axis.title = element_text(size=11))</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+</div>
+<h2 id="krok-kladeni-otazek-a-mereni">3. krok: Kladení otázek a měření</h2>
+<p>S takto definovaným a kvantifikovaným cílem si potom můžeme klást dalších otázky, na které když si dokážeme odpovědět, zvýšíme tím naše šance na to, že tohoto cíle dosáhneme. V případě oaklandských „Áček“ se můžeme ptát, díky čemu tým dosahuje v zápasech vítězství? Celkem zjevná odpověď zní, že díky tomu, že dokáže získat více bodů než jeho soupeři. Otázkou ale je, přesně o kolik bodů navíc musí tým získat, aby v základní části soutěže dosáhl na minimálně 95 vítězství. K zodpovězení této otázky opět potřebujeme historická data (údaje o vyhraných a prohraných bodech) a relativně jednoduchý statistický model zvaný <a href="https://cs.wikipedia.org/wiki/Lineární_regrese">lineární regrese</a>, pomocí kterého můžeme popsat vztah mezi počtem vyhraných zápasů v základní části soutěže a rozdílem mezi vyhranými a prohranými body. Z níže uvedeného grafu je zřejmé, že mezi těmito dvěma proměnnými je velice těsný vztah a že spolu velice silně <a href="https://cs.wikipedia.org/wiki/Korelace">korelují</a>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Vypočtěme si rozdíl mezi vyhranými a prohranými body
+moneyball &lt;- moneyball %&gt;%
+  mutate(RD = RS - RA)
+
+# Graficky si znázorněme vztah mezi počtem vyhraných zápasů v základní části soutěže a rozdílem mezi vyhranými a prohranými body
+library(ggpubr)
+ggplot(moneyball, aes(x = RD , y = W))+
+  geom_point(alpha = 0.5, size = 2)+
+  geom_smooth(method = &quot;lm&quot;, se = FALSE)+
+  ggtitle(&quot;Vztah mezi počtem vítězství v základní části soutěže a\nrozdílem mezi vyhranými a prohranými body&quot;)+
+  xlab(&quot;Rozdíl mezi počtem vyhraných a prohraných bodů&quot;)+
+  ylab(&quot;Počet vítězství&quot;)+
+  theme(axis.title = element_text(size = 11),
+        axis.text = element_text(size = 11))+
+  scale_x_continuous(limits = c(-350,350), breaks = seq(-350,350,50))+
+  scale_y_continuous(limits = c(40, 120), breaks = seq(40,120,10))+
+  stat_cor(method = &quot;pearson&quot;, label.x = 275, label.y = 45)</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
+</div>
+<p>Při použití modelu lineární regrese můžeme vztah mezi těmito dvěma proměnnými popsat trochu podrobněji.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Regresní analýza vztahu mezi mezi počtem vyhraných zápasů v základní části soutěže a rozdílem mezi vyhranými a prohranými body 
+reg_model1 &lt;- glm(W ~ RD, data = moneyball, family = &quot;gaussian&quot;)
+summary(reg_model1)</code></pre>
+<pre><code>
+Call:
+glm(formula = W ~ RD, family = &quot;gaussian&quot;, data = moneyball)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-14.2662   -2.6509    0.1234    2.9364   11.6570  
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 80.881375   0.131157  616.67   &lt;2e-16 ***
+RD           0.105766   0.001297   81.55   &lt;2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for gaussian family taken to be 15.51641)
+
+    Null deviance: 117164  on 901  degrees of freedom
+Residual deviance:  13965  on 900  degrees of freedom
+AIC: 5037
+
+Number of Fisher Scoring iterations: 2</code></pre>
+</div>
+<p>Výsledná regresní rovnice nám říká, že <em>očekávaný počet vítězství = 80.88 + 0.106 x Rozdílový skór</em>. Tzn., že při vyrovnaném poměru vyhraných a prohraných bodů můžeme očekávat, že tým vyhraje přibližně 80 zápasů za sezónu, a že když se rozdílové skóre navýší o deset bodů, můžeme očekávat, že tým vyhraje v průměru o jeden zápas za sezónu navíc. Klíčové je ale pro nás to, že s pomocí této rovnice a s trochou algebry si můžeme jednoduše vypočítat, že k dosažení minimálně 95 vítězství za sezónu potřebuje tým vyhrát přibližně o 133 bodů více, než kolik jich se soupeři prohraje (<em>(95 - 80.88) / 0.106</em>).</p>
+<h2 id="krok-kladeni-dalsich-otazek-a-dalsi-mereni">4. krok: Kladení dalších otázek a další měření</h2>
+<p>Tímto zjištěním se náš cíl opět trochu více specifikuje a vyvolává další otázky. Otázka, která se téměř sama nabízí, se týká charakteristik hráčů, které nejlépe předpovídají počet vyhraných a prohraných bodů, a tím tedy také pravděpodobnost postupu týmu do play-off. DePodesta na základě svých analýz zjistil, že počet vyhraných bodů nejtěsněji souvisí s procentem případů, kdy se hráč dostane na metu (tzv. <em>On-Base Percentage</em> - OBP), a to, jak daleko se hráč dostane při svém odpalu (tzv. <em>Slugging Percentage</em> - SLG). Analogické statistiky pro týmy soupeřů (OOBP a OSLG) potom stejně dobře předpovídají počet prohraných bodů. Když vztah mezi těmito proměnnými popíšeme opět pomocí modelu lineární regrese, můžeme se s jeho pomocí pokusit předpovědět, jak si tým povede příští sezónu. Taková předpověď by přitom mohla být potenciálně velice užitečná, protože na jejím základě bychom případně mohli upravit některá svá rozhodnutí o koupi nebo prodeji vybraných hráčů. Pojďme tuto předpověď vytvořit pro tým oaklandských „Áček“ pro sezónu 2002 na základě dat z let 1962-2001. Z předchozí analýzy již víme, že…</p>
+<p><em>Počet vítězství = 80.88 + 0.106 x (Počet vyhraných bodů - Počet prohraných bodů)</em>.</p>
+<p>Nyní potřebujeme určit, jaký bude pravděpodobný počet vyhraných a prohraných bodů. Pomůžeme si opět regresní analýzou.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Regresní analýza vztahu mezi mezi počtem vyhraných bodů v základní části soutěže a dvěma vybranými hráčskými/týmovými statistikami 
+regModel2 = lm(RS ~ OBP + SLG, data=moneyball)
+summary(regModel2)</code></pre>
+<pre><code>
+Call:
+lm(formula = RS ~ OBP + SLG, data = moneyball)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-70.838 -17.174  -1.108  16.770  90.036 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  -804.63      18.92  -42.53   &lt;2e-16 ***
+OBP          2737.77      90.68   30.19   &lt;2e-16 ***
+SLG          1584.91      42.16   37.60   &lt;2e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 24.79 on 899 degrees of freedom
+Multiple R-squared:  0.9296,    Adjusted R-squared:  0.9294 
+F-statistic:  5934 on 2 and 899 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>
+# Regresní analýza vztahu mezi mezi počtem prohraných bodů v základní části soutěže a dvěma vybranými hráčskými/týmovými statistikami 
+regModel3 = lm(RA ~ OOBP + OSLG, data=moneyball)
+summary(regModel3)</code></pre>
+<pre><code>
+Call:
+lm(formula = RA ~ OOBP + OSLG, data = moneyball)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-82.397 -15.178  -0.129  17.679  60.955 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  -837.38      60.26 -13.897  &lt; 2e-16 ***
+OOBP         2913.60     291.97   9.979 4.46e-16 ***
+OSLG         1514.29     175.43   8.632 2.55e-13 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 25.67 on 87 degrees of freedom
+  (812 observations deleted due to missingness)
+Multiple R-squared:  0.9073,    Adjusted R-squared:  0.9052 
+F-statistic: 425.8 on 2 and 87 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<p>S pomocí regresní analýzy jsme zjistili, že…</p>
+<p><em>Počet vyhraných bodů = -804.63 + 2737.77 x OBP + 1584.91 x SLG</em><br />
+<em>Počet prohraných bodů = -837.38 + 2913.60 x OOBP + 1514.29 x OSLG</em>.</p>
+<p>Se znalostí hráčských/týmových statistik oaklandských „Áček“ za rok 2001 se nyní můžeme pokusit předpovědět nejdříve počet vyhraných a prohraných bodů a potom také předpokládaný počet vítězství v základní části soutěže. Při formulování této předpovědi vycházíme z předpokladu, že se složení týmu v průběhu sezóny 2002 nebude (např. z důvodu zranění hráčů) příliš lišit od jeho složení v roce 2001.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Hráčské/týmové statistiky oaklandských „Áček“ za rok 2001
+OBP_OAK &lt;- moneyball$OBP[which(moneyball$Team==&quot;OAK&quot; &amp; moneyball$Year == 2001)]
+SLG_OAK &lt;- moneyball$SLG[which(moneyball$Team==&quot;OAK&quot; &amp; moneyball$Year == 2001)]
+OOBP_OAK &lt;- moneyball$OOBP[which(moneyball$Team==&quot;OAK&quot; &amp; moneyball$Year == 2001)]
+OSLG_OAK &lt;- moneyball$OSLG[which(moneyball$Team==&quot;OAK&quot; &amp; moneyball$Year == 2001)]
+
+# Pravděpodobné hodnoty vybraných statistik oaklandských &quot;Áček&quot; pro rok 2002 vypočítané s pomocí odhadnutých regresních modelů
+pocet_vyhranych_bodu_pred &lt;- round(-804.63 + 2737.77*OBP_OAK + 1584.91*SLG_OAK)
+pocet_prohranych_bodu_pred &lt;- round(-837.38 + 2913.60*OOBP_OAK + 1514.29*OSLG_OAK)
+pocet_vitezstvi_pred &lt;- round(80.88 + 0.106 * (pocet_vyhranych_bodu_pred - pocet_prohranych_bodu_pred), 0)
+
+# Skutečné hodnoty vybraných statistik oaklandských &quot;Áček&quot; pro rok 2002
+pocet_vyhranych_bodu_real &lt;- baseball$RS[which(baseball$Team==&quot;OAK&quot; &amp; baseball$Year == 2002)] 
+pocet_prohranych_bodu_real &lt;- baseball$RA[which(baseball$Team==&quot;OAK&quot; &amp; baseball$Year == 2002)] 
+pocet_vitezstvi_real &lt;- baseball$W[which(baseball$Team==&quot;OAK&quot; &amp; baseball$Year == 2002)]
+
+# Tabulka porovnávající statistické předpovědi se skutečností 
+pred &lt;- c(pocet_vyhranych_bodu_pred, pocet_prohranych_bodu_pred, pocet_vitezstvi_pred)
+real &lt;- c(pocet_vyhranych_bodu_real, pocet_prohranych_bodu_real, pocet_vitezstvi_real)
+table &lt;- data.frame(&quot;Předpověd&quot; = pred, &quot;Skutečnost&quot; = real)
+row.names(table) &lt;- c(&quot;Vyhrané body&quot;, &quot;Prohrané body&quot;, &quot;Počet vítězství&quot;)
+table</code></pre>
+<pre><code>
+                Předpověd Skutečnost
+Vyhrané body          836        800
+Prohrané body         635        654
+Počet vítězství       102        103</code></pre>
+</div>
+<p>Porovnání našich předpovědí s reálnými výsledky za sezónu 2002 ukazuje, že se nám podařilo velice přesně předpovědět výsledky v nadcházející ligové sezóně, a významně tak snížit míru naší nejistoty při jejím plánování.</p>
+<h2 id="krok-propojeni-dilcich-vhledu-aneb-organizace-jako-stroj">5. krok: Propojení dílčích vhledů aneb organizace jako stroj</h2>
+<p><a href="https://www.linkedin.com/in/mattdancho/">Matt Dancho</a> ve své metodice k datově-analytickým projektům doporučuje, abychom se při snaze o pochopení obchodního problému organizace na danou organizaci dívali jako na druh stroje, který má určité vstupy, procesy a výstupy. Tuto metaforu stroje můžeme nyní využít k tomu, abychom všechny výše uvedené dílčí vhledy spojili do jednotného rámce. V něm budou mít oaklandská “Áčka” podobu jednoduchého stroje na výrobu postupů do play-off - viz obrázek níže).</p>
+<p><img src="images/machine_producing_playoffs.png"></p>
+<p>Ze schématu je dobře patrné, jak tento stroj funguje: Jeho výstupy jsou postupy do play-off, kterých dosahuje tak, že se snaží vyhrát více zápasů, resp. získat více bodů než soupeřící týmy; k tomu využívá vstupy v podobě schopnosti hráčů hrát dobře na pálce a v poli; vstupem ovlivňujícím chod stroje jsou rovněž obdobné schopnosti hráčů soupeřících týmů. Jedná se samozřejmě o velmi zjednodušený kauzální model fungování týmu oakladnských “Áček”, ale jak konstatuje slavný statistický aforismus, <a href="https://en.wikipedia.org/wiki/All_models_are_wrong">modely jsou vždy nepřesné, ale některé z nich jsou užitečné</a>.</p>
+<p>Jakkoli naše modely fungování organizace budou vždy neúplné, je důležité ověřit, zda tyto modely i přes svou omezenost v dostatečné míře odrážejí realitu tak, jak nám ji zprostředkovávají dostupná data. Za tímto účelem můžeme použít statistickou metodu <a href="https://en.wikipedia.org/wiki/Structural_equation_modeling">strukturálního modelování</a>, která umožňuje formalizovat naše představy o vzájemných vztazích mezi několika různými proměnnými a zhodnotit míru souladu těchto našich představ s dostupnými daty. Teprve po takovém zhodnocení věrohodnosti modelu je rozumné na něm zakládat svá další rozhodnutí. Pojďme tedy tuto metodu použít rovněž na náš nově vytvořený model fungování týmu oaklandských “Áček” a ověřit míru jeho věrohodnosti.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Data, která budeme potřebovat pro ověření věrohodnosti našeho modelu fungování oaklandských &quot;Áček&quot; 
+sem_data &lt;- moneyball %&gt;%
+  filter(Year &lt; 2002 &amp; Year &gt; 1995) %&gt;%
+  select(RS, RA, RD, W, Playoffs, OBP, SLG, OOBP, OSLG)
+
+# Definice modelu, která je v souladu s výše uvedeným schématem
+library(lavaan)
+oak_model &lt;- &#39;
+     Playoffs ~ W
+     W ~ RS + RA
+     RA ~ OOBP + OSLG
+     RS ~ OBP + SLG 
+&#39;
+# Odhad parametrů modelu
+fit_oak_model &lt;- sem(oak_model, data = sem_data, missing = &quot;pairwise&quot;, estimator = &quot;WLSMV&quot;, ordered = &quot;Playoffs&quot;)
+summary(fit_oak_model, standardized = T, fit.measures = T, rsq = T)</code></pre>
+<pre><code>
+lavaan (0.6-1) converged normally after 257 iterations
+
+                                                  Used       Total
+  Number of observations                            90         176
+  Number of missing patterns                         1
+
+  Estimator                                       DWLS      Robust
+  Model Fit Test Statistic                       3.724       7.301
+  Degrees of freedom                                15          15
+  P-value (Chi-square)                           0.999       0.949
+  Scaling correction factor                                  1.397
+  Shift parameter                                            4.635
+    for simple second-order correction (Mplus variant)
+
+Model test baseline model:
+
+  Minimum Function Test Statistic              553.723     368.812
+  Degrees of freedom                                22          22
+  P-value                                        0.000       0.000
+
+User model versus baseline model:
+
+  Comparative Fit Index (CFI)                    1.000       1.000
+  Tucker-Lewis Index (TLI)                       1.031       1.033
+
+  Robust Comparative Fit Index (CFI)                            NA
+  Robust Tucker-Lewis Index (TLI)                               NA
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000       0.000
+  90 Percent Confidence Interval          0.000  0.000       0.000  0.008
+  P-value RMSEA &lt;= 0.05                          1.000       0.981
+
+  Robust RMSEA                                                  NA
+  90 Percent Confidence Interval                             0.000     NA
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.185       0.185
+
+Parameter Estimates:
+
+  Information                                 Expected
+  Information saturated (h1) model        Unstructured
+  Standard Errors                           Robust.sem
+
+Regressions:
+                   Estimate   Std.Err  z-value  P(&gt;|z|)   Std.lv 
+  Playoffs ~                                                     
+    W                  0.241    0.115    2.095    0.036     0.241
+  W ~                                                            
+    RS                 0.099    0.006   16.342    0.000     0.099
+    RA                -0.103    0.008  -13.465    0.000    -0.103
+  RA ~                                                           
+    OOBP            3046.113  366.056    8.321    0.000  3046.113
+    OSLG            1465.117  206.759    7.086    0.000  1465.117
+  RS ~                                                           
+    OBP             3575.472  259.145   13.797    0.000  3575.472
+    SLG             1397.378  144.203    9.690    0.000  1397.378
+  Std.all
+         
+    0.994
+         
+    0.694
+   -0.738
+         
+    0.559
+    0.448
+         
+    0.603
+    0.422
+
+Intercepts:
+                   Estimate   Std.Err  z-value  P(&gt;|z|)   Std.lv 
+   .Playoffs           0.000                                0.000
+   .W                 96.559    8.355   11.556    0.000    96.559
+   .RA              -808.808  116.566   -6.939    0.000  -808.808
+   .RS             -1041.496   73.943  -14.085    0.000 -1041.496
+  Std.all
+    0.000
+    8.256
+   -9.635
+  -12.759
+
+Thresholds:
+                   Estimate   Std.Err  z-value  P(&gt;|z|)   Std.lv 
+    Playoffs|t1       23.191   10.204    2.273    0.023    23.191
+  Std.all
+    8.179
+
+Variances:
+                   Estimate   Std.Err  z-value  P(&gt;|z|)   Std.lv 
+   .Playoffs           0.095                                0.095
+   .W                  3.968    3.002    1.322    0.186     3.968
+   .RA               616.541  107.956    5.711    0.000   616.541
+   .RS               514.683   86.782    5.931    0.000   514.683
+  Std.all
+    0.012
+    0.029
+    0.087
+    0.077
+
+Scales y*:
+                   Estimate   Std.Err  z-value  P(&gt;|z|)   Std.lv 
+    Playoffs           1.000                                1.000
+  Std.all
+    1.000
+
+R-Square:
+                   Estimate 
+    Playoffs           0.988
+    W                  0.971
+    RA                 0.913
+    RS                 0.923</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Grafické znázornění modelu fungování oaklandských &quot;Áček&quot; 
+library(semPlot)
+semPaths(fit_oak_model, 
+         whatLabels=&quot;std&quot;, 
+         intercepts=FALSE, 
+         style=&quot;lisrel&quot;,
+         nCharNodes=0,
+         nCharEdges=0,
+         curveAdjacent = TRUE,
+         title=TRUE,
+         layout=&quot;tree2&quot;,
+         curvePivot=TRUE,
+         rotation =3)</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-9-1.png" width="624" /></p>
+</div>
+<p>Výstupy provedené tzv. <a href="https://en.wikipedia.org/wiki/Path_analysis_(statistics)">pěšinkové analýzy</a>, která je speciálním typem strukturálního modelování, naznačují, že námi navržený model je v souladu s daty, která máme k dispozici (viz “příznivé” hodnoty indexů shody, resp. neshody jako je TLI a CFI, resp. RMSEA, a také vysoké hodnoty standardizovaných regresních koeficientů). Dávají nám tak dobrý důvod věřit, že naše další kroky a rozhodnutí, která založíme na tomto modelu, budou mít žádoucí efekt na požadované výstupy, tj. na postup oaklandských “Áček” do play-off.</p>
+<h2 id="krok-intervence">6. krok: Intervence</h2>
+<p>Na základě výše uvedených zjištění začal management oaklandských „Áček“ do svého týmu vybírat hráče, kteří sice nevyhovovali tradičním kritériím, podle kterých hráčští skauti posuzovali kvalitu baseballových hráčů, ale za to vykazovali přesně ty charakteristiky, které podle DePodestových analýz předpovídaly počet vyhraných a prohraných bodů, a potažmo tedy také pravděpodobnost účasti v play-off, která byla hlavním cílem managementu. Díky tomu, že konkurenční týmy důležitost těchto hráčských statistik podceňovaly a naopak přeceňovaly jiné, méně důležité proměnné (např. míru úspěšnosti odpalů, tzv. <em>Batting Average</em>), mohl management oaklandských „Áček“ relativně levně skupovat hráče, kteří jim umožňovali dosahovat stanoveného cíle. Výsledkem bylo to, že oaklandská „Áčka“ vyhrávala zhruba o 20 zápasů za sezónu více než stejně „chudé“ týmy a přibližně stejně tolik zápasů jako 2krát až 3krát bohatší konkurence - viz graf níže.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Načtěme si potřebná data Lahmanovy baseballové databáze, která je veřejně přístupná na adrese http://seanlahman.com/baseball-archive/statistics/
+mzdyHracu &lt;- read_csv(&quot;salaries.csv&quot;)
+vyhryTymu &lt;- read_csv(&quot;teams.csv&quot;)
+
+# Vypočtěme si průměrnou sumu mezd vyplácených jednotlivými týmy svým hráčům v letech 1998-2001 
+prumerna_suma_MezdHracu &lt;- mzdyHracu %&gt;%
+  filter(yearID &gt; 1997 &amp; yearID &lt; 2002) %&gt;%
+  group_by(teamID) %&gt;%
+  summarise(prumerna_suma_MezdHracu = sum(salary)/length(unique(yearID)))
+
+# Vypočtěme si pro jednotlivé týmy průměrný počet výher za sezónu v letech 1998-2001
+prumerny_pocet_vyher &lt;- vyhryTymu %&gt;%
+  filter(yearID &gt; 1997 &amp; yearID &lt; 2002) %&gt;%
+  group_by(teamID) %&gt;%
+  summarise(prumerny_pocet_vyher = sum(W)/length(unique(yearID)))
+
+# Vyjádřeme si graficky vztah mezi počtem výher a množstvím peněz, které týmy vynakládají na mzdy svých hráčů 
+library(ggrepel)
+prumerna_suma_MezdHracu %&gt;%
+  left_join(prumerny_pocet_vyher, &quot;teamID&quot;) %&gt;%
+  mutate(OAK = ifelse(teamID == &quot;OAK&quot;, &quot;ano&quot;, &quot;ne&quot;)) %&gt;%
+  ggplot(aes(x= prumerna_suma_MezdHracu, y = prumerny_pocet_vyher, fill = OAK)) +
+  geom_point()+
+  ggtitle(&quot;Mzdy hráčů a počet vítězství v letech 1998-2001&quot;)+
+  xlab(&quot;Průměrná suma mezd hráčů (USD)&quot;)+
+  ylab(&quot;Průměrný počet výher za sezónu&quot;)+
+  geom_label_repel(
+    aes(label = teamID),
+    box.padding = 0.25, point.padding = 0.25,
+    segment.color = &#39;grey50&#39;)+
+  theme(legend.position=&quot;none&quot;)+
+  scale_fill_manual(values = c(&quot;#ffd400&quot;, &quot;#ffffff&quot;), 
+                        labels = c(&quot;ano&quot;,&quot;ne&quot;))+
+  scale_y_continuous(limits=c(65,100), breaks = seq(65,100,5)) +
+  scale_x_continuous(limits=c(2e+07,9e+07), breaks = seq(2e+07,9e+07,1e+07))</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
+</div>
+<h2 id="omezeni-hr-analytiky">Omezení HR analytiky</h2>
+<p>Přes veškerou přidanou hodnotu, kterou HR analytika pro organizaci může mít, je vhodné si vůči ní zachovat zdravou míru skepse a být si vědom jejích omezení. Níže uvádím přehled několika z nich.</p>
+<ul>
+<li><p>Kvalita a užitečnost výstupů HR analytiky je závislá na kvalitě dat, která do ní vstupují. Jako kdekoli jinde i zde platí okřídlené rčení „<em>rubbish in, rubbish out</em>“. Schopnost získat potřebná data včas, v dostatečné kvalitě a v dostatečném množství přitom představuje jedno z nejužších hrdel celého procesu zavádění HR analytiky v organizacích.</p></li>
+<li><p>HR analytika pracuje s historickými daty a vychází z předpokladu, že minulost je dobrým prediktorem budoucnosti. Ale jak nás na to opakovaně upozorňují odborníci jako <a href="https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb">Nassim Taleb</a> nebo <a href="https://en.wikipedia.org/wiki/Philip_E._Tetlock">Philip Tetlock</a>, tento vztah mezi minulostí a budoucností platí pouze do určité míry a pouze v relativně krátkém časovém horizontu. Na každém rohu na nás číhá nějaká potenciální <a href="https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable">černá labuť</a>, která může postavit na hlavu všechno, co jsme se na základě našich minulých zkušeností naučili brát jako samozřejmou jistotu.</p></li>
+<li><p>Ne každé prostředí je stejně předvídatelné jako svět sportu. Poměr <a href="https://www.kosmas.cz/knihy/191522/signal-a-sum/">signálu a šumu</a> se může napříč různými oblastmi významně lišit a čím více převládá náhodný šum nad signálem, tím méně jsou výstupy z HR analytiky užitečné. Příkladem zde může být relativně neúspěšná snaha předpovídat to, jak si baseballové týmu povedou v play-off. Na rozdíl od základní části soutěže, kde se hraje dostatek zápasů na to, aby se vyrušil vliv náhodného štěstí a smůly, v pětizápasových kolech play-off hraje náhoda tak významnou roli, že souvislost mezi celkovým počtem vítězství v základní části a pořadím týmu v play-off je téměř nulová.</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Vyfiltrujme si data mezi lety 1994-2011, kdy v play-off hraje 8 týmů.
+moneyball3 &lt;- moneyball %&gt;%
+  filter(Year &lt; 2012 &amp; Year &gt; 1993)
+  
+# Výpočtěme si Kendallovu pořadovou korelaci mezi mezi celkovýmm počtem vítězství v základní části soutěže a pořadím týmu v play-off mezi lety 1994-2011. 
+suppressWarnings(cor.test(~ W + RankPlayoffs, data = moneyball3, method = &quot;kendall&quot;))</code></pre>
+<pre><code>
+    Kendall&#39;s rank correlation tau
+
+data:  W and RankPlayoffs
+z = -0.48318, p-value = 0.629
+alternative hypothesis: true tau is not equal to 0
+sample estimates:
+        tau 
+-0.05541167 </code></pre>
+</div>
+<ul>
+<li><p>Čísla mají tu zvláštní moc, že dokážou v člověku velice snadno vzbudit dojem, že toho víme mnohem více než je tomu ve skutečnosti. Je však dobré si být vědom toho, že každá statistická předpověď je vždy zatížena nějakou mírou chyby, tu větší, tu menší. Velkou výhodou statistických modelů je to, že tato chyba je u nich explicitně vyčíslena, takže s ní lze dopředu počítat a zohlednit ji při následném rozhodování. Tato „upřímnost“ ohledně své vlastní omylnosti paradoxně mnohdy staví statistické modely do horšího světla než jinak méně přesné intuitivní úsudky expertů, pro které podobné údaje o míře jejich omylnosti většinou nejsou vůbec k dispozici.</p></li>
+<li><p>Velikost výhody, kterou nám zavedení HR analytiky dává, může být závislá na tom, zda podobné postupy využívá také naše konkurence. Opět to lze celkem dobře doložit na oaklandských „Áčkách“. Jejich výsledky se mezi lety 2002 až 2012, tj. v době po zveřejnění Moneyballu, kdy již všechny týmy měly příležitost seznámit se s principy prediktivní analytiky a zavést ji do své praxe, začaly více přibližovat výsledkům podobně „chudých“ soupeřů a naopak jejich bohatší soupeři jim svým výkonem zase trochu odskočili - viz graf níže. Z toho mimo jiné vyplývá, že s tím, jak se stále více společností bude při řízení lidských zdrojů spoléhat na výstupy z HR analytiky, přestane být HR analytika nějakou zásadní konkurenční výhodou a stane se z ní něco, co organizaci”pouze&quot; umožní držet krok s konkurencí.</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+# Vypočtěme si průměrnou sumu mezd vyplácených jednotlivými týmy svým hráčům v letech 2002-2012 
+prumerna_suma_MezdHracu2 &lt;- mzdyHracu %&gt;%
+  filter(yearID &gt; 2001 &amp; yearID &lt;= 2012) %&gt;%
+  group_by(teamID) %&gt;%
+  summarise(prumerna_suma_MezdHracu = sum(salary)/length(unique(yearID)))
+
+# Vypočtěme si pro jednotlivé týmy průměrný počet výher za sezónu v letech 2002-2012
+prumerny_pocet_vyher2 &lt;- vyhryTymu %&gt;%
+  filter(yearID &gt; 2001 &amp; yearID &lt;=2012) %&gt;%
+  group_by(teamID) %&gt;%
+  summarise(prumerny_pocet_vyher = sum(W)/length(unique(yearID)))
+
+# Vyjádřeme si graficky vztah mezi počtem výher a množstvím peněz, které týmy vynakládají na mzdy svých hráčů 
+prumerna_suma_MezdHracu2 %&gt;%
+  left_join(prumerny_pocet_vyher2, &quot;teamID&quot;) %&gt;%
+  mutate(OAK = ifelse(teamID == &quot;OAK&quot;, &quot;ano&quot;, &quot;ne&quot;)) %&gt;%
+  ggplot(aes(x= prumerna_suma_MezdHracu, y = prumerny_pocet_vyher, fill = OAK)) +
+  geom_point()+
+  ggtitle(&quot;Mzdy hráčů a počet vítězství v letech 2002-2012&quot;)+
+  xlab(&quot;Průměrná suma mezd hráčů (USD)&quot;)+
+  ylab(&quot;Průměrný počet výher za sezónu&quot;)+
+  geom_label_repel(
+    aes(label = teamID),
+    box.padding = 0.25, point.padding = 0.25,
+    segment.color = &#39;grey50&#39;)+
+  theme(legend.position=&quot;none&quot;)+
+  scale_fill_manual(values = c(&quot;#ffd400&quot;, &quot;#ffffff&quot;), 
+                        labels = c(&quot;ano&quot;,&quot;ne&quot;)) +
+  scale_y_continuous(limits=c(65,100), breaks = seq(65,100,5)) +
+  scale_x_continuous(limits=c(3e+07,2e+08), breaks = seq(3e+07,2e+08,2e+07))</code></pre>
+<p><img src="moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-12-1.png" width="624" /></p>
+</div>
+<h2 id="zaver">Závěr</h2>
+<p>Na příkladu oaklandského baseballového mužstva jsme takto mohli sledovat obvyklý postup aplikace HR analytiky na určitý druh problému, který se snaží v dané organizaci vyřešit. Vzhledem ke specifickému předmětu podnikání oaklandských „Áček“ bylo tímto cílem dosáhnout postupu do play-off a to v situaci, kdy management neměl dostatek finančních prostředků na zaplacení hráčů považovaných dle tradičních měřítek za kvalitní a perspektivní. Od tohoto cíle se potom odvíjela řada kroků, které blíže specifikovaly jeho povahu a identifikovaly faktory (mimo jiné i ty personální), které s jeho dosažením souvisí. Na základě této znalosti potom bylo možné formulovat určité předpovědi a učinit jistá rozhodnutí, která zvýšila pravděpodobnost toho, že se podaří vytčeného cíle dosáhnout. Přestože tento příběh o využití HR analytiky se odehrál ve světě sportu, jeho logika je platná i v kontextu tradičnějšího typu organizací. Ostatně <strong>ve všech typech organizací jde nakonec především o to mít na správném místě a ve správný čas ty správné lidi</strong> - jedině tak tyto organizace mohou systematicky dosahovat svých strategických cílů.</p>
+<p>V několika příštích článcích se podobným způsobem podíváme na to, jak organizace mohu zvýšit šance na dosažení svých strategických cílů prostřednictvím aplikace HR analytiky na takové HR procesy jako je řízení výkonosti, rozvoj a vzdělávání zaměstnanců, kariérní rozvoj, plánování nástupnictví, monitorování spokojenosti zaměstnanců, change management, nábor a výběr zaměstnanců a jejich onboarding nebo competency management.</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
