@@ -2,7 +2,7 @@
   {
     "path": "posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/",
     "title": "Moneyball v HR - od HR analytiky ke sportovní analytice a zpět",
-    "description": "Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které by HR analytiku reálně provozovaly. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku, ale i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu \"Áček\", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.",
+    "description": "Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku, ale i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu \"Áček\", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.",
     "author": [
       {
         "name": "Luděk Stehlík",
@@ -10,9 +10,16 @@
       }
     ],
     "date": "2018-10-11",
-    "categories": [],
+    "categories": [
+      "Czech language",
+      "employee selection",
+      "structural equation modeling",
+      "multivariate regression analysis",
+      "correlation analysis",
+      "methodology"
+    ],
     "preview": "posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png",
-    "last_modified": "2018-10-11T09:44:04+02:00",
+    "last_modified": "2018-10-11T18:52:36+02:00",
     "preview_width": 1248,
     "preview_height": 768
   }
