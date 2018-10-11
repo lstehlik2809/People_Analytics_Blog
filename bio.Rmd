@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "Bio"
 description: |
-  Exploring People Analytics using R & Python
+  Some bio facts about me
 ---
 
 ```{r setup, include=FALSE}

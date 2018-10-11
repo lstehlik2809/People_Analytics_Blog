@@ -15,6 +15,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Bio"
+      href: bio.html
     - icon: fa fa-rss
       href: index.xml
 output: radix::radix_article
