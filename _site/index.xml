@@ -7,7 +7,15 @@
     <description>Exploring People Analytics topics using R &amp; Python 
 </description>
     <generator>Radix</generator>
-    <lastBuildDate>�t, 11 ��j 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>ne, 14 ��j 2018 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>HR analytika a odchodovost zaměstnanců</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</link>
+      <description>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný.</description>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</guid>
+      <pubDate>ne, 14 ��j 2018 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</title>
       <dc:creator>Luděk Stehlík</dc:creator>

@@ -7,12 +7,13 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-11-2018
 categories:
-  - Czech language
+  - czech language
   - employee selection
   - structural equation modeling
   - multivariate regression analysis
   - correlation analysis
   - methodology
+  - r
 output:
   radix::radix_article:
     self_contained: false
