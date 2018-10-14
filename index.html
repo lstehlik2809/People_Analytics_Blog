@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="radix" />
+  <link rel="alternate" type="application/rss+xml" href="https://blog-about-people-analytics.netlify.com/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -19,39 +20,367 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>HR analytika a odchodovost zaměstnanců</title>
-  
-  <meta property="description" itemprop="description" content="Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný."/>
+  <title>Blog About People Analytics</title>
   
   
-  <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2018-10-14"/>
-  <meta property="article:created" itemprop="dateCreated" content="2018-10-14"/>
-  <meta name="article:author" content="Luděk Stehlík"/>
+  
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="HR analytika a odchodovost zaměstnanců"/>
+  <meta property="og:title" content="Blog About People Analytics"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný."/>
   <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Blog About People Analytics"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="HR analytika a odchodovost zaměstnanců"/>
-  <meta property="twitter:description" content="Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný."/>
+  <meta property="twitter:title" content="Blog About People Analytics"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["HR analytika a odchodovost zaměstnanců"]},{"type":"character","attributes":{},"value":["Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný.  \n"]},{"type":"character","attributes":{},"value":["images/DSHB2.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-14-2018"]},{"type":"character","attributes":{},"value":["czech language","employee turnover","shiny","dashboard","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["radix::radix_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog About People Analytics"]},{"type":"character","attributes":{},"value":["radix::radix_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  
-  <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DSHB1.PNG","DSHB2.PNG","DSHB3.PNG","hr-analytika-a-odchodovost-zamstnanc_files/bowser-1.9.3/bowser.min.js","hr-analytika-a-odchodovost-zamstnanc_files/distill-2.2.21/template.v2.js","hr-analytika-a-odchodovost-zamstnanc_files/jquery-1.11.3/jquery.min.js","hr-analytika-a-odchodovost-zamstnanc_files/webcomponents-2.0.0/webcomponents.js","HR_Value_Chain.png"]}
-  </script>
   <!--radix_placeholder_navigation_in_header-->
+  
+  <script type="application/javascript">
+  
+    window.headroom_prevent_pin = false;
+  
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+  
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+  
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+  
+      // responsive menu
+      $('.radix-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+  
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+  
+  <style type="text/css">
+  
+  /* Theme (user-documented overrideables for nav appearance) */
+  
+  .radix-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #455a64;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .radix-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .radix-site-nav a:hover {
+    color: white;
+  }
+  
+  @media print {
+    .radix-site-nav {
+      display: none;
+    }
+  }
+  
+  .radix-site-header {
+  
+  }
+  
+  .radix-site-footer {
+  
+  }
+  
+  
+  /* Site Header */
+  
+  .radix-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  
+  .radix-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .radix-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+  
+  
+  .radix-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+  
+  .radix-site-header a,
+  .radix-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+  
+  .radix-site-header .title {
+    font-size: 18px;
+  }
+  
+  .radix-site-header .logo {
+    padding: 0;
+  }
+  
+  .radix-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+  
+  .radix-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+  
+  
+  
+  @media screen and (min-width: 1000px) {
+    .radix-site-header .logo img {
+      display: inline-block;
+    }
+    .radix-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .radix-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .radix-site-header .title {
+      padding-left: 12px;
+    }
+  }
+  
+  
+  .radix-site-header .nav-toggle {
+    display: none;
+  }
+  
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+  
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-dropdown-active {
+    display: block;
+  }
+  
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+  
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+  
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .radix-site-header a, .radix-site-header .nav-dropdown  {display: none;}
+    .radix-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .radix-site-header .title {
+      margin-left: 0;
+    }
+    .radix-site-header .nav-right {
+      margin-right: 0;
+    }
+    .radix-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .radix-site-header.responsive {position: relative;}
+    .radix-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .radix-site-header.responsive a,
+    .radix-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .radix-site-header.responsive .nav-left,
+    .radix-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .radix-site-header.responsive .nav-dropdown {float: none;}
+    .radix-site-header.responsive .nav-dropdown-content {position: relative;}
+    .radix-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  /* Site Footer */
+  
+  .radix-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Headroom */
+  
+  d-title {
+    padding-top: 6rem;
+  }
+  
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+  
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+  
+  .headroom--unpinned {
+    top: -100px;
+  }
+  
+  .headroom--pinned {
+    top: 0;
+  }
+  
+  </style>
+  
+  <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet"/>
+  <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+  <script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
   
@@ -903,80 +1232,459 @@
   </script>
   
   <!--/radix_placeholder_distill-->
-  <script src="hr-analytika-a-odchodovost-zamstnanc_files/jquery-1.11.3/jquery.min.js"></script>
-  <script src="hr-analytika-a-odchodovost-zamstnanc_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="hr-analytika-a-odchodovost-zamstnanc_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="hr-analytika-a-odchodovost-zamstnanc_files/distill-2.2.21/template.v2.js"></script>
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"HR analytika a odchodovost zaměstnanců","description":"Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2018-10-14T00:00:00.000+02:00","citationText":"Stehlík, 2018"}
+{"title":"Blog About People Analytics","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="radix-site-nav radix-site-header">
+<div class="nav-left">
+<span class="logo">
+<img src="images/ludekstehlik.jpg"/>
+</span>
+<a href="index.html" class="title">Blog About People Analytics</a>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="bio.html">Bio</a>
+<a href="index.xml">
+<i class="fa fa-rss"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+<style type="text/css">
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 1em;
+}
+
+.posts-list .metadata .tags {
+  margin-top: 1em;
+}
+
+.posts-list .tags .tag {
+  color: rgba(0,0,0,0.67);
+  padding: 0.3em 0.5em;
+  margin: 0;
+  font-size: 80%;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list {
+    margin-top: 60px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 35%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 15%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 72%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace("#", "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if (category == page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<a href="posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["czech language","employee turnover","shiny","dashboard","r"]}</script>
+<div class="metadata">
+<div class="publishedDate">Oct. 14, 2018</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>HR analytika a odchodovost zaměstnanců</h2>
+<p>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný.</p>
+</div>
+</a>
+<a href="posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["czech language","employee selection","structural equation modeling","multivariate regression analysis","correlation analysis","methodology","r"]}</script>
+<div class="metadata">
+<div class="publishedDate">Oct. 11, 2018</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png"/>
+</div>
+<div class="description">
+<h2>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</h2>
+<p>Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku, ale i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu "Áček", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.</p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#correlation_analysis">correlation analysis</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#czech_language">czech language</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#dashboard">dashboard</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#employee_selection">employee selection</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#employee_turnover">employee turnover</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#methodology">methodology</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#multivariate_regression_analysis">multivariate regression analysis</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#r">r</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#shiny">shiny</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#structural_equation_modeling">structural equation modeling</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>HR analytika a odchodovost zaměstnanců</h1>
-<p>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro organizace užitečný.<br /></p>
+<h1>Blog About People Analytics</h1>
+
 </div>
 
-<div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
-  
-<br/>10-14-2018
-</div>
 
 <div class="d-article">
-<p>HR analytika ve své podstatě vychází ze známé zásady managementu, že <strong>co nelze měřit, nelze ani (efektivně) řídit a zlepšovat</strong>, a aplikuje tuto zásadu na lidské zdroje. V několika posledních letech potom k tomu navíc přidává nadstavbu v podobě pokročilejších analytických postupů, které mají větší potenciál přijít s hlubšími vhledy a s doporučeními s větším efektem. Ale ať už využíváte pouze základní reporting nebo nějakou pokročilejší analytiku, cíl je vždy stejný – snažit se s pomocí dat a jejich analýzy žádoucím způsobem ovlivnit jednotlivé HR procesy, které organizacím pomáhají dosahovat jejich strategických cílů. Názorně to ilustruje níže uvedené schéma zachycující mechanismus propojující HR procesy s (nejen) finančními výsledky organizace.</p>
-<p><img src="HR_Value_Chain.png"></p>
-<p>HR analytika pomáhá optimalizovat nastavení tohoto mechanismu tím, že umožňuje nalézat odpovědi na některé klíčové otázky, jako např.:</p>
-<ul>
-<li>Kterými kanály se k nám dostávají ti nejlepší kandidáti?</li>
-<li>Jaké charakteristiky od sebe odlišují úspěšné a neúspěšné kandidáty?</li>
-<li>Které faktory přispívají k úspěšnému onboardingu?</li>
-<li>Která „kápéíčka“ mají nejsilnější vazbu na finanční výsledky firmy?</li>
-<li>Jaké tréninky vedou s nejvyšší pravděpodobností ke zlepšení pracovního výkonu?</li>
-<li>Které intervence mají největší dopad na zaměstnanci pociťovaný well-being nebo work-life balance?</li>
-<li>Co u zaměstnanců zvyšuje, nebo naopak snižuje míru jejich angažovanosti?</li>
-<li>Kde se v organizaci nachází izolovaná sila a úzká hrdla znemožňující efektivní komunikaci a spolupráci mezi jednotlivými zaměstnanci, týmy nebo i celými odděleními?</li>
-<li>Kdo představuje skrytý talent, který je potřeba podchytit a dále rozvíjet?<br />
-</li>
-<li>Kde lze očekávat odpor v souvislosti s plánovanými změnami ve firmě a kdo naopak může být jejich ambasadorem a katalyzátorem?</li>
-<li>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí?</li>
-</ul>
-<p>Právě posledně jmenovaný způsob využití HR analytiky často představuje jeden z prvních druhů HR analytických projektů, kterými se ve firmách s HR analytikou začíná, a to z dobře pochopitelného důvodu. S <strong>nežádoucími odchody zaměstnanců</strong> jsou totiž spojené <a href="http://login.bersin.com/uploadedFiles/021517-calculating-true-cost-voluntary-turnover.pdf">vysoké přímé i nepřímé náklady</a>, takže i poměrně mírné snížení odchodovosti zaměstnanců může představovat značnou úsporu, kterou ocení management každé firmy. Naléhavost tohoto problému navíc ještě zvyšuje současná fáze ekonomického cyklu s rekordně nízkou mírou nezaměstnanosti, která v kombinaci s různými on-line platformami na zprostředkování práce motivuje mnoho lidí k hledání nového místa, kde, jak doufají, bude práce zajímavější, smysluplnější a lépe placená a kolegové tam budou sympatičtější a šéfové inspirativnější.</p>
-<p>Vzhledem k palčivosti tohoto problému, který trápí nejednu firmu, není žádným velkým překvapením, že se tématu odchodovosti zaměstnanců věnovalo a stále věnuje velké množství různých studií. Takto např. na konci roku 2017 vyšla rozsáhlá meta-analýza od autorů <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/peps.12226">Rubensteina, Eberlyové a Leeho</a>, kteří syntetizovali výsledky více než 300 dílčích výzkumů týkajících se prediktorů odchodovosti. Můžeme se tak oprávněně ptát, co nového nám může přinést HR analytika zaměřená na odchodovost zaměstnanců realizovaná pouze v jediné organizaci. Nebylo vše podstatné k tomuto tématu již objeveno? (K této otázce viz např. <a href="https://www.linkedin.com/pulse/predicting-turnover-stating-bleedin-obvious-hedegaard-rasmussen/">tento inspirativní a trochu provokativní článek</a> od <a href="https://www.linkedin.com/in/thomas-hedegaard-rasmussen-9b26043/">Thomase Rasmussena</a>.) Je pravda, že není příliš pravděpodobné, že při analýze vašich vlastních dat narazíte na nějaký naprosto nový faktor související s odchodovostí. Na druhou stranu je rovněž pravda, že každá organizace je v něčem jedinečná, takže některé z retenčních faktorů pro danou organizaci budou pravděpodobně více a jiné méně důležité. Tato informace o relativní důležitosti jednotlivých retenčních faktorů je potom klíčová při nastavování retenčního plánu a HR analytika může být při tomto velice nápomocná.</p>
-<p>S pomocí <a href="https://aanalytics.shinyapps.io/turnover_analytics_dashboard/">tohoto dashboardu</a> - vytvořeného prostřednictvím analytického nástroje <a href="https://www.r-project.org/">R</a> a rkové knihovny pro vytváření interkativních webových aplikací <a href="https://shiny.rstudio.com/">Shiny</a> a za využití <a href="https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/">ukázkových dat od společnosti IBM</a> - si můžete sami vyzkoušet, jak užitečné by pro Vás mohly být výstupy z takového HR analytického projektu zaměřeného na odchodovost zaměstnanců. Dashboard obsahuje informace, které pomáhají (nejen) managementu zodpovědět řadu klíčových otázek, které stojí na počátku každého účinného plánu na retenci zaměstnanců, jako např.:</p>
-<ul>
-<li>Kolik zaměstnanců nás ročně opouští?</li>
-<li>Které skupiny zaměstnanců odcházejí nejčastěji?</li>
-<li>Jaký je externí benchmark? Jsme na tom podobě jako konkurence v oboru?</li>
-<li>Představuje pro nás stávající úroveň odchodovosti závažný problém, a vyplatí se nám ho tedy řešit?</li>
-<li>Z jakých důvodů lidé obecně nejčastěji odcházejí ze zaměstnání?</li>
-<li>Jaké faktory přispívají k odchodu specificky našich zaměstnanců?</li>
-<li>Jaká pro-retenční opatření jsou obecně k dispozici?</li>
-<li>Jaká pro-retenční opatření bychom měli zvolit vzhledem k pravděpodobným důvodům odchodů našich zaměstnanců?<br />
-</li>
-<li>Na jaké skupiny zaměstnanců se především zaměřit z hlediska prevence jejich odchodovosti?</li>
-<li>U kterých konkrétních zaměstnanců existuje zvýšené riziko, že odejdou, a na jaké konkrétní retenční faktory se u nich zaměřit v rámci pravidelného stay interview?</li>
-</ul>
-<p>Jak je z výše uvedeného výčtu otázek patrné, dashboard obsahuje informace, které při svém rozhodování mohou využít <strong>nejen HR manažeři, ale také HR business partneři nebo přímo team-leadeři a linioví manažeři</strong> jednotlivých týmů či oddělení. Kromě toho dashboard obsahuje také řadu technických detailů o použitém predikčním modelu a samotná data, které stojí v pozadí všech prezentovaných vizualizací a analýz. S jejich pomocí tak <strong>HR/Business analytik</strong> může např. hledat optimální způsob, jak nastavit skórovací algoritmus, aby se maximalizoval pozitivní efekt pro-retenčních opatření, nebo může v dostupných datech sám hledat nějaké další užitečné informace. Více viz již <a href="https://aanalytics.shinyapps.io/turnover_analytics_dashboard/">samotný dashboard</a>, z něhož můžete níže vidět několik screenshotů.</p>
-<p><em>Screenshot části dashboardu, která obsahuje různé řezy odchodovostí zaměstnanců, a dává tak dobrý přehled o tom, které skupiny zaměstnanců jsou odchodovostí nejvíce ohrožené.</em><br />
-<img src="DSHB1.PNG"></p>
-<p><em>Screenshot části dashboardu, která obsahuje informace o pravděpodobnosti odchodu jednotlivých zaměstnanců společně s dalšími informacemi, které mohou posloužit jako podklad pro individuální intervence s cílem předejít nežádoucím odchodům zaměstnanců.</em> <img src="DSHB2.PNG"></p>
-<p><em>Screenshot části dashboardu, která obsahuje informace o výkonu/kvalitě statistického modelu použitého k identifikaci významných prediktorů odchodovosti zaměstnanců a k odhadu pravděpodobnosti odchodu jednotlivých zaměstnanců.</em> <img src="DSHB3.PNG"></p>
+
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
