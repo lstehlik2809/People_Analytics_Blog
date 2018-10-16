@@ -36,17 +36,83 @@ HR analytika pomáhá optimalizovat nastavení tohoto mechanismu tím, že umož
 * Kde lze očekávat odpor v souvislosti s plánovanými změnami ve firmě a kdo naopak může být jejich ambasadorem a katalyzátorem?
 * Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí?
 
-Právě posledně jmenovaný způsob využití HR analytiky často představuje jeden z prvních druhů HR analytických projektů, kterými se ve firmách s HR analytikou začíná, a to z dobře pochopitelného důvodu. S **nežádoucími odchody zaměstnanců** jsou totiž spojené [vysoké přímé i nepřímé náklady](http://login.bersin.com/uploadedFiles/021517-calculating-true-cost-voluntary-turnover.pdf), takže i poměrně mírné snížení odchodovosti zaměstnanců může představovat značnou úsporu, kterou ocení management každé firmy. Naléhavost tohoto problému navíc ještě zvyšuje současná fáze ekonomického cyklu s rekordně nízkou mírou nezaměstnanosti, která v kombinaci s různými on-line platformami na zprostředkování práce motivuje mnoho lidí k hledání nového místa, kde, jak doufají, bude práce zajímavější, smysluplnější a lépe placená a kolegové tam budou sympatičtější a šéfové inspirativnější. 
+Právě posledně jmenovaný způsob využití HR analytiky často představuje jeden z prvních druhů HR analytických projektů, kterými se ve firmách s HR analytikou začíná, a to z dobře pochopitelného důvodu. S **nežádoucími odchody zaměstnanců** jsou totiž spojené [vysoké přímé i nepřímé náklady](http://login.bersin.com/uploadedFiles/021517-calculating-true-cost-voluntary-turnover.pdf), takže i poměrně mírné snížení odchodovosti zaměstnanců může představovat značnou úsporu, kterou ocení management každé firmy. Naléhavost tohoto problému navíc ještě zvyšuje současná fáze ekonomického cyklu s rekordně nízkou mírou nezaměstnanosti, která v kombinaci s různými on-line platformami na zprostředkování práce motivuje mnoho lidí k hledání nového místa, kde, jak doufají, bude práce zajímavější, smysluplnější a lépe placená a kolegové tam budou sympatičtější a šéfové inspirativnější.
 
-```{r}
-library(tidyverse)
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Nacteni dat -----------------------------------------------------------------------------------
+
+# Nacteni potrebnych knihoven
 library(readxl)
+library(tidyverse)
 
-mydata <- read_excel("./SeriesReport-20180307091936_62a67c.xlsx", sheet = )
+# Nacteni dat po jejich stazeni z https://www.bls.gov/news.release/jolts.t18.htm , resp. 
+# https://data.bls.gov/pdq/SurveyOutputServlet
+unmpl_data <- read_xlsx("C:/Users/lstehlik/Documents/_WORKFORCE_ANALYTICS/People_Analytics_Blog_Prep/HRA_Employee_Turnover_Dashboard/BLS_Unemployment_Rates.xlsx", 
+                       sheet = "Unemployment Rate", col_names = TRUE)
 
+quits_data <- read_xlsx("C:/Users/lstehlik/Documents/_WORKFORCE_ANALYTICS/People_Analytics_Blog_Prep/HRA_Employee_Turnover_Dashboard/BLS_Quits_Rates.xlsx")
 
+# Priprava dat na vizualizaci -------------------------------------------------------------------
+
+# Data k mire nezamestnanosti
+# Prejmenovani sloupcu
+colnames(unmpl_data) <- c("Date", "Unmpl_Rate")
+
+# Odstraneni prvniho radku
+unmpl_data <- unmpl_data[-1,]
+
+library(lubridate)
+unmpl_data <- unmpl_data %>%
+  # separate(Date, c("Month", "Year"), sep = " ", remove = TRUE) %>%
+  mutate(Unmpl_Rate = as.numeric(Unmpl_Rate),
+         Date = myd(Date, truncated = 1))
+
+colnames(quits_data) <- quits_data[1,]
+
+# Data k dobrovolne odchodovosti zamestnancu
+# Prejmenovani sloupcu
+colnames(quits_data) <- quits_data[11,]
+
+# Odstraneni prvnich 11 radku
+quits_data <- quits_data[-1:-11,]
+
+# Zmena formatu dat z sirokeho na dlouhy
+quits_data <- quits_data %>%
+  gather(Month, Quits_Rate, Jan:Dec, factor_key= FALSE) %>%
+  na.omit() %>%
+  mutate(Year = as.integer(Year),
+         Quits_Rate = as.numeric(Quits_Rate)) %>%
+  mutate(Date = paste(Month, " ", Year)) %>%
+  mutate(Date = myd(Date, truncated = 1)) %>%
+  select(Date, Quits_Rate) %>%
+  arrange(Date)
+  
+# Spojeni obou souboru dat do jednoho
+mydata <- quits_data %>%
+  inner_join(unmpl_data, on = "Date")
+
+# Vizualizace dat -------------------------------------------------------------------------------
+library(scales)
+
+mydata %>%
+  ggplot(aes(x = Date)) +
+  geom_line(aes(y = Quits_Rate, color = "Míra dobrovolné odchodovosti"), size = 1.5) +
+  geom_line(aes(y = Unmpl_Rate/5, color = "Míra nezaměstnanosti"), size = 1.5) +
+  scale_y_continuous(sec.axis = sec_axis(~.*5, name = "Měsíční míra nezaměstnanosti [%]")) +
+  scale_x_date(date_breaks = "12 months",
+               labels=date_format("%m/%y")) +
+  scale_colour_manual(values = c("blue", "red")) +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5),
+        legend.position = "bottom") +
+  labs(title = "Vztah mezi mírou nezaměstnanosti a dobrovolné odchodovosti",
+       subtitle = "Údaje pro USA mezi lety 2001 a 2018",
+       caption = "Source: Bureau of Labor Statistics",
+       y = "Měsíční míra dobrovolné odchodovosti [%]",
+       x = "Měsíc a rok",
+       colour = "")
+
+# cor.test(mydata$Quits_Rate, mydata$Unmpl_Rate)
 ```
-
 
 Vzhledem k palčivosti tohoto problému, který trápí nejednu firmu, není žádným velkým překvapením, že se tématu odchodovosti zaměstnanců věnovalo a stále věnuje velké množství různých studií. Takto např. na konci roku 2017 vyšla rozsáhlá meta-analýza od autorů [Rubensteina, Eberlyové a Leeho](https://onlinelibrary.wiley.com/doi/abs/10.1111/peps.12226), kteří syntetizovali výsledky více než 300 dílčích výzkumů týkajících se prediktorů odchodovosti. Můžeme se tak oprávněně ptát, co nového nám může přinést HR analytika zaměřená na odchodovost zaměstnanců realizovaná pouze v jediné organizaci. Nebylo vše podstatné k tomuto tématu již objeveno? (K této otázce viz např. [tento inspirativní a trochu provokativní článek](https://www.linkedin.com/pulse/predicting-turnover-stating-bleedin-obvious-hedegaard-rasmussen/) od [Thomase Rasmussena](https://www.linkedin.com/in/thomas-hedegaard-rasmussen-9b26043/).) Je pravda, že není příliš pravděpodobné, že při analýze vašich vlastních dat narazíte na nějaký naprosto nový faktor související s odchodovostí. Na druhou stranu je rovněž pravda, že každá organizace je v něčem jedinečná, takže některé z retenčních faktorů pro danou organizaci budou pravděpodobně více a jiné méně důležité. Tato informace o relativní důležitosti jednotlivých retenčních faktorů je potom klíčová při nastavování retenčního plánu a HR analytika může být při tomto velice nápomocná.
 
