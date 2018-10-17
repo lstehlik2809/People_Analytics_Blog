@@ -1,11 +1,13 @@
 ---
 title: "Bio"
 description: |
-  Some bio facts about me
+  Shortly about me
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r echo = FALSE}
+library(knitr)
+img1_path <- "./images/ludekstehlik.jpg"
+include_graphics(img1_path)
 ```
 
-TBD
+Jsem psycholog, který se trochu kamarádí s matematikou a statistikou a snaží se obě disciplíny využívat jednak v roli výzkumníka a vyučujícího na [katedře psychologie FF UK v Praze](https://kps.ff.cuni.cz/cs/) k lepšímu porozumění fungování lidské mysli, a jednak v roli [konzultanta v oblasti HR analytiky](https://www2.deloitte.com/cz/cs/pages/deloitte-analytics/topics/advanced-analytics.html) k optimalizaci HR procesů. Více informací ke mně lze nalézt na mém [LinkedIn profilu](https://www.linkedin.com/in/ludekstehlik/). Kontaktovat mě případně můžete přes emailovou adresu ludek.stehlik@gmail.com.
