@@ -1,7 +1,7 @@
 ---
 title: "About this blog"
 description: |
-  Exploring People Analytics topics using R & Python
+  Exploring People Analytics topics
 ---
 
 ```{r setup, include=FALSE}
@@ -10,6 +10,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Dal jsem na radu zkušenějších (za všechny zmiňme např. [Matta Dancha](https://www.linkedin.com/in/mattdancho/) a [Keitha McNultyho](https://www.linkedin.com/in/keith-mcnulty/)) a založil jsem si svůj vlastní blog, abych mohl jednak alespoň částečně vrátit druhým to, co jsem se sám díky blogům druhých naučil, ale také abych měl příležitost - a vlastně tak trochu i záminku - zkoumat a zkoušet si různé nové věci týkající se HR analytiky a tříbit si při tom své myšlenky.
 
-Na tomto blogu plánuji uveřejňovat články, které se budou více zabývat technickou a analytickou stránkou HR analytiky, zároveň se ale budu vždy snažit prezentovat jednotlivá témata v kontextu praktických problémů a otázek, které trápí všechny ty, co se snaží zvýšit nejen efektivitu (*efficiency*), ale také účinnost (*effectiveness*) HR procesů ve firmách a organizacích. Obecně je mým cílem propagovat myšlenku, že když se spojí kritické myšlení, tvrdá (čti spolehlivá, validní a relevantní) data a jejich pečlivá analýza, mají organizace větší šanci na dosažení svých cílů, ať už jsou jimi vyšší produktivita zaměstnanců nebo jejich větší spokojenost a častější pocity štěstí. 
+Na tomto blogu plánuji uveřejňovat články, které se budou více zabývat technickou a analytickou stránkou HR analytiky, zároveň se ale budu vždy snažit prezentovat jednotlivá témata v kontextu praktických problémů a otázek, které trápí všechny ty, co se snaží zvýšit nejen efektivitu (*efficiency*), ale také účinnost (*effectiveness*) HR procesů ve firmách a organizacích. Obecně je mým cílem propagovat myšlenku, že když se spojí kritické myšlení, tvrdá (čti spolehlivá, validní a relevantní) data a jejich pečlivá analýza, mají organizace větší šanci na dosažení svých cílů, ať už jsou jimi vyšší produktivita zaměstnanců nebo jejich větší spokojenost a štěstí. 
 
 Názory a postoje prezentované na tomto blogu jsou pouze mé vlastní, a nemusí tak tedy nutně odrážet oficiální názory a postoje žádného z mých současných nebo bývalých zaměstnavatelů.
