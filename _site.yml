@@ -2,8 +2,8 @@ name: "People_Analytics_Blog"
 title: "Blog About People Analytics"
 description: |
   Exploring People Analytics topics using R & Python 
-output_dir: "_site"
 base_url: https://blog-about-people-analytics.netlify.com/
+output_dir: "_site"
 collections:
   posts:
     disqus: People_Analytics_Blog
