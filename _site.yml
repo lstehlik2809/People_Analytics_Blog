@@ -6,7 +6,9 @@ base_url: https://blog-about-people-analytics.netlify.com/
 output_dir: "_site"
 collections:
   posts:
-    disqus: People_Analytics_Blog
+    disqus:
+      shortname: People_Analytics_Blog
+      hidden: false
     share: [twitter, linkedin]
 navbar:
   logo: images/ludekstehlik.jpg
