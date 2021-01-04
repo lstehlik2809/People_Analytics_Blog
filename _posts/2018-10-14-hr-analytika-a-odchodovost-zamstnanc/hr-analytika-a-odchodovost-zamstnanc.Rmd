@@ -47,9 +47,9 @@ library(tidyverse)
 
 # Nacteni dat po jejich stazeni z https://www.bls.gov/news.release/jolts.t18.htm , resp. 
 # https://data.bls.gov/pdq/SurveyOutputServlet
-unmpl_data <- read_xlsx("C:/Users/lstehlik/Documents/_WORKFORCE_ANALYTICS/People_Analytics_Blog/_posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/BLS_Unemployment_Rates.xlsx", sheet = "Unemployment Rate", col_names = TRUE)
+unmpl_data <- read_xlsx("D:/_WORKFORCE_ANALYTICS/People_Analytics_Blog/_posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/BLS_Unemployment_Rates.xlsx", sheet = "Unemployment Rate", col_names = TRUE)
 
-quits_data <- read_xlsx("C:/Users/lstehlik/Documents/_WORKFORCE_ANALYTICS/People_Analytics_Blog/_posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/BLS_Quits_Rates.xlsx")
+quits_data <- read_xlsx("D:/_WORKFORCE_ANALYTICS/People_Analytics_Blog/_posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc//BLS_Quits_Rates.xlsx")
 
 # Priprava dat pro vizualizaci ------------------------------------
 

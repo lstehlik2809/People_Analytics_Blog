@@ -1307,7 +1307,7 @@
   padding-bottom: 12px;
 }
 .posts-list {
-  margin-top: 24px;
+  margin-top: 60px;
   margin-bottom: 24px;
 }
 
@@ -1325,8 +1325,7 @@
 
 .posts-list .posts-list-caption {
   grid-column: screen;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 400;
 }
 
 .posts-list .post-preview h2 {
@@ -1442,9 +1441,6 @@
 @media(min-width: 768px) {
   .posts-list .post-preview h2 {
     font-size: 26px;
-  }
-  .posts-list {
-    margin-top: 60px;
   }
   .posts-list .post-preview .thumbnail {
     float: right;
@@ -1597,6 +1593,20 @@ function init_posts_list() {
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
+<h1 class="posts-list-caption">Blog About People Analytics</h1>
+<a href="posts/2020-12-31-segmentedregression/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["english language","segmented regression","interrupted time series data","bayesian inference","brms","r","well-being & work-life balance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 30, 2020</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png"/>
+</div>
+<div class="description">
+<h2>Modeling Impact of COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being</h2>
+<p>Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</p>
+</div>
+</a>
 <a href="posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["czech language","employee turnover","shiny","dashboard","r"]}</script>
 <div class="metadata">
@@ -1629,6 +1639,14 @@ function init_posts_list() {
 <h3>Categories</h3>
 <ul>
 <li>
+<a href="#bayesian_inference">bayesian inference</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#brms">brms</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
 <a href="#correlation_analysis">correlation analysis</a>
 <span class="category-count">(1)</span>
 </li>
@@ -1649,6 +1667,14 @@ function init_posts_list() {
 <span class="category-count">(1)</span>
 </li>
 <li>
+<a href="#english_language">english language</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#interrupted_time_series_data">interrupted time series data</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
 <a href="#methodology">methodology</a>
 <span class="category-count">(1)</span>
 </li>
@@ -1658,7 +1684,11 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#r">r</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#segmented_regression">segmented regression</a>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#shiny">shiny</a>
@@ -1668,6 +1698,10 @@ function init_posts_list() {
 <a href="#structural_equation_modeling">structural equation modeling</a>
 <span class="category-count">(1)</span>
 </li>
+<li>
+<a href="#well-being_&amp;_work-life_balance">well-being &amp; work-life balance</a>
+<span class="category-count">(1)</span>
+</li>
 </ul>
 </div>
 </div>
@@ -1675,7 +1709,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Blog About People Analytics</h1>

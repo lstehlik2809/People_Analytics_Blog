@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2020-12-31-segmentedregression/",
+    "title": "Modeling Impact of COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being",
+    "description": "Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2020-12-31",
+    "categories": [
+      "english language",
+      "segmented regression",
+      "interrupted time series data",
+      "bayesian inference",
+      "brms",
+      "r",
+      "well-being & work-life balance"
+    ],
+    "preview": "posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png",
+    "last_modified": "2021-01-04T20:38:20+01:00",
+    "preview_width": 1356,
+    "preview_height": 680
+  },
+  {
     "path": "posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/",
     "title": "HR analytika a odchodovost zaměstnanců",
     "description": "Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.",
@@ -18,7 +43,7 @@
       "r"
     ],
     "preview": "posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png",
-    "last_modified": "2018-10-23T17:49:38+02:00",
+    "last_modified": "2020-12-31T18:36:37+01:00",
     "preview_width": 1317,
     "preview_height": 926
   },
