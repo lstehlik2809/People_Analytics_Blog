@@ -503,7 +503,7 @@ ggpubr::ggarrange(
 In conclusion, we can say that there is some evidence that COVID-19 pandemic prompted people to be more interested in topics related to work-life balance and well-being. I wish us all that we will be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
 
 
-P.S. The whole script is available in Jupyter Notebook on GitHub.  
+P.S. The whole script is available in [Jupyter Notebook on GitHub](https://github.com/lstehlik2809/Bayesian-segmented-regression.git).  
 
 
 
