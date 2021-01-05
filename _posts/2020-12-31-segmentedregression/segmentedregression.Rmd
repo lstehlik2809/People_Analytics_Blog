@@ -1,7 +1,7 @@
 ---
-title: "Modeling Impact of COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being"
+title: "Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being"
 description: |
-  Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
+  Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
 preview: ./workLifeBalanceGoogleTrends.png
 author:
   - name: Luděk Stehlík
@@ -29,7 +29,7 @@ The turn of the year, which is full of all sorts of resolutions to change for th
 
 One of the tools that can help us with that is [segmented regression analysis of interrupted time series data](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf) (thanks to [Masatake Hirono](https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_) for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a [quasi experimental study design](https://en.wikipedia.org/wiki/Quasi-experiment) that are often in the organizational context the best alternative to the “gold standard” of [randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) that are not always realizable or politically acceptable.
 
-For illustration, let's use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from [Google Trends](https://trends.google.com/trends/?geo=US) using search terms *work-life balance* and *well-being* (see Fig. 1 and 2 below).
+For illustration, let's use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to the COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from [Google Trends](https://trends.google.com/trends/?geo=US) using search terms *work-life balance* and *well-being* (see Fig. 1 and 2 below).
 
 <img src="./workLifeBalanceGoogleTrends.png">
 *Fig. 1: Interest in “work-life balance” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.*  
@@ -43,7 +43,7 @@ For illustration, let's use this tool for testing hypothesis about people’s in
 
 <br>  
 
-Based solely on the visual inspection of the graphs, it is pretty difficult to tell whether there was some effect of COVID-19 or not, especially in the case of work-life balance (for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020). For sure it’s not a job for “inter-ocular trauma test” when the existence of the effect hits you directly between the eyes. We need to rely here on inferential statistics and its ability to help us with distinguishing signal from noise.
+Based solely on the visual inspection of the graphs, it is pretty difficult to tell whether there was some effect of the COVID-19 pandemic or not, especially in the case of work-life balance (for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020). For sure it’s not a job for “inter-ocular trauma test” when the existence of the effect hits you directly between the eyes. We need to rely here on inferential statistics and its ability to help us with distinguishing signal from noise.
 
 Before conducting the analysis itself, we need to wrangle the data from Google Trends a little bit using the recipe presented in [the Wagner, Zhang, and Ross-Degnan’s paper](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf). Specifically, we need the following five variables (or six, given that we have two dependent variables):  
 
@@ -131,7 +131,7 @@ DT::datatable(
 
 ```
   
-*Table 1: Final dataset used for testing hypothesis about impact of COVID-19 pandemic on people's interest in work-life balance and well-being.*  
+*Table 1: Final dataset used for testing hypothesis about impact of the COVID-19 pandemic on people's interest in work-life balance and well-being.*  
 
 
 <br>  
@@ -504,7 +504,7 @@ ggpubr::ggarrange(
 
 <br> 
 
-In conclusion, we can say that there is some evidence that COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
+In conclusion, we can say that there is some evidence that the COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
 
 
 P.S. The whole script is available in [Jupyter Notebook on GitHub](https://github.com/lstehlik2809/Bayesian-segmented-regression.git).  
