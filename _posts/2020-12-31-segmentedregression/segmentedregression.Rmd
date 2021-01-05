@@ -20,16 +20,16 @@ output:
     self_contained: false
 ---
 
-The turn of the year, which is full of all sorts of resolutions to change for the better in our private lives and in our organizations, is a good time to remind ourselves that analytic tools can be very helpful in our efforts to make these resolutions come true. One way they can help us is by verifying that we have really achieved our stated goals and that we are not just fooling ourselves in believing so. You probably know the [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)'s famous principle of critical thinking...
+The turn of the year, which is full of all sorts of resolutions to change for the better in our private lives and in our organizations, is a good time to remind ourselves that analytic tools can be very helpful in our efforts to make these resolutions come true. One way they can help us is by verifying that we have really achieved our stated goals and that we are not just fooling ourselves into believing so. We need to keep in mind [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)'s famous principle of critical thinking...
 
 <img src="./feynman.jpg">  
 
 
 <br>  
 
-One of the tools that can help with that is [segmented regression analysis of interrupted time series data](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf) (thanks to [Masatake Hirono](https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_) for pointing me to the existence of this tool). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a [quasi experimental study design](https://en.wikipedia.org/wiki/Quasi-experiment) that are in the organizational context the best alternative to the “gold standard” of [randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) that are not always feasible or politically acceptable.
+One of the tools that can help us with that is [segmented regression analysis of interrupted time series data](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf) (thanks to [Masatake Hirono](https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_) for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a [quasi experimental study design](https://en.wikipedia.org/wiki/Quasi-experiment) that are often in the organizational context the best alternative to the “gold standard” of [randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) that are not always realizable or politically acceptable.
 
-For illustration, let's use this tool for testing hypothesis about the people’s increased interest in topics related to work-life balance and well-being due to COVID-19 pandemic and following changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from [Google Trends](https://trends.google.com/trends/?geo=US) using search terms “work-life balance” and “well-being” (see Fig. 1 and 2 below).
+For illustration, let's use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from [Google Trends](https://trends.google.com/trends/?geo=US) using search terms *work-life balance* and *well-being* (see Fig. 1 and 2 below).
 
 <img src="./workLifeBalanceGoogleTrends.png">
 *Fig. 1: Interest in “work-life balance” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.*  
@@ -48,10 +48,10 @@ Based solely on the visual inspection of the graphs, it is pretty difficult to t
 Before conducting the analysis itself, we need to wrangle the data from Google Trends a little bit using the recipe presented in [the Wagner, Zhang, and Ross-Degnan’s paper](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf). Specifically, we need the following five variables (or six, given that we have two dependent variables):  
 
 * **search interest** – numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;  
-* **elapsed time** – numerical variable representing time measured as a number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the trend in the data;  
-* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing the hypothesis about the effect of pandemic on people’s interest in in work-life balance and well-being;  
-* **elapsed time after pandemic onset** – numerical variable representing time measured as a number of months that elapsed from the beginning of pandemic;  
-* **month** – categorical variable representing specific month within a year; this variable enables controlling for effect of seasonality.
+* **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
+* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing hypothesis about the effect of pandemic on people’s interest in work-life balance and well-being;  
+* **elapsed time after pandemic onset** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the onset of pandemic;    
+* **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 
@@ -136,11 +136,15 @@ DT::datatable(
 
 <br>  
 
-Now let’s fit the data to the model and check what it tells us about the effect of pandemic on people’s interest in work-life balance and well-being. We will use [brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) that enables making inferences about statistical models’ parameters within Bayesian inferential framework.  
+We will model our data using common segmented regression models that have following general structure:  
 
-Given that we are dealing with correlated and truncated data, there are two specific terms – autocorrelation and truncation term – in the models that treats these specific characteristics of our data. We also need to specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that generates posterior samples of our models’ parameters.  
+$$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
 
-Bayesian framework also enables us to specify priors for estimated parameter and through them include our domain knowledge in the analysis. The specified priors are important for both parameter estimation and hypothesis testing as they define our starting information state before we take into account collected data. Here we will use rather wide, uninformative, and only mildly regularizing priors (it means that the results of the inference will be very close to the results of standard, frequentist parameter estimation/hypothesis testing). 
+Given that we are dealing with correlated and truncated data, we will include in our models two specific terms – autocorrelation and truncation terms that will treat these specific characteristics of our data.
+
+Now let’s fit the data to the model and check what it tells us about the effect of pandemic on people’s search interest in work-life balance and well-being. We will use [brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) that enables making inferences about statistical models’ parameters within Bayesian inferential framework.  Because of that, we also need to specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that will generate posterior samples of our models’ parameters.  
+
+Bayesian framework also enables us to specify priors for estimated parameter and through them include our domain knowledge in the analysis. The specified priors are important for both parameter estimation and hypothesis testing as they define our starting information state before we take into account our data. Here we will use rather wide, uninformative, and only mildly regularizing priors (it means that the results of the inference will be very close to the results of standard, frequentist parameter estimation/hypothesis testing). 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hide"}
 
@@ -212,7 +216,7 @@ modelWellBeing <- brms::brm(
   
 <br>  
 
-Before making any inferences, we should make some sanity checks to be sure that the mechanics of the MCMC algorithm worked well and that we can use generated posterior samples for making inferences about our models’ parameters. There are many ways for doing that, but here we will use only visual check of the MCMC chains. We want plots of these chains look like hairy caterpillar which indicates convergence of the underlying Markov chain to stationarity and convergence of Monte Carlo estimators to population quantities, respectively. As can be seen in the Graph 1 and 2 below, in the case of both models we can observe wanted characteristics of the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)     
+Before making any inferences, we should make some sanity checks to be sure that the mechanics of the MCMC algorithm worked well and that we can use generated posterior samples for making inferences about our models’ parameters. There are many ways for doing that, but here we will use only visual check of the MCMC chains. We want plots of these chains look like hairy caterpillar which would indicate convergence of the underlying Markov chain to stationarity and convergence of Monte Carlo estimators to population quantities, respectively. As can be seen in Graph 1 and 2 below, in case of both models we can observe wanted characteristics of the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)     
 
 ```{r fig.height=9, fig.width=8}
 
@@ -292,9 +296,9 @@ brms::pp_check(
 
 <br>
 
-Now, after having sufficient confidence that - using the terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the onset of pandemic.  
+Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the onset of pandemic.  
 
-In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance, which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
+In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 6), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
 
 ```{r fig.width=8}
 
@@ -371,7 +375,7 @@ modelWellBeing %>%
 
 <br>  
 
-To generate more summary statistics about posterior distributions (and also some diagnostic information like `Rhat` or `ESS`), we can use well-known `summary()` function.
+To generate more summary statistics about posterior distributions (and also some diagnostic information like `Rhat` or `ESS`), we can use `summary()` function.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
 
@@ -393,7 +397,7 @@ summary(modelWellBeing)
 
 <br> 
 
-Given that for work-life balance model the pandemic term's posterior distribution crosses the zero value, it would useful to know how strong is the evidence in the favor of hypothesis that pandemic term is larger than zero. For that purpose we can extract posterior samples and use them for simple calculation of the proportion of values that are larger/smaller than zero. The resulting proportions show that the vast majority of posterior distribution (approximately 93%) lies above that value.
+Given that for work-life balance model the posterior distribution of pandemic term crosses the zero value, it would be useful to know how strong is the evidence in the favor of hypothesis that pandemic term is larger than zero. For that purpose we can extract posterior samples and use them for calculation of the proportion of values that are larger/smaller than zero. The resulting proportions show that the vast majority of posterior distribution (approximately 93%) lies above zero.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
 
@@ -411,7 +415,7 @@ sum(samples$b_pandemic < 0) / nrow(samples)
 
 <br> 
 
-Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value around 12.5 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. In other words, the data should have strong impact on our believe about the existence of pandemic's effect on people's search interest in work-life balance.  
+Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value around 12.5 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 12.5 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
 
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
@@ -446,7 +450,7 @@ Besides the major hypothesis we may be also interested in...
 * trend after the onset of pandemic, and also  
 * seasonality of people's search interest over the months within individual years.  
 
-For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in the case of work-life balance searches, the overall trend across the last ten years is decreasing, after the onset of pandemic the trend is rather stagnating, and within individual years the search interest follows the work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In the case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
+For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the onset of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
@@ -500,7 +504,7 @@ ggpubr::ggarrange(
 
 <br> 
 
-In conclusion, we can say that there is some evidence that COVID-19 pandemic prompted people to be more interested in topics related to work-life balance and well-being. I wish us all that we will be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
+In conclusion, we can say that there is some evidence that COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
 
 
 P.S. The whole script is available in [Jupyter Notebook on GitHub](https://github.com/lstehlik2809/Bayesian-segmented-regression.git).  
