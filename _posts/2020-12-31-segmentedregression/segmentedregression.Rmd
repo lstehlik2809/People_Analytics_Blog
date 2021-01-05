@@ -1,7 +1,7 @@
 ---
 title: "Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being"
 description: |
-  Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
+  Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
 preview: ./workLifeBalanceGoogleTrends.png
 author:
   - name: Luděk Stehlík

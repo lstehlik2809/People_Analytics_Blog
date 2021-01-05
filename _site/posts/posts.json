@@ -2,7 +2,7 @@
   {
     "path": "posts/2020-12-31-segmentedregression/",
     "title": "Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being",
-    "description": "Illustration of Bayesian segmented regression analysis of interrupted time series data with testing hypothesis about impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.",
+    "description": "Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.",
     "author": [
       {
         "name": "Luděk Stehlík",
@@ -20,7 +20,7 @@
       "well-being & work-life balance"
     ],
     "preview": "posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png",
-    "last_modified": "2021-01-05T10:44:14+01:00",
+    "last_modified": "2021-01-05T11:04:32+01:00",
     "preview_width": 1356,
     "preview_height": 680
   },
