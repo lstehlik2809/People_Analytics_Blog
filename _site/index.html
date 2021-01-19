@@ -1276,209 +1276,6 @@
 <!--/radix_placeholder_site_before_body-->
 <!--radix_placeholder_article_listing-->
 
-<style type="text/css">
-
-/* Styles for listing layout (hide title) */
-.layout-listing d-title, .layout-listing .d-title {
-  display: none;
-}
-
-/* Styles for posts lists (not auto-injected) */
-
-
-.posts-with-sidebar {
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.posts-list .description h2,
-.posts-list .description p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-}
-
-.posts-list .description h2 {
-  font-weight: 700;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.posts-list h2.post-tag {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 12px;
-}
-.posts-list {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.posts-list .post-preview {
-  text-decoration: none;
-  overflow: hidden;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 24px 0;
-}
-
-.post-preview-last {
-  border-bottom: none !important;
-}
-
-.posts-list .posts-list-caption {
-  grid-column: screen;
-  font-weight: 400;
-}
-
-.posts-list .post-preview h2 {
-  margin: 0 0 6px 0;
-  line-height: 1.2em;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.posts-list .post-preview p {
-  margin: 0 0 12px 0;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-
-.posts-list .post-preview .thumbnail {
-  box-sizing: border-box;
-  margin-bottom: 24px;
-  position: relative;
-  max-width: 500px;
-}
-.posts-list .post-preview img {
-  width: 100%;
-  display: block;
-}
-
-.posts-list .metadata {
-  font-size: 12px;
-  line-height: 1.4em;
-  margin-bottom: 18px;
-}
-
-.posts-list .metadata > * {
-  display: inline-block;
-}
-
-.posts-list .metadata .publishedDate {
-  margin-right: 1em;
-}
-
-.posts-list .metadata .tags {
-  margin-top: 1em;
-}
-
-.posts-list .tags .tag {
-  color: rgba(0,0,0,0.67);
-  padding: 0.3em 0.5em;
-  margin: 0;
-  font-size: 80%;
-  border: 1px solid rgba(0,0,0,0.4);
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.posts-list img {
-  opacity: 1;
-}
-
-.posts-list img[data-src] {
-  opacity: 0;
-}
-
-.posts-more {
-  clear: both;
-}
-
-
-.posts-sidebar {
-  font-size: 16px;
-}
-
-.posts-sidebar h3 {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.sidebar-section {
-  margin-bottom: 30px;
-}
-
-.categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.categories li {
-  color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 0;
-}
-
-.categories li>a {
-  border-bottom: none;
-}
-
-.categories li>a:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.categories .active {
-  font-weight: 600;
-}
-
-.categories .category-count {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-
-@media(min-width: 768px) {
-  .posts-list .post-preview h2 {
-    font-size: 26px;
-  }
-  .posts-list .post-preview .thumbnail {
-    float: right;
-    width: 35%;
-    margin-bottom: 0;
-  }
-  .posts-list .post-preview .description {
-    float: left;
-    width: 45%;
-  }
-  .posts-list .post-preview .metadata {
-    float: left;
-    width: 15%;
-    margin-top: 8px;
-  }
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 16px;
-  }
-  .posts-with-sidebar .posts-list {
-    float: left;
-    width: 72%;
-  }
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 20%;
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-.downlevel .posts-list .post-preview {
-  color: inherit;
-}
-
-</style>
 
 <script type="application/javascript">
 
@@ -1530,16 +1327,16 @@ function init_posts_list() {
     set_posts_visible($('.posts-list').children('a'), false);
 
     // if we have a hash filter
-    if (window.location.hash) {
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
 
       // mark posts that match the category visible
-      var page_category = window.location.hash.replace("#", "");
+      var page_category = window.location.hash.replace(/^#category:/, "");
       var posts = $('.post-metadata').map(function(idx, script) {
         var metadata = $.parseJSON($(script).html());
         var post = null;
         $.each(metadata.categories, function(idx, category) {
           category = category.replace(/ /g,"_");
-          if (category == page_category) {
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
             post = $(script).parent().get();
             return false;
           }
@@ -1551,10 +1348,22 @@ function init_posts_list() {
       // mark the hash active
       $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
 
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
     } else {
 
       // no hash filter, make all posts visible (subject to max display)
       set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
 
     }
   }
@@ -1569,6 +1378,12 @@ function init_posts_list() {
       $('.posts-more a').addClass('hidden');
     }
   }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
 
   // hash filter handling
   apply_hash_filter();
@@ -1593,43 +1408,71 @@ function init_posts_list() {
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
-<h1 class="posts-list-caption">Blog About People Analytics</h1>
+<h1 class="posts-list-caption" data-caption="Blog About People Analytics">Blog About People Analytics</h1>
 <a href="posts/2020-12-31-segmentedregression/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["english language","segmented regression","interrupted time series data","bayesian inference","brms","r","well-being & work-life balance"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["segmented regression","interrupted time series data","bayesian inference","brms","r","well-being & work-life balance"]}</script>
 <div class="metadata">
 <div class="publishedDate">Dec. 30, 2020</div>
+<div class="dt-authors">
+<div class="dt-author">Luděk Stehlík</div>
+</div>
 </div>
 <div class="thumbnail">
-<img data-src="posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png"/>
+<img src="posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png"/>
 </div>
 <div class="description">
 <h2>Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being</h2>
+<div class="dt-tags">
+<div class="dt-tag">segmented regression</div>
+<div class="dt-tag">interrupted time series data</div>
+<div class="dt-tag">bayesian inference</div>
+<div class="dt-tag">brms</div>
+<div class="dt-tag">r</div>
+<div class="dt-tag">well-being &amp; work-life balance</div>
+</div>
 <p>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</p>
 </div>
 </a>
 <a href="posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["czech language","employee turnover","shiny","dashboard","r"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["employee turnover","shiny dashboard","r"]}</script>
 <div class="metadata">
 <div class="publishedDate">Oct. 14, 2018</div>
+<div class="dt-authors">
+<div class="dt-author">Luděk Stehlík</div>
+</div>
 </div>
 <div class="thumbnail">
-<img data-src="posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png"/>
+<img src="posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png"/>
 </div>
 <div class="description">
 <h2>HR analytika a odchodovost zaměstnanců</h2>
+<div class="dt-tags">
+<div class="dt-tag">employee turnover</div>
+<div class="dt-tag">shiny dashboard</div>
+<div class="dt-tag">r</div>
+</div>
 <p>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.</p>
 </div>
 </a>
 <a href="posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["czech language","employee selection","structural equation modeling","multivariate regression analysis","correlation analysis","methodology","r"]}</script>
+<script class="post-metadata" type="text/json">{"categories":["structural equation modeling","multivariate regression analysis","correlation analysis","r"]}</script>
 <div class="metadata">
 <div class="publishedDate">Oct. 11, 2018</div>
+<div class="dt-authors">
+<div class="dt-author">Luděk Stehlík</div>
+</div>
 </div>
 <div class="thumbnail">
-<img data-src="posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png"/>
+<img src="posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-10-1.png"/>
 </div>
 <div class="description">
 <h2>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</h2>
+<div class="dt-tags">
+<div class="dt-tag">structural equation modeling</div>
+<div class="dt-tag">multivariate regression analysis</div>
+<div class="dt-tag">correlation analysis</div>
+<div class="dt-tag">r</div>
+</div>
 <p>Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu "Áček", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.</p>
 </div>
 </a>
@@ -1639,67 +1482,51 @@ function init_posts_list() {
 <h3>Categories</h3>
 <ul>
 <li>
-<a href="#bayesian_inference">bayesian inference</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#brms">brms</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#correlation_analysis">correlation analysis</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#czech_language">czech language</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#dashboard">dashboard</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#employee_selection">employee selection</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#employee_turnover">employee turnover</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#english_language">english language</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#interrupted_time_series_data">interrupted time series data</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#methodology">methodology</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#multivariate_regression_analysis">multivariate regression analysis</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#r">r</a>
+<a href="#category:articles">articles</a>
 <span class="category-count">(3)</span>
 </li>
 <li>
-<a href="#segmented_regression">segmented regression</a>
+<a href="#category:bayesian_inference">bayesian inference</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#shiny">shiny</a>
+<a href="#category:brms">brms</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#structural_equation_modeling">structural equation modeling</a>
+<a href="#category:correlation_analysis">correlation analysis</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
-<a href="#well-being_&amp;_work-life_balance">well-being &amp; work-life balance</a>
+<a href="#category:employee_turnover">employee turnover</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:interrupted_time_series_data">interrupted time series data</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:multivariate_regression_analysis">multivariate regression analysis</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:r">r</a>
+<span class="category-count">(3)</span>
+</li>
+<li>
+<a href="#category:segmented_regression">segmented regression</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:shiny_dashboard">shiny dashboard</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:structural_equation_modeling">structural equation modeling</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:well-being_&amp;_work-life_balance">well-being &amp; work-life balance</a>
 <span class="category-count">(1)</span>
 </li>
 </ul>
@@ -1709,7 +1536,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Blog About People Analytics</h1>

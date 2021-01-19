@@ -7,16 +7,16 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-11-2018
 categories:
-  - czech language
-  - employee selection
   - structural equation modeling
   - multivariate regression analysis
   - correlation analysis
-  - methodology
   - r
 output:
-  radix::radix_article:
+  distill::distill_article:
     self_contained: false
+    toc: true
+    toc_depth: 1
+    toc_float: true
 ---
 
 HR analytika už dnes není ve světě HR žádnou horkou novinkou. Téměř všichni z oboru už o HR analytice něco slyšeli, něco o ní vědí a případně se jí už také pokouší ve svých organizacích v nějaké podobě zavádět. Zároveň většinou uznávají její důležitost při transformaci HR z podpůrné a administrativní funkce na funkci, která dokáže organizacím bezprostředně pomáhat dosahovat jejich strategických cílů. Navzdory tomuto všeobecnému povědomí o HR analytice a navzdory řadě úspěšně realizovaných HR analytických projektů (viz např. série článků od [Davida Greena](https://www.linkedin.com/in/davidrgreen/) - [článek 1](https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-1-david-green/?trk=mp-author-card), [článek 2](https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-2-david-green/?published=t), [článek 3](https://www.linkedin.com/pulse/20-more-people-analytics-case-studies-part-i-david-green/), [článek 4](https://www.linkedin.com/pulse/20-people-analytics-case-studies-part-ii-david-green/?published=t&lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BFsCNnpkoSuyb52Adn9lUhw%3D%3D)) překvapivě málo organizací HR analytiku reálně a systematicky využívá. Tento stav reflektují i výsledky výzkumu [2018 Human Capital Trends](https://www2.deloitte.com/cz/en/pages/human-capital/articles/globalni-trendy-v-oblasti-lidskeho-kapitalu-pro-rok-2018.html) od společnosti Deloitte, ze kterých vyplývá, že organizace si většinou uvědomují strategickou důležitost výzvy, kterou představuje datifikace HR, zároveň se ale necítí být na čelení této výzvě příliš dobře připraveny. Už nějakou dobu platí, že když už se v organizaci s HR daty nějak pracuje, tak je to většinou pouze na úrovni nějakého základního reportingu vybraných HR metrik a KPIs typu náklady na nábor, délka období neobsazenosti volné pracovní pozice, míra ne/dobrovolné odchodovosti zaměstnanců, počet zaměstnanců na jednoho HR business partnera apod. Slabinou tohoto přístupu je, že takto sledované metriky jsou často relevantní pouze pro monitorování a řízení efektivnosti HR coby nákladového střediska, ale již méně pro dosahování strategických cílů organizace. Spíše výjimečně se potom v tomto kontextu využívají nějaké pokročilejší analytiky, které obecně mají větší potenciál přicházet s doporučeními s přímým dopadem na schopnost organizací dosahovat svých strategických cílů. 
