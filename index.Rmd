@@ -1,5 +1,5 @@
 ---
 title: "Blog About People Analytics"
-site: radix::radix_website
+site: distill::distill_website
 listing: posts
 ---

@@ -18,4 +18,4 @@ navbar:
       href: bio.html
     - icon: fa fa-rss
       href: index.xml
-output: radix::radix_article
+output: distill::distill_article

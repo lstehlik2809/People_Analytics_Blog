@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics using R &amp; Python 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Dec 2020 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</link>
       <description>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</description>
       <category>segmented regression</category>
@@ -20,7 +20,7 @@
       <category>r</category>
       <category>well-being &amp; work-life balance</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</guid>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png" medium="image" type="image/png" width="1356" height="680"/>
     </item>
     <item>
@@ -32,7 +32,7 @@
       <category>shiny dashboard</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</guid>
-      <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png" medium="image" type="image/png" width="1317" height="926"/>
     </item>
     <item>
