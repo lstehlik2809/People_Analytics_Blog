@@ -8,12 +8,13 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 12-31-2020
 categories:
+  - well-being
+  - work-life balance
   - segmented regression
   - interrupted time series data
   - bayesian inference
-  - brms
   - r
-  - well-being & work-life balance
+
 output:
   distill::distill_article:
     self_contained: false
@@ -29,7 +30,9 @@ The turn of the year, which is full of all sorts of resolutions to change for th
 
 <br>  
 
-One of the tools that can help us with that is [segmented regression analysis of interrupted time series data](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf) (thanks to [Masatake Hirono](https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_) for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a [quasi experimental study design](https://en.wikipedia.org/wiki/Quasi-experiment) that are often in the organizational context the best alternative to the “gold standard” of [randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) that are not always realizable or politically acceptable.
+One of the tools that can help us with that is [segmented regression analysis of interrupted time series data](https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf) (thanks to [Masatake Hirono](https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_) for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a [quasi experimental study design](https://en.wikipedia.org/wiki/Quasi-experiment) that are often in the organizational context the best alternative to the “gold standard” of [randomized controlled trials](https://en.wikipedia.org/wiki/Randomized_controlled_trial) (RCTs) that are not always realizable or politically acceptable.  
+
+## Search interest in work-life balance and well-being  
 
 For illustration, let's use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to the COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from [Google Trends](https://trends.google.com/trends/?geo=US) using search terms *work-life balance* and *well-being* (see Fig. 1 and 2 below).
 
@@ -138,6 +141,8 @@ DT::datatable(
 
 <br>  
 
+## Bayesian segmented regression  
+
 We will model our data using common segmented regression models that have following general structure:  
 
 $$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
@@ -216,7 +221,9 @@ modelWellBeing <- brms::brm(
 ```  
   
   
-<br>  
+<br>
+
+## Some necessary sanity checks
 
 Before making any inferences, we should make some sanity checks to be sure that the mechanics of the MCMC algorithm worked well and that we can use generated posterior samples for making inferences about our models’ parameters. There are many ways for doing that, but here we will use only visual check of the MCMC chains. We want plots of these chains look like hairy caterpillar which would indicate convergence of the underlying Markov chain to stationarity and convergence of Monte Carlo estimators to population quantities, respectively. As can be seen in Graph 1 and 2 below, in case of both models we can observe wanted characteristics of the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)     
 
@@ -297,6 +304,8 @@ brms::pp_check(
 *Graph 4: Posterior predictive checks comparing simulated/replicated data under the fitted modelWellBeing with the observed data.*
 
 <br>
+
+## Results of the analysis
 
 Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the onset of pandemic.  
 

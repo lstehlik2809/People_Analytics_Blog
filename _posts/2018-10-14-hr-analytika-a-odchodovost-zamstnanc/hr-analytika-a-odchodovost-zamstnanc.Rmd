@@ -9,6 +9,7 @@ author:
 date: 10-14-2018
 categories:
   - employee turnover
+  - evidence-based hr
   - shiny dashboard
   - r
 output:
