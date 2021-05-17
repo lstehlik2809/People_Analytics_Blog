@@ -6,7 +6,7 @@ preview: ./PayGap.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 01-29-2021
+date: 05-17-2021
 categories:
   - gender pay gap
   - gender pay audit
@@ -347,7 +347,7 @@ Abychom dokázali izolovat vliv samotného pohlaví zaměstnanců na výši plat
 
 Statistické modelování, podobně jako jakékoli jiné modelování ve vědě, ale i v běžném životě, není ničím jiným než snahou **vytvořit menší a zjednodušený model našeho světa, který však jeho chování odráží dostatečně věrně na to, abychom s jeho pomocí mohli činit úsudky a předpovědi o skutečném světě a zakládat na něm svá rozhodnutí** (k tomuto tématu viz srozumitelně napsaný popularizující článek [Modeluji, tedy jsem](https://www.bisop.eu/josef-slerka-modeluji-tedy-jsem-lidove-noviny/) od [Josefa Šlerky](https://www.linkedin.com/in/josefslerka/)). Statistické modelování se potom od jiných druhů modelování liší v tom, že se ve větší míře opírá o nástroje matematické statistiky a teorie pravděpodobnosti.
 
-Překvapivě mnoho jevů našeho světa se dá úspěšně modelovat a předpovídat pomocí relativně jednoduchých statistických modelů **zobecněné lineární regrese** (*Generalized Linear Models*, GLM). Ty předpokládají, že závislá proměnná, transformovaná prostřednictvím tzv. **linkovací funkce** (*link function*), je funkcí lineární kombinace nezávislých proměnných. Nejznámější a také historicky nejstarší z této rodiny statistických modelů je **klasický lineární model**, který předpokládá normální rozdělení závislé proměnné, resp. reziduí (chyb) okolo predikované/ očekávané střední hodnoty závislé proměnné (viz ilustrativní obrázek níže). 
+Překvapivě mnoho jevů našeho světa se dá úspěšně modelovat a předpovídat pomocí relativně jednoduchých statistických modelů **zobecněné lineární regrese** (*Generalized Linear Models*, GLM). Ty předpokládají, že závislá proměnná, transformovaná prostřednictvím tzv. **linkovací funkce** (*link function*), je funkcí lineární kombinace nezávislých proměnných. Nejznámější z této rodiny statistických modelů je **klasický lineární model**, který předpokládá normální rozdělení závislé proměnné, resp. reziduí (chyb) okolo predikované/ očekávané střední hodnoty závislé proměnné (viz ilustrativní obrázek níže). 
 
 <img src="./glm.png">  
 
