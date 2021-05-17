@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -1433,11 +1434,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="segmentedregression_files/header-attrs-2.6/header-attrs.js"></script>
-  <script src="segmentedregression_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-  <script src="segmentedregression_files/jquery-1.12.4/jquery.min.js"></script>
+  <script src="segmentedregression_files/header-attrs-2.7/header-attrs.js"></script>
+  <script src="segmentedregression_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="segmentedregression_files/jquery-3.5.1/jquery.min.js"></script>
   <link href="segmentedregression_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-  <script src="segmentedregression_files/datatables-binding-0.12/datatables.js"></script>
+  <script src="segmentedregression_files/datatables-binding-0.17/datatables.js"></script>
   <link href="segmentedregression_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
   <link href="segmentedregression_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
   <script src="segmentedregression_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
@@ -1451,8 +1452,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="segmentedregression_files/nouislider-7.0.10/jquery.nouislider.min.js"></script>
   <link href="segmentedregression_files/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
   <script src="segmentedregression_files/selectize-0.12.0/selectize.min.js"></script>
-  <link href="segmentedregression_files/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-  <script src="segmentedregression_files/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+  <link href="segmentedregression_files/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="segmentedregression_files/crosstalk-1.1.1/js/crosstalk.min.js"></script>
   <script src="segmentedregression_files/popper-2.6.0/popper.min.js"></script>
   <link href="segmentedregression_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="segmentedregression_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1520,9 +1521,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>One of the tools that can help us with that is <a href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">segmented regression analysis of interrupted time series data</a> (thanks to <a href="https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_">Masatake Hirono</a> for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a <a href="https://en.wikipedia.org/wiki/Quasi-experiment">quasi experimental study design</a> that are often in the organizational context the best alternative to the “gold standard” of <a href="https://en.wikipedia.org/wiki/Randomized_controlled_trial">randomized controlled trials</a> (RCTs) that are not always realizable or politically acceptable.</p>
 <h2 id="search-interest-in-work-life-balance-and-well-being">Search interest in work-life balance and well-being</h2>
 <p>For illustration, let’s use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to the COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from <a href="https://trends.google.com/trends/?geo=US">Google Trends</a> using search terms <em>work-life balance</em> and <em>well-being</em> (see Fig. 1 and 2 below).</p>
-<p><img src="workLifeBalanceGoogleTrends.png"> <em>Fig. 1: Interest in “work-life balance” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
+<p><img src="workLifeBalanceGoogleTrends.PNG"> <em>Fig. 1: Interest in “work-life balance” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
 <p><br></p>
-<p><img src="wellBeingGoogleTrends.png"> <em>Fig. 2: Interest in “well-being” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
+<p><img src="wellBeingGoogleTrends.PNG"> <em>Fig. 2: Interest in “well-being” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
 <p><br></p>
 <p>Based solely on the visual inspection of the graphs, it is pretty difficult to tell whether there was some effect of the COVID-19 pandemic or not, especially in the case of work-life balance (for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020). For sure it’s not a job for “inter-ocular trauma test” when the existence of the effect hits you directly between the eyes. We need to rely here on inferential statistics and its ability to help us with distinguishing signal from noise.</p>
 <p>Before conducting the analysis itself, we need to wrangle the data from Google Trends a little bit using the recipe presented in <a href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">the Wagner, Zhang, and Ross-Degnan’s paper</a>. Specifically, we need the following five variables (or six, given that we have two dependent variables):</p>
@@ -1611,8 +1612,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <span class='op'>)</span>
 </code></pre>
 </div>
-<div id="htmlwidget-7d450622b3e07614c5c7" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7d450622b3e07614c5c7">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"date\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1.262304e+12\" data-max=\"1606780800000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"19\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"22\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"132\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"10\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132"],["2010-01-01","2010-02-01","2010-03-01","2010-04-01","2010-05-01","2010-06-01","2010-07-01","2010-08-01","2010-09-01","2010-10-01","2010-11-01","2010-12-01","2011-01-01","2011-02-01","2011-03-01","2011-04-01","2011-05-01","2011-06-01","2011-07-01","2011-08-01","2011-09-01","2011-10-01","2011-11-01","2011-12-01","2012-01-01","2012-02-01","2012-03-01","2012-04-01","2012-05-01","2012-06-01","2012-07-01","2012-08-01","2012-09-01","2012-10-01","2012-11-01","2012-12-01","2013-01-01","2013-02-01","2013-03-01","2013-04-01","2013-05-01","2013-06-01","2013-07-01","2013-08-01","2013-09-01","2013-10-01","2013-11-01","2013-12-01","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01","2017-01-01","2017-02-01","2017-03-01","2017-04-01","2017-05-01","2017-06-01","2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01","2017-12-01","2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01","2018-06-01","2018-07-01","2018-08-01","2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01","2019-03-01","2019-04-01","2019-05-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-11-01","2020-12-01"],[40,72,48,50,100,85,68,67,49,56,69,55,55,35,60,85,68,61,49,47,52,53,92,64,49,51,57,53,65,32,47,68,43,74,49,51,39,53,53,51,58,51,41,45,51,56,64,31,66,59,52,53,61,45,52,45,45,63,57,57,56,46,56,54,42,34,48,54,38,57,73,49,53,56,49,55,64,59,19,41,47,47,67,62,41,71,88,72,44,48,32,34,60,54,67,53,63,66,69,62,55,42,37,43,51,48,48,42,47,59,42,57,60,47,41,46,58,74,70,53,66,46,65,69,68,53,73,71,70,65,67,66],[40,45,49,44,44,40,29,34,36,39,45,35,37,35,50,48,46,29,35,22,45,49,45,32,45,52,51,46,43,38,36,39,40,47,50,36,38,44,42,47,38,32,29,30,38,46,43,33,35,46,54,47,42,32,29,32,42,48,48,35,41,46,54,48,41,39,36,33,42,43,43,33,37,47,50,54,47,43,31,41,47,49,48,41,48,56,60,56,47,33,33,41,49,54,52,44,42,54,56,56,51,39,39,43,54,47,55,46,42,61,49,58,50,42,41,47,58,58,59,42,51,65,81,82,72,69,59,62,88,100,78,61],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>workLifeBalance<\/th>\n      <th>wellBeing<\/th>\n      <th>elapsedTime<\/th>\n      <th>month<\/th>\n      <th>pandemic<\/th>\n      <th>elapsedTimeAfterPandemic<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","columnDefs":[{"className":"dt-right","targets":[2,3,4,6,7]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d7711b80ef4e1ef986d9" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d7711b80ef4e1ef986d9">{"x":{"filter":"top","filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"date\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1.262304e+12\" data-max=\"1606780800000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"19\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"22\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1\" data-max=\"132\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"10\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132"],["2010-01-01","2010-02-01","2010-03-01","2010-04-01","2010-05-01","2010-06-01","2010-07-01","2010-08-01","2010-09-01","2010-10-01","2010-11-01","2010-12-01","2011-01-01","2011-02-01","2011-03-01","2011-04-01","2011-05-01","2011-06-01","2011-07-01","2011-08-01","2011-09-01","2011-10-01","2011-11-01","2011-12-01","2012-01-01","2012-02-01","2012-03-01","2012-04-01","2012-05-01","2012-06-01","2012-07-01","2012-08-01","2012-09-01","2012-10-01","2012-11-01","2012-12-01","2013-01-01","2013-02-01","2013-03-01","2013-04-01","2013-05-01","2013-06-01","2013-07-01","2013-08-01","2013-09-01","2013-10-01","2013-11-01","2013-12-01","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01","2017-01-01","2017-02-01","2017-03-01","2017-04-01","2017-05-01","2017-06-01","2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01","2017-12-01","2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01","2018-06-01","2018-07-01","2018-08-01","2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01","2019-03-01","2019-04-01","2019-05-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-11-01","2020-12-01"],[40,72,48,50,100,85,68,67,49,56,69,55,55,35,60,85,68,61,49,47,52,53,92,64,49,51,57,53,65,32,47,68,43,74,49,51,39,53,53,51,58,51,41,45,51,56,64,31,66,59,52,53,61,45,52,45,45,63,57,57,56,46,56,54,42,34,48,54,38,57,73,49,53,56,49,55,64,59,19,41,47,47,67,62,41,71,88,72,44,48,32,34,60,54,67,53,63,66,69,62,55,42,37,43,51,48,48,42,47,59,42,57,60,47,41,46,58,74,70,53,66,46,65,69,68,53,73,71,70,65,67,66],[40,45,49,44,44,40,29,34,36,39,45,35,37,35,50,48,46,29,35,22,45,49,45,32,45,52,51,46,43,38,36,39,40,47,50,36,38,44,42,47,38,32,29,30,38,46,43,33,35,46,54,47,42,32,29,32,42,48,48,35,41,46,54,48,41,39,36,33,42,43,43,33,37,47,50,54,47,43,31,41,47,49,48,41,48,56,60,56,47,33,33,41,49,54,52,44,42,54,56,56,51,39,39,43,54,47,55,46,42,61,49,58,50,42,41,47,58,58,59,42,51,65,81,82,72,69,59,62,88,100,78,61],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>workLifeBalance<\/th>\n      <th>wellBeing<\/th>\n      <th>elapsedTime<\/th>\n      <th>month<\/th>\n      <th>pandemic<\/th>\n      <th>elapsedTimeAfterPandemic<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","columnDefs":[{"className":"dt-right","targets":[2,3,4,6,7]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <p><em>Table 1: Final dataset used for testing hypothesis about impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being.</em></p>
 <p><br></p>
@@ -1680,7 +1681,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># uploading library for plotting Bayesian models</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://mc-stan.org/bayesplot'>bayesplot</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://mc-stan.org/bayesplot/'>bayesplot</a></span><span class='op'>)</span>
 
 <span class='co'># plotting the MCMC chains for the modelWorkLifeBalance </span>
 <span class='fu'>bayesplot</span><span class='fu'>::</span><span class='fu'><a href='https://mc-stan.org/bayesplot/reference/MCMC-traces.html'>mcmc_trace</a></span><span class='op'>(</span>
@@ -1759,7 +1760,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># uploading library for </span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://mjskay.github.io/tidybayes'>tidybayes</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://mjskay.github.io/tidybayes/'>tidybayes</a></span><span class='op'>)</span>
 
 <span class='co'># visualizing posterior distributions of selected parameters of the modelWorkLifeBalance</span>
 <span class='va'>modelWorkLifeBalance</span> <span class='op'>%&gt;%</span>
@@ -1845,45 +1846,45 @@ Samples: 4 chains, each with iter = 3000; warmup = 1000; thin = 1;
 
 Correlation Structures:
       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-ar[1]     0.21      0.09     0.03     0.39 1.00     6929     5764
+ar[1]     0.21      0.10     0.02     0.40 1.00     6270     5868
 
 Population-Level Effects: 
                          Estimate Est.Error l-95% CI u-95% CI Rhat
-Intercept                   55.60      4.19    47.36    64.02 1.00
+Intercept                   55.54      4.14    47.45    63.58 1.00
 elapsedTime                 -0.05      0.04    -0.13     0.02 1.00
-pandemic                    14.03      9.96    -5.22    34.09 1.00
-elapsedTimeAfterPandemic     0.40      1.59    -2.68     3.54 1.00
-monthFeb                     3.49      4.44    -5.38    12.19 1.00
-monthMar                     4.51      4.92    -5.18    14.20 1.00
-monthApr                     6.61      4.97    -3.26    16.50 1.00
-monthMay                     8.82      4.97    -1.01    18.64 1.00
-monthJun                    -2.82      4.98   -12.55     6.97 1.00
-monthJul                    -7.31      5.05   -17.35     2.48 1.00
-monthAug                    -2.45      5.00   -12.29     7.46 1.00
-monthSep                    -2.20      5.02   -12.29     7.70 1.00
-monthOct                     5.37      4.96    -4.41    15.24 1.00
-monthNov                    12.36      4.95     2.83    22.13 1.00
-monthDec                    -0.63      4.60    -9.53     8.49 1.00
+pandemic                    13.74      9.97    -5.78    33.28 1.00
+elapsedTimeAfterPandemic     0.43      1.59    -2.76     3.56 1.00
+monthFeb                     3.56      4.44    -4.90    12.37 1.00
+monthMar                     4.67      4.88    -4.73    14.25 1.00
+monthApr                     6.66      5.02    -3.18    16.29 1.00
+monthMay                     8.87      4.92    -0.50    18.49 1.00
+monthJun                    -2.75      5.00   -12.42     7.09 1.00
+monthJul                    -7.20      4.97   -16.85     2.37 1.00
+monthAug                    -2.31      4.92   -11.81     7.25 1.00
+monthSep                    -2.11      4.97   -11.81     7.40 1.00
+monthOct                     5.51      4.95    -4.13    15.34 1.00
+monthNov                    12.49      4.88     2.85    21.91 1.00
+monthDec                    -0.55      4.52    -9.34     8.14 1.00
                          Bulk_ESS Tail_ESS
-Intercept                    2982     4366
-elapsedTime                  6859     5161
-pandemic                     5274     5053
-elapsedTimeAfterPandemic     5271     5117
-monthFeb                     3975     5259
-monthMar                     3297     4998
-monthApr                     3343     4860
-monthMay                     3024     4502
-monthJun                     3470     4861
-monthJul                     3385     4434
-monthAug                     3338     4583
-monthSep                     3226     5026
-monthOct                     3352     4802
-monthNov                     3466     4560
-monthDec                     3670     5099
+Intercept                    2952     4244
+elapsedTime                  7762     5483
+pandemic                     5131     5364
+elapsedTimeAfterPandemic     5201     5458
+monthFeb                     3911     4416
+monthMar                     3333     4847
+monthApr                     3481     5652
+monthMay                     3404     5361
+monthJun                     3274     5506
+monthJul                     3176     5052
+monthAug                     3286     4716
+monthSep                     3429     5062
+monthOct                     3509     4939
+monthNov                     3375     4751
+monthDec                     3982     4748
 
 Family Specific Parameters: 
       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-sigma    11.55      0.78    10.16    13.23 1.00     6619     5559
+sigma    11.55      0.79    10.14    13.21 1.00     6279     4973
 
 Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
 and Tail_ESS are effective sample size measures, and Rhat is the potential
@@ -1905,45 +1906,45 @@ Samples: 4 chains, each with iter = 3000; warmup = 1000; thin = 1;
 
 Correlation Structures:
       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-ar[1]     0.24      0.10     0.05     0.43 1.00     6384     5584
+ar[1]     0.24      0.10     0.05     0.43 1.00     6936     6308
 
 Population-Level Effects: 
                          Estimate Est.Error l-95% CI u-95% CI Rhat
-Intercept                   34.80      1.75    31.35    38.33 1.00
+Intercept                   34.83      1.73    31.39    38.22 1.00
 elapsedTime                  0.11      0.02     0.07     0.14 1.00
-pandemic                    21.27      4.22    12.83    29.41 1.00
-elapsedTimeAfterPandemic     0.50      0.65    -0.78     1.83 1.00
-monthFeb                     8.65      1.78     5.18    12.05 1.00
-monthMar                    10.68      1.99     6.82    14.59 1.00
-monthApr                     9.59      2.02     5.62    13.43 1.00
-monthMay                     3.53      2.06    -0.51     7.61 1.00
-monthJun                    -4.34      2.09    -8.51    -0.29 1.00
-monthJul                    -8.03      2.06   -12.15    -4.03 1.00
-monthAug                    -5.73      2.05    -9.75    -1.79 1.00
-monthSep                     4.59      2.04     0.60     8.50 1.00
-monthOct                     8.18      2.04     4.16    12.18 1.00
-monthNov                     6.77      2.01     2.80    10.68 1.00
-monthDec                    -4.92      1.86    -8.65    -1.36 1.00
+pandemic                    21.30      4.16    12.91    29.44 1.00
+elapsedTimeAfterPandemic     0.50      0.64    -0.77     1.79 1.00
+monthFeb                     8.60      1.78     5.07    12.17 1.00
+monthMar                    10.62      2.02     6.60    14.63 1.00
+monthApr                     9.59      2.05     5.45    13.60 1.00
+monthMay                     3.52      2.05    -0.47     7.60 1.00
+monthJun                    -4.37      2.07    -8.46    -0.36 1.00
+monthJul                    -8.04      2.05   -12.03    -4.08 1.00
+monthAug                    -5.74      2.04    -9.71    -1.69 1.00
+monthSep                     4.56      2.04     0.45     8.55 1.00
+monthOct                     8.14      2.05     4.16    12.17 1.00
+monthNov                     6.74      2.00     2.87    10.69 1.00
+monthDec                    -4.94      1.83    -8.54    -1.29 1.00
                          Bulk_ESS Tail_ESS
-Intercept                    2771     3898
-elapsedTime                  8342     5206
-pandemic                     5207     4944
-elapsedTimeAfterPandemic     5357     5211
-monthFeb                     3455     5359
-monthMar                     3252     5178
-monthApr                     3140     5199
-monthMay                     2825     4470
-monthJun                     3003     4295
-monthJul                     2948     4784
-monthAug                     2855     4792
-monthSep                     2897     4940
-monthOct                     2706     4463
-monthNov                     3340     5019
-monthDec                     3697     4293
+Intercept                    3097     4196
+elapsedTime                  8127     5339
+pandemic                     4595     4894
+elapsedTimeAfterPandemic     4711     4885
+monthFeb                     4143     5147
+monthMar                     3217     4209
+monthApr                     3266     4912
+monthMay                     3293     4712
+monthJun                     3387     4723
+monthJul                     3234     4651
+monthAug                     3253     4645
+monthSep                     3145     4694
+monthOct                     3342     5027
+monthNov                     3533     4937
+monthDec                     3968     5528
 
 Family Specific Parameters: 
       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
-sigma     4.64      0.31     4.09     5.30 1.00     7570     5941
+sigma     4.64      0.31     4.09     5.31 1.00     6617     5366
 
 Samples were drawn using sampling(NUTS). For each parameter, Bulk_ESS
 and Tail_ESS are effective sample size measures, and Rhat is the potential
@@ -1960,13 +1961,13 @@ scale reduction factor on split chains (at convergence, Rhat = 1).</code></pre>
 <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>samples</span><span class='op'>$</span><span class='va'>b_pandemic</span> <span class='op'>&gt;</span> <span class='fl'>0</span><span class='op'>)</span> <span class='op'>/</span> <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>samples</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>[1] 0.926125</code></pre>
+<pre><code>[1] 0.916625</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># probability of b_pandemic coefficient being lower than 0</span>
 <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>samples</span><span class='op'>$</span><span class='va'>b_pandemic</span> <span class='op'>&lt;</span> <span class='fl'>0</span><span class='op'>)</span> <span class='op'>/</span> <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>samples</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>[1] 0.073875</code></pre>
+<pre><code>[1] 0.083375</code></pre>
 </div>
 <p><br></p>
 <p>Another option would be to compute <a href="https://en.wikipedia.org/wiki/Bayes_factor">Bayes factor</a> that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters <code>normal(0,50)</code>. We can see that Bayes factor (<code>Evid.Ratio</code> in the table below) has value around 12.5 which indicates strong evidence in favor of our hypothesis, in terms of <a href="https://en.wikipedia.org/wiki/Harold_Jeffreys">Harold Jeffreys</a>’ scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 12.5 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic’s positive effect on people’s search interest in work-life balance.</p>
@@ -1981,9 +1982,9 @@ scale reduction factor on split chains (at convergence, Rhat = 1).</code></pre>
 </div>
 <pre><code>Hypothesis Tests for class b:
       Hypothesis Estimate Est.Error CI.Lower CI.Upper Evid.Ratio
-1 (pandemic) &gt; 0    14.03      9.96    -2.21    30.54      12.54
+1 (pandemic) &gt; 0    13.74      9.97    -2.66    30.14      10.99
   Post.Prob Star
-1      0.93     
+1      0.92     
 ---
 &#39;CI&#39;: 90%-CI for one-sided and 95%-CI for two-sided hypotheses.
 &#39;*&#39;: For one-sided hypotheses, the posterior probability exceeds 95%;
@@ -1993,7 +1994,7 @@ Posterior probabilities of point hypotheses assume equal prior probabilities.</c
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># plotting prior and posterior distribution for pandemic term in the modelWorkLifeBalance </span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span><span class='op'>(</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span>
   <span class='fu'>brms</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/brms/man/hypothesis.brmsfit.html'>hypothesis</a></span><span class='op'>(</span>
     <span class='va'>modelWorkLifeBalance</span>,
     <span class='st'>"pandemic &gt; 0"</span>
@@ -2056,7 +2057,7 @@ Posterior probabilities of point hypotheses assume equal prior probabilities.</c
 <p><em>Graph 8: Visualization of conditional effects of predictors from modelWellBeing. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.</em></p>
 <p><br></p>
 <p>In conclusion, we can say that there is some evidence that the COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.</p>
-<p>P.S. The whole script is available in <a href="https://github.com/lstehlik2809/Bayesian-segmented-regression.git">Jupyter Notebook on GitHub</a>.</p>
+<p>The whole script is available in <a href="https://github.com/lstehlik2809/Bayesian-segmented-regression.git">Jupyter Notebook on GitHub</a>.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

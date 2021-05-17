@@ -20,6 +20,14 @@ output:
     toc_float: true
 ---
 
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+
+# Nastaveni ceskeho jazyka
+Sys.setlocale("LC_CTYPE", "czech")
+
+```
+
+
 ## Co je to HR analytika?  
 
 HR analytika ve své podstatě vychází ze známé zásady managementu, že **co nelze měřit, nelze ani (efektivně) řídit a zlepšovat**, a aplikuje tuto zásadu na lidské zdroje. V několika posledních letech potom k tomu navíc přidává nadstavbu v podobě pokročilejších analytických postupů, které mají větší potenciál přijít s hlubšími vhledy a s doporučeními s větším efektem. Ale ať už využíváte pouze základní reporting nebo nějakou pokročilejší analytiku, cíl je vždy stejný – snažit se s pomocí dat a jejich analýzy žádoucím způsobem ovlivnit jednotlivé HR procesy, které organizacím pomáhají dosahovat jejich strategických cílů. Názorně to ilustruje níže uvedené schéma zachycující mechanismus propojující HR procesy s (nejen) finančními výsledky organizace ([Paauwe & Richardson, 1997](https://www.tandfonline.com/doi/abs/10.1080/095851997341621?journalCode=rijh20)). 
@@ -46,6 +54,7 @@ HR analytika pomáhá optimalizovat nastavení tohoto mechanismu tím, že umož
 Právě posledně jmenovaný způsob využití HR analytiky často představuje jeden z prvních druhů HR analytických projektů, kterými se ve firmách s HR analytikou začíná, a to z dobře pochopitelného důvodu. S **nežádoucími odchody zaměstnanců** jsou totiž spojené [vysoké přímé i nepřímé náklady](http://login.bersin.com/uploadedFiles/021517-calculating-true-cost-voluntary-turnover.pdf), takže i poměrně mírné snížení odchodovosti zaměstnanců může představovat značnou úsporu, kterou ocení management každé firmy. Naléhavost tohoto problému navíc ještě zvyšuje současná fáze ekonomického cyklu s rekordně nízkou mírou nezaměstnanosti, která v kombinaci s různými on-line platformami na zprostředkování práce motivuje mnoho lidí k hledání nového místa, kde, jak doufají, bude práce zajímavější, smysluplnější a lépe placená a kde kolegové budou sympatičtější a šéfové inspirativnější. Viz také graf níže, který na datech z USA názorně dokládá těsnost vztahu mezi mírou nezaměstnanosti a mírou dobrovolné odchodovosti zaměstnanců (*r* = -0,95, *p* < 0,001 ).
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=6}
+
 # Nacteni dat ----------------------------------------------------
 
 # Nacteni potrebnych knihoven
