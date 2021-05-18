@@ -501,7 +501,7 @@ condEffplots <- plot(
 # putting all graphs with conditional effects together  
 ggpubr::ggarrange(
   plotlist = condEffplots, 
-  nrow = 10,
+  nrow = 9,
   ncol = 1
 )
      
@@ -544,7 +544,7 @@ Zde je pro zájemce originální dokument k bližšímu prostudování.
 
 ![Alt](./Gender-Pay-Gap-actions.pdf){width=100% height=400}  
 
-Skript k analýze je k dispozici ke stažení na [GitHubu](https://github.com/lstehlik2809).
+Skript k analýze je k dispozici ke stažení v podobě Jupyter Notebooku na mém [GitHub](https://github.com/lstehlik2809/gender-pay-gap-analysis) účtu.
 
 
 
