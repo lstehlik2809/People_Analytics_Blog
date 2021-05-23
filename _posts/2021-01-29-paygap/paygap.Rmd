@@ -455,7 +455,8 @@ ggplot2::ggplot(
   ) +
   ggplot2::geom_line(
   ) +
-  ggplot2::scale_x_continuous(breaks = seq(-15000, 15000, 5000)) + 
+  ggplot2::scale_x_continuous(breaks = seq(-15000, 15000, 5000)) +
+  ggplot2::theme_minimal() +
   ggplot2::labs(
     title = "Posteriorní distribuce parametru pohlaví zaměstnance",
     y = "Density",
@@ -475,7 +476,16 @@ prop <- sum(samples$b_genderMale > 0) / nrow(samples)
 
 ```
 
-Po provedení tohoto výpočtu nám vychází hodnota `r round(prop*100,1)` %. To je v souladu s předchozím tvrzením, že důkaz ve prospěch testované hypotézy není příliš silný. Další možností by bylo použití tzv. [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor), který vyjadřuje míru s níž dostupná data favorizují testovanou hypotézu ve srovnání s modelem odpovídajícím nulové hypotéze.  
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+
+# Bayesian hypothesis test
+the_test = brms::hypothesis(model, "genderMale > 0")
+
+```
+
+
+Po provedení tohoto výpočtu nám vychází hodnota `r round(prop*100,1)` %. To je v souladu s předchozím tvrzením, že důkaz ve prospěch testované hypotézy není příliš silný. Další možností by bylo použití tzv. [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor), který vyjadřuje míru s níž dostupná data favorizují testovanou hypotézu ve srovnání s modelem odpovídajícím nulové hypotéze. Ten má pro naši hypotézu hodnotu `r round(the_test$hypothesis$Evid.Ratio, 1)`, což odpovídá významnému, ale zdaleka nikoli silnému či rozhodnému důkazu ve prospěch naší hypotézy.  
 
 Vedle parametru pohlaví může být pro nás potenciálně užitečné podívat se také na vztah základní mzdy a ostatních prediktorů použitých v našem modelu. Za tímto účelem můžeme použít vizualizaci podmíněných efektů jednotlivých prediktorů, které vyjadřují vztah mezi prediktorem a kritériem při zohlednění vlivu ostatních prediktorů. Takto např. můžeme na jednom z grafů vidět, že vztah mezi úrovní vzdělání a výší základního platu se má tendenci u mužů a žen lišit. Na jiném grafu si můžeme zase všimnout toho, že rozdíl mezi základní mzdou mužů a žen má tendenci narůstat s tím, jak klesá seniorita zaměstnanců. Tyto a další podobné vhledy nám mohou pomoct přiblížit se k důvodům za pozorovanými nerovnostmi v platech mužů a žen.          
 
