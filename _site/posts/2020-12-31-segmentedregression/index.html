@@ -95,7 +95,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2020-12-31"/>
 <meta property="article:created" itemprop="dateCreated" content="2020-12-31"/>
-<meta name="article:author" content="Luděk Stehlík"/>
+<meta name="article:author" content="Ludek Stehlík"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Ludek&#39;s Blog About People Analytics: Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being"/>
@@ -122,7 +122,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="citation_fulltext_html_url" content="https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/"/>
 <meta name="citation_online_date" content="2020/12/31"/>
 <meta name="citation_publication_date" content="2020/12/31"/>
-<meta name="citation_author" content="Luděk Stehlík"/>
+<meta name="citation_author" content="Ludek Stehlík"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
@@ -478,7 +478,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1885,7 +1885,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2095,7 +2098,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being","description":"Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-31T00:00:00.000+01:00","citationText":"Stehlík, 2020"}
+{"title":"Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being","description":"Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.","authors":[{"author":"Ludek Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-31T00:00:00.000+01:00","citationText":"Stehlík, 2020"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2740,7 +2743,7 @@ Posterior probabilities of point hypotheses assume equal prior probabilities.</c
   <pre class="citation-appendix short">Stehlík (2020, Dec. 31). Ludek's Blog About People Analytics: Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being. Retrieved from https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{stehlík2020modeling,
-  author = {Stehlík, Luděk},
+  author = {Stehlík, Ludek},
   title = {Ludek's Blog About People Analytics: Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being},
   url = {https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/},
   year = {2020}

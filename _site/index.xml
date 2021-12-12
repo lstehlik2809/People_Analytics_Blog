@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 11 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Overview of predictors of voluntary employee turnover</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</link>
       <description>An introduction of a simple shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
       <category>great resignation</category>
@@ -19,14 +19,14 @@
       <category>meta-analysis</category>
       <category>shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</guid>
-      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
     </item>
     <item>
-      <title>Firemní audit rozdílu mezi platy mužů a žen</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <title>Firemní audit rozdílu mezi platy mužu a žen</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap</link>
-      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.</description>
+      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy.</description>
       <category>gender pay gap</category>
       <category>gender pay audit</category>
       <category>regression analysis</category>
@@ -37,7 +37,7 @@
     </item>
     <item>
       <title>Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</link>
       <description>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</description>
       <category>well-being</category>
@@ -51,10 +51,10 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png" medium="image" type="image/png" width="1356" height="680"/>
     </item>
     <item>
-      <title>HR analytika a odchodovost zaměstnanců</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <title>HR analytika a odchodovost zamestnancu</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</link>
-      <description>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.</description>
+      <description>Které faktory prispívají k odchodovosti zamestnancu a u kterých konkrétních zamestnancu je zvýšené riziko, že firmu behem nekolika príštích mesícu opustí? Na tyto otázky se cím dál tím více firem snaží odpovedet pomocí analýzy dat o svých vlastních zamestnancích. V tomto clánku se prostrednictvím analytického nástroje R a vizualizacního nástroje Shiny podíváme, jak muže být tento druh HR analytického projektu pro firmy užitecný.</description>
       <category>employee turnover</category>
       <category>evidence-based hr</category>
       <category>shiny dashboard</category>
@@ -64,10 +64,10 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png" medium="image" type="image/png" width="1317" height="926"/>
     </item>
     <item>
-      <title>Moneyball v HR - od HR analytiky ke sportovní analytice a zpět</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <title>Moneyball v HR - od HR analytiky ke sportovní analytice a zpet</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</link>
-      <description>Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu "Áček", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.</description>
+      <description>Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu "Ácek", jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize.</description>
       <category>employee selection</category>
       <category>correlation analysis</category>
       <category>multivariate regression analysis</category>
