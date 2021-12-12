@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Overview of predictors of voluntary employee turnover</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</link>
+      <description>An introduction of a simple shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
+      <category>great resignation</category>
+      <category>employee turnover</category>
+      <category>turnover predictors</category>
+      <category>meta-analysis</category>
+      <category>shiny dashboard</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</guid>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
+    </item>
     <item>
       <title>Firemní audit rozdílu mezi platy mužů a žen</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>regression analysis</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap</guid>
-      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/./PayGap.png" medium="image" type="image/png" width="1438" height="897"/>
     </item>
     <item>

@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/",
+    "title": "Overview of predictors of voluntary employee turnover",
+    "description": "An introduction of a simple shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2021-12-12",
+    "categories": [
+      "great resignation",
+      "employee turnover",
+      "turnover predictors",
+      "meta-analysis",
+      "shiny dashboard"
+    ],
+    "contents": "\r\n🙋 Although the ‘Great Resignation’ in some parts of the world may be due in no small part to factors specific to the COVID-19 pandemic, it is still useful in this context to draw on the extensive research on employee turnover carried out in the run-up to the pandemic.\r\n🎓 A useful overview of such findings is provided, for example, by a 2017 meta-analysis by Rubenstein et al. that summarizes the significance of 57 predictors of voluntary turnover from 9 different domains based on 316 studies from 1975 to 2016 involving more than 300,000 people.\r\n📈 To make it easier to assimilate these findings, I extracted them from the original article and visualized them in a simple shiny app that helps one to quickly explore and grasp the estimated magnitude, direction, and reliability of the effect of each factor, along with information on the degree of their actionability. The last feature is based purely on my own judgement, so please take it with a grain of salt and make your own adjustment to it 😉.\r\nTry it out and let me know if you find it useful. 👇 https://peopleanalyticsblog.shinyapps.io/voluntary_turnover_predictors/\r\n\r\nAnd here is the original research paper on which the shiny app is based. \r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png",
+    "last_modified": "2021-12-12T13:05:12+01:00",
+    "input_file": "overview-of-predictors-of-voluntary-employee-turnover.knit.md",
+    "preview_width": 2700,
+    "preview_height": 1800
+  },
+  {
     "path": "posts/2021-01-29-paygap/",
     "title": "Firemní audit rozdílu mezi platy mužů a žen",
     "description": "Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich \"employer brand\" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.",
