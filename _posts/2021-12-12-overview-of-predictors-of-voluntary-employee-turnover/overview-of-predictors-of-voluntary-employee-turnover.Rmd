@@ -1,7 +1,7 @@
 ---
 title: "Overview of predictors of voluntary employee turnover"
 description: |
-  An introduction of a simple shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.
+  An introduction of a simple Shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.
 preview: ./great_resignation.png
 author:
   - name: Luděk Stehlík
