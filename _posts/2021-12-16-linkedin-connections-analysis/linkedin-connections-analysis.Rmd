@@ -39,7 +39,7 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 
 <br>
 
-Unfortunately, since there is no information about your connections' connections in the data, you cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.
+Unfortunately, since there is no information about your connections' connections in the data, we cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.
 
 You can take it as a kind of 🎄 gift for my fellow LinkedIn users 🎅 Enjoy exploring your connections! And if you'd like to explore and better manage also your company's internal collaboration networks, then check out what we do at [Time is Ltd.](https://www.timeisltd.com/) 
 
