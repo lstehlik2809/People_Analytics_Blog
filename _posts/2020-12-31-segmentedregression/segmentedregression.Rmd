@@ -21,6 +21,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
+    code_folding: true
 ---
 
 The turn of the year, which is full of all sorts of resolutions to change for the better in our private lives and in our organizations, is a good time to remind ourselves that analytic tools can be very helpful in our efforts to make these resolutions come true. One way they can help us is by verifying that we have really achieved our stated goals and that we are not just fooling ourselves into believing so. We need to keep in mind [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)'s famous principle of critical thinking...
@@ -113,7 +114,7 @@ dfAll <- dfWorkLifeBalance %>%
 
 Here is a table with the resulting data we will use for testing our hypothesis.  
 
-```{r}
+```{r, layout="l-body-outset"}
 
 # uploading library for making user-friendly data table
 library(DT)
