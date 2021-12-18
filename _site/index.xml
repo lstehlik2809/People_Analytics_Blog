@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 15 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Shiny App for LinkedIn Connections Analysis</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</link>
       <description>An introduction of a simple Shiny application for analysing LinkedIn connections.</description>
       <category>linkedin</category>
@@ -18,7 +18,7 @@
       <category>social network analysis</category>
       <category>shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</guid>
-      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis/./linkedinLogo.png" medium="image" type="image/png" width="3753" height="2352"/>
     </item>
     <item>
