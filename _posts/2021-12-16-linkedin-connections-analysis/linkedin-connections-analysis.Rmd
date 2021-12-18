@@ -1,7 +1,7 @@
 ---
-title: "Shiny App for LinkedIn Connections Analysis"
+title: "R Shiny App for LinkedIn Connections Analysis"
 description: |
-  An introduction of a simple Shiny application for analysing LinkedIn connections.
+  An introduction of a simple R Shiny application for analysing LinkedIn connections.
 preview: ./linkedinLogo.png
 author:
   - name: Luděk Stehlík
@@ -11,7 +11,7 @@ categories:
   - linkedin
   - external networks
   - social network analysis
-  - shiny dashboard
+  - r shiny dashboard
 output:
   distill::distill_article:
     self_contained: false

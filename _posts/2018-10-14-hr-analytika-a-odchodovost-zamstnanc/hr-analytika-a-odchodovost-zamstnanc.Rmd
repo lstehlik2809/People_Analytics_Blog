@@ -10,8 +10,7 @@ date: 10-14-2018
 categories:
   - employee turnover
   - evidence-based hr
-  - shiny dashboard
-  - r
+  - r shiny dashboard
 output:
   distill::distill_article:
     self_contained: false

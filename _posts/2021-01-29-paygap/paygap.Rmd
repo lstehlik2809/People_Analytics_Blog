@@ -57,13 +57,13 @@ Sys.setlocale("LC_CTYPE", "czech")
 
 Bez ohledu na způsob měření GPG, je dobře doloženým faktem, že ženy jsou obecně hůře placeny než muži, jakkoli [se tento rozdíl postupem času zmenšuje](http://www.econ.jku.at/papers/2003/wp0311.pdf). Rozdíly v platech se přitom mohou v jednotlivých zemích poměrně dost lišit. Názorně to ilustruje níže uvedený graf, který ukazuje vývoj (neadjustované) GPG (definované jako poměr rozdílu mediánové mzdy zaměstnaných mužů a žen a mediánové mzdy zaměstnaných mužů) v průběhu několika minulých let v zemích [OECD](https://data.oecd.org/earnwage/gender-wage-gap.htm).
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
+```{r, layout="l-body-outset", code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE}
 
 # uploading data
 gpgoecd <- readr::read_csv("./DP_LIVE_29012021212234147.csv")
 
 # creating color palette
-# list of R color Brewer's palttes: https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html
+# list of R color Brewer's palettes: https://www.r-graph-gallery.com/38-rcolorbrewers-palettes.html
 nbCols <- length(unique(gpgoecd$LOCATION))
 myColors <- colorRampPalette(brewer.pal(8, "Set1"))(nbCols)
 
@@ -153,7 +153,7 @@ K dispozici máme následující data ke vzorku `r nrow(data)` zaměstnanců:
 
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r, layout="l-body-outset", echo=FALSE, message=FALSE, warning=FALSE}
 
 DT::datatable(
   data,
@@ -178,7 +178,7 @@ DT::datatable(
 
 Ze zběžné kontroly povahy našich dat je patrné, že ne každá z proměnných je v našem datasetu reprezentována pomocí adekvátního datového typu. Před samotnou analýzou si tedy budeme muset naše data ještě trochu upravit. 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE}
 
 dplyr::glimpse(data)
 
@@ -201,7 +201,7 @@ mydata <- data %>%
 
 V níže uvedených tabulkách jsou uvedeny základní popisné statistiky k jednotlivým proměnným. Můžeme z nich vyčíst např. to, že našich 1000 zaměstnanců je relativně rovnoměně rozdělených do jednotlivých kategorií z hlediska pracovní pozice, pohlaví, hodnocení pracovního výkonu, úrovně vzdělání, oddělení, ve kterém pracují, i míry jejich seniority. Dále se z nich můžeme dozvědět, že prostředních 50 % zaměstnanců je ve věku mezi 29 a 54 lety, jejich roční základní mzda se pohybuje od 76 850 do 111 558 USD a jejich bonusy za rok činí 4 849 až 8 026 USD.   
  
-```{r, echo=FALSE}
+```{r, code_folding=TRUE, echo=FALSE}
 
 skimr::skim(mydata)
 
@@ -210,7 +210,7 @@ skimr::skim(mydata)
 <br>
 Z hlediska námi analyzovaného problému jsou pro nás ale důležitější vztahy mezi jednotlivými proměnnými, zejména mezi pohlavím a ostatními proměnnými a jejich různými kombinacemi. Rychlý přehled o některých těchto vztazích nám může poskytnout níže uvedený graf, který zobrazuje souvislosti mezi jednotlivými dvojicemi proměnných a s pomocí barevného kódování navíc nese informaci o tom, jak se tyto souvislosti liší mezi pohlavími. V grafu můžeme např. vidět, že se v případě některých pracovních pozic významně liší relativní zastoupení mužů a žen. V menší míře se zdá tento rozdíl platit i v případě úrovně vzdělání. Určitý rozdíl mezi muži a ženami se zdá existovat rovněž ve výši jejich základní mzdy (narozdíl od bonusové složky, která se zdá být u mužů a žen obdobně vysoká).        
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.height=18, fig.width=18}
+```{r, layout="l-body-outset", code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.height=18, fig.width=18}
 
 GGally::ggpairs(mydata, aes(color = gender, alpha = 0.4)) +
   ggplot2::theme(
@@ -230,7 +230,7 @@ Pokud bychom chtěli zohlednit míru naší nejistoty při odhadu velikosti rozd
 
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
 
 set.seed(123)
 ggstatsplot::ggbetweenstats(
@@ -257,18 +257,16 @@ ggstatsplot::ggbetweenstats(
 **Samotný fakt rozdílné výše základní mzdy u mužů a žen ale ještě nemusí automaticky znamenat, že by se za ním skrývala diskriminace žen**. Pozorovaný rozdíl může být totiž např. způsobený tím, že ženy zaměstnané v námi sledované firmě mají typicky nižší vzdělání než ve stejné firmě zaměstnaní muži. A vzhledem k tomu, že výše vzdělání (z hlediska "meritokratické spravedlnosti" zcela neproblematicky) pozitivně koreluje s výší platu, projeví se tato souvislost v nižší typické mzdě žen (ponechme nyní stranou otázku, v jaké míře mají ženy obecně přístup k vyššímu vzdělání ve společnosti, kde daná firma působí). Tuto hypotézu se zdají podporovat i dva níže uvedené grafy, které vizualizují vztah mezi úrovní vzdělání zaměstnance a výší jeho základní mzdy, resp. souvislost mezi pohlavím zaměstnance a úrovní jeho vzdělání.
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
 
 mydata %>%
-  ggplot2::ggplot(aes(x = edu, y = basePay, fill = edu)) +
-  PupillometryR::geom_flat_violin(position = position_nudge(x = .2, y = 0), alpha = .8) +
-  ggplot2::geom_point(aes(y = basePay, color = edu), position = position_jitter(width = .15), size = .5, alpha = 0.8) +
-  ggplot2::geom_boxplot(width = .1, guides = FALSE, outlier.shape = NA, alpha = 0.5) +
+  ggplot2::ggplot(aes(x = edu, y = basePay)) +
+  PupillometryR::geom_flat_violin(position = position_nudge(x = .2, y = 0), alpha = .8, fill = "#a9b2d1") +
+  ggplot2::geom_point(aes(y = basePay), position = position_jitter(width = .15), size = .5, alpha = 0.8, color = "#a9b2d1") +
+  ggplot2::geom_boxplot(width = .1, guides = FALSE, outlier.shape = NA, alpha = 0.5, fill = "#a9b2d1") +
   ggplot2::expand_limits(x = 5.25) +
   ggplot2::guides(fill = FALSE) +
   ggplot2::guides(color = FALSE) +
-  ggplot2::scale_color_brewer(palette = "Blues") +
-  ggplot2::scale_fill_brewer(palette = "Blues") +
   ggplot2::scale_y_continuous(
     labels = scales::number_format(
       accuracy = 1,
@@ -286,7 +284,7 @@ mydata %>%
 ```
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
 
 mydata %>%
   ggplot2::ggplot(aes(x = edu, fill = gender)) +
@@ -315,7 +313,7 @@ Důležitou kategorií vztahů mezi proměnnými, kterou bychom měli prozkoumat
 Příkladem vizualizace tohoto druhu vztahu mezi proměnnými je níže uvedený graf, ze kterého můžeme vyčíst, že ženy mají sice v průměru nižší základní mzdu než muži napříč celým věkovým spektrem (viz níže položená regresní přímka pro skupinu žen), ale fakt, že zobrazené regresní přímky jsou rovnoběžné, svědčí pro to, že v rámci obou skupin platí stejný typ vztahu mezi věkem a výší platu, a tedy že mezi pohlavím a věkem ve vztahu k výši mzdy nedochází k žádné interakci. Pokud by se existence takové interakce potvrdila i při zohlednění dalších relevantních faktorů, mělo by to pro nás být podnětem k další exploraci toho, co se pozorovaným rozdílem skrývá.
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
 
 mydata %>%
   ggplot2::ggplot(aes(x = age, y = basePay, fill = gender, colour = gender, group = gender)) +
@@ -397,7 +395,7 @@ Dříve než přistoupíme k interpretaci výsledků analýzy je dobré si ově�
 Po této kontrole (a také po ověření dalších [technických náležitostí](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html), jako je např. konvergence [MCMC](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) řetězců, které umožňují odhadnout posteriorneí distribuci parametrů i komplexnějších statistických modelů jako je ten náš) můžeme začít využívat parametry našeho modelu k usuzování na pravděpodobné vlastnosti námi studované firemní reality.         
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE }
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE }
 
 # investigating the model's fit
 
@@ -426,7 +424,7 @@ summary(model)
 
 Pokud bychom chtěli přesněji vyjadřit míru, s níž naše data v rámci našeho modelu favorizují hodnoty parametru pohlaví větší než nula (tj. hodnoty, které jsou v souladu s hypotézou o existenci platové diskriminace na základě pohlaví v neprospěch žen), můžeme se podívat na posteriorní distribuci tohoto parametru a jednoduše na něm spočítat, s jakou pravděpodobností nabývá kladných hodnot. 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.width = 7, fig.height = 5}
 
 # visualizing posterior distribution of the model's b_genderMale parameter 
 
@@ -477,7 +475,7 @@ prop <- sum(samples$b_genderMale > 0) / nrow(samples)
 ```
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+```{r, code_folding=TRUE, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
 
 # Bayesian hypothesis test
 the_test = brms::hypothesis(model, "genderMale > 0")

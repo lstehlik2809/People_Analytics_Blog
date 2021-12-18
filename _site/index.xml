@@ -9,30 +9,30 @@
     <generator>Distill</generator>
     <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Shiny App for LinkedIn Connections Analysis</title>
+      <title>R Shiny App for LinkedIn Connections Analysis</title>
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</link>
-      <description>An introduction of a simple Shiny application for analysing LinkedIn connections.</description>
+      <description>An introduction of a simple R Shiny application for analysing LinkedIn connections.</description>
       <category>linkedin</category>
       <category>external networks</category>
       <category>social network analysis</category>
-      <category>shiny dashboard</category>
+      <category>r shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</guid>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis/./linkedinLogo.png" medium="image" type="image/png" width="3753" height="2352"/>
     </item>
     <item>
       <title>Overview of predictors of voluntary employee turnover</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</link>
-      <description>An introduction of a simple Shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
+      <description>An introduction of a simple R Shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
       <category>great resignation</category>
       <category>employee turnover</category>
       <category>turnover predictors</category>
       <category>meta-analysis</category>
-      <category>shiny dashboard</category>
+      <category>r shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</guid>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
     </item>
     <item>
@@ -70,8 +70,7 @@
       <description>Které faktory prispívají k odchodovosti zamestnancu a u kterých konkrétních zamestnancu je zvýšené riziko, že firmu behem nekolika príštích mesícu opustí? Na tyto otázky se cím dál tím více firem snaží odpovedet pomocí analýzy dat o svých vlastních zamestnancích. V tomto clánku se prostrednictvím analytického nástroje R a vizualizacního nástroje Shiny podíváme, jak muže být tento druh HR analytického projektu pro firmy užitecný.</description>
       <category>employee turnover</category>
       <category>evidence-based hr</category>
-      <category>shiny dashboard</category>
-      <category>r</category>
+      <category>r shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</guid>
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png" medium="image" type="image/png" width="1317" height="926"/>
