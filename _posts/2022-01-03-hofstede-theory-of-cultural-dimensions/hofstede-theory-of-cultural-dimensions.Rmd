@@ -1,7 +1,7 @@
 ---
 title: "Hofstede's theory of cultural dimensions"
 description: |
-  Cultural diversity brings both positive effects and some challenges. To deal with the latter, it is useful to have some kind of map to help people better navigate the cultural specificities of people from different societies. Hofstede's theory of cultural dimensions is useful for such a purpose. Let's check how dis/similar countries are on these cultural dimensions with a simple app that could help us better understand and appreciate cultural differences.   
+  Cultural diversity brings both positive effects and some challenges. To deal with the latter, it is useful to have some kind of map to help people better navigate the cultural specificities of people from different societies. Hofstede's theory of cultural dimensions is useful for such a purpose. Let's check how dis/similar countries are on these cultural dimensions with a simple app that could help us better understand, manage and appreciate cultural differences a little better.   
 preview: ./six-dimensions-hofstedes-cultural-dimensions-theory.jpg
 author:
   - name: Luděk Stehlík
