@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How do we perceive probability words?</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-01-18-probability-words</link>
+      <description>Have you ever wondered exactly how much chance of success people give a project when they say they believe in it? If so, then you may find this post useful, as it attempts to answer that question at least in part with data.</description>
+      <category>probability</category>
+      <category>perception</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-01-18-probability-words</guid>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-01-18-probability-words/./Probability-Word-Cards.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Hofstede's theory of cultural dimensions</title>
       <dc:creator>Ludek Stehlík</dc:creator>
