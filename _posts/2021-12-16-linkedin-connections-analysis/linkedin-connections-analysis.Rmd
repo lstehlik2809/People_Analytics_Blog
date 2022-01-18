@@ -45,6 +45,6 @@ You can take it as a kind of Christmas gift for my fellow LinkedIn users. Enjoy 
 
 P.S. The data you upload is not permanently stored anywhere. The app runs on the [shinyapps.io server](https://www.shinyapps.io/). If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data.
 
-P.P.S. Big thanks to [Sebastain Vorac](https://www.linkedin.com/in/sebastian-vor%C3%A1%C4%8D-93361526/) for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.
+P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor%C3%A1%C4%8D-93361526/) for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.
 
 
