@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Fighting meeting overload</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-01-30-meeting-planning</link>
+      <description>One of the most effective ways to fight meeting overload is to better plan meetings in terms of the time we spend in them. Let's look at how data can tell us how much room for improvement we have in this area.</description>
+      <category>meeting planning</category>
+      <category>meeting effectiveness</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-01-30-meeting-planning</guid>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-01-30-meeting-planning/./meetingPlanning.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>How do we perceive probability words?</title>
       <dc:creator>Ludek Stehlík</dc:creator>
