@@ -6,9 +6,12 @@ base_url: https://blog-about-people-analytics.netlify.com/
 output_dir: "_site"
 collections:
   posts:
-    share: [twitter, linkedin]
+    disqus: standard-vs-trend-predictors
+    hidden: false
+    share: [linkedin, twitter, facebook ]
 navbar:
   logo: images/ludekstehlik.jpg
+  search: true
   right:
     - text: "Home"
       href: index.html

@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Standard vs. trend predictors</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-02-06-standard-and-trend-predictors</link>
+      <description>When modeling a phenomenon, one usually can't get by with just raw data but must use one's domain knowledge to select and transform the most relevant variables from raw data to be able to successfully grasp regularities in the domain of one's interest. Let's look at one simple example of such feature engineering from the domain of collaboration analytics.</description>
+      <category>predictive analytics</category>
+      <category>feature engineering</category>
+      <category>employee experience</category>
+      <category>employee engagement</category>
+      <category>employee satisfaction</category>
+      <category>employee attrition</category>
+      <category>collaboration data</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-02-06-standard-and-trend-predictors</guid>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-02-06-standard-and-trend-predictors/./trendGraph.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Fighting meeting overload</title>
       <dc:creator>Ludek Stehlík</dc:creator>
