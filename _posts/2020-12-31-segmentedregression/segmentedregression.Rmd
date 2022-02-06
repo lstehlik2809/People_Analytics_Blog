@@ -310,7 +310,7 @@ brms::pp_check(
 
 Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the onset of pandemic.  
 
-In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 6), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
+In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
 
 ```{r fig.width=8}
 
@@ -409,12 +409,12 @@ summary(modelWellBeing)
 
 <br> 
 
-Given that for work-life balance model the posterior distribution of pandemic term crosses the zero value, it would be useful to know how strong is the evidence in the favor of hypothesis that pandemic term is larger than zero. For that purpose we can extract posterior samples and use them for calculation of the proportion of values that are larger/smaller than zero. The resulting proportions show that the vast majority of posterior distribution (approximately 93%) lies above zero.
+Given that for work-life balance model the posterior distribution of pandemic term crosses the zero value, it would be useful to know how strong is the evidence in the favor of hypothesis that pandemic term is larger than zero. For that purpose we can extract posterior samples and use them for calculation of the proportion of values that are larger/smaller than zero. The resulting proportions show that the vast majority (around 92%) of posterior distribution lies above zero.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
 
 # extracting posterior samples
-samples <- posterior_samples(modelWorkLifeBalance)
+samples <- posterior_samples(modelWorkLifeBalance, seed = 12345)
 
 # probability of b_pandemic coefficient being higher
 sum(samples$b_pandemic > 0) / nrow(samples)
@@ -427,7 +427,7 @@ sum(samples$b_pandemic < 0) / nrow(samples)
 
 <br> 
 
-Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value around 12.5 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 12.5 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
+Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value of 13.7 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 13.7 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
 
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
@@ -435,7 +435,8 @@ Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/
 # computing Bayes factor for hypothesis that pandemic term in the modelWorkLifeBalance is larger than zero  
 brms::hypothesis(
   modelWorkLifeBalance,
-  "pandemic > 0"
+  "pandemic > 0",
+  seed = 12345
   )
 
 ```  
