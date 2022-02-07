@@ -7,8 +7,7 @@ output_dir: "_site"
 collections:
   posts:
     disqus: 
-       shortname: standard-vs-trend-predictors
-    url: https://blog-about-people-analytics.netlify.com/
+       shortname: people_analytics_blog
     hidden: false
     share: [linkedin, twitter, facebook ]
 navbar:
