@@ -7,7 +7,7 @@ output_dir: "_site"
 collections:
   posts:
     disqus: 
-       shortname: people_analytics_blog
+       shortname: ludeks-people_analytics_blog
     hidden: false
     share: [linkedin, twitter, facebook ]
 navbar:
