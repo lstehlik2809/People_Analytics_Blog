@@ -93,7 +93,7 @@
     "description": "Many of us have probably already heard of Paul Graham's two types of schedules - one that meets the needs of makers and one that meets the needs of managers. But can these two types of schedules be found in any real collaborative data? Let's find out.",
     "author": [
       {
-        "name": "Ludek Stehlík",
+        "name": "Luděk Stehlík",
         "url": "https://www.linkedin.com/in/ludekstehlik/"
       }
     ],
@@ -105,8 +105,8 @@
     ],
     "contents": "\r\nI am sure that many of you have heard of the two types of schedules as described by Paul Graham in his famous article Maker’s Schedule, Manager’s Schedule:\r\nThe manager’s schedule [is] embodied in the traditional appointment book, with each day cut into one hour intervals. [By] default you change what you’re doing every hour. But [makers] generally prefer to use time in units of half a day at least. You can’t write or program well in units of an hour. That’s barely enough time to get started. When you’re operating on the maker’s schedule, meetings are a disaster. A single meeting can blow a whole afternoon, by breaking it into two pieces each too small to do anything hard in. Plus you have to remember to go to the meeting.\r\nI recently realized that I have only seen illustrative pictures on this topic so far, but not any real data. This inspired me to look at our own collaboration data at Time Is Ltd. and see if these two schedule categories can be found there.\r\nWhen I contrasted the data on the average number of meetings per day and the average time between meetings, there were indeed categories of people who either have relatively more meetings with relatively shorter breaks (managers), or have relatively fewer meetings with relatively longer breaks (makers).\r\n\r\nBut beyond that, there was a third type, which I called batchers - they have relatively fewer meetings with relatively shorter breaks, which is a good strategy when you have to be both manager and creator, which may be the case for more and more people as we move to remote working.\r\nIn the charts below you can see how typical monthly calendars of these three types of schedulers look like.\r\n\r\n\r\nWhat we cannot see in our own data, but could theoretically be there, is a fourth category I call overtimers, who have relatively more meetings but manage to keep relatively longer breaks in between. However, this can only be achieved by making the meetings more spread out over time, i.e. at the cost of working after hours.\r\nHow about you? Where would you fit in? And is there anyone among you who would fit into the fourth, missing category?\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-12-19-makers-and-managers-schedule/./maker-schedule-vs-manager-schedule.jpg",
-    "last_modified": "2021-12-19T20:16:07+01:00",
-    "input_file": {}
+    "last_modified": "2022-02-09T13:15:36+01:00",
+    "input_file": "makers-and-managers-schedule.knit.md"
   },
   {
     "path": "posts/2021-12-16-linkedin-connections-analysis/",
