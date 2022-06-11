@@ -1441,7 +1441,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="segmentedregression_files/header-attrs-2.11/header-attrs.js"></script>
   <script src="segmentedregression_files/htmlwidgets-1.5.4/htmlwidgets.js"></script>
   <link href="segmentedregression_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-  <script src="segmentedregression_files/datatables-binding-0.20/datatables.js"></script>
+  <script src="segmentedregression_files/datatables-binding-0.22/datatables.js"></script>
   <script src="segmentedregression_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="segmentedregression_files/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
   <link href="segmentedregression_files/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
@@ -1497,11 +1497,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt=tag">r</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people’s search interest in work-life balance and well-being.</p></p>
+<p><p>Illustration of Bayesian segmented regression analysis of
+interrupted time series data with a testing hypothesis about the impact
+of the COVID-19 pandemic on increase in people’s search interest in
+work-life balance and well-being.</p></p>
 </div>
 
 <div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/"
+class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
   
 <br/>12-31-2020
 </div>
@@ -1511,35 +1515,112 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#search-interest-in-work-life-balance-and-well-being">Search interest in work-life balance and well-being</a></li>
-<li><a href="#bayesian-segmented-regression">Bayesian segmented regression</a></li>
-<li><a href="#some-necessary-sanity-checks">Some necessary sanity checks</a></li>
+<li><a
+href="#search-interest-in-work-life-balance-and-well-being">Search
+interest in work-life balance and well-being</a></li>
+<li><a href="#bayesian-segmented-regression">Bayesian segmented
+regression</a></li>
+<li><a href="#some-necessary-sanity-checks">Some necessary sanity
+checks</a></li>
 <li><a href="#results-of-the-analysis">Results of the analysis</a></li>
 </ul>
 </nav>
 </div>
-<p>The turn of the year, which is full of all sorts of resolutions to change for the better in our private lives and in our organizations, is a good time to remind ourselves that analytic tools can be very helpful in our efforts to make these resolutions come true. One way they can help us is by verifying that we have really achieved our stated goals and that we are not just fooling ourselves into believing so. We need to keep in mind <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a>’s famous principle of critical thinking…</p>
+<p>The turn of the year, which is full of all sorts of resolutions to
+change for the better in our private lives and in our organizations, is
+a good time to remind ourselves that analytic tools can be very helpful
+in our efforts to make these resolutions come true. One way they can
+help us is by verifying that we have really achieved our stated goals
+and that we are not just fooling ourselves into believing so. We need to
+keep in mind <a
+href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard
+Feynman</a>’s famous principle of critical thinking…</p>
 <p><img src="feynman.jpg"></p>
 <p><br></p>
-<p>One of the tools that can help us with that is <a href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">segmented regression analysis of interrupted time series data</a> (thanks to <a href="https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_">Masatake Hirono</a> for pointing me to its existence). It allows us to model changes in various processes and outcomes that follow interventions, while controlling for other types of changes (e.g. trends and seasonality) that may have occurred regardless of the interventions. It is thus very useful for data analysis conducted within studies with a <a href="https://en.wikipedia.org/wiki/Quasi-experiment">quasi experimental study design</a> that are often in the organizational context the best alternative to the “gold standard” of <a href="https://en.wikipedia.org/wiki/Randomized_controlled_trial">randomized controlled trials</a> (RCTs) that are not always realizable or politically acceptable.</p>
-<h2 id="search-interest-in-work-life-balance-and-well-being">Search interest in work-life balance and well-being</h2>
-<p>For illustration, let’s use this tool for testing hypothesis about people’s increased interest in topics related to work-life balance and well-being due to the COVID-19 pandemic and subsequent changes in the way people work. As a proxy measure of this interest we will use worldwide search interest data over the last 10 years from <a href="https://trends.google.com/trends/?geo=US">Google Trends</a> using search terms <em>work-life balance</em> and <em>well-being</em> (see Fig. 1 and 2 below).</p>
-<p><img src="workLifeBalanceGoogleTrends.PNG"> <em>Fig. 1: Interest in “work-life balance” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
+<p>One of the tools that can help us with that is <a
+href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">segmented
+regression analysis of interrupted time series data</a> (thanks to <a
+href="https://www.linkedin.com/posts/masatakehirono1351_day044-100daysofcode-r-activity-6749580595254456320-qHK_">Masatake
+Hirono</a> for pointing me to its existence). It allows us to model
+changes in various processes and outcomes that follow interventions,
+while controlling for other types of changes (e.g. trends and
+seasonality) that may have occurred regardless of the interventions. It
+is thus very useful for data analysis conducted within studies with a <a
+href="https://en.wikipedia.org/wiki/Quasi-experiment">quasi experimental
+study design</a> that are often in the organizational context the best
+alternative to the “gold standard” of <a
+href="https://en.wikipedia.org/wiki/Randomized_controlled_trial">randomized
+controlled trials</a> (RCTs) that are not always realizable or
+politically acceptable.</p>
+<h2 id="search-interest-in-work-life-balance-and-well-being">Search
+interest in work-life balance and well-being</h2>
+<p>For illustration, let’s use this tool for testing hypothesis about
+people’s increased interest in topics related to work-life balance and
+well-being due to the COVID-19 pandemic and subsequent changes in the
+way people work. As a proxy measure of this interest we will use
+worldwide search interest data over the last 10 years from <a
+href="https://trends.google.com/trends/?geo=US">Google Trends</a> using
+search terms <em>work-life balance</em> and <em>well-being</em> (see
+Fig. 1 and 2 below).</p>
+<p><img src="workLifeBalanceGoogleTrends.PNG"> <em>Fig. 1: Interest in
+“work-life balance” topic over the last 10 years measured as a search
+interest by Google Trends. The numbers represent search interest
+relative to the highest point on the chart for the given region and
+time. A value of 100 is the peak popularity for the term. A value of 50
+means that the term is half as popular. A score of 0 means that there
+was not enough data for this term.</em></p>
 <p><br></p>
-<p><img src="wellBeingGoogleTrends.PNG"> <em>Fig. 2: Interest in “well-being” topic over the last 10 years measured as a search interest by Google Trends. The numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</em></p>
+<p><img src="wellBeingGoogleTrends.PNG"> <em>Fig. 2: Interest in
+“well-being” topic over the last 10 years measured as a search interest
+by Google Trends. The numbers represent search interest relative to the
+highest point on the chart for the given region and time. A value of 100
+is the peak popularity for the term. A value of 50 means that the term
+is half as popular. A score of 0 means that there was not enough data
+for this term.</em></p>
 <p><br></p>
-<p>Based solely on the visual inspection of the graphs, it is pretty difficult to tell whether there was some effect of the COVID-19 pandemic or not, especially in the case of work-life balance (for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020). For sure it’s not a job for “inter-ocular trauma test” when the existence of the effect hits you directly between the eyes. We need to rely here on inferential statistics and its ability to help us with distinguishing signal from noise.</p>
-<p>Before conducting the analysis itself, we need to wrangle the data from Google Trends a little bit using the recipe presented in <a href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">the Wagner, Zhang, and Ross-Degnan’s paper</a>. Specifically, we need the following five variables (or six, given that we have two dependent variables):</p>
+<p>Based solely on the visual inspection of the graphs, it is pretty
+difficult to tell whether there was some effect of the COVID-19 pandemic
+or not, especially in the case of work-life balance (for the purpose of
+this analysis, the beginning of the pandemic is assumed to have started
+in March 2020). For sure it’s not a job for “inter-ocular trauma test”
+when the existence of the effect hits you directly between the eyes. We
+need to rely here on inferential statistics and its ability to help us
+with distinguishing signal from noise.</p>
+<p>Before conducting the analysis itself, we need to wrangle the data
+from Google Trends a little bit using the recipe presented in <a
+href="https://www.alnap.org/system/files/content/resource/files/main/segmented-regression-wagner-2002.pdf">the
+Wagner, Zhang, and Ross-Degnan’s paper</a>. Specifically, we need the
+following five variables (or six, given that we have two dependent
+variables):</p>
 <ul>
-<li><strong>search interest</strong> – numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;<br />
+<li><strong>search interest</strong> – numerical variable representing
+search interest relative to the highest point on the chart for the given
+region and time; this variable is truncated within the interval between
+values of 0 and 100; a value of 100 is the peak popularity for the term;
+a value of 50 means that the term is half as popular; a score of 0 means
+that there was not enough data for this term; this variable serves as a
+dependent (criterion) variable;<br />
 </li>
-<li><strong>elapsed time</strong> – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;<br />
+<li><strong>elapsed time</strong> – numerical variable representing the
+number of months that elapsed from the beginning of the time series;
+this variable enables estimation of the size and direction of the
+overall trend in the data;<br />
 </li>
-<li><strong>pandemic</strong> – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing hypothesis about the effect of pandemic on people’s interest in work-life balance and well-being;<br />
+<li><strong>pandemic</strong> – dichotomic variable indicating the
+presence/absence of pandemic; as already mentioned above, for the
+purpose of this analysis, the beginning of the pandemic is assumed to
+have started in March 2020; this variable enables testing hypothesis
+about the effect of pandemic on people’s interest in work-life balance
+and well-being;<br />
 </li>
-<li><strong>elapsed time after pandemic onset</strong> – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the onset of pandemic;<br />
+<li><strong>elapsed time after pandemic onset</strong> – numerical
+variable representing the number of months that elapsed from the
+beginning of pandemic; this variable enables estimation of the size and
+direction of the trend in the data after the onset of pandemic;<br />
 </li>
-<li><strong>month</strong> – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.</li>
+<li><strong>month</strong> – categorical variable representing specific
+month within a year; this variable enables controlling for the effect of
+seasonality.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1597,7 +1678,8 @@ Show code
 </details>
 </div>
 <p><br></p>
-<p>Here is a table with the resulting data we will use for testing our hypothesis.</p>
+<p>Here is a table with the resulting data we will use for testing our
+hypothesis.</p>
 <div class="layout-chunk" data-layout="l-body-outset">
 <details>
 <summary>
@@ -1625,17 +1707,43 @@ Show code
 </code></pre>
 </div>
 </details>
-<div id="htmlwidget-96eaf5438a9585099979" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-96eaf5438a9585099979">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"date\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1.262304e+12\" data-max=\"1606780800000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"19\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"22\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"132\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"10\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132"],["2010-01-01","2010-02-01","2010-03-01","2010-04-01","2010-05-01","2010-06-01","2010-07-01","2010-08-01","2010-09-01","2010-10-01","2010-11-01","2010-12-01","2011-01-01","2011-02-01","2011-03-01","2011-04-01","2011-05-01","2011-06-01","2011-07-01","2011-08-01","2011-09-01","2011-10-01","2011-11-01","2011-12-01","2012-01-01","2012-02-01","2012-03-01","2012-04-01","2012-05-01","2012-06-01","2012-07-01","2012-08-01","2012-09-01","2012-10-01","2012-11-01","2012-12-01","2013-01-01","2013-02-01","2013-03-01","2013-04-01","2013-05-01","2013-06-01","2013-07-01","2013-08-01","2013-09-01","2013-10-01","2013-11-01","2013-12-01","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01","2017-01-01","2017-02-01","2017-03-01","2017-04-01","2017-05-01","2017-06-01","2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01","2017-12-01","2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01","2018-06-01","2018-07-01","2018-08-01","2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01","2019-03-01","2019-04-01","2019-05-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-11-01","2020-12-01"],[40,72,48,50,100,85,68,67,49,56,69,55,55,35,60,85,68,61,49,47,52,53,92,64,49,51,57,53,65,32,47,68,43,74,49,51,39,53,53,51,58,51,41,45,51,56,64,31,66,59,52,53,61,45,52,45,45,63,57,57,56,46,56,54,42,34,48,54,38,57,73,49,53,56,49,55,64,59,19,41,47,47,67,62,41,71,88,72,44,48,32,34,60,54,67,53,63,66,69,62,55,42,37,43,51,48,48,42,47,59,42,57,60,47,41,46,58,74,70,53,66,46,65,69,68,53,73,71,70,65,67,66],[40,45,49,44,44,40,29,34,36,39,45,35,37,35,50,48,46,29,35,22,45,49,45,32,45,52,51,46,43,38,36,39,40,47,50,36,38,44,42,47,38,32,29,30,38,46,43,33,35,46,54,47,42,32,29,32,42,48,48,35,41,46,54,48,41,39,36,33,42,43,43,33,37,47,50,54,47,43,31,41,47,49,48,41,48,56,60,56,47,33,33,41,49,54,52,44,42,54,56,56,51,39,39,43,54,47,55,46,42,61,49,58,50,42,41,47,58,58,59,42,51,65,81,82,72,69,59,62,88,100,78,61],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>workLifeBalance<\/th>\n      <th>wellBeing<\/th>\n      <th>elapsedTime<\/th>\n      <th>month<\/th>\n      <th>pandemic<\/th>\n      <th>elapsedTimeAfterPandemic<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","columnDefs":[{"className":"dt-right","targets":[2,3,4,6,7]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-306ee4c9f997d6fae28e" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-306ee4c9f997d6fae28e">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td><\/td>\n  <td data-type=\"date\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1.262304e+12\" data-max=\"1606780800000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"19\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"22\" data-max=\"100\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"integer\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"1\" data-max=\"132\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"1\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none;position: absolute;width: 200px;opacity: 1\">\n      <div data-min=\"0\" data-max=\"10\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132"],["2010-01-01","2010-02-01","2010-03-01","2010-04-01","2010-05-01","2010-06-01","2010-07-01","2010-08-01","2010-09-01","2010-10-01","2010-11-01","2010-12-01","2011-01-01","2011-02-01","2011-03-01","2011-04-01","2011-05-01","2011-06-01","2011-07-01","2011-08-01","2011-09-01","2011-10-01","2011-11-01","2011-12-01","2012-01-01","2012-02-01","2012-03-01","2012-04-01","2012-05-01","2012-06-01","2012-07-01","2012-08-01","2012-09-01","2012-10-01","2012-11-01","2012-12-01","2013-01-01","2013-02-01","2013-03-01","2013-04-01","2013-05-01","2013-06-01","2013-07-01","2013-08-01","2013-09-01","2013-10-01","2013-11-01","2013-12-01","2014-01-01","2014-02-01","2014-03-01","2014-04-01","2014-05-01","2014-06-01","2014-07-01","2014-08-01","2014-09-01","2014-10-01","2014-11-01","2014-12-01","2015-01-01","2015-02-01","2015-03-01","2015-04-01","2015-05-01","2015-06-01","2015-07-01","2015-08-01","2015-09-01","2015-10-01","2015-11-01","2015-12-01","2016-01-01","2016-02-01","2016-03-01","2016-04-01","2016-05-01","2016-06-01","2016-07-01","2016-08-01","2016-09-01","2016-10-01","2016-11-01","2016-12-01","2017-01-01","2017-02-01","2017-03-01","2017-04-01","2017-05-01","2017-06-01","2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01","2017-12-01","2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01","2018-06-01","2018-07-01","2018-08-01","2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01","2019-03-01","2019-04-01","2019-05-01","2019-06-01","2019-07-01","2019-08-01","2019-09-01","2019-10-01","2019-11-01","2019-12-01","2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01","2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01","2020-11-01","2020-12-01"],[40,72,48,50,100,85,68,67,49,56,69,55,55,35,60,85,68,61,49,47,52,53,92,64,49,51,57,53,65,32,47,68,43,74,49,51,39,53,53,51,58,51,41,45,51,56,64,31,66,59,52,53,61,45,52,45,45,63,57,57,56,46,56,54,42,34,48,54,38,57,73,49,53,56,49,55,64,59,19,41,47,47,67,62,41,71,88,72,44,48,32,34,60,54,67,53,63,66,69,62,55,42,37,43,51,48,48,42,47,59,42,57,60,47,41,46,58,74,70,53,66,46,65,69,68,53,73,71,70,65,67,66],[40,45,49,44,44,40,29,34,36,39,45,35,37,35,50,48,46,29,35,22,45,49,45,32,45,52,51,46,43,38,36,39,40,47,50,36,38,44,42,47,38,32,29,30,38,46,43,33,35,46,54,47,42,32,29,32,42,48,48,35,41,46,54,48,41,39,36,33,42,43,43,33,37,47,50,54,47,43,31,41,47,49,48,41,48,56,60,56,47,33,33,41,49,54,52,44,42,54,56,56,51,39,39,43,54,47,55,46,42,61,49,58,50,42,41,47,58,58,59,42,51,65,81,82,72,69,59,62,88,100,78,61],[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,10]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>workLifeBalance<\/th>\n      <th>wellBeing<\/th>\n      <th>elapsedTime<\/th>\n      <th>month<\/th>\n      <th>pandemic<\/th>\n      <th>elapsedTimeAfterPandemic<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","columnDefs":[{"className":"dt-right","targets":[2,3,4,6,7]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
-<p><em>Table 1: Final dataset used for testing hypothesis about impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being.</em></p>
+<p><em>Table 1: Final dataset used for testing hypothesis about impact
+of the COVID-19 pandemic on people’s interest in work-life balance and
+well-being.</em></p>
 <p><br></p>
-<h2 id="bayesian-segmented-regression">Bayesian segmented regression</h2>
-<p>We will model our data using common segmented regression models that have following general structure:</p>
-<p><span class="math display">\[Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}\]</span></p>
-<p>Given that we are dealing with correlated and truncated data, we will include in our models two specific terms – autocorrelation and truncation terms that will treat these specific characteristics of our data.</p>
-<p>Now let’s fit the data to the model and check what it tells us about the effect of pandemic on people’s search interest in work-life balance and well-being. We will use <a href="https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf">brms r package</a> that enables making inferences about statistical models’ parameters within Bayesian inferential framework. Because of that, we also need to specify some additional parameters (e.g. <code>chains</code>, <code>iter</code> or <code>warmup</code>) of <a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">the Markov Chain Monte Carlo (MCMC) algorithm</a> that will generate posterior samples of our models’ parameters.</p>
-<p>Bayesian framework also enables us to specify priors for estimated parameter and through them include our domain knowledge in the analysis. The specified priors are important for both parameter estimation and hypothesis testing as they define our starting information state before we take into account our data. Here we will use rather wide, uninformative, and only mildly regularizing priors (it means that the results of the inference will be very close to the results of standard, frequentist parameter estimation/hypothesis testing).</p>
+<h2 id="bayesian-segmented-regression">Bayesian segmented
+regression</h2>
+<p>We will model our data using common segmented regression models that
+have following general structure:</p>
+<p><span class="math display">\[Y_{t} = β_{0} + β_{1}*time_{t} +
+β_{2}*intervention_{t} + β_{3}*time after intervention_{t} +
+e_{t}\]</span></p>
+<p>Given that we are dealing with correlated and truncated data, we will
+include in our models two specific terms – autocorrelation and
+truncation terms that will treat these specific characteristics of our
+data.</p>
+<p>Now let’s fit the models to the data and check what they tell us
+about the effect of pandemic on people’s search interest in work-life
+balance and well-being. We will use <a
+href="https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf">brms
+r package</a> that enables making inferences about statistical models’
+parameters within Bayesian inferential framework. Because of that, we
+also need to specify some additional parameters
+(e.g. <code>chains</code>, <code>iter</code> or <code>warmup</code>) of
+<a href="https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo">the
+Markov Chain Monte Carlo (MCMC) algorithm</a> that will generate
+posterior samples of our models’ parameters.</p>
+<p>Bayesian framework also enables us to specify priors for estimated
+parameter and through them include our domain knowledge in the analysis.
+The specified priors are important for both parameter estimation and
+hypothesis testing as they define our starting information state before
+we take into account our data. Here we will use rather wide,
+uninformative, and only mildly regularizing priors (it means that the
+results of the inference will be very close to the results of standard,
+frequentist parameter estimation/hypothesis testing).</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1715,7 +1823,19 @@ Show code
 </div>
 <p><br></p>
 <h2 id="some-necessary-sanity-checks">Some necessary sanity checks</h2>
-<p>Before making any inferences, we should make some sanity checks to be sure that the mechanics of the MCMC algorithm worked well and that we can use generated posterior samples for making inferences about our models’ parameters. There are many ways for doing that, but here we will use only visual check of the MCMC chains. We want plots of these chains look like hairy caterpillar which would indicate convergence of the underlying Markov chain to stationarity and convergence of Monte Carlo estimators to population quantities, respectively. As can be seen in Graph 1 and 2 below, in case of both models we can observe wanted characteristics of the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example <a href="https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html">Bayesian Notes</a> from Jeffrey B. Arnold.)</p>
+<p>Before making any inferences, we should make some sanity checks to be
+sure that the mechanics of the MCMC algorithm worked well and that we
+can use generated posterior samples for making inferences about our
+models’ parameters. There are many ways for doing that, but here we will
+use only visual check of the MCMC chains. We want plots of these chains
+look like hairy caterpillar which would indicate convergence of the
+underlying Markov chain to stationarity and convergence of Monte Carlo
+estimators to population quantities, respectively. As can be seen in
+Graph 1 and 2 below, in case of both models we can observe wanted
+characteristics of the MCMC chains described above. (For additional MCMC
+diagnostics procedures, see for example <a
+href="https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html">Bayesian
+Notes</a> from Jeffrey B. Arnold.)</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1738,7 +1858,8 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-5-1.png" width="768" /></p>
 </div>
-<p><em>Graph 1: Trace plots of Markov chains for individual parameters of the modelWorkLifeBalance.</em></p>
+<p><em>Graph 1: Trace plots of Markov chains for individual parameters
+of the modelWorkLifeBalance.</em></p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1759,9 +1880,14 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-6-1.png" width="768" /></p>
 </div>
-<p><em>Graph 2: Trace plots of Markov chains for individual parameters of the modelWellBeing.</em></p>
+<p><em>Graph 2: Trace plots of Markov chains for individual parameters
+of the modelWellBeing.</em></p>
 <p><br></p>
-<p>It is also important to check how well the models fit the data. We can use for this purpose posterior predictive checks that use specified number of sampled posterior values of models’ parameters and show how well the fitted models predict observed data. We can see in Graphs 3 and 4 that both models fit the observed data reasonably well.</p>
+<p>It is also important to check how well the models fit the data. We
+can use for this purpose posterior predictive checks that use specified
+number of sampled posterior values of models’ parameters and show how
+well the fitted models predict observed data. We can see in Graphs 3 and
+4 that both models fit the observed data reasonably well.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1785,7 +1911,9 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-7-1.png" width="768" /></p>
 </div>
-<p><em>Graph 3: Posterior predictive checks comparing simulated/replicated data under the fitted modelWorkLifeBalance with the observed data.</em></p>
+<p><em>Graph 3: Posterior predictive checks comparing
+simulated/replicated data under the fitted modelWorkLifeBalance with the
+observed data.</em></p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1810,11 +1938,29 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
-<p><em>Graph 4: Posterior predictive checks comparing simulated/replicated data under the fitted modelWellBeing with the observed data.</em></p>
+<p><em>Graph 4: Posterior predictive checks comparing
+simulated/replicated data under the fitted modelWellBeing with the
+observed data.</em></p>
 <p><br></p>
 <h2 id="results-of-the-analysis">Results of the analysis</h2>
-<p>Now, after having sufficient confidence that - using terminology from the <a href="https://xcelab.net/rm/statistical-rethinking/">Richard McElreath’s book Statistical Rethinking</a> - our “small worlds” can pretty accurately mimic the data coming from our real,“big world”, we can use our models’ parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people’s search interest in work-life balance and well-being changed after the onset of pandemic.</p>
-<p>In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people’s increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2.</p>
+<p>Now, after having sufficient confidence that - using terminology from
+the <a href="https://xcelab.net/rm/statistical-rethinking/">Richard
+McElreath’s book Statistical Rethinking</a> - our “small worlds” can
+pretty accurately mimic the data coming from our real,“big world”, we
+can use our models’ parameters to learn something about our research
+questions. Our primary interest is in the coefficient value of the
+pandemic term in our models. It expresses how much and in what direction
+people’s search interest in work-life balance and well-being changed
+after the onset of pandemic.</p>
+<p>In Graph 5 and 6 we can see posterior distributions of three selected
+parameters of our two models. In both cases the posterior distribution
+of the pandemic term is (predominantly or completely) on the right side
+of the zero value, which supports the claim about existence of the
+effect of pandemic on people’s increased search interest in work-life
+balance and well-being. As is apparent from the graphs, for well-being
+(Graph 6) this evidence is much stronger than for work-life balance
+(Graph 5), which corresponds to impression we might have when looking at
+the original Google Trends charts shown in Fig. 1 and 2.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1856,7 +2002,8 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
-<p><em>Graph 5: Visualization of the posterior distributions of selected parameters of the modelWorkLifeBalance.</em></p>
+<p><em>Graph 5: Visualization of the posterior distributions of selected
+parameters of the modelWorkLifeBalance.</em></p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1896,9 +2043,12 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-10-1.png" width="768" /></p>
 </div>
-<p><em>Graph 5: Visualization of the posterior distributions of selected parameters of the modelWellBeing.</em></p>
+<p><em>Graph 5: Visualization of the posterior distributions of selected
+parameters of the modelWellBeing.</em></p>
 <p><br></p>
-<p>To generate more summary statistics about posterior distributions (and also some diagnostic information like <code>Rhat</code> or <code>ESS</code>), we can use <code>summary()</code> function.</p>
+<p>To generate more summary statistics about posterior distributions
+(and also some diagnostic information like <code>Rhat</code> or
+<code>ESS</code>), we can use <code>summary()</code> function.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -2029,7 +2179,13 @@ and Tail_ESS are effective sample size measures, and Rhat is the potential
 scale reduction factor on split chains (at convergence, Rhat = 1).</code></pre>
 </div>
 <p><br></p>
-<p>Given that for work-life balance model the posterior distribution of pandemic term crosses the zero value, it would be useful to know how strong is the evidence in the favor of hypothesis that pandemic term is larger than zero. For that purpose we can extract posterior samples and use them for calculation of the proportion of values that are larger/smaller than zero. The resulting proportions show that the vast majority (around 92%) of posterior distribution lies above zero.</p>
+<p>Given that for work-life balance model the posterior distribution of
+pandemic term crosses the zero value, it would be useful to know how
+strong is the evidence in the favor of hypothesis that pandemic term is
+larger than zero. For that purpose we can extract posterior samples and
+use them for calculation of the proportion of values that are
+larger/smaller than zero. The resulting proportions show that the vast
+majority (around 92%) of posterior distribution lies above zero.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -2058,7 +2214,21 @@ Show code
 <pre><code>[1] 0.083375</code></pre>
 </div>
 <p><br></p>
-<p>Another option would be to compute <a href="https://en.wikipedia.org/wiki/Bayes_factor">Bayes factor</a> that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters <code>normal(0,50)</code>. We can see that Bayes factor (<code>Evid.Ratio</code> in the table below) has value of 13.7 which indicates strong evidence in favor of our hypothesis, in terms of <a href="https://en.wikipedia.org/wiki/Harold_Jeffreys">Harold Jeffreys</a>’ scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 13.7 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic’s positive effect on people’s search interest in work-life balance.</p>
+<p>Another option would be to compute <a
+href="https://en.wikipedia.org/wiki/Bayes_factor">Bayes factor</a> that
+expresses degree to which available data favors our hypothesis in
+comparison with the null model corresponding to normal prior
+distribution with the parameters <code>normal(0,50)</code>. We can see
+that Bayes factor (<code>Evid.Ratio</code> in the table below) has value
+of 13.7 which indicates strong evidence in favor of our hypothesis, in
+terms of <a href="https://en.wikipedia.org/wiki/Harold_Jeffreys">Harold
+Jeffreys</a>’ scale for interpretation of Bayes factors. Specifically it
+means that under the fitted model for well-being the hypothesis about
+pandemic term being higher than zero is 13.7 times more probable than
+under the null model. In other words, the data should shift our believe
+pretty strongly in direction of acceptance of the existence of
+pandemic’s positive effect on people’s search interest in work-life
+balance.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -2103,7 +2273,8 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-15-1.png" width="768" /></p>
 </div>
-<p><em>Graph 6: Visualization of prior and posterior distribution of pandemic term in the modelWorkLifeBalance.</em></p>
+<p><em>Graph 6: Visualization of prior and posterior distribution of
+pandemic term in the modelWorkLifeBalance.</em></p>
 <p><br></p>
 <p>Besides the major hypothesis we may be also interested in…</p>
 <ul>
@@ -2111,9 +2282,20 @@ Show code
 </li>
 <li>trend after the onset of pandemic, and also<br />
 </li>
-<li>seasonality of people’s search interest over the months within individual years.</li>
+<li>seasonality of people’s search interest over the months within
+individual years.</li>
 </ul>
-<p>For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the onset of pandemic the trend is rather stagnating, and within individual years the search interest follows work &amp; holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).</p>
+<p>For that purpose we might use, besides the summary statistics and
+graphs with posterior distributions depicted above, plots showing
+conditional effects for each of the predictors. From the plots in Graph
+7 it is thus clear that in case of work-life balance searches, the
+overall trend across the last ten years is decreasing, after the onset
+of pandemic the trend is rather stagnating, and within individual years
+the search interest follows work &amp; holiday seasonality (lower search
+interest during the holiday parts of the year - June, July, August and
+December - and higher during the rest of the year). In case of
+well-being searches, the seasonality part is similar, but the trends
+differ - both of them are increasing (see Graph 8).</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -2148,7 +2330,10 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-17-1.png" width="768" /></p>
 </div>
-<p><em>Graph 7: Visualization of conditional effects of predictors from modelWorkLifeBalance. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.</em></p>
+<p><em>Graph 7: Visualization of conditional effects of predictors from
+modelWorkLifeBalance. The predictors are conditioned on the mean in the
+case of continuous variables and reference category in the case of
+factors.</em></p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -2181,11 +2366,23 @@ Show code
 </details>
 <p><img src="segmentedregression_files/figure-html5/unnamed-chunk-19-1.png" width="768" /></p>
 </div>
-<p><em>Graph 8: Visualization of conditional effects of predictors from modelWellBeing. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.</em></p>
+<p><em>Graph 8: Visualization of conditional effects of predictors from
+modelWellBeing. The predictors are conditioned on the mean in the case
+of continuous variables and reference category in the case of
+factors.</em></p>
 <p><br></p>
-<p>In conclusion, we can say that there is some evidence that the COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.</p>
-<p>The whole script is available in <a href="https://github.com/lstehlik2809/Bayesian-segmented-regression.git">Jupyter Notebook on GitHub</a>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>In conclusion, we can say that there is some evidence that the
+COVID-19 pandemic has prompted people to be more interested in topics
+related to work-life balance and well-being. I wish us all to be able to
+transform our increased interest in these topics into truly increased
+quality of our personal and professional lives. It would be a shame not
+to use that extra incentive many of us have now for making significant
+change in our lives.</p>
+<p>The whole script is available in <a
+href="https://github.com/lstehlik2809/Bayesian-segmented-regression.git">Jupyter
+Notebook on GitHub</a>.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

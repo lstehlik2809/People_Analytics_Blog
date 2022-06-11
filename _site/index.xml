@@ -114,7 +114,7 @@
     </item>
     <item>
       <title>Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</link>
       <description>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</description>
       <category>well-being</category>
@@ -124,7 +124,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</guid>
-      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/./workLifeBalanceGoogleTrends.png" medium="image" type="image/png" width="1356" height="680"/>
     </item>
     <item>
