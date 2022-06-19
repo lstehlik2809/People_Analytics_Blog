@@ -1,5 +1,5 @@
 ---
-title: "Makers schedule and managers schedule in collaboration data"
+title: "Makers' schedule and managers' schedule in collaboration data"
 description: |
   Many of us have probably already heard of Paul Graham's two types of schedules - one that meets the needs of makers and one that meets the needs of managers. But can these two types of schedules be found in any real collaborative data? Let's find out.
 preview: ./maker-schedule-vs-manager-schedule.jpg

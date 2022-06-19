@@ -1,5 +1,5 @@
 ---
-title: "R Shiny App for LinkedIn Connections Analysis"
+title: "R Shiny app for LinkedIn connections analysis"
 description: |
   An introduction of a simple R Shiny application for analysing LinkedIn connections.
 preview: ./linkedinLogo.png

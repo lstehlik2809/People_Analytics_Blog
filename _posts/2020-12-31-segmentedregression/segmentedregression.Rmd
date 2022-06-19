@@ -1,5 +1,5 @@
 ---
-title: "Modeling Impact of the COVID-19 Pandemic on People’s Interest in Work-Life Balance and Well-Being"
+title: "Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being"
 description: |
   Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
 preview: ./workLifeBalanceGoogleTrends.png
@@ -56,7 +56,7 @@ Before conducting the analysis itself, we need to wrangle the data from Google T
 * **search interest** – numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;  
 * **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
 * **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing hypothesis about the effect of pandemic on people’s interest in work-life balance and well-being;  
-* **elapsed time after pandemic onset** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the onset of pandemic;    
+* **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the outbreak of pandemic;    
 * **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
@@ -97,11 +97,17 @@ dfAll <- dfWorkLifeBalance %>%
   dplyr::mutate(
     elapsedTime = row_number(),
     pandemic = case_when(
-      date >= '2020-03-01' ~ 1,
+      date >= "2020-03-01" ~ 1,
       TRUE ~ 0
       ),
     elapsedTimeAfterPandemic = cumsum(pandemic)
-    ) %>%
+  ) %>%
+  dplyr::mutate(
+    pandemic = as.factor(case_when(
+        pandemic == 1 ~ "After the pandemic outbreak",
+        TRUE ~ "Before the pandemic outbreak"
+        ))
+  ) %>%
   # changing order of variables in df
   dplyr::select(
     date, workLifeBalance, wellBeing, elapsedTime, month, pandemic, elapsedTimeAfterPandemic
@@ -125,6 +131,7 @@ DT::datatable(
   filter = 'top',
   extensions = 'Buttons',
   fillContainer = FALSE,
+  rownames= FALSE,
   options = list(
     pageLength = 5, 
     autoWidth = TRUE,
@@ -172,7 +179,7 @@ brms::get_prior(
 
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, results = "hide"}
+```{r echo=TRUE, message=FALSE, warning=FALSE, class.source = 'fold-hide', results = "hide"}
 
 # uploading library for Bayesian statistical inference
 library(brms)
@@ -180,7 +187,7 @@ library(brms)
 # specifying wide, uninformative, and only mildly regularizing priors for predictors in both models 
 priors <- c(set_prior("normal(0,50)", class = "b", coef = "elapsedTime"),
             set_prior("normal(0,50)", class = "b", coef = "elapsedTimeAfterPandemic"),
-            set_prior("normal(0,50)", class = "b", coef = "pandemic"),
+            set_prior("normal(0,50)", class = "b", coef = "pandemicBeforethepandemicoutbreak"),
             set_prior("normal(0,50)", class = "b", coef = "monthApr"),
             set_prior("normal(0,50)", class = "b", coef = "monthAug"),
             set_prior("normal(0,50)", class = "b", coef = "monthDec"),
@@ -308,7 +315,7 @@ brms::pp_check(
 
 ## Results of the analysis
 
-Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the onset of pandemic.  
+Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the pandemic term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the outbreak of pandemic.  
 
 In Graph 5 and 6 we can see posterior distributions of three selected parameters of our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the right side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
 
@@ -320,12 +327,12 @@ library(tidybayes)
 # visualizing posterior distributions of selected parameters of the modelWorkLifeBalance
 modelWorkLifeBalance %>%
   tidybayes::gather_draws(
-    b_pandemic, b_elapsedTime, b_elapsedTimeAfterPandemic
+    b_pandemicBeforethepandemicoutbreak, b_elapsedTime, b_elapsedTimeAfterPandemic
     ) %>%
   dplyr::mutate(
     .variable = factor(
       .variable, 
-      levels = c("b_pandemic", "b_elapsedTime", "b_elapsedTimeAfterPandemic"), 
+      levels = c("b_pandemicBeforethepandemicoutbreak", "b_elapsedTime", "b_elapsedTimeAfterPandemic"), 
       ordered = TRUE
       )
     ) %>%
@@ -356,12 +363,12 @@ modelWorkLifeBalance %>%
 # visualizing posterior distributions of selected parameters of the modelWellBeing
 modelWellBeing %>%
   tidybayes::gather_draws(
-    b_pandemic, b_elapsedTime, b_elapsedTimeAfterPandemic
+    b_pandemicBeforethepandemicoutbreak, b_elapsedTime, b_elapsedTimeAfterPandemic
     ) %>%
   dplyr::mutate(
     .variable = factor(
       .variable, 
-      levels = c("b_pandemic", "b_elapsedTime", "b_elapsedTimeAfterPandemic"), 
+      levels = c("b_pandemicBeforethepandemicoutbreak", "b_elapsedTime", "b_elapsedTimeAfterPandemic"), 
       ordered = TRUE
       )
     ) %>%
@@ -416,26 +423,26 @@ Given that for work-life balance model the posterior distribution of pandemic te
 # extracting posterior samples
 samples <- posterior_samples(modelWorkLifeBalance, seed = 12345)
 
-# probability of b_pandemic coefficient being higher
-sum(samples$b_pandemic > 0) / nrow(samples)
+# probability of b_pandemicBeforethepandemicoutbreak coefficient being higher than 0
+sum(samples$b_pandemicBeforethepandemicoutbreak > 0) / nrow(samples)
 
-# probability of b_pandemic coefficient being lower than 0
-sum(samples$b_pandemic < 0) / nrow(samples)
+# probability of b_pandemicBeforethepandemicoutbreak coefficient being lower than 0
+sum(samples$b_pandemicBeforethepandemicoutbreak < 0) / nrow(samples)
 
 ```  
 
 
 <br> 
 
-Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value of 13.7 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 13.7 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
+Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value of 11.6 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for well-being the hypothesis about pandemic term being higher than zero is 11.6 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
 
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
 
-# computing Bayes factor for hypothesis that pandemic term in the modelWorkLifeBalance is larger than zero  
+# computing Bayes factor for hypothesis that pandemicBeforethepandemicoutbreak term in the modelWorkLifeBalance is smaller than zero  
 brms::hypothesis(
   modelWorkLifeBalance,
-  "pandemic > 0",
+  "pandemicBeforethepandemicoutbreak < 0",
   seed = 12345
   )
 
@@ -443,11 +450,11 @@ brms::hypothesis(
 
 ```{r fig.width=8}
 
-# plotting prior and posterior distribution for pandemic term in the modelWorkLifeBalance 
+# plotting prior and posterior distribution for pandemic term in the modelWorkLifeBalance is smaller than zero   
 plot(
   brms::hypothesis(
     modelWorkLifeBalance,
-    "pandemic > 0"
+    "pandemicBeforethepandemicoutbreak < 0"
   )
 )
 
@@ -460,10 +467,10 @@ plot(
 Besides the major hypothesis we may be also interested in...  
 
 * overall trend across the last ten years,  
-* trend after the onset of pandemic, and also  
+* trend after the outbreak of pandemic, and also  
 * seasonality of people's search interest over the months within individual years.  
 
-For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the onset of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
+For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the outbreak of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
