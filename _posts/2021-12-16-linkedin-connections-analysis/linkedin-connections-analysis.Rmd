@@ -39,11 +39,11 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 
 <br>
 
-Unfortunately, since there is no information about your connections' connections in the data, we cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.
+Unfortunately, since there is no information about your connections' connections in the data, the app cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.
 
 You can take it as a kind of Christmas gift for my fellow LinkedIn users. Enjoy exploring your connections! And if you'd like to explore and better manage also your company's internal collaboration networks, then check out what we do at [Time is Ltd.](https://www.timeisltd.com/) 
 
-P.S. The data you upload is not permanently stored anywhere. The app runs on the [shinyapps.io server](https://www.shinyapps.io/). If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data.
+P.S. The data you upload is not permanently stored anywhere. The app runs on the [shinyapps.io server](https://www.shinyapps.io/). If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data from the app.
 
 P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor%C3%A1%C4%8D-93361526/) for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.
 
