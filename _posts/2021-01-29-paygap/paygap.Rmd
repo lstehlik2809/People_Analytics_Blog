@@ -162,6 +162,7 @@ DT::datatable(
   filter = 'top',
   extensions = 'Buttons',
   fillContainer = FALSE,
+  rownames = FALSE,
   options = list(
     pageLength = 5, 
     autoWidth = TRUE,
