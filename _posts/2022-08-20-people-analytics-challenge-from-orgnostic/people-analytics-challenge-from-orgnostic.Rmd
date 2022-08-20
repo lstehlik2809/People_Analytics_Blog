@@ -1,0 +1,36 @@
+---
+title: "People Analytics Challenge from Orgnostic: Plan for High Growth"
+description: |
+ A brief summary of my participation in Orgnostic's People Analytics Challenge.     
+preview: ./recruitmentChannels.png
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 08-19-2022
+categories:
+  - recruitment channels
+  - workforce planning
+  - descriptive statistics
+  - r
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+During a few nights in August, I had the opportunity to participate in an interesting **People Analytics Challenge** from [Orgnostic](https://orgnostic.com/), a company providing people analytics platform that links scattered HR and finance data, run surveys on top, analyses the data, and get answers to the critical questions about organizations and their employees. 
+
+Out of three possible challenges, I chose one that was quite far from what I'm currently usually working on or what I've worked on in the past. The chosen task was to analyze the **effectiveness of recruiting sources** for a company that plans to double in size from its current 750+ employees.
+
+Although the dummy data provided was quite limited for obvious reasons and did not allow to answer all relevant questions (but you could also use your own data which would not suffer from this shortcoming), after combining them and enriching them slightly based on realistic assumptions, it was possible to arrive at quite interesting insights and recommendations. See for yourself - the resulting presentation is attached to this post below.
+
+![Alt](./OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf){width=100% height=400}  
+
+
+If you'd like to look more into the guts of the analyses conducted, you can find both the data provided by Orgnostic and the R script used to analyze it on [my GitHub account](https://github.com/lstehlik2809/People-Analytics-Challenge). 
+
+
+P.S. Oh, I almost forgot - there are exciting prizes in the form of tickets to HRtechX Copenhagen or HR Technology Conference in Las Vegas. So please keep your fingers crossed for me 🤞😉
