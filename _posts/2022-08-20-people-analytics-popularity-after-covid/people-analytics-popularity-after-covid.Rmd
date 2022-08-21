@@ -1,0 +1,147 @@
+---
+title: "The impact of the COVID pandemic on the popularity of people analytics"
+description: |
+ Many people analytics professionals think that after the COVID pandemic, organizations are more willing to listen to their insights and recommendations. Can we find any empirical support for their hunch? Let's check it out with data provided by Google Trends and segmented regression analysis of interrupted time series.        
+preview: ./people-analytics.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 08-20-2022
+categories:
+  - people analytics
+  - hr analytics
+  - covid pandemic
+  - segmented regression analysis
+  - interrupted time series data
+  - bayesian inference
+  - r
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+
+There is a fairly common perception among the people analytics professionals with whom I am in contact that after the COVID pandemic, companies are much more willing to use the insights provided by people analytics teams and incorporate them into their business-related decision-making processes. 
+
+I wondered if I could find any empirical support for this feeling in the surge of global interest in Google searches for "people analytics" and "HR analytics" terms after the pandemic, assuming the pandemic broke out in March 2020.
+
+Let's start our quest with a simple visual inspection of a line graph showing the trend of worldwide interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends) website and the key terms, time range and location mentioned above).  
+
+<img src="./peopleAnalyticsGoogleTrends.png">
+
+Towards the end of the time series, somewhere between September 2019 and March 2020, it can be seen that the trend stops increasing and starts to stagnate, except for the very last part of the graph, which shows a sharp increase in searches for both terms, but this may just be the result of the improved data collection system from January 2022 onwards (as indicated by the vertical line in the graph with a note). Thus, the data seems to suggest the opposite of what we would expect if a pandemic were to have a positive effect on interest in people analytics.  
+
+However, the picture revealed is full of noise and other irrelevant factors such as long-term trends or seasonal changes that obscure the true state of affairs. So let's take the help of an inferential statistics to help us distinguish the signal from the noise. The ideal analytical tool for our use case is a segmented regression analysis of interrupted time series. It allows the analyst to model changes in various processes and outcomes that follow intervention while controlling for other types of changes, such as trends and seasonality, that may have occurred regardless of the intervention.
+
+First, let's prepare the data we will need for this type of analysis. Specifically, we will need the following five variables: 
+
+* **search interest in people analytics** – numerical variable representing search interest in people analytics relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; search interest for two monitored terms ("people analytics" and "HR analytics") was combined by simple summation and then normalized to a range of 0 to 100; this variable serves as a dependent (criterion) variable;  
+* **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
+* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing hypothesis about the effect of pandemic on people’s interest in people analytics;  
+* **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the outbreak of pandemic;    
+* **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# uploading library for data manipulation
+library(tidyverse)
+
+# normalize function
+normalize <- function(x) {
+  return ((x - min(x)) / (max(x) - min(x)))
+}
+
+# uploading data
+data <- readr::read_delim("./multiTimeline.csv", delim = ",")
+
+# data munging
+mydata <- data %>%
+  dplyr::slice(-1) %>%
+  tidyr::separate(
+    col = `Category: All categories`, 
+    into = c("date", "peopleAnalyticsInterest", "hrAnalyticsInterest", "workforceAnalyticsInterest"),
+    sep = ","
+    ) %>%
+  dplyr::mutate(
+    peopleAnalyticsInterest = as.numeric(peopleAnalyticsInterest),
+    hrAnalyticsInterest = as.numeric(hrAnalyticsInterest),
+    interestInPeopleAnalytics = peopleAnalyticsInterest + hrAnalyticsInterest,
+    interestInPeopleAnalytics = normalize(interestInPeopleAnalytics)*100
+  ) %>%
+  # changing the format and name of the Month variable
+  dplyr::mutate(
+    date = stringr::str_glue("{date}-01"),
+    date = lubridate::ymd(date)
+  ) %>%
+  # creating new variable month
+  dplyr::mutate(
+    month = lubridate::month(date,label = TRUE, abbr = TRUE),
+    month = factor(month, levels = c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"), labels = c("Jan","Feb","Mar","Apr","May", "Jun","Jul","Aug","Sep","Oct","Nov","Dec"), ordered = FALSE)
+  ) %>%
+  # limiting the time window from 2007-01-01 to 2022-07-01
+  dplyr::filter(
+    date <= "2022-07-01",
+    date >= "2007-01-01"
+    ) %>%
+  # arranging data in ascending order by date
+  dplyr::arrange(
+    date
+  ) %>%
+  # creating new variables elapsed time, pandemic, and time elapsed after pandemic outbreak
+  dplyr::mutate(
+    elapsedTime = row_number(),
+    pandemic = case_when(
+      date >= '2020-03-01' ~ 1,
+      TRUE ~ 0
+    ),
+    elapsedTimeAfterPandemic = cumsum(pandemic)
+  ) %>%
+  dplyr::mutate(
+    pandemic = as.factor(ifelse(pandemic == 1, "After the pandemic outbreak", "Before the pandemic outbreak"))
+  ) %>%
+  # final selection of variables
+  dplyr::select(
+    date, interestInPeopleAnalytics, elapsedTime, month, pandemic, elapsedTimeAfterPandemic
+  )
+
+```
+
+Here is a table with the resulting data we will use for our analysis.
+
+```{r, layout="l-body-outset"}
+
+# uploading library for making user-friendly data table
+library(DT)
+
+DT::datatable(
+  mydata,
+  class = 'cell-border stripe', 
+  filter = 'top',
+  extensions = 'Buttons',
+  fillContainer = FALSE,
+  rownames= FALSE,
+  options = list(
+    pageLength = 5, 
+    autoWidth = TRUE,
+    dom = 'Bfrtip',
+    buttons = c('copy'), 
+    scrollX = TRUE, 
+    selection="multiple"
+    )
+  )
+
+```
+
+
+The attached graphs show one of the outputs of such an analysis for the period from Jan 2007 to May 2022, assuming a pandemic outbreak in March 2020. The graphs show the conditional effects of the independent variables used in the model of search interest in the "people/hr analytics" terms. What do these graphs show us? 
+
+➡️ There is a clear upward trend over the last 15 years in the search interest.
+➡️ Within each year, search interest is driven by the seasonality of work and holidays (i.e., lower search interest during the holiday season - June, July, August, and December - and higher search interest during the rest of the year). 
+➡️ Rather surprisingly, however, search interest in people/hr analytics is lower after the pandemic outbreak compared to before the pandemic (in fact, 97% of the posterior distribution of the pandemicBeforethepandemicoutbreak parameter is greater than 0) and
+➡️ the trend is only slightly increasing after the pandemic (only 83% of the posterior distribution of the elapsedTimeAfterPandemic parameter is greater than 0).
+
+Given that the Google search interest in people/hr analytics is a rather distant proxy for their actual use in HR and business practice, we should take these results with a grain of salt and try to find some other data sources to validate our hunches. For example, [Frank Corrigan](https://www.linkedin.com/in/frankxc/), Head of analytics at Ponder, had an idea to analyze changes in the number of job postings for people/hr analysts over time. Good inspiration for anyone willing to 

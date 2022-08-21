@@ -1,5 +1,5 @@
 ---
-title: "People Analytics Challenge from Orgnostic: Plan for High Growth"
+title: "People Analytics Challenge from Orgnostic: Plan for high growth"
 description: |
  A brief summary of my participation in Orgnostic's People Analytics Challenge.     
 preview: ./recruitmentChannels.png
@@ -30,7 +30,7 @@ Although the dummy data provided was quite limited for obvious reasons and did n
 ![Alt](./OrgnosticSummerPeopleAnalyticsChallenge_Ludek_Stehlik.pdf){width=100% height=400}  
 
 
-If you'd like to look more into the guts of the analyses conducted, you can find both the data provided by Orgnostic and the R script used to analyze it on [my GitHub account](https://github.com/lstehlik2809/People-Analytics-Challenge). 
+If you'd like to look more into the guts of the analyses conducted, you can find both the data provided by Orgnostic and the R script used to analyze it on [my GitHub page](https://github.com/lstehlik2809/People-Analytics-Challenge). 
 
 
 P.S. Oh, I almost forgot - there are exciting prizes in the form of tickets to HRtechX Copenhagen or HR Technology Conference in Las Vegas. So please keep your fingers crossed for me 🤞😉
