@@ -6,7 +6,7 @@ preview: ./people-analytics.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 08-20-2022
+date: 08-29-2022
 categories:
   - people analytics
   - hr analytics
