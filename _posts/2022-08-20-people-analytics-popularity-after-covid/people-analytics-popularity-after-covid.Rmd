@@ -27,17 +27,21 @@ output:
 
 There is a fairly common perception among the people analytics professionals with whom I am in contact that after the COVID pandemic, companies are much more willing to use the insights provided by people analytics teams and incorporate them into their business-related decision-making processes. 
 
-I wondered if I could find any empirical support for this feeling in the surge of global interest in Google searches for "people analytics" and "HR analytics" terms after the pandemic, assuming the pandemic broke out in March 2020.
+I wondered if I could find any empirical support for this feeling in the surge of global search interest in "people analytics" and "HR analytics" terms on Google after the pandemic outbreak, assuming the pandemic broke out in March 2020.
 
-Let's start our quest with a simple visual inspection of a line graph showing the trend of worldwide interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends) website and the key terms, time range and location mentioned above).  
+Let's start our quest with a simple visual inspection of a line chart showing the trend of worldwide interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends) website and the key terms, time range and location described above).  
 
 <img src="./peopleAnalyticsGoogleTrends.png">
 
 Towards the end of the time series, somewhere between September 2019 and March 2020, it can be seen that the trend stops increasing and starts to stagnate, except for the very last part of the graph, which shows a sharp increase in searches for both terms, but this may just be the result of the improved data collection system from January 2022 onwards (as indicated by the vertical line in the graph with a note). Thus, the data seems to suggest the opposite of what we would expect if a pandemic were to have a positive effect on interest in people analytics.  
 
-However, the picture revealed is full of noise and other irrelevant factors such as long-term trends or seasonal changes that obscure the true state of affairs. So let's take the help of an inferential statistics to help us distinguish the signal from the noise. The ideal analytical tool for our use case is a segmented regression analysis of interrupted time series. It allows the analyst to model changes in various processes and outcomes that follow intervention while controlling for other types of changes, such as trends and seasonality, that may have occurred regardless of the intervention.
+However, the picture revealed is full of noise and other irrelevant factors such as long-term trends or seasonal changes that obscure the true state of affairs. So let us take the help of inferential statistics to answer the question we are interested in. The ideal analytical tool for our use case is a segmented regression analysis of interrupted time series. It allows us to model changes in various processes and outcomes that follow intervention while controlling for other types of changes, such as trends and seasonality, that may have occurred regardless of the intervention. The model used has the following general structure:  
 
-First, let's prepare the data we will need for this type of analysis. Specifically, we will need the following five variables: 
+$$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
+
+Since we are dealing with correlated and truncated data, we also include two additional terms in our model, an autocorrelation term and a truncation term, to handle these specific properties of our data.
+
+But first, let's prepare the data we will need for this type of analysis. Specifically, we will need the following five variables: 
 
 * **search interest in people analytics** – numerical variable representing search interest in people analytics relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; search interest for two monitored terms ("people analytics" and "HR analytics") was combined by simple summation and then normalized to a range of 0 to 100; this variable serves as a dependent (criterion) variable;  
 * **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
@@ -114,7 +118,7 @@ Here is a table with the resulting data we will use for our analysis.
 
 ```{r, layout="l-body-outset"}
 
-# uploading library for making user-friendly data table
+# uploading library for making more user-friendly data table
 library(DT)
 
 DT::datatable(
@@ -137,11 +141,196 @@ DT::datatable(
 ```
 
 
-The attached graphs show one of the outputs of such an analysis for the period from Jan 2007 to May 2022, assuming a pandemic outbreak in March 2020. The graphs show the conditional effects of the independent variables used in the model of search interest in the "people/hr analytics" terms. What do these graphs show us? 
+We can now fit the model to the data and test what it tells us about the impact of the pandemic on people's search interest in people analytics. We will use [the brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) for this, which allows us to make inferences about the model parameters within a Bayesian inferential framework. For this reason, we must also specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that generates posterior samples of our model's parameters.  
 
-➡️ There is a clear upward trend over the last 15 years in the search interest.
-➡️ Within each year, search interest is driven by the seasonality of work and holidays (i.e., lower search interest during the holiday season - June, July, August, and December - and higher search interest during the rest of the year). 
-➡️ Rather surprisingly, however, search interest in people/hr analytics is lower after the pandemic outbreak compared to before the pandemic (in fact, 97% of the posterior distribution of the pandemicBeforethepandemicoutbreak parameter is greater than 0) and
-➡️ the trend is only slightly increasing after the pandemic (only 83% of the posterior distribution of the elapsedTimeAfterPandemic parameter is greater than 0).
+The Bayesian framework also allows us to specify priors for the estimated parameters and use them to incorporate our domain knowledge into the analysis. The specified priors are important for both parameter estimation and hypothesis testing because they define our initial information state before we consider our data. Here, we will use relatively broad, uninformative, and only slightly regularizing priors (that is, the inference results will be very close to the results of standard, frequentist parameter estimation/hypothesis testing). 
 
-Given that the Google search interest in people/hr analytics is a rather distant proxy for their actual use in HR and business practice, we should take these results with a grain of salt and try to find some other data sources to validate our hunches. For example, [Frank Corrigan](https://www.linkedin.com/in/frankxc/), Head of analytics at Ponder, had an idea to analyze changes in the number of job postings for people/hr analysts over time. Good inspiration for anyone willing to 
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hide"}
+
+# uploading library for Bayesian statistical inference
+library(brms)
+
+# checking available priors for the models 
+brms::get_prior(
+  interestInPeopleAnalytics | trunc(lb = 0, ub = 100) ~ elapsedTime + pandemic + elapsedTimeAfterPandemic + month + ar(p = 1),
+  data = mydata,
+  family = gaussian())
+
+```
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hide"}
+
+# specifying wide, uninformative, and only mildly regularizing priors 
+priors <- c(brms::set_prior("normal(0,50)", class = "b", coef = "elapsedTime"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "elapsedTimeAfterPandemic"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "pandemicBeforethepandemicoutbreak"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthApr"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthAug"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthDec"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthFeb"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthJul"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthJun"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthMar"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthMay"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthNov"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthOct"),
+            brms::set_prior("normal(0,50)", class = "b", coef = "monthSep"))
+
+# defining the statistical model
+model <- brms::brm(
+  interestInPeopleAnalytics | trunc(lb = 0, ub = 100) ~ elapsedTime + pandemic + elapsedTimeAfterPandemic + month + ar(p = 1),
+  data = mydata,
+  family = gaussian(),
+  prior = priors,
+  chains = 4,
+  iter = 20000,
+  warmup = 2000,
+  seed = 1234,
+  sample_prior = TRUE, 
+  control = list(adapt_delta = 0.9),
+  refresh = 0,
+  silent = 2 
+)
+
+```  
+
+Before making any inferences, we should perform several validation checks to ensure that the mechanics of the MCMC algorithm worked well and that we can use the generated posterior samples to make inferences about the parameters of our model. There are many ways to do this, but here we will only use a visual check of the MCMC chains. We want the plots of these chains to look like a hairy caterpillar, indicating the convergence of the underlying Markov chain to stationarity, and the convergence of the Monte Carlo estimates to population quantities, respectively. As can be seen in the graph below, we can observe the characteristics we are looking for in the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)
+
+```{r fig.height=12, fig.width=16}
+
+# uploading library for plotting Bayesian models
+library(bayesplot)
+
+# plotting the MCMC chains
+bayesplot::mcmc_trace(
+  model,
+  facet_args = list(nrow = 6)
+) +
+  ggplot2::labs(
+    title = "Plots of the MCMC chains used for estimation of the model parameters"
+  ) +
+  ggplot2::scale_color_viridis_d(option = "plasma", end = 0.8, name = "") +
+  ggthemes::theme_clean() +
+  ggplot2::theme(
+    legend.position = "bottom",
+    legend.background = element_blank()
+  )
+  
+
+```  
+
+It is also important to check how well the model fits the data. To do this, we can use the posterior predictive check, which uses a specified number of selected posterior values of the model parameters to show how well the fitted model predicts the observed data. In the graph below we see that the model fits the observed data reasonably well. 
+
+```{r fig.width=8}
+
+# investigating the model fit
+# specifying the number of samples
+ndraws = 1000
+
+brms::pp_check(
+  model, 
+  ndraws = ndraws
+) +
+  ggplot2::labs(
+    title = stringr::str_glue("Posterior predictive check (using {ndraws} samples)")
+  ) +
+  ggplot2::scale_color_viridis_d(option = "plasma", end = 0.8, name = "") +
+  ggthemes::theme_clean() +
+  ggplot2::theme(
+    legend.position = "bottom",
+    legend.background = element_blank()
+  )
+
+```  
+
+We can now use the parameters of our model to obtain information about our main question. Specifically, we are interested in the value of the coefficient of the pandemic term in our model. This represents how much and in what direction the search interest in people analytics changed after the pandemic outbreak. 
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
+
+# generating a summary of the fitted model
+summary(model)
+
+```  
+
+The following graph shows the posterior distribution of the main parameter of interest. We can see that it is on the right-hand side of the zero value, which supports the claim that there is an effect of the pandemic on people's interest in people analytics; however, it is on the opposite side of the zero value than we would expect if the pandemic were to have a positive effect on people's interest in people analytics. Thus, our analysis supports our initial visual impression that the pandemic outbreak did not increase people's interest in people analytics, but rather the opposite, in fact, almost 99% of the posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter is greater than 0.
+
+```{r message=FALSE, warning=FALSE, echo=FALSE, fig.width = 8, fig.height = 5}
+
+# uploading library for working with output from Bayesian models
+library(tidybayes)
+
+paramViz <- model %>%
+  tidybayes::gather_draws(b_pandemicBeforethepandemicoutbreak) %>%
+  dplyr::rename(value = .value)
+
+dens <- density(paramViz$value)
+
+paramViz <- tibble(x = dens$x, y = dens$y)
+
+# visualizing the posterior distribution of the model's b_pandemicBeforethepandemicoutbreak parameter 
+ggplot2::ggplot(paramViz, aes(x,y)) +
+  ggplot2::geom_area(data = filter(paramViz, x > 0), fill = "#fca636"
+  ) +
+  ggplot2::geom_area(data = filter(paramViz, x <= 0), fill = "grey") +
+  ggplot2::geom_line() +
+  ggplot2::scale_x_continuous(breaks = seq(-10, 40, 10)) +
+  ggplot2::labs(
+    title = "Posterior distribution of the b_pandemicBeforethepandemicoutbreak parameter",
+    y = "Density",
+    x = "pandemicBeforethepandemicoutbreak"
+    ) +
+  ggthemes::theme_clean()
+
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
+
+# uploading library for working with output from Bayesian models
+library(posterior)
+
+# extracting posterior samples
+samples <- posterior::as_draws_df(model, seed = 1234)
+
+# probability of b_pandemicBeforethepandemicoutbreak coefficient being higher than 0
+sum(samples$b_pandemicBeforethepandemicoutbreak > 0) / nrow(samples)
+
+```  
+
+Given that the Google search interest in people analytics is a fairly distant proxy for its actual use in HR and business practice, we should take these results with a grain of salt and try to find other data sources that would support our results. For example, [Frank Corrigan](https://www.linkedin.com/in/frankxc/), head of analytics at Ponder, came up with the idea of analyzing changes in postings for people analytics job positions over time. A good inspiration for anyone willing to spend some time getting at and analyzing such data.
+
+In addition to the main question addressed here, we may be interested in other insights provided by the model. To this end, we plot the marginal effects of each predictor. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
+
+# plotting marginal effects of predictors used 
+figList <- plot(brms::marginal_effects(model, probs = c(0.025, 0.975)), theme = ggthemes::theme_clean(), ask = FALSE) 
+
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE, fig.width = 8, fig.height=16}
+
+# uploading library for arranging multiple ggplots
+library(ggpubr)
+
+# putting all graphs with marginal effects together  
+ggpubr::ggarrange(
+  plotlist = list(figList[[1]] + geom_line(color = "#0d1687", size = 1), figList[[4]] + geom_point(color = "#0d1687", size = 3), figList[[2]] + geom_point(color = "#0d1687", size = 3), figList[[3]] + geom_line(color = "#0d1687", size = 1)), 
+  nrow = 4
+  ) %>%
+  ggpubr::annotate_figure(
+    top = text_grob("Marginal effects of predictors used"),
+    bottom = text_grob("Point estimates are shown along with 95% credible intervals.", hjust = 1, x = 1, face = "italic", size = 10)
+)
+
+```
+
+
+What do the resulting graphs show us?  
+
+* Unsurprisingly, search interest in people analytics has clearly been on an upward trend over the last 15 years.
+* Within each year, search interest is driven by the seasonality of work and holidays, i.e. lower search interest during the holiday season - June, July, August and December - and higher search interest during the rest of the year. 
+* A surprising fact we already know - search interest in people analytics is lower after a pandemic outbreak than before the pandemic.
+* The trend of search interest in people analytics is only slightly increasing after the pandemic. 
+
+Two last insights combined, the resulting picture does not much support the impression of many of my people analytics fellows about the growing importance of people analytics in HR and business leaders' decision making. But as suggested above, this is only one signal, and a relatively weak one, so we shouldn't draw any strong conclusions based on it.  

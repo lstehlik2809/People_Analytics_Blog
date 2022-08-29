@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 19 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Aug 2022 00:00:00 +0000</lastBuildDate>
     <item>
       <title>The impact of the COVID pandemic on the popularity of people analytics</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</link>
       <description>Many people analytics professionals think that after the COVID pandemic, organizations are more willing to listen to their insights and recommendations. Can we find any empirical support for their hunch? Let's check it out with data provided by Google Trends and segmented regression analysis of interrupted time series.</description>
       <category>people analytics</category>
@@ -21,7 +21,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</guid>
-      <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid/./people-analytics.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
