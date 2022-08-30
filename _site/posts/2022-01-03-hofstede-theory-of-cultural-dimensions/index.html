@@ -2117,24 +2117,80 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="../../index.html#category:r_shiny_dashboard" class="dt-tag">r shiny dashboard</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Cultural diversity brings both positive effects and some challenges. To deal with the latter, it is useful to have some kind of map to help people better navigate the cultural specificities of people from different societies. Hofstede’s theory of cultural dimensions is useful for such a purpose. Let’s check how dis/similar countries are on these cultural dimensions with a simple app that could help us better understand, manage and appreciate cultural differences a little better.</p></p>
+<p><p>Cultural diversity brings both positive effects and some
+challenges. To deal with the latter, it is useful to have some kind of
+map to help people better navigate the cultural specificities of people
+from different societies. Hofstede’s theory of cultural dimensions is
+useful for such a purpose. Let’s check how dis/similar countries are on
+these cultural dimensions with a simple app that could help us better
+understand, manage and appreciate cultural differences a little
+better.</p></p>
 </div>
 
 <div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/"
+class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
   
 <br/>2022-01-03
 </div>
 
 <div class="d-article">
-<p>One of the advantages of switch to remote working is that companies can expand the pool of talent from which they choose their employees, without being too constrained by country or even continental boundaries. However, the resulting cultural diversity can bring not only positive effects (e.g. a broader set of perspectives, a more diverse skill base, local market knowledge and insight, better creativity and innovation, etc.) but also some challenges (e.g. risk of prejudice or negative cultural stereotypes, misinterpretation of communication, conflicting work styles, different understanding of professional etiquette, etc.).</p>
-<p>Better knowledge and awareness of the cultural specificities of the societies from which people come is one <a href="https://en.wikipedia.org/wiki/Approaches_to_prejudice_reduction">way of dealing with these challenges</a>. In this respect, <strong><a href="https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory">Hofstede’s theory of cultural dimensions</a></strong> may be useful to us. Just as <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Big-5 theory</a> facilitates our understanding of other people’s personalities, Hofstede’s theory facilitates our understanding of their cultural background by describing their social values and releated behaviors through the following six cultural dimensions:</p>
-<p><a href="https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/"><img src="CulturalDimensionsDescription.png" title="Description of cultural dimensions" style="width:100.0%" alt="Description of cultural dimensions" /></a> <em>Image source:</em> <a href="https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/" class="uri">https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/</a></p>
-<p>You can easily check how countries are doing on these six dimensions on <a href="https://www.hofstede-insights.com/product/compare-countries/">the Hofstede Insights website</a>. To make it easier to compare cultural differences/similarities between countries, I built a simple a simple app that projects the cultural profiles of countries into 2D space using dimensionality reduction technique called <a href="https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction">UMAP (Uniform manifold approximation and projection)</a>. By selecting a specific cultural dimension, you can see how it is distributed across countries and continents. In addition, you can select some specific countries in the comparator and compare them across all six cultural dimensions.</p>
-<p>Check it out here ➡️ <a href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/" class="uri">https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/</a></p>
-<p><a href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/"><img src="Capture1.PNG" title="Dashbooard capture 1" style="width:100.0%" alt="Dashbooard capture 1" /></a></p>
-<p><a href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/"><img src="Capture2.PNG" title="Dashbooard capture 2" style="width:100.0%" alt="Dashbooard capture 2" /></a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>One of the advantages of switch to remote working is that companies
+can expand the pool of talent from which they choose their employees,
+without being too constrained by country or even continental boundaries.
+However, the resulting cultural diversity can bring not only positive
+effects (e.g. a broader set of perspectives, a more diverse skill base,
+local market knowledge and insight, better creativity and innovation,
+etc.) but also some challenges (e.g. risk of prejudice or negative
+cultural stereotypes, misinterpretation of communication, conflicting
+work styles, different understanding of professional etiquette,
+etc.).</p>
+<p>Better knowledge and awareness of the cultural specificities of the
+societies from which people come is one <a
+href="https://en.wikipedia.org/wiki/Approaches_to_prejudice_reduction">way
+of dealing with these challenges</a>. In this respect, <strong><a
+href="https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory">Hofstede’s
+theory of cultural dimensions</a></strong> may be useful to us. Just as
+<a
+href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Big-5
+theory</a> facilitates our understanding of other people’s
+personalities, Hofstede’s theory facilitates our understanding of their
+cultural background by describing their social values and releated
+behaviors through the following six cultural dimensions:</p>
+<p><a
+href="https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/"><img
+src="CulturalDimensionsDescription.png"
+title="Description of cultural dimensions" style="width:100.0%"
+alt="Description of cultural dimensions" /></a> <em>Image source:</em>
+<a
+href="https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/"
+class="uri">https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/</a></p>
+<p>You can easily check how countries are doing on these six dimensions
+on <a
+href="https://www.hofstede-insights.com/product/compare-countries/">the
+Hofstede Insights website</a>. To make it easier to compare cultural
+differences/similarities between countries, I built a simple app that
+projects the cultural profiles of countries into 2D space using
+dimensionality reduction technique called <a
+href="https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction">UMAP
+(Uniform manifold approximation and projection)</a>. By selecting a
+specific cultural dimension, you can see how it is distributed across
+countries and continents. In addition, you can select some specific
+countries in the comparator and compare them across all six cultural
+dimensions.</p>
+<p>Check it out here ➡️ <a
+href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/"
+class="uri">https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/</a></p>
+<p><a
+href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/"><img
+src="Capture1.PNG" title="Dashbooard capture 1" style="width:100.0%"
+alt="Dashbooard capture 1" /></a></p>
+<p><a
+href="https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/"><img
+src="Capture2.PNG" title="Dashbooard capture 2" style="width:100.0%"
+alt="Dashbooard capture 2" /></a></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
