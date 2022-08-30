@@ -87,21 +87,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen</title>
+<title>Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen</title>
 
-<meta property="description" itemprop="description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy."/>
+<meta property="description" itemprop="description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy."/>
 
 <link rel="canonical" href="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2021-05-17"/>
 <meta property="article:created" itemprop="dateCreated" content="2021-05-17"/>
-<meta name="article:author" content="Luděk Stehlík"/>
+<meta name="article:author" content="Ludek Stehlík"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen"/>
+<meta property="og:title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy."/>
+<meta property="og:description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy."/>
 <meta property="og:url" content="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"/>
 <meta property="og:image" content="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/./PayGap.png"/>
 <meta property="og:image:width" content="1438"/>
@@ -111,24 +111,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen"/>
-<meta property="twitter:description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy."/>
+<meta property="twitter:title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen"/>
+<meta property="twitter:description" content="Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich &quot;employer brand&quot; a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy."/>
 <meta property="twitter:url" content="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"/>
 <meta property="twitter:image" content="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/./PayGap.png"/>
 <meta property="twitter:image:width" content="1438"/>
 <meta property="twitter:image:height" content="897"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen"/>
+<meta name="citation_title" content="Ludek&#39;s Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen"/>
 <meta name="citation_fulltext_html_url" content="https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"/>
 <meta name="citation_online_date" content="2021/05/17"/>
 <meta name="citation_publication_date" content="2021/05/17"/>
-<meta name="citation_author" content="Luděk Stehlík"/>
+<meta name="citation_author" content="Ludek Stehlík"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Firemní audit rozdílu mezi platy mužů a žen"]},{"type":"character","attributes":{},"value":["Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich \"employer brand\" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy."]},{"type":"character","attributes":{},"value":["./PayGap.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-17-2021"]},{"type":"character","attributes":{},"value":["gender pay gap","gender pay audit","regression analysis","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Firemní audit rozdílu mezi platy mužu a žen"]},{"type":"character","attributes":{},"value":["Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich \"employer brand\" a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy."]},{"type":"character","attributes":{},"value":["./PayGap.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ludek Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-17-2021"]},{"type":"character","attributes":{},"value":["gender pay gap","gender pay audit","regression analysis","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2102,7 +2102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Firemní audit rozdílu mezi platy mužů a žen","description":"Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich \"employer brand\" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-05-17T00:00:00.000+02:00","citationText":"Stehlík, 2021"}
+{"title":"Firemní audit rozdílu mezi platy mužu a žen","description":"Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich \"employer brand\" a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy.","authors":[{"author":"Ludek Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-05-17T00:00:00.000+02:00","citationText":"Stehlík, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -3366,10 +3366,10 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
     </span>
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2021-01-29-paygap%2F&amp;title=Firemn%C3%AD%20audit%20rozd%C3%ADlu%20mezi%20platy%20mu%C5%BE%C5%AF%20a%20%C5%BEen">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2021-01-29-paygap%2F&amp;title=Firemn%C3%AD%20audit%20rozd%C3%ADlu%20mezi%20platy%20mu%C5%BEu%20a%20%C5%BEen">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://twitter.com/share?text=Firemn%C3%AD%20audit%20rozd%C3%ADlu%20mezi%20platy%20mu%C5%BE%C5%AF%20a%20%C5%BEen&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2021-01-29-paygap%2F">
+      <a href="https://twitter.com/share?text=Firemn%C3%AD%20audit%20rozd%C3%ADlu%20mezi%20platy%20mu%C5%BEu%20a%20%C5%BEen&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2021-01-29-paygap%2F">
         <i class="fab fa-twitter"></i>
       </a>
       <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2021-01-29-paygap%2F">
@@ -3405,11 +3405,11 @@ var disqus_config = function () {
 <div class="appendix-bottom">
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Stehlík (2021, May 17). Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen. Retrieved from https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/</pre>
+  <pre class="citation-appendix short">Stehlík (2021, May 17). Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen. Retrieved from https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{stehlík2021firemní,
-  author = {Stehlík, Luděk},
-  title = {Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužů a žen},
+  author = {Stehlík, Ludek},
+  title = {Ludek's Blog About People Analytics: Firemní audit rozdílu mezi platy mužu a žen},
   url = {https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap/},
   year = {2021}
 }</pre>
