@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2022 00:00:00 +0000</lastBuildDate>
     <item>
       <title>The impact of the COVID pandemic on the popularity of people analytics</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</link>
       <description>Many people analytics professionals think that after the COVID pandemic, organizations are more willing to listen to their insights and recommendations. Can we find any empirical support for their hunch? Let's check it out with data provided by Google Trends and segmented regression analysis of interrupted time series.</description>
       <category>people analytics</category>
@@ -21,7 +21,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</guid>
-      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid/./people-analytics.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -142,10 +142,10 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
     </item>
     <item>
-      <title>Firemní audit rozdílu mezi platy mužu a žen</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <title>Firemní audit rozdílu mezi platy mužů a žen</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap</link>
-      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy.</description>
+      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.</description>
       <category>gender pay gap</category>
       <category>gender pay audit</category>
       <category>regression analysis</category>

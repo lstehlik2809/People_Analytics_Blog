@@ -466,7 +466,7 @@ ggplot2::ggplot(
 ```
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+```{r, message=FALSE, warning=FALSE, echo=FALSE }
 
 # extracting posterior samples
 samples <- brms::posterior_samples(model)
@@ -477,40 +477,38 @@ prop <- sum(samples$b_genderMale > 0) / nrow(samples)
 ```
 
 
-```{r, message=FALSE, warning=FALSE, echo=FALSE, include=FALSE}
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
 
 # Bayesian hypothesis test
-the_test = brms::hypothesis(model, "genderMale > 0")
+the_test <- brms::hypothesis(model, "genderMale > 0")
 
 ```
 
 
 Po provedení tohoto výpočtu nám vychází hodnota `r round(prop*100,1)` %. To je v souladu s předchozím tvrzením, že důkaz ve prospěch testované hypotézy není příliš silný. Další možností by bylo použití tzv. [Bayesova faktoru](https://en.wikipedia.org/wiki/Bayes_factor), který vyjadřuje míru s níž dostupná data favorizují testovanou hypotézu ve srovnání s modelem odpovídajícím nulové hypotéze. Ten má pro naši hypotézu hodnotu `r round(the_test$hypothesis$Evid.Ratio, 1)`, což odpovídá významnému, ale zdaleka nikoli silnému či rozhodnému důkazu ve prospěch naší hypotézy.  
 
-Vedle parametru pohlaví může být pro nás potenciálně užitečné podívat se také na vztah základní mzdy a ostatních prediktorů použitých v našem modelu. Za tímto účelem můžeme použít vizualizaci podmíněných efektů jednotlivých prediktorů, které vyjadřují vztah mezi prediktorem a kritériem při zohlednění vlivu ostatních prediktorů. Takto např. můžeme na jednom z grafů vidět, že vztah mezi úrovní vzdělání a výší základního platu se má tendenci u mužů a žen lišit. Na jiném grafu si můžeme zase všimnout toho, že rozdíl mezi základní mzdou mužů a žen má tendenci narůstat s tím, jak klesá seniorita zaměstnanců. Tyto a další podobné vhledy nám mohou pomoct přiblížit se k důvodům za pozorovanými nerovnostmi v platech mužů a žen.          
+Vedle parametru pohlaví může být pro nás potenciálně užitečné podívat se také na vztah základní mzdy a ostatních prediktorů použitých v našem modelu. Za tímto účelem můžeme použít vizualizaci marginálních efektů jednotlivých prediktorů, které vyjadřují vztah mezi prediktorem a kritériem při zohlednění vlivu ostatních prediktorů. Takto např. můžeme na jednom z grafů vidět, že vztah mezi úrovní vzdělání a výší základního platu se má tendenci u mužů a žen lišit. Na jiném grafu si můžeme zase všimnout toho, že rozdíl mezi základní mzdou mužů a žen má tendenci narůstat s tím, jak klesá seniorita zaměstnanců. Tyto a další podobné vhledy nám mohou pomoct přiblížit se k důvodům za pozorovanými nerovnostmi v platech mužů a žen.          
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
-# plotting conditional effects for each predictor for the model 
-# Conditional and Marginal Relationships: The regression coefficients in generalized linear mixed models represent conditional effects in the sense that they express comparisons holding the cluster-specific random effects (and covariates) constant. For this reason, conditional effects are sometimes referred to as cluster-specific effects. In contrast, marginal effects can be obtained by averaging the conditional expectation μij over the random effects distribution. Marginal effects express comparisons of entire sub-population strata defined by covariate values and are sometimes referred to as population-averaged effects.In linear mixed models (identity link), the regression coefficents can be interpreted as either conditional or marginal effects. However, conditional and marginal effects differ for most other link functions.
+# plotting marginal effects of predictors used 
+# Note: Conditional vs. Marginal Relationships: The regression coefficients in generalized linear mixed models represent conditional effects in the sense that they express comparisons holding the cluster-specific random effects (and covariates) constant. For this reason, conditional effects are sometimes referred to as cluster-specific effects. In contrast, marginal effects can be obtained by averaging the conditional expectation μij over the random effects distribution. Marginal effects express comparisons of entire sub-population strata defined by covariate values and are sometimes referred to as population-averaged effects.In linear mixed models (identity link), the regression coefficents can be interpreted as either conditional or marginal effects. However, conditional and marginal effects differ for most other link functions.
 
-condEffplots <- plot(
-  brms::conditional_effects(
+marginalEffplots <- plot(
+  brms::marginal_effects(
     model, 
     effects = c("jobTitle", "age", "perfEval", "edu", "seniority", "gender:edu", "gender:seniority", "gender:age", "gender:perfEval"),
-    probs = c(0.025, 0.975), 
-    robust = TRUE),
+    probs = c(0.025, 0.975)),
   ask = FALSE
   )
-# margEffplots <- plot(brms::marginal_effects(model), probs = c(0.025, 0.975), robust = TRUE), ask = FALSE)
 
 ```
 
 ```{r fig.height=50, echo=FALSE}
 
-# putting all graphs with conditional effects together  
+# putting all graphs with marginal effects together  
 ggpubr::ggarrange(
-  plotlist = condEffplots, 
+  plotlist = marginalEffplots, 
   nrow = 9,
   ncol = 1
 )
@@ -554,7 +552,7 @@ Zde je pro zájemce originální dokument k bližšímu prostudování.
 
 <object data="Gender-Pay-Gap-actions.pdf" type="application/pdf" height="400px">
     <embed src="Gender-Pay-Gap-actions.pdf">
-        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="Gender-Pay-Gap-actions.pdf.pdf">Stáhnout PDF</a>.</p>
+        <p>Tento prohlížeč nepodporuje soubory PDF. Pro zobrazení si, prosím, PDF soubor stáhněte: <a href="Gender-Pay-Gap-actions.pdf">Stáhnout PDF</a>.</p>
     </embed>
 </object>
 <br>
