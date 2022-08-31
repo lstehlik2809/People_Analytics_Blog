@@ -283,7 +283,7 @@ ggplot2::ggplot(paramViz, aes(x,y)) +
   ggplot2::geom_line() +
   ggplot2::scale_x_continuous(breaks = seq(-10, 40, 10)) +
   ggplot2::labs(
-    title = "Posterior distribution of the b_pandemicBeforethepandemicoutbreak parameter",
+    title = "Posterior distribution of the pandemicBeforethepandemicoutbreak parameter",
     y = "Density",
     x = "pandemicBeforethepandemicoutbreak"
     ) +
