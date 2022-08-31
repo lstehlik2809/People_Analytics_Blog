@@ -2,7 +2,7 @@
 title: "Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being"
 description: |
   Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.
-preview: ./workLifeBalanceGoogleTrends.png
+preview: ./wellBeingData.jpeg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
@@ -121,7 +121,7 @@ dfAll <- dfWorkLifeBalance %>%
 
 Here is a table with the resulting data we will use for testing our hypothesis.  
 
-```{r, layout="l-body-outset"}
+```{r}
 
 # uploading library for making user-friendly data table
 library(DT)
@@ -345,7 +345,7 @@ modelWorkLifeBalance %>%
     fill = "lightblue"
   ) +
   ggplot2::labs(
-    title = "Posterior distribution of the pandemicBeforethepandemicoutbreak parameter in the modelWorkLifeBalance"
+    title = "Posterior distribution of the pandemicBeforethepandemicoutbreak parameter\nin the modelWorkLifeBalance"
     )
 
 ```  
@@ -376,7 +376,7 @@ modelWellBeing %>%
     fill = "lightblue"
   ) +
   ggplot2::labs(
-    title = "Posterior distribution of the pandemicBeforethepandemicoutbreak parameter in the modelWellBeing"
+    title = "Posterior distribution of the pandemicBeforethepandemicoutbreak parameter\nin the modelWellBeing"
     )
 
 ```  
@@ -463,11 +463,11 @@ Besides the major hypothesis we may be also interested in...
 * trend after the outbreak of pandemic, and also  
 * seasonality of people's search interest over the months within individual years.  
 
-For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effects for each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the outbreak of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
+For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effect of each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the outbreak of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
-# plotting conditional effects for each predictor for modelWorkLifeBalance 
+# plotting conditional effect of each predictor from modelWorkLifeBalance 
 figListWorkLifeBalance <- plot(brms::conditional_effects(modelWorkLifeBalance), ask = FALSE)
 
 ```
@@ -478,49 +478,43 @@ figListWorkLifeBalance <- plot(brms::conditional_effects(modelWorkLifeBalance), 
 # uploading library for arranging multiple ggplots
 library(ggpubr)
 
-# putting all graphs with conditional effects for modelWorkLifeBalance together  
+# putting all graphs with conditional effect together  
 ggpubr::ggarrange(
   plotlist = figListWorkLifeBalance, 
   nrow = 4
   ) %>%
   ggpubr::annotate_figure(
-    top = text_grob("Conditional effects for each predictor in the modelWorkLifeBalance")
+    top = text_grob("Conditional effect of predictors from modelWorkLifeBalance")
 )
      
 ```  
-*Graph 7: Visualization of conditional effects of predictors from modelWorkLifeBalance. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.*  
+*Graph 7: Visualization of conditional effect of predictors from modelWorkLifeBalance. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.*  
 
 
 <br> 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
-# plotting conditional effects for each predictor for modelWellBeing  
+# plotting conditional effect of each predictor from modelWellBeing  
 figListWellBeing <- plot(brms::conditional_effects(modelWellBeing), ask = FALSE)
 
 ```
 
 ```{r fig.width=8, fig.height=16}
 
-# putting all graphs with conditional effects for modelWellBeing together  
+# putting all graphs with conditional effect together  
 ggpubr::ggarrange(
   plotlist = figListWellBeing, 
   nrow = 4
   ) %>% 
   ggpubr::annotate_figure(
-    top = text_grob("Conditional effects for each predictor in the modelWellBeing")
+    top = text_grob("Conditional effect of predictors from modelWellBeing")
 )
 
 ```  
-*Graph 8: Visualization of conditional effects of predictors from modelWellBeing. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.* 
+*Graph 8: Visualization of conditional effect of predictors from modelWellBeing. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.* 
 
 
 <br> 
 
 In conclusion, we can say that there is some evidence that the COVID-19 pandemic has prompted people to be more interested in topics related to work-life balance and well-being. I wish us all to be able to transform our increased interest in these topics into truly increased quality of our personal and professional lives. It would be a shame not to use that extra incentive many of us have now for making significant change in our lives.
-
-
-The whole script is available in [the Jupyter Notebook on my GitHub site](https://github.com/lstehlik2809/Bayesian-segmented-regression.git).  
-
-
-

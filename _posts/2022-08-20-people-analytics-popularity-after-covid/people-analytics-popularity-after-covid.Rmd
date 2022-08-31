@@ -24,7 +24,7 @@ output:
     code_folding: true
 ---
 
-# People analytics popularity after pandemic
+## People analytics popularity after pandemic  
 
 There is a fairly common perception among the people analytics professionals with whom I am in contact that after the COVID pandemic, companies are much more willing to use the insights provided by people analytics teams and incorporate them into their business-related decision-making processes. 
 
@@ -73,7 +73,7 @@ $$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after
 
 Since we are dealing with correlated and truncated data, we also include two additional terms in our model, an autocorrelation term and a truncation term, to handle these specific properties of our data.
 
-# Data preparation
+## Data preparation  
 
 But first, let's prepare the data we will need for this type of analysis. Specifically, we will need the following five variables: 
 
@@ -144,7 +144,7 @@ DT::datatable(
 
 ```
 
-# Modeling
+## Modeling  
 
 We can now fit the model to the data and test what it tells us about the impact of the pandemic on people's search interest in people analytics. We will use [the brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) for this, which allows us to make inferences about the model parameters within a Bayesian inferential framework. For this reason, we must also specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that generates posterior samples of our model's parameters.  
 
@@ -249,7 +249,7 @@ brms::pp_check(
 
 ```  
 
-# What do the model and data tell us?
+## What do the model and data tell us?  
 
 We can now use the parameters of our model to obtain information about our main question. Specifically, we are interested in the value of the coefficient of the pandemic term in our model. This represents how much and in what direction the search interest in people analytics changed after the pandemic outbreak. 
 
