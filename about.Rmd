@@ -1,16 +1,16 @@
 ---
 title: "About this blog"
 description: |
-  Exploring People Analytics topics using R & Python
+  Exploring people management topics through data and their analysis
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Based on general advice from more experienced colleagues from data-science community ([Matt Dancho](https://www.linkedin.com/in/mattdancho/) and [Keith McNulty](https://www.linkedin.com/in/keith-mcnulty/), to name just a few) I have decided to set up my own blog about People Analytics topics, so that I can at least partially give back to others what I have learned myself through the blogging of others. Besides that, it also gives me an opportunity - and indeed a bit of an excuse - to explore and try new things related to People analytics and at the same time to better organize my thoughts about the subject.
+Based on general advice from more experienced colleagues from data-science community ([Matt Dancho](https://www.linkedin.com/in/mattdancho/) and [Keith McNulty](https://www.linkedin.com/in/keith-mcnulty/), to name just a few) I have decided to set up my own blog about people analytics topics, so that I can at least partially give back to others what I have learned myself through the blogging of others. Besides that, it also gives me an opportunity - and indeed a bit of an excuse - to explore and try new things related to people analytics and at the same time to better organize my thoughts about the subject.
 
-On this blog I plan to publish articles (both in Czech and English) that will be more about technical and analytic aspects of People analytics, nevertheless, I will always try to present individual topics in the context of practical issues that keep busy all those HR professionals who want to enhance both *efficiency* and *effectiveness* of HR processes in organizations. In general, my goal is to promote the idea that when combination of critical thinking, reliable, valid and relevant data and their rigorous analysis is applied to people management, organizations have better chance of achieving their strategic and business goals through and with their people.
+On this blog I plan to publish articles (both in Czech and English) that will be more about technical and analytic aspects of people analytics, nevertheless, I will always try to present individual topics in the context of practical issues that keep busy all those HR professionals who want to enhance both *efficiency* and *effectiveness* of HR processes in organizations. In general, my goal is to promote the idea that when combination of critical thinking, reliable, valid and relevant data and their rigorous analysis is applied to people management, organizations have better chance of achieving their strategic and business goals through and with their people.
 
 The views and attitudes presented on this blog are just my own and do not necessarily reflect the official views and attitudes of any of my current or former employers.
 
@@ -18,6 +18,6 @@ The views and attitudes presented on this blog are just my own and do not necess
 
 Dal jsem na radu zkušenějších (za všechny zmiňme např. [Matta Dancha](https://www.linkedin.com/in/mattdancho/) a [Keitha McNultyho](https://www.linkedin.com/in/keith-mcnulty/)) a založil jsem si svůj vlastní blog, abych mohl jednak alespoň částečně vrátit druhým to, co jsem se sám díky blogům druhých naučil, ale také abych měl příležitost - a vlastně tak trochu i záminku - zkoumat a zkoušet si různé nové věci týkající se HR analytiky a tříbit a organizovat si při tom zároveň své myšlenky.
 
-Na tomto blogu plánuji uveřejňovat články (v češtině i angličtině), které se budou více zabývat technickou a analytickou stránkou HR analytiky, zároveň se ale budu vždy snažit prezentovat jednotlivá témata v kontextu praktických problémů a otázek, které trápí všechny ty, co se snaží zvýšit jak efektivitu (*efficiency*), tak i účinnost (*effectiveness*) HR procesů ve firmách a organizacích. Obecně je mým cílem propagovat myšlenku, že když se při řízení lidských zdrojů zkombinuje kritické myšlení, spolehlivá, validní a relevantní data a jejich pečlivá analýza, mají organizace větší šanci, že se jim podaří prostřednictvím svých lidí dosáhnout svých strategických a obchodních cílů. 
+Na tomto blogu plánuji uveřejňovat články (v češtině i angličtině), které se budou více zabývat technickou a analytickou stránkou HR analytiky, zároveň se ale budu vždy snažit prezentovat jednotlivá témata v kontextu praktických problémů a otázek, které trápí všechny ty, co se snaží zvýšit jak efektivitu (*efficiency*), tak i účinnost (*effectiveness*) HR procesů ve firmách a organizacích. Obecně je mým cílem propagovat myšlenku, že když se při řízení lidských zdrojů zkombinuje kritické myšlení, spolehlivá, validní a relevantní data a jejich pečlivá analýza, mají organizace větší šanci, že se jim podaří prostřednictvím svých lidí a s nimi dosáhnout svých strategických a obchodních cílů. 
 
 Názory a postoje prezentované na tomto blogu jsou pouze mé vlastní, a nemusí tak tedy nutně odrážet oficiální názory a postoje žádného z mých současných nebo bývalých zaměstnavatelů.
