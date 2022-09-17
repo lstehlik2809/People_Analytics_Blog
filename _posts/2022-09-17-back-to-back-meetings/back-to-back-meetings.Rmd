@@ -21,7 +21,7 @@ output:
 
 "Context, Context, Context" could be the headline of this post.
 
-When we address the issue of good meeting habits with [our clients](https://www.timeisltd.com/), the length of breaks between successive meetings is one of the first metrics we focus on. 
+When we address the issue of good meeting habits with [our](https://www.timeisltd.com/) clients, the length of breaks between successive meetings is one of the first metrics we focus on. 
 
 As many of you probably know from your firsthand experience, consecutive meetings with no breaks, a.k.a. **back-to-back meetings**, have many detrimental effects, from [overload and exhaustion](https://www.microsoft.com/en-us/worklab/work-trend-index/brain-research) to not being adequately prepared for subsequent meetings and [arriving late](https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/joop.12183) to them.
 

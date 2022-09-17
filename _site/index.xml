@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Collaboration and personality</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-and-personality</link>
+      <description>Personality is not fate, at least when it comes to the level of engagement in corporate communication and collaboration.</description>
+      <category>collaboration</category>
+      <category>communication</category>
+      <category>personality</category>
+      <category>big five</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-and-personality</guid>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-and-personality/./personalityandcollaboration.jpeg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Hot spots of collaboration overload and collaboration bottlenecks and how to find them</title>
       <dc:creator>Ludek Stehlík</dc:creator>
