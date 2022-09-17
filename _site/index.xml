@@ -13,7 +13,8 @@
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks</link>
       <description>One of the most useful insights that can be gleaned from collaboration data is where hot spots of potential collaboration overload and/or collaboration bottlenecks may exist in a company. Such insight can be especially valuable these days, when many companies are trying to fight the upcoming economic downturn by achieving more with less.</description>
-      <category>collaboration</category>
+      <category>collaboration overload</category>
+      <category>collaboration bottlenecks</category>
       <category>organizational network analysis</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks</guid>

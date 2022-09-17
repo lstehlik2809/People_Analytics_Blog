@@ -8,7 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 09-08-2022
 categories:
-  - collaboration
+  - collaboration overload
+  - collaboration bottlenecks
   - organizational network analysis
   - r
 output:
