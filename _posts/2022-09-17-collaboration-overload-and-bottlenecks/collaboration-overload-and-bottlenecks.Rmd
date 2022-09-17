@@ -2,7 +2,7 @@
 title: "Hot spots of collaboration overload and collaboration bottlenecks and how to find them"
 description: |
  One of the most useful insights that can be gleaned from collaboration data is where hot spots of potential collaboration overload and/or collaboration bottlenecks may exist in a company. Such insight can be especially valuable these days, when many companies are trying to fight the upcoming economic downturn by achieving more with less.          
-preview: ./organizational-network-analysis.png
+preview: ./Organizational-network.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/

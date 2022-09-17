@@ -1,7 +1,8 @@
 ---
-title: "Moneyball v HR - od HR analytiky ke sportovní analytice a zpět"
+title: "Moneyball v HR"
 description: |
   Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu "Áček", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.
+preview: ./Pitcher-at-the-mound.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
@@ -135,7 +136,7 @@ ggplot(moneyball, aes(x = RD , y = W))+
         axis.text = element_text(size = 11))+
   scale_x_continuous(limits = c(-350,350), breaks = seq(-350,350,50))+
   scale_y_continuous(limits = c(40, 120), breaks = seq(40,120,10))+
-  stat_cor(method = "pearson", label.x = 275, label.y = 45)
+  stat_cor(method = "pearson", label.x = 175, label.y = 45)
 ```
 
 Při použití modelu lineární regrese můžeme vztah mezi těmito dvěma proměnnými popsat trochu podrobněji. 
@@ -342,7 +343,5 @@ prumerna_suma_MezdHracu2 %>%
 ```
 
 ## Závěr
-Na příkladu oaklandského baseballového mužstva jsme takto mohli sledovat obvyklý postup aplikace HR analytiky na určitý druh problému, který se snaží v dané organizaci vyřešit. Vzhledem ke specifickému předmětu podnikání oaklandských „Áček“ bylo tímto cílem dosáhnout postupu do play-off a to v situaci, kdy management neměl dostatek finančních prostředků na zaplacení hráčů považovaných dle tradičních měřítek za kvalitní a perspektivní. Od tohoto cíle se potom odvíjela řada kroků, které blíže specifikovaly jeho povahu a identifikovaly faktory (mimo jiné i ty personální), které s jeho dosažením souvisí. Na základě této znalosti potom bylo možné formulovat určité předpovědi a učinit jistá rozhodnutí, která zvýšila pravděpodobnost toho, že se podaří  vytčeného cíle dosáhnout. Přestože tento příběh o využití HR analytiky se odehrál ve světě sportu, jeho logika je platná i v kontextu tradičnějšího typu organizací. Ostatně **ve všech typech organizací jde nakonec především o to mít na správném místě a ve správný čas ty správné lidi** - jedině tak tyto organizace mohou systematicky dosahovat svých strategických cílů. 
-
-V několika příštích článcích se podobným způsobem podíváme na to, jak organizace mohu zvýšit šance na dosažení svých strategických cílů prostřednictvím aplikace HR analytiky na takové HR procesy jako je řízení výkonnosti, rozvoj a vzdělávání zaměstnanců, kariérní rozvoj, plánování nástupnictví, monitorování spokojenosti zaměstnanců, change management, nábor a výběr zaměstnanců a jejich onboarding nebo competency management.
+Na příkladu oaklandského baseballového mužstva jsme takto mohli sledovat obvyklý postup aplikace HR analytiky na určitý druh problému, který se snaží v dané organizaci vyřešit. Vzhledem ke specifickému předmětu podnikání oaklandských „Áček“ bylo tímto cílem dosáhnout postupu do play-off a to v situaci, kdy management neměl dostatek finančních prostředků na zaplacení hráčů považovaných dle tradičních měřítek za kvalitní a perspektivní. Od tohoto cíle se potom odvíjela řada kroků, které blíže specifikovaly jeho povahu a identifikovaly faktory (mimo jiné i ty personální), které s jeho dosažením souvisí. Na základě této znalosti potom bylo možné formulovat určité předpovědi a učinit jistá rozhodnutí, která zvýšila pravděpodobnost toho, že se podaří  vytčeného cíle dosáhnout. Přestože tento příběh o využití HR analytiky se odehrál ve světě sportu, jeho logika je platná i v kontextu tradičnějšího typu organizací. Ostatně **ve všech typech organizací jde nakonec především o to mít na správném místě a ve správný čas ty správné lidi** - jedině tak tyto organizace mohou systematicky dosahovat svých strategických cílů.
 

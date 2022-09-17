@@ -7,7 +7,24 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Multilevel modeling in people analytics</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-multilevel-modeling</link>
+      <description>Don't chase (statistical) ghosts and use multilevel models instead!</description>
+      <category>multilevel modeling</category>
+      <category>hierarchical modeling</category>
+      <category>mixed models</category>
+      <category>nested data</category>
+      <category>bayesian inference</category>
+      <category>collaboration</category>
+      <category>employee engagement</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-multilevel-modeling</guid>
+      <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-09-17-multilevel-modeling/./groupsofpeople.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Collaboration and personality</title>
       <dc:creator>Ludek Stehlík</dc:creator>
@@ -33,7 +50,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks</guid>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks/./organizational-network-analysis.png" medium="image" type="image/png" width="1500" height="1111"/>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks/./Organizational-network.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Are back-to-back meetings for good or bad?</title>
@@ -218,10 +235,10 @@
       <category>r shiny dashboard</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</guid>
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./DSHB2.png" medium="image" type="image/png" width="1317" height="926"/>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./Types-of-Employee-Attrition.png" medium="image" type="image/png" width="860" height="396"/>
     </item>
     <item>
-      <title>Moneyball v HR - od HR analytiky ke sportovní analytice a zpet</title>
+      <title>Moneyball v HR</title>
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</link>
       <description>Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu "Ácek", jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize.</description>
@@ -232,7 +249,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</guid>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt_files/figure-html5/unnamed-chunk-11-1.png" medium="image" type="image/png" width="1248" height="768"/>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/./Pitcher-at-the-mound.jpg" medium="image" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

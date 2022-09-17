@@ -32,6 +32,7 @@ As useful as the above metric is, it does not tell the whole story and can lead 
 # uploading libraries
 library(tidyverse)
 library(patchwork)
+library(scales)
 
 # uploading datasets from the platform
 data1 <- readr::read_delim("./timeisltd-chart1.csv",delim = ";") %>%

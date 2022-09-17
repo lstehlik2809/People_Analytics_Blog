@@ -32,7 +32,7 @@ I wondered if I could find any empirical support for this feeling in the surge o
 
 Let's start our quest with a simple visual inspection of a line chart showing the trend of worldwide web search interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends) website and the search terms, time range, location, and source for searches described above. If you are familiar with R, you can use the code below.)
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE}
 
 # uploading library for getting data from Google Trends
 library(gtrendsR)
@@ -83,7 +83,7 @@ But first, let's prepare the data we will need for this type of analysis. Specif
 * **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the outbreak of pandemic;    
 * **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE}
 
 # normalize function
 normalize <- function(x) {
@@ -120,7 +120,7 @@ mydata <- gtrendsResultDf %>%
 
 Here is a table with the resulting data we will use for our analysis.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 
 # uploading library for making more user-friendly data table
 library(DT)
@@ -150,7 +150,7 @@ We can now fit the model to the data and test what it tells us about the impact 
 
 The Bayesian framework also allows us to specify priors for the estimated parameters and use them to incorporate our domain knowledge into the analysis. The specified priors are important for both parameter estimation and hypothesis testing because they define our initial information state before we consider our data. Here, we will use relatively broad, uninformative, and only slightly regularizing priors (that is, the inference results will be very close to the results of standard, frequentist parameter estimation/hypothesis testing). 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hide"}
+```{r message=FALSE, warning=FALSE, results = "hide"}
 
 # uploading library for Bayesian statistical inference
 library(brms)
@@ -164,7 +164,7 @@ brms::get_prior(
 ```
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hide"}
+```{r message=FALSE, warning=FALSE, results = "hide"}
 
 # specifying wide, uninformative, and only mildly regularizing priors 
 priors <- c(brms::set_prior("normal(0,50)", class = "b", coef = "elapsedTime"),
@@ -202,7 +202,7 @@ model <- brms::brm(
 
 Before making any inferences, we should perform several validation checks to ensure that the mechanics of the MCMC algorithm worked well and that we can use the generated posterior samples to make inferences about the parameters of our model. There are many ways to do this, but here we will only use a visual check of the MCMC chains. We want the plots of these chains to look like a hairy caterpillar, indicating the convergence of the underlying Markov chain to stationarity and the convergence of the Monte Carlo estimates to population quantities, respectively. As can be seen in the graph below, we can observe the characteristics we are looking for in the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)
 
-```{r fig.height=12, fig.width=16}
+```{r message=FALSE, warning=FALSE, fig.height=12, fig.width=16}
 
 # uploading library for plotting Bayesian models
 library(bayesplot)
@@ -227,7 +227,7 @@ bayesplot::mcmc_trace(
 
 It is also important to check how well the model fits the data. To do this, we can use the posterior predictive check, which uses a specified number of selected posterior values of the model parameters to show how well the fitted model predicts the observed data. In the graph below we see that the model fits the observed data reasonably well. 
 
-```{r fig.width=8}
+```{r message=FALSE, warning=FALSE, fig.width=8}
 
 # investigating the model fit
 # specifying the number of samples
@@ -253,7 +253,7 @@ brms::pp_check(
 
 We can now use the parameters of our model to obtain information about our main question. Specifically, we are interested in the value of the coefficient of the pandemic term in our model. This represents how much and in what direction the search interest in people analytics changed after the pandemic outbreak. 
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
+```{r message=FALSE, warning=FALSE, results = "markup"}
 
 # generating a summary of the fitted model
 summary(model)
@@ -262,7 +262,7 @@ summary(model)
 
 The following graph shows the posterior distribution of the main parameter of interest. We can see that it is on the right-hand side of the zero value, which supports the claim that there is an effect of the pandemic on people's interest in people analytics; however, it is on the opposite side of the zero value than we would expect if the pandemic were to have a positive effect on people's interest in people analytics. Thus, our analysis supports our initial visual impression that the pandemic outbreak did not increase people's interest in people analytics, but rather the opposite, in fact, around 97% of the posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter is greater than 0.
 
-```{r message=FALSE, warning=FALSE, echo=FALSE, fig.width = 8, fig.height = 5}
+```{r message=FALSE, warning=FALSE, fig.width = 8, fig.height = 5}
 
 # uploading library for working with output from Bayesian models
 library(tidybayes)
@@ -291,7 +291,7 @@ ggplot2::ggplot(paramViz, aes(x,y)) +
 
 ```
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
+```{r message=FALSE, warning=FALSE, results = "markup"}
 
 # uploading library for working with output from Bayesian models
 library(posterior)
@@ -308,14 +308,14 @@ Given that the Google search interest in people analytics is a fairly distant pr
 
 In addition to the main question addressed here, we may be interested in other insights provided by the model. To this end, we can plot the marginal effect of each predictor. 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
+```{r message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
 
 # plotting marginal effect of predictors used 
 figList <- plot(brms::marginal_effects(model, probs = c(0.025, 0.975)), theme = ggthemes::theme_clean(), ask = FALSE) 
 
 ```
 
-```{r message=FALSE, warning=FALSE, echo=FALSE, fig.width = 8, fig.height=16}
+```{r message=FALSE, warning=FALSE, fig.width = 8, fig.height=16}
 
 # uploading library for arranging multiple ggplots
 library(ggpubr)
