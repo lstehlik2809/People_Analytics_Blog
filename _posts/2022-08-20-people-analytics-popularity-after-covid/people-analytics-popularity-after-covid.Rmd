@@ -154,6 +154,7 @@ The Bayesian framework also allows us to specify priors for the estimated parame
 
 # uploading library for Bayesian statistical inference
 library(brms)
+library(cmdstanr)
 
 # checking available priors for the models 
 brms::get_prior(
@@ -194,6 +195,7 @@ model <- brms::brm(
   seed = 1234,
   sample_prior = TRUE, 
   control = list(adapt_delta = 0.9),
+  backend = "cmdstanr",
   refresh = 0,
   silent = 2 
 )
@@ -260,7 +262,7 @@ summary(model)
 
 ```  
 
-The following graph shows the posterior distribution of the main parameter of interest. We can see that it is on the right-hand side of the zero value, which supports the claim that there is an effect of the pandemic on people's interest in people analytics; however, it is on the opposite side of the zero value than we would expect if the pandemic were to have a positive effect on people's interest in people analytics. Thus, our analysis supports our initial visual impression that the pandemic outbreak did not increase people's interest in people analytics, but rather the opposite, in fact, around 97% of the posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter is greater than 0.
+The following graph shows the posterior distribution of the main parameter of interest. We can see that it is on the right-hand side of the zero value, which supports the claim that there is an effect of the pandemic on people's interest in people analytics; however, it is on the opposite side of the zero value than we would expect if the pandemic were to have a positive effect on people's interest in people analytics. Thus, our analysis supports our initial visual impression that the pandemic outbreak did not increase people's interest in people analytics, but rather the opposite.
 
 ```{r message=FALSE, warning=FALSE, fig.width = 8, fig.height = 5}
 
@@ -273,7 +275,7 @@ paramViz <- model %>%
 
 dens <- density(paramViz$value)
 
-paramViz <- tibble(x = dens$x, y = dens$y)
+paramViz <- tibble::tibble(x = dens$x, y = dens$y)
 
 # visualizing the posterior distribution of the model's b_pandemicBeforethepandemicoutbreak parameter 
 ggplot2::ggplot(paramViz, aes(x,y)) +
