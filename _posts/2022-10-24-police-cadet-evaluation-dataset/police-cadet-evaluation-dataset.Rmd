@@ -40,7 +40,7 @@ The dataset has the following characteristics:
   + **AvgE**: average yearly evaluation score (The average of five years. The evaluation is performed by a committee of 10 senior police officers. Scale 1-5). This is a help attribute and not for use as input.
   + **FinalE**: final evaluation. Fail if average yearly evaluation score (Avg) < 2.0 otherwise pass. (1610 Pass / 390 Fail). This is the target attribute.
 
-Here is a table with the data. You can use it to check and download the data.
+Here is a table you can use to check and download the data.
 
 ```{r}
 
