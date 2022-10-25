@@ -190,4 +190,4 @@ ggstatsplot::ggbetweenstats(
 
 If you are dealing with similar use cases, give it a try. And if you use any other tools/approaches for this, feel free to share them in return.
 
-P.S. Thanks to [Filip Trojan](https://www.linkedin.com/in/filip-trojan), my former boss and colleague from the Deloitte Advanced Analytics team, who introduced me to this tool. I still benefit from it to this day 🙏💪 
+P.S. Thanks to [Filip Trojan](https://www.linkedin.com/in/filip-trojan-2543a36/), my former boss and colleague from the Deloitte Advanced Analytics team, who introduced me to this tool. I still benefit from it to this day 🙏💪 
