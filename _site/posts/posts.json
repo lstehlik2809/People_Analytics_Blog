@@ -37,12 +37,11 @@
       "timeboxing",
       "timeblocking",
       "regression analysis",
-      "control variables",
-      "r"
+      "control variables"
     ],
     "contents": "\r\nIn one of my previous\r\nposts, I addressed the question of why people don’t make more use of\r\ntimeboxing, a time\r\nmanagement tool relying on a well-researched self-regulatory technique\r\ncalled implementation\r\nintention - planning what you will do, when, and how.\r\nQuite surprisingly, I found in our collaborative data that there is\r\nnot a positive but a slightly negative relationship between the amount\r\nof time for focused work and the amount of blocked working time in the\r\ncalendar, which I interpreted to mean that people who have plenty of\r\ntime for focused work usually do not have a strong need to block time\r\nfor focused work in their calendars.\r\nHowever, based on these results, one colleague wondered whether this\r\nresult actually speaks against the usefulness of this tool. To answer\r\nher question properly, we should avoid comparing apples with pears and\r\ncontrol for the effect of the number of collaborative activities people\r\nparticipate in, as it can be assumed that those who spend more time\r\ncollaborating with others have less time for focused work and also use\r\nthe timeboxing technique more.\r\nUsing this approach and our clients’ collaborative data, I looked at\r\nthe relationship between the proportion of work time blocked on the\r\ncalendar and the time available for focused work (i.e. no meetings, no\r\nad-hoc calls, no email or instant messaging), and found that the\r\nmarginal effect of timeboxing is in line with the positive effect of the\r\ntimeboxing technique on the time available for focused work. The effect\r\nis not huge (each percentage point of working time blocked in the\r\ncalendar yields on average .19% of focus rate), however, timeboxing\r\nseems to be saved, phew 😉\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-10-11-timeboxing/./time-blocking.png",
-    "last_modified": "2022-10-25T06:47:58+02:00",
+    "last_modified": "2022-10-25T06:50:42+02:00",
     "input_file": {},
     "preview_width": 2400,
     "preview_height": 1200
