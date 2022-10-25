@@ -6,7 +6,7 @@ preview: ./Politie_Nederland_nieuw_uniform.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 10-25-2022
+date: 10-24-2022
 categories:
   - people analytics
   - data
