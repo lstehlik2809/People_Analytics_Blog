@@ -22,11 +22,11 @@ output:
     code_folding: true
 ---
 
-Even very small pieces of information count if you are patient and have some tool to combine them effectively. I recently re-read [Philip Tetlock's](https://en.wikipedia.org/wiki/Philip_E._Tetlock) book [Superforecasting](https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction) and came across an excellent illustration of such a tool: [Bayesian belief updating](https://en.wikipedia.org/wiki/Bayesian_inference).
+When trying to reduce uncertainty, even very small pieces of information count if you are patient and have some tool to combine them effectively. I recently re-read [Philip Tetlock's](https://en.wikipedia.org/wiki/Philip_E._Tetlock) book [Superforecasting](https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction) and came across an excellent illustration of such a tool: [Bayesian belief updating](https://en.wikipedia.org/wiki/Bayesian_inference).
 
 "*Imagine you are sitting with your back to a billiards table. A friend rolls a ball onto the table and it stops at a random spot. You want to locate the ball without looking. How? Your friend rolls a second ball, which stops at another random spot. You ask, “Is the second ball to the left or the right of the first?” Your friend says, “To the left.” That’s an almost trivial scrap of information. But it’s not nothing. It tells you that the first ball is not on the extreme left edge of the table. And it makes it just a tad more likely that the first ball is on the right side of the table. If your friend rolls another ball on the table and the procedure is repeated, you get another scrap of information. If he says, “It’s to the left,” the likelihood of the first ball being on the right side of the table increases a little more. Keep repeating the process and you slowly narrow the range of the possible locations, zeroing in on the truth—although you will never eliminate uncertainty entirely.*”
 
-After reading this, I thought that it would be much more convincing (and fun 😉) to see this updating process live and in action. What a great opportunity to learn how to work with the [gganimate](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/gganimate/gganimate.pdf) R package.
+After reading this paragraph, I thought it would be much more pedagogically compelling (and fun 😉) to see this update process live and in action. What a great opportunity to learn how to work with the [gganimate](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/gganimate/gganimate.pdf) R package.
 
 Here is the code I put together.
 
@@ -179,7 +179,7 @@ gganimate::anim_save(filename = "./bayesianBelifUpdating.gif", animation = last_
 ```
 
 
-And here is the resulting animation of the Bayesian belief updating across 500 trials.
+And here is the resulting animation of the Bayesian belief updating process across 500 trials.
 
 <img src="./bayesianBelifUpdating.gif">
 
