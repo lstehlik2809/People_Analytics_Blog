@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 27 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>It's perfectly normal not to be normal</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-15-people-related-metrics-distribution</link>
+      <description>At least when it comes to the shape of the distribution of people-related metrics. Let's look at this in a little more detail.</description>
+      <category>hr metrics</category>
+      <category>normal distribution</category>
+      <category>collaboration</category>
+      <category>performance</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-11-15-people-related-metrics-distribution</guid>
+      <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-11-15-people-related-metrics-distribution/./distributions.png" medium="image" type="image/png" width="962" height="670"/>
+    </item>
     <item>
       <title>A visual introduction to Bayesian belief updating</title>
       <dc:creator>Ludek Stehlík</dc:creator>
