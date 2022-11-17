@@ -125,6 +125,6 @@ GGally::ggpairs(
 
 ```
 
-If you want to download the dataset, you can do so here via the table above or via [my GitHub account](https://github.com/lstehlik2809/Police-Cadet-Evaluation-Dataset) where you can also find more information about the dataset. Happy analysis 😉 
+If you want to download the dataset, you can do so here via the table above or via [my GitHub page](https://github.com/lstehlik2809/Police-Cadet-Evaluation-Dataset) where you can also find more information about the dataset. Happy analysis 😉 
 
 

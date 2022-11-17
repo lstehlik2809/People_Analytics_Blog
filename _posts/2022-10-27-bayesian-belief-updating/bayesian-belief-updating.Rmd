@@ -9,6 +9,7 @@ author:
 date: 10-27-2022
 categories:
   - bayesian belief updating
+  - bayesian inference
   - judgment
   - forecasting
   - critical thinking
