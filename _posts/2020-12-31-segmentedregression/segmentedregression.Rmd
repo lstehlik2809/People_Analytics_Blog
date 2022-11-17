@@ -56,8 +56,8 @@ Before conducting the analysis itself, we need to wrangle the data from Google T
 
 * **search interest** – numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;  
 * **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
-* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables testing hypothesis about the effect of pandemic on people’s interest in work-life balance and well-being;  
-* **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the size and direction of the trend in the data after the outbreak of pandemic;    
+* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables estimation of the level change in the interest in work-life balance and well-being immediately after the pandemic outbreak;  
+* **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the change in the trend in the interest in work-life balance and well-being after the outbreak of pandemic;
 * **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
@@ -156,7 +156,9 @@ We will model our data using common segmented regression models that have follow
 
 $$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
 
-Given that we are dealing with correlated and truncated data, we will include in our models two specific terms – autocorrelation and truncation terms that will treat these specific characteristics of our data.
+The *β<sub>0</sub>* coefficient estimates the baseline level of the outcome variable at time zero; *β<sub>1</sub>* coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); *β<sub>2</sub>* coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and *β<sub>3</sub>* estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of *β<sub>1</sub>* and *β<sub>3</sub>* equals to the post-intervention slope).
+
+Since we are dealing with correlated and truncated data, we should also include two additional terms in our model, an autocorrelation term and a truncation term, to handle these specific properties of our data.
 
 Now let’s fit the models to the data and check what they tell us about the effect of pandemic on people’s search interest in work-life balance and well-being. We will use [brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) that enables making inferences about statistical models’ parameters within Bayesian inferential framework.  Because of that, we also need to specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that will generate posterior samples of our models’ parameters.  
 
@@ -316,7 +318,7 @@ brms::pp_check(
 
 ## Results of the analysis
 
-Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the `pandemicBeforethepandemicoutbreak` term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed after the outbreak of pandemic.  
+Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the `pandemicBeforethepandemicoutbreak` term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed immediately after the outbreak of pandemic.  
 
 In Graph 5 and 6 we can see posterior distribution of this parameter in our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the left side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
 
