@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/2022-11-18-interventions-reducing-gender-pay-gap/",
+    "title": "Evidence-based interventions that help reduce the gender pay gap",
+    "description": "Pay inequality between men and women is not only an ethical and legal issue for companies, but also a marketing issue - it can have a negative impact on their \"employer brand\" and attractiveness as an employer. This means that if companies want to attract and retain talented employees, they must be able to ensure that they treat men and women equally in this respect. Let's look at what the existing evidence tells us about what might help us with this.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-11-18",
+    "categories": [
+      "gender pay gap",
+      "evidence-based management"
+    ],
+    "contents": "\r\nIf you are responsible for DEI initiatives in your company, you might\r\nbe interested in a paper by The\r\nBehavioural Insights Team that lists several possible interventions\r\nto close the gender pay gap, divided into three categories based on the\r\nextent to which their effectiveness is supported by empirical\r\nevidence.\r\n🥇 Actions with well-documented effectiveness:\r\nIncluding more women on shortlists in recruitment and promotion. *️\r\nUse of tasks assessing job skill levels in the selection of new\r\nemployees.\r\nUse of structured interviews in recruitment and promotion.\r\nEncouraging salary negotiation through disclosure of existing salary\r\nranges.\r\nIntroducing transparent promotion and reward processes.\r\nAppointing a manager or establishing a corporate diversity task\r\nforce.\r\n🥈 Potentially promising actions, but requiring further\r\nevidence of their effectiveness:\r\nIncreasing work flexibility for men and women.\r\nSupporting shared parental leave.\r\nRecruiting former employees who have had to interrupt their careers\r\nfor a prolonged period for various personal reasons.\r\nOffering mentoring and sponsorship.\r\nOffering networking programs.\r\nSetting internal targets.\r\n🥉 Actions with mixed evidence of their\r\neffectiveness:\r\nTraining on the topic of unconscious bias.\r\nDiversity training.\r\nLeadership development training.\r\nDemographically diverse selection panels in external and internal\r\nrecruitment.\r\nFor those interested, here is the original document for a closer\r\nlook.\r\n\r\n\r\nThis browser does not support PDF files. Please download the PDF file to\r\nview it: Download PDF.\r\n\r\n\r\n\r\nA final note. As useful as it is to know which interventions have a\r\ndecent chance of reducing gender pay inequality, an integral part of\r\nthis fight is to regularly check the existence of this inequality across\r\nthe organisation and within different types of organisational processes.\r\nAs Alessandro\r\nLinari aptly noted in a discussion on Linkedin, “The best way to\r\nkeep the gender pay gap under control is still to do a periodic pay\r\nequity analysis across the organisation and address any identified gap.\r\nI say unfortunately because there are a thousand different ways where\r\npay differences still manage to sneak into the workforce, through hiring\r\nand promotion practices, but also retention policies, bonus allocation,\r\nperformance management, and others.” If you want to learn more\r\nabout some of the technical details of such an analysis, check out one\r\nof my previous posts on this topic (unfortunately, it is now only\r\navailable in Czech, but you can use one of the online translators to get\r\naround this limitation 😉).\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-11-18-interventions-reducing-gender-pay-gap/./genderPayGap.jpg",
+    "last_modified": "2022-11-18T12:26:57+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-11-15-people-related-metrics-distribution/",
     "title": "It's perfectly normal not to be normal",
     "description": "And it definitely applies to the shape of the distribution of many HR metrics. Let's look at this in a little more detail.",
