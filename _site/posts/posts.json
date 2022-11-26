@@ -24,6 +24,32 @@
     "preview_height": 565
   },
   {
+    "path": "posts/2022-11-26-resources-on-retention-and-downsizing/",
+    "title": "Some resources on staff retention and downsizing",
+    "description": "Probably due to the current situation in the talent market, where many companies are laying people off and at the same time are worried about losing their key employees, a few people have contacted me in recent weeks asking for some tips on evidence-based approaches to dealing with retention and downsizing.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-11-26",
+    "categories": [
+      "employee retention",
+      "employee turnover",
+      "layoffs",
+      "downsizing",
+      "people analytics",
+      "evidence-based management"
+    ],
+    "contents": "\r\nI referred them to the following resources - maybe some of you will\r\nfind them useful as well:\r\nEmployment\r\nDownsizing and Its Alternatives guideline from the SHRM’s Science-to-Practice\r\nSeries.\r\nRetaining\r\nTalent guideline from the SHRM’s Science-to-Practice\r\nSeries.\r\nRubenstein et al.’s meta-analysis\r\nof voluntary turnover predictors; you can also use this\r\napp visually summarizing its results.\r\nSpeer et al.’s article Here\r\nto stay or go? Connecting turnover research to applied attrition\r\nmodeling.\r\nDemo\r\ndashboard for analysis of employee turnover.\r\nFeel free to share any other resources on this topic you think might\r\nbe useful to others.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-11-26-resources-on-retention-and-downsizing/./retentionDownsizing.png",
+    "last_modified": "2022-11-26T14:17:06+01:00",
+    "input_file": {},
+    "preview_width": 1280,
+    "preview_height": 720
+  },
+  {
     "path": "posts/2022-11-18-interventions-reducing-gender-pay-gap/",
     "title": "Evidence-based interventions that help reduce the gender pay gap",
     "description": "Pay inequality between men and women is not only an ethical and legal issue for companies, but also a marketing issue - it can have a negative impact on their \"employer brand\" and attractiveness as an employer. This means that if companies want to attract and retain talented employees, they must be able to ensure that they treat men and women equally in this respect. Let's look at what the existing evidence tells us about what might help us with this.",
