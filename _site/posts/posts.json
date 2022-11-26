@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2022-11-26-meeting-matrix/",
+    "title": "Eisenhower matrix for meetings",
+    "description": "Meet the Eisenhower matrix for meetings ;)",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-11-26",
+    "categories": [
+      "meeting culture",
+      "meeting overload",
+      "focus time",
+      "collaboration culture"
+    ],
+    "contents": "\r\nI assume many, if not all, of you are familiar with the\r\nEisenhower matrix, a simple tool for prioritizing tasks based on a\r\ncombination of their importance and urgency. It assumes 4 types of tasks\r\n- important & urgent, important & not urgent, not important\r\n& urgent, not important & not urgent - and for each of them\r\noffers a simple recommendation on what to do with them - do it, schedule\r\nit, delegate it, and delete it. By following these rules, people should\r\nbe able to more successfully combat the “mere-urgency” effect, eliminate\r\ntime-wasters in their lives, and create more space to make progress\r\ntoward their goals.\r\n\r\nSomething similar can be created also for meetings, which are big\r\ntime and money guzzlers and deserve to be treated accordingly. Only\r\ninstead of the dimensions of importance and urgency, we will use the\r\nsize and length of meetings. The resulting matrix assumes 4 types of\r\nmeetings with corresponding recommendations on what to do with them:\r\nSmall & Short: These meetings are a bit tricky\r\nbecause they often involve useful meetings, e.g., short syncs of teams\r\nworking on some specific task or project or one-on-one meetings between\r\nmanagers and their direct reports, however, when there is a lot of them,\r\nthey may cause calendar fragmentation and drop in available focus time;\r\nto avoid this, one can think of batching such meetings into larger\r\nblocks of two or three meetings with appropriate small breaks in between\r\nto avoid meeting fatigue and late arrivals.\r\nSmall & Long: These meetings are great for\r\nbrainstorming, problem-solving, or decision-making, so make sure you use\r\nthem primarily for that purpose and don’t waste them on low-value-added\r\nactivities.\r\nLarge & Short: These meetings often serve only\r\nto disseminate information and can therefore be safely replaced by less\r\nintrusive asynchronous collaboration tools such as email, instant\r\nmessaging or some kind of knowledge management tool.\r\nLarge & Long: These meetings are quite often a\r\nwaste of people’s time by not allowing everyone to meaningfully\r\ncontribute and by making them both physically and mentally exhausted, so\r\ntry to move these meetings into the third quadrant if your goal is\r\nsimple information dissemination or into the second quadrant if the goal\r\nis to solve some problem or to make some important decision.\r\nThe meeting matrix is by no means a panacea for meeting overload, but\r\nby following the rules above, people should be able to better protect\r\ntheir time for focused work and make meetings more efficient,\r\nmeaningful, and valuable for themselves and the company. Just be aware\r\nthat unlike the Eisenhower matrix, in the case of the meeting matrix,\r\npeople need to rely more on others to follow these rules in order for\r\nits positive effect to materialize. So get ready to update your\r\n(hopefully already existing) team agreement on your collaboration\r\nculture.\r\nBtw, what is your guess as to how much time you spend in each cell of\r\nthe meeting matrix? For comparison I attach my monthly numbers from\r\nOctober.\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-11-26-meeting-matrix/./meetingMatrix.png",
+    "last_modified": "2022-11-26T13:48:43+01:00",
+    "input_file": {},
+    "preview_width": 850,
+    "preview_height": 565
+  },
+  {
     "path": "posts/2022-11-18-interventions-reducing-gender-pay-gap/",
     "title": "Evidence-based interventions that help reduce the gender pay gap",
     "description": "Pay inequality between men and women is not only an ethical and legal issue for companies, but also a marketing issue - it can have a negative impact on their \"employer brand\" and attractiveness as an employer. This means that if companies want to attract and retain talented employees, they must be able to ensure that they treat men and women equally in this respect. Let's look at what the existing evidence tells us about what might help us with this.",

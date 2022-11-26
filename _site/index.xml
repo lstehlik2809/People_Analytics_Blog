@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 18 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Eisenhower matrix for meetings</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-26-meeting-matrix</link>
+      <description>Meet the Eisenhower matrix for meetings ;)</description>
+      <category>meeting culture</category>
+      <category>meeting overload</category>
+      <category>focus time</category>
+      <category>collaboration culture</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-11-26-meeting-matrix</guid>
+      <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-11-26-meeting-matrix/./meetingMatrix.png" medium="image" type="image/png" width="850" height="565"/>
+    </item>
     <item>
       <title>Evidence-based interventions that help reduce the gender pay gap</title>
       <dc:creator>Ludek Stehlík</dc:creator>
