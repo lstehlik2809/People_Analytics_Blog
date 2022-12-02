@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 26 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How to quickly navigate dashboard users to what they need to know?</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-02-change-detection</link>
+      <description>Let's take a look at some tips and tricks to make dasboards more useful for their users.</description>
+      <category>dashboard</category>
+      <category>contextualization</category>
+      <category>time series</category>
+      <category>change detection</category>
+      <category>python</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-12-02-change-detection</guid>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-12-02-change-detection/./dashboard.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Eisenhower matrix for meetings</title>
       <dc:creator>Ludek Stehlík</dc:creator>

@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2022-12-02-change-detection/",
+    "title": "How to quickly navigate dashboard users to what they need to know?",
+    "description": "Let's take a look at some tips and tricks to make dasboards more useful for their users.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-12-01",
+    "categories": [
+      "dashboard",
+      "contextualization",
+      "time series",
+      "change detection",
+      "python"
+    ],
+    "contents": "\r\nSince the beginning of our efforts at Time is Ltd. to develop a\r\ncomprehensive collaboration analytics platform, we have created several\r\nhundred collaboration metrics. As you can probably imagine, with such a\r\nhuge amount of metrics, it was quite difficult for users to get\r\nsomething useful out of the platform.\r\nTo make the metrics provided more digestible, we’ve enhanced the\r\nplatform using several approaches, from simply selecting metrics with\r\nthe most straightforward call to action and creating apps for very\r\nspecific use cases to providing users with comparative, historical,\r\nintuitively scaled, and equivalent information. Brent Dykes described\r\nmany of these sense-making methods very neatly in his article Contextualized\r\nInsights: Six Ways To Put Your Numbers In Context.\r\nHowever, even after several rounds of these improvements, there was\r\nstill a need to help users quickly find areas that might be worth their\r\nattention and deeper exploration. One approach we took was based on the\r\n(validated) assumption that collaboration metrics are relatively stable\r\nover time and that the intentional and unintentional behavioral changes\r\nbehind these metrics evolve rather slowly. We therefore decided to\r\ndetect the most significant changes over the last 3 months.\r\nFor this purpose, we chose a method that is related to the Bollinger Bands\r\nmethod used in time series analysis or “Heartbeat Analysis” used in\r\nsurvey response analysis. Specifically, we look at the standard\r\ndeviation and average of the month-to-month changes for each metric,\r\nscale the changes to z-scores, and then identify the metrics with the\r\nhighest absolute value of average change over the last 3 months. To\r\nillustrate, see the attached chart where the metrics are sorted by\r\nmagnitude of their change in descending order from left to right and top\r\nto bottom.\r\n\r\nIf you want to try this method on your own data, you can use its\r\nPython implementation, which is on my\r\nGitHub page.\r\nWhat other methods do you find useful in identifying values or\r\nchanges that might be worth users’ attention? Feel free to share them in\r\nthe comments for inspiration.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-12-02-change-detection/./dashboard.jpg",
+    "last_modified": "2022-12-02T19:10:27+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-11-26-meeting-matrix/",
     "title": "Eisenhower matrix for meetings",
     "description": "Meet the Eisenhower matrix for meetings ;)",
