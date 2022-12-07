@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>One does not simply do a business without getting lost</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-07-mission-scale-from-tas</link>
+      <description>Breaking down one weekend association.</description>
+      <category>TAS</category>
+      <category>mission</category>
+      <category>purpose</category>
+      <category>goals</category>
+      <category>metrics</category>
+      <category>review</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-12-07-mission-scale-from-tas</guid>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-12-07-mission-scale-from-tas/./lost_in_desert.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>How to quickly navigate dashboard users to what they need to know?</title>
       <dc:creator>Ludek Stehlík</dc:creator>

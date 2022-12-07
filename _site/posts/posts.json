@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2022-12-07-mission-scale-from-tas/",
+    "title": "One does not simply do a business without getting lost",
+    "description": "Breaking down one weekend association.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-12-07",
+    "categories": [
+      "TAS",
+      "mission",
+      "purpose",
+      "goals",
+      "metrics",
+      "review"
+    ],
+    "contents": "\r\n\r\n\r\n\r\nAs I was scrolling through one of my feeds over the weekend, I came\r\nacross a funny meme that resonated with my recent experience on a family\r\ntrip that expressed the deep truth that “One does not simply do a road\r\ntrip without getting lost.” 😄\r\n\r\nBesides that, and that’s why I’m writing about it here on my blog, it\r\nalso reminded me of the results of a study I did together with Rastislav Duris\r\nand Slavka Silberg, on the characteristics of more than 80 teams from\r\ndifferent industries and composed of more than 800 people using the Team\r\nAssessment Survey, Dr. Gordon Curphy’s\r\nsurvey that measures some of the basic factors that determine team\r\nperformance.\r\nSpecifically, I was reminded of the results on the Mission scale,\r\nwhich consists of the following four items:\r\nPurpose: Team members are clear about the team’s\r\npurpose.\r\nGoals: The team has a set of overall goals.\r\nMetrics: Metrics and benchmarks have been\r\nidentified for each team goal.\r\nReviews: The team regularly reviews progress on\r\nteam goals.\r\nAs you can see in the attached chart, the results of the “Heartbeat\r\nanalysis” can be briefly summarized as “We know where we’re going, at\r\nleast some of us know the points to get there, but we’re not sure if\r\nwe’re on the right track and if we should change our original\r\nplans.”\r\n\r\nThat sounds a lot like the description of our last family trip. 😅 Do\r\nyou think you’re better off in this regard in your team or company? And\r\nif so, what tips would you give others on how to improve in this\r\nrespect?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-12-07-mission-scale-from-tas/./lost_in_desert.jpg",
+    "last_modified": "2022-12-07T09:15:39+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-12-02-change-detection/",
     "title": "How to quickly navigate dashboard users to what they need to know?",
     "description": "Let's take a look at some tips and tricks to make dasboards more useful for their users.",
