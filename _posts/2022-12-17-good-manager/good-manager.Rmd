@@ -1,7 +1,7 @@
 ---
 title: "Signals of a good manager"
 description: |
-  Do you think it's possible to find signals in collaboration data that someone is a good manager? Let's give it some thought.
+  Do you think it's possible to find signals in collaboration (meta)data that someone is a good manager? Let's give it some thought.
 preview: ./worlds-best-boss-funny-the-office-micromanagement.gif
 author:
   - name: Luděk Stehlík

@@ -2,7 +2,7 @@
   {
     "path": "posts/2022-12-17-good-manager/",
     "title": "Signals of a good manager",
-    "description": "Do you think it's possible to find signals in collaboration data that someone is a good manager? Let's give it some thought.",
+    "description": "Do you think it's possible to find signals in collaboration (meta)data that someone is a good manager? Let's give it some thought.",
     "author": [
       {
         "name": "Ludek Stehlík",
@@ -18,7 +18,7 @@
     ],
     "contents": "\r\nMany of you have probably already heard about Google’s\r\nOxygen project and its findings on the factors differentiating the\r\nhighest and lowest-rated managers based on performance reviews, employee\r\nengagement surveys, interviews, and other sources of employee feedback.\r\nThe final list included the following eight characteristics:\r\nIs a good coach.\r\nEmpowers the team and does not micromanage.\r\nExpresses interest in and concern for team members’ success and\r\npersonal well-being.\r\nIs productive and results-oriented.\r\nIs a good communicator - listens and shares information.\r\nHelps with career development.\r\nHas a clear vision and strategy for the team.\r\nHas key technical skills that help him or her advise the team.\r\nDo you think it would be possible to find any signals, however weak,\r\nof the presence of some of these managers’ characteristics in the\r\ncollaboration (meta)data?\r\nOf the collaboration metrics we currently work with at Time is Ltd., I would bet on the\r\nfollowing:\r\nNumber of 1-on-1 meetings managers have with their direct reports\r\nand new hires [concern for employees’ success and personal\r\nwell-being]\r\nNumber of team meetings managers have with their teams [information\r\nsharing, alignment on vision, strategy, and tactics)\r\nAfter-hours or weekend work and workday length of managers’ direct\r\nreports [well-being & work-life balance]\r\nManagers’ presence at meetings of their direct reports, excluding\r\n1-on-1s and team meetings [micromanagement]\r\nManagers being in CC/BCC of emails sent by their direct reports\r\n[micromanagement]\r\nTime it takes managers to respond to emails from their direct\r\nreports [interest in and concern for team members]\r\nDirect reports having skip-level meetings [career development &\r\nnew career opportunities]\r\nWould you agree? Or what other signals of a good manager would you\r\nlook for in collaboration (meta)data?\r\nP.S. In a later\r\nupdate, the list of top manager characteristics at Google also\r\nincludes the characteristic “Collaborates across Google”, which is\r\nrelatively straightforward to measure using collaboration data.\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-12-17-good-manager/./worlds-best-boss-funny-the-office-micromanagement.gif",
-    "last_modified": "2022-12-17T12:30:28+01:00",
+    "last_modified": "2022-12-17T12:36:33+01:00",
     "input_file": {}
   },
   {
