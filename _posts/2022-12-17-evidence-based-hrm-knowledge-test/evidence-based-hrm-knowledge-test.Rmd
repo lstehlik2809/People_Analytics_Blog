@@ -1,7 +1,7 @@
 ---
 title: "Evidence-based HRM knowledge test"
 description: |
-  Are you interested in testing your knowledge of evidence-based HRM practices? 
+  Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.
 preview: ./manOnTheRoad.jpg
 author:
   - name: Luděk Stehlík
