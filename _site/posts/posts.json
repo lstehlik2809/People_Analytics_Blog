@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2022-12-17-collaboration-during-vacations/",
+    "title": "Can you really unplug?",
+    "description": "With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations?",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-12-10",
+    "categories": [
+      "vacation",
+      "wellbeing",
+      "work-life balance",
+      "collaboration data"
+    ],
+    "contents": "\r\nAlthough most people know they need time off to stay mentally sharp,\r\nproductive, and resilient over the long term, many confess they work\r\nwhen they’re on vacation.\r\nThe data we collect and analyze at Time is Ltd. confirms this sad\r\ntruth. As the first chart illustrates, on more than 75% of vacation days\r\npeople show some collaborative activity, here measured by attending\r\nnon-recurring meetings, sending emails, and editing shared files.\r\n\r\nHowever, the same data also suggests what could be part of the remedy\r\nfor this unsatisfactory state of affairs. The second chart shows that\r\nthere is a small but not insignificant positive relationship between the\r\ntime that managers and their direct reports spend collaborating during\r\nvacation. The chart also shows that managers tend to collaborate more\r\nintensely during vacation than their direct reports, which is probably\r\nnot too much of a surprise.\r\n\r\nThe data is thus in line with the quite often mentioned suggestion\r\nthat managers should be better role models for their direct reports on\r\nhow to behave during vacation. As in other areas of people management,\r\nit is not enough to lay down the rules - the “playing captain” must play\r\nby those rules as well.\r\nHow are you doing in this respect? And do you have any tricks that\r\nhelp you unplug from work during vacations?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-12-17-collaboration-during-vacations/./outOfOffice.jpg",
+    "last_modified": "2022-12-17T09:14:38+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-12-07-mission-scale-from-tas/",
     "title": "One does not simply do a business without getting lost",
     "description": "Breaking down one weekend association.",
