@@ -7,12 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Evidence-based HRM knowledge test</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test</link>
+      <description>Are you interested in testing your knowledge of evidence-based HRM practices?</description>
+      <category>evidence-based management</category>
+      <category>hr management</category>
+      <category>people management</category>
+      <category>r shiny dashboard</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test</guid>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test/./manOnTheRoad.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Can you really unplug?</title>
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-collaboration-during-vacations</link>
-      <description>With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations?</description>
+      <description>With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations? And what can collaboration data tell us about this?</description>
       <category>vacation</category>
       <category>wellbeing</category>
       <category>work-life balance</category>

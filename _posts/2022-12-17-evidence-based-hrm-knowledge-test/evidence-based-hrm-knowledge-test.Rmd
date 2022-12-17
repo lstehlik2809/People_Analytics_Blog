@@ -1,0 +1,50 @@
+---
+title: "Evidence-based HRM knowledge test"
+description: |
+  Are you interested in testing your knowledge of evidence-based HRM practices? 
+preview: ./manOnTheRoad.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 12-15-2022
+categories:
+  - evidence-based management
+  - hr management
+  - people management
+  - r shiny dashboard
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: false
+---
+
+
+```{r echo=FALSE, warning=FALSE}
+
+# uploading library for emojis
+library(emoji)
+
+```
+
+If you are interested in testing your knowledge of evidence-based HRM practices in the following five areas...
+
+* Management practices
+* General employment practices
+* Training & Employee development
+* Staffing
+* Compensation & Benefits
+
+... then give a try on the test, which is based on the items used in Rynes, Colbert, and Brown's 2002 study ["HR practitioners' beliefs about effective HR practices: a comparison of research and practice"](https://psycnet.apa.org/record/2003-99255-001).
+
+I built a simple shiny app that administers you the test, scores your answers, and compares your results to the results of the participants in the original study (959 HR professionals, mostly HR managers, with an average of 13.8 years of experience in HR). You can also use it to check the accuracy of your answers at the item level to fill in specific gaps in your knowledge.
+
+Here is [the link to the app](https://peopleanalyticsblog.shinyapps.io/evidence_based_hrm_test/). 
+
+Feel free to share your results in the comments. Think of it as a form of public commitment to making some progress in evidence-based HRM in the coming year `r emoji::emoji("wink")` To walk the talk, I attached my own results. As you can see, it's not bad, but there is still room for improvement, especially in the general employment practices area `r emoji::emoji("smiley")`
+
+<img src="./results.png"> 
+
+P.S. Keep in mind that the test is based on evidence available up to 2002, so it is possible that some correct answers or their contingencies may have changed in that time. For all of them, consider, for example, the adjustment of the estimate of the magnitude of the predictive validity of personnel selection procedures in their most recent [meta-analysis by Sackett et al. (2022)](https://psycnet.apa.org/record/2022-17327-001). If you come across any such discrepancy, it would be great if you share it with others in the comments. 

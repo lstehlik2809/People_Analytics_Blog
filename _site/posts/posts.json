@@ -1,8 +1,30 @@
 [
   {
+    "path": "posts/2022-12-17-evidence-based-hrm-knowledge-test/",
+    "title": "Evidence-based HRM knowledge test",
+    "description": "Are you interested in testing your knowledge of evidence-based HRM practices?",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2022-12-15",
+    "categories": [
+      "evidence-based management",
+      "hr management",
+      "people management",
+      "r shiny dashboard"
+    ],
+    "contents": "\r\n\r\n\r\n\r\nIf you are interested in testing your knowledge of evidence-based HRM\r\npractices in the following five areas…\r\nManagement practices\r\nGeneral employment practices\r\nTraining & Employee development\r\nStaffing\r\nCompensation & Benefits\r\n… then give a try on the test, which is based on the items used in\r\nRynes, Colbert, and Brown’s 2002 study “HR practitioners’\r\nbeliefs about effective HR practices: a comparison of research and\r\npractice”.\r\nI built a simple shiny app that administers you the test, scores your\r\nanswers, and compares your results to the results of the participants in\r\nthe original study (959 HR professionals, mostly HR managers, with an\r\naverage of 13.8 years of experience in HR). You can also use it to check\r\nthe accuracy of your answers at the item level to fill in specific gaps\r\nin your knowledge.\r\nHere is the\r\nlink to the app.\r\nFeel free to share your results in the comments. Think of it as a\r\nform of public commitment to making some progress in evidence-based HRM\r\nin the coming year 😉 To walk the talk, I attached my own results. As\r\nyou can see, it’s not bad, but there is still room for improvement,\r\nespecially in the general employment practices area 😃\r\n\r\nP.S. Keep in mind that the test is based on evidence available up to\r\n2002, so it is possible that some correct answers or their contingencies\r\nmay have changed in that time. For all of them, consider, for example,\r\nthe adjustment of the estimate of the magnitude of the predictive\r\nvalidity of personnel selection procedures in their most recent meta-analysis by\r\nSackett et al. (2022). If you come across any such discrepancy, it\r\nwould be great if you share it with others in the comments.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-12-17-evidence-based-hrm-knowledge-test/./manOnTheRoad.jpg",
+    "last_modified": "2022-12-17T12:05:43+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-12-17-collaboration-during-vacations/",
     "title": "Can you really unplug?",
-    "description": "With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations?",
+    "description": "With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations? And what can collaboration data tell us about this?",
     "author": [
       {
         "name": "Ludek Stehlík",
@@ -18,7 +40,7 @@
     ],
     "contents": "\r\nAlthough most people know they need time off to stay mentally sharp,\r\nproductive, and resilient over the long term, many confess they work\r\nwhen they’re on vacation.\r\nThe data we collect and analyze at Time is Ltd. confirms this sad\r\ntruth. As the first chart illustrates, on more than 75% of vacation days\r\npeople show some collaborative activity, here measured by attending\r\nnon-recurring meetings, sending emails, and editing shared files.\r\n\r\nHowever, the same data also suggests what could be part of the remedy\r\nfor this unsatisfactory state of affairs. The second chart shows that\r\nthere is a small but not insignificant positive relationship between the\r\ntime that managers and their direct reports spend collaborating during\r\nvacation. The chart also shows that managers tend to collaborate more\r\nintensely during vacation than their direct reports, which is probably\r\nnot too much of a surprise.\r\n\r\nThe data is thus in line with the quite often mentioned suggestion\r\nthat managers should be better role models for their direct reports on\r\nhow to behave during vacation. As in other areas of people management,\r\nit is not enough to lay down the rules - the “playing captain” must play\r\nby those rules as well.\r\nHow are you doing in this respect? And do you have any tricks that\r\nhelp you unplug from work during vacations?\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-12-17-collaboration-during-vacations/./outOfOffice.jpg",
-    "last_modified": "2022-12-17T09:14:38+01:00",
+    "last_modified": "2022-12-17T11:42:35+01:00",
     "input_file": {}
   },
   {

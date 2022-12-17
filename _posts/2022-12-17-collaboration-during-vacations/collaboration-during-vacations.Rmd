@@ -1,7 +1,7 @@
 ---
 title: "Can you really unplug?"
 description: |
-  With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations?
+  With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations? And what can collaboration data tell us about this?
 preview: ./outOfOffice.jpg
 author:
   - name: Luděk Stehlík
