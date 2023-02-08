@@ -64,6 +64,19 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-slack-batching/./slack.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Warning system for overloaded employees</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-overloaded-employees</link>
+      <description>What tools and/or signals can we use to identify employees at increased risk of overload? Let's take a look at some of the options we have in this regard.</description>
+      <category>overload</category>
+      <category>layoffs</category>
+      <category>retention</category>
+      <category>engagement</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-overloaded-employees</guid>
+      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-overloaded-employees/./overload.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Evaluation of the results of the evidence-based HRM knowledge test</title>
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-01-08-evidence-based-hrm-knowledge-test-results</link>

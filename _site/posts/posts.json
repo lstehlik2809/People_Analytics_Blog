@@ -93,6 +93,28 @@
     "input_file": {}
   },
   {
+    "path": "posts/2023-02-08-overloaded-employees/",
+    "title": "Warning system for overloaded employees",
+    "description": "What tools and/or signals can we use to identify employees at increased risk of overload? Let's take a look at some of the options we have in this regard.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-01-12",
+    "categories": [
+      "overload",
+      "layoffs",
+      "retention",
+      "engagement"
+    ],
+    "contents": "\r\nOne of the negative side-effects of layoffs and efforts to achieve\r\nthe same (or ideally more) with fewer employees can be an increased\r\nworkload for those who stay because they have to do the work of those\r\nwho have left, which may lead to an increased risk of overload,\r\ndisengagement, and voluntary quits.\r\nTo prevent this from happening, it is useful to combine active\r\nlistening (through engagement surveys, pulse surveys, stay interviews,\r\nsimple chat, etc. ) with signals that can be obtained from the traces\r\nleft by people in various digital workplace tools, such as project\r\nmanagement systems (ClickUp, Jira, Asana, etc.), version control systems\r\n(GitLab, GitHub, etc.), calendars, instant messaging, or emails.\r\nAt Time is Ltd., we are\r\ncurrently focusing on the following metrics that could be useful in this\r\nrespect:\r\nNumber of assigned tasks\r\nTask close rate\r\nNumber of assigned tasks that other people’s tasks depend on\r\nNumber of commits\r\nNumber of code reviews\r\nResponse time to received messages and e-mails\r\nAmount of focus time available\r\nAmount of distracted time\r\nAmount of time spent working after hours or on weekends\r\nBy checking the distribution of these metrics across individual team\r\nmembers and their changes over time, it is possible to identify\r\nemployees at higher risk of overload, as well as opportunities for a\r\nmore even distribution of the workload.\r\nWhat tools and/or signals do you use in your company to identify\r\nemployees at increased risk of overload?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-02-08-overloaded-employees/./overload.jpg",
+    "last_modified": "2023-02-08T22:31:15+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2023-01-08-evidence-based-hrm-knowledge-test-results/",
     "title": "Evaluation of the results of the evidence-based HRM knowledge test",
     "description": "Have we made any progress in knowledge of evidence-based HRM practices in the last 20 years? Apparently not. But let's look at the details.",

@@ -1,0 +1,42 @@
+---
+title: "Warning system for overloaded employees"
+description: |
+  What tools and/or signals can we use to identify employees at increased risk of overload? Let's take a look at some of the options we have in this regard.
+preview: ./overload.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 01-12-2023
+categories:
+  - overload
+  - layoffs
+  - retention
+  - engagement
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+One of the negative side-effects of layoffs and efforts to achieve the same (or ideally more) with fewer employees can be an increased workload for those who stay because they have to do the work of those who have left, which may lead to an increased risk of overload, disengagement, and voluntary quits.
+
+To prevent this from happening, it is useful to combine active listening (through engagement surveys, pulse surveys, stay interviews, simple chat, etc. ) with signals that can be obtained from the traces left by people in various digital workplace tools, such as project management systems (ClickUp, Jira, Asana, etc.), version control systems (GitLab, GitHub, etc.), calendars, instant messaging, or emails. 
+
+At [Time is Ltd.](https://www.timeisltd.com/), we are currently focusing on the following metrics that could be useful in this respect:
+
+* Number of assigned tasks 
+* Task close rate 
+* Number of assigned tasks that other people's tasks depend on 
+* Number of commits
+* Number of code reviews
+* Response time to received messages and e-mails 
+* Amount of focus time available 
+* Amount of distracted time 
+* Amount of time spent working after hours or on weekends
+
+By checking the distribution of these metrics across individual team members and their changes over time, it is possible to identify employees at higher risk of overload, as well as opportunities for a more even distribution of the workload.
+
+What tools and/or signals do you use in your company to identify employees at increased risk of overload?
