@@ -269,11 +269,11 @@ bayesplot::mcmc_trace(
 
 It is also important to check how well the model fits the data. To do this, we can use the posterior predictive check, which uses a specified number of selected posterior values of the model parameters to show how well the fitted model predicts the observed data. In the graph below we see that the model fits the observed data reasonably well. 
 
-```{r message=FALSE, warning=FALSE, fig.width=8}
+```{r message=FALSE, warning=FALSE, fig.width=11, fig.height=6}
 
 # investigating the model fit
 # specifying the number of samples
-ndraws = 1000
+ndraws = 100
 
 brms::pp_check(
   model, 

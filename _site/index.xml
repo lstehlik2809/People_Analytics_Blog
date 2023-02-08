@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>HRM value chain and structural equation modeling - Moneyball case</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</link>
+      <description>What's the link between the HRM value chain and structural equation modeling? Let’s check it out.</description>
+      <category>hrm value chain</category>
+      <category>people analytics</category>
+      <category>path analysis</category>
+      <category>structural equation modeling</category>
+      <category>bayesian statistics</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</guid>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem/./baseball.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Evaluation of the results of the evidence-based HRM knowledge test</title>
       <dc:creator>Ludek Stehlík</dc:creator>
