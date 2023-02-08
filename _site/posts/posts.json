@@ -90,6 +90,30 @@
     "input_file": {}
   },
   {
+    "path": "posts/2023-02-08-ineffective-meetings/",
+    "title": "Why are meetings in/effective?",
+    "description": "If you are a regular organiser or attendee of meetings, you may be interested in what people think about the reasons why the meetings they attend are in/effective, as this can give you a better chance of contributing to making your meetings more effective and meaningful for you and others.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-01-03",
+    "categories": [
+      "meetings",
+      "meeting culture",
+      "meeting overload",
+      "collaboration"
+    ],
+    "contents": "\r\nThe list below is based on Geimer\r\net al.’s 2015 paper “Meetings at work: Perceived effectiveness and\r\nrecommended improvements”.\r\nPEOPLE SIDE 🚫 Late arrive 🚫 Unprepared attendees\r\n🚫 One-way (top-down) communication 🚫 Lack of open-mindedness &\r\nempathy 🚫 Self-promotion, people talk just to appear to add value, and\r\nhidden agenda 🚫 People interrupt/talk during meeting 🚫 Interpersonal\r\nconflicts, incivility, and disrespect\r\nMEETING ORGANIZATION SIDE ✅ Agenda ✅ Distribution\r\nof agenda in advance 🚫 Lack of direction/goals ✅ Chaired effectively\r\n🚫 Meetings held just to have them, just a routine with no real purpose\r\n🚫 Appropriate parties are not invited and inappropriate parties are\r\ninvited 🚫 Too many attendees 🚫 Time conflicts 🚫 Meet at inappropriate\r\nintervals 🚫 Meetings take too long 🚫 Takes time to travel to\r\nmeeting\r\nMEETING ACTIVITIES SIDE 🚫 Insufficient interaction,\r\nmeeting activities are monotonous and boring 🚫 No new information 🚫\r\nDiscussion gets off target 🚫 Core issues not discussed 🚫 Lack of\r\nclarity about what the attendee is supposed to do\r\nMEETING OUTCOMES SIDE 🚫 Inaction post-meeting 🚫\r\nDecisions have already been made, just a rubber stamp\r\nDo you identify with the above reasons? Is there anything that you\r\nthink is missing from the list, particularly as the workplaces have been\r\noperating more remotely/hybrid way since 2015?\r\nP.S. In the next post let’s check what suggestions people have for\r\nimproving the effectiveness of meetings.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-02-08-ineffective-meetings/./meetingsDalle.png",
+    "last_modified": "2023-02-08T19:21:19+01:00",
+    "input_file": {},
+    "preview_width": 1024,
+    "preview_height": 1024
+  },
+  {
     "path": "posts/2022-12-17-good-manager/",
     "title": "Signals of a good manager",
     "description": "Do you think it's possible to find signals in collaboration (meta)data that someone is a good manager? Let's give it some thought.",
