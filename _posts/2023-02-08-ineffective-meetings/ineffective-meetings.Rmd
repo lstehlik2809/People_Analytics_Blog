@@ -23,7 +23,7 @@ output:
 
 The list below is based on [Geimer et al.’s 2015](https://www.sciencedirect.com/science/article/abs/pii/S0148296315000879) paper “Meetings at work: Perceived effectiveness and recommended improvements”.
 
-**PEOPLE SIDE**
+**PEOPLE SIDE:**
 🚫 Late arrive
 🚫 Unprepared attendees
 🚫 One-way (top-down) communication
@@ -32,7 +32,7 @@ The list below is based on [Geimer et al.’s 2015](https://www.sciencedirect.co
 🚫 People interrupt/talk during meeting
 🚫 Interpersonal conflicts, incivility, and disrespect
 
-**MEETING ORGANIZATION SIDE**
+**MEETING ORGANIZATION SIDE:**
 ✅ Agenda
 ✅ Distribution of agenda in advance
 🚫 Lack of direction/goals
@@ -45,14 +45,14 @@ The list below is based on [Geimer et al.’s 2015](https://www.sciencedirect.co
 🚫 Meetings take too long
 🚫 Takes time to travel to meeting
 
-**MEETING ACTIVITIES SIDE**
+**MEETING ACTIVITIES SIDE:**
 🚫 Insufficient interaction, meeting activities are monotonous and boring
 🚫 No new information
 🚫 Discussion gets off target
 🚫 Core issues not discussed
 🚫 Lack of clarity about what the attendee is supposed to do
 
-**MEETING OUTCOMES SIDE**
+**MEETING OUTCOMES SIDE:**
 🚫 Inaction post-meeting
 🚫 Decisions have already been made, just a rubber stamp
 
