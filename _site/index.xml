@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>HRM value chain and structural equation modeling - Moneyball case</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</link>
       <description>What's the link between the HRM value chain and structural equation modeling? Let’s check it out.</description>
       <category>hrm value chain</category>
@@ -20,8 +20,21 @@
       <category>bayesian statistics</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</guid>
-      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem/./baseball.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Org chart and collaboration</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-org-chart-and-collaboration</link>
+      <description>How to effectively combine information about the formal organizational structure of a company and the actual collaborative activities of its employees?</description>
+      <category>organizational structure</category>
+      <category>org chart</category>
+      <category>collaboration</category>
+      <category>data visualization</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-org-chart-and-collaboration</guid>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-org-chart-and-collaboration/./collaborationOrgChartOverlay.png" medium="image" type="image/png" width="1661" height="970"/>
     </item>
     <item>
       <title>Span of control and collaboration data</title>
