@@ -99,7 +99,7 @@ DT::datatable(
 ```
 
 
-Now let's define a formal model of the OAK and fit it to the data using the [brms R package](https://cran.r-project.org/web/packages/brms/index.html) which allows us to make inferences about the model parameters within a [Bayesian inferential framework](https://nyu-cdsc.github.io/learningr/assets/kruschke_bayesian_in_R.pdf). Specifically, we will build and fit a so-called *[path analysis](https://en.wikipedia.org/wiki/Path_analysis_(statistics))* model, which is a special type of structural equation modeling used to describe directed dependencies among a set of variables. Given that we have data for a group of the same teams over several seasons, we must also incorporate the hierarchical nature of the data into the model.
+Now let's define a formal model of the OAK and fit it to the data using the [brms R package](https://cran.r-project.org/web/packages/brms/index.html) which allows us to make inferences about the model parameters within a [Bayesian inferential framework](https://nyu-cdsc.github.io/learningr/assets/kruschke_bayesian_in_R.pdf). Specifically, we will build and fit a so-called [path analysis](https://en.wikipedia.org/wiki/Path_analysis_(statistics)) model, which is a special type of structural equation modeling used to describe directed dependencies among a set of variables. Given that we have data for a group of the same teams over several seasons, we must also incorporate the hierarchical nature of the data into the model.
 
 ```{r message=FALSE, warning=FALSE, results = "hide"}
 
