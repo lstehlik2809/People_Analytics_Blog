@@ -45,6 +45,30 @@
     "input_file": {}
   },
   {
+    "path": "posts/2023-02-08-slack-batching/",
+    "title": "Always messaging",
+    "description": "Let's take a look at two concepts from computer science that can be used in the workplace to improve people's focus and productivity, and expose two methods for measuring their related behaviors when collaborating on instant messaging platforms.",
+    "author": [
+      {
+        "name": "Ludek Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-01-17",
+    "categories": [
+      "instant messaging",
+      "collaboration",
+      "focus time",
+      "distractions",
+      "operationalization",
+      "measurement"
+    ],
+    "contents": "\r\nWhen dealing with a large number of tasks and frequent task\r\nswitching, two related concepts originating from computer science can be\r\nused: batch\r\nprocessing and interrupt\r\ncoalescing.\r\nIn computing, these terms refer to a situation where computers wait\r\nuntil a fixed interval and check everything, rather than contextually\r\nswitching and processing separate, uncoordinated interrupts from their\r\nvarious sub-components.\r\nWhen transposed into the world of human workers, this design\r\nprinciple can manifest in checking emails or instant messages every one\r\nor two hours instead of continuously handling all incoming emails and\r\nmessages. Such an arrangement prevents fragmentation of people’s time\r\nand provides them with more focus time they need for deep work and\r\nexperiencing flow.\r\nBut how to measure this behavior so that a number can be put on it to\r\nenable people to better shape their behavior in this regard? At Time is\r\nLtd. we are currently experimenting with two different approaches:\r\nClustering of sent emails/messages using K-Means or PAM and calculation\r\nof time gaps between start/end points of identified clusters, including\r\nthe start and end of the working day. The larger the gaps, the stronger\r\nthe signal of batch behavior.\r\nPercentage of emails/messages sent during the 3 busiest working\r\nhours (defined by the number of emails/messages sent) during a given\r\nday. The higher the proportion, the stronger the signal of batch\r\nbehavior. This approach is inspired by the 2016\r\nstudy by Mark et al. “Email Duration, Batching and\r\nSelf-interruption: Patterns of Email Use on Productivity and Stress”,\r\nwhere the authors used similar approach in the domain of email\r\ncommunication.\r\n\r\nThere are advantages and disadvantages to both methods (face\r\nvalidity, accuracy, sensitivity to edge cases, computational complexity,\r\netc.), but irrespective of these, which one would you prefer to see in\r\nyour collaboration report? To get a better idea of what outputs both of\r\nthe above approaches generate, you can take a look at the attached\r\ngraphs showing the prevalence of batch behavior during one of my work\r\nweeks on Slack according to these two approaches.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-02-08-slack-batching/./slack.jpg",
+    "last_modified": "2023-02-08T19:02:15+01:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2023-01-08-evidence-based-hrm-knowledge-test-results/",
     "title": "Evaluation of the results of the evidence-based HRM knowledge test",
     "description": "Have we made any progress in knowledge of evidence-based HRM practices in the last 20 years? Apparently not. But let's look at the details.",

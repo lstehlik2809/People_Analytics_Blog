@@ -36,6 +36,21 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-span-of-control/./scheme.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Always messaging</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-slack-batching</link>
+      <description>Let's take a look at two concepts from computer science that can be used in the workplace to improve people's focus and productivity, and expose two methods for measuring their related behaviors when collaborating on instant messaging platforms.</description>
+      <category>instant messaging</category>
+      <category>collaboration</category>
+      <category>focus time</category>
+      <category>distractions</category>
+      <category>operationalization</category>
+      <category>measurement</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-slack-batching</guid>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-slack-batching/./slack.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>Evaluation of the results of the evidence-based HRM knowledge test</title>
       <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-01-08-evidence-based-hrm-knowledge-test-results</link>
