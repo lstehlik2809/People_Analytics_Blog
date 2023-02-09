@@ -341,30 +341,24 @@ myData %>%
 
 # wins to make playoffs - chart 2
 
-# creating a table with several different values for the number of wins in the regular season
-nWins <- seq(60,115,5)
-makingPlayoffsProb <- vector(mode="numeric", length=length(nWins))
-playoffsData <- data.frame(nWins = nWins, makingPlayoffsProb = makingPlayoffsProb)
-
-# calculating the probability of advancing to the playoffs with different number of wins in the regular season
-for(i in 1:nrow(playoffsData)){
-  
-  playoffsData$makingPlayoffsProb[i] <- length(myData$W[myData$W >= playoffsData$nWins[i] & myData$Playoffs == 1])/length(myData$W[myData$W >= playoffsData$nWins[i]]) 
-  
-}
-
-# creating the graph
-playoffsData %>%
-  ggplot2::ggplot(aes(x = nWins, y = makingPlayoffsProb)) +
-  ggplot2::geom_point(size = 3) +
-  ggplot2::geom_line(size = 1) +
+myData %>%
+  # dividing W variable into intervals 
+  dplyr::mutate(
+    WCat = cut(W, breaks = 21, right = TRUE, include.lowest = TRUE, ordered_result = TRUE)
+  ) %>% 
+  dplyr::group_by(WCat) %>%
+  dplyr::summarise(
+    PlayoffsProb = mean(Playoffs)
+  ) %>%
+  ggplot2::ggplot(aes(x = WCat, y = PlayoffsProb)) +
+  ggplot2::geom_bar(stat = "identity", color = NA, fill = "lightblue") +
+  ggplot2::scale_y_continuous(limits=c(0,1), breaks = seq(0,1,0.1), labels = scales::percent_format()) +
   ggplot2::labs(
     x = "NUMBER OF GAMES WON IN THE REGULAR SEASON",
     y = "PROBABILITY OF MAKING IT TO THE PLAYOFFS",
     title = "Relation between the number of wins in the regular season and the probability\nof advancing to the playoffs (1996-2001)"
-    ) +
-  ggplot2::scale_x_continuous(limits=c(60,115), breaks = seq(60,115,5))+
-  ggplot2::scale_y_continuous(limits=c(0,1), breaks = seq(0,1,0.1), labels = scales::percent_format()) +
+  ) +
+  ggplot2::coord_flip() +
   ggplot2::theme(plot.title = element_text(color = '#2C2F46', face = "bold", size = 18, margin=margin(0,0,20,0)),
                  plot.subtitle = element_text(color = '#2C2F46', face = "plain", size = 16, margin=margin(0,0,20,0)),
                  plot.caption = element_text(color = '#2C2F46', face = "plain", size = 11, hjust = 0),
@@ -378,8 +372,8 @@ playoffsData %>%
                  legend.key = element_rect(fill = "white"),
                  legend.text = element_text(color = '#2C2F46', face = "plain", size = 12),
                  panel.background = element_blank(),
-                 panel.grid.major.x = element_line(color = "#E0E1E6", linetype = "dashed"),
-                 panel.grid.major.y = element_line(color = "#E0E1E6", linetype = "dashed"),
+                 panel.grid.major.x = element_blank(),
+                 panel.grid.major.y = element_blank(),
                  panel.grid.minor = element_blank(),
                  axis.ticks.x = element_line(color = "#E0E1E6"),
                  axis.ticks.y = element_line(color = "#E0E1E6"),
