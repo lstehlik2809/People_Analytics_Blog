@@ -7,10 +7,10 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>HRM value chain and structural equation modeling - Moneyball case</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
+      <dc:creator>Ludek Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</link>
       <description>What's the link between the HRM value chain and structural equation modeling? Let’s check it out.</description>
       <category>hrm value chain</category>
@@ -20,7 +20,7 @@
       <category>bayesian statistics</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</guid>
-      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem/./baseball.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -47,6 +47,18 @@
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-span-of-control</guid>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-08-span-of-control/./scheme.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Attaching numbers to best practices for instant messaging</title>
+      <dc:creator>Ludek Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-09-slack-best-practices</link>
+      <description>Slack and other instant messaging platforms can be both a blessing and a curse. Can we attach numbers to some of the recommendations on how to use them effectively? Let's take a look.</description>
+      <category>slack</category>
+      <category>instant messaging</category>
+      <category>best practices</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-09-slack-best-practices</guid>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-09-slack-best-practices/./im.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Always messaging</title>
