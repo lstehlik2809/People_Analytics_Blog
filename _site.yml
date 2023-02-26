@@ -10,6 +10,7 @@ collections:
        shortname: ludeks-peopleanalyticsblog
     hidden: false
     share: [linkedin, twitter, facebook ]
+    subscribe: _subscribe.html
 navbar:
   logo: images/ludekstehlik.jpg
   search: true

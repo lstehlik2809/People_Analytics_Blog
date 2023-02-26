@@ -89,19 +89,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>Ludek's Blog About People Analytics: Moneyball v HR</title>
 
-<meta property="description" itemprop="description" content="Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu &quot;Ácek&quot;, jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize."/>
+<meta property="description" itemprop="description" content="Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu &quot;Áček&quot;, jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize."/>
 
 <link rel="canonical" href="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2018-10-11"/>
 <meta property="article:created" itemprop="dateCreated" content="2018-10-11"/>
-<meta name="article:author" content="Ludek Stehlík"/>
+<meta name="article:author" content="Luděk Stehlík"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Ludek&#39;s Blog About People Analytics: Moneyball v HR"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu &quot;Ácek&quot;, jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize."/>
+<meta property="og:description" content="Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu &quot;Áček&quot;, jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize."/>
 <meta property="og:url" content="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"/>
 <meta property="og:image" content="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/./Pitcher-at-the-mound.jpg"/>
 <meta property="og:locale" content="en_US"/>
@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Ludek&#39;s Blog About People Analytics: Moneyball v HR"/>
-<meta property="twitter:description" content="Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu &quot;Ácek&quot;, jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize."/>
+<meta property="twitter:description" content="Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu &quot;Áček&quot;, jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize."/>
 <meta property="twitter:url" content="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"/>
 <meta property="twitter:image" content="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/./Pitcher-at-the-mound.jpg"/>
 
@@ -119,12 +119,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="citation_fulltext_html_url" content="https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"/>
 <meta name="citation_online_date" content="2018/10/11"/>
 <meta name="citation_publication_date" content="2018/10/11"/>
-<meta name="citation_author" content="Ludek Stehlík"/>
+<meta name="citation_author" content="Luděk Stehlík"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Moneyball v HR"]},{"type":"character","attributes":{},"value":["Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu \"Ácek\", jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize."]},{"type":"character","attributes":{},"value":["./Pitcher-at-the-mound.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Ludek Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-11-2018"]},{"type":"character","attributes":{},"value":["employee selection","correlation analysis","multivariate regression analysis","structural equation modeling","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Moneyball v HR"]},{"type":"character","attributes":{},"value":["Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu \"Áček\", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize."]},{"type":"character","attributes":{},"value":["./Pitcher-at-the-mound.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-11-2018"]},{"type":"character","attributes":{},"value":["employee selection","correlation analysis","multivariate regression analysis","structural equation modeling","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -806,6 +806,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1047,10 +1048,6 @@ figure img.external {
   position: relative;
   margin-bottom: 2.5em;
   margin-top: 1.5em;
-}
-
-.figure img {
-  width: 100%;
 }
 
 .figure .caption {
@@ -1882,9 +1879,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -1896,6 +1905,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1995,6 +2029,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -2017,7 +2053,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -2077,7 +2113,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Moneyball v HR","description":"Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu \"Ácek\", jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize.","authors":[{"author":"Ludek Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2018-10-11T00:00:00.000+02:00","citationText":"Stehlík, 2018"}
+{"title":"Moneyball v HR","description":"Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu \"Áček\", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2018-10-11T00:00:00.000+02:00","citationText":"Stehlík, 2018"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -3075,14 +3111,14 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
     </span>
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F&amp;title=Moneyball%20v%20HR">
-        <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F&amp;title=Moneyball%20v%20HR" aria-label="share on linkedin">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
       </a>
-      <a href="https://twitter.com/share?text=Moneyball%20v%20HR&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F">
-        <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/share?text=Moneyball%20v%20HR&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
       </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F">
-        <i class="fab fa-facebook"></i>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt%2F" aria-label="share on facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </span>
   </p>
@@ -3100,6 +3136,16 @@ var disqus_config = function () {
   (d.head || d.body).appendChild(s);
 })();
 </script>
+  <p>
+    <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://blog-about-people-analytics.netlify.com/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form></div>
+  </p>
 </div>
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -3117,7 +3163,7 @@ var disqus_config = function () {
   <pre class="citation-appendix short">Stehlík (2018, Oct. 11). Ludek's Blog About People Analytics: Moneyball v HR. Retrieved from https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{stehlík2018moneyball,
-  author = {Stehlík, Ludek},
+  author = {Stehlík, Luděk},
   title = {Ludek's Blog About People Analytics: Moneyball v HR},
   url = {https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt/},
   year = {2018}

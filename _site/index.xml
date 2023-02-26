@@ -7,10 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 08 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Where to look first when considering meeting reset?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-26-large-and-recurring-meetings</link>
+      <description>Let's briefly discuss the potential benefits of focusing on optimizing large recurring meetings to save time in the workplace.</description>
+      <category>meeting overload</category>
+      <category>meeting culture</category>
+      <category>meeting reset</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-26-large-and-recurring-meetings</guid>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-26-large-and-recurring-meetings/./fatigue.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>HRM value chain and structural equation modeling - Moneyball case</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-hrm-value-chain-and-sem</link>
       <description>What's the link between the HRM value chain and structural equation modeling? Let’s check it out.</description>
       <category>hrm value chain</category>
@@ -25,7 +37,7 @@
     </item>
     <item>
       <title>Org chart and collaboration</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-org-chart-and-collaboration</link>
       <description>How to effectively combine information about the formal organizational structure of a company and the actual collaborative activities of its employees?</description>
       <category>organizational structure</category>
@@ -38,7 +50,7 @@
     </item>
     <item>
       <title>Span of control and collaboration data</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-span-of-control</link>
       <description>How can collaboration data be used to determine the "optimal" scope of control?</description>
       <category>span of control</category>
@@ -50,7 +62,7 @@
     </item>
     <item>
       <title>Attaching numbers to best practices for instant messaging</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-09-slack-best-practices</link>
       <description>Slack and other instant messaging platforms can be both a blessing and a curse. Can we attach numbers to some of the recommendations on how to use them effectively? Let's take a look.</description>
       <category>slack</category>
@@ -62,7 +74,7 @@
     </item>
     <item>
       <title>Always messaging</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-slack-batching</link>
       <description>Let's take a look at two concepts from computer science that can be used in the workplace to improve people's focus and productivity, and expose two methods for measuring their related behaviors when collaborating on instant messaging platforms.</description>
       <category>instant messaging</category>
@@ -77,7 +89,7 @@
     </item>
     <item>
       <title>Warning system for overloaded employees</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-overloaded-employees</link>
       <description>What tools and/or signals can we use to identify employees at increased risk of overload? Let's take a look at some of the options we have in this regard.</description>
       <category>overload</category>
@@ -90,7 +102,7 @@
     </item>
     <item>
       <title>Evaluation of the results of the evidence-based HRM knowledge test</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-01-08-evidence-based-hrm-knowledge-test-results</link>
       <description>Have we made any progress in knowledge of evidence-based HRM practices in the last 20 years? Apparently not. But let's look at the details.</description>
       <category>evidence-based management</category>
@@ -102,7 +114,7 @@
     </item>
     <item>
       <title>How to improve effectiveness of meetings?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-meetings-improvement</link>
       <description>What suggestions do people have for improving the effectiveness of meetings? Let's check it out.</description>
       <category>meetings</category>
@@ -115,7 +127,7 @@
     </item>
     <item>
       <title>Why are meetings in/effective?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-08-ineffective-meetings</link>
       <description>If you are a regular organiser or attendee of meetings, you may be interested in what people think about the reasons why the meetings they attend are in/effective, as this can give you a better chance of contributing to making your meetings more effective and meaningful for you and others.</description>
       <category>meetings</category>
@@ -128,7 +140,7 @@
     </item>
     <item>
       <title>Signals of a good manager</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-good-manager</link>
       <description>Do you think it's possible to find signals in collaboration (meta)data that someone is a good manager? Let's give it some thought.</description>
       <category>google</category>
@@ -141,7 +153,7 @@
     </item>
     <item>
       <title>Evidence-based HRM knowledge test</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test</link>
       <description>Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.</description>
       <category>evidence-based management</category>
@@ -154,7 +166,7 @@
     </item>
     <item>
       <title>Can you really unplug?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-collaboration-during-vacations</link>
       <description>With the Christmas holidays approaching, the following question is more relevant than ever, with the exception of the summer vacations: Can we really disconnect from work during the vacations? And what can collaboration data tell us about this?</description>
       <category>vacation</category>
@@ -167,7 +179,7 @@
     </item>
     <item>
       <title>One does not simply do a business without getting lost</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-07-mission-scale-from-tas</link>
       <description>Breaking down one weekend association.</description>
       <category>TAS</category>
@@ -182,7 +194,7 @@
     </item>
     <item>
       <title>How to quickly navigate dashboard users to what they need to know?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-02-change-detection</link>
       <description>Let's take a look at some tips and tricks to make dasboards more useful for their users.</description>
       <category>dashboard</category>
@@ -196,7 +208,7 @@
     </item>
     <item>
       <title>Eisenhower matrix for meetings</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-26-meeting-matrix</link>
       <description>Meet the Eisenhower matrix for meetings ;)</description>
       <category>meeting culture</category>
@@ -209,7 +221,7 @@
     </item>
     <item>
       <title>Some resources on staff retention and downsizing</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-26-resources-on-retention-and-downsizing</link>
       <description>Probably due to the current situation in the talent market, where many companies are laying people off and at the same time are worried about losing their key employees, a few people have contacted me in recent weeks asking for some tips on evidence-based approaches to dealing with retention and downsizing.</description>
       <category>employee retention</category>
@@ -224,7 +236,7 @@
     </item>
     <item>
       <title>Evidence-based interventions that help reduce the gender pay gap</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-18-interventions-reducing-gender-pay-gap</link>
       <description>Pay inequality between men and women is not only an ethical and legal issue for companies, but also a marketing issue - it can have a negative impact on their "employer brand" and attractiveness as an employer. This means that if companies want to attract and retain talented employees, they must be able to ensure that they treat men and women equally in this respect. Let's look at what the existing evidence tells us about what might help us with this.</description>
       <category>gender pay gap</category>
@@ -235,7 +247,7 @@
     </item>
     <item>
       <title>It's perfectly normal not to be normal</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-11-15-people-related-metrics-distribution</link>
       <description>And it definitely applies to the shape of the distribution of many HR metrics. Let's look at this in a little more detail.</description>
       <category>hr metrics</category>
@@ -249,7 +261,7 @@
     </item>
     <item>
       <title>A visual introduction to Bayesian belief updating</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-10-27-bayesian-belief-updating</link>
       <description>Teacher: "Bayesian belief updating involves combining existing or prior beliefs with an assessment of the strength of new evidence." Student: "And could I please see this in action?"</description>
       <category>bayesian belief updating</category>
@@ -264,7 +276,7 @@
     </item>
     <item>
       <title>Police cadet evaluation dataset</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-10-24-police-cadet-evaluation-dataset</link>
       <description>A "new" real-world dataset useful for training in people analytics.</description>
       <category>people analytics</category>
@@ -278,7 +290,7 @@
     </item>
     <item>
       <title>Divide and... understand</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-10-18-conditional-inference-tree</link>
       <description>Finding the breakpoint when people start to score significantly higher/lower on a given criterion - the use case for the Conditional Inference Tree algorithm.</description>
       <category>conditional inference tree</category>
@@ -294,7 +306,7 @@
     </item>
     <item>
       <title>Timeboxing. Does it really work?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-10-11-timeboxing</link>
       <description>Checking with real-world collaboration data whether timeboxing has a protective function in terms of time available for focused work.</description>
       <category>timeboxing</category>
@@ -307,7 +319,7 @@
     </item>
     <item>
       <title>Multilevel modeling in people analytics</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-multilevel-modeling</link>
       <description>Don't chase (statistical) ghosts and use multilevel models instead!</description>
       <category>multilevel modeling</category>
@@ -324,7 +336,7 @@
     </item>
     <item>
       <title>Collaboration and personality</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-and-personality</link>
       <description>Personality is not fate, at least when it comes to the level of engagement in corporate communication and collaboration.</description>
       <category>collaboration</category>
@@ -338,7 +350,7 @@
     </item>
     <item>
       <title>Hot spots of collaboration overload and collaboration bottlenecks and how to find them</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-collaboration-overload-and-bottlenecks</link>
       <description>One of the most useful insights that can be gleaned from collaboration data is where hot spots of potential collaboration overload and/or collaboration bottlenecks may exist in a company. Such insight can be especially valuable these days, when many companies are trying to fight the upcoming economic downturn by achieving more with less.</description>
       <category>collaboration overload</category>
@@ -351,7 +363,7 @@
     </item>
     <item>
       <title>Are back-to-back meetings for good or bad?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-09-17-back-to-back-meetings</link>
       <description>A short post about the practice of back-to-back meetings and how to determine when it's for bad and when it's rather for good.</description>
       <category>meeting habits</category>
@@ -362,7 +374,7 @@
     </item>
     <item>
       <title>The impact of the COVID pandemic on the popularity of people analytics</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</link>
       <description>Many people analytics professionals think that after the COVID pandemic, organizations are more willing to listen to their insights and recommendations. Can we find any empirical support for their hunch? Let's check it out with data provided by Google Trends and segmented regression analysis of interrupted time series.</description>
       <category>people analytics</category>
@@ -378,7 +390,7 @@
     </item>
     <item>
       <title>People Analytics Challenge from Orgnostic: Plan for high growth</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-challenge-from-orgnostic</link>
       <description>A brief summary of my participation in Orgnostic's People Analytics Challenge.</description>
       <category>recruitment channels</category>
@@ -391,7 +403,7 @@
     </item>
     <item>
       <title>Visual statistical inference</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-06-11-visual-inference-statistics</link>
       <description>Visual statistical inference represents a valid alternative to standard statistical inference, and as a by-product it also helps with building intuition about the difference between signal and noise. Give it a try.</description>
       <category>statistical inference</category>
@@ -404,7 +416,7 @@
     </item>
     <item>
       <title>Standard vs. trend predictors</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-02-06-standard-and-trend-predictors</link>
       <description>When modeling a phenomenon, one usually can't get by with just raw data but must use one's domain knowledge to select and transform the most relevant variables from raw data to be able to successfully grasp regularities in the domain of one's interest. Let's look at one simple example of such feature engineering from the domain of collaboration analytics.</description>
       <category>predictive analytics</category>
@@ -420,7 +432,7 @@
     </item>
     <item>
       <title>Fighting meeting overload</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-01-30-meeting-planning</link>
       <description>One of the most effective ways to fight meeting overload is to better plan meetings in terms of the time we spend in them. Let's look at how data can tell us how much room for improvement we have in this area.</description>
       <category>meeting planning</category>
@@ -431,7 +443,7 @@
     </item>
     <item>
       <title>How do we perceive probability words?</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-01-18-probability-words</link>
       <description>Have you ever wondered exactly how much chance of success people give a project when they say they believe in it? If so, then you may find this post useful, as it attempts to answer that question at least in part with data.</description>
       <category>probability</category>
@@ -442,7 +454,7 @@
     </item>
     <item>
       <title>Hofstede's theory of cultural dimensions</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-01-03-hofstede-theory-of-cultural-dimensions</link>
       <description>Cultural diversity brings both positive effects and some challenges. To deal with the latter, it is useful to have some kind of map to help people better navigate the cultural specificities of people from different societies. Hofstede's theory of cultural dimensions is useful for such a purpose. Let's check how dis/similar countries are on these cultural dimensions with a simple app that could help us better understand, manage and appreciate cultural differences a little better.</description>
       <category>cultural diversity</category>
@@ -456,7 +468,7 @@
     </item>
     <item>
       <title>Makers' schedule and managers' schedule in collaboration data</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-19-makers-and-managers-schedule</link>
       <description>Many of us have probably already heard of Paul Graham's two types of schedules - one that meets the needs of makers and one that meets the needs of managers. But can these two types of schedules be found in any real collaborative data? Let's find out.</description>
       <category>schedule types</category>
@@ -468,7 +480,7 @@
     </item>
     <item>
       <title>R Shiny app for LinkedIn connections analysis</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</link>
       <description>An introduction of a simple R Shiny application for analysing LinkedIn connections.</description>
       <category>linkedin</category>
@@ -481,7 +493,7 @@
     </item>
     <item>
       <title>Overview of predictors of voluntary employee turnover</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</link>
       <description>An introduction of a simple R Shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
       <category>great resignation</category>
@@ -494,10 +506,10 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
     </item>
     <item>
-      <title>Firemní audit rozdílu mezi platy mužu a žen</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <title>Firemní audit rozdílu mezi platy mužů a žen</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2021-01-29-paygap</link>
-      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - muže mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zamestnavatele. To znamená, že pokud firmy chtejí prilákat a také si udržet talentované zamestnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejne. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužu a žen ve firme a do jaké míry ho lze vysvetlit jinými faktory než je samotné pohlaví zamestnance. V tomto clánku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má vetšina firem bežne k dispozici. Strucne se zminuji rovnež o tom, jaké mohou být prípadné další kroky a doporucení vyplývající z výsledku provedné analýzy.</description>
+      <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.</description>
       <category>gender pay gap</category>
       <category>gender pay audit</category>
       <category>regression analysis</category>
@@ -508,7 +520,7 @@
     </item>
     <item>
       <title>Modeling impact of the COVID-19 pandemic on people’s interest in work-life balance and well-being</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression</link>
       <description>Illustration of Bayesian segmented regression analysis of interrupted time series data with a testing hypothesis about the impact of the COVID-19 pandemic on increase in people's search interest in work-life balance and well-being.</description>
       <category>well-being</category>
@@ -523,10 +535,10 @@
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2020-12-31-segmentedregression/./wellBeingData.jpeg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>HR analytika a odchodovost zamestnancu</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <title>HR analytika a odchodovost zaměstnanců</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</link>
-      <description>Které faktory prispívají k odchodovosti zamestnancu a u kterých konkrétních zamestnancu je zvýšené riziko, že firmu behem nekolika príštích mesícu opustí? Na tyto otázky se cím dál tím více firem snaží odpovedet pomocí analýzy dat o svých vlastních zamestnancích. V tomto clánku se prostrednictvím analytického nástroje R a vizualizacního nástroje Shiny podíváme, jak muže být tento druh HR analytického projektu pro firmy užitecný.</description>
+      <description>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.</description>
       <category>employee turnover</category>
       <category>evidence-based hr</category>
       <category>r shiny dashboard</category>
@@ -536,9 +548,9 @@
     </item>
     <item>
       <title>Moneyball v HR</title>
-      <dc:creator>Ludek Stehlík</dc:creator>
+      <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2018-10-11-moneyball-v-hr-od-hr-analytiky-ke-sportovn-analytice-a-zpt</link>
-      <description>Pres popularitu tématu HR analytiky mezi HR profesionály je stále relativne málo spolecností, které HR analytiku reálne a systematicky využívají. Jednou z možných prícin je to, že tradicní HR mnohdy postrádá analytický mindset a nekteré z kompetencí, které jsou klícové pro úspešnou realizaci HR analytických projektu. V takové situaci muže být užitecné podívat se ve vetším detailu na celkovou logiku i na konkrétní analytické kroky nejakého úspešného príkladu využití HR analytiky k optimalizaci nekterého z HR procesu s pozitivním dopadem na obchodní výsledky spolecnosti. V tomto clánku se tímto zpusobem podíváme na známý príbeh oaklandského baseballového týmu "Ácek", jehož management pomerne radikálne - a podle všeho i úspešne - prehodnotil svuj dosavadní prístup k výberu nových hrácu na základe výstupu statistické analýzy sabermetrických dat o herním chování hrácu. Využijeme pri tom volne dostupný statistický software R a verejne dostupnou databázi historických údaju o výsledcích v americké baseballové lize.</description>
+      <description>Přes popularitu tématu HR analytiky mezi HR profesionály je stále relativně málo společností, které HR analytiku reálně a systematicky využívají. Jednou z možných příčin je to, že tradiční HR mnohdy postrádá analytický mindset a některé z kompetencí, které jsou klíčové pro úspěšnou realizaci HR analytických projektů. V takové situaci může být užitečné podívat se ve větším detailu na celkovou logiku i na konkrétní analytické kroky nějakého úspěšného příkladu využití HR analytiky k optimalizaci některého z HR procesů s pozitivním dopadem na obchodní výsledky společnosti. V tomto článku se tímto způsobem podíváme na známý příběh oaklandského baseballového týmu "Áček", jehož management poměrně radikálně - a podle všeho i úspěšně - přehodnotil svůj dosavadní přístup k výběru nových hráčů na základě výstupů statistické analýzy sabermetrických dat o herním chování hráčů. Využijeme při tom volně dostupný statistický software R a veřejně dostupnou databázi historických údajů o výsledcích v americké baseballové lize.</description>
       <category>employee selection</category>
       <category>correlation analysis</category>
       <category>multivariate regression analysis</category>
