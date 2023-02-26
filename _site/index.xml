@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 19 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Using ChatGPT to summarize and explore employee feedback?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-02-26-chatgpt-and-employee-feedback</link>
+      <description>What's the potential use of tools like ChatGPT in analyzing open-ended feedback from employee engagement and satisfaction surveys? Let's take a look at the result of my little experiment in this area.</description>
+      <category>chatgpt</category>
+      <category>ai</category>
+      <category>hrm</category>
+      <category>people analytics</category>
+      <category>employee engagement</category>
+      <category>surveys</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-02-26-chatgpt-and-employee-feedback</guid>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-02-26-chatgpt-and-employee-feedback/./chatgpt_listening.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Where to look first when considering meeting reset?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
