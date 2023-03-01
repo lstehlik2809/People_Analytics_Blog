@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Not-so-hidden cost of working in an office</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-03-01-distracted-time</link>
+      <description>Just a few data-backed thoughts on why many of us may often feel more distracted when working in an office.</description>
+      <category>remote work</category>
+      <category>in-office work</category>
+      <category>collaboration</category>
+      <category>focus time</category>
+      <category>distraction</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-03-01-distracted-time</guid>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-03-01-distracted-time/./distraction.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Using ChatGPT to summarize and explore employee feedback?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
