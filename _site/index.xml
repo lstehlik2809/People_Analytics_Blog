@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 19 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Where do managers put on their rose-tinted glasses the most?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-managers-overconfidence</link>
+      <description>In which areas are managers and leaders prone to overconfidence, and how can this overconfidence potentially impact team functioning? Let's check some data to address this question.</description>
+      <category>team management</category>
+      <category>blind spots</category>
+      <category>rocket model</category>
+      <category>team assessment survey</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-managers-overconfidence</guid>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-11-managers-overconfidence/./pinkGlasses.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Estimating the impact of a new business app by piloting &amp; method of difference-in-differences</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +30,7 @@
       <category>difference in differences</category>
       <category>data-driven decision-making</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-app-piloting-and-dif</guid>
-      <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-11-app-piloting-and-dif/./impact.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

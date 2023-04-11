@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2023-04-11-managers-overconfidence/",
+    "title": "Where do managers put on their rose-tinted glasses the most?",
+    "description": "In which areas are managers and leaders prone to overconfidence, and how can this overconfidence potentially impact team functioning? Let's check some data to address this question.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-03-23",
+    "categories": [
+      "team management",
+      "blind spots",
+      "rocket model",
+      "team assessment survey"
+    ],
+    "contents": "\r\nThe “illusory superiority” or “better-than-average effect” causes individuals to overestimate their abilities compared to others. Unsurprisingly, even managers and leaders fall for this trap. After all, they’re human too, right? 😉 For a review of studies on this topic, see, for example, the systematic review by Heavey et al. (2022).\r\nTo pinpoint particular areas where managers and leaders are prone to overconfidence, data from the Team Assessment Survey (TAS), a team assessment tool rooted in the Rocket Model of team performance, can be valuable as it enables comparisons between how team leaders and team members perceive their team’s functioning. For example, based on data from a Slovak sample of 85 teams with 835 members, it seems that team leaders rate their team’s effectiveness way better than team members in the following five areas in descending order:\r\nResources: Does the team have the budget, equipment, authority, and political capital it needs to accomplish its goals?\r\nTalent: Is the team sized correctly? Are team members’ roles clear? Does the team have the right skills to succeed? Are people developing new skills? Do rewards encourage or discourage teamwork?\r\nContext: Are team members in agreement about the team’s political and economic realities, customers, competitors, suppliers, and key assumptions and challenges?\r\nMission: What is the team’s purpose? What are its goals? How does the team define winning? What are its strategies and plans for accomplishing its goals?\r\nCourage: Do team members trust each other? Is there an optimal level of tension and collaboration on this team? Do team members challenge each other in a constructive manner?\r\n\r\nWhen managers get overconfident in these areas, it can lead to all sorts of issues like underinvestment in critical resources, inefficient resource allocation, ignoring skill gaps, insufficient role clarity, making bad decisions, disjointed strategic planning, confusion, misaligned priorities, uncoordinated efforts, blocking innovation, etc.\r\nWhat’s the fix? Among other things, managers need to be aware of their own biases and work on open communication, feedback, and collaboration with team members. Easier said than done, but it’s crucial to avoid hurting the performance of the team.\r\nObviously, the size and demographics of the sample used are limited and conclusions are therefore difficult to generalize, but I may try to check with Dr. Gordon Curphy, the author of the Rocket Model of team performance and TAS, to see if this pattern is also replicated in a larger, international sample.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-04-11-managers-overconfidence/./pinkGlasses.jpg",
+    "last_modified": "2023-04-11T15:58:17+02:00",
+    "input_file": "managers-overconfidence.knit.md"
+  },
+  {
     "path": "posts/2023-04-11-app-piloting-and-dif/",
     "title": "Estimating the impact of a new business app by piloting & method of difference-in-differences",
     "description": "What is the benefit of using the difference-in-differences method in combination with piloting a new business app, and how can this help estimate the app's effectiveness on key outcomes like time spent with prospects or closed deals?",
