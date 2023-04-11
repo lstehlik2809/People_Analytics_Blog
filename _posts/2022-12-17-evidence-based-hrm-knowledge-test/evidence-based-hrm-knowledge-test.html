@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -112,7 +113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Evidence-based HRM knowledge test"]},{"type":"character","attributes":{},"value":["Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.\n"]},{"type":"character","attributes":{},"value":["./manOnTheRoad.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["12-15-2022"]},{"type":"character","attributes":{},"value":["evidence-based management","hr management","people management","r shiny dashboard"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Evidence-based HRM knowledge test"]},{"type":"character","attributes":{},"value":["Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.\n"]},{"type":"character","attributes":{},"value":["./manOnTheRoad.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["12-15-2022"]},{"type":"character","attributes":{},"value":["evidence-based management","hr management","people management","shiny app"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -188,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -429,10 +431,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1264,9 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1278,6 +1288,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1377,6 +1412,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1399,7 +1436,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1438,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="evidence-based-hrm-knowledge-test_files/header-attrs-2.11/header-attrs.js"></script>
+  <script src="evidence-based-hrm-knowledge-test_files/header-attrs-2.20/header-attrs.js"></script>
   <script src="evidence-based-hrm-knowledge-test_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="evidence-based-hrm-knowledge-test_files/popper-2.6.0/popper.min.js"></script>
   <link href="evidence-based-hrm-knowledge-test_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1472,19 +1509,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Evidence-based HRM knowledge test</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-<div class="dt=tag">evidence-based management</div>
-<div class="dt=tag">hr management</div>
-<div class="dt=tag">people management</div>
-<div class="dt=tag">r shiny dashboard</div>
+<div class="dt-tag">evidence-based management</div>
+<div class="dt-tag">hr management</div>
+<div class="dt-tag">people management</div>
+<div class="dt-tag">shiny app</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Interested in testing your knowledge of evidence-based HRM
-practices? If so, click and get started.</p></p>
+<p><p>Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.</p></p>
 </div>
 
 <div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/"
-class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
   
 <br/>12-15-2022
 </div>
@@ -1493,8 +1528,7 @@ class="uri">https://www.linkedin.com/in/ludekstehlik/</a>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p>If you are interested in testing your knowledge of evidence-based HRM
-practices in the following five areas…</p>
+<p>If you are interested in testing your knowledge of evidence-based HRM practices in the following five areas…</p>
 <ul>
 <li>Management practices</li>
 <li>General employment practices</li>
@@ -1502,42 +1536,14 @@ practices in the following five areas…</p>
 <li>Staffing</li>
 <li>Compensation &amp; Benefits</li>
 </ul>
-<p>… then give a try on the test, which is based on the items used in
-Rynes, Colbert, and Brown’s 2002 study <a
-href="https://psycnet.apa.org/record/2003-99255-001">“HR practitioners’
-beliefs about effective HR practices: a comparison of research and
-practice”</a>.</p>
-<p>I built a simple shiny app that administers you the test, scores your
-answers, and compares your results to the results of the participants in
-the original study (959 HR professionals, mostly HR managers, with an
-average of 13.8 years of experience in HR). You can also use it to check
-the accuracy of your answers at the item level to fill in specific gaps
-in your knowledge.</p>
-<p>Here is <a
-href="https://peopleanalyticsblog.shinyapps.io/evidence_based_hrm_test/">the
-link to the app</a>.</p>
-<p>Feel free to share your results in the comments. Think of it as a
-form of public commitment to making some progress in evidence-based HRM
-in the coming year 😉 To walk the talk, I attached my own results. As
-you can see, it’s not bad, but there is still room for improvement,
-especially in the general employment practices area 😃</p>
+<p>… then give a try on the test, which is based on the items used in Rynes, Colbert, and Brown’s 2002 study <a href="https://psycnet.apa.org/record/2003-99255-001">“HR practitioners’ beliefs about effective HR practices: a comparison of research and practice”</a>.</p>
+<p>I built a simple shiny app that administers you the test, scores your answers, and compares your results to the results of the participants in the original study (959 HR professionals, mostly HR managers, with an average of 13.8 years of experience in HR). You can also use it to check the accuracy of your answers at the item level to fill in specific gaps in your knowledge.</p>
+<p>Here is <a href="https://peopleanalyticsblog.shinyapps.io/evidence_based_hrm_test/">the link to the app</a>.</p>
+<p>Feel free to share your results in the comments. Think of it as a form of public commitment to making some progress in evidence-based HRM in the coming year 😉 To walk the talk, I attached my own results. As you can see, it’s not bad, but there is still room for improvement, especially in the general employment practices area 😃</p>
 <p><img src="results.png"></p>
-<p>P.S. Keep in mind that the test is based on evidence available up to
-2002, so it is possible that some correct answers or their contingencies
-may have changed in that time. For all of them, consider, for example,
-the adjustment of the estimate of the magnitude of the predictive
-validity of personnel selection procedures in their most recent <a
-href="https://psycnet.apa.org/record/2022-17327-001">meta-analysis by
-Sackett et al. (2022)</a>. If you come across any such discrepancy, it
-would be great if you share it with others in the comments.</p>
-<p>Update: With more than 140 people completing the test, I was able to
-compare our current results with those of the participants in the
-original study. You can see the results of the comparison in the post <a
-href="https://blog-about-people-analytics.netlify.app/posts/2023-01-08-evidence-based-hrm-knowledge-test-results/">Evaluation
-of the results of the evidence-based HRM knowledge test</a>. Spoiler:
-It’s not very good 😯</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>P.S. Keep in mind that the test is based on evidence available up to 2002, so it is possible that some correct answers or their contingencies may have changed in that time. For all of them, consider, for example, the adjustment of the estimate of the magnitude of the predictive validity of personnel selection procedures in their most recent <a href="https://psycnet.apa.org/record/2022-17327-001">meta-analysis by Sackett et al. (2022)</a>. If you come across any such discrepancy, it would be great if you share it with others in the comments.</p>
+<p>Update: With more than 140 people completing the test, I was able to compare our current results with those of the participants in the original study. You can see the results of the comparison in the post <a href="https://blog-about-people-analytics.netlify.app/posts/2023-01-08-evidence-based-hrm-knowledge-test-results/">Evaluation of the results of the evidence-based HRM knowledge test</a>. Spoiler: It’s not very good 😯</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -11,7 +11,7 @@ categories:
   - evidence-based management
   - hr management
   - people management
-  - r shiny dashboard
+  - shiny app
 output:
   distill::distill_article:
     self_contained: false

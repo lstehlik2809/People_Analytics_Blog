@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Ask your personality using GPT</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-openai-personality-interpretation</link>
+      <description>Can Generative AI like GPT meaningfully interpret personality profiles?</description>
+      <category>gpt</category>
+      <category>ai</category>
+      <category>personality</category>
+      <category>self-awareness</category>
+      <category>hogan personality inventory</category>
+      <category>shiny app</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-openai-personality-interpretation</guid>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+    </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -291,7 +307,7 @@
       <category>evidence-based management</category>
       <category>hr management</category>
       <category>people management</category>
-      <category>r shiny dashboard</category>
+      <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test</guid>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-12-17-evidence-based-hrm-knowledge-test/./manOnTheRoad.jpg" medium="image" type="image/jpeg"/>
@@ -314,7 +330,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2022-12-07-mission-scale-from-tas</link>
       <description>Breaking down one weekend association.</description>
-      <category>TAS</category>
+      <category>team assessment survey</category>
       <category>mission</category>
       <category>purpose</category>
       <category>goals</category>
@@ -593,7 +609,7 @@
       <category>cultural awareness</category>
       <category>international management</category>
       <category>crosscultural communication</category>
-      <category>r shiny dashboard</category>
+      <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-01-03-hofstede-theory-of-cultural-dimensions</guid>
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-01-03-hofstede-theory-of-cultural-dimensions/./six-dimensions-hofstedes-cultural-dimensions-theory.jpg" medium="image" type="image/jpeg"/>
@@ -618,7 +634,7 @@
       <category>linkedin</category>
       <category>external networks</category>
       <category>social network analysis</category>
-      <category>r shiny dashboard</category>
+      <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</guid>
       <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis/./linkedinLogo.png" medium="image" type="image/png" width="3753" height="2352"/>
@@ -632,7 +648,7 @@
       <category>employee turnover</category>
       <category>turnover predictors</category>
       <category>meta-analysis</category>
-      <category>r shiny dashboard</category>
+      <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</guid>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png" medium="image" type="image/png" width="2700" height="1800"/>
@@ -673,7 +689,7 @@
       <description>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.</description>
       <category>employee turnover</category>
       <category>evidence-based hr</category>
-      <category>r shiny dashboard</category>
+      <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</guid>
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./Types-of-Employee-Attrition.png" medium="image" type="image/png" width="860" height="396"/>

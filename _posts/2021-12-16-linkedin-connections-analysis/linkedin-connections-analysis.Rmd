@@ -11,7 +11,7 @@ categories:
   - linkedin
   - external networks
   - social network analysis
-  - r shiny dashboard
+  - shiny app
 output:
   distill::distill_article:
     self_contained: false
