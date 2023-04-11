@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2023-04-11-excel-and-python/",
+    "title": "Excel + Python = Word Document",
+    "description": "Using combination of Excel and Python for semi-automatic Word document generation.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-03-10",
+    "categories": [
+      "excel",
+      "python",
+      "document",
+      "automation"
+    ],
+    "contents": "\r\nIn the spirit of “Excel isn’t dead and is actually doing well” posts, I’m sharing one practical example of combining Excel and Python to do one specific job. It’s not as exciting and sexy as ChatGPT, but it may still come in handy for someone, as it did for one of my friends.\r\nA friend of mine who works in psychological counselling has to write a large number of reports which, among other things, contain many recommendations for various compensations and interventions depending on established diagnosis.\r\nTo make his job easier, he created a simple Excel spreadsheet with a list of diagnoses and corresponding recommendations. He needed to generate a simple Word document listing and describing the appropriate compensations and interventions after he had marked the appropriate diagnoses for the client in Excel.\r\nI originally wanted to do it all in Excel, but since I’m not the best friend with VBA, I couldn’t get rid of the various text formatting issues. So I reached for Python and one of its document-related libraries and linked it via macro to Excel, which acts only as a source of input data, based on which Python generates a simple report when a button is pressed in Excel. Once generated, the document is ready for further editing and tuning.\r\nIf you are interested in technical details, you can check my GitHub page.\r\nMay the Excel be with you 🙂\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-04-11-excel-and-python/./comboPic.png",
+    "last_modified": "2023-04-11T13:06:43+02:00",
+    "input_file": {},
+    "preview_width": 960,
+    "preview_height": 540
+  },
+  {
     "path": "posts/2023-04-11-job-attitudes-and-employee-outcomes/",
     "title": "Employee outcomes & employees' job attitudes",
     "description": "What employee outcomes are predicted by what employees' job attitudes? Let's check it out.",
