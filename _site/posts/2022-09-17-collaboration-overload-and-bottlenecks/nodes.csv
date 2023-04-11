@@ -1,0 +1,16 @@
+id,name,inbound,outbound,inoutDiff
+0,clients,1384.0,1502.0,-118.0
+1,data,632.0,656.0,-24.0
+2,deployment,755.0,632.0,123.0
+3,design,111.0,155.0,-44.0
+4,dev management,927.0,724.0,203.0
+5,development - backend,574.0,635.0,-61.0
+6,development - frontend,862.0,683.0,179.0
+7,finance,290.0,369.0,-79.0
+8,human resources,538.0,777.0,-239.0
+9,management,709.0,706.0,3.0
+10,marketing,719.0,638.0,81.0
+11,operations,795.0,931.0,-136.0
+12,partnerships,269.0,324.0,-55.0
+13,product management,560.0,418.0,142.0
+14,sales,1201.0,1176.0,25.0
