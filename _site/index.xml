@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Are there meeting “yes-men”?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-meeting-yes-men</link>
+      <description>One of our clients was struggling with meeting overload and wanted to know if the people who attend too many meetings are the kind of "yes-men" who just can't say no to meeting invites. You know the type - always saying "yes" and never protecting their precious time. What did they find?</description>
+      <category>meeting culture</category>
+      <category>meeting overload</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-11-meeting-yes-men</guid>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-11-meeting-yes-men/./yes_man_yes.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>Impact of employee satisfaction at work on a company's bottom line</title>
       <dc:creator>Luděk Stehlík</dc:creator>
