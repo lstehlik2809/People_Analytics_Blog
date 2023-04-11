@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2023-04-11-engagement-interventions/",
+    "title": "Effectiveness of interventions for encreasing employee engagement",
+    "description": "What evidence do we have for the effectiveness of interventions for increasing employee engagement? Let's check it out.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-03-27",
+    "categories": [
+      "employee engagement",
+      "work engagement",
+      "interventions",
+      "meta-analysis",
+      "i/o psychology"
+    ],
+    "contents": "\r\nThere is some evidence that engagement of employees has positive causal impact on the bottom line of organizations (see, for example, the meta-analysis by Harter et al. (2010), however, be aware of the specific definition of engagement used there, which focuses more on the contextual factors and conditions enabling engagement and less on the psychological states of engagement). Consequently, we might be naturally interested in whether we can positively influence engagement of employees through the use of certain interventions.\r\nBased on a systematic review and meta-analysis of studies with controlled workplace interventions by Knight, Patterson, and Dawson (2017), it seems the answer might be yes. The authors found a small positive effect on work engagement and each of its three sub-components: vigor, dedication, and absorption, as measured by the Utrecht Work Engagement Scale (UWES) from Bakker and Schaufeli.\r\nWhen it comes to the types of intervention (personal resource building, job resource building, leadership training, and health promotion), a moderator analysis did not find evidence for their differing effectiveness. However, there was evidence for a medium to strong effect of intervention style in favor of group interventions (vs. individual), with the possible explanation being that group interventions effectively influence certain work engagement antecedents, such as social support and influence in decision-making.\r\n\r\nRegarding the sustainability of effects, there was no significant effect of time in the case of overall work engagement. However, for the vigor sub-component, there were stronger effects immediately post-intervention than at follow-up, with the opposite being true for dedication and absorption sub-components.\r\nHave you implemented any interventions to boost engagement of employees in your organization? Did you measure their effectiveness? What were your experiences and results? Feel free to share your thoughts in the comments below.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-04-11-engagement-interventions/./training.jpg",
+    "last_modified": "2023-04-11T19:33:41+02:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2023-04-11-managers-overconfidence/",
     "title": "Where do managers put on their rose-tinted glasses the most?",
     "description": "In which areas are managers and leaders prone to overconfidence, and how can this overconfidence potentially impact team functioning? Let's check some data to address this question.",
