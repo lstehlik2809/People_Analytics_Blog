@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Interpretable machine learning with modelStudio</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-13-interpretable-ml</link>
+      <description>There's a new kid on the block in the R ecosystem that can help analysts understand the behavior of their ML models.</description>
+      <category>machine learning</category>
+      <category>predictive models</category>
+      <category>interpretability</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-13-interpretable-ml</guid>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-13-interpretable-ml/./miracle.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Ask your personality using GPT</title>
       <dc:creator>Luděk Stehlík</dc:creator>
