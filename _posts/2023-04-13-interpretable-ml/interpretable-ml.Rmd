@@ -23,7 +23,7 @@ output:
 
 There's a great new R package, [modelStudio](https://cran.r-project.org/web/packages/modelStudio/index.html), that makes it much easier for analysts to create both global and local interpretations of predictive models using an interactive interface.
 
-Once you've trained the model, you just get the [DALEX](https://cran.r-project.org/web/packages/DALEX/index.html) explainer object ready and starts up modelStudio that will run the following analyses (among others) and show the corresponding plots:
+Once you've trained the model, you just get the [DALEX](https://cran.r-project.org/web/packages/DALEX/index.html) explainer object ready and start up modelStudio that will run the following analyses (among others) and show the corresponding plots:
 
 * **Feature Importance:** A visual representation that ranks and displays the significance of each input variable in a predictive model, helping to identify the most influential features for model predictions.
 * **Partial Dependence:** A visualization that shows the relationship between a feature and the predicted outcome while averaging out the effects of all other features, to understand the marginal impact of a specific feature on the model's predictions.
@@ -98,7 +98,7 @@ xgb_workflow <-
 
 ```
 
-Although the XGBoost algorithm works quite well with the default hyper-parameters, we will use the validation dataset to tune some of its hyper-parameters to get the best performance. As can be seen below, after tuning the best model performs quite well in terms of AUC, which has a value of around 0.8.
+Although the XGBoost algorithm works quite well with the default hyper-parameters, we will use the validation dataset to tune some of its hyper-parameters to get the best performance out of it. As can be seen below, after tuning the best model performs quite well in terms of AUC, which has a value of around 0.8.
 
 ```{r}
 
