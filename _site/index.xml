@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Consequences of time management in the workplace</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-17-time-management</link>
+      <description>Some interesting insights from a meta-analytic review of the consequences of time management behaviors in the workplace.</description>
+      <category>time management</category>
+      <category>meta-analysis</category>
+      <category>job satisfaction</category>
+      <category>job performance</category>
+      <category>stress</category>
+      <category>burnout</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-17-time-management</guid>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-17-time-management/./tm.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Interpretable machine learning with modelStudio</title>
       <dc:creator>Luděk Stehlík</dc:creator>
