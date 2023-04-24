@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 18 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When flawed statistical &amp; causal reasoning leads to a valid conclusion anyway</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-04-24-glassdoor</link>
+      <description>Comparison of Glassdoor ratings from current and former employees.</description>
+      <category>glassdoor</category>
+      <category>employee experience</category>
+      <category>employee satisfaction</category>
+      <category>employee turnover</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-24-glassdoor</guid>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-24-glassdoor/./glassdoor.png" medium="image" type="image/png" width="768" height="595"/>
+    </item>
     <item>
       <title>In need of multilevel correlations?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
