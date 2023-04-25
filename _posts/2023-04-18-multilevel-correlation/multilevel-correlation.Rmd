@@ -25,7 +25,7 @@ I am currently in the middle of a project where I am working with nested data an
 
 To my surprise, for quite a long time I couldn't find any libraries in the R or Python ecosystems that provided an easy-to-use implementation of this type of analysis. I thought I would have to code it from scratch using Stan or JAGS.
 
-Fortunately, I eventually discovered a fantastic correlation package (part of the easystats universe) that can compute various types of correlations, including multilevel correlations, partial correlations, Bayesian correlations, polychoric correlations, biweight correlations, distance correlations, and more.
+Fortunately, I discovered a fantastic correlation package (part of the easystats universe) that can compute various types of correlations, including multilevel correlations, partial correlations, Bayesian correlations, polychoric correlations, biweight correlations, distance correlations, and more.
 
 Since nested data is (almost) everywhere, consider trying this package as it can make your life as an analyst a little bit easier 😉 Check out the code below to see it in action.
 

@@ -209,7 +209,7 @@ explainer <- DALEX::explain(
   verbose = FALSE 
 )
 
-# running ModelStudio (uncomment the code if you want to launch the modelStudio)
+# running ModelStudio
 modelStudio::modelStudio(
   explainer,
   max_features = 100, # Maximum number of features to be included in BD, SV, and FI plots
