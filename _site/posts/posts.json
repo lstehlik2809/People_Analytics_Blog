@@ -1,5 +1,32 @@
 [
   {
+    "path": "posts/2023-04-28-employee-feedback-analysis-using-openai/",
+    "title": "Employee feedback analysis using tools from OpenAI",
+    "description": "How to use GPT and embeddings from OpenAI for identifying topics and related sentiments in employee feedback.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-04-28",
+    "categories": [
+      "openai",
+      "gpt",
+      "embeddings",
+      "employee feedback",
+      "employee survey",
+      "topic analysis",
+      "python",
+      "r",
+      "shiny app"
+    ],
+    "contents": "\r\nA while ago, I posted about the potential of using GPT for processing open-ended feedback from employees. I simply inputted a block of text into GPT and asked for a summary of the major topics found in the feedback. Although the output was quite accurate and the information compression achieved was very useful, this approach was somewhat limited in terms of scalability and granularity of the information provided.\r\nTo address these limitations, I experimented with another approach that includes the following steps:\r\nLooping over feedback from individual employees and sending them one by one to GPT.\r\nPrompting GPT to identify all present topics in each feedback, determining their respective sentiments (positive, negative, mixed, or neutral), and extracting the relevant parts of the feedback based on which the topic was identified.\r\nPrompting GPT to categorize identified topics using a provided list of topic categories (e.g., compensation and benefits, work-life balance, collaboration and teamwork, etc.), while taking into account contextual information in the relevant parts of the feedback. Alternatively, categorizing by matching embeddings of identified topics, contextual information, and topic categories.\r\nPlotting the topic categories by the number of their occurrences and type of associated sentiment.\r\nInteractive exploration of specific topics clustered by their semantic similarity based on their respective embeddings and visualized with the help of t-SNE dimensionality reduction technique.\r\nCreating a filterable table with identified topics and all original and extracted information that may be useful for further exploration of the feedback and for checking the precision of the topic identification.\r\nI had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on Kaggle. You can check the results of the analysis yourself in this simple dashboard.\r\n\r\nIn my opinion, it works quite well and could represent a very time- and cost-effective way to gain useful insights from employee open-ended feedback at scale, with the caveat that one has to ensure the security of the processed data, for example, by using a local LLM. Let me know what you think about this approach. And if you are interested in the Python code behind the analysis so you can play with it on your own data, here’s the link to the GitHub page with the Python code.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-04-28-employee-feedback-analysis-using-openai/./employeeListening.avif",
+    "last_modified": "2023-04-28T18:54:55+02:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2023-04-24-glassdoor/",
     "title": "When flawed statistical & causal reasoning leads to a valid conclusion anyway",
     "description": "Comparison of Glassdoor ratings from current and former employees.",
