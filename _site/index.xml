@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>GPT-4's performance in the knowledge test of evidence-based HRM practices</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices</link>
+      <description>How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let's check it out.</description>
+      <category>gpt</category>
+      <category>ai</category>
+      <category>evidence-based management</category>
+      <category>hr management</category>
+      <category>people management</category>
+      <category>hr practices</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices</guid>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/./gpt4.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Employee feedback analysis using tools from OpenAI</title>
       <dc:creator>Luděk Stehlík</dc:creator>

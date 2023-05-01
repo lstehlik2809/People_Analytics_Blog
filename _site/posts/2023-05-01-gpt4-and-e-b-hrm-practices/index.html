@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+<title>Ludek's Blog About People Analytics: GPT-4's performance in the knowledge test of evidence-based HRM practices</title>
+
+<meta property="description" itemprop="description" content="How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let&#39;s check it out."/>
+
+<link rel="canonical" href="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2023-05-02"/>
+<meta property="article:created" itemprop="dateCreated" content="2023-05-02"/>
+<meta name="article:author" content="Luděk Stehlík"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Ludek&#39;s Blog About People Analytics: GPT-4&#39;s performance in the knowledge test of evidence-based HRM practices"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let&#39;s check it out."/>
+<meta property="og:url" content="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"/>
+<meta property="og:image" content="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/./gpt4.jpg"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Ludek&#39;s Blog About People Analytics"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="Ludek&#39;s Blog About People Analytics: GPT-4&#39;s performance in the knowledge test of evidence-based HRM practices"/>
+<meta property="twitter:description" content="How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let&#39;s check it out."/>
+<meta property="twitter:url" content="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"/>
+<meta property="twitter:image" content="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/./gpt4.jpg"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Ludek&#39;s Blog About People Analytics: GPT-4&#39;s performance in the knowledge test of evidence-based HRM practices"/>
+<meta name="citation_fulltext_html_url" content="https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"/>
+<meta name="citation_online_date" content="2023/05/02"/>
+<meta name="citation_publication_date" content="2023/05/02"/>
+<meta name="citation_author" content="Luděk Stehlík"/>
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["GPT-4's performance in the knowledge test of evidence-based HRM practices"]},{"type":"character","attributes":{},"value":["How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let's check it out."]},{"type":"character","attributes":{},"value":["./gpt4.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-02-2023"]},{"type":"character","attributes":{},"value":["gpt","ai","evidence-based management","hr management","people management","hr practices"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["gpt4-and-e-b-hrm-practices_files/anchor-4.2.2/anchor.min.js","gpt4-and-e-b-hrm-practices_files/bowser-1.9.3/bowser.min.js","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/css/crosstalk.min.css","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/js/crosstalk.js","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/js/crosstalk.js.map","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/js/crosstalk.min.js","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/js/crosstalk.min.js.map","gpt4-and-e-b-hrm-practices_files/crosstalk-1.2.0/scss/crosstalk.scss","gpt4-and-e-b-hrm-practices_files/datatables-binding-0.27/datatables.js","gpt4-and-e-b-hrm-practices_files/datatables-css-0.0.0/datatables-crosstalk.css","gpt4-and-e-b-hrm-practices_files/distill-2.2.21/template.v2.js","gpt4-and-e-b-hrm-practices_files/dt-core-1.12.1/css/jquery.dataTables.extra.css","gpt4-and-e-b-hrm-practices_files/dt-core-1.12.1/css/jquery.dataTables.min.css","gpt4-and-e-b-hrm-practices_files/dt-core-1.12.1/js/jquery.dataTables.min.js","gpt4-and-e-b-hrm-practices_files/dt-ext-buttons-1.12.1/css/buttons.dataTables.min.css","gpt4-and-e-b-hrm-practices_files/dt-ext-buttons-1.12.1/js/buttons.colVis.min.js","gpt4-and-e-b-hrm-practices_files/dt-ext-buttons-1.12.1/js/buttons.html5.min.js","gpt4-and-e-b-hrm-practices_files/dt-ext-buttons-1.12.1/js/buttons.print.min.js","gpt4-and-e-b-hrm-practices_files/dt-ext-buttons-1.12.1/js/dataTables.buttons.min.js","gpt4-and-e-b-hrm-practices_files/header-attrs-2.20/header-attrs.js","gpt4-and-e-b-hrm-practices_files/htmlwidgets-1.6.1/htmlwidgets.js","gpt4-and-e-b-hrm-practices_files/jquery-3.6.0/jquery-3.6.0.js","gpt4-and-e-b-hrm-practices_files/jquery-3.6.0/jquery-3.6.0.min.js","gpt4-and-e-b-hrm-practices_files/jquery-3.6.0/jquery-3.6.0.min.map","gpt4-and-e-b-hrm-practices_files/nouislider-7.0.10/jquery.nouislider.min.css","gpt4-and-e-b-hrm-practices_files/nouislider-7.0.10/jquery.nouislider.min.js","gpt4-and-e-b-hrm-practices_files/popper-2.6.0/popper.min.js","gpt4-and-e-b-hrm-practices_files/selectize-0.12.0/selectize.bootstrap3.css","gpt4-and-e-b-hrm-practices_files/selectize-0.12.0/selectize.min.js","gpt4-and-e-b-hrm-practices_files/tippy-6.2.7/tippy-bundle.umd.min.js","gpt4-and-e-b-hrm-practices_files/tippy-6.2.7/tippy-light-border.css","gpt4-and-e-b-hrm-practices_files/tippy-6.2.7/tippy.css","gpt4-and-e-b-hrm-practices_files/tippy-6.2.7/tippy.umd.min.js","gpt4-and-e-b-hrm-practices_files/webcomponents-2.0.0/webcomponents.js","gpt4.jpg","gpt4Responses.xlsx","plot.png"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description || ''}
+                </div>
+                <div class="search-item-preview">
+                  ${img}
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+  font-size: 100%;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+      }).join("\n");
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="../../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+  <link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="../../site_libs/datatables-binding-0.27/datatables.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="../../site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="../../site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="../../site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+  <link href="../../site_libs/dt-ext-buttons-1.12.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+  <script src="../../site_libs/dt-ext-buttons-1.12.1/js/dataTables.buttons.min.js"></script>
+  <script src="../../site_libs/dt-ext-buttons-1.12.1/js/buttons.html5.min.js"></script>
+  <script src="../../site_libs/dt-ext-buttons-1.12.1/js/buttons.colVis.min.js"></script>
+  <script src="../../site_libs/dt-ext-buttons-1.12.1/js/buttons.print.min.js"></script>
+  <link href="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+  <script src="../../site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+  <link href="../../site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+  <script src="../../site_libs/selectize-0.12.0/selectize.min.js"></script>
+  <link href="../../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="../../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"GPT-4's performance in the knowledge test of evidence-based HRM practices","description":"How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let's check it out.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-05-02T00:00:00.000+02:00","citationText":"Stehlík, 2023"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<span class="logo">
+<img src="../../images/ludekstehlik.jpg"/>
+</span>
+<a href="../../index.html" class="title">Ludek's Blog About People Analytics</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="../../bio.html">Bio</a>
+<a href="../../index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>GPT-4’s performance in the knowledge test of evidence-based HRM practices</h1>
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+  <a href="../../index.html#category:gpt" class="dt-tag">gpt</a>
+  <a href="../../index.html#category:ai" class="dt-tag">ai</a>
+  <a href="../../index.html#category:evidence-based_management" class="dt-tag">evidence-based management</a>
+  <a href="../../index.html#category:hr_management" class="dt-tag">hr management</a>
+  <a href="../../index.html#category:people_management" class="dt-tag">people management</a>
+  <a href="../../index.html#category:hr_practices" class="dt-tag">hr practices</a>
+</div>
+<!--/radix_placeholder_categories-->
+<p><p>How did GPT-4 perform in the knowledge test of evidence-based HRM practices? Let’s check it out.</p></p>
+</div>
+
+<div class="d-byline">
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  
+<br/>05-02-2023
+</div>
+
+<div class="d-article">
+<p>Some time ago, I “replicated” <a href="https://psycnet.apa.org/record/2003-99255-001">Rynes, Colbert, and Brown’s 2002 study</a> on HR practitioners’ beliefs about effective HR practices on a convenience sample of more than 140 LinkedIn users. <a href="https://blog-about-people-analytics.netlify.app/posts/2023-01-08-evidence-based-hrm-knowledge-test-results/">The results of this “replication”</a> closely resembled the results of the original study. On average, respondents correctly answered 19.4 out of 35 items, achieving a 55% success rate, which was very close to the 57% average success rate in the original study (and also quite close to the 50% success rate that corresponds to random choice, given the TRUE/FALSE response format).</p>
+<p>I was curious to see how GPT-4 would perform in this test, as it had been evaluated on various standardized tests such as the SAT, GRE, Bar Exam, and AP. The prompts used had the following form: Read the following statement and indicate whether it is true or false. Keep in mind that the statement refers to general trends and patterns that apply on average but not necessarily to all cases. When evaluating the statement, ensure that you correctly interpret the words used in the statement and take into account existing scientific evidence. Give me the answer either true or false, without intermediate values, in a boolean way. Finally, briefly explain your reasoning behind your answer. The statement is as follows:…</p>
+<p>So, what were the results? GPT-4 answered 29 out of 35 items right, i.e., it achieved a 83% success rate, which corresponds to the 99th and 97th percentiles in the original and “replicated” studies, respectively. GPT-4’s results are thus superior to majority of people who took the test.</p>
+<p><img src="plot.png"></p>
+<p>However, even when it gave a correct answer, it did not always rely on correct facts and/or valid reasoning, which could be a problem if management decided to act on the answers provided. See the table below to check the details of its responses.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># uploading libraries</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://readxl.tidyverse.org'>readxl</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/DT'>DT</a></span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># uploading data</span></span>
+<span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='fu'>readxl</span><span class='fu'>::</span><span class='fu'><a href='https://readxl.tidyverse.org/reference/read_excel.html'>read_xlsx</a></span><span class='op'>(</span><span class='st'>"./gpt4Responses.xlsx"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># creating user-friendly table</span></span>
+<span><span class='fu'>DT</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/DT/man/datatable.html'>datatable</a></span><span class='op'>(</span></span>
+<span>  <span class='va'>mydata</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> </span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>itemId</span>, <span class='va'>item</span>, <span class='va'>gpt4Response</span>, <span class='va'>correctAnswer</span>, <span class='va'>gpt4Reasoning</span>, <span class='va'>researchEvidence</span>, <span class='va'>possibleContingencies</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span><span class='st'>"Item ID"</span><span class='op'>=</span><span class='va'>itemId</span>, Item<span class='op'>=</span><span class='va'>item</span>, <span class='st'>"GPT-4 response"</span><span class='op'>=</span><span class='va'>gpt4Response</span>, <span class='st'>"Correct answer"</span><span class='op'>=</span><span class='va'>correctAnswer</span>, <span class='st'>"GPT-4 reasoning"</span><span class='op'>=</span><span class='va'>gpt4Reasoning</span>, <span class='st'>"Research evidence"</span><span class='op'>=</span><span class='va'>researchEvidence</span>, <span class='st'>"Possible contingencies"</span><span class='op'>=</span><span class='va'>possibleContingencies</span><span class='op'>)</span>,</span>
+<span>  class <span class='op'>=</span> <span class='st'>'cell-border stripe'</span>, </span>
+<span>  filter <span class='op'>=</span> <span class='st'>'top'</span>,</span>
+<span>  extensions <span class='op'>=</span> <span class='st'>'Buttons'</span>,</span>
+<span>  fillContainer <span class='op'>=</span> <span class='cn'>FALSE</span>,</span>
+<span>  rownames<span class='op'>=</span> <span class='cn'>FALSE</span>,</span>
+<span>  options <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span></span>
+<span>    pageLength <span class='op'>=</span> <span class='fl'>3</span>,</span>
+<span>    autoWidth <span class='op'>=</span> <span class='cn'>TRUE</span>,</span>
+<span>    columnDefs <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='st'>'500px'</span>, targets <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Item"</span>, <span class='st'>"GPT-4 reasoning"</span>, <span class='st'>"Research evidence"</span>, <span class='st'>"Possible contingencies"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    dom <span class='op'>=</span> <span class='st'>'Bfrtip'</span>,</span>
+<span>    buttons <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'copy'</span><span class='op'>)</span>, </span>
+<span>    scrollX <span class='op'>=</span> <span class='cn'>TRUE</span>, </span>
+<span>    selection<span class='op'>=</span><span class='st'>"multiple"</span></span>
+<span>  <span class='op'>)</span></span>
+<span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>DT</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/DT/man/formatCurrency.html'>formatStyle</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='st'>'vertical-align'</span><span class='op'>=</span><span class='st'>'top'</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-93a430fd4a3c02e22715" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-93a430fd4a3c02e22715">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"logical\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;true&quot;,&quot;false&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["item1","item2","item3","item4","item5","item6","item7","item8","item9","item10","item11","item12","item13","item14","item15","item16","item17","item18","item19","item20","item21","item22","item23","item24","item25","item26","item27","item28","item29","item30","item31","item32","item33","item34","item35"],["Leadership training is ineffective because good leaders are born, not made.","The most important requirement for an effective leader is to have an outgoing, enthusiastic personality.","Once employees have mastered a task, they perform better when they are told to “do their best” than when they are given specific, difficult performance goals.","Companies with vision statements perform better than those without them.","Companies with very low rates of professional turnover are less profitable than those with moderate turnover rates.","If a company feels it must downsize employees, the most profitable way to do it is through targeted cuts rather than attrition.","In order to be evaluated favorably by line managers, the most important competency for HR managers is the ability to manage change.","On average, encouraging employees to participate in decision making is more effective for improving organizational performance than setting performance goals.","Most managers give employees lower performance appraisals than they objectively deserve.","Poor performers are generally more realistic about their performance than good performers are.","Teams with members from different functional areas are likely to reach better solutions to complex problems than teams from a single area.","Despite the popularity of drug testing, there is no clear evidence that applicants who score positive on drug tests are any less reliable or productive employees.","Most people overevaluate how well they perform on the job.","Most errors in performance appraisals can be eliminated by providing training that describes the kinds of errors managers tend to make and suggesting ways to avoid them.","Lecture-based training is generally superior to other forms of training delivery.","Older adults learn more from training than younger adults.","The most important determinant of how much training employees actually use on their jobs is how much they learned during training.","Training for simple skills will be more effective if it is presented in one concentrated session than if it is presented in several sessions over time.","The most valid employment interviews are designed around each candidate’s unique background.","Although people use many different terms to describe personalities, there are really only four basic dimensions of personality, as captured by the Myers-Briggs Type Indicator (MBTI).","On average, applicants who answer job advertisements are likely to have higher turnover than those referred by other employees.","Being very intelligent is actually a disadvantage for performing well on a low-skilled job.","There is very little difference among personality inventories in terms of how well they predict an applicant’s likely job performance.","Although there are “integrity tests” that try to predict whether someone will steal, be absent, or otherwise take advantage of an employer, they don’t work well in practice because so many people lie on them.","One problem with using integrity tests is that they have high degrees of adverse impact on racial minorities.","On average, conscientiousness is a better predictor of job performance than is intelligence.","Companies that screen job applicants for values have higher performance than those that screen for intelligence.","When pay must be reduced or frozen, there is little a company can do or say to reduce employee dissatisfaction and dysfunctional behaviors.","Most employees prefer to be paid on the basis of individual performance rather than on team or organizational performance.","Merit pay systems cause so many problems that companies without them tend to have higher performance than companies with them.","There is a positive relationship between the proportion of managers receiving organizationally based pay incentives and company profitability.","New companies have a better chance of surviving if all employees receive incentives based on organization-wide performance.","Talking about salary issues during performance appraisals tends to hurt morale and future performance.","Most employees prefer variable pay systems (e.g. incentive schemes, gain sharing, stock options) to fixed pay systems.","Surveys that directly ask employees how important pay is to them are likely to overestimate pay’s true importance in actual decisions."],[false,false,false,true,true,true,true,false,false,false,true,true,true,false,false,false,false,false,false,false,true,true,true,false,false,true,false,false,true,false,true,true,false,false,true],[false,false,false,true,false,true,true,false,false,false,true,false,true,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,true,false,true,true,false,false,false],["The statement is false because there is substantial evidence that leadership skills can be developed and improved through training and experience. While some individuals may have innate qualities that make them more predisposed to becoming effective leaders, leadership is a complex skillset that can be cultivated and enhanced over time. Research has shown that leadership training can indeed have a positive impact on individuals' abilities to lead others, communicate effectively, and make better decisions.","The statement is false because, while an outgoing and enthusiastic personality can be beneficial in some leadership situations, it is not the most important requirement for an effective leader. Effective leadership encompasses a range of skills and attributes, such as empathy, strategic thinking, adaptability, and effective communication. Different leadership styles can be effective in various contexts, and introverted leaders may excel in certain situations where they can listen attentively, motivate others, and make thoughtful decisions.","Research suggests that specific, difficult performance goals generally lead to higher performance compared to vague or \"do your best\" goals. When employees have clear, challenging objectives, they are more likely to be motivated to achieve them, resulting in better performance. However, it is important to ensure that the goals are realistic and attainable to prevent frustration or disengagement.","On average, companies with vision statements tend to perform better than those without them. A vision statement provides a clear direction and purpose for the organization, helping to align employees and stakeholders towards common goals. This clarity can lead to improved decision-making, better resource allocation, and increased motivation among team members, which can ultimately result in better overall performance. However, it is essential to note that the mere presence of a vision statement does not guarantee success, and its effectiveness depends on the quality of the statement and the commitment of the organization to uphold and pursue its vision.","The reasoning behind this answer is that companies with very low rates of professional turnover may experience a lack of innovation and fresh perspectives, which could negatively impact their overall profitability. On the other hand, companies with moderate turnover rates benefit from a balance between retaining experienced employees and bringing in new talent with fresh ideas. This balance can contribute to improved performance and profitability.","The statement is generally true because targeted cuts allow a company to strategically eliminate positions or employees that are less essential to their operations, while attrition relies on a more passive approach that may not result in the desired efficiency or cost savings. By making targeted cuts, a company can better maintain its productivity and overall performance, which can contribute to higher profitability.","While there are various competencies that HR managers need to possess, the ability to manage change has become increasingly important in the rapidly evolving business landscape. Line managers expect HR managers to lead and facilitate organizational change, such as adapting to new technologies, managing mergers and acquisitions, and adjusting to shifting market conditions. By demonstrating strong change management skills, HR managers can effectively support line managers and the organization as a whole, leading to more favorable evaluations.","While encouraging employees to participate in decision-making can have positive effects on organizational performance, research generally suggests that setting performance goals is a more effective strategy on average. Goal-setting theory, supported by various studies, has shown that setting specific and challenging goals leads to higher performance levels compared to when no goals or vague goals are set. Encouraging participation in decision-making can foster engagement and commitment, but it does not necessarily provide a clear direction or specific targets for performance improvement.","The statement suggests that most managers consistently give employees lower performance appraisals than they objectively deserve. While there may be individual cases or certain contexts where this occurs, it is not accurate to say that this is a general trend or pattern applicable to most managers. It is important to note that performance appraisals can be subjective and may vary depending on the manager's perspective, criteria, and assessment methods. However, it is not accurate to claim that most managers systematically underrate their employees. Managers generally aim to provide fair and accurate evaluations to support employee growth and development, and organizations typically have guidelines in place to help ensure consistency and fairness in the appraisal process.","This statement contradicts the well-known Dunning-Kruger effect, which states that individuals with low ability at a task often overestimate their ability, while individuals with high ability tend to underestimate their performance. This cognitive bias leads to poor performers being less realistic about their performance compared to good performers.","The reasoning behind this answer is that teams with members from different functional areas bring diverse perspectives, skills, and expertise to the table. This diversity often leads to more creative and innovative solutions to complex problems, as team members can approach issues from various angles and challenge one another's assumptions. Additionally, a diverse team can better identify potential pitfalls and benefits that might be overlooked by a more homogenous group.","Research has shown that there is no clear evidence supporting the claim that applicants who test positive for drugs are less reliable or productive employees. Factors such as job performance, attendance, and safety records are more important when assessing employee reliability and productivity. However, it is important to note that this statement refers to general trends and patterns, and individual cases may vary.","Most people overevaluate how well they perform on the job. This phenomenon is known as the Dunning-Kruger effect, which is a cognitive bias where people with low ability at a task overestimate their ability, while those with high ability tend to underestimate their competence. This effect is widely observed in various domains, including work performance.","While training can help reduce errors in performance appraisals by raising awareness about common mistakes, it is unlikely to eliminate most errors completely. Performance appraisals are subjective by nature, and even with training, factors such as personal biases, time constraints, and insufficient data can still lead to errors. Training can be helpful, but it is not a guaranteed solution for eliminating most errors in performance appraisals.","Lecture-based training is not generally superior to other forms of training delivery. Research has shown that various training methods, such as interactive learning, hands-on practice, and blended learning, can be more effective in fostering engagement and long-term retention of information. The effectiveness of a training method often depends on the context and the learning styles of the participants, so no single method can be considered universally superior.","On average, younger adults tend to learn more quickly and effectively from training than older adults. This is generally attributed to age-related cognitive decline, which can impact memory, processing speed, and other cognitive abilities. However, this statement does not apply to all cases, as individual variation exists and older adults can still learn effectively.","The most important determinant of how much training employees actually use on their jobs is not solely how much they learned during training. While the amount of learning during training is important, other factors also significantly influence the transfer of training to the job. These factors may include organizational support, job relevance of the training, individual motivation, and opportunities to apply the training on the job.","The statement is generally false because, according to the spacing effect and distributed practice principles in learning, training for simple skills is typically more effective when presented in several sessions over time. This approach allows for better retention and understanding, as it gives the learner time to consolidate and internalize the information.","The statement is false because the most valid employment interviews are typically structured and standardized, rather than designed around each candidate's unique background. Research has shown that structured interviews, which use the same questions for all candidates and follow a consistent evaluation process, are more effective at predicting job performance and reducing bias than unstructured interviews, which may focus on each candidate's unique background. By following a consistent structure, interviewers can compare candidates more fairly and make better hiring decisions.","The statement is false because the Myers-Briggs Type Indicator (MBTI) is not considered a comprehensive or scientifically valid measure of personality by the majority of psychologists. Instead, the Five Factor Model (FFM), also known as the Big Five personality traits, is widely accepted as a more robust and empirically supported model of personality. The FFM includes five dimensions: Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (OCEAN).","The statement is generally true based on existing research. Studies have shown that employee referrals tend to result in lower turnover rates compared to applicants who come through job advertisements. This is likely because referrals often come with a better understanding of the company culture and job expectations, as well as a stronger social network within the organization. Additionally, employees tend to refer individuals they believe will fit well with the company, further reducing the likelihood of turnover.","The statement is generally true, as research has shown that individuals with high intelligence may be more likely to experience boredom or dissatisfaction in low-skilled jobs. These jobs may not provide the cognitive challenges that highly intelligent people tend to seek, which can lead to disengagement or underperformance. However, it is important to remember that individual experiences can vary, and this statement does not apply to every case.","The statement is generally true, as most personality inventories tend to have a limited ability to predict job performance. Although there are many different personality tests, most of them are based on similar theoretical constructs and thus show a relatively small difference in terms of predictive validity. Research has consistently shown that cognitive ability tests and structured interviews are more accurate predictors of job performance than personality inventories. However, it is important to note that the relationship between personality and job performance may vary depending on the specific job and context.","While it is true that some people may lie on integrity tests, research has shown that these tests can still be effective in predicting counterproductive workplace behaviors, such as theft, absenteeism, or other misconduct. The tests are designed to measure factors like honesty, reliability, and ethics, which can help employers identify potential risks. While not perfect, these tests can provide valuable insights for employers when used as part of a comprehensive hiring process.","The statement is generally false because integrity tests, which are designed to measure a person's honesty, trustworthiness, and moral character, have been found to have low to minimal adverse impact on racial minorities. These tests typically use questionnaires and scenarios to evaluate an individual's attitudes and behaviors related to workplace ethics. Research has shown that well-designed and validated integrity tests do not systematically discriminate against racial or ethnic groups, and they can be a fair tool for employers to use when assessing job applicants. However, it's important to ensure that any test used is properly validated to minimize potential biases.","Conscientiousness has been found to be a better predictor of job performance than intelligence on average. This is because conscientious individuals tend to be more organized, responsible, and disciplined, which are qualities that contribute positively to job performance across various roles and industries. While intelligence is also important, conscientiousness has a stronger correlation with job performance when considering the general trends and patterns in the literature on this subject.","While it is true that values and cultural fit play an important role in the success of a company, screening for intelligence has also been shown to be an effective predictor of job performance. A combination of screening for both values and intelligence would likely yield the best results. However, it is not accurate to claim that companies screening for values alone have higher performance than those screening for intelligence alone, as both factors contribute to overall company success.","The statement is false because there are indeed actions a company can take to mitigate employee dissatisfaction and dysfunctional behaviors when pay must be reduced or frozen. Some of these actions include transparent communication, engaging employees in decision-making, offering non-financial benefits, and fostering a positive work environment. While these steps may not entirely prevent dissatisfaction, they can help to lessen its impact and maintain a more positive workplace overall.","Research has generally shown that most employees prefer to be paid based on their individual performance, as they feel it is a fairer way of rewarding their hard work and personal achievements. This preference can also be attributed to a sense of control and autonomy employees have over their own performance compared to team or organizational outcomes. However, this does not apply to all cases, as some individuals may prefer team-based compensation systems or a mix of individual and team incentives depending on the nature of their work and their personal values.","While merit pay systems can have some drawbacks, such as potentially promoting unhealthy competition, undermining teamwork, or encouraging short-term focus, they can also provide incentives for increased productivity and reward high-performing employees. Therefore, it is not accurate to claim that companies without merit pay systems tend to have higher performance than those with them. The effectiveness of a merit pay system depends on its design, implementation, and the specific context of the organization.","The statement generally holds true based on existing scientific evidence. On average, there is a positive relationship between the proportion of managers receiving organizationally based pay incentives and company profitability. This is because these incentives often align managers' interests with those of the organization, encouraging them to make decisions that benefit the company as a whole. As a result, firms with a higher proportion of managers receiving such incentives are more likely to experience increased profitability. However, it is essential to note that this may not apply in all cases, and other factors may impact profitability as well.","The statement is generally true, as providing organization-wide performance incentives can help align the interests of all employees and encourage collaboration, which in turn can lead to better overall performance and a higher chance of survival for new companies. However, it is important to recognize that there are many factors that influence the success of a new company, and performance incentives alone are not a guarantee of success.","While discussing salary during performance appraisals can potentially lead to uncomfortable situations or hurt morale, it is not universally true that it will always have a negative effect. In fact, transparent and open discussions about salary can have positive outcomes on employee morale and future performance if handled professionally and fairly. The impact of these discussions largely depends on the context, the organization's culture, and the approach taken by both parties involved.","While variable pay systems can be attractive to some employees due to the potential for higher earnings, research has generally shown that a majority of employees prefer fixed pay systems. Fixed pay systems provide stability and predictability, which many individuals value in their compensation. Variable pay systems can be more appealing to employees who are confident in their ability to meet or exceed performance goals and are willing to take on more risk for potentially higher rewards. However, on average, most employees tend to prefer the security of fixed pay systems.","The statement is generally true because surveys that directly ask employees about the importance of pay may be subject to social desirability bias. This means that respondents may overstate the importance of pay because they believe it is the more socially acceptable or expected response. Additionally, people's self-reported preferences may not always align with their actual behavior in decision-making situations."],["Field study evidence that leadership behaviors and effectiveness increase following training (Barling et al., 1996). Evidence that leadership behaviors are only weakly predicted by dispositional characteristics (Judge &amp; Bono, 2000) that are heritable (Loehlin et al., 1998; Reimann et al., 1997)","This kind of personality is, on average, an asset for leadership. A recent meta-analysis estimates a corrected validity coefficient of .31 between extraversion and leader effectiveness (Judge et al in press). However, intelligence has an even higher correlation (.52; Lord et al 1986). Also, some highly effective leaders are distinctly introverted (Bennis &amp; Nanus, 1997; Collins, 2001)","Employees reach higher levels of performance when they are given difficult-yetattainable goals rather than told to do their best. This is one of the most robust findings in  all of industrial/organizational psychology (Locke &amp; Latham, 1990)","Baum et al. (1998) found that growth oriented visions and strong vision communication produced significantly higher firm growth rates. Hoch et al. (1999) found that 93% of the most successful software firms had clear and ambitious visions, as compared with 25% of the least successful. The importance of having a product vision for successful product development has also been reviewed by Brown &amp; Eisenhardt (1995)","Bain &amp; Company (Reichheld, 1996) has analyzed the economics of professional turnover in several industries. For example, in brokerage firms, they calculated that an increase in broker retention rates from 80% to 90% results in an increase of 155% in the average net present value of a new broker. A general model of the “economics of employee loyalty” is also presented","Morris, Cascio, &amp; Young (1999) tracked changes in employment of the S&amp;P 500 companies over a 12-year period. They found that companies whose downsizing was associated with sale of assets (i.e strategic or targeted downsizing) had improved their return on assets by the second year after downsizing. In contrast, pure “employment downsizers” still had lower ROAs two years later than they had before downsizing. See also Cameron et al. (1993)","This was found by Ulrich et al. (1995), based on more than 12,000 peer and supervisory assessments of the performance of nearly 2,000 HR professionals. Ability to manage change explained 41.2% of the variance in supervisors’ and peers’ evaluations of HR professionals, as compared with 23.3% for HR knowledge and delivery and 18.8% for knowledge of the business","Meta-analytic evidence that the effects of participation are weaker (&lt; 1%) than the effects of goal setting (20%; Locke et al 1980). These effects also hold at multiple levels of analysis. Further evidence shows that the effects of goal setting are robust (Locke &amp; Latham, 1990), while the effects of participation are highly variable (e.g Wagner, 1994)","Appraisal leniency is much more common than stringency (Jawahar &amp; Williams, 1997; Longenecker et al 1987)","Primary study evidence that poor performers are less accurate about their relative performance than are good performers (Kruger &amp; Dunning, 1999)","Multiple studies on cross-functional teams have shown positive outcomes for product and project quality (e.g Keller, 2001; Lutz, 1994; Northcraft et al 1995; Pelled et al 1999). At the top management level, Hambrick et al. (1996) found that more heterogeneous teams (with respect to functional area, education, and tenure) made bolder (although slower) competitive moves, causing an overall net positive effect on firm market share and profits","Norman et al. (1990) drug tested more than 4,000 applicants and then followed them through more than 1 year of employment. Those who tested positive had a 59% higher absenteeism rate and a 47% higher involuntary turnover rate. Parish (1989) found significant results for disciplinary actions, and Winkler &amp; Sheridan(1989) for vehicular accidents, absenteeism, and medical costs. See also McDaniel et al. (1988)","Meta-analytic and primary study evidence that self-ratings have higher means than peer and supervisor ratings (e.g Brown, 1986; Harris &amp; Schaubroeck, 1988; Mabe &amp; West, 1982; Thornton, 1980)","Most performance appraisal errors are extremely resistant to change (Latham &amp; Wexley, 1994). In addition, training to eliminate one kind of error often introduces other types of errors (e.g Bernardin &amp; Pence, 1980). Many managers are well aware that they commit errors, but continue to do so for personal and social reasons (Longenecker et al 1987)","Meta-analytic evidence that computerbased instruction is slightly more effective than traditional instruction (Kulik &amp; Kulik, 1991). Indirect evidence is provided by educational theory suggesting that the medium for instruction is less critical than the events of instruction in determining learning outcomes (e.g Clark, 1983). In this regard, lecture-based training is a passive technique, while active techniques are typically more effective (Gagne &amp; Medsker, 1996)","Meta-analytic evidence that age is negatively associated with learning outcomes (Colquitt et al 2000). Large sample evidence that age is associated with decreases in cognitive capacities associated with learning (Horn &amp; Cattell, 1967). Primary study evidence of negative relationship with learning in organizational setting (Warr &amp; Bunce, 1995)","Meta-analytic evidence that post-training knowledge has a smaller relationship with transfer than some individual differences and contextual variables (Colquitt et al 2000). Primary study evidence that transfer of training climate has a stronger relationship with transfer than learning does, in an organizational setting (Tracey et al 1995)","Meta-analytic evidence that training for simple skills is more effective when spaced over time than massed in one session (Donovan &amp; Radosevich, 1999; Lee &amp; Genovese, 1988)","Meta-analytic evidence that structured interviews (where all candidates receive the same questions) have higher validities than unstructured ones (Schmidt &amp; Hunter, 1998; Wiesner &amp; Cronshaw, 1988)","There are five basic dimensions of personality—the “Big Five” of Conscientiousness, Extraversion, Openness to Experience, Agreeableness, and Emotional Stability/Neuroticism (Digman, 1990). Except for Extraversion, these are not the traits assessed by MBTI","Meta-analytic (e.g Conard &amp; Ashworth, 1986) and primary study evidence (e.g Decker &amp; Cornelius, 1979; see Rynes, 1991, for a review)","The validity coefficient for intelligence is always positive. Hunter (1986) and Schmidt &amp; Hunter (1998) estimate the corrected validity coefficient for unskilled jobs to be .23. (Comparable figures are .40 for semi-skilled, and .58 for professional-managerial jobs.),","The validity of personality measures as predictors of performance will depend to a large extent on the degree to which they tap important “Big Five” personality dimensions, particularly Conscientiousness. So, for example, Big Five personality measures are relatively good predictors of performance, while the MBTI doesn't even claim to predict performance (Gardner &amp; Martinko, 1996)","Even if applicants or employees do distort their answers, validity of these instruments is still substantial. A large meta-analysis suggested that the overall corrected validity coefficient for integrity tests (across all types of performance measures) is .41. Counterproductive behaviors such as theft or absenteeism are somewhat better predicted (.47) than overall job performance (.34)","A recent study based on four large-sample databases showed “trivial” differences (less than .15 standard deviations in all cases) across Caucasians, Asians, Native Americans, and African Americans (Ones &amp; Viswesvaran, 1998)","There is considerable meta-analytic evidence that intelligence is a better predictor of job performance than conscientiousness (Schmidt &amp; Hunter, 1998; average validity coefficient for intelligence = .51 vs. .31 for conscientiousness)","Meta-analytic evidence that intelligence is the best established predictor of job performance (Schmidt &amp; Hunter, 1998). Primary study evidence that the effect of values on job performance is dependent on many factors (Adkins et al 1996); values influence perceptual organization and guide decision making, but their link to job performance is unclear (Ravlin &amp; Meglino, 1987)","Both laboratory and organizational field research shows that providing procedurally just explanations of pay cuts can dramatically reduce the negative side effects (Greenberg, 1990, 1993)","Multiple studies have demonstrated this result (e.g BNA, 1988; Cable &amp; Judge, 1994). For example, Bretz &amp; Judge (1994) found that of seven organizational characteristics, the one that best predicted simulated organizational choice was pay for individual (versus team-based) productivity","Positive relationships have been shown between merit systems and organization level performance by Kopelman &amp; Reinharth (1982) and Kopelman, Rovenpor, &amp; Cayer (1991). Heneman (1992) reviewed five studies establishing a positive merit system-performance link. Even the major empirical study to raise “cautions” about merit pay (Pearce et al 1985) found increases in performance after merit pay implementation; the increases simply failed to reach statistical significance (with a very small sample size)","Gerhart &amp; Milkovich (1990) found that companies with 80% managerial eligibility for stock options had 25% higher return on assets than companies where only 20% of managers were eligible. (See also Welbourne &amp; Andrews, 1996)","New companies that placed a high value on their employees (as coded from prospectuses) and that included high levels of organizational-performance-based pay had dramatically higher five-year survival rates (92%) than those who were low on both dimensions (34%: Welbourne &amp; Andrews, 1996)","In a field study of nine different sites, Prince &amp; Lawler (1986) found that salary discussions had positive rather than negative effects on employee attitudes and subsequent performance improvement. In addition, the positive effects were strongest for those with lower initial performance and where initial perceptions of performance were most discrepant between supervisors and employees. For similar results based on employee surveys at General Electric, see Welch (2001)","A national survey showed that 63% of workers surveyed prefer straight salary, followed by individual incentives (22%) and company-wide incentives (12%; BNA, 1988). Cable &amp; Judge (1994) found a similar preference for fixed pay among jobseeking college students. Also, theories of risk and agency theory have as a core assumption that employees require a compensating risk differential in order to make variable pay acceptable to them (e.g Jensen &amp; Meckling, 1976)","Probably due to social desirability and/or lack of self-insight, people tend to say pay is less important to them than the weights they actually place on pay in making choice decisions (Feldman &amp; Arnold, 1978; Rynes et al 1983). People also think that others who are “just like them” place a higher importance on pay than they themselves do (Jurgensen, 1978)—further evidence of possible lack of self-insight about motivations. These results are also consistent with broader findings from the decision sciences that people tend to underestimate the importance of the most important factors in their decisions (Slovic &amp; Lichtenstein, 1971)."],[null,"Although it is unlikely that any future variables will produce higher validities than intelligence, work on leader behaviors (such as visionsetting and communication skills) is just beginning, so little is known about their average effect sizes. We do know (e.g., Barling et al., 1996; Baum et al., 1998) that leadership success can be affected by leaders’ behaviors and not just their traits, so future research would be useful.",null,null,"This finding might not hold true in certain types of internal labor market contexts — e.g., organizations with strong employment “guarantees” (e.g., government employment), or organizations with very strong contingency reward systems or “up-or-out”  promotion &amp; partnership systems. More contingencybased research would be useful.",null,null,null,null,null,"Although product outcomes are generally positive, psychosocial outcomes such as member satisfaction or stress are frequently negative. Also, it is possible that at very high levels of multiple types of diversity, interpersonal conflict might overtake the performance benefits of diversity.",null,null,null,null,null,null,null,null,null,"Recent evidence on the effects of recruitment sources has been less consistent than earlier evidence. The emergence of the Web as a major recruitment source may also change future recruiting source dynamics.",null,null,null,null,null,"Overall findings unlikely to  change. However, additional studies are needed at the organizational level of analysis. In addition, more “values” studies are needed that measure performance as an outcome (most values research has examined affective outcomes such as satisfaction, tenure, and commitment).",null,null,null,null,null,"Could use more research on this, but the limited research available suggests that neither morale nor performance suffers from linking pay discussions with performance discussions. Even if short-term morale were to be affected, one could not infer that either longer-term morale or performance would be negatively affected. For example, equity theory predicts the effect can easily go the other way—e.g., people working harder to reduce their dissatisfaction with the previous appraisal.",null,null]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>Item ID<\/th>\n      <th>Item<\/th>\n      <th>GPT-4 response<\/th>\n      <th>Correct answer<\/th>\n      <th>GPT-4 reasoning<\/th>\n      <th>Research evidence<\/th>\n      <th>Possible contingencies<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":3,"autoWidth":true,"columnDefs":[{"width":"500px","targets":[1,4,5,6]}],"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[3,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'vertical-align':'top'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<p>The takeaway from this finding? Although GPT-4 can be a handy tool for exploring possible solutions to specific HR-related problems, on its own and in its current form it cannot replace the good old systematic search for and retrieval of evidence, critical evaluation of its reliability and relevance, and its weighing and synthesis as conducted and/or supervised by human experts.</p>
+<p>P.S. I didn’t test the reliability of GPT-4’s responses, nor did I set its temperature to 0, so it’s possible that you might obtain somewhat different results if you decide to replicate the test. In addition, keep in mind that the comparison presented here is not entirely an apples-to-apples comparison, mainly due to the fact that new evidence may have emerged that does not match the correct answers in the original study conducted more than 20 years ago.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="disqus-comments">
+      <i class="fas fa-comments"></i>
+      &nbsp;
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2023-05-01-gpt4-and-e-b-hrm-practices/">Comment on this article</span>
+    </span>
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2023-05-01-gpt4-and-e-b-hrm-practices%2F&amp;title=GPT-4%27s%20performance%20in%20the%20knowledge%20test%20of%20evidence-based%20HRM%20practices" aria-label="share on linkedin">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/share?text=GPT-4%27s%20performance%20in%20the%20knowledge%20test%20of%20evidence-based%20HRM%20practices&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2023-05-01-gpt4-and-e-b-hrm-practices%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblog-about-people-analytics.netlify.com%2Fposts%2F2023-05-01-gpt4-and-e-b-hrm-practices%2F" aria-label="share on facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </span>
+  </p>
+  <script id="dsq-count-scr" src="https://ludeks-peopleanalyticsblog.disqus.com/count.js" async></script>
+  <div id="disqus_thread" class="hidden"></div>
+  <script type="text/javascript" cookie-consent="functionality">
+var disqus_config = function () {
+  this.page.url = 'https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/';
+  this.page.identifier = 'posts/2023-05-01-gpt4-and-e-b-hrm-practices/';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://ludeks-peopleanalyticsblog.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+  <p>
+    <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://blog-about-people-analytics.netlify.com/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form></div>
+  </p>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Stehlík (2023, May 2). Ludek's Blog About People Analytics: GPT-4's performance in the knowledge test of evidence-based HRM practices. Retrieved from https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{stehlík2023gpt-4's,
+  author = {Stehlík, Luděk},
+  title = {Ludek's Blog About People Analytics: GPT-4's performance in the knowledge test of evidence-based HRM practices},
+  url = {https://blog-about-people-analytics.netlify.com/posts/2023-05-01-gpt4-and-e-b-hrm-practices/},
+  year = {2023}
+}</pre>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
