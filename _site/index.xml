@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Employee commitment over time &amp; regression to the mean</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-05-10-regression-to-the-mean</link>
+      <description>A nice illustration of the regression to the mean phenomenon in the space of people analytics.</description>
+      <category>people analytics</category>
+      <category>critical thinking</category>
+      <category>regression to the mean</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-05-10-regression-to-the-mean</guid>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-05-10-regression-to-the-mean/./rtm.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>Improving a company career site with tools from OpenAI</title>
       <dc:creator>Luděk Stehlík</dc:creator>
