@@ -91,7 +91,7 @@ DT::datatable(
 
 ```
 
-We will use the `bootnet` package to estimate the regularized partial correlation network using the Spearman correlation matrix and LASSO regularization, and then select the final network using the [Extended Bayesian Information Criterion](https://academic.oup.com/biomet/article-abstract/95/3/759/217626) (with γ = 0.5). 
+We will use the `bootnet` package to estimate the regularized partial correlation network using the Spearman correlation matrix and LASSO regularization, and then select the final network using the [Extended Bayesian Information Criterion](https://academic.oup.com/biomet/article-abstract/95/3/759/217626) (with *γ* parameter set to 0.5). 
 
 ```{r warning=FALSE, message=FALSE}
 # estimating a regularized partial correlation network
@@ -218,7 +218,7 @@ Based on the expected influence centrality measure, which takes into account the
 * aut3: `r legend %>% dplyr::filter(Item == "aut3") %>% dplyr::pull(Text)`
 * ManMot1: `r legend %>% dplyr::filter(Item == "ManMot1") %>% dplyr::pull(Text)`
 
-But to know how much we can rely on these measures, we must first test their stability using correlation stability analysis that repeatedly computes centrality indices of subsets of the data and correlates these with the centrality indices of the full data. This process generates a correlation stability coefficient (CS-Coefficient) for each centrality measure. This coefficient ranges from 0 to 1, with 1 being perfectly stable. The CS-Coefficient corresponds to the proportion of cases that can be dropped while retaining with 95% certainty a certain level of correlation (e.g., 0.70) between the original centrality measure and the centrality measure of the subset. The higher the CS-Coefficient, the more robust the centrality measure is to the reduction of cases. According to [Epskamp & Fried (2018)](https://arxiv.org/pdf/1607.01367.pdf), the CS-coefficient should be above 0.5, and should be at least above 0.25. In our case, we can see the that  we can make solid interpretations based on centrality measures of strength (CS(cor = 0.7) = 0.75) and expected influence (CS(cor = 0.7) = 0.75). 
+But to know how much we can rely on these measures, we must first test their stability using correlation stability analysis that repeatedly computes centrality indices of subsets of the data and correlates these with the centrality indices of the full data. This process generates a correlation stability coefficient (CS-Coefficient) for each centrality measure. The CS-Coefficient corresponds to the proportion of cases that can be dropped while retaining with 95% certainty a certain level of correlation (e.g., 0.7) between the original centrality measure and the centrality measure of the subset. The higher the CS-Coefficient, the more robust the centrality measure is to the reduction of cases. According to [Epskamp & Fried (2018)](https://arxiv.org/pdf/1607.01367.pdf), the CS-coefficient should be above 0.5, and should be at least above 0.25. In our case, we can see the that  we can make solid interpretations based on centrality measures of strength (CS(cor = 0.7) = 0.75) and expected influence (CS(cor = 0.7) = 0.75). 
 
 ```{r warning=FALSE, message=FALSE}
 
@@ -277,4 +277,4 @@ ggraph::ggraph(igraph_graph, layout = "fr", maxiter = 500) +  # fr, kk, drl, mds
 
 ```
 
-I hope you find this post useful and that it inspires you to try psychometric network analysis on your own data. If you were looking for more authoritative sources on PNA, [Sacha Epskamp's site](http://sachaepskamp.com/) is a good place to start.
+I hope you find this post useful and that it inspires you to try PNA on your own data. If you were looking for more authoritative sources on PNA, [Sacha Epskamp's site](http://sachaepskamp.com/) is a good place to start.
