@@ -1,5 +1,5 @@
 ---
-title: "Psychometric network analysis & employee survey data "
+title: "Psychometric network analysis & employee survey data"
 description: |
   A demonstration of how psychometric network analysis can be used to gain insights into employee survey data.
 author:
@@ -22,14 +22,14 @@ output:
     code_folding: true
 ---
 
-If you're looking for an alternative to [factor analysis](https://en.wikipedia.org/wiki/Factor_analysis) for processing employee survey data, consider using psychometric network analysis (hereafter PNA).
+If you're looking for an alternative to [factor analysis](https://en.wikipedia.org/wiki/Factor_analysis){target="_blank"} for processing employee survey data, consider using psychometric network analysis (hereafter PNA).
 
 * It provides insight into the interdependencies between different topics related to employee experience, and the resulting network diagrams make these insights easily accessible even to non-experts.
 * It helps to identify key topics (nodes) that have the most connections or influence within the network, which can be valuable for identifying areas of focus.
-* Although PNA doesn’t work with latent factors, common community detection algorithms (e.g., [Louvain's method](https://en.wikipedia.org/wiki/Louvain_method)) can be used to identify clusters of more densely interconnected topics.  
+* Although PNA doesn’t work with latent factors, common community detection algorithms (e.g., [Louvain's method](https://en.wikipedia.org/wiki/Louvain_method){target="_blank"}) can be used to identify clusters of more densely interconnected topics.  
 * In interpreting the PNA outputs, one can rely on the apparatus of bootstrapping statistics to distinguish signal from noise.
 
-What follows is a small demonstration of the use of PNA on employee survey data. For this purpose, I used a sample dataset that accompanies the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446) by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.
+What follows is a small demonstration of the use of PNA on employee survey data. For this purpose, I used a sample dataset that accompanies the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446){target="_blank"} by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.
 
 ```{r warning=FALSE, message=FALSE}
 # uploading libraries
@@ -91,7 +91,7 @@ DT::datatable(
 
 ```
 
-We will use the `bootnet` R package to estimate the regularized partial correlation network using the Spearman correlation matrix and LASSO regularization, and then select the final network using the [Extended Bayesian Information Criterion](https://academic.oup.com/biomet/article-abstract/95/3/759/217626) (with *γ* parameter set to 0.5). 
+We will use the `bootnet` R package to estimate the regularized partial correlation network using the Spearman correlation matrix and LASSO regularization, and then select the final network using the [Extended Bayesian Information Criterion](https://academic.oup.com/biomet/article-abstract/95/3/759/217626){target="_blank"} (with *γ* parameter set to 0.5). 
 
 ```{r warning=FALSE, message=FALSE}
 # estimating a regularized partial correlation network
@@ -199,7 +199,7 @@ From the charts we can quickly gain a basic idea of the internal structure of th
 * the topic of autonomy is closely related to the topic of managerial motivation;
 * most of the negative partial correlations are between items measuring quitting intentions and other survey items.
 
-To identify most influential topics (nodes) within the network, we can use [centrality measures](https://en.wikipedia.org/wiki/Centrality) that quantify the relative importance of a node within a network based on different aspects of a node's role in the network.
+To identify most influential topics (nodes) within the network, we can use [centrality measures](https://en.wikipedia.org/wiki/Centrality){target="_blank"} that quantify the relative importance of a node within a network based on different aspects of a node's role in the network.
 
 ```{r warning=FALSE, message=FALSE, fig.width=9, fig.height=6}
 # uploading library
@@ -217,7 +217,7 @@ Based on the expected influence centrality measure, which takes into account the
 * aut3: `r legend %>% dplyr::filter(Item == "aut3") %>% dplyr::pull(Text)`
 * ManMot1: `r legend %>% dplyr::filter(Item == "ManMot1") %>% dplyr::pull(Text)`
 
-But to know how much we can rely on these measures, we must first test their stability using correlation stability analysis that repeatedly computes centrality indices of subsets of the data and correlates these with the centrality indices of the full data. This process generates a correlation stability coefficient (CS-Coefficient) for each centrality measure. The CS-Coefficient corresponds to the proportion of cases that can be dropped while retaining with 95% certainty a certain level of correlation (e.g., 0.7) between the original centrality measure and the centrality measure of the subset. The higher the CS-Coefficient, the more robust the centrality measure is to the reduction of cases. According to [Epskamp & Fried (2018)](https://arxiv.org/pdf/1607.01367.pdf), the CS-coefficient should be above 0.5, and should be at least above 0.25. In our case, we can see the that  we can make solid interpretations based on centrality measures of strength (CS(cor = 0.7) = 0.75) and expected influence (CS(cor = 0.7) = 0.75). 
+But to know how much we can rely on these measures, we must first test their stability using correlation stability analysis that repeatedly computes centrality indices of subsets of the data and correlates these with the centrality indices of the full data. This process generates a correlation stability coefficient (CS-Coefficient) for each centrality measure. The CS-Coefficient corresponds to the proportion of cases that can be dropped while retaining with 95% certainty a certain level of correlation (e.g., 0.7) between the original centrality measure and the centrality measure of the subset. The higher the CS-Coefficient, the more robust the centrality measure is to the reduction of cases. According to [Epskamp & Fried (2018)](https://arxiv.org/pdf/1607.01367.pdf){target="_blank"}, the CS-coefficient should be above 0.5, and should be at least above 0.25. In our case, we can see the that  we can make solid interpretations based on centrality measures of strength (CS(cor = 0.7) = 0.75) and expected influence (CS(cor = 0.7) = 0.75). 
 
 ```{r warning=FALSE, message=FALSE}
 
@@ -344,9 +344,9 @@ plot(
 We can check four basic types of differences between the networks:
 
 * The maximum difference in edge weights (M statistic) that tells us whether the structure of the network is identical across two compared groups, and thus whether the groups differ in the overall "shape" or "architecture" of their attitudes.
-* The difference in global strength (S statistic) that tells us whether the density of the network is identical across the groups, and thus whether they differ in their openness to change of their attitudes and behaviors (see, for example, [Zwicker et al. (2020)](https://www.sciencedirect.com/science/article/pii/S0272494419308783?via%3Dihub)).
+* The difference in global strength (S statistic) that tells us whether the density of the network is identical across the groups, and thus whether they differ in their openness to change of their attitudes and behaviors (see, for example, [Zwicker et al. (2020)](https://www.sciencedirect.com/science/article/pii/S0272494419308783?via%3Dihub){target="_blank"}).
 * The difference in the centrality measures across the groups that tell us whether the groups differ in topics that are most important/influential in their attitudinal network.
-* The difference between groups in specific edges. According to [van Borkulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/35404628/), when the M statistic is not statistically significant, it is recommended not to test group-level differences for specific edges as it increases the likelihood of Type 1 error.
+* The difference between groups in specific edges. According to [van Borkulo et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/35404628/){target="_blank"}, when the M statistic is not statistically significant, it is recommended not to test group-level differences for specific edges as it increases the likelihood of Type 1 error.
 
 As you can see below, (almost) all test results are statistically non-significant, so we don't have sufficiently strong evidence for claiming that there are substantive differences between females and males in their respective attitudinal networks. Only in the case of the Eng1 item (*I share the values of this organization.*), females show a statistically significantly smaller strength centrality measure compared to males. Given that M statistic is statistically non-significant, we don't test statistical significance of differences for specific edges.    
 
@@ -386,4 +386,4 @@ print(testGenderDiff)
 
 ```
 
-I hope you find this post useful and that it inspires you to try PNA on your own data. If you were looking for more authoritative sources on PNA, [Sacha Epskamp's site](http://sachaepskamp.com/) is a good place to start. An excellent introduction to the topic can also be found in [Letouche & Wille (2022)](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.838093/full) and [Dalege et al. (2017)](https://journals.sagepub.com/doi/pdf/10.1177/1948550617709827), respectively.
+I hope you find this post useful and that it inspires you to try PNA on your own data. If you were looking for more authoritative sources on PNA, [Sacha Epskamp's site](http://sachaepskamp.com/){target="_blank"} is a good place to start. An excellent introduction to the topic can also be found in [Letouche & Wille (2022)](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.838093/full){target="_blank"} and [Dalege et al. (2017)](https://journals.sagepub.com/doi/pdf/10.1177/1948550617709827){target="_blank"}, respectively.

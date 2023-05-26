@@ -7,9 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Psychometric network analysis &amp; employee survey data </title>
+      <title>Visualizing shifts in validity estimates for selection procedures</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-05-26-selection-procedures-validity-update</link>
+      <description>Let's take a slopegraph perspective to assess changes in estimates of the validity of selection procedures.</description>
+      <category>i/o psychology</category>
+      <category>validity</category>
+      <category>employee selection</category>
+      <category>meta-analysis</category>
+      <category>data visualization</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-05-26-selection-procedures-validity-update</guid>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-05-26-selection-procedures-validity-update/selection-procedures-validity-update_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2304" height="1440"/>
+    </item>
+    <item>
+      <title>Psychometric network analysis &amp; employee survey data</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.com/posts/2023-05-16-psychometric-network-analysis</link>
       <description>A demonstration of how psychometric network analysis can be used to gain insights into employee survey data.</description>
@@ -44,7 +58,7 @@
       <category>recruitment</category>
       <category>candidate experience</category>
       <category>career site</category>
-      <category>openaai</category>
+      <category>openai</category>
       <category>embeddings</category>
       <category>gpt</category>
       <category>python</category>
