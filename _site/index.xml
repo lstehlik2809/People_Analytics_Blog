@@ -7,7 +7,31 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 26 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Another positive effect of mindfulness meditation on the horizon?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-06-05-mindfulness-and-objectivity</link>
+      <description>Is it possibile to improve the objectivity of decision making through mindfulness meditation?</description>
+      <category>decision-making</category>
+      <category>mindfulness</category>
+      <category>field experiment</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-05-mindfulness-and-objectivity</guid>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-05-mindfulness-and-objectivity/./spock.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Use of Bayesian networks in people analytics?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-06-05-bayesian-networks-in-people-analytics</link>
+      <description>Bayesian networks seem to have some interesting properties that could make them useful for various people analytics use cases, but for some reason this is not the case.</description>
+      <category>bayesian networks</category>
+      <category>probabilistic graphical models</category>
+      <category>people analytics</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-05-bayesian-networks-in-people-analytics</guid>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-05-bayesian-networks-in-people-analytics/./plot.png" medium="image" type="image/png" width="1121" height="746"/>
+    </item>
     <item>
       <title>Visualizing shifts in validity estimates for selection procedures</title>
       <dc:creator>Luděk Stehlík</dc:creator>

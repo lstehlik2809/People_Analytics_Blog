@@ -2121,141 +2121,183 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 <!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Ludek&#39;s Blog About People Analytics">Ludek's Blog About People Analytics</h1>
+<a href="posts/2023-06-05-mindfulness-and-objectivity/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["decision-making","mindfulness","field experiment"]}</script>
+<div class="metadata">
+<div class="publishedDate">June 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Luděk Stehlík</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2023-06-05-mindfulness-and-objectivity/./spock.jpg"/>
+</div>
+<div class="description">
+<h2>Another positive effect of mindfulness meditation on the horizon?</h2>
+<div class="dt-tags">
+<div class="dt-tag">decision-making</div>
+<div class="dt-tag">mindfulness</div>
+<div class="dt-tag">field experiment</div>
+</div>
+<p>Is it possibile to improve the objectivity of decision making through mindfulness meditation?</p>
+</div>
+</a>
+<a href="posts/2023-06-05-bayesian-networks-in-people-analytics/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["bayesian networks","probabilistic graphical models","people analytics"]}</script>
+<div class="metadata">
+<div class="publishedDate">June 1, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Luděk Stehlík</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2023-06-05-bayesian-networks-in-people-analytics/./plot.png"/>
+</div>
+<div class="description">
+<h2>Use of Bayesian networks in people analytics?</h2>
+<div class="dt-tags">
+<div class="dt-tag">bayesian networks</div>
+<div class="dt-tag">probabilistic graphical models</div>
+<div class="dt-tag">people analytics</div>
+</div>
+<p>Bayesian networks seem to have some interesting properties that could make them useful for various people analytics use cases, but for some reason this is not the case.</p>
+</div>
+</a>
 <a href="posts/2023-05-26-selection-procedures-validity-update/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["i/o psychology","validity","employee selection","meta-analysis","data visualization"]}</script>
 <div class="metadata">
@@ -2334,7 +2376,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img src="posts/2023-05-04-cv-job-match-career-site/./search.jpg"/>
+<img data-src="posts/2023-05-04-cv-job-match-career-site/./search.jpg"/>
 </div>
 <div class="description">
 <h2>Improving a company career site with tools from OpenAI</h2>
@@ -2360,7 +2402,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img src="posts/2023-05-01-gpt4-and-e-b-hrm-practices/./gpt4.jpg"/>
+<img data-src="posts/2023-05-01-gpt4-and-e-b-hrm-practices/./gpt4.jpg"/>
 </div>
 <div class="description">
 <h2>GPT-4's performance in the knowledge test of evidence-based HRM practices</h2>
@@ -3665,13 +3707,13 @@ function init_posts_list() {
 <div class="posts-sidebar">
 <div class="sidebar-section subscribe">
 <h3>Subscribe</h3>
-<form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
-  <input type='text' name='btr_email' />
-  <input type='hidden' name='btr_url'
-         value='https://blog-about-people-analytics.netlify.com/index.xml'/>
-  <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe' />
+<form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://blog-about-people-analytics.netlify.com/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
 </form>
 </div>
 <div class="sidebar-section categories">
@@ -3679,7 +3721,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:articles">articles</a>
-<span class="category-count">(62)</span>
+<span class="category-count">(64)</span>
 </li>
 <li>
 <a href="#category:ai">ai</a>
@@ -3700,6 +3742,10 @@ function init_posts_list() {
 <li>
 <a href="#category:bayesian_inference">bayesian inference</a>
 <span class="category-count">(5)</span>
+</li>
+<li>
+<a href="#category:bayesian_networks">bayesian networks</a>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:bayesian_statistics">bayesian statistics</a>
@@ -3818,6 +3864,10 @@ function init_posts_list() {
 <span class="category-count">(2)</span>
 </li>
 <li>
+<a href="#category:decision-making">decision-making</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
 <a href="#category:decision_tree">decision tree</a>
 <span class="category-count">(1)</span>
 </li>
@@ -3911,6 +3961,10 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:feature_engineering">feature engineering</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:field_experiment">field experiment</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
@@ -4094,6 +4148,10 @@ function init_posts_list() {
 <span class="category-count">(1)</span>
 </li>
 <li>
+<a href="#category:mindfulness">mindfulness</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
 <a href="#category:mission">mission</a>
 <span class="category-count">(1)</span>
 </li>
@@ -4167,7 +4225,7 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:people_analytics">people analytics</a>
-<span class="category-count">(6)</span>
+<span class="category-count">(7)</span>
 </li>
 <li>
 <a href="#category:people_management">people management</a>
@@ -4203,6 +4261,10 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:predictive_models">predictive models</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:probabilistic_graphical_models">probabilistic graphical models</a>
 <span class="category-count">(1)</span>
 </li>
 <li>
@@ -4392,7 +4454,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Ludek’s Blog About People Analytics</h1>

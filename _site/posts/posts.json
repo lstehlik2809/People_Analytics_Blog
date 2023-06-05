@@ -1,5 +1,49 @@
 [
   {
+    "path": "posts/2023-06-05-mindfulness-and-objectivity/",
+    "title": "Another positive effect of mindfulness meditation on the horizon?",
+    "description": "Is it possibile to improve the objectivity of decision making through mindfulness meditation?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-06-05",
+    "categories": [
+      "decision-making",
+      "mindfulness",
+      "field experiment"
+    ],
+    "contents": "\r\nMaybe, at least this is suggested by a pre-registered field experiment by Ash et al. (2023), where people practicing mindfulness meditation for 15 minutes a day for 2 weeks compared to an active control (listening to relaxing music) showed a reduced tendency to avoid painful information that may trigger worry or regret, with a likely mechanism for this effect being improved emotion regulation.\r\nIf this were the case, this would be great news for our decision making, as the ability to impartially evaluate all relevant information is one of the keys to good decision making.\r\nIt’s true that the observed effect was rather small and barely distinguishable from noise and we may be concerned about its reproducibility, but as a Trekkie and a big fan of Mr. Spock, I like the idea that there might be a method that could make us a little more like this cool half-Vulcan and half-human 😉🖖\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-06-05-mindfulness-and-objectivity/./spock.jpg",
+    "last_modified": "2023-06-05T10:57:22+02:00",
+    "input_file": "mindfulness-and-objectivity.knit.md"
+  },
+  {
+    "path": "posts/2023-06-05-bayesian-networks-in-people-analytics/",
+    "title": "Use of Bayesian networks in people analytics?",
+    "description": "Bayesian networks seem to have some interesting properties that could make them useful for various people analytics use cases, but for some reason this is not the case.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-06-01",
+    "categories": [
+      "bayesian networks",
+      "probabilistic graphical models",
+      "people analytics"
+    ],
+    "contents": "\r\nIn a people analytics project I’m involved in, we were asked to come up with a prediction model that would perform reasonably well while being very easy to understand and interpret for non-technical users.\r\nIn considering various options, we also came across Bayesian networks (BNs), probabilistic graphical models consisting of nodes and directed edges that represent conditional (and under certain assumptions, causal) relationships between random variables. They seem to have several interesting properties that would suit our needs, namely:\r\nBN models are not “black boxes”, but all their parameters have a comprehensible interpretation, which may reduce users’ algorithm aversion and increase their willingness to take algorithm outputs into account in their decision-making.\r\nExpert knowledge can easily be used in the development of BN models by building the network structure using expert knowledge of im/plausible (causal) relationships between the variables under study.\r\nThe model lends itself to a user-friendly visualization of its structure, helping to design new models that take into account both data-based constraints and the knowledge of experts in the field.\r\nIt is possible to use the data itself to estimate the possible network topology and thus gain preliminary insight into the structure of the problem domain defined by the available variables.\r\nAfter fitting the model, it can be used for reasoning, i.e., calculating probabilities of interest conditional on the available evidence. This reasoning can be done even with incomplete data, based only on the known values of any combination of the available variables.\r\nThe attached graph is for illustrative purposes only - the output from early experiments with BNs on artificial IBM employee attrition data.\r\nHowever, when searching for information about this method, we found that it is not particularly popular among people analytics and I/O psychology practitioners. Would anyone of the readers happen to have a good or bad experience using this tool and would also be willing to share it? 🙏\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-06-05-bayesian-networks-in-people-analytics/./plot.png",
+    "last_modified": "2023-06-05T10:51:21+02:00",
+    "input_file": "bayesian-networks-in-people-analytics.knit.md",
+    "preview_width": 1121,
+    "preview_height": 746
+  },
+  {
     "path": "posts/2023-05-26-selection-procedures-validity-update/",
     "title": "Visualizing shifts in validity estimates for selection procedures",
     "description": "Let's take a slopegraph perspective to assess changes in estimates of the validity of selection procedures.",
