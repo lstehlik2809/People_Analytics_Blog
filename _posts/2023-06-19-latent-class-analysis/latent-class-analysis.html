@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Latent Class Analysis of responses from employee surveys</title>
+
+  <meta property="description" itemprop="description" content="How listening to a podcast inspired me to try out a statistical tool popular among sociologists."/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2023-06-19"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-06-19"/>
+  <meta name="article:author" content="Luděk Stehlík"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Latent Class Analysis of responses from employee surveys"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="How listening to a podcast inspired me to try out a statistical tool popular among sociologists."/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Latent Class Analysis of responses from employee surveys"/>
+  <meta property="twitter:description" content="How listening to a podcast inspired me to try out a statistical tool popular among sociologists."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Latent Class Analysis of responses from employee surveys"]},{"type":"character","attributes":{},"value":["How listening to a podcast inspired me to try out a statistical tool popular among sociologists. \n"]},{"type":"character","attributes":{},"value":["./scheme.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["06-19-2023"]},{"type":"character","attributes":{},"value":["latent class analysis","employee survey","people analytics","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["latent-class-analysis_files/anchor-4.2.2/anchor.min.js","latent-class-analysis_files/bowser-1.9.3/bowser.min.js","latent-class-analysis_files/crosstalk-1.2.0/css/crosstalk.min.css","latent-class-analysis_files/crosstalk-1.2.0/js/crosstalk.js","latent-class-analysis_files/crosstalk-1.2.0/js/crosstalk.js.map","latent-class-analysis_files/crosstalk-1.2.0/js/crosstalk.min.js","latent-class-analysis_files/crosstalk-1.2.0/js/crosstalk.min.js.map","latent-class-analysis_files/crosstalk-1.2.0/scss/crosstalk.scss","latent-class-analysis_files/datatables-binding-0.28/datatables.js","latent-class-analysis_files/datatables-css-0.0.0/datatables-crosstalk.css","latent-class-analysis_files/distill-2.2.21/template.v2.js","latent-class-analysis_files/dt-core-1.13.4/css/jquery.dataTables.extra.css","latent-class-analysis_files/dt-core-1.13.4/css/jquery.dataTables.min.css","latent-class-analysis_files/dt-core-1.13.4/js/jquery.dataTables.min.js","latent-class-analysis_files/dt-ext-buttons-1.13.4/css/buttons.dataTables.min.css","latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.colVis.min.js","latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.html5.min.js","latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.print.min.js","latent-class-analysis_files/dt-ext-buttons-1.13.4/js/dataTables.buttons.min.js","latent-class-analysis_files/figure-html5/unnamed-chunk-8-1.png","latent-class-analysis_files/header-attrs-2.21/header-attrs.js","latent-class-analysis_files/htmlwidgets-1.6.2/htmlwidgets.js","latent-class-analysis_files/jquery-3.6.0/jquery-3.6.0.js","latent-class-analysis_files/jquery-3.6.0/jquery-3.6.0.min.js","latent-class-analysis_files/jquery-3.6.0/jquery-3.6.0.min.map","latent-class-analysis_files/nouislider-7.0.10/jquery.nouislider.min.css","latent-class-analysis_files/nouislider-7.0.10/jquery.nouislider.min.js","latent-class-analysis_files/popper-2.6.0/popper.min.js","latent-class-analysis_files/selectize-0.12.0/selectize.bootstrap3.css","latent-class-analysis_files/selectize-0.12.0/selectize.min.js","latent-class-analysis_files/tippy-6.2.7/tippy-bundle.umd.min.js","latent-class-analysis_files/tippy-6.2.7/tippy-light-border.css","latent-class-analysis_files/tippy-6.2.7/tippy.css","latent-class-analysis_files/tippy-6.2.7/tippy.umd.min.js","latent-class-analysis_files/webcomponents-2.0.0/webcomponents.js","scheme.png","surveyResults.xls"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+    font-size: 100%;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="latent-class-analysis_files/header-attrs-2.21/header-attrs.js"></script>
+  <script src="latent-class-analysis_files/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+  <link href="latent-class-analysis_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/datatables-binding-0.28/datatables.js"></script>
+  <script src="latent-class-analysis_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="latent-class-analysis_files/dt-core-1.13.4/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="latent-class-analysis_files/dt-core-1.13.4/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/dt-core-1.13.4/js/jquery.dataTables.min.js"></script>
+  <link href="latent-class-analysis_files/dt-ext-buttons-1.13.4/css/buttons.dataTables.min.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/dt-ext-buttons-1.13.4/js/dataTables.buttons.min.js"></script>
+  <script src="latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.html5.min.js"></script>
+  <script src="latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.colVis.min.js"></script>
+  <script src="latent-class-analysis_files/dt-ext-buttons-1.13.4/js/buttons.print.min.js"></script>
+  <link href="latent-class-analysis_files/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+  <link href="latent-class-analysis_files/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/selectize-0.12.0/selectize.min.js"></script>
+  <link href="latent-class-analysis_files/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <script src="latent-class-analysis_files/popper-2.6.0/popper.min.js"></script>
+  <link href="latent-class-analysis_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="latent-class-analysis_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="latent-class-analysis_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="latent-class-analysis_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="latent-class-analysis_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="latent-class-analysis_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="latent-class-analysis_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Latent Class Analysis of responses from employee surveys","description":"How listening to a podcast inspired me to try out a statistical tool popular among sociologists.","authors":[{"author":"Luděk Stehlík","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-06-19T00:00:00.000+02:00","citationText":"Stehlík, 2023"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Latent Class Analysis of responses from employee surveys</h1>
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt-tag">latent class analysis</div>
+<div class="dt-tag">employee survey</div>
+<div class="dt-tag">people analytics</div>
+<div class="dt-tag">r</div>
+</div>
+<!--/radix_placeholder_categories-->
+<p><p>How listening to a podcast inspired me to try out a statistical tool popular among sociologists.</p></p>
+</div>
+
+<div class="d-byline">
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  
+<br/>06-19-2023
+</div>
+
+<div class="d-article">
+<p>I recently listened to a podcast about a very interesting study about <a href="https://www.investigace.cz/pocitani-neduvery/">conspiracies and disinformation in Czech society</a>, and one of the authors of the study, <a href="https://www.linkedin.com/in/matous-pilnacek-218b1a91">Matous Pilnacek</a>, a sociologist, spoke very enthusiastically and positively during the interview about the analytical possibilities offered by <a href="https://en.wikipedia.org/wiki/Latent_class_model">Latent Class Analysis</a> (LCA).</p>
+<p>Not being a sociologist, among whom this tool is well-known, I was quite easily impressed and hooked 🙂 LCA allows probabilistic modeling of multivariate categorical data with the assumption that there are latent classes of people who are characterized by a common pattern of probabilities of responses to a set of questions on some categorical, e.g. Likert scale.</p>
+<p>Compared to other methods used in this context, such as Factor Analysis, k-means, or hierarchical clustering, it has several advantages:</p>
+<ul>
+<li>LCA can handle well categorical observed variables.</li>
+<li>LCA estimates probabilities of class membership, so it inherently incorporates uncertainty about which class each individual belongs to.</li>
+<li>LCA allows for meaningful analysis of missing answers or non-answers together with proper answers on a Likert scale.</li>
+<li>LCA provides a framework (via information criteria like BIC, AIC, or likelihood ratio tests) for comparing models with different numbers of classes.</li>
+<li>LCA’s output is intuitive and easy to interpret.</li>
+</ul>
+<p>As is clear from the above, this tool lends itself naturally to identifying subgroups of people with similar world/workviews and should therefore have a place in the toolkit of any employee survey analyst.</p>
+<p>What follows, is a a small demonstration of this tool on artificial employee survey data accompanying the book <a href="https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446">Predictive HR Analytics: Mastering the HR Metric</a> by Edwards &amp; Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># uploading libraries</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://readxl.tidyverse.org'>readxl</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/DT'>DT</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># uploading legend to the data</span></span>
+<span><span class='va'>legend</span> <span class='op'>&lt;-</span> <span class='fu'>readxl</span><span class='fu'>::</span><span class='fu'><a href='https://readxl.tidyverse.org/reference/read_excel.html'>read_excel</a></span><span class='op'>(</span><span class='st'>"./surveyResults.xls"</span>, sheet <span class='op'>=</span> <span class='st'>"Legend"</span><span class='op'>)</span> </span>
+<span></span>
+<span><span class='co'># user-friendly table with individual survey items</span></span>
+<span><span class='fu'>DT</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/DT/man/datatable.html'>datatable</a></span><span class='op'>(</span></span>
+<span>  <span class='va'>legend</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>Scale <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>as.factor</a></span><span class='op'>(</span><span class='va'>Scale</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>  class <span class='op'>=</span> <span class='st'>'cell-border stripe'</span>, </span>
+<span>  filter <span class='op'>=</span> <span class='st'>'top'</span>,</span>
+<span>  extensions <span class='op'>=</span> <span class='st'>'Buttons'</span>,</span>
+<span>  fillContainer <span class='op'>=</span> <span class='cn'>FALSE</span>,</span>
+<span>  rownames<span class='op'>=</span> <span class='cn'>FALSE</span>,</span>
+<span>  options <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span></span>
+<span>    pageLength <span class='op'>=</span> <span class='fl'>5</span>, </span>
+<span>    autoWidth <span class='op'>=</span> <span class='cn'>TRUE</span>,</span>
+<span>    dom <span class='op'>=</span> <span class='st'>'Bfrtip'</span>,</span>
+<span>    buttons <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'copy'</span><span class='op'>)</span>, </span>
+<span>    scrollX <span class='op'>=</span> <span class='cn'>TRUE</span>, </span>
+<span>    selection<span class='op'>=</span><span class='st'>"multiple"</span></span>
+<span>  <span class='op'>)</span></span>
+<span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2dfcf326faaf564325eb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2dfcf326faaf564325eb">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"factor\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"width: 100%; display: none;\">\n      <select multiple=\"multiple\" style=\"width: 100%;\" data-options=\"[&quot;Autonomy&quot;,&quot;Engagement&quot;,&quot;Job satisfaction&quot;,&quot;Management&quot;,&quot;Managerial motivation&quot;,&quot;Organizational citizenship behavior&quot;,&quot;Perceived organizational support&quot;,&quot;Procedural justice&quot;,&quot;Quitting intentions&quot;]\"><\/select>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"fillContainer":false,"data":[["Managerial motivation","Managerial motivation","Managerial motivation","Managerial motivation","Organizational citizenship behavior","Organizational citizenship behavior","Organizational citizenship behavior","Organizational citizenship behavior","Autonomy","Autonomy","Autonomy","Procedural justice","Procedural justice","Procedural justice","Job satisfaction","Job satisfaction","Quitting intentions","Quitting intentions","Quitting intentions","Management","Management","Management","Engagement","Engagement","Engagement","Engagement","Perceived organizational support","Perceived organizational support","Perceived organizational support"],["ManMot1","ManMot2","ManMot3","ManMot4","ocb1","ocb2","ocb3","ocb4","aut1","aut2","aut3","Justice1","Justice2","Justice3","JobSat1","JobSat2","Quit1","Quit2","Quit3","Man1","Man2","Man3","Eng1","Eng2","Eng3","Eng4","pos1","pos2","pos3"],["My manager motivates me.","My manager knows how to get the most out of me.","My manager encourages me to do my best.","My manager is great.","I work harder than my job requires.","I put a huge amount of effort into my job.","I help out my teammates.","I go the extra mile.","I have the freedom to choose how I work.","I can decide how to work during the day.","I am given enough leeway to get the job done.","Procedures are fair here.","Procedures are applied fairly.","Procedures are the same for all.","I am satisfied in my job.","My job is good.","I am thinking of leaving.","I am ready to look for other work.","I have looked for employment elsewhere in the last week.","Management help workers out when they experience difficulties.","Management supports employees who are faced with discrimination.","Management acts decisively.","I share the values of this organization.","I am proud of this organization.","This organization is a big part of who I am.","I would recommend this organization as a place to work.","This organization cares about my well-being.","This organization is interested in my contribution.","This organization is there for me when I need help."]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>Scale<\/th>\n      <th>Item<\/th>\n      <th>Text<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"autoWidth":true,"dom":"Bfrtip","buttons":["copy"],"scrollX":true,"selection":"multiple","columnDefs":[],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<p>Before moving on to modeling, we first need to wrangle the data a bit - select the relevant variables, change their data type, and replace missing values with “Prefer Not to Say” reply category.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># uploading data</span></span>
+<span><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'>readxl</span><span class='fu'>::</span><span class='fu'><a href='https://readxl.tidyverse.org/reference/read_excel.html'>read_excel</a></span><span class='op'>(</span><span class='st'>"./surveyResults.xls"</span>, sheet <span class='op'>=</span> <span class='st'>"Data"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># preparing the data for modeling</span></span>
+<span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='va'>data</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>sex</span><span class='op'>:</span><span class='op'>-</span><span class='va'>ethnicity</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate_all.html'>mutate_all</a></span><span class='op'>(</span><span class='va'>as.character</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/replace.html'>replace</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>.</span><span class='op'>)</span>, <span class='st'>"Prefer Not to Say"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate_all.html'>mutate_all</a></span><span class='op'>(</span><span class='va'>factor</span>, levels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"1"</span>, <span class='st'>"2"</span>, <span class='st'>"3"</span>, <span class='st'>"4"</span>, <span class='st'>"5"</span>, <span class='st'>"Prefer Not to Say"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+</div>
+<p>Now we can proceed with the modeling. For this we will use <code>poLCA</code> R package. One of the parameters to be set is the expected number of classes. To choose the right number, we need to fit several LCA models with different numbers of classes and, based on information criteria such as BIC or AIC, choose the model with the best balance between model complexity and good fit to the data. Here, I set the parameter to the best value I determined earlier.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># uploading library</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/dlinzer/poLCA'>poLCA</a></span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># specifying and running the model</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1234</span><span class='op'>)</span></span>
+<span><span class='va'>lca_model</span> <span class='op'>&lt;-</span> <span class='fu'>poLCA</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/poLCA/man/poLCA.html'>poLCA</a></span><span class='op'>(</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>ManMot1</span>, <span class='va'>ManMot2</span>, <span class='va'>ManMot3</span>, <span class='va'>ManMot4</span>, <span class='va'>ocb1</span>, <span class='va'>ocb2</span>, <span class='va'>ocb3</span>, <span class='va'>ocb4</span>, <span class='va'>aut1</span>, <span class='va'>aut2</span>, <span class='va'>aut3</span>, <span class='va'>Justice1</span>, <span class='va'>Justice2</span>, <span class='va'>Justice3</span>, <span class='va'>JobSat1</span>, <span class='va'>JobSat2</span>, <span class='va'>Quit1</span>, <span class='va'>Quit2</span>, <span class='va'>Quit3</span>, <span class='va'>Man1</span>, <span class='va'>Man2</span>, <span class='va'>Man3</span>, <span class='va'>Eng1</span>, <span class='va'>Eng2</span>, <span class='va'>Eng3</span>, <span class='va'>Eng4</span>, <span class='va'>pos1</span>, <span class='va'>pos2</span>, <span class='va'>pos3</span><span class='op'>)</span><span class='op'>~</span><span class='fl'>1</span>, </span>
+<span>  data <span class='op'>=</span> <span class='va'>mydata</span>, </span>
+<span>  nclass <span class='op'>=</span> <span class='fl'>4</span>, </span>
+<span>  nrep <span class='op'>=</span> <span class='fl'>3</span>,</span>
+<span>  verbose <span class='op'>=</span> <span class='cn'>FALSE</span>,</span>
+<span>  graphs <span class='op'>=</span> <span class='cn'>FALSE</span></span>
+<span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+</div>
+<p>Let’s check some of the outputs of the analysis: 1) probability of responses to individual items by people from different classes,</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># looking at the model output</span></span>
+<span><span class='va'>lca_model</span></span></code></pre>
+</div>
+</details>
+<pre><code>Conditional item response (column) probabilities,
+ by outcome variable, for each class (row) 
+ 
+$ManMot1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1350 0.4245 0.3092 0.0875 0.0227 0.0211
+class 2:  0.0732 0.1220 0.1463 0.0244 0.0000 0.6341
+class 3:  0.0906 0.1342 0.2384 0.2976 0.2021 0.0371
+class 4:  0.4765 0.3591 0.1274 0.0121 0.0132 0.0118
+
+$ManMot2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.3345 0.4531 0.1377 0.0534 0.0081 0.0132
+class 2:  0.1220 0.1463 0.0976 0.0244 0.0000 0.6098
+class 3:  0.2274 0.2580 0.2239 0.1508 0.1033 0.0366
+class 4:  0.7507 0.1967 0.0325 0.0080 0.0121 0.0000
+
+$ManMot3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1180 0.3715 0.3610 0.1077 0.0209 0.0209
+class 2:  0.0732 0.0732 0.2195 0.0000 0.0000 0.6341
+class 3:  0.1005 0.1045 0.2517 0.3043 0.2019 0.0371
+class 4:  0.4354 0.3590 0.1482 0.0252 0.0201 0.0121
+
+$ManMot4
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1965 0.4915 0.1830 0.0853 0.0225 0.0212
+class 2:  0.0732 0.1463 0.0976 0.0488 0.0000 0.6341
+class 3:  0.1437 0.1539 0.2503 0.2418 0.1798 0.0305
+class 4:  0.5329 0.3401 0.1070 0.0000 0.0121 0.0078
+
+$ocb1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.3092 0.4552 0.1880 0.0344 0.0026 0.0105
+class 2:  0.1463 0.1707 0.0732 0.0000 0.0000 0.6098
+class 3:  0.4200 0.3895 0.1463 0.0135 0.0122 0.0185
+class 4:  0.6336 0.2680 0.0592 0.0272 0.0000 0.0120
+
+$ocb2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1645 0.4304 0.3103 0.0577 0.0131 0.0240
+class 2:  0.0732 0.1707 0.1463 0.0000 0.0000 0.6098
+class 3:  0.2486 0.4233 0.2233 0.0617 0.0246 0.0185
+class 4:  0.3427 0.3929 0.1963 0.0403 0.0121 0.0156
+
+$ocb3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1373 0.3711 0.3566 0.0869 0.0293 0.0188
+class 2:  0.0732 0.1707 0.0732 0.0488 0.0244 0.6098
+class 3:  0.2291 0.3319 0.2798 0.0853 0.0493 0.0246
+class 4:  0.3206 0.3222 0.2333 0.0647 0.0396 0.0196
+
+$ocb4
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0971 0.2143 0.2582 0.2185 0.1988 0.0131
+class 2:  0.0732 0.1220 0.0000 0.0976 0.0732 0.6341
+class 3:  0.2431 0.1670 0.1081 0.1557 0.2955 0.0307
+class 4:  0.3205 0.1708 0.1708 0.1759 0.1459 0.0162
+
+$aut1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5) Pr(6)
+class 1:  0.1914 0.6010 0.1600 0.0476 0.0000     0
+class 2:  0.0000 0.0000 0.0000 0.0000 0.0000     1
+class 3:  0.3128 0.3342 0.1095 0.1765 0.0671     0
+class 4:  0.5015 0.4326 0.0659 0.0000 0.0000     0
+
+$aut2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5) Pr(6)
+class 1:  0.0892 0.5412 0.2574 0.1121 0.0000     0
+class 2:  0.0000 0.0000 0.0000 0.0000 0.0000     1
+class 3:  0.1521 0.3402 0.1754 0.2164 0.1159     0
+class 4:  0.4131 0.4234 0.1476 0.0160 0.0000     0
+
+$aut3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.1199 0.5929 0.2172 0.0674 0.0025 0.0000
+class 2:  0.0000 0.0000 0.0244 0.0000 0.0000 0.9756
+class 3:  0.2286 0.3560 0.1749 0.1426 0.0918 0.0061
+class 4:  0.4325 0.4548 0.0964 0.0082 0.0000 0.0081
+
+$Justice1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0000 0.0782 0.7351 0.1756 0.0110 0.0000
+class 2:  0.0000 0.0000 0.0000 0.0000 0.0000 1.0000
+class 3:  0.0061 0.0190 0.2754 0.3353 0.3398 0.0245
+class 4:  0.0526 0.3241 0.5002 0.0742 0.0247 0.0242
+
+$Justice2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0000 0.0759 0.7355 0.1788 0.0099 0.0000
+class 2:  0.0000 0.0000 0.0000 0.0000 0.0000 1.0000
+class 3:  0.0061 0.0190 0.2458 0.3396 0.3528 0.0367
+class 4:  0.0445 0.2954 0.5556 0.0463 0.0380 0.0202
+
+$Justice3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0000 0.0332 0.6473 0.2877 0.0318 0.0000
+class 2:  0.0000 0.0000 0.0000 0.0000 0.0000 1.0000
+class 3:  0.0000 0.0305 0.2225 0.3209 0.3956 0.0305
+class 4:  0.0404 0.2239 0.5407 0.1179 0.0569 0.0202
+
+$JobSat1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0749 0.7008 0.1795 0.0298 0.0053 0.0097
+class 2:  0.0244 0.0000 0.0000 0.0000 0.0000 0.9756
+class 3:  0.1355 0.3993 0.1967 0.1263 0.1220 0.0202
+class 4:  0.4703 0.4749 0.0267 0.0242 0.0000 0.0041
+
+$JobSat2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0527 0.6334 0.2540 0.0546 0.0000 0.0053
+class 2:  0.0244 0.0000 0.0000 0.0000 0.0000 0.9756
+class 3:  0.1100 0.2836 0.2498 0.2345 0.1037 0.0183
+class 4:  0.3717 0.5498 0.0388 0.0356 0.0000 0.0040
+
+$Quit1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0086 0.0503 0.3622 0.5410 0.0193 0.0185
+class 2:  0.0488 0.0000 0.1463 0.1707 0.0244 0.6098
+class 3:  0.1476 0.2228 0.1411 0.2832 0.1870 0.0182
+class 4:  0.0103 0.0176 0.0660 0.3442 0.5619 0.0000
+
+$Quit2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0076 0.1285 0.2897 0.5154 0.0378 0.0210
+class 2:  0.0732 0.0732 0.0732 0.1463 0.0488 0.5854
+class 3:  0.1804 0.2770 0.1514 0.2373 0.1476 0.0063
+class 4:  0.0103 0.0356 0.0533 0.3251 0.5758 0.0000
+
+$Quit3
+           Pr(1)  Pr(2) Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0065 0.0874 0.365 0.5037 0.0137 0.0237
+class 2:  0.0244 0.0488 0.122 0.1463 0.0488 0.6098
+class 3:  0.1862 0.2099 0.159 0.2557 0.1649 0.0243
+class 4:  0.0081 0.0179 0.058 0.3631 0.5529 0.0000
+
+$Man1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0161 0.4123 0.4782 0.0434 0.0026 0.0474
+class 2:  0.0244 0.2683 0.0732 0.0244 0.0000 0.6098
+class 3:  0.0183 0.1371 0.4832 0.2147 0.1404 0.0062
+class 4:  0.2745 0.5092 0.1949 0.0094 0.0000 0.0121
+
+$Man2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0187 0.3700 0.4954 0.0661 0.0051 0.0448
+class 2:  0.0244 0.2683 0.0244 0.0732 0.0000 0.6098
+class 3:  0.0244 0.1232 0.4177 0.2329 0.1956 0.0062
+class 4:  0.2381 0.5147 0.1917 0.0354 0.0081 0.0121
+
+$Man3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0213 0.3718 0.5068 0.0536 0.0044 0.0422
+class 2:  0.0244 0.2439 0.0732 0.0488 0.0000 0.6098
+class 3:  0.0244 0.0998 0.4262 0.2522 0.1913 0.0062
+class 4:  0.2341 0.5234 0.1969 0.0255 0.0040 0.0160
+
+$Eng1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0100 0.3362 0.4682 0.1654 0.0158 0.0044
+class 2:  0.0000 0.1463 0.1463 0.0732 0.0488 0.5854
+class 3:  0.1709 0.2392 0.1777 0.2413 0.1526 0.0183
+class 4:  0.2432 0.4776 0.2106 0.0551 0.0040 0.0094
+
+$Eng2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0406 0.4844 0.4136 0.0581 0.0000 0.0032
+class 2:  0.0732 0.1220 0.1463 0.0244 0.0488 0.5854
+class 3:  0.2601 0.2988 0.1498 0.1815 0.1098 0.0000
+class 4:  0.3312 0.5015 0.1391 0.0088 0.0000 0.0193
+
+$Eng3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0043 0.4245 0.5074 0.0572 0.0000 0.0065
+class 2:  0.0244 0.0976 0.1463 0.0732 0.0732 0.5854
+class 3:  0.1887 0.2142 0.2704 0.1802 0.1403 0.0061
+class 4:  0.2442 0.5647 0.1576 0.0151 0.0000 0.0183
+
+$Eng4
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0026 0.3724 0.5065 0.1117 0.0026 0.0044
+class 2:  0.0244 0.1463 0.1220 0.0732 0.0488 0.5854
+class 3:  0.2015 0.1987 0.2597 0.2117 0.1283 0.0000
+class 4:  0.2870 0.5095 0.1824 0.0117 0.0000 0.0095
+
+$pos1
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0000 0.1046 0.6481 0.2241 0.0073 0.0160
+class 2:  0.0000 0.0488 0.2195 0.0488 0.0732 0.6098
+class 3:  0.0305 0.0479 0.1663 0.4436 0.3117 0.0000
+class 4:  0.0728 0.2523 0.4393 0.1949 0.0127 0.0280
+
+$pos2
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0023 0.1124 0.6717 0.1952 0.0024 0.0159
+class 2:  0.0244 0.0488 0.2439 0.0488 0.0244 0.6098
+class 3:  0.0549 0.0313 0.2471 0.3795 0.2812 0.0061
+class 4:  0.0289 0.2999 0.4990 0.1482 0.0000 0.0240
+
+$pos3
+           Pr(1)  Pr(2)  Pr(3)  Pr(4)  Pr(5)  Pr(6)
+class 1:  0.0000 0.0608 0.6749 0.2278 0.0205 0.0159
+class 2:  0.0244 0.0000 0.2927 0.0244 0.0488 0.6098
+class 3:  0.0488 0.0180 0.2200 0.3711 0.3421 0.0000
+class 4:  0.0202 0.2505 0.5242 0.1766 0.0086 0.0200
+
+Estimated class population shares 
+ 0.4564 0.0493 0.197 0.2973 
+ 
+Predicted class memberships (by modal posterior prob.) 
+ 0.4639 0.0493 0.1947 0.2921 
+ 
+========================================================= 
+Fit for 4 latent classes: 
+========================================================= 
+number of observations: 832 
+number of estimated parameters: 583 
+residual degrees of freedom: 249 
+maximum log-likelihood: -29354.91 
+ 
+AIC(4): 59875.81
+BIC(4): 62629.81
+G^2(4): 47676.67 (Likelihood ratio/deviance statistic) 
+X^2(4): 1.120338e+25 (Chi-square goodness of fit) 
+ </code></pre>
+</div>
+<ol start="2" type="1">
+<li>probabilities of people belonging to individual classes,</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># probabilities of belonging to individual classes (first 10 rows)</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>lca_model</span><span class='op'>$</span><span class='va'>posterior</span>, n <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+<pre><code>              [,1] [,2]         [,3]          [,4]
+ [1,] 1.705863e-01    0 1.088439e-08  8.294137e-01
+ [2,] 1.208337e-02    0 9.879166e-01  0.000000e+00
+ [3,] 4.990889e-13    0 1.000000e+00  0.000000e+00
+ [4,] 9.999903e-01    0 9.649316e-06  6.879833e-09
+ [5,] 0.000000e+00    1 0.000000e+00  0.000000e+00
+ [6,] 9.988548e-01    0 3.805196e-06  1.141380e-03
+ [7,] 1.782575e-13    0 1.000000e+00  0.000000e+00
+ [8,] 0.000000e+00    0 1.000000e+00  0.000000e+00
+ [9,] 1.272725e-04    0 1.104259e-11  9.998727e-01
+[10,] 1.064019e-09    0 1.000000e+00 1.215934e-244</code></pre>
+</div>
+<p>and 3) predicted belongings of people to the classes.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># predicted belongings to the classes</span></span>
+<span><span class='va'>lca_model</span><span class='op'>$</span><span class='va'>predclass</span></span></code></pre>
+</div>
+</details>
+<pre><code>  [1] 4 3 3 1 2 1 3 3 4 3 1 1 1 4 4 1 1 1 4 1 1 1 3 4 2 3 4 1 4 3 1 4
+ [33] 3 1 4 3 3 1 3 3 4 4 1 1 3 1 4 1 1 3 1 3 4 1 1 2 1 4 3 1 3 1 4 3
+ [65] 4 1 4 3 4 1 1 1 4 3 2 4 1 1 4 1 3 3 1 4 1 4 1 3 4 4 4 4 1 1 1 4
+ [97] 4 1 3 1 3 3 1 4 1 4 3 3 1 2 1 1 4 1 4 1 4 1 4 4 1 4 3 1 4 1 1 3
+[129] 1 1 4 4 4 4 4 1 4 3 1 1 3 1 1 1 1 1 4 3 1 3 4 1 4 3 1 1 1 1 3 3
+[161] 1 1 1 4 1 1 3 1 1 1 4 3 3 1 1 1 1 1 1 3 1 3 1 1 4 4 3 4 1 4 3 3
+[193] 3 3 4 1 4 2 3 4 4 3 1 4 1 4 4 4 4 3 3 1 4 1 4 3 1 3 4 1 1 4 4 1
+[225] 4 1 4 4 1 4 4 4 3 4 1 1 4 1 3 1 4 1 4 1 3 4 3 1 1 1 4 1 1 1 4 1
+[257] 4 1 1 1 1 3 1 1 4 1 1 1 4 1 1 1 1 1 3 4 4 1 1 4 4 3 4 3 1 3 1 3
+[289] 1 2 4 4 3 4 1 4 4 1 1 1 1 1 4 1 4 3 1 1 4 1 1 3 1 4 1 4 1 4 1 4
+[321] 4 4 1 4 1 4 3 4 4 1 1 4 4 2 4 1 1 1 1 4 1 4 3 1 4 4 4 1 1 4 3 2
+[353] 4 1 4 3 3 1 4 4 3 2 4 1 1 1 4 1 2 1 1 4 1 1 1 1 4 1 1 1 1 2 4 1
+[385] 1 1 2 1 1 3 4 1 1 3 1 4 1 1 1 2 1 1 4 1 3 2 1 1 3 1 4 4 1 1 1 1
+[417] 1 1 4 4 4 1 1 3 1 1 4 3 1 1 1 1 1 4 1 2 1 4 4 1 1 1 1 1 2 1 4 2
+[449] 1 4 1 3 1 1 3 4 3 1 1 3 4 4 4 4 4 3 1 4 1 1 3 3 3 1 1 3 1 4 3 1
+[481] 1 1 1 4 4 2 1 3 1 1 1 4 4 1 3 1 1 3 1 1 1 1 3 4 4 4 3 1 1 1 4 3
+[513] 4 1 1 4 1 1 1 4 2 1 4 1 4 1 3 1 3 2 4 2 3 4 1 1 4 4 4 1 3 1 4 1
+[545] 1 1 4 3 1 4 4 4 1 3 1 2 1 1 3 4 2 3 2 1 1 1 1 4 4 2 1 3 1 4 1 3
+[577] 4 3 3 4 1 4 1 2 4 3 1 1 1 1 1 1 3 4 4 1 4 1 1 4 1 1 1 4 1 4 1 1
+[609] 3 1 3 1 1 3 4 4 3 1 4 1 3 4 1 1 4 1 4 4 4 1 3 4 2 4 1 1 1 4 1 4
+[641] 1 1 1 1 1 3 1 3 1 1 3 1 1 4 1 4 3 1 4 1 2 2 1 3 4 3 1 4 2 3 4 1
+[673] 3 3 4 3 1 1 1 1 4 1 1 3 1 3 1 1 3 1 1 1 1 1 1 3 2 1 1 1 4 1 4 4
+[705] 4 1 1 1 1 1 1 3 4 3 4 1 3 1 1 1 2 3 3 3 3 3 4 3 1 1 1 3 3 1 3 2
+[737] 1 2 3 1 4 1 4 2 3 1 1 4 3 1 3 4 3 4 1 4 1 1 3 4 4 4 3 1 1 2 1 1
+[769] 1 1 4 3 3 4 4 1 3 4 2 4 4 3 3 1 3 1 2 4 1 1 3 1 4 3 4 1 1 1 4 1
+[801] 2 1 4 1 4 4 4 1 1 4 1 4 4 4 2 4 4 3 4 1 1 3 1 3 3 1 1 4 4 3 3 1</code></pre>
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># checking the size of the classes</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>lca_model</span><span class='op'>$</span><span class='va'>predclass</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+<pre><code>
+  1   2   3   4 
+386  41 162 243 </code></pre>
+</div>
+<p>If we wanted to visualize the results using our own charts, for example, with full-stacked bar charts showing average probability of responses per scale and class, we need to do some data wrangling of information extracted from the fitted model.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># extracting information from the model for dataviz</span></span>
+<span><span class='va'>scaleNames</span> <span class='op'>&lt;-</span> <span class='va'>mydata</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span><span class='va'>classes</span> <span class='op'>&lt;-</span> <span class='fl'>4</span></span>
+<span><span class='va'>responsesDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='kw'>for</span><span class='op'>(</span><span class='va'>s</span> <span class='kw'>in</span> <span class='va'>scaleNames</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>  </span>
+<span>  <span class='va'>df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>counter</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
+<span>  </span>
+<span>  <span class='kw'>for</span><span class='op'>(</span><span class='va'>v</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>lca_model</span><span class='op'>$</span><span class='va'>probs</span><span class='op'>[[</span><span class='va'>s</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>    </span>
+<span>    <span class='va'>p</span> <span class='op'>&lt;-</span> <span class='va'>lca_model</span><span class='op'>$</span><span class='va'>probs</span><span class='op'>[[</span><span class='va'>s</span><span class='op'>]</span><span class='op'>]</span><span class='op'>[</span><span class='va'>v</span><span class='op'>]</span></span>
+<span>    <span class='va'>cl</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"Class "</span>, <span class='va'>counter</span><span class='op'>)</span></span>
+<span>    </span>
+<span>    <span class='va'>supp</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>item <span class='op'>=</span> <span class='va'>s</span>, class <span class='op'>=</span> <span class='va'>cl</span>, p <span class='op'>=</span> <span class='va'>p</span><span class='op'>)</span></span>
+<span>    </span>
+<span>    <span class='va'>df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='va'>df</span>, <span class='va'>supp</span><span class='op'>)</span></span>
+<span>    </span>
+<span>    <span class='kw'>if</span><span class='op'>(</span><span class='va'>counter</span> <span class='op'>&lt;</span> <span class='va'>classes</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>      </span>
+<span>      <span class='va'>counter</span> <span class='op'>&lt;-</span> <span class='va'>counter</span> <span class='op'>+</span> <span class='fl'>1</span></span>
+<span>      </span>
+<span>    <span class='op'>}</span> <span class='kw'>else</span><span class='op'>{</span></span>
+<span>      </span>
+<span>      <span class='va'>counter</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
+<span>      </span>
+<span>    <span class='op'>}</span></span>
+<span>    </span>
+<span>  <span class='op'>}</span></span>
+<span>  </span>
+<span>  <span class='va'>df</span> <span class='op'>&lt;-</span> <span class='va'>df</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>choice <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Strongly Disagree"</span>,<span class='st'>"Disagree"</span>,<span class='st'>"Neither Agree nor Disagree"</span>,<span class='st'>"Agree"</span>,<span class='st'>"Strongly Agree"</span>,<span class='st'>"Prefer Not to Say"</span><span class='op'>)</span>, each<span class='op'>=</span><span class='va'>classes</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>responsesDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='va'>responsesDf</span>, <span class='va'>df</span><span class='op'>)</span></span>
+<span>  </span>
+<span><span class='op'>}</span></span>
+<span></span>
+<span><span class='co'># computing size of individual classes</span></span>
+<span><span class='va'>classCnts</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>lca_model</span><span class='op'>$</span><span class='va'>predclass</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> </span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    Var1 <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span><span class='op'>(</span><span class='va'>Var1</span><span class='op'>)</span>,</span>
+<span>    Var1 <span class='op'>=</span>  <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"Class "</span>, <span class='va'>Var1</span><span class='op'>)</span></span>
+<span>  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span></span>
+<span>    class <span class='op'>=</span> <span class='va'>Var1</span>,</span>
+<span>    freq <span class='op'>=</span> <span class='va'>Freq</span></span>
+<span>    <span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># final df for dataviz</span></span>
+<span><span class='va'>datavizDf</span> <span class='op'>&lt;-</span> <span class='va'>responsesDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    scale <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_remove.html'>str_remove_all</a></span><span class='op'>(</span><span class='va'>item</span>, <span class='st'>"\\d"</span><span class='op'>)</span>,</span>
+<span>    choice <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>choice</span>, levels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Strongly Disagree"</span>,<span class='st'>"Disagree"</span>,<span class='st'>"Neither Agree nor Disagree"</span>,<span class='st'>"Agree"</span>,<span class='st'>"Strongly Agree"</span>,<span class='st'>"Prefer Not to Say"</span><span class='op'>)</span>, ordered <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>,</span>
+<span>    scale <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span></span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"aut"</span> <span class='op'>~</span> <span class='st'>"Autonomy"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"Eng"</span> <span class='op'>~</span> <span class='st'>"Engagement"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"JobSat"</span> <span class='op'>~</span> <span class='st'>"Job Satisfaction"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"Justice"</span> <span class='op'>~</span> <span class='st'>"Proc.Justice"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"Man"</span> <span class='op'>~</span> <span class='st'>"Management"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"ManMot"</span> <span class='op'>~</span> <span class='st'>"Mng.Motivation"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"ocb"</span> <span class='op'>~</span> <span class='st'>"OCB"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"pos"</span> <span class='op'>~</span> <span class='st'>"Org.Support"</span>,</span>
+<span>      <span class='va'>scale</span> <span class='op'>==</span> <span class='st'>"Quit"</span> <span class='op'>~</span> <span class='st'>"Quitting Intentions"</span></span>
+<span>    <span class='op'>)</span></span>
+<span>    <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>scale</span>, <span class='va'>class</span>, <span class='va'>choice</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span>p <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>p</span><span class='op'>)</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>left_join</a></span><span class='op'>(</span><span class='va'>classCnts</span>, by <span class='op'>=</span> <span class='st'>"class"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>class <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_glue.html'>str_glue</a></span><span class='op'>(</span><span class='st'>"{class} (n = {freq})"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+</div>
+<p>In the resulting graphs, we quickly see that there is one class of people who often prefer not to give their opinion in an employee survey (Class 2), one class of people with a strongly negative view of their employment experience (Class 4), one class of people with a neutral to slightly negative view of work (Class 1), and one class of people with a neutral to positive view of work (Class 3).</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># dataviz</span></span>
+<span><span class='va'>datavizDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>scale</span>, y <span class='op'>=</span> <span class='va'>p</span>, fill <span class='op'>=</span> <span class='va'>choice</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_discrete.html'>scale_x_discrete</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='va'>rev</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span>stat <span class='op'>=</span> <span class='st'>"identity"</span>, position <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/position_stack.html'>position_fill</a></span><span class='op'>(</span>reverse <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Strongly Disagree"</span><span class='op'>=</span><span class='st'>"#c00000"</span>,<span class='st'>"Disagree"</span><span class='op'>=</span><span class='st'>"#ed7d31"</span>,<span class='st'>"Neither Agree nor Disagree"</span><span class='op'>=</span><span class='st'>"#ffc000"</span>,<span class='st'>"Agree"</span><span class='op'>=</span><span class='st'>"#00b050"</span>,<span class='st'>"Strongly Agree"</span><span class='op'>=</span><span class='st'>"#4472c4"</span>,<span class='st'>"Prefer Not to Say"</span><span class='op'>=</span><span class='st'>"#d9d4d4"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>class</span>,nrow <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
+<span>    x <span class='op'>=</span> <span class='st'>""</span>,</span>
+<span>    y <span class='op'>=</span> <span class='st'>"AVERAGE PROBABILITY OF RESPONSE"</span>,</span>
+<span>    fill <span class='op'>=</span> <span class='st'>""</span>,</span>
+<span>    title <span class='op'>=</span> <span class='st'>"Latent Class Analysis of responses from the employee survey"</span></span>
+<span>    <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
+<span>    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"bold"</span>, size <span class='op'>=</span> <span class='fl'>18</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>15</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    axis.title.x.bottom <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span><span class='op'>)</span>,</span>
+<span>    axis.title.y.left <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>15</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span><span class='op'>)</span>,</span>
+<span>    axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>    strip.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>12</span>, face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,</span>
+<span>    strip.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span>,</span>
+<span>    axis.ticks <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    legend.position<span class='op'>=</span> <span class='st'>"bottom"</span>,</span>
+<span>    legend.key <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span>,</span>
+<span>    legend.key.width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1.6</span>, <span class='st'>"line"</span><span class='op'>)</span>,</span>
+<span>    legend.margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>, unit<span class='op'>=</span><span class='st'>"cm"</span><span class='op'>)</span>,</span>
+<span>    legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>    legend.box.margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>, </span>
+<span>    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,</span>
+<span>    plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span>,</span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guide_legend.html'>guide_legend</a></span><span class='op'>(</span>nrow <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+</div>
+</details>
+<p><img src="latent-class-analysis_files/figure-html5/unnamed-chunk-8-1.png" width="1008" /></p>
+</div>
+<p>It would certainly be possible to delve deeper into the results, but for a basic overview of the process of LCA and its outputs, this might be sufficient. If interested, a more detailed introduction to LCA can be found, for example, in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7746621/">this practitioner’s guide</a>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

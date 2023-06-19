@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Latent Class Analysis of responses from employee surveys</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-06-19-latent-class-analysis</link>
+      <description>How listening to a podcast inspired me to try out a statistical tool popular among sociologists.</description>
+      <category>latent class analysis</category>
+      <category>employee survey</category>
+      <category>people analytics</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-19-latent-class-analysis</guid>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-19-latent-class-analysis/./scheme.png" medium="image" type="image/png" width="930" height="525"/>
+    </item>
     <item>
       <title>Another positive effect of mindfulness meditation on the horizon?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +30,7 @@
       <category>mindfulness</category>
       <category>field experiment</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-05-mindfulness-and-objectivity</guid>
-      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-05-mindfulness-and-objectivity/./spock.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
