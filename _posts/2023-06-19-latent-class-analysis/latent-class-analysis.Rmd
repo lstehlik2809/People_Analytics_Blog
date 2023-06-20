@@ -21,7 +21,7 @@ output:
     code_folding: true
 ---
 
-I recently listened to a podcast about a very interesting study about [conspiracies and disinformation in Czech society](https://www.investigace.cz/pocitani-neduvery/), and one of the authors of the study, [Matous Pilnacek](https://www.linkedin.com/in/matous-pilnacek-218b1a91), a sociologist, spoke very enthusiastically and positively during the interview about the analytical possibilities offered by [Latent Class Analysis](https://en.wikipedia.org/wiki/Latent_class_model) (LCA).
+I recently listened to a podcast about a very interesting study about [conspiracies and disinformation in Czech society](https://www.investigace.cz/pocitani-neduvery/){target="_blank"}, and one of the authors of the study, [Matous Pilnacek](https://www.linkedin.com/in/matous-pilnacek-218b1a91){target="_blank"}, a sociologist, spoke very enthusiastically and positively during the interview about the analytical possibilities offered by [Latent Class Analysis](https://en.wikipedia.org/wiki/Latent_class_model){target="_blank"} (LCA).
 
 Not being a sociologist, among whom this tool is well-known, I was quite easily impressed and hooked 🙂 LCA allows probabilistic modeling of multivariate categorical data with the assumption that there are latent classes of people who are characterized by a common pattern of probabilities of responses to a set of questions on some categorical, e.g. Likert scale.
 
@@ -33,7 +33,7 @@ LCA is thus a natural fit for identifying subgroups of people with similar work 
 * LCA provides a framework (via information criteria like BIC, AIC, or likelihood ratio tests) for comparing models with different numbers of classes.
 * LCA’s output is intuitive and easy to interpret.
 
-What follows, is a a small demonstration of this tool on artificial employee survey data accompanying the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446) by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.  
+What follows, is a a small demonstration of this tool on artificial employee survey data accompanying the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446){target="_blank"} by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.  
 
 ```{r}
 
@@ -258,6 +258,6 @@ datavizDf %>%
 
 ```
 
-It would certainly be possible to delve deeper into the results, but for a basic overview of the process of LCA and its outputs, this might be sufficient. If interested, a more detailed introduction to LCA can be found, for example, in [this practitioner's guide](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7746621/).  
+It would certainly be possible to delve deeper into the results, but for a basic overview of the process of LCA and its outputs, this might be sufficient. If interested, a more detailed introduction to LCA can be found, for example, in [this practitioner's guide](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7746621/){target="_blank"}.  
 
 
