@@ -1,7 +1,7 @@
 ---
 title: "Latent Class Analysis of responses from employee surveys"
 description: |
-  How listening to a podcast inspired me to try out a statistical tool popular among sociologists. 
+  How listening to a podcast about conspiracies and disinformation inspired me to try out a "new" statistical tool popular among sociologists. 
 preview: ./scheme.png
 author:
   - name: Luděk Stehlík
@@ -25,7 +25,7 @@ I recently listened to a podcast about a very interesting study about [conspirac
 
 Not being a sociologist, among whom this tool is well-known, I was quite easily impressed and hooked 🙂 LCA allows probabilistic modeling of multivariate categorical data with the assumption that there are latent classes of people who are characterized by a common pattern of probabilities of responses to a set of questions on some categorical, e.g. Likert scale.
 
-Compared to other methods used in this context, such as Factor Analysis, k-means, or hierarchical clustering, it has several advantages:
+LCA is thus a natural fit for identifying subgroups of people with similar work views. Compared to other methods used in this context, such as Factor Analysis, k-means, or hierarchical clustering, it has several advantages:
 
 * LCA can handle well categorical observed variables.
 * LCA estimates probabilities of class membership, so it inherently incorporates uncertainty about which class each individual belongs to.
@@ -33,9 +33,7 @@ Compared to other methods used in this context, such as Factor Analysis, k-means
 * LCA provides a framework (via information criteria like BIC, AIC, or likelihood ratio tests) for comparing models with different numbers of classes.
 * LCA’s output is intuitive and easy to interpret.
 
-As is clear from the above, this tool lends itself naturally to identifying subgroups of people with similar world/workviews and should therefore have a place in the toolkit of any employee survey analyst. 
-
-What follows, is a a small demonstration of this tool on artificial employee survey data accompanying the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446) by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.
+What follows, is a a small demonstration of this tool on artificial employee survey data accompanying the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446) by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.  
 
 ```{r}
 
