@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2023-06-22-team-level-predictors-of-innovation/",
+    "title": "Team-level predictors of innovation at work",
+    "description": "Team processes seem to beat team composition and structure when it comes to innovation at work.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-06-22",
+    "categories": [
+      "innovation",
+      "team",
+      "meta-analysis",
+      "people analytics"
+    ],
+    "contents": "\r\nAt least this is suggested by an interesting meta-analysis of team-level predictors of innovation at work by Hülsheger, Anderson, & Salgado (2009).\r\n\r\n\r\nShow code\r\n\r\n# uploading library\r\nlibrary(tidyverse)\r\n\r\n# uploading data with the results of the meta-analysis \r\ndata <- readxl::read_xlsx(\"./metaAnalysisResults.xlsx\")\r\n#dplyr::glimpse(data)\r\n\r\ndata %>%\r\n  ggplot2::ggplot(aes(x = forcats::fct_reorder(variable, rho), y = rho, group = area, color = area)) +\r\n  ggplot2::geom_point(size = 3) +\r\n  ggplot2::geom_errorbar(aes(ymin=l95, ymax=h95), width=.2, position=position_dodge(0.05), linewidth = 1) +\r\n  ggplot2::geom_hline(yintercept = 0, linetype = \"dashed\", color = \"grey\") +\r\n  ggplot2::coord_flip() +\r\n  ggplot2::scale_color_manual(values = c(\"Team composition and structure\"=\"#4e79a7\", \"Team process\" = \"#f28e2b\")) +\r\n  ggplot2::labs(\r\n    x = \"\",\r\n    y = \"AVERAGE CORRECTED CORRELATION\",\r\n    title = \"Team-Level Predictors of Innovation at Work\",\r\n    caption = \"\\nThe bars around the point estimates represent the 2.5% lower and 97.5% upper limits of the 95% confidence interval.\\nSource: Hülsheger, U. R., Anderson, N., & Salgado, J. F. (2009). Team-level predictors of innovation at work: A comprehensive meta-analysis spanning three decades\\nof research. Journal of Applied Psychology, 94(5), 1128–1145. https://doi.org/10.1037/a0015978\",\r\n    color = \"\"\r\n  ) +\r\n  ggplot2::theme(\r\n    plot.title = ggtext::element_markdown(face = \"bold\", size = 18, margin=margin(0,0,10,0)),\r\n    plot.subtitle = element_text(color = '#2C2F46', face = \"plain\", size = 16, margin=margin(0,0,20,0)),\r\n    plot.caption = element_text(color = '#2C2F46', face = \"plain\", size = 10, hjust = 0),\r\n    axis.title.x.bottom = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0), color = '#2C2F46', face = \"plain\", size = 13, lineheight = 16, hjust = 0),\r\n    axis.title.y.left = element_text(margin = margin(t = 0, r = 15, b = 0, l = 0), color = '#2C2F46', face = \"plain\", size = 13, lineheight = 16, hjust = 1),\r\n    axis.text = element_text(color = '#2C2F46', face = \"plain\", size = 12, lineheight = 16),\r\n    strip.text.x = element_text(size = 13, face = \"bold\"),\r\n    axis.line = element_line(colour = \"#E0E1E6\"),\r\n    legend.position=\"top\",\r\n    legend.key = element_rect(fill = \"white\"),\r\n    legend.text = element_text(size = 12),\r\n    panel.background = element_blank(),\r\n    panel.grid.major.y = element_blank(),\r\n    panel.grid.major.x = element_blank(),\r\n    panel.grid.minor = element_blank(),\r\n    axis.ticks = element_line(color = \"#E0E1E6\"),\r\n    plot.margin=unit(c(5,5,5,5),\"mm\"), \r\n    plot.title.position = \"plot\",\r\n    plot.caption.position =  \"plot\"\r\n  )\r\n\r\n\r\n\r\nIf that’s true, not sure whether it’s good news or bad news for companies’ innovation initiatives. Is it easier to change processes or team composition? I expect there will be a lot of “it depends” 😉 What do you think?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-06-22-team-level-predictors-of-innovation/./innovation.jpg",
+    "last_modified": "2023-06-22T13:05:52+02:00",
+    "input_file": "team-level-predictors-of-innovation.knit.md"
+  },
+  {
     "path": "posts/2023-06-19-latent-class-analysis/",
     "title": "Latent Class Analysis of responses from employee surveys",
     "description": "How listening to a podcast about conspiracies and disinformation inspired me to try out a \"new\" statistical tool popular among sociologists.",
