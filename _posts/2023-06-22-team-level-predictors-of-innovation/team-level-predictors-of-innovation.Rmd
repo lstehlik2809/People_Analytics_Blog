@@ -24,7 +24,7 @@ output:
 
 At least this is suggested by an interesting [meta-analysis of team-level predictors of innovation at work](https://www.researchgate.net/publication/26762638_Team-Level_Predictors_of_Innovation_at_Work_A_Comprehensive_Meta-Analysis_Spanning_Three_Decades_of_Research){target="_blank"} by Hülsheger, Anderson, & Salgado (2009). 
 
-```{r fig.width=11, fig.height=6.5}
+```{r fig.width=10, fig.height=6.5}
 # uploading library
 library(tidyverse)
 
