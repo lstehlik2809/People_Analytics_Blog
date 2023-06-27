@@ -2093,7 +2093,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.21/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2168,7 +2168,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>A while ago, I posted about the <a href="https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback/">potential of using GPT for processing open-ended feedback from employees</a>. I simply inputted a block of text into GPT and asked for a summary of the major topics found in the feedback. Although the output was quite accurate and the information compression achieved was very useful, this approach was somewhat limited in terms of scalability and granularity of the information provided.</p>
+<p>A while ago, I posted about the <a href="https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback/" target="_blank">potential of using GPT for processing open-ended feedback from employees</a>. I simply inputted a block of text into GPT and asked for a summary of the major topics found in the feedback. Although the output was quite accurate and the information compression achieved was very useful, this approach was somewhat limited in terms of scalability and granularity of the information provided.</p>
 <p>To address these limitations, I experimented with another approach that includes the following steps:</p>
 <ol type="1">
 <li>Looping over feedback from individual employees and sending them one by one to GPT.</li>
@@ -2178,9 +2178,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>Interactive exploration of specific topics clustered by their semantic similarity based on their respective embeddings and visualized with the help of t-SNE dimensionality reduction technique.</li>
 <li>Creating a filterable table with identified topics and all original and extracted information that may be useful for further exploration of the feedback and for checking the precision of the topic identification.</li>
 </ol>
-<p>I had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on <a href="https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/code">Kaggle</a>. You can check the results of the analysis yourself in <a href="https://aanalytics.shinyapps.io/employeeFeedback/">this simple dashboard</a>.</p>
+<p>I had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on <a href="https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/code" target="_blank">Kaggle</a>. You can check the results of the analysis yourself in <a href="https://aanalytics.shinyapps.io/employeeFeedback/" target="_blank">this simple dashboard</a>.</p>
 <p><img src="Screenshot.png"></p>
-<p>In my opinion, it works quite well and could represent a very time- and cost-effective way to gain useful insights from employee open-ended feedback at scale, with the caveat that one has to ensure the security of the processed data, for example, by using a local LLM. Let me know what you think about this approach. And if you are interested in the Python code behind the analysis so you can play with it on your own data, here’s the <a href="https://github.com/lstehlik2809/Employee-Feedback-Analysis-Using-OpenAI">link to the GitHub page</a> with the Python code.</p>
+<p>In my opinion, it works quite well and could represent a very time- and cost-effective way to gain useful insights from employee open-ended feedback at scale, with the caveat that one has to ensure the security of the processed data, for example, by using a local LLM. Let me know what you think about this approach. And if you are interested in the Python code behind the analysis so you can play with it on your own data, here’s the <a href="https://github.com/lstehlik2809/Employee-Feedback-Analysis-Using-OpenAI" target="_blank">link to the GitHub page</a> with the Python code.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
