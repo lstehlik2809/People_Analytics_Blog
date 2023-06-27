@@ -2,7 +2,6 @@
 title: "Team-level predictors of innovation at work"
 description: |
   Team processes seem to beat team composition and structure when it comes to innovation at work.
- 
 preview: ./innovation.jpg
 author:
   - name: Luděk Stehlík

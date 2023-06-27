@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2023-06-27-deloitte-hc-trends-themes/",
+    "title": "Themes in Deloitte's Global Human Capital Trends between 2011 and 2023",
+    "description": "Reading the latest release of Deloitte Global HC Trends made me wonder what common themes this regular series has been covering throughout its 12 years long history.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-06-27",
+    "categories": [
+      "global hc trends",
+      "deloitte",
+      "openai",
+      "r",
+      "python"
+    ],
+    "contents": "\r\nAside from satisfying a simple curiosity, it was also a good opportunity to try out a nerdy combination of various cool DS tools: openAI’s embeddings for determining trends similarity, UMAP for dimensionality reduction, DBSCAN for cluster analysis, openAI’s chat completion for cluster summarization and naming, Plotly for interactive dataviz, Shiny for dashboarding, and Python and R for orchestrating it all.\r\nThe result? The analysis revealed 13 distinct themes among the 118 specific trends:\r\nGlobal Talent Management Strategies (23)\r\nLeadership Development and Talent Management (16)\r\nHR Transformation and Innovation (15)\r\nHuman Capital and Workforce Strategies (12)\r\nWorkforce Data and Analytics (10)\r\nCognitive Technologies and Workforce (8)\r\nEmployee-Centric Learning and Development (7)\r\nPerformance Management and Compensation (7)\r\nImproving Employee Experience and Well-being (6)\r\nCloud Computing and HR Transformation (4)\r\nEmployee Engagement and Retention (4)\r\nDiversity in Business Strategy (3)\r\nWorkplace Flexibility Strategies (3)\r\n\r\nIt’s no wonder I’ve had dejavu feelings about some trends over the years, but that’s why they are called trends, because they persist over time, right? 😉\r\nIf you would like to check the analysis output interactively and in greater detail, you can use this simple dashboard.\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-06-27-deloitte-hc-trends-themes/./dttHCTrends.png",
+    "last_modified": "2023-06-27T11:10:07+02:00",
+    "input_file": "deloitte-hc-trends-themes.knit.md",
+    "preview_width": 1000,
+    "preview_height": 1000
+  },
+  {
     "path": "posts/2023-06-22-team-level-predictors-of-innovation/",
     "title": "Team-level predictors of innovation at work",
     "description": "Team processes seem to beat team composition and structure when it comes to innovation at work.",

@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Themes in Deloitte's Global Human Capital Trends between 2011 and 2023</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-06-27-deloitte-hc-trends-themes</link>
+      <description>Reading the latest release of Deloitte Global HC Trends made me wonder what common themes this regular series has been covering throughout its 12 years long history.</description>
+      <category>global hc trends</category>
+      <category>deloitte</category>
+      <category>openai</category>
+      <category>r</category>
+      <category>python</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-27-deloitte-hc-trends-themes</guid>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-27-deloitte-hc-trends-themes/./dttHCTrends.png" medium="image" type="image/png" width="1000" height="1000"/>
+    </item>
     <item>
       <title>Team-level predictors of innovation at work</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>meta-analysis</category>
       <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-22-team-level-predictors-of-innovation</guid>
-      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-22-team-level-predictors-of-innovation/./innovation.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
