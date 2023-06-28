@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2023-06-28-job-comparator/",
+    "title": "A bet on a new job",
+    "description": "Sharing a by-product of my search for a new full-time job.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-06-29",
+    "categories": [
+      "job selection",
+      "bayesian statistics",
+      "r",
+      "shiny"
+    ],
+    "contents": "\r\nBeing in the final phase of my new job search, I wanted to be able to aggregate the information and impressions I gathered during the hiring process, with all the uncertainties, to make the best decision possible.\r\nTo do this, I put together a sort of “back-of-the-envelope” calculation that combines, in a Bayesian way, the impressions one has of various aspects of the jobs one is applying for.\r\n\r\nIt works with several factors that research suggests are related to job satisfaction and that a person has the chance to estimate subjectively to some degree during the hiring process from job ads, interviews, sample tasks, company reviews from current or former employees on Glassdoor, etc. Specifically, it takes into account the following factors:\r\nSalary\r\nJob security\r\nWork-life balance\r\nCareer progression\r\nOrganizational culture\r\nJob description\r\nBenefits\r\nRelationships with supervisors and colleagues\r\nOne’s task is to “simply” determine, based on the available information, the range of how much he or she can expect to be satisfied with these factors in a given job. The app then aggregates the evidence and estimates the expected overall level of job satisfaction, including a level of uncertainty that can provide a guide as to where the person should try to obtain some additional information to reduce this uncertainty. One can also adjust the weights of each factor based on one’s personal preferences.\r\nIf you have at least two job offers to choose from, you may find the app as useful as I did. Here’s a link to the app.\r\nGood luck with your decisions and choices 🤞\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-06-28-job-comparator/./decisionMaking.jpg",
+    "last_modified": "2023-06-28T21:15:40+02:00",
+    "input_file": "job-comparator.knit.md"
+  },
+  {
     "path": "posts/2023-06-27-deloitte-hc-trends-themes/",
     "title": "Themes in Deloitte's Global Human Capital Trends between 2011 and 2023",
     "description": "Reading the latest release of Deloitte Global HC Trends made me wonder what common themes this regular series has been covering throughout its 12 years long history.",

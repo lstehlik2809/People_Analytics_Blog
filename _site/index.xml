@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A bet on a new job</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-06-28-job-comparator</link>
+      <description>Sharing a by-product of my search for a new full-time job.</description>
+      <category>job selection</category>
+      <category>bayesian statistics</category>
+      <category>r</category>
+      <category>shiny</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-28-job-comparator</guid>
+      <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-28-job-comparator/./decisionMaking.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Themes in Deloitte's Global Human Capital Trends between 2011 and 2023</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -161,7 +174,7 @@
       <category>r</category>
       <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-04-28-employee-feedback-analysis-using-openai</guid>
-      <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-04-28-employee-feedback-analysis-using-openai/./employeeListening.avif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
