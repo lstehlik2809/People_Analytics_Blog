@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Using Bayesian shrinkage in reporting employee turnover</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage</link>
+      <description>When you report turnover rates by team, do you take into account the size of individual teams, or do you take the turnover rate numbers as they are?</description>
+      <category>employee turnover</category>
+      <category>hr reporting</category>
+      <category>hr metrics</category>
+      <category>bayesian inference</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage</guid>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage/./shrinkage.png" medium="image" type="image/png" width="421" height="349"/>
+    </item>
     <item>
       <title>A bet on a new job</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>r</category>
       <category>shiny</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-06-28-job-comparator</guid>
-      <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-06-28-job-comparator/./decisionMaking.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
