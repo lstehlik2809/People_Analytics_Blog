@@ -156,7 +156,9 @@ We will model our data using common segmented regression models that have follow
 
 $$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
 
-The *β<sub>0</sub>* coefficient estimates the baseline level of the outcome variable at time zero; *β<sub>1</sub>* coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); *β<sub>2</sub>* coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and *β<sub>3</sub>* estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of *β<sub>1</sub>* and *β<sub>3</sub>* equals to the post-intervention slope).
+The *β<sub>0</sub>* coefficient estimates the baseline level of the outcome variable at time zero; *β<sub>1</sub>* coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); *β<sub>2</sub>* coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and *β<sub>3</sub>* estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of *β<sub>1</sub>* and *β<sub>3</sub>* equals to the post-intervention slope). For a better understanding of the model, take a look at the illustrative chart below.
+
+<img src="./interruptedTimeSeriesAnalysis.png">
 
 Since we are dealing with correlated and truncated data, we should also include two additional terms in our model, an autocorrelation term and a truncation term, to handle these specific properties of our data.
 
@@ -318,9 +320,9 @@ brms::pp_check(
 
 ## Results of the analysis
 
-Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the `pandemicBeforethepandemicoutbreak` term in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed immediately after the outbreak of pandemic.  
+Now, after having sufficient confidence that - using terminology from the [Richard McElreath's book Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/) - our "small worlds" can pretty accurately mimic the data coming from our real,"big world", we can use our models' parameters to learn something about our research questions. Our primary interest is in the coefficient value of the `pandemicBeforethepandemicoutbreak` and `elapsedTimeAfterPandemic` terms in our models. It expresses how much and in what direction people's search interest in work-life balance and well-being changed immediately after the outbreak of pandemic, and how slope of the trend changed after the pandemic, respectively.  
 
-In Graph 5 and 6 we can see posterior distribution of this parameter in our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the left side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
+In Graph 5 and 6 we can see posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter in our two models. In both cases the posterior distribution of the pandemic term is (predominantly or completely) on the left side of the zero value, which supports the claim about existence of the effect of pandemic on people's increased search interest in work-life balance and well-being immediately after the outbreak of pandemic. As is apparent from the graphs, for well-being (Graph 6) this evidence is much stronger than for work-life balance (Graph 5), which corresponds to impression we might have when looking at the original Google Trends charts shown in Fig. 1 and 2. 
 
 ```{r fig.width=8}
 
@@ -382,7 +384,7 @@ modelWellBeing %>%
     )
 
 ```  
-*Graph 5: Visualization of the posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter in the modelWellBeing.*  
+*Graph 6: Visualization of the posterior distribution of the `pandemicBeforethepandemicoutbreak` parameter in the modelWellBeing.*  
 
 
 <br>  
@@ -419,103 +421,70 @@ samples <- brms::posterior_samples(modelWorkLifeBalance, seed = 12345)
 # probability of b_pandemicBeforethepandemicoutbreak coefficient being lower than 0
 sum(samples$b_pandemicBeforethepandemicoutbreak < 0) / nrow(samples)
 
-# probability of b_pandemicBeforethepandemicoutbreak coefficient being higher than 0
-sum(samples$b_pandemicBeforethepandemicoutbreak > 0) / nrow(samples)
-
-
-
 ```  
-
 
 <br> 
 
-Another option would be to compute [Bayes factor](https://en.wikipedia.org/wiki/Bayes_factor) that expresses degree to which available data favors our hypothesis in comparison with the null model corresponding to normal prior distribution with the parameters `normal(0,50)`. We can see that Bayes factor (`Evid.Ratio` in the table below) has value of 11.6 which indicates strong evidence in favor of our hypothesis, in terms of [Harold Jeffreys](https://en.wikipedia.org/wiki/Harold_Jeffreys)' scale for interpretation of Bayes factors. Specifically it means that under the fitted model for work-life balance the hypothesis about pandemic term being lower than zero is 11.6 times more probable than under the null model. In other words, the data should shift our believe pretty strongly in direction of acceptance of the existence of pandemic's positive effect on people's search interest in work-life balance.  
+Now let's check the parameter `elapsedTimeAfterPandemic`. Its posterior distribution in both models "safely" includes zero value, which indicates that there is not huge support for positive change in trend after the outbreak of pandemic.   
 
-
-```{r echo=TRUE, message=FALSE, warning=FALSE, results = "markup"}
-
-# computing Bayes factor for hypothesis that pandemicBeforethepandemicoutbreak term in the modelWorkLifeBalance is smaller than zero  
-brms::hypothesis(
-  modelWorkLifeBalance,
-  "pandemicBeforethepandemicoutbreak < 0",
-  seed = 12345
-  )
-
-```  
 
 ```{r fig.width=8}
 
-# plotting prior and posterior distribution for pandemic term in the modelWorkLifeBalance is smaller than zero   
-plot(
-  brms::hypothesis(
-    modelWorkLifeBalance,
-    "pandemicBeforethepandemicoutbreak < 0"
-  )
-)
-
-```
-*Graph 6: Visualization of prior and posterior distribution of pandemic term in the modelWorkLifeBalance.* 
-
-
-<br> 
-
-Besides the major hypothesis we may be also interested in...  
-
-* overall trend across the last ten years,  
-* trend after the outbreak of pandemic, and also  
-* seasonality of people's search interest over the months within individual years.  
-
-For that purpose we might use, besides the summary statistics and graphs with posterior distributions depicted above, plots showing conditional effect of each of the predictors. From the plots in Graph 7 it is thus clear that in case of work-life balance searches, the overall trend across the last ten years is decreasing, after the outbreak of pandemic the trend is rather stagnating, and within individual years the search interest follows work & holiday seasonality (lower search interest during the holiday parts of the year - June, July, August and December - and higher during the rest of the year). In case of well-being searches, the seasonality part is similar, but the trends differ - both of them are increasing (see Graph 8).     
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
-
-# plotting conditional effect of each predictor from modelWorkLifeBalance 
-figListWorkLifeBalance <- plot(brms::conditional_effects(modelWorkLifeBalance), ask = FALSE)
-
-```
-
-
-```{r fig.width=8, fig.height=16}
-
-# uploading library for arranging multiple ggplots
-library(ggpubr)
-
-# putting all graphs with conditional effect together  
-ggpubr::ggarrange(
-  plotlist = figListWorkLifeBalance, 
-  nrow = 4
-  ) %>%
-  ggpubr::annotate_figure(
-    top = text_grob("Conditional effect of predictors from modelWorkLifeBalance")
-)
-     
-```  
-*Graph 7: Visualization of conditional effect of predictors from modelWorkLifeBalance. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.*  
-
-
-<br> 
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
-
-# plotting conditional effect of each predictor from modelWellBeing  
-figListWellBeing <- plot(brms::conditional_effects(modelWellBeing), ask = FALSE)
-
-```
-
-```{r fig.width=8, fig.height=16}
-
-# putting all graphs with conditional effect together  
-ggpubr::ggarrange(
-  plotlist = figListWellBeing, 
-  nrow = 4
-  ) %>% 
-  ggpubr::annotate_figure(
-    top = text_grob("Conditional effect of predictors from modelWellBeing")
-)
+# visualizing posterior distribution of the elapsedTimeAfterPandemic parameter in the modelWorkLifeBalance
+modelWorkLifeBalance %>%
+  tidybayes::gather_draws(
+    b_elapsedTimeAfterPandemic
+    ) %>%
+  dplyr::mutate(
+    .variable = factor(
+      .variable, 
+      levels = c("b_elapsedTimeAfterPandemic"), 
+      ordered = TRUE
+      )
+    ) %>%
+  dplyr::rename(value = .value) %>%
+  ggplot2::ggplot(
+    aes(x = value)
+    ) +
+  ggplot2::geom_density(
+    fill = "lightblue"
+  ) +
+  ggplot2::labs(
+    title = "Posterior distribution of the elapsedTimeAfterPandemic parameter\nin the modelWorkLifeBalance"
+    )
 
 ```  
-*Graph 8: Visualization of conditional effect of predictors from modelWellBeing. The predictors are conditioned on the mean in the case of continuous variables and reference category in the case of factors.* 
+*Graph 7: Visualization of the posterior distribution of the `elapsedTimeAfterPandemic` parameter in the modelWorkLifeBalance.* 
 
+<br>  
+
+```{r fig.width=8}
+
+# visualizing posterior distribution of the elapsedTimeAfterPandemic parameter in the modelWellBeing
+modelWellBeing %>%
+  tidybayes::gather_draws(
+    b_elapsedTimeAfterPandemic
+    ) %>%
+  dplyr::mutate(
+    .variable = factor(
+      .variable, 
+      levels = c("b_elapsedTimeAfterPandemic"), 
+      ordered = TRUE
+      )
+    ) %>%
+  dplyr::rename(value = .value) %>%
+  ggplot2::ggplot(
+    aes(x = value)
+    ) +
+  ggplot2::geom_density(
+    fill = "lightblue"
+  ) +
+  ggplot2::labs(
+    title = "Posterior distribution of the elapsedTimeAfterPandemic parameter\nin the modelWellBeing"
+    )
+
+```  
+*Graph 8: Visualization of the posterior distribution of the `elapsedTimeAfterPandemic` parameter in the modelWellBeing.*
 
 <br> 
 

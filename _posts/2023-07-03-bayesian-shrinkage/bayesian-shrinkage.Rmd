@@ -12,6 +12,7 @@ categories:
   - hr reporting
   - hr metrics
   - bayesian inference
+  - r
 output:
   distill::distill_article:
     self_contained: false
