@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Using Bayesian shrinkage in reporting employee turnover</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +18,7 @@
       <category>hr metrics</category>
       <category>bayesian inference</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage</guid>
-      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage/./shrinkage.png" medium="image" type="image/png" width="421" height="349"/>
     </item>
     <item>
@@ -770,7 +770,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid</guid>
-      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2022-08-20-people-analytics-popularity-after-covid/./people-analytics.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

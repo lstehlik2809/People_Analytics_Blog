@@ -30,7 +30,7 @@ There is a fairly common perception among the people analytics professionals wit
 
 I wondered if I could find any empirical support for this feeling in the surge of global web search interest in "people analytics" and "HR analytics" terms on Google after the pandemic outbreak, assuming the pandemic broke out in March 2020.
 
-Let's start our quest with a simple visual inspection of a line chart showing the trend of worldwide web search interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends) website and the search terms, time range, location, and source for searches described above. If you are familiar with R, you can use the code below.)
+Let's start our quest with a simple visual inspection of a line chart showing the trend of worldwide web search interest in "people analytics" and "HR analytics" terms on Google from January 2007 to July 2022. (You can replicate this chart using the [Google Trends](https://trends.google.com/trends){target="_blank"} website and the search terms, time range, location, and source for searches described above. If you are familiar with R, you can use the code below.)
 
 ```{r message=FALSE, warning=FALSE}
 
@@ -110,11 +110,13 @@ gtrendsResultDf %>%
 ```
 
 
-To make the picture a little bit clearer, let us take the help of inferential statistics to answer the question we are interested in. The ideal analytical tool for our use case is a segmented regression analysis of interrupted time series. It allows us to model changes in various processes and outcomes that follow intervention while controlling for the baseline level of other types of changes such as trends and seasonality. The model used has the following general structure:  
+To make the picture a little bit clearer, let us take the help of inferential statistics to answer the question we are interested in. The ideal analytical tool for our use case is a segmented regression analysis of interrupted time series that enables estimation of the changes in levels and trends of search interest before and after after a known ‘intervention’ or ‘interruption’ (i.e., a change that could potentially affect the outcome variable). It does so by segmenting the time series data into different periods based on the known interruption points and modeling these segments separately. The model used has the following general structure:  
 
 $$Y_{t} = β_{0} + β_{1}*time_{t} + β_{2}*intervention_{t} + β_{3}*time after intervention_{t} + e_{t}$$
 
-The *β<sub>0</sub>* coefficient estimates the baseline level of the outcome variable at time zero; *β<sub>1</sub>* coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); *β<sub>2</sub>* coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and *β<sub>3</sub>* estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of *β<sub>1</sub>* and *β<sub>3</sub>* equals to the post-intervention slope).
+The *β<sub>0</sub>* coefficient estimates the baseline level of the outcome variable at time zero; *β<sub>1</sub>* coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); *β<sub>2</sub>* coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and *β<sub>3</sub>* estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of *β<sub>1</sub>* and *β<sub>3</sub>* equals to the post-intervention slope). For a better understanding of the model, take a look at the illustrative chart taken from [Turner et al. (2021)](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01306-w){target="_blank"} below.
+
+<img src="./interruptedTimeSeriesAnalysis.png">
 
 Since we are dealing with correlated and truncated data, we should also include two additional terms in our model, an autocorrelation term and a truncation term, to handle these specific properties of our data.
 
@@ -186,7 +188,7 @@ DT::datatable(
 
 ## Modeling  
 
-We can now fit the model to the data and test what it tells us about the impact of the pandemic on people's search interest in people analytics. We will use [the brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf) for this, which allows us to make inferences about the model parameters within a Bayesian inferential framework. For this reason, we must also specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) that generates posterior samples of our model's parameters.  
+We can now fit the model to the data and test what it tells us about the impact of the pandemic on people's search interest in people analytics. We will use [the brms r package](https://cran.r-project.org/web/packages/brms/vignettes/brms_overview.pdf){target="_blank"} for this, which allows us to make inferences about the model parameters within a Bayesian inferential framework. For this reason, we must also specify some additional parameters (e.g. `chains`, `iter` or `warmup`) of [the Markov Chain Monte Carlo (MCMC) algorithm](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo){target="_blank"} that generates posterior samples of our model's parameters.  
 
 The Bayesian framework also allows us to specify priors for the estimated parameters and use them to incorporate our domain knowledge into the analysis. The specified priors are important for both parameter estimation and hypothesis testing because they define our initial information state before we consider our data. Here, we will use relatively broad, uninformative, and only slightly regularizing priors (that is, the inference results will be very close to the results of standard, frequentist parameter estimation/hypothesis testing). 
 
@@ -242,7 +244,7 @@ model <- brms::brm(
 
 ```  
 
-Before making any inferences, we should perform several validation checks to ensure that the mechanics of the MCMC algorithm worked well and that we can use the generated posterior samples to make inferences about the parameters of our model. There are many ways to do this, but here we will only use a visual check of the MCMC chains. We want the plots of these chains to look like a hairy caterpillar, indicating the convergence of the underlying Markov chain to stationarity and the convergence of the Monte Carlo estimates to population quantities, respectively. As can be seen in the graph below, we can observe the characteristics we are looking for in the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html) from Jeffrey B. Arnold.)
+Before making any inferences, we should perform several validation checks to ensure that the mechanics of the MCMC algorithm worked well and that we can use the generated posterior samples to make inferences about the parameters of our model. There are many ways to do this, but here we will only use a visual check of the MCMC chains. We want the plots of these chains to look like a hairy caterpillar, indicating the convergence of the underlying Markov chain to stationarity and the convergence of the Monte Carlo estimates to population quantities, respectively. As can be seen in the graph below, we can observe the characteristics we are looking for in the MCMC chains described above. (For additional MCMC diagnostics procedures, see for example [Bayesian Notes](https://jrnold.github.io/bayesian_notes/mcmc-diagnostics.html){target="_blank"} from Jeffrey B. Arnold.)
 
 ```{r message=FALSE, warning=FALSE, fig.height=12, fig.width=16}
 
@@ -380,32 +382,4 @@ sum(samplesElapsedTimeAfterPandemic$b_elapsedTimeAfterPandemic > 0) / nrow(sampl
 
 ```  
 
-The overall resulting picture thus partially supports the impression of many of my people analytics fellows about the growing importance of people analytics in HR and business leaders' decision making. However, given that the Google search interest in people analytics is a fairly distant proxy for its actual use in HR and business practice, we should take these results with a grain of salt and try to find other data sources that would support our results. For example, [Frank Corrigan](https://www.linkedin.com/in/frankxc/), head of analytics at Ponder, came up with the idea of analyzing changes in postings for people analytics job positions over time. A good inspiration for anyone willing to spend some time getting at and analyzing such data.
-
-In addition to the main question addressed here, we may be interested in other insights provided by the model. To this end, we can plot the marginal effect of each predictor. Beyond what we already know, we can see that search interest in people analytics has clearly trended upwards over the last 15 years, and within each year, search interest follows the seasonality of work and holidays, i.e., search interest is lower during the holiday season - June, July, August and December - and higher throughout the rest of the year.   
-
-```{r message=FALSE, warning=FALSE, results = "hidden", fig.show='hide' }
-
-# plotting marginal effect of predictors used 
-figList <- plot(brms::marginal_effects(model, probs = c(0.025, 0.975)), theme = ggthemes::theme_clean(), ask = FALSE) 
-
-```
-
-```{r message=FALSE, warning=FALSE, fig.width = 8, fig.height=16}
-
-# uploading library for arranging multiple ggplots
-library(ggpubr)
-
-# putting all graphs with marginal effects together  
-ggpubr::ggarrange(
-  plotlist = list(figList[[1]] + geom_line(color = "#0d1687", size = 1), figList[[4]] + geom_point(color = "#0d1687", size = 3), figList[[2]] + geom_point(color = "#0d1687", size = 3), figList[[3]] + geom_line(color = "#0d1687", size = 1)), 
-  nrow = 4
-  ) %>%
-  ggpubr::annotate_figure(
-    top = text_grob("Marginal effect of predictors used"),
-    bottom = text_grob("Point estimates are shown along with 95% credible intervals.", hjust = 1, x = 1, face = "italic", size = 10)
-)
-
-```
-
-
+The overall resulting picture thus partially supports the impression of many of my people analytics fellows about the growing importance of people analytics in HR and business leaders' decision making. However, given that the Google search interest in people analytics is a fairly distant proxy for its actual use in HR and business practice, we should take these results with a grain of salt and try to find other data sources that would support our results. For example, [Frank Corrigan](https://www.linkedin.com/in/frankxc/){target="_blank"}, head of analytics at Ponder, came up with the idea of analyzing changes in postings for people analytics job positions over time. A good inspiration for anyone willing to spend some time getting at and analyzing such data.
