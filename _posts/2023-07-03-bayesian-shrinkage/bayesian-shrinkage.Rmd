@@ -22,11 +22,11 @@ output:
     code_folding: true
 ---
 
-As anyone who regularly works with employee turnover data knows, when comparing team performance on retention, the departure of one person in small teams with fewer members will have a more significant impact on turnover rates than it does in larger teams. This creates room for misinterpretation and inappropriate actions. 
+It's a no-brainer that when comparing team performance on retention, the departure of one person in small teams with fewer members will have a more significant impact on turnover rates than it does in larger teams. However, this creates room for potential misinterpretation and inadequate actions. 
 
-What I refer to is the well-known phenomenon that variation is more likely in smaller samples. Fans of Daniel Kahneman and Amos Tversky will probably recall the famous [cognitive bias of insensitivity to sample size](https://en.wikipedia.org/wiki/Insensitivity_to_sample_size){target="_blank"} which occurs when people judge the probability of obtaining a statistic regardless of sample size. 
+It's related to the well-known phenomenon of variation being more likely in smaller samples. Fans of Daniel Kahneman and Amos Tversky will probably recall the famous [cognitive bias of insensitivity to sample size](https://en.wikipedia.org/wiki/Insensitivity_to_sample_size){target="_blank"} which occurs when people judge the probability of obtaining a statistic regardless of sample size. 
 
-One way to reduce this effect is [Bayesian shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics)){target="_blank"}. This approach, a kind of [regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)){target="_blank"}, involves borrowing information from the overall company turnover rate to influence the turnover rate of smaller teams. This works by "shrinking" the turnover rate of smaller teams towards the company average, and thus creating a balance between the observed rate and the company average.
+One way to reduce this effect is [Bayesian shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics)){target="_blank"}. This approach, which serves as a kind of [regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)){target="_blank"}, involves borrowing information from the overall company turnover rate to influence the turnover rate of smaller teams. It works by "shrinking" the turnover rate of smaller teams towards the company average, and thus creating a balance between the observed rate and the company average.
 
 It's not dissimilar to what one intuitively does when deciding what movie to watch or what restaurant to go to, when movies and restaurants vary widely in the number of ratings available.
 
@@ -119,7 +119,7 @@ ggplot2::ggplot(data = posteriorDraws, aes(x=estimatedTR, group = team)) +
   ggplot2::labs(
     y = "NORMALIZED DENSITY",
     x = "ESTIMATED TURNOVER RATE",
-    title = "Bayesian shrinkage in reporting employee turnover",
+    title = "Using Bayesian shrinkage in reporting employee turnover",
     caption = "\nThe black solid lines represent the 80% and 95% credibility intervals, respectively. The black dot represents the median of the Highest Confidence Interval.\nThe vertical dashed line represents the fixed, population-level effect estimate. The red cross represents the observed turnover rate for a given team."
   ) +
   ggplot2::theme(
