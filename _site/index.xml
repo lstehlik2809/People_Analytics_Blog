@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Searching &amp; querying AIHR blog posts on People Analytics topics</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-07-11-searching-and-querying-aihr-blog-posts</link>
+      <description>I'm sharing a by-product of my learning about vector database search that may be useful to some of you who want to learn something new about People Analytics.</description>
+      <category>aihr</category>
+      <category>people analytics</category>
+      <category>vector database</category>
+      <category>learning by doing</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-11-searching-and-querying-aihr-blog-posts</guid>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-11-searching-and-querying-aihr-blog-posts/./search.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Using Bayesian shrinkage in reporting employee turnover</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +32,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage</guid>
-      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-03-bayesian-shrinkage/./shrinkage.png" medium="image" type="image/png" width="421" height="349"/>
     </item>
     <item>

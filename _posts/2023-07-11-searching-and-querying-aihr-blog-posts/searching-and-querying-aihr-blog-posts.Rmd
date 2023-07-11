@@ -1,0 +1,30 @@
+---
+title: "Searching & querying AIHR blog posts on People Analytics topics"
+description: |
+  I'm sharing a by-product of my learning about vector database search that may be useful to some of you who want to learn something new about People Analytics.
+preview: ./search.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 2023-07-11
+categories:
+  - aihr 
+  - people analytics
+  - vector database 
+  - learning by doing
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+It’s an app that allows you to quickly search for People Analytics topics in a database of almost 260 [AIHR blog posts](https://www.aihr.com/blog/){target="_blank"} and get key ideas and insights from the posts that best match your search topic, with the possibility to go to the original post via a provided link. 
+
+<img src="./plot.png">
+
+The cluster analysis revealed that the posts cover more than 30 topics, so there's a lot to choose from. Feel free to give it a try and let me know how it works for you. Here's a [link to the app](https://lsanalytics.shinyapps.io/aihrPostsSearchInsights/#section-search-insights){target="_blank"}.
+
+Last but not least, a big "thank you" goes to AIHR and all the contributing authors for putting together such an amazing resource on People Analytics 🙏 

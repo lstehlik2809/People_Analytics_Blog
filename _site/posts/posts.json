@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2023-07-11-searching-and-querying-aihr-blog-posts/",
+    "title": "Searching & querying AIHR blog posts on People Analytics topics",
+    "description": "I'm sharing a by-product of my learning about vector database search that may be useful to some of you who want to learn something new about People Analytics.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-07-11",
+    "categories": [
+      "aihr",
+      "people analytics",
+      "vector database",
+      "learning by doing"
+    ],
+    "contents": "\r\nIt’s an app that allows you to quickly search for People Analytics topics in a database of almost 260 AIHR blog posts and get key ideas and insights from the posts that best match your search topic, with the possibility to go to the original post via a provided link.\r\n\r\nThe cluster analysis revealed that the posts cover more than 30 topics, so there’s a lot to choose from. Feel free to give it a try and let me know how it works for you. Here’s a link to the app.\r\nLast but not least, a big “thank you” goes to AIHR and all the contributing authors for putting together such an amazing resource on People Analytics 🙏\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-07-11-searching-and-querying-aihr-blog-posts/./search.jpg",
+    "last_modified": "2023-07-11T21:08:22+02:00",
+    "input_file": "searching-and-querying-aihr-blog-posts.knit.md"
+  },
+  {
     "path": "posts/2023-07-03-bayesian-shrinkage/",
     "title": "Using Bayesian shrinkage in reporting employee turnover",
     "description": "When you report turnover rates by team, do you take into account the size of individual teams, or do you take the turnover rate numbers as they are?",
