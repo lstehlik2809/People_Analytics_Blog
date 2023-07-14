@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Induced centralities</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-07-14-induced-centrality</link>
+      <description>A post about useful complement to common ONA centrality measures.</description>
+      <category>organizational network analysis</category>
+      <category>centrality measures</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-14-induced-centrality</guid>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-14-induced-centrality/./ona.png" medium="image" type="image/png" width="1500" height="1111"/>
+    </item>
     <item>
       <title>Searching &amp; querying AIHR blog posts on People Analytics topics</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +30,7 @@
       <category>vector database</category>
       <category>learning by doing</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-11-searching-and-querying-aihr-blog-posts</guid>
-      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-11-searching-and-querying-aihr-blog-posts/./search.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
