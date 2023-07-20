@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Vocational interests don't seem so uninteresting after all</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-07-20-vocational-interests</link>
+      <description>Quite surprising (at least to me) findings on the validity of vocational interests for predicting a range of important work outcomes.</description>
+      <category>vocational interests</category>
+      <category>meta-analysis</category>
+      <category>predictive validity</category>
+      <category>job performance</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-20-vocational-interests</guid>
+      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-20-vocational-interests/./scheme2.png" medium="image" type="image/png" width="491" height="283"/>
+    </item>
     <item>
       <title>Induced centralities</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +30,7 @@
       <category>centrality measures</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-14-induced-centrality</guid>
-      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-14-induced-centrality/./ona.png" medium="image" type="image/png" width="1500" height="1111"/>
     </item>
     <item>
