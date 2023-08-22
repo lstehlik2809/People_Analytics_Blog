@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Embedding R (or Python) ML models in Power BI dashboards</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-08-22-r-and-power-bi</link>
+      <description>In my new job, we currently rely a lot on Power BI when presenting people-related insights to our stakeholders. Since I know Power BI quite superficially and we also want to share insights from more complex analyses with our stakeholders, I spent part of the weekend studying how to incorporate ML models created in R or Python into Power BI dashboards. I put my learnings in this blog post. It's definitely not rocket science, but it may still shorten the learning path for some of you who are in a similar situation.</description>
+      <category>power bi</category>
+      <category>r</category>
+      <category>python</category>
+      <category>machine learning</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-08-22-r-and-power-bi</guid>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-08-22-r-and-power-bi/./r_with_powerbi.png" medium="image" type="image/png" width="700" height="450"/>
+    </item>
     <item>
       <title>Vocational interests don't seem so uninteresting after all</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>predictive validity</category>
       <category>job performance</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-07-20-vocational-interests</guid>
-      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-07-20-vocational-interests/./scheme2.png" medium="image" type="image/png" width="491" height="283"/>
     </item>
     <item>
