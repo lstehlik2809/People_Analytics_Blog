@@ -21,6 +21,8 @@ output:
     code_folding: true
 ---
 
+Note to start: Although the example presented in this post is demonstrated in R, it could be analogously implemented in Python as well.Note to start: Although the example presented in this post is demonstrated in R, it could be analogously implemented in Python as well.
+
 For demonstration, I will use the well-known [IBM artificial attrition dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset). First, we need to train the model. I suppose you know the drill and know all the steps to go through to get a useful and reliable model. The following R script implements the whole process of data preparation, (XGBoost) model tuning, training, and validation. After we have the prediction model ready, we have to save it, as we will use it later in the Power BI (PBI) dashboard.
 
 ```{r eval=FALSE}
@@ -262,7 +264,7 @@ dataset %>%
 
 We may also want to allow dashboard users to enter custom values for specific personas of interest and let the scoring algorithm predict the corresponding risk of leaving the company. To make the demonstration of this feature somewhat easier, I will use a different prediction model that uses only some of the strongest predictors.
 
-To enable this feature, we need to create several parameters that the user can set. For numeric predictors we can use the `New parameter` dialog box on the `Modeling` tab - we set the name of the parameters, their data type, and their minimum, maximum, and default values. For categorical parameters, we need to create and then upload a table with all possible combinations of values of the categorical parameters used. When using R, we can use for example the `expand.grid` function to do this. These parameters then serve as input to the R visual, where we load the model, change the names of some parameters to match those expected by the model, generate a prediction, and create the resulting visualization. All these steps are implemented by the following R script.  
+To enable this feature, we need to create several parameters that the user can set. For numeric predictors we can use the `New parameter` dialog box on the `Modeling` tab - we set the name of the parameters, their data type, their minimum, maximum, and default values, and confirm we want to show corresponding sliders in the dashboard. For categorical parameters, we need to create and then upload a table with all possible combinations of values of the categorical parameters used. When using R, we can use for example the `expand.grid` function to do this. The fields from this table are then used and displayed in the dashboard as single-selection filters. And all these parameters then serve as input to the R visual, where we load the model, change the names of some parameters to match those expected by the model, generate a prediction, and create the resulting visualization. All these steps are implemented by the following R script.  
 
 ```{r eval=FALSE}
 
