@@ -210,7 +210,7 @@ print("The estimated Average Treatment Effect is:", sum(estimates)/len(estimates
 
 Despite the simplicity of the example presented, I think it nicely demonstrates that by using fancy ML algorithms like XGBoost, we are not relieved of the need to have a plausible model of the data-generating process when estimating causal effects from observational data, and we can't just blindly rely on some magical powers of ML to squeeze what we need out of whatever input we give it. 
 
-Just a side note: If you want to make your life a little bit easier when using Double ML, you can use [the DoubleML library for Python and R](https://docs.doubleml.org/stable/index.html). The code below illustrates this library in action on our synthetic data.
+Just a side note: If you want to make your life a little bit easier when using Double ML, you can use [the DoubleML library for Python and R](https://docs.doubleml.org/stable/index.html){target="_blank"}. The code below illustrates this library in action on our synthetic data.
 
 
 ```{python}
