@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Harnessing Bayesian analysis for business process simulation</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-09-17-bayesian-simulation</link>
+      <description>A demonstration of how the outputs of Bayesian analysis can be used to simulate business processes while preserving inherent uncertainties.</description>
+      <category>bayesian statistics</category>
+      <category>business process simulation</category>
+      <category>python</category>
+      <category>pymc</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-09-17-bayesian-simulation</guid>
+      <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-09-17-bayesian-simulation/./plot.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>A plausible model of data-generating process eats ML algorithms for breakfast</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>dag</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-09-03-dag-and-double-ml</guid>
-      <pubDate>Sat, 02 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-09-03-dag-and-double-ml/dag-and-double-ml_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
