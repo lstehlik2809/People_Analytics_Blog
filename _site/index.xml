@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 16 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Exploration vs. Exploitation trade-off in our calendars</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-09-24-exploration-vs-exploitation-tradeoff</link>
+      <description>As I was going through my calendar recently to check who I had already met during my onboarding at Sanofi, I realised that one way to look at the calendar is through the lens of the Exploration vs. Exploitation trade-off. What lessons can we take from this?</description>
+      <category>calendar</category>
+      <category>time management</category>
+      <category>decision making</category>
+      <category>exploration vs exploration trade-off</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-09-24-exploration-vs-exploitation-tradeoff</guid>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-09-24-exploration-vs-exploitation-tradeoff/./multiArmedBandit.png" medium="image" type="image/png" width="1400" height="544"/>
+    </item>
     <item>
       <title>Harnessing Bayesian analysis for business process simulation</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>python</category>
       <category>pymc</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-09-17-bayesian-simulation</guid>
-      <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-09-17-bayesian-simulation/./plot.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
