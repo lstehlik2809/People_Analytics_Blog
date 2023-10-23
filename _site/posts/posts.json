@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2023-10-23-nlp-llm-and-onboarding/",
+    "title": "Using NLP & LLM to combat 'tip-of-the-tongue' moments during onboarding",
+    "description": "How to make onboarding experience a little bit smoother with the help of NLP and LLM.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-10-10",
+    "categories": [
+      "onboarding",
+      "nlp",
+      "llm",
+      "embeddings",
+      "ai"
+    ],
+    "contents": "\r\nI believe that many of you have had a similar experience when you joined a new company: you have taken a ton of notes from various meetings and trainings, you know that the answer to your immediate question is in there somewhere, but it is too hard to find the right notes, so you capitulate and decide to try to find the answer in a different way, e.g. by asking a more tenured colleague.\r\nTo make better use of my notes from my current onboarding, I created a quick and dirty app that uses embeddings to find the relevant files with my notes and LLM to summarise answers to my questions.\r\nSo, for example, if I need to find out who owns a certain business process, I can just type my question into the app and quickly get an answer, including tips on what files to look at to verify the answer or find other related information.\r\n\r\nIf you want to check out the code behind the app, you can find it in this GitHub repo.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-10-23-nlp-llm-and-onboarding/./lost_info.jpg",
+    "last_modified": "2023-10-23T19:47:23+02:00",
+    "input_file": "nlp-llm-and-onboarding.knit.md"
+  },
+  {
     "path": "posts/2023-09-24-exploration-vs-exploitation-tradeoff/",
     "title": "Exploration vs. Exploitation trade-off in our calendars",
     "description": "As I was going through my calendar recently to check who I had already met during my onboarding at Sanofi, I realized that one way to look at the calendar is through the lens of the Exploration vs. Exploitation trade-off. What lessons can we take from this?",

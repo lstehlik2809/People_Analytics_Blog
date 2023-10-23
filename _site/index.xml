@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Using NLP &amp; LLM to combat 'tip-of-the-tongue' moments during onboarding</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-10-23-nlp-llm-and-onboarding</link>
+      <description>How to make onboarding experience a little bit smoother with the help of NLP and LLM.</description>
+      <category>onboarding</category>
+      <category>nlp</category>
+      <category>llm</category>
+      <category>embeddings</category>
+      <category>ai</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-10-23-nlp-llm-and-onboarding</guid>
+      <pubDate>Mon, 09 Oct 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-10-23-nlp-llm-and-onboarding/./lost_info.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Exploration vs. Exploitation trade-off in our calendars</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>decision making</category>
       <category>exploration vs exploration trade-off</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-09-24-exploration-vs-exploitation-tradeoff</guid>
-      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-09-24-exploration-vs-exploitation-tradeoff/./multiArmedBandit.png" medium="image" type="image/png" width="1400" height="544"/>
     </item>
     <item>
