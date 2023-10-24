@@ -1530,7 +1530,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Recently, I experimented with <a href="https://huggingface.co/tasks/zero-shot-classification" target="_blank">zero-shot classification</a> - a machine learning task where the model classifies data into categories it hasn’t encountered during training - to determine the sentiment of comments from an employee survey (positive, negative, mixed, neutral).</p>
 <p>I chose this approach as an alternative to the traditional <a href="https://realpython.com/python-nltk-sentiment-analysis/" target="_blank">lexicon and rule-based NLTK sentiment analyzer</a>. Using the transformer architecture of the model (bart-large-mnli from Facebook), I aimed to capture context from entire comments when gauging their sentiment. I admit that I had some doubts because the model wasn’t specifically trained for sentiment analysis. Instead, it generalizes its understanding from the MNLI tasks to deduce sentiments.</p>
 <p>Fortunately, each comment was tied to specific statements that also received ratings on a standard 0-10 scale. This allowed me to cross-reference the sentiment classification with the ratings people assigned to these statements.</p>
-<p>So, how did the model do? As the attached chart shows, the average sentiment classification probability is compellingly consistent with the ratings on the standard scale.</p>
+<p>So, how did the model do? As the attached chart shows, the average sentiment classification probability is pretty compellingly consistent with the ratings on the standard scale.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1587,7 +1587,7 @@ Show code
 </details>
 <p><img src="sentiment-analysis-validation_files/figure-html5/unnamed-chunk-1-1.png" width="1056" /></p>
 </div>
-<p>Seems like I can add another useful tool to my toolbox! If you are interested in trying it out, you can use a short code snippet below for it.</p>
+<p>Seems like I can add another useful tool to my toolbox. If you are interested in trying it out, you can use a short code snippet below for it.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
