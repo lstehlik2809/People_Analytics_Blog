@@ -29,7 +29,7 @@ I chose this approach as an alternative to the traditional [lexicon and rule-bas
 
 Fortunately, each comment was tied to specific statements that also received ratings on a standard 0-10 scale. This allowed me to cross-reference the sentiment classification with the ratings people assigned to these statements.
 
-So, how did the model do? As the attached chart shows, the average sentiment classification probability is compellingly consistent with the ratings on the standard scale.
+So, how did the model do? As the attached chart shows, the average sentiment classification probability is pretty compellingly consistent with the ratings on the standard scale.
 
 ```{r fig.width=11, fig.height=6.25}
 
@@ -82,7 +82,7 @@ mydata %>%
 
 ```
 
-Seems like I can add another useful tool to my toolbox! If you are interested in trying it out, you can use a short code snippet below for it.
+Seems like I can add another useful tool to my toolbox. If you are interested in trying it out, you can use a short code snippet below for it.
 
 
 ```{python eval=FALSE}
