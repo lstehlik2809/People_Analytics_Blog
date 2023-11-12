@@ -23,7 +23,7 @@ output:
     code_folding: true
 ---
 
-There is one very useful but rather underutilized method of sharing insights from fitted ML models, at least in my socio-professional bubble.
+There is one very useful albeit relatively underused method of sharing insights from fitted ML models, at least in my professional bubble.
 
 It's a method of identifying personas based on outputs from ML local interpretation algorithms, which provide information about the specific drivers of predictions for individual observations.
 
@@ -35,7 +35,7 @@ Its implementation is pretty straightforward:
 4. Use the data points from steps 2 and 3 to identify clusters with similar characteristics.
 5. Name and describe personas corresponding to the identified clusters.
 
-Let's see this in action using the Python code below. First, we need to create an artificial dataset on which we will demonstrate the method. We'll create a classification dataset (imagine, for example, that we're trying to predict sales performance based on some collaboration metrics, but feel free to imagine any scenario you like) and prepare a training and testing set to train our ML.   
+Let's see this in action using the Python code below. First, we need to create an artificial dataset on which we will demonstrate the method described above. We'll create a classification dataset (imagine, for example, that we're trying to predict sales performance based on some collaboration metrics, but feel free to imagine any scenario you like) and prepare a training and testing set to train our ML.   
 
 ```{python warning = FALSE, message = FALSE, echo=TRUE}
 
@@ -51,7 +51,7 @@ n_features = 10
 # creating the dataset
 X, y = make_classification(n_samples=n_samples, n_features=n_features, n_informative=6, n_redundant=4, n_clusters_per_class=3, flip_y=0.27, class_sep=1, random_state=1979)
 
-# creating a df with X and y as columns
+# creating a df from X and y
 df = pd.DataFrame(X, columns=['feature_{}'.format(i) for i in range(n_features)])
 df['criterion'] = y
 
@@ -60,7 +60,33 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 ```
 
-Now we can fit and fine-tune the XGBoost ML model.
+```{r warning = FALSE, message = FALSE, echo=TRUE}
+
+library(DT)
+library(tidyverse)
+library(reticulate)
+
+# table dataviz
+DT::datatable(
+  py$df,
+  class = 'cell-border stripe', 
+  filter = 'top',
+  extensions = 'Buttons',
+  fillContainer = FALSE,
+  rownames= FALSE,
+  options = list(
+    pageLength = 5, 
+    autoWidth = TRUE,
+    dom = 'Bfrtip',
+    buttons = c('copy'), 
+    scrollX = TRUE, 
+    selection="multiple"
+  )
+)
+
+```
+
+Now we can fit and fine-tune our ML (XGBoost) model.
 
 ```{python warning = FALSE, message = FALSE, echo=TRUE}
 
@@ -179,15 +205,17 @@ embedding = reducer.fit_transform(explanations_scaled)
 
 # plotting the explanations and predicted probability in 2D scatterplot 
 plt.close()
+plt.figure(figsize=(12, 8))
 scatter = plt.scatter(embedding[:, 0], embedding[:, 1], c='lightblue', s=50, alpha=0.5)
-plt.title('UMAP projection of prediction explanations and predicted probabilities\n', fontsize=13)
+plt.title('People with similar predictions and similar prediction drivers\n', fontsize=24)
+plt.figtext(0.05, 0.05, "UMAP projection of the LIME prediction explanations and predicted probabilities.", wrap=True, horizontalalignment='left', fontsize=12)
 plt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
 plt.tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
 plt.show()
 
 ```
 
-A clustering algorithm, such as HDBSCAN, can help us identify clusters.
+A clustering algorithm, such as HDBSCAN, can help us identify the clusters.
 
 ```{python warning = FALSE, message = FALSE, echo=TRUE, fig.width=13, fig.height=8}
 
@@ -201,23 +229,24 @@ clusterer.fit(embedding)
 clusters = clusterer.labels_
 
 # adding the cluster labels to the dataframe
-explanations_scaled_df['cluster'] = clusters
 explanations_df['cluster'] = clusters
 
 # plotting the clusters
 plt.close()
+plt.figure(figsize=(12, 8))
 cmap = plt.cm.get_cmap('tab20')
 norm = plt.Normalize(clusters.min(), clusters.max())
 scatter = plt.scatter(embedding[:, 0], embedding[:, 1], c=clusters, s=50, cmap=cmap, norm=norm, alpha=0.5)
 patches = [mpatches.Patch(color=cmap(norm(i)), label=f'Cluster {i}') for i in np.unique(clusters)]
 plt.legend(handles=patches, fontsize=12)
-plt.title('UMAP projection of prediction explanations and predicted probabilities\nwith clusters identified by HDBSCAN', fontsize=22)
+plt.title('People with similar predictions and similar prediction drivers\n', fontsize=24)
+plt.figtext(0.05, 0.05, "UMAP projection of the LIME prediction explanations and predicted probabilities. The clusters were identified using HDBSCAN.", wrap=True, horizontalalignment='left', fontsize=12)
 plt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
 plt.tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
 plt.show()
 
 ```
-There seem to be about eight clusters and some outliers (cluster -1). Let's look at how they differ in terms of predicted probabilities. There appear to be four clusters that have increased (clusters 3, 5, 6, and 7) and decreased predicted probabilities (clusters 0, 2, and 4), respectively, and one cluster with more mixed predictions (cluster 1).  
+There seem to be about eight clusters and some outliers (cluster -1). Let's look at how they differ in terms of predicted probabilities. According to the chart below, there appear to be four clusters with increased predicted probabilities (clusters 3, 5, 6, and 7), three with decreased predicted probabilities (clusters 0, 2, and 4), and one with more mixed predictions (cluster 1).  
 
 ```{python warning = FALSE, message = FALSE, echo=TRUE, fig.width=13, fig.height=8}
 
@@ -225,8 +254,10 @@ import matplotlib.colorbar as colorbar
 
 # plotting the distribution of probability of positive classes
 plt.close()
-scatter = plt.scatter(embedding[:, 0], embedding[:, 1], c=explanations_scaled_df['predicted_class_proba'], cmap='viridis', s=50, alpha = 0.5)
-plt.title('UMAP projection of prediction explanations and predicted probabilities\n', fontsize=22)
+plt.figure(figsize=(12, 8))
+scatter = plt.scatter(embedding[:, 0], embedding[:, 1], c=y_pred_proba, cmap='viridis', s=50, alpha = 0.5)
+plt.title('People with similar predictions and similar prediction drivers\n', fontsize=24)
+plt.figtext(0.05, 0.05, "UMAP projection of the LIME prediction explanations and predicted probabilities.", wrap=True, horizontalalignment='left', fontsize=12)
 plt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
 plt.tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
 cbar = plt.colorbar(scatter)
@@ -239,14 +270,12 @@ Now we can check for the selected clusters which features and in which direction
 
 ```{r}
 
-library(DT)
-library(tidyverse)
-library(reticulate)
-
+# creating a summary for each cluster across all feature drivers of predicted probabilities of the positive class
 tab1 <- py$explanations_df %>% 
   dplyr::group_by(cluster) %>% 
   dplyr::summarise_all(~median(., na.rm = TRUE))
 
+# tab dataviz
 DT::datatable(
   round(tab1,2),
   class = 'cell-border stripe', 
@@ -277,18 +306,20 @@ Combined with information on the median values of these specific features, we ca
 ```{python}
 
 # creating a df with X and y from testing part of the dataset
-df_test = pd.DataFrame(X_test, columns=['feature_{}'.format(i) for i in range(n_features)])
-df_test['predicted_class_proba'] = predicted_class_proba
-df_test['cluster'] = clusters
+test_df = pd.DataFrame(X_test, columns=['feature_{}'.format(i) for i in range(n_features)])
+test_df['predicted_class_proba'] = y_pred_proba
+test_df['cluster'] = clusters
 
 ```
 
 ```{r}
 
-tab2 <- py$df_test %>% 
+# creating a summary for each cluster across all raw data and predicted probability of the positive class
+tab2 <- py$test_df %>% 
   dplyr::group_by(cluster) %>% 
   dplyr::summarise_all(~median(., na.rm = TRUE))
 
+# tab dataviz
 DT::datatable(
   round(tab2,2),
   class = 'cell-border stripe', 
@@ -314,7 +345,7 @@ DT::datatable(
   ) 
 
 ```
-I hope you'll find the method described here useful in one of your ML projects. Happy data sleuthing 🙂 
+Maybe you'll find the method described here useful in one of your ML projects. Happy data sleuthing 🙂 
 
 
 
