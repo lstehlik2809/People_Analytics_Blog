@@ -35,7 +35,7 @@ Its implementation is pretty straightforward:
 4. Use the data points from steps 2 and 3 to identify clusters with similar characteristics.
 5. Name and describe personas corresponding to the identified clusters.
 
-Let's see this in action using the Python code below. First, we need to create an artificial dataset on which we will demonstrate the method described above. We'll create a classification dataset (imagine, for example, that we're trying to predict sales performance based on some collaboration metrics, but feel free to imagine any scenario you like) and prepare a training and testing set to train our ML.   
+Let's see this in action using the Python code below. First, we need to create an artificial dataset on which we will demonstrate the method described above. We'll create a classification dataset - imagine, for example, that we're trying to predict sales performance based on some collaboration metrics, but feel free to imagine any scenario you like - and prepare a training and testing set to train our ML.   
 
 ```{python warning = FALSE, message = FALSE, echo=TRUE}
 
@@ -301,7 +301,7 @@ DT::datatable(
   ) 
 
 ```
-Combined with information on the median values of these specific features, we can get a good idea of the people who tend to under-perform and "why". For example, people in cluster 0 score too high in feature 6 and too low in feature 9; people in cluster 2 score too low in features 0, 3, 7 and 9; and people in cluster 4 score too low in features 0. Given these differences, it would be useful to consider different approaches to try to improve the sales performance of people based on information about which person they belong to. We could also repeat a similar analysis for clusters with higher predicted probabilities to see which combination of features tends to be associated with higher performance.
+Combined with information on the median values of these specific features, we can get a good idea of the people who tend to under-perform and "why". For example, people in cluster 0 score too high in feature 6 and too low in feature 9; people in cluster 2 score too low in features 0, 3, 7 and 9; and people in cluster 4 score too low in features 0. Given these differences, it would be useful to consider different approaches to try to improve the sales performance of people based on information about which persona they belong to. We could also repeat a similar analysis for clusters with higher predicted probabilities to see which combination of features tends to be associated with higher performance.
 
 ```{python}
 
