@@ -223,7 +223,6 @@ import hdbscan
 import matplotlib.patches as mpatches
 
 # HDBSCAN clustering
-model = hdbscan.HDBSCAN(min_cluster_size=2)
 clusterer = hdbscan.HDBSCAN(min_cluster_size=25, min_samples=10, cluster_selection_epsilon=0.3, prediction_data=True)
 clusterer.fit(embedding)
 clusters = clusterer.labels_
