@@ -9,7 +9,7 @@ author:
 date: 12-10-2022
 categories:
   - vacation
-  - wellbeing
+  - well-being
   - work-life balance
   - collaboration data
 output:

@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2023-11-18-job-demands-job-control-wellbeing/",
+    "title": "Surprising finding on the impact of job demands and control on workers’ well-being",
+    "description": "I just came across an interesting and surprising result from a Bayesian meta-analysis on the effect of the interaction between job demands and job control/resource on worker well-being.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-11-18",
+    "categories": [
+      "well-being",
+      "workload",
+      "job control",
+      "job resources",
+      "meta-analysis"
+    ],
+    "contents": "\r\nAccording to Huth & Chung-Yan (2023), in contradiction to the position of widely held theories, job control does not reduce the negative impact of job demands on workers’ well-being.\r\nAs can be seen in the table below, the data (104 effect sizes of aggregate-level data and 14 participant-level datasets) provided strong evidence for the absence of the interaction between job demands and control.\r\n\r\n\r\n\r\nAt the same time, however, the authors themselves emphasize that “[these] findings do not suggest that job demands and job control are not important work design features when considering the well-being of workers. Their direct effects on worker well-being are well-established in past research.”\r\n“The important conclusion of [the] study is that increased job control cannot offset the deleterious impact that high workloads have on workers. [This means that assuming] that employee well-being is a priority, workload should be restricted irrespective of the positive benefits of increasing employee control.”\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-11-18-job-demands-job-control-wellbeing/./pic.png",
+    "last_modified": "2023-11-18T17:02:16+01:00",
+    "input_file": "job-demands-job-control-wellbeing.knit.md",
+    "preview_width": 1024,
+    "preview_height": 1024
+  },
+  {
     "path": "posts/2023-11-09-personas-based-on-ml-local-interpretation-algos/",
     "title": "Personas based on ML local interpretation algorithms",
     "description": "A demonstration of one method useful for sharing insights from fitted ML models.",
@@ -1178,14 +1203,14 @@
     "date": "2022-12-10",
     "categories": [
       "vacation",
-      "wellbeing",
+      "well-being",
       "work-life balance",
       "collaboration data"
     ],
-    "contents": "\r\nAlthough most people know they need time off to stay mentally sharp,\r\nproductive, and resilient over the long term, many confess they work\r\nwhen they’re on vacation.\r\nThe data we collect and analyze at Time is Ltd. confirms this sad\r\ntruth. As the first chart illustrates, on more than 75% of vacation days\r\npeople show some collaborative activity, here measured by attending\r\nnon-recurring meetings, sending emails, and editing shared files.\r\n\r\nHowever, the same data also suggests what could be part of the remedy\r\nfor this unsatisfactory state of affairs. The second chart shows that\r\nthere is a small but not insignificant positive relationship between the\r\ntime that managers and their direct reports spend collaborating during\r\nvacation. The chart also shows that managers tend to collaborate more\r\nintensely during vacation than their direct reports, which is probably\r\nnot too much of a surprise.\r\n\r\nThe data is thus in line with the quite often mentioned suggestion\r\nthat managers should be better role models for their direct reports on\r\nhow to behave during vacation. As in other areas of people management,\r\nit is not enough to lay down the rules - the “playing captain” must play\r\nby those rules as well.\r\nHow are you doing in this respect? And do you have any tricks that\r\nhelp you unplug from work during vacations?\r\n\r\n\r\n\r\n",
+    "contents": "\r\nAlthough most people know they need time off to stay mentally sharp, productive, and resilient over the long term, many confess they work when they’re on vacation.\r\nThe data we collect and analyze at Time is Ltd. confirms this sad truth. As the first chart illustrates, on more than 75% of vacation days people show some collaborative activity, here measured by attending non-recurring meetings, sending emails, and editing shared files.\r\n\r\nHowever, the same data also suggests what could be part of the remedy for this unsatisfactory state of affairs. The second chart shows that there is a small but not insignificant positive relationship between the time that managers and their direct reports spend collaborating during vacation. The chart also shows that managers tend to collaborate more intensely during vacation than their direct reports, which is probably not too much of a surprise.\r\n\r\nThe data is thus in line with the quite often mentioned suggestion that managers should be better role models for their direct reports on how to behave during vacation. As in other areas of people management, it is not enough to lay down the rules - the “playing captain” must play by those rules as well.\r\nHow are you doing in this respect? And do you have any tricks that help you unplug from work during vacations?\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-12-17-collaboration-during-vacations/./outOfOffice.jpg",
-    "last_modified": "2022-12-17T11:42:35+01:00",
-    "input_file": {}
+    "last_modified": "2023-11-18T16:54:07+01:00",
+    "input_file": "collaboration-during-vacations.knit.md"
   },
   {
     "path": "posts/2022-12-07-mission-scale-from-tas/",
