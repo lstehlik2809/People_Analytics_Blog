@@ -23,7 +23,7 @@ output:
 ---
 
 
-According to Huth & [Chung-Yan (2023)](https://psyarxiv.com/z5bdk/){target="_blank"}, in contradiction to the position of widely held theories, job control does not reduce the negative impact of job demands on workers' well-being.
+According to [Huth & Chung-Yan (2023)](https://psyarxiv.com/z5bdk/){target="_blank"}, in contradiction to the position of widely held theories, job control does not reduce the negative impact of job demands on workers' well-being.
 
 As can be seen in the table below, the data (104 effect sizes of aggregate-level data and 14 participant-level datasets) provided strong evidence for the absence of the interaction between job demands and control.
 
