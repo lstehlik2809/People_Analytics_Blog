@@ -1,7 +1,7 @@
 ---
 title: "Surprising finding on the impact of job demands and control on workers’ well-being"
 description: |
-  I just came across an interesting and surprising result from a Bayesian meta-analysis on the effect of the interaction between job demands and job control/resource on worker well-being. 
+  I just came across an interesting and surprising result from a Bayesian meta-analysis on the effect of the interaction between job demands and job control on worker well-being. 
 preview: ./pic.png
 author:
   - name: Luděk Stehlík
@@ -9,9 +9,8 @@ author:
 date: 11-18-2023
 categories:
   - well-being
-  - workload
+  - job demands
   - job control
-  - job resources
   - meta-analysis
 output:
   distill::distill_article:
@@ -23,9 +22,9 @@ output:
 ---
 
 
-According to [Huth & Chung-Yan (2023)](https://psyarxiv.com/z5bdk/){target="_blank"}, in contradiction to the position of widely held theories, job control does not reduce the negative impact of job demands on workers' well-being.
+According to [Huth & Chung-Yan (2023)](https://psyarxiv.com/z5bdk/){target="_blank"}, contrary to the position of many theories in the field of occupational health and stress, job control does not reduce the negative impact of job demands on workers' well-being.
 
-As can be seen in the table below, the data (104 effect sizes of aggregate-level data and 14 participant-level datasets) provided strong evidence for the absence of the interaction between job demands and control.
+As you can see from the table below, the data provided strong evidence for the absence of the interaction between job demands and control.
 
 <div style="text-align:center">
 ![](./tab.png){width=100%}
