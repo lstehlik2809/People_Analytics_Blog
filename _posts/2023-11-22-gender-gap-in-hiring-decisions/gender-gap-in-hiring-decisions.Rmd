@@ -27,7 +27,7 @@ output:
 * Discrimination against women for male-typed and balanced jobs decreased across time.
 * Discrimination against men for female-typed jobs remained stable across time.
 * Average effect is small - the average odds of male applicants to receive a callback is 0.91 times the odds of equally qualified female applicants (with 95% CI from 0.86 to 0.97). 
-* Heterogeneity of true effects is very high, specifically 83% of total variance across studies can be attributed to heterogeneity rather than random chance.
+* Heterogeneity of true effects is very high, specifically 83% of total variance across studies can be attributed to heterogeneity rather than random chance, so the average effect is not so telling.
 * In addition to the meta-analysis, the study also included a forecasting challenge in which researchers and laypeople attempted to accurately estimate both time-trends and the current pervasiveness of gender biases in selection settings. Forecasters expected observed decline, but overestimated the degree of remaining bias.
 
 <div style="text-align:center">
