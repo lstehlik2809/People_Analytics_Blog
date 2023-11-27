@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Rebuilding an employee survey with the help of NLP tools</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools</link>
+      <description>Using LLM and text embeddings to assist in implementing new constructs into the existing employee survey.</description>
+      <category>employee survey</category>
+      <category>nlp</category>
+      <category>llm</category>
+      <category>psychometrics</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools</guid>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools/./slap_pic.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Evidence on the presence of gender bias in selection settings</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +32,7 @@
       <category>open science</category>
       <category>forecasting</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-22-gender-gap-in-hiring-decisions</guid>
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-22-gender-gap-in-hiring-decisions/./gendergap.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
