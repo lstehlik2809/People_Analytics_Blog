@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://blog-about-people-analytics.netlify.com/about.html</loc>
-    <lastmod>2023-09-16T13:24:42+02:00</lastmod>
+    <lastmod>2023-04-14T11:51:31+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.com/bio.html</loc>
-    <lastmod>2023-09-16T13:24:42+02:00</lastmod>
+    <lastmod>2023-04-14T11:47:08+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.com/</loc>
-    <lastmod>2023-09-16T13:24:42+02:00</lastmod>
+    <lastmod>2023-06-22T12:57:30+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings/</loc>
+    <lastmod>2023-11-29T05:27:06+01:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools/</loc>

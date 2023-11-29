@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2023-11-29-big-five-personality-and-earnings/",
+    "title": "Link between the Big Five personality traits and earnings",
+    "description": "Check how your personality supports your earnings.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-11-29",
+    "categories": [
+      "personality",
+      "earnings",
+      "meta-analysis"
+    ],
+    "contents": "\r\nI recently stumbled upon a meta-analysis by Alderotti, Rapallini, & Traverso (2023) that explores the interesting topic of the link between the Big Five personality traits and earnings.\r\nWith one exception (Agreeableness?) there were no big surprises, IMO: “The association seems to be both positive and statistically significant for Openness, Conscientiousness, and Extraversion, while negative and statistically significant for Agreeableness and Neuroticism.”\r\nThe included meta-regression, which analysed the effect of differences between studies on the estimated effects, yielded some interesting but still quite expected findings and hypotheses:\r\nPart of the positive effect of Openness on earnings is mediated by cognitive ability, probably due to the fact that one aspect of Openness is correlated with intellect which directly and indirectly (through educational attainment) influences labor market success.\r\nConscientiousness can affect earnings not only directly, but also through its influence on workers’ educational career.\r\nPart of Neuroticism’s negative effect on earnings can be mediated by its negative impact on individual’s cognitive performance.\r\nThe influence of Extraversion and Agreeableness may be related to the fact that people choose/are chosen for different jobs that pay differently (e.g., extroverts may seek jobs that require more social interaction and pay better on average, and more agreeable individuals may be more likely to work in helping professions that offer lower pay on average).\r\nI know of at least two aspects of my personality that are unnecessarily costing me some of my potential money 🤑 Looks like I’m going to have to find a personality coach 🤓\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-11-29-big-five-personality-and-earnings/./money_leo.jpg",
+    "last_modified": "2023-11-29T05:27:06+01:00",
+    "input_file": "big-five-personality-and-earnings.knit.md"
+  },
+  {
     "path": "posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools/",
     "title": "Rebuilding an employee survey with the help of NLP tools",
     "description": "Using LLM and text embeddings to assist in implementing new constructs into the existing employee survey.",

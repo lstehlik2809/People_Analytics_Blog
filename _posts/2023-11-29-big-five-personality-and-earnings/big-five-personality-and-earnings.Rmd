@@ -1,0 +1,34 @@
+---
+title: "Link between the Big Five personality traits and earnings"
+description: |
+  Check how your personality supports your earnings. 
+preview: ./money_leo.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 11-29-2023
+categories:
+  - personality
+  - earnings
+  - meta-analysis 
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+I recently stumbled upon [a meta-analysis by Alderotti, Rapallini, & Traverso (2023)](https://www.econstor.eu/bitstream/10419/237085/1/GLO-DP-0902rev.pdf){target="_blank"} that explores the interesting topic of the link between the Big Five personality traits and earnings.
+
+With one exception (Agreeableness?) there were no big surprises, IMO: “*The association seems to be both positive and statistically significant for Openness, Conscientiousness, and Extraversion, while negative and statistically significant for Agreeableness and Neuroticism.*”
+
+The included meta-regression, which analysed the effect of differences between studies on the estimated effects, yielded some interesting but still quite expected findings and hypotheses:
+
+* Part of the positive effect of Openness on earnings is mediated by cognitive ability, probably due to the fact that one aspect of Openness is correlated with intellect which directly and indirectly (through educational attainment) influences labor market success.
+* Conscientiousness can affect earnings not only directly, but also through its influence on workers' educational career.
+* Part of Neuroticism’s negative effect on earnings can be mediated by its negative impact on individual’s cognitive performance. 
+* The influence of Extraversion and Agreeableness may be related to the fact that people choose/are chosen for different jobs that pay differently (e.g., extroverts may seek jobs that require more social interaction and pay better on average, and more agreeable individuals may be more likely to work in helping professions that offer lower pay on average).
+
+I know of at least two aspects of my personality that are unnecessarily costing me some of my potential money 🤑 Looks like I'm going to have to find a personality coach 🤓

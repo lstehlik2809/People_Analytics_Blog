@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Link between the Big Five personality traits and earnings</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings</link>
+      <description>Check how your personality supports your earnings.</description>
+      <category>personality</category>
+      <category>earnings</category>
+      <category>meta-analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings</guid>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings/./money_leo.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Rebuilding an employee survey with the help of NLP tools</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +30,7 @@
       <category>llm</category>
       <category>psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools</guid>
-      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools/./slap_pic.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
