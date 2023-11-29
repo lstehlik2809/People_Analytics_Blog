@@ -21,6 +21,30 @@
     "input_file": "big-five-personality-and-earnings.knit.md"
   },
   {
+    "path": "posts/2023-11-29-ebm-gpt-bot/",
+    "title": "How to support the adoption of Evidence-Based Management with a specialized GPT bot",
+    "description": "Let's create your own consultant to help you apply the principles of Evidence-Based Management.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-11-29",
+    "categories": [
+      "evidence-based management",
+      "organizational science",
+      "gpt",
+      "ai"
+    ],
+    "contents": "\r\nOne of the reasons why managers and organizations generally don’t apply the principles of Evidence-Based Management as often as they could or should is the perceived difficulty and complexity of the entire process. Hiring professional consultants is one solution, but it may be too expensive for many.\r\nHowever, with the introduction of customizable GPTs, there is now an affordable way to build a kind of EBM consultant that can help managers go through all the necessary steps to increase the odds of solving the right problems with the right solutions.\r\nAs a first and modest step in this direction, I have created a GPT bot named Assistant to the Evidence-Based Manager. It provides EBM-related consultancy based on general instructions and reliable materials about EBM. It will definitely not replace an experienced EBM consultant or practitioner, but it may help overcome the resistance threshold for adopting EBM principles in organizations.\r\n\r\n\r\n\r\nGive it a try and let me know what you think about this approach. Or even better, try building your own GPT bot that will do better than mine and share it with us 😉\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-11-29-ebm-gpt-bot/./gpt_bot.png",
+    "last_modified": "2023-11-29T12:18:51+01:00",
+    "input_file": "ebm-gpt-bot.knit.md",
+    "preview_width": 526,
+    "preview_height": 292
+  },
+  {
     "path": "posts/2023-11-27-rebuilding-a-survey-with-the-help-of-nlp-tools/",
     "title": "Rebuilding an employee survey with the help of NLP tools",
     "description": "Using LLM and text embeddings to assist in implementing new constructs into the existing employee survey.",

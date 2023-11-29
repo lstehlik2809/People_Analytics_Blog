@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Link between the Big Five personality traits and earnings</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,8 +17,21 @@
       <category>earnings</category>
       <category>meta-analysis</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings</guid>
-      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-29-big-five-personality-and-earnings/./money_leo.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>How to support the adoption of Evidence-Based Management with a specialized GPT bot</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-ebm-gpt-bot</link>
+      <description>Let's create your own consultant to help you apply the principles of Evidence-Based Management.</description>
+      <category>evidence-based management</category>
+      <category>organizational science</category>
+      <category>gpt</category>
+      <category>ai</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-11-29-ebm-gpt-bot</guid>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-11-29-ebm-gpt-bot/./gpt_bot.png" medium="image" type="image/png" width="526" height="292"/>
     </item>
     <item>
       <title>Rebuilding an employee survey with the help of NLP tools</title>
