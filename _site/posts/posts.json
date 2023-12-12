@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2023-12-12-reflective-and-intuitive-thinking-styles/",
+    "title": "Reflective and intuitive thinking styles",
+    "description": "A new construct on the block for employee selection and development?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-12-12",
+    "categories": [
+      "meta-analysis",
+      "performance",
+      "employee selection",
+      "employee development",
+      "psychometrics"
+    ],
+    "contents": "\r\nAlaybek et al. (2021) quite recently conducted a meta-analysis examining the relations between individual differences in reflective (rational) and intuitive thinking styles and workplace task performance, and showed that reflective thinking style has a positive and non-zero relation with task performance (ρ = 0.213).\r\nThis positive relation was stronger in environments characterized by higher task complexity, greater importance of creativity and innovation for work tasks, and higher time pressure associated with work tasks.\r\nIn the case of intuitive thinking style, there was a very small but positive relation with task performance (ρ = 0.051), and this relation was stronger in environments characterized by higher task complexity.\r\nMore important, incremental validity analyses revealed that reflective thinking style explains unique variance in task performance, beyond conscientiousness and intelligence.\r\nIt seems that a reflective thinking style may bear some extra clues to workplace performance. Not super surprising, but still far away from “Elementary, my dear Watson!” 😉\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-12-12-reflective-and-intuitive-thinking-styles/./thinker.png",
+    "last_modified": "2023-12-12T20:53:26+01:00",
+    "input_file": "reflective-and-intuitive-thinking-styles.knit.md",
+    "preview_width": 1770,
+    "preview_height": 2328
+  },
+  {
     "path": "posts/2023-11-29-big-five-personality-and-earnings/",
     "title": "Link between the Big Five personality traits and earnings",
     "description": "Check how your personality supports your earnings.",
