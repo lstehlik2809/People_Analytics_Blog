@@ -25,6 +25,30 @@
     "preview_height": 2328
   },
   {
+    "path": "posts/2023-12-13-gai-simulation-work-habits/",
+    "title": "Does GenAI make me a better (more rational) thinker? ",
+    "description": "A short reflection on one of the impacts of using GenAI on my work habits.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-12-13",
+    "categories": [
+      "work habits",
+      "generative ai",
+      "thinking tools",
+      "rationality"
+    ],
+    "contents": "\r\nWhen someone recently asked me how GenAI has changed my work habits, I realized that one of the profound changes is that I’m more often testing my ideas, assumptions, and hypotheses with various simulations, usually implemented in Python or R.\r\nI’ve done this also in the past, but GenAI has made it much easier and thus lowered the passing threshold. In the past, there would have had to be something really important or compelling for me to be willing to invest my time and energy into creating a simulation. Now that GenAI can take care of a lot of the technical stuff for me (but still under my supervision), I find it much easier to reach for this very useful thinking tool.\r\nLast time, for example, I had a hard time imagining clearly enough what the impact of unequal ratios of different employee segments at higher levels of the org hierarchy would be on some metric of interest, assuming no bias in people’s judgment, so to compensate for my poor imagination, I used GenAI to help me build a simulation that would allow me to see the answer more clearly.\r\nTime will tell if this new habit will last long enough to have a chance to better calibrate my believes and lead me to better decisions 🤞\r\nWhat about you? What work habits has GenAI changed in your case, if any?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png",
+    "last_modified": "2023-12-13T10:23:16+01:00",
+    "input_file": "gai-simulation-work-habits.knit.md",
+    "preview_width": 1024,
+    "preview_height": 1024
+  },
+  {
     "path": "posts/2023-11-29-big-five-personality-and-earnings/",
     "title": "Link between the Big Five personality traits and earnings",
     "description": "Check how your personality supports your earnings.",
