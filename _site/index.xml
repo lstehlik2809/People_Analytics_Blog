@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Strength-based development and power-law vs. normal distribution of performance</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-strength-based-development-and-distributions</link>
+      <description>Does a power-law distribution of performance, as opposed to a normal distribution, support the concept of strength-based development?</description>
+      <category>performance management</category>
+      <category>learning and development</category>
+      <category>python</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-strength-based-development-and-distributions</guid>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-02-strength-based-development-and-distributions/./bodybuilding.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Do high-low range goals aid in maintaining motivation over time?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +30,7 @@
       <category>motivation</category>
       <category>persistence</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-goal-setting</guid>
-      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-02-goal-setting/./goals.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
