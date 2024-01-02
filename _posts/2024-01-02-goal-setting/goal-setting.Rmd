@@ -27,5 +27,4 @@ Recently, I encountered a suggestion to establish high-low range goals rather th
 
 This all makes pretty good sense, yet I was surprised to find scant research on this topic, particularly outside the context of weight loss (see, for example, [the Scott & Nowlis' 2013 study](https://psycnet.apa.org/record/2013-32845-004){target="_blank"}). Maybe I was just looking in the wrong places, or using the wrong key terms. Does anyone have insights into relevant research from other fields, or have you experimented with this approach in your organization?
 
-However, given the low-stakes circumstances, the minimal investment required, the consistency of the technique with existing knowledge about human motivation and common sense, and the low likelihood of serious adverse effects, I think it is quite reasonable to bet on this particular technique and give it a try.
-
+However, given the low-stakes circumstances, the minimal investment required, the consistency of the technique with existing knowledge about human motivation and common sense, and the low likelihood of serious adverse effects, I think it is quite reasonable to bet on this particular technique and give it a try, even though there seems to be relatively little evidence available.
