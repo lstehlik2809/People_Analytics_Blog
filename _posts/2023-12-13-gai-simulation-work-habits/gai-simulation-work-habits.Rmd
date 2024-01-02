@@ -1,5 +1,5 @@
 ---
-title: "Does GenAI make me a better (more rational) thinker? "
+title: "Does GenAI make me a better (more rational) thinker?"
 description: |
   A short reflection on one of the impacts of using GenAI on my work habits. 
 preview: ./rodin-thinker2.png

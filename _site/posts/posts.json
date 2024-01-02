@@ -1,5 +1,51 @@
 [
   {
+    "path": "posts/2024-01-02-goal-setting/",
+    "title": "Do high-low range goals aid in maintaining motivation over time?",
+    "description": "Is there enough evidence to bet on this technique and give it a try?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-12-29",
+    "categories": [
+      "goal setting",
+      "resolution",
+      "motivation",
+      "persistence"
+    ],
+    "contents": "\r\nBeing at the time of year when the “fresh start” effect can help with achieving goals, like many, I’m contemplating what goals to set for the upcoming year and exploring strategies to enhance their attainability.\r\nRecently, I encountered a suggestion to establish high-low range goals rather than single-number targets. For example, aiming to run 8-12 km per week instead of a fixed 10 km. This approach is thought to offer a balanced mix of attainability and challenge, potentially leading to a greater feeling of accomplishment and, more importantly, a higher likelihood of goal re-engagement, i.e. sustained motivation to continue with one’s goals over time.\r\nThis all makes pretty good sense, yet I was surprised to find scant research on this topic, particularly outside the context of weight loss (see, for example, the Scott & Nowlis’ 2013 study). Maybe I was just looking in the wrong places, or using the wrong key terms. Does anyone have insights into relevant research from other fields, or have you experimented with this approach in your organization?\r\nHowever, given the low-stakes circumstances, the minimal investment required, the consistency of the technique with existing knowledge about human motivation and common sense, and the low likelihood of serious adverse effects, I think it is quite reasonable to bet on this particular technique and give it a try.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-01-02-goal-setting/./goals.jpg",
+    "last_modified": "2024-01-02T12:22:47+01:00",
+    "input_file": "goal-setting.knit.md"
+  },
+  {
+    "path": "posts/2023-12-13-gai-simulation-work-habits/",
+    "title": "Does GenAI make me a better (more rational) thinker?",
+    "description": "A short reflection on one of the impacts of using GenAI on my work habits.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2023-12-13",
+    "categories": [
+      "work habits",
+      "generative ai",
+      "thinking tools",
+      "rationality"
+    ],
+    "contents": "\r\nWhen someone recently asked me how GenAI has changed my work habits, I realized that one of the profound changes is that I’m more often testing my ideas, assumptions, and hypotheses with various simulations, usually implemented in Python or R.\r\nI’ve done this also in the past, but GenAI has made it much easier and thus lowered the passing threshold. In the past, there would have had to be something really important or compelling for me to be willing to invest my time and energy into creating a simulation. Now that GenAI can take care of a lot of the technical stuff for me (but still under my supervision), I find it much easier to reach for this very useful thinking tool.\r\nLast time, for example, I had a hard time imagining clearly enough what the impact of unequal ratios of different employee segments at higher levels of the org hierarchy would be on some metric of interest, assuming no bias in people’s judgment, so to compensate for my poor imagination, I used GenAI to help me build a simulation that would allow me to see the answer more clearly.\r\nTime will tell if this new habit will last long enough to have a chance to better calibrate my believes and lead me to better decisions 🤞\r\nWhat about you? What work habits has GenAI changed in your case, if any?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png",
+    "last_modified": "2024-01-02T12:28:00+01:00",
+    "input_file": "gai-simulation-work-habits.knit.md",
+    "preview_width": 1024,
+    "preview_height": 1024
+  },
+  {
     "path": "posts/2023-12-12-reflective-and-intuitive-thinking-styles/",
     "title": "Reflective and intuitive thinking styles",
     "description": "A new construct on the block for employee selection and development?",
@@ -23,30 +69,6 @@
     "input_file": "reflective-and-intuitive-thinking-styles.knit.md",
     "preview_width": 1770,
     "preview_height": 2328
-  },
-  {
-    "path": "posts/2023-12-13-gai-simulation-work-habits/",
-    "title": "Does GenAI make me a better (more rational) thinker? ",
-    "description": "A short reflection on one of the impacts of using GenAI on my work habits.",
-    "author": [
-      {
-        "name": "Luděk Stehlík",
-        "url": "https://www.linkedin.com/in/ludekstehlik/"
-      }
-    ],
-    "date": "2023-12-13",
-    "categories": [
-      "work habits",
-      "generative ai",
-      "thinking tools",
-      "rationality"
-    ],
-    "contents": "\r\nWhen someone recently asked me how GenAI has changed my work habits, I realized that one of the profound changes is that I’m more often testing my ideas, assumptions, and hypotheses with various simulations, usually implemented in Python or R.\r\nI’ve done this also in the past, but GenAI has made it much easier and thus lowered the passing threshold. In the past, there would have had to be something really important or compelling for me to be willing to invest my time and energy into creating a simulation. Now that GenAI can take care of a lot of the technical stuff for me (but still under my supervision), I find it much easier to reach for this very useful thinking tool.\r\nLast time, for example, I had a hard time imagining clearly enough what the impact of unequal ratios of different employee segments at higher levels of the org hierarchy would be on some metric of interest, assuming no bias in people’s judgment, so to compensate for my poor imagination, I used GenAI to help me build a simulation that would allow me to see the answer more clearly.\r\nTime will tell if this new habit will last long enough to have a chance to better calibrate my believes and lead me to better decisions 🤞\r\nWhat about you? What work habits has GenAI changed in your case, if any?\r\n\r\n\r\n\r\n",
-    "preview": "posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png",
-    "last_modified": "2023-12-13T10:23:16+01:00",
-    "input_file": "gai-simulation-work-habits.knit.md",
-    "preview_width": 1024,
-    "preview_height": 1024
   },
   {
     "path": "posts/2023-11-29-big-five-personality-and-earnings/",

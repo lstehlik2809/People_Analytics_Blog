@@ -7,7 +7,33 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Do high-low range goals aid in maintaining motivation over time?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-goal-setting</link>
+      <description>Is there enough evidence to bet on this technique and give it a try?</description>
+      <category>goal setting</category>
+      <category>resolution</category>
+      <category>motivation</category>
+      <category>persistence</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-goal-setting</guid>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-02-goal-setting/./goals.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Does GenAI make me a better (more rational) thinker?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits</link>
+      <description>A short reflection on one of the impacts of using GenAI on my work habits.</description>
+      <category>work habits</category>
+      <category>generative ai</category>
+      <category>thinking tools</category>
+      <category>rationality</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits</guid>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png" medium="image" type="image/png" width="1024" height="1024"/>
+    </item>
     <item>
       <title>Reflective and intuitive thinking styles</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,19 +47,6 @@
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-12-12-reflective-and-intuitive-thinking-styles</guid>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-12-12-reflective-and-intuitive-thinking-styles/./thinker.png" medium="image" type="image/png" width="1770" height="2328"/>
-    </item>
-    <item>
-      <title>Does GenAI make me a better (more rational) thinker? </title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits</link>
-      <description>A short reflection on one of the impacts of using GenAI on my work habits.</description>
-      <category>work habits</category>
-      <category>generative ai</category>
-      <category>thinking tools</category>
-      <category>rationality</category>
-      <guid>https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits</guid>
-      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png" medium="image" type="image/png" width="1024" height="1024"/>
     </item>
     <item>
       <title>Link between the Big Five personality traits and earnings</title>
