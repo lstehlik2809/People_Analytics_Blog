@@ -2,7 +2,7 @@
 title: 'Employee feedback analysis using tools from OpenAI'
 description: |
   How to use GPT and embeddings from OpenAI for identifying topics and related sentiments in employee feedback.
-preview: ./employeeListening.avif
+preview: ./Screenshot.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
