@@ -1,0 +1,103 @@
+---
+title: "How should teams be designed to be creative and innovative?"
+description: |
+  A brief overview of the results of a meta-analysis on the relationship between team design and team creativity and innovation. 
+preview: ./team_creativity_illustration.jpg
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 01-08-2024
+categories:
+  - team design
+  - innovation
+  - creativity
+  - leadership
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+If you are responsible for managing a team that is expected to be creative and come up with innovative solutions, you may be interested in the findings of [Byron et al.'s (2023)](https://onlinelibrary.wiley.com/doi/abs/10.1111/peps.12501){target="_blank"} meta-analysis of team-design-related antecedents of team creativity and innovation. The meta-analysis aggregated results from 134 field studies (11,353 teams) and 35 student studies (2,485 teams) and revealed the following regularities, among others:
+
+* Structuring teams to work interdependently (i.e. with greater interdependence of tasks and goals) is supportive of team creativity and innovation.
+* Leaders providing autonomy to team members have teams that are more creative and innovative and this relationship is stronger when leaders emphasize team autonomy than when they emphasize the autonomy of individual team members.
+* Related to the previous point, leaders who limit follower control also limit team creativity and innovation.
+*️ Team size, demographic diversity, and job-related diversity show only a weak relationship with team creativity and innovation.
+* Team task interdependence and supportive leadership are positively related to team creativity and innovation via processes of team collaboration (the extent to which team members work together to share information and knowledge) and team potency (the extent to which team members believe they can be effective).
+* There is evidence for a curvilinear relationship between team tenure and team creativity and innovation. Specifically, when teams are relatively new (~1 yr), being together longer leads to a slight decrease in team creativity/innovation; when teams are of moderate tenure (~2.5 yrs), being together longer has no effect on team creativity/innovation; and, when teams are quite mature (~9 yrs), being together longer leads to an increase in team creativity/innovation.
+
+```{python, dataviz}
+
+import pandas as pd
+from plotnine import *
+
+# uploading table with meta-analysis results
+data = pd.read_excel("./metaanalysis_results.xlsx")
+# extracting higher and lower borders of 95% CI
+data[['l95ci', 'h95ci']] = data['95CI'].str.split(',', expand=True).astype(float)
+
+# sorting the df for dataviz purposes
+data['abs_P'] = data['P'].abs()
+data_sorted = data.sort_values(by=['Category', 'abs_P'], ascending=[False, True])
+categories_order = data_sorted['Variable'].unique()
+data_sorted['Variable'] = pd.Categorical(data_sorted['Variable'], categories=categories_order, ordered=True)
+
+# defining colors used
+colors = {
+    'Team composition': '#e15759',  
+    'Task structure': '#f28e2b',  
+    'Organizational support': '#4e79a7'
+}
+
+# dataviz
+plot = (
+ggplot(data_sorted, aes(x="Variable", y="P", fill = "Category", color = "Category")) +
+    geom_hline(yintercept=0, linetype="dashed", color="grey") +
+    geom_point(size=3) +
+    geom_errorbar(aes(ymin='l95ci', ymax='h95ci'), width=0.3, size=1) +
+    scale_color_manual(values=colors) +
+    scale_fill_manual(values=colors) +
+    coord_flip() +
+    annotate('text', y=0.35, x="Educational level diversity", label='Data source: Byron et al. (2023)', color="grey", size = 9, fontstyle='italic') +
+    labs(
+        x = "",
+        y = "Optimally-weighted and corrected mean correlation (ρ) with 95% CI",
+        title = "Meta-analytic results for team design and team creativity/innovation",
+        fill = "",
+        color = ""
+    ) +
+    theme_bw() +
+    theme(    
+        panel_grid_major=element_blank(),  
+        panel_grid_minor=element_blank(),
+        legend_position="top",
+        legend_background=element_rect(fill="white"),
+        legend_box_margin=0,
+        legend_key=element_rect(fill="white", color=None),
+        axis_text=element_text(size=12), 
+        axis_title=element_text(size=14), 
+        plot_title=element_text(size=18, margin={'t': 0, 'r': 0, 'b': -5, 'l': 0}),  
+        legend_title=element_text(size=14),  
+        legend_text=element_text(size=12),
+        figure_size=(12, 6.5)
+    ) 
+)
+
+print(plot)
+
+```
+
+What might be the practical implications for managers?  
+
+* Focus on selecting team members who are diverse in terms of job-related factors such as educational background.
+* Ensure task and goal interdependence - design projects to require collaboration, provide team-level feedback, and create team accountability systems.
+* When leading innovative teams, adopt an approach aimed at supporting and encouraging - not controlling - the team as a whole as opposed to the individuals within the team.
+* Try to keep high-quality people in the team as team tenure is positively related to team creativity and innovation. 
+
+
+
+

@@ -2,7 +2,7 @@
 title: "Reflective and intuitive thinking styles"
 description: |
   A new construct on the block for employee selection and development? 
-preview: ./thinker.png
+preview: ./intuition_vs_reason.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/

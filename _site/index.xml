@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How should teams be designed to be creative and innovative?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-01-08-team-design-creativity-innovation</link>
+      <description>A brief overview of the results of a meta-analysis on the relationship between team design and team creativity and innovation.</description>
+      <category>team design</category>
+      <category>innovation</category>
+      <category>creativity</category>
+      <category>leadership</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-08-team-design-creativity-innovation</guid>
+      <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-08-team-design-creativity-innovation/./team_creativity_illustration.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Strength-based development and power-law vs. normal distribution of performance</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +30,7 @@
       <category>learning and development</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-02-strength-based-development-and-distributions</guid>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-02-strength-based-development-and-distributions/./bodybuilding.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -58,7 +71,7 @@
       <category>psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2023-12-12-reflective-and-intuitive-thinking-styles</guid>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-12-12-reflective-and-intuitive-thinking-styles/./thinker.png" medium="image" type="image/png" width="1770" height="2328"/>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2023-12-12-reflective-and-intuitive-thinking-styles/./intuition_vs_reason.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Link between the Big Five personality traits and earnings</title>

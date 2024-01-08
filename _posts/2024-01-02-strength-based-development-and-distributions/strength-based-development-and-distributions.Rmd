@@ -86,7 +86,7 @@ plot = (
     axis_text_y = element_text(size=10),
     panel_grid_major = element_blank(),
     panel_grid_minor = element_blank(),
-    figure_size=(13, 6),
+    figure_size=(13, 6)
   )
 )
 
