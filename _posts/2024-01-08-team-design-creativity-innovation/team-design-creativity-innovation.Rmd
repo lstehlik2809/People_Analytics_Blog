@@ -12,6 +12,7 @@ categories:
   - innovation
   - creativity
   - leadership
+  - meta-analysis
 output:
   distill::distill_article:
     self_contained: false
@@ -26,7 +27,7 @@ If you are responsible for managing a team that is expected to be creative and c
 * Structuring teams to work interdependently (i.e. with greater interdependence of tasks and goals) is supportive of team creativity and innovation.
 * Leaders providing autonomy to team members have teams that are more creative and innovative and this relationship is stronger when leaders emphasize team autonomy than when they emphasize the autonomy of individual team members.
 * Related to the previous point, leaders who limit follower control also limit team creativity and innovation.
-*️ Team size, demographic diversity, and job-related diversity show only a weak relationship with team creativity and innovation.
+* Team size, demographic diversity, and job-related diversity show only a weak relationship with team creativity and innovation.
 * Team task interdependence and supportive leadership are positively related to team creativity and innovation via processes of team collaboration (the extent to which team members work together to share information and knowledge) and team potency (the extent to which team members believe they can be effective).
 * There is evidence for a curvilinear relationship between team tenure and team creativity and innovation. Specifically, when teams are relatively new (~1 yr), being together longer leads to a slight decrease in team creativity/innovation; when teams are of moderate tenure (~2.5 yrs), being together longer has no effect on team creativity/innovation; and, when teams are quite mature (~9 yrs), being together longer leads to an increase in team creativity/innovation.
 
