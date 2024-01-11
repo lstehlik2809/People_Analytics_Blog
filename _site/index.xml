@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 07 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Fighting with faking in personality assessments</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-01-11-personality-assessments-and-faking</link>
+      <description>A brief summary of the main results of a meta-analysis comparing psychometric characteristics of forced-choice and single-stimulus personality assessments in relation to faking.</description>
+      <category>personality</category>
+      <category>assessment</category>
+      <category>psychometrics</category>
+      <category>faking</category>
+      <category>validity</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-11-personality-assessments-and-faking</guid>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-11-personality-assessments-and-faking/./faking_illustration.png" medium="image" type="image/png" width="1024" height="1024"/>
+    </item>
     <item>
       <title>How should teams be designed to be creative and innovative?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +33,7 @@
       <category>leadership</category>
       <category>meta-analysis</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-08-team-design-creativity-innovation</guid>
-      <pubDate>Sun, 07 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-08-team-design-creativity-innovation/./team_creativity_illustration.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

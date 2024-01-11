@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2024-01-11-personality-assessments-and-faking/",
+    "title": "Fighting with faking in personality assessments",
+    "description": "A brief summary of the main results of a meta-analysis comparing psychometric characteristics of forced-choice and single-stimulus personality assessments in relation to faking.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-01-11",
+    "categories": [
+      "personality",
+      "assessment",
+      "psychometrics",
+      "faking",
+      "validity"
+    ],
+    "contents": "\r\nIf you are using personality assessments in a high-stakes setting where faking is a more frequent problem, such as in the context of employee selection, you should pay attention to the meta-analytic study by Speer et al. (2023) that compared forced-choice (FC) and traditional single-stimulus (SS) personality assessments in terms of criterion-related validity and susceptibility to faking in terms of mean shifts and decreases in validity.\r\n\r\n\r\n\r\nA specific feature of this study was that it compared FC and SS measures after placing them on an equal playing field by relying only on studies that examined matched assessments of each format, and thus, avoiding the extraneous confound of using comparisons from different contexts.\r\nAnd what were the results?\r\nAverage scores increased from honest to faked samples for both FC (d = .41) and SS scores (d = .75), though the effect was more pronounced for SS measures and with larger effects for context-desirable traits (FC d = .61 vs. SS d = .99).\r\nCriterion-related validity was similar between matched FC and SS measures overall (r′ = .19 vs. r′ = .18), however, when in faking contexts, FC scores exhibited greater criterion-related validity than SS measures (r′ = .18 vs. r′ = .04).\r\nSo, although FC measures are not completely immune to faking, they seem to show meaningful benefits over SS measures in contexts of faking.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-01-11-personality-assessments-and-faking/./faking_illustration.png",
+    "last_modified": "2024-01-11T14:21:47+01:00",
+    "input_file": "personality-assessments-and-faking.knit.md",
+    "preview_width": 1024,
+    "preview_height": 1024
+  },
+  {
     "path": "posts/2024-01-08-team-design-creativity-innovation/",
     "title": "How should teams be designed to be creative and innovative?",
     "description": "A brief overview of the results of a meta-analysis on the relationship between team design and team creativity and innovation.",
