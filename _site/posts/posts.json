@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2024-01-21-psychological-safety-and-rct/",
+    "title": "Fostering psychological safety in the workplace",
+    "description": "Can a simple intervention such as an email campaign help with fostering psychological safety in the workplace?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-01-21",
+    "categories": [
+      "psychological safety",
+      "rct",
+      "field experiment",
+      "evidence-based management",
+      "causality"
+    ],
+    "contents": "\r\nAt Sanofi, we recently welcomed Prof. Dr. Florian Englmaier at our People Insights Seminar, where he shared with us his intriguing research on interventions that enhance psychological safety.\r\nAs he pointed out at the start of his talk, while we all understand the importance of psychological safety, the specific actions that effectively increase it are less clear. His research aimed to bridge this knowledge gap.\r\nConducted in a real-world setting, the study encompassed over 1,000 teams and more than 7,000 employees within a global healthcare company. It utilized a RCT research design, a method not commonly seen in People Analytics, but more effective for identifying causal relationships.\r\nThe research team compared two types of brief 6-week email campaigns, which encouraged managers to refocus and make regular their 1:1 meetings, against a control group:\r\nThe first group of managers was prompted to focus on addressing employees’ individual needs and aspirations.\r\nThe second group was encouraged to help employees better execute tasks and eliminate obstacles impacting their performance.\r\nBelow you can see the used meeting guidance corresponding to the two treatment conditions (individual needs vs. tasks focus).\r\n\r\n\r\n\r\n\r\n\r\n\r\nDespite their simplicity, these interventions led to a noticeable increase in psychological safety, particularly in the group focusing on employees’ individual needs. Additionally, they improved the relationships to and perceptions of the managers.\r\nOther significant and instrumental findings included an increase in the frequency of 1:1 meetings, as evidenced by Microsoft Workplace Analytics and survey data, and the observation that junior managers benefited most from these interventions.\r\nFor more details, see the original paper.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-01-21-psychological-safety-and-rct/./free_communication.jpg",
+    "last_modified": "2024-01-21T11:48:04+01:00",
+    "input_file": "psychological-safety-and-rct.knit.md"
+  },
+  {
     "path": "posts/2024-01-08-team-design-creativity-innovation/",
     "title": "How should teams be designed to be creative and innovative?",
     "description": "A brief overview of the results of a meta-analysis on the relationship between team design and team creativity and innovation.",
@@ -192,14 +215,14 @@
     "date": "2023-11-22",
     "categories": [
       "gender discrimination",
-      "field experiments",
+      "field experiment",
       "meta-analysis",
       "open science",
       "forecasting"
     ],
     "contents": "\r\nSchaerer et al. (2023) conducted a pre-registered meta-analysis of 44 years of field experiments on gender gaps in hiring decisions with quite interesting results:\r\nDiscrimination against women for male-typed and balanced jobs decreased across time.\r\nDiscrimination against men for female-typed jobs remained stable across time.\r\nAverage effect is small - the average odds of male applicants to receive a callback is 0.91 times the odds of equally qualified female applicants (with 95% CI from 0.86 to 0.97).\r\nHeterogeneity of true effects is very high, specifically 83% of total variance across studies can be attributed to heterogeneity rather than random chance, so the average effect is not so telling.\r\nIn addition to the meta-analysis, the study also included a forecasting challenge in which researchers and laypeople attempted to accurately estimate both time-trends and the current pervasiveness of gender biases in selection settings. Forecasters expected observed decline, but overestimated the degree of remaining bias.\r\n\r\n\r\n\r\nNote on the attached chart: In all figures, odds ratios above 1 indicate a greater preference for male applicants and odds ratios below 1 indicate greater preference for female applicants.\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-11-22-gender-gap-in-hiring-decisions/./gendergap.jpg",
-    "last_modified": "2023-11-26T11:42:26+01:00",
+    "last_modified": "2024-01-21T11:42:18+01:00",
     "input_file": "gender-gap-in-hiring-decisions.knit.md"
   },
   {

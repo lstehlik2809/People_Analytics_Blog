@@ -9,7 +9,7 @@ author:
 date: 11-22-2023
 categories:
   - gender discrimination
-  - field experiments
+  - field experiment
   - meta-analysis
   - open science
   - forecasting
