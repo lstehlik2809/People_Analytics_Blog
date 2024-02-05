@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 20 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Creating new candidate topic labels on the fly during topic analysis with GenAI</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-02-05-topic-analysis-with-genai</link>
+      <description>Description of a simple hack to simulate the work of a qualitative researcher classifying comments from respondents using GenAI.</description>
+      <category>topic analysis</category>
+      <category>feedback analysis</category>
+      <category>genai</category>
+      <category>gpt</category>
+      <category>ai</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-05-topic-analysis-with-genai</guid>
+      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-05-topic-analysis-with-genai/./feedback.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Fostering psychological safety in the workplace</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +33,7 @@
       <category>evidence-based management</category>
       <category>causality</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-01-21-psychological-safety-and-rct</guid>
-      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-01-21-psychological-safety-and-rct/./free_communication.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
