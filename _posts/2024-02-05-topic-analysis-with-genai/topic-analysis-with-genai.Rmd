@@ -34,7 +34,7 @@ The whole process is thus not dissimilar to what a qualitative researcher does w
 
 A bit of a challenge may be how to enforce that GenAI comes up with topic labels at a level of abstraction appropriate for a given use case. Based on my experiments, it seems that by providing some examples and counterexamples in the prompt and/or by providing "seed" topic labels at the "right" level of abstraction, you can nudge GenAI to create new labels at the desired level of abstraction.
 
-Below is a short snippet of code implementing this approach to topic analysis that you can use for inspiration. Happy topic modeling and exploration 😉 
+Below is a short snippet of Python code implementing this approach to topic analysis that you can use for inspiration. Happy topic modeling and exploration 😉 
 
 ```{python, eval=FALSE}
 
@@ -48,24 +48,23 @@ def identify_topics(text, topic_labels, item_text):
         temperature=0,
         messages=[
             {"role": "system", "content": f"""
-            You are a first-class expert in analyzing feedback provided by employees in employee surveys. 
-            When analyzing employee feedback, always consider the wording of the survey item to which the employee
-            responded to better understand the feedback. Here is the wording of the survey item: {item_text}       
-            Here is the list of available topic labels: {','.join(topic_labels)}"""},
+            You are a first-class expert in analyzing feedback provided by employees in employee surveys.
+            Here is a list of available topic labels for feedback categorization: {','.join(topic_labels)}"""},
             {"role": "user", "content": f"""              
-            First, summarize for yourself the feedback provided by the employee to make sure you have understood 
-            it correctly.
-            Then, from the list of available topic labels, select those that most accurately capture all important
-            aspects of employee feedback. Avoid using topic labels that only weakly, i.e. indirectly or remotely,
-            relate to the meaning of employee feedback. Use the topic label only if you are sure that it really
-            captures one of the important aspects of employee feedback. Don't make things up and report only what 
-            is really in the employee feedback.    
+            First, summarize for yourself the feedback provided by an employee. When doing so, be sure to
+            consider the wording of the survey item on which the employee has commented to make sure you have
+            understood her feedback correctly. Here is the wording of the survey item: {item_text} 
+            Then, based on this summarization, from the list of available topic labels, select those that
+            accurately capture all important aspects of the employee feedback. You are forbidden to use topic 
+            labels that only indirectly or remotely relate to the meaning of employee feedback. Use the topic 
+            label only if you are sure that it accurately captures one of the important aspects of employee
+            feedback. Don't make things up and report only what is really in the employee feedback.    
             Important: If the topic labels available in the list don't capture some important aspects of employee
             feedback, you must create and use a new topic label or multiple labels to capture these aspects of
-            employee feedback. New topic labels must be short, concise, not too general, but specific enough that
+            employee feedback. New topic labels must be short, concise, not too general, and specific enough that
             the management can easily understand what the feedback is about. For example, a more specific topic
-            label "HR Ticketing System Problems" would be better than a more general topic label "HR System
-            Inefficiencies". 
+            label like "HR Ticketing System Problems" would be much better than a more general topic label like 
+            "HR System Inefficiencies". 
             As a response provide only a string of relevant topic labels separated by commas, nothing more. 
             Here is the employee's feedback: {text}
             """}
