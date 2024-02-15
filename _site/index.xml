@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Biases introduced by video backgrounds during video interviews</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-02-15-video-interviews-and-biases</link>
+      <description>Every tool used for employee selection introduces its own potential biases into the process. This holds true also for video interviews, which have become increasingly popular among recruiters in recent years.</description>
+      <category>employee selection</category>
+      <category>video interview</category>
+      <category>bias</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-15-video-interviews-and-biases</guid>
+      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-15-video-interviews-and-biases/./video_backgrounds.png" medium="image" type="image/png" width="1336" height="771"/>
+    </item>
     <item>
       <title>Creating new candidate topic labels on the fly during topic analysis with GenAI</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>gpt</category>
       <category>ai</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-05-topic-analysis-with-genai</guid>
-      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-05-topic-analysis-with-genai/./feedback.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
