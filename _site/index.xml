@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 14 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Does your team belong among “bulbs” or “wines”?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-02-26-expected-remaining-time</link>
+      <description>Sharing one learning from the awesome book Probably Overthinking It by Allen B. Downey.</description>
+      <category>employee turnover</category>
+      <category>statistical analysis</category>
+      <category>python</category>
+      <category>book tip</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-26-expected-remaining-time</guid>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-26-expected-remaining-time/./bulb_wine.png" medium="image" type="image/png" width="1001" height="888"/>
+    </item>
     <item>
       <title>Biases introduced by video backgrounds during video interviews</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +30,7 @@
       <category>video interview</category>
       <category>bias</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-15-video-interviews-and-biases</guid>
-      <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-15-video-interviews-and-biases/./video_backgrounds.png" medium="image" type="image/png" width="1336" height="771"/>
     </item>
     <item>
