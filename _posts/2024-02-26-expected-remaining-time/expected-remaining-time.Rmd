@@ -1,5 +1,5 @@
 ---
-title: 'Does your team belong among “bulbs” or “wines”?'
+title: 'Does your team belong among “light bulbs” or “wines”?'
 description: |
   Sharing one learning from the awesome book Probably Overthinking It by Allen B. Downey.
 preview: ./bulb_wine.png
@@ -25,7 +25,7 @@ For those interested in data analytics, I highly recommend the book [Probably Ov
 
 Even if you are not a beginner in data analytics, there is a good chance that you will come across some new and valuable insights, as it happened to me.
 
-For example, as a people analytics practitioner, I found it particularly enlightening to examine the survival function - commonly used in employee attrition modeling - from the perspective of average remaining time and related concepts of *new better than used in expectation* (NBUE) vs. *new worse than used in expectation* (NWUE). From now on, for me, org units exhibiting NBUE and NWUE characteristics are "bulbs" and "wines", respectively.
+For example, as a people analytics practitioner, I found it particularly enlightening to examine the survival function - commonly used in employee attrition modeling - from the perspective of average remaining time and related concepts of *new better than used in expectation* (NBUE) vs. *new worse than used in expectation* (NWUE). From now on, for me, org units exhibiting NBUE and NWUE characteristics are "light bulbs" and "wines", respectively.
 
 If you’re curious about how to get from survival function to average remaining time, check out the short snippets of Python code below that do the trick. It's not a big deal, but it can still save you some time.
 
@@ -183,7 +183,7 @@ def remaining_time_bootstraping_plotting(data, n_bootstrap=100, plot_name='chart
 ```
 
 
-Now let's estimate and visualize these two curves for a "bulb" team (i.e., a team exhibiting the NBUE characteristic)...
+Now let's estimate and visualize these two curves for a "light bulb" team (i.e., a team exhibiting the NBUE characteristic)...
 
 ```{python, bulb}
 
