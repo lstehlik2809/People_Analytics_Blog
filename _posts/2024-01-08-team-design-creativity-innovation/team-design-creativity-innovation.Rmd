@@ -31,7 +31,7 @@ If you are responsible for managing a team that is expected to be creative and c
 * Team task interdependence and supportive leadership are positively related to team creativity and innovation via processes of team collaboration (the extent to which team members work together to share information and knowledge) and team potency (the extent to which team members believe they can be effective).
 * There is evidence for a curvilinear relationship between team tenure and team creativity and innovation. Specifically, when teams are relatively new (~1 yr), being together longer leads to a slight decrease in team creativity/innovation; when teams are of moderate tenure (~2.5 yrs), being together longer has no effect on team creativity/innovation; and, when teams are quite mature (~9 yrs), being together longer leads to an increase in team creativity/innovation.
 
-```{python, dataviz}
+```{python, data}
 
 import pandas as pd
 from plotnine import *
@@ -47,48 +47,58 @@ data_sorted = data.sort_values(by=['Category', 'abs_P'], ascending=[False, True]
 categories_order = data_sorted['Variable'].unique()
 data_sorted['Variable'] = pd.Categorical(data_sorted['Variable'], categories=categories_order, ordered=True)
 
-# defining colors used
-colors = {
-    'Team composition': '#e15759',  
-    'Task structure': '#f28e2b',  
-    'Organizational support': '#4e79a7'
-}
+```
 
-# dataviz
-plot = (
-ggplot(data_sorted, aes(x="Variable", y="P", fill = "Category", color = "Category")) +
-    geom_hline(yintercept=0, linetype="dashed", color="grey") +
-    geom_point(size=3) +
-    geom_errorbar(aes(ymin='l95ci', ymax='h95ci'), width=0.3, size=1) +
-    scale_color_manual(values=colors) +
-    scale_fill_manual(values=colors) +
-    coord_flip() +
-    annotate('text', y=0.35, x="Educational level diversity", label='Data source: Byron et al. (2023)', color="grey", size = 9, fontstyle='italic') +
-    labs(
-        x = "",
-        y = "Optimally-weighted and corrected mean correlation (ρ) with 95% CI",
-        title = "Meta-analytic results for team design and team creativity/innovation",
-        fill = "",
-        color = ""
-    ) +
-    theme_bw() +
-    theme(    
-        panel_grid_major=element_blank(),  
-        panel_grid_minor=element_blank(),
-        legend_position="top",
-        legend_background=element_rect(fill="white"),
-        legend_box_margin=0,
-        legend_key=element_rect(fill="white", color=None),
-        axis_text=element_text(size=12), 
-        axis_title=element_text(size=14), 
-        plot_title=element_text(size=18, margin={'t': 0, 'r': 0, 'b': 35, 'l': 0}),  
-        legend_title=element_text(size=14),  
-        legend_text=element_text(size=12),
-        figure_size=(12, 6.5)
-    ) 
+
+```{r, dataviz, fig.width=12, fig.height=6.5}
+
+library(reticulate)
+library(ggplot2)
+
+colors = c(
+  'Team composition'='#e15759',  
+  'Task structure'='#f28e2b',  
+  'Organizational support'='#4e79a7'
 )
 
-print(plot)
+ggplot(py$data_sorted, aes(x=Variable, y=P, fill = Category, color = Category)) +
+  geom_hline(yintercept=0, linetype="dashed", color="grey") +
+  geom_point(size=3) +
+  geom_errorbar(aes(ymin=l95ci, ymax=h95ci), width=0.3, size=1) +
+  scale_color_manual(values=colors) +
+  scale_fill_manual(values=colors) +
+  coord_flip() +
+  labs(
+    x = "",
+    y = "Optimally-weighted and corrected mean correlation (ρ) with 95% CI",
+    title = "Meta-analytic results for team design and team creativity/innovation",
+    fill = "",
+    color = "",
+    caption = "Data source: Byron et al. (2023)"
+  ) +
+  theme_bw() +
+  ggplot2::theme(
+    plot.title = element_text(color = '#2C2F46', face = "bold", size = 18, margin=margin(0,0,12,0)),
+    plot.subtitle = element_text(color = '#2C2F46', face = "plain", size = 15, margin=margin(0,0,12,0)),
+    plot.caption = element_text(color = '#2C2F46', face = "plain", size = 11, hjust = 0),
+    axis.title.x.bottom = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0), color = '#2C2F46', face = "plain", size = 13, hjust = 0),
+    axis.text = element_text(color = '#2C2F46', face = "plain", size = 12),
+    axis.line = element_line(colour = "#E0E1E6"),
+    axis.ticks = element_line(color = "#E0E1E6"),
+    strip.text.x = element_text(size = 11, face = "plain"),
+    legend.position= "top",
+    legend.key = element_rect(fill = "white"),
+    legend.key.width = unit(1.6, "line"),
+    legend.margin = margin(0,0,0,0, unit="cm"),
+    legend.text = element_text(color = '#2C2F46', face = "plain", size = 12),
+    panel.background = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    plot.margin=unit(c(5,5,5,5),"mm"), 
+    plot.title.position = "plot",
+    plot.caption.position =  "plot"
+  )
 
 ```
 
