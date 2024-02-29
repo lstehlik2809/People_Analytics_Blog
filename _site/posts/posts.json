@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2024-02-29-personality-frameworks-contest/",
+    "title": "A showdown between the Big Five, Enneagram, MBTI, and astrology",
+    "description": "Who you got your money on? 😉",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-02-29",
+    "categories": [
+      "personality",
+      "predictive validity",
+      "big five",
+      "enneagram",
+      "mbti",
+      "astrology"
+    ],
+    "contents": "\r\nJust came across a nice, however small (N=559) and, AFAIK, non-peer reviewed, study comparing accuracy of popular personality test frameworks at predicting 37 different life outcomes (e.g., frequency of exercise, life satisfaction, number of close friends, etc.).\r\nThe main findings? They shouldn’t be a big surprise to I/O psych folks, but IMO they still contain two or three interesting, not widely known details.\r\nThe Big Five personality test was more accurate than Jungian (MBTI-based) and Enneagram tests in predicting life outcomes. Fun fact, MBTI-style test was halfway between science and astrology, literally 🧙️\r\nThe accuracy of these tools is negatively related to their popularity as measured by the frequency of Google searches.\r\nRemoving Neuroticism from the Big Five reduced its predictive power significantly.\r\nMost personality traits form bell curves, suggesting that MBTI’s binary categorization may be less accurate.\r\nContinuous scores in the Jungian framework improved predictions over binary categories, but even with adjustments, the Big Five (minus Neuroticism) slightly outperformed the modified Jungian test.\r\nJungian traits correlated with specific Big Five traits, but combining both tests didn’t enhance predictive accuracy.\r\nDespite its simplicity, the Enneagram performed better than the binary Jungian Type but was still less effective than the Big Five.\r\nParticipants preferred their Jungian assessments, likely due to its more positive framing and missing Neuroticism trait.\r\n\r\n\r\n\r\nNote: Link to the related Scientific American article.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif",
+    "last_modified": "2024-02-29T10:27:49+01:00",
+    "input_file": "personality-frameworks-contest.knit.md"
+  },
+  {
     "path": "posts/2024-02-26-expected-remaining-time/",
     "title": "Does your team belong among “light bulbs” or “wines”?",
     "description": "Sharing one learning from the awesome book Probably Overthinking It by Allen B. Downey.",
