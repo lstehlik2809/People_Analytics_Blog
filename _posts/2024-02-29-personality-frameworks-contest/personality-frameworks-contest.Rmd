@@ -37,7 +37,8 @@ The main findings? They shouldn't be a big surprise to I/O psych folks, but IMO 
 * Participants preferred their Jungian assessments, likely due to its more positive framing and missing Neuroticism trait.
 
 <div style="text-align:center">
-[](./personality_frameworks_accuracy.png){width=100%}
+![](./personality_frameworks_accuracy.png){width=100%}
+
 </div>
 
 Note: [Link](https://www.scientificamerican.com/article/personality-tests-arent-all-the-same-some-work-better-than-others/){target="_blank"} to the related Scientific American article.
