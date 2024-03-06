@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2024-03-06-agile-project-management/",
+    "title": "Does agile pay off?",
+    "description": "During my career, I have been part of several teams that have organized their work using some of the existing agile methodologies. For the most part, agile principles made good sense to me and subjectively seemed to work, so I had no reason to question their supposed benefits.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-03-06",
+    "categories": [
+      "organizational science",
+      "project management",
+      "agile",
+      "meta-analysis"
+    ],
+    "contents": "\r\nI must admit with some shame that it was only when I came across the meta-analysis by Koch et al. (2023) that I wondered whether there was any systematic evidence to support the benefits of an Agile Project Management (APM).\r\nThe authors of this pre-registered meta-analysis (with k = 41 independent studies, N = 73,825) focused specifically on the affective, behavioral and cognitive outcomes of APM.\r\nWhat did they find? Beneficial effects of APM across all three outcomes:\r\nFor the affective outcomes of job satisfaction, affective strain and organizational commitment, the effect sizes were, on average, small.\r\nFor the behavioral outcomes of performance and innovative behavior, the effect sizes were medium to large.\r\nFor the cognitive outcome of psychological empowerment, the results of the meta‐analysis suggest a medium effect.\r\n\r\n\r\n\r\nInteresting were also the results of the analysis of moderating effects of contextual factors, specifically team size (no significant moderating effect), and occupational groups (compared to studies conducted with software developers, the effect sizes were stronger in other occupations, such as manufacturing, health care and logistics).\r\nSo pretty good news for APM proponents, however, it’s good to keep in mind that this is “only” a preliminary meta-analysis, that there aren’t that many studies, especially regarding affective and cognitive outcomes, that the relationships found cannot be interpreted as causal as 90% of the studies only report cross-sectional correlations, and that there is also some evidence of publication bias that may overestimate the effects.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-03-06-agile-project-management/./agile_meeting.jpg",
+    "last_modified": "2024-03-06T11:14:21+01:00",
+    "input_file": "agile-project-management.knit.md"
+  },
+  {
     "path": "posts/2024-02-29-personality-frameworks-contest/",
     "title": "A showdown between the Big Five, Enneagram, MBTI, and astrology",
     "description": "Who you got your money on? 😉",

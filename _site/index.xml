@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Does agile pay off?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-03-06-agile-project-management</link>
+      <description>During my career, I have been part of several teams that have organized their work using some of the existing agile methodologies. For the most part, agile principles made good sense to me and subjectively seemed to work, so I had no reason to question their supposed benefits.</description>
+      <category>organizational science</category>
+      <category>project management</category>
+      <category>agile</category>
+      <category>meta-analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-03-06-agile-project-management</guid>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-03-06-agile-project-management/./agile_meeting.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>A showdown between the Big Five, Enneagram, MBTI, and astrology</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +33,7 @@
       <category>mbti</category>
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-02-29-personality-frameworks-contest</guid>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
