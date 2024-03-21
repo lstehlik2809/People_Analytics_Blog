@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2024-03-21-nice-leaders/",
+    "title": "If you are a leader, don't be afraid to be a nice one",
+    "description": "Do nice guys really finish last?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-03-21",
+    "categories": [
+      "personality",
+      "agreeableness",
+      "leadership emergence",
+      "leadership effectiveness"
+    ],
+    "contents": "\r\nContrary to the old adage that “nice guys finish last”, a meta-analysis by Blake et al. (2022) that examined the relationship between leader agreeableness and leadership outcomes found that leader agreeableness was positively related to both leadership effectiveness and leadership emergence, though more strongly to the latter.\r\n\r\n\r\n\r\nIn the authors’ own words, “It seems that leaders no longer need to choose to be “effective” or “nice,” but rather both can be achieved simultaneously.”\r\nInterestingly, this applies, though perhaps to varying degrees, to leaders regardless of whether they work in collectivist or individualist cultures, whether they are executive or non-executive leaders, or whether they are male or female.\r\nConsidering that a large part of a manager’s job is interacting with other people, be it individual employees, entire teams or larger groups, we probably shouldn’t be so surprised. Still, it’s good to see some support for this claim in the data.\r\nThe article also contains other interesting results of various moderation and post-hoc analyses, so I recommend you check out the original (open-access) article linked above.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-03-21-nice-leaders/./leader.jpg",
+    "last_modified": "2024-03-21T11:21:34+01:00",
+    "input_file": "nice-leaders.knit.md"
+  },
+  {
     "path": "posts/2024-03-06-agile-project-management/",
     "title": "Does agile pay off?",
     "description": "During my career, I have been part of several teams that have organized their work using some of the existing agile methodologies. For the most part, agile principles made good sense to me and subjectively seemed to work, so I had no reason to question their supposed benefits.",

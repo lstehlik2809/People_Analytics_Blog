@@ -1,0 +1,38 @@
+---
+title: "If you are a leader, don't be afraid to be a nice one"
+description: |
+  Do nice guys really finish last?
+preview: ./leader.jpg   
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 03-21-2024
+categories:
+  - personality
+  - agreeableness
+  - leadership emergence
+  - leadership effectiveness
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: false
+---
+
+Contrary to the old adage that "nice guys finish last", a [meta-analysis by Blake et al. (2022)](https://www.sciencedirect.com/science/article/pii/S1048984321000989){target="_blank"} that examined the relationship between leader agreeableness and leadership outcomes found that leader agreeableness was positively related to both leadership effectiveness and leadership emergence, though more strongly to the latter.
+
+<div style="text-align:center">
+![](./meta-analysis-results.png){width=100%}
+
+</div>
+
+In the authors' own words, “*It seems that leaders no longer need to choose to be “effective” or “nice,” but rather both can be achieved simultaneously.*”
+
+Interestingly, this applies, though perhaps to varying degrees, to leaders regardless of whether they work in collectivist or individualist cultures, whether they are executive or non-executive leaders, or whether they are male or female.
+
+Considering that a large part of a manager's job is interacting with other people, be it individual employees, entire teams or larger groups, we probably shouldn't be so surprised. Still, it's good to see some support for this claim in the data.
+
+The article also contains other interesting results of various moderation and post-hoc analyses, so I recommend you check out the original (open-access) article linked above. 
+
