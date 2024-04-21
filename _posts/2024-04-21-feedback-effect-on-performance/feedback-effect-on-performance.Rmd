@@ -1,0 +1,39 @@
+---
+title: "Feedback can be a gift or a curse..."
+description: |
+  ...depending on where it directs your locus of attention.
+preview: ./effects_distribution.png   
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 04-21-2024
+categories:
+  - feedback
+  - performance
+  - meta-analysis
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: false
+---
+
+From personal experience, I've “always” known that feedback can have both positive and negative effects on my performance, depending on various factors (e.g. clarity, tone, timing, etc.). However, I wasn't aware of the data supporting this **dual nature of feedback** until I stumbled upon [a meta-analysis by Kluger & DeNisi (1996)](https://www.researchgate.net/publication/232458848_The_Effects_of_Feedback_Interventions_on_Performance_A_Historical_Review_a_Meta-Analysis_and_a_Preliminary_Feedback_Intervention_Theory){target="_blank"}.
+
+Their study analyzed 607 effect sizes from 23,663 observations and found that while feedback interventions (FIs) generally improved performance (*d*=0.41), over one-third of the FIs actually decreased performance.
+
+<div style="text-align:center">
+![](./effects_distribution.png){width=100%}
+</div>
+
+The authors proposed and tested, using moderator analysis, a theory suggesting that **FIs shift the focus among three hierarchically organized levels of control, influencing how individuals process and react to feedback:**  
+
+1. **Meta-tasks (including self-related processes):** Feedback at this level often focuses on the individual’s feelings and identity rather than the task itself. It can be counterproductive by diverting attention away from the task and toward the self, potentially leading to defensive responses or disengagement.
+2. **Task motivation processes:** This level aims to affect the motivational factors that drive an individual to undertake and persist with a task. Effective feedback here can enhance motivation by setting goals, encouraging persistence, or highlighting the task’s importance, thereby boosting willingness to invest effort.
+3. **Task learning processes:** Feedback at this level provides specific guidance on improving task performance, including details on errors, corrective actions, or skill enhancement techniques.
+
+The results showed that the effectiveness of FI indeed tends to decrease as the focus shifts upward in the hierarchy, moving closer to self-related aspects and away from the task at hand. So the next time you ask for feedback, you should now know better what to wish for 😉
+
+

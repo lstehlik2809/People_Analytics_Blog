@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2024-04-21-feedback-effect-on-performance/",
+    "title": "Feedback can be a gift or a curse...",
+    "description": "...depending on where it directs your locus of attention.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-04-21",
+    "categories": [
+      "feedback",
+      "performance",
+      "meta-analysis"
+    ],
+    "contents": "\r\nFrom personal experience, I’ve “always” known that feedback can have both positive and negative effects on my performance, depending on various factors (e.g. clarity, tone, timing, etc.). However, I wasn’t aware of the data supporting this dual nature of feedback until I stumbled upon a meta-analysis by Kluger & DeNisi (1996).\r\nTheir study analyzed 607 effect sizes from 23,663 observations and found that while feedback interventions (FIs) generally improved performance (d=0.41), over one-third of the FIs actually decreased performance.\r\n\r\n\r\n\r\nThe authors proposed and tested, using moderator analysis, a theory suggesting that FIs shift the focus among three hierarchically organized levels of control, influencing how individuals process and react to feedback:\r\nMeta-tasks (including self-related processes): Feedback at this level often focuses on the individual’s feelings and identity rather than the task itself. It can be counterproductive by diverting attention away from the task and toward the self, potentially leading to defensive responses or disengagement.\r\nTask motivation processes: This level aims to affect the motivational factors that drive an individual to undertake and persist with a task. Effective feedback here can enhance motivation by setting goals, encouraging persistence, or highlighting the task’s importance, thereby boosting willingness to invest effort.\r\nTask learning processes: Feedback at this level provides specific guidance on improving task performance, including details on errors, corrective actions, or skill enhancement techniques.\r\nThe results showed that the effectiveness of FI indeed tends to decrease as the focus shifts upward in the hierarchy, moving closer to self-related aspects and away from the task at hand. So the next time you ask for feedback, you should now know better what to wish for 😉\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-04-21-feedback-effect-on-performance/./effects_distribution.png",
+    "last_modified": "2024-04-21T14:46:15+02:00",
+    "input_file": "feedback-effect-on-performance.knit.md",
+    "preview_width": 839,
+    "preview_height": 689
+  },
+  {
     "path": "posts/2024-03-21-nice-leaders/",
     "title": "If you are a leader, don't be afraid to be a nice one",
     "description": "Do nice guys really finish last?",
