@@ -21,11 +21,9 @@ output:
 ---
 
 
-If you like to use the end of the year as an opportunity for deeper self-reflection, you might enjoy the following simple app I have put together over the past weekend. 
+If you like to use the end of the year as an opportunity for deeper self-reflection, you might enjoy [this simple app](https://peopleanalyticsblog.shinyapps.io/linkedIn_connections_analysis/){target="_blank"} I have put together over the past weekend. 
 
-➡️ https://peopleanalyticsblog.shinyapps.io/linkedIn_connections_analysis/
-
-Once you upload your LinkedIn connections data to the app (you can easily download the data by following the instructions in the app or in [this video](https://www.youtube.com/watch?v=FLWSmiBxQQY)), it automatically generates basic descriptive statistics about your LinkedIn connections:
+Once you upload your LinkedIn connections data to the app (you can easily download the data by following the instructions in the app or in [this video](https://www.youtube.com/watch?v=FLWSmiBxQQY){target="_blank"}), it automatically generates basic descriptive statistics about your LinkedIn connections:
 
 * Cumulative number of connections over time  
 * Number of established connections by years, months, and days of the week 
@@ -41,10 +39,10 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 
 Unfortunately, since there is no information about your connections' connections in the data, the app cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.
 
-You can take it as a kind of Christmas gift for my fellow LinkedIn users. Enjoy exploring your connections! And if you'd like to explore and better manage also your company's internal collaboration networks, then check out what we do at [Time is Ltd.](https://www.timeisltd.com/) 
+You can take it as a kind of Christmas gift for my fellow LinkedIn users. Enjoy exploring your connections! And if you'd like to explore and better manage also your company's internal collaboration networks, then check out what we do at [Time is Ltd.](https://www.timeisltd.com/){target="_blank"} 
 
-P.S. The data you upload is not permanently stored anywhere. The app runs on the [shinyapps.io server](https://www.shinyapps.io/). If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data from the app.
+P.S. The data you upload is not permanently stored anywhere. The app runs on the [shinyapps.io server](https://www.shinyapps.io/){target="_blank"}. If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data from the app.
 
-P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor%C3%A1%C4%8D-93361526/) for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.
+P.P.S. Big thanks to [Sebastian Vorac](https://www.linkedin.com/in/sebastian-vor%C3%A1%C4%8D-93361526/){target="_blank"} for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.
 
 

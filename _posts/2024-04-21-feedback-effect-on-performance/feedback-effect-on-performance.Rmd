@@ -28,7 +28,7 @@ Their study analyzed 607 effect sizes from 23,663 observations and found that wh
 ![](./effects_distribution.png){width=100%}
 </div>
 
-The authors proposed and tested, using moderator analysis, a theory suggesting that **FIs shift the focus among three hierarchically organized levels of control, influencing how individuals process and react to feedback:**  
+To explain this pattern, the authors proposed and tested, using moderator analysis, a theory suggesting that **FIs shift the focus among three hierarchically organized levels of control, influencing how individuals process and react to feedback:**  
 
 1. **Meta-tasks (including self-related processes):** Feedback at this level often focuses on the individual’s feelings and identity rather than the task itself. It can be counterproductive by diverting attention away from the task and toward the self, potentially leading to defensive responses or disengagement.
 2. **Task motivation processes:** This level aims to affect the motivational factors that drive an individual to undertake and persist with a task. Effective feedback here can enhance motivation by setting goals, encouraging persistence, or highlighting the task’s importance, thereby boosting willingness to invest effort.

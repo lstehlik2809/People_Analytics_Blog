@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 20 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>NetLogo: Don’t tell me, show me</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-04-28-netlogo</link>
+      <description>An example of how to get a better understanding of various complex phenomena through simulation in NetLogo, a free programmable multi-agent modelling environment.</description>
+      <category>simulation</category>
+      <category>netlogo</category>
+      <category>education</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-04-28-netlogo</guid>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-04-28-netlogo/./netlogo.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Feedback can be a gift or a curse...</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +29,7 @@
       <category>performance</category>
       <category>meta-analysis</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-04-21-feedback-effect-on-performance</guid>
-      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-04-21-feedback-effect-on-performance/./effects_distribution.png" medium="image" type="image/png" width="839" height="689"/>
     </item>
     <item>
