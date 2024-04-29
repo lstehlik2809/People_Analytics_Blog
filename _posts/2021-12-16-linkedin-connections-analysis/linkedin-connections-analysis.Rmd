@@ -31,10 +31,12 @@ Once you upload your LinkedIn connections data to the app (you can easily downlo
 * Top N positions by their frequency among your connections (based on whole position titles, bigrams and single words)
 * Proportion of connections by their gender (based on your connections' first name)
 
-<video width="720" height="405" controls>
-  <source src="video_tour.mp4" type="video/mp4">
-</video>
-
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <source src="video_tour.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 <br>
 
 Unfortunately, since there is no information about your connections' connections in the data, the app cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.

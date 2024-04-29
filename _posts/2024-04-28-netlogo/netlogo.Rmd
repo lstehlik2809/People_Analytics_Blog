@@ -30,11 +30,13 @@ One of them shows how this particular dilemma is solved by a colony of ants fora
 2. **Pheromone Trails:** When an ant finds a piece of food, it carries the food back to the nest, dropping a chemical as it moves. When other ants "sniff" the chemical, they follow the chemical toward the food. As more ants carry food to the nest, they reinforce the chemical trail, focusing on exploitation.
 3. **Pheromone Decay:** Trails weaken over time, prompting exploration when resources dwindle.
 
-<video width="720" height="405" controls>
-  <source src="netlogo-ants-colony.mp4" type="video/mp4">
-</video>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <source src="netlogo-ants-colony.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 <br>
-
 
 After watching a few rounds of the simulation and a brief explanation, everything became much clearer to my son. If you are ever faced with similar types of questions, give NetLogo a chance. It's free to use, contains a number of pre-programmed simulations, and if you don't find what you're looking for there, it's not hard to learn how to program what you need in NetLogo.
 
