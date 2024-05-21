@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 28 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What makes people more likely to comment on a question in an employee survey?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-05-21-probability-of-comments-in-a-survey</link>
+      <description>Is it satisfaction or dissatisfaction that drives comments? Or perhaps it’s the extremes on both ends of the satisfaction spectrum?</description>
+      <category>employee survey</category>
+      <category>employee experience</category>
+      <category>machine learning</category>
+      <category>ml interpretation</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-05-21-probability-of-comments-in-a-survey</guid>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-05-21-probability-of-comments-in-a-survey/./comment_illustration.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>NetLogo: Don’t tell me, show me</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -1257,7 +1270,7 @@
       <category>social network analysis</category>
       <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis</guid>
-      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2021-12-16-linkedin-connections-analysis/./linkedinLogo.png" medium="image" type="image/png" width="3753" height="2352"/>
     </item>
     <item>
