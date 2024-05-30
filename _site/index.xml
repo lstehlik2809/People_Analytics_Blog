@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Estimating body height using an inventory?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-05-30-body-height-inventory</link>
+      <description>Why not?</description>
+      <category>psychometrics</category>
+      <category>measurement</category>
+      <category>education</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-05-30-body-height-inventory</guid>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-05-30-body-height-inventory/./height_histogram_results.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>What makes people more likely to comment on a question in an employee survey?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>ml interpretation</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-05-21-probability-of-comments-in-a-survey</guid>
-      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-05-21-probability-of-comments-in-a-survey/./comment_illustration.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

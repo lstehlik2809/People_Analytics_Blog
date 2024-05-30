@@ -19,7 +19,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-    code_folding: false
+    code_folding: true
 ---
 
 I've been curious about this for a while, but until recently, I only had my personal pet theories to rely on. Luckily, one of my recent projects gave me the chance to explore this question with real-world data and satisfy my curiosity a bit.
