@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Can there be too much cognitive diversity in teams?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-06-04-cognitive-diversity</link>
+      <description>The answer might be "yes", at least in the case of team collective intelligence, defined as a general ability of a team to work together across a wide array of tasks.</description>
+      <category>diversity</category>
+      <category>cognitive styles</category>
+      <category>collective intelligence</category>
+      <category>team performance</category>
+      <category>team learning</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-04-cognitive-diversity</guid>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-04-cognitive-diversity/./chart.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Estimating body height using an inventory?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +31,7 @@
       <category>measurement</category>
       <category>education</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-05-30-body-height-inventory</guid>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-05-30-body-height-inventory/./height_histogram_results.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

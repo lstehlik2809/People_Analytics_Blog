@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2024-06-04-cognitive-diversity/",
+    "title": "Can there be too much cognitive diversity in teams?",
+    "description": "The answer might be \"yes\", at least in the case of team collective intelligence, defined as a general ability of a team to work together across a wide array of tasks.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-06-04",
+    "categories": [
+      "diversity",
+      "cognitive styles",
+      "collective intelligence",
+      "team performance",
+      "team learning"
+    ],
+    "contents": "\r\nIn a very interesting study, Aggarwal et al. (2019) investigated how the diversity of cognitive styles in teams (as measured by object-spatial imagery and OSIVQ verbal questionnaire) indirectly affects team learning through collective intelligence (as measured by a battery of various tasks, including the minimum-effort tacit coordination game to estimate team learning).\r\nThey found that cognitive style diversity has a curvilinear, inverted U-shaped relationship with collective intelligence, which is further positively related to the rate at which teams learn and is a mechanism guiding the indirect relationship between cognitive style diversity and team learning.\r\n\r\n\r\n\r\nThe relationship between cognitive style diversity and collective intelligence controlling for team size and cognitive style level.\r\nThe authors did not directly study the causes of this type of relationship, but the hypothesis they tested was based on an existing theorizing that contrasts cognitive diversity, which, on the one hand, brings a wealth of cognitive resources (knowledge, skills, etc.) useful for tackling the range of tasks the team faces, but on the other hand, also causes higher coordination costs due to different perspectives of team members.\r\nThese results thus suggest that good old “moderation” might be a sound guiding principle in this area, as in many others.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-06-04-cognitive-diversity/./chart.jpg",
+    "last_modified": "2024-06-04T21:04:40+02:00",
+    "input_file": "cognitive-diversity.knit.md"
+  },
+  {
     "path": "posts/2024-05-30-body-height-inventory/",
     "title": "Estimating body height using an inventory?",
     "description": "Why not?",
