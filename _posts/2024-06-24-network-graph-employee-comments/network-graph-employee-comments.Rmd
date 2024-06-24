@@ -28,9 +28,9 @@ I recently came across a [qualitative study](https://www.frontiersin.org/journal
 
 What particularly caught my attention was usage of network graph modeling for capturing overarching thematic clusters based on the co-occurrences of themes in the thematically coded interview transcripts. 
 
-It inspired me to try to apply this approach to the open-ended comments from the employee survey after identifying the topics present in each comment using LLM. IMO this can help with better interpretation of the survey results by providing a broader context of the topics identified, and thus help to more wisely select appropriate follow-up actions.
+It inspired me to try to apply this approach to the open-ended comments from the employee survey after identifying the topics present in each comment using the LLM. IMO, this can help with better interpretation of the survey results by providing a broader context of the topics identified and thus help to more wisely select appropriate follow-up actions.
 
-Let’s check out how this works on sample comments taken from [Glassdoor](https://www.glassdoor.com){target="_blank"}. You can download the data from Kaggle [here](https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/data){target="_blank"}. To preserve the anonymity of the company whose reviews I will be analyzing, I will not show all the filters used and will upload directly the pre-prepared data, which consists of the cons reported by previous or current employees of one specific company at one specific location as of 2021. Our input data looks as follows.
+Let’s check out how this works on sample comments taken from [Glassdoor](https://www.glassdoor.com){target="_blank"}. You can download the data from Kaggle [here](https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews/data){target="_blank"}. To preserve the anonymity of the company whose reviews I will be analyzing, I will not show all the filters used and will upload the pre-prepared data directly. This data consists of the cons reported by previous or current employees of one specific company at one specific location during the first half of 2021. Our input data looks as follows.
 
 
 ```{python}
