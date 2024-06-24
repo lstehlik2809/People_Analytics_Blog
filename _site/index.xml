@@ -16,6 +16,10 @@
       <category>employee survey</category>
       <category>topic analysis</category>
       <category>network analysis</category>
+      <category>llm</category>
+      <category>genai</category>
+      <category>python</category>
+      <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments</guid>
       <pubDate>Sun, 23 Jun 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments/./network_chart.png" medium="image" type="image/png" width="1089" height="930"/>

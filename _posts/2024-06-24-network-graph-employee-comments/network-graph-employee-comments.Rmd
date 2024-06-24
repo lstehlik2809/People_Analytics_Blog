@@ -11,6 +11,10 @@ categories:
   - employee survey
   - topic analysis
   - network analysis
+  - llm
+  - genai
+  - python
+  - r
 output:
   distill::distill_article:
     self_contained: false
