@@ -289,7 +289,7 @@ DT::datatable(
 
 ```
 
-The above table can then be used to create an undirected network object and visualize it using, for example, the [d3Network package](https://christophergandrud.github.io/networkD3/){target="_blank"} for D3 JavaScript network graphs. The resulting network graph shows the relationships between topics such that topics that are closer together and connected by stronger edges tend to appear more frequently in employee comments. The node size indicates how often the topic occurs together with other topics (degree centrality), and the color codes refer to the communities (clusters) of topics detected by [Louvain method for community detection](https://en.wikipedia.org/wiki/Louvain_method){target="_blank"}. The graph is interactive, so you can zoom in/out and highlight specific parts of the graph you're interested in.
+The above table can then be used to create an undirected network object and visualize it using, for example, the [d3Network package](https://christophergandrud.github.io/networkD3/){target="_blank"} for D3 JavaScript network graphs. The resulting network graph shows the relationships between topics such that topics that are closer together and connected by stronger edges tend to appear more frequently in employee comments together. The node size indicates how often the topic occurs with other topics in employee comments ([degree centrality](https://en.wikipedia.org/wiki/Centrality){target="_blank"}), and the colors represent the communities (clusters) of topics as detected by the [Louvain method for community detection](https://en.wikipedia.org/wiki/Louvain_method){target="_blank"}. The graph is interactive, so you can zoom in/out and highlight specific parts of the graph you're interested in.
 
 ```{r}
 
