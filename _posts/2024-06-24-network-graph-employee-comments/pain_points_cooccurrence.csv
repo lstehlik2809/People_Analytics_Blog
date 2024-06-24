@@ -1,0 +1,278 @@
+from,to,weight
+Career Development & Growth Opportunities,Promotion & Succession,2
+Work Life Balance,"Workload, Stress & Exhaustion",28
+Career Development & Growth Opportunities,Performance Management,1
+Career Development & Growth Opportunities,"Workload, Stress & Exhaustion",5
+Performance Management,"Workload, Stress & Exhaustion",9
+Compensation & Benefits,Team Climate,1
+Company Climate,"Workload, Stress & Exhaustion",4
+Career Development & Growth Opportunities,Compensation & Benefits,17
+Compensation & Benefits,"Workload, Stress & Exhaustion",63
+Compensation & Benefits,Workplace Harassment,2
+"Workload, Stress & Exhaustion",Workplace Harassment,3
+Performance Management,Unclear Expectations,2
+Compensation & Benefits,Work Life Balance,16
+"Workload, Stress & Exhaustion",Workplace Safety,1
+Organizational Processes Efficiency,"Workload, Stress & Exhaustion",12
+Communication,"Workload, Stress & Exhaustion",1
+Career Development & Growth Opportunities,Company Structure & Organization,1
+Compensation & Benefits,Workplace Culture,8
+"Workload, Stress & Exhaustion",Workplace Culture,4
+Employee Training & Development,Quality of Work,1
+Employee Onboarding,Employee Turnover,1
+Employee Onboarding,"Workload, Stress & Exhaustion",1
+Employee Turnover,"Workload, Stress & Exhaustion",2
+Company Climate,Compensation & Benefits,4
+Company Climate,Work Life Balance,2
+Career Development & Growth Opportunities,Company Strategy,8
+Career Development & Growth Opportunities,Management Practices,1
+Career Development & Growth Opportunities,Role Conflicts,1
+Company Strategy,Compensation & Benefits,24
+Company Strategy,Management Practices,4
+Company Strategy,Role Conflicts,1
+Compensation & Benefits,Management Practices,7
+Compensation & Benefits,Role Conflicts,2
+Management Practices,Role Conflicts,1
+Employee Training & Development,Resource Allocation Efficiency,2
+Employee Training & Development,"Workload, Stress & Exhaustion",4
+Resource Allocation Efficiency,"Workload, Stress & Exhaustion",3
+Bureaucracy & Administrative Excess,"Workload, Stress & Exhaustion",7
+Bureaucracy & Administrative Excess,"Company Brand, Prestige & Reputation",1
+"Company Brand, Prestige & Reputation","Workload, Stress & Exhaustion",5
+Management Practices,"Workload, Stress & Exhaustion",5
+Compensation & Benefits,Organizational Processes Efficiency,5
+Compensation & Benefits,Performance Management,7
+Compensation & Benefits,Recognition,7
+Organizational Processes Efficiency,Performance Management,1
+Organizational Processes Efficiency,Recognition,2
+Performance Management,Recognition,2
+Meaningfulness of Work,"Workload, Stress & Exhaustion",5
+Communication,Employee Training & Development,1
+Company Structure & Organization,Relationship With Peers & Colleagues,5
+Company Structure & Organization,"Workload, Stress & Exhaustion",4
+Company Strategy,Performance Management,3
+Management Practices,Performance Management,1
+Leadership & Higher Management,Workplace Culture,1
+Company Strategy,Resource Allocation Efficiency,2
+Company Strategy,"Workload, Stress & Exhaustion",10
+Compensation & Benefits,Employee Turnover,2
+Recognition,Respect to Employees,1
+Recognition,"Workload, Stress & Exhaustion",4
+Respect to Employees,"Workload, Stress & Exhaustion",1
+Employee Onboarding,Leadership & Higher Management,1
+Management Practices,Workplace Culture,6
+Company Strategy,Company Structure & Organization,2
+Employee Training & Development,Flexible Work Arrangements,2
+Flexible Work Arrangements,"Workload, Stress & Exhaustion",12
+Compensation & Benefits,Promotion & Succession,3
+Company Structure & Organization,Compensation & Benefits,4
+Company Structure & Organization,Recognition,1
+Company Structure & Organization,Work Life Balance,2
+Recognition,Work Life Balance,3
+"Company Brand, Prestige & Reputation",Compensation & Benefits,5
+"Company Brand, Prestige & Reputation",Promotion & Succession,2
+Promotion & Succession,"Workload, Stress & Exhaustion",1
+Relationship With Peers & Colleagues,"Workload, Stress & Exhaustion",5
+Communication,Workplace Safety,1
+Career Development & Growth Opportunities,Innovativeness,2
+Career Development & Growth Opportunities,Staffing & Recruitment,4
+Innovativeness,Staffing & Recruitment,1
+Relationship With Direct Manager,"Workload, Stress & Exhaustion",1
+Compensation & Benefits,Leadership & Higher Management,2
+Leadership & Higher Management,"Workload, Stress & Exhaustion",2
+Company Climate,Employee Training & Development,1
+Company Climate,Management Practices,1
+Company Climate,Relationship With Direct Manager,1
+Company Climate,Support & Resources,1
+Company Climate,Workplace Harassment,1
+Compensation & Benefits,Employee Training & Development,3
+Compensation & Benefits,Relationship With Direct Manager,2
+Compensation & Benefits,Support & Resources,2
+Employee Training & Development,Management Practices,1
+Employee Training & Development,Relationship With Direct Manager,1
+Employee Training & Development,Support & Resources,1
+Employee Training & Development,Workplace Harassment,1
+Management Practices,Relationship With Direct Manager,1
+Management Practices,Support & Resources,1
+Management Practices,Workplace Harassment,1
+Relationship With Direct Manager,Support & Resources,1
+Relationship With Direct Manager,Workplace Harassment,3
+Support & Resources,Workplace Harassment,1
+Bureaucracy & Administrative Excess,Company Structure & Organization,2
+Bureaucracy & Administrative Excess,Relationship With Peers & Colleagues,3
+"Diversity, Equity, and Inclusion",Psychological Safety,1
+"Diversity, Equity, and Inclusion",Staffing & Recruitment,1
+"Diversity, Equity, and Inclusion",Workplace Culture,3
+Psychological Safety,Staffing & Recruitment,1
+Psychological Safety,Workplace Culture,1
+Staffing & Recruitment,Workplace Culture,2
+Management Practices,Organizational Processes Efficiency,1
+Management Practices,Unclear Expectations,2
+Organizational Processes Efficiency,Unclear Expectations,2
+Relationship With Peers & Colleagues,Staffing & Recruitment,1
+Relationship With Peers & Colleagues,Support & Resources,1
+Relationship With Peers & Colleagues,Workplace Culture,3
+Staffing & Recruitment,Support & Resources,1
+Support & Resources,Workplace Culture,1
+Recognition,Relationship With Peers & Colleagues,1
+Bureaucracy & Administrative Excess,Company Climate,2
+Company Innovativeness,"Workload, Stress & Exhaustion",1
+Organization of Work,Organizational Processes Efficiency,1
+Company Innovativeness,Company Strategy,3
+Company Innovativeness,Management Practices,2
+Company Innovativeness,Variability of Work,2
+Company Innovativeness,Workplace Culture,2
+Company Strategy,Variability of Work,2
+Company Strategy,Workplace Culture,3
+Management Practices,Variability of Work,2
+Variability of Work,Workplace Culture,2
+Compensation & Benefits,Meaningfulness of Work,5
+"Company Brand, Prestige & Reputation",Management Practices,2
+"Company Brand, Prestige & Reputation",Workplace Culture,5
+Bureaucracy & Administrative Excess,Organizational Processes Efficiency,3
+Bureaucracy & Administrative Excess,Working Tools & Equipment,1
+Organizational Processes Efficiency,Working Tools & Equipment,2
+Company Climate,Company Strategy,3
+Company Climate,Performance Management,2
+Career Development & Growth Opportunities,Company Innovativeness,1
+Communication,Compensation & Benefits,4
+Career Development & Growth Opportunities,Workplace Culture,2
+Company Structure & Organization,Workplace Culture,1
+Employee Training & Development,Work Life Balance,1
+Bureaucracy & Administrative Excess,Company Strategy,2
+Bureaucracy & Administrative Excess,"Diversity, Equity, and Inclusion",1
+Bureaucracy & Administrative Excess,Employee Training & Development,1
+Bureaucracy & Administrative Excess,Flexible Work Arrangements,1
+Bureaucracy & Administrative Excess,Justice & Fairness,1
+Bureaucracy & Administrative Excess,Organization of Work,2
+Bureaucracy & Administrative Excess,Resource Allocation Efficiency,1
+Bureaucracy & Administrative Excess,Workplace Culture,1
+Company Strategy,"Diversity, Equity, and Inclusion",1
+Company Strategy,Employee Training & Development,3
+Company Strategy,Flexible Work Arrangements,1
+Company Strategy,Justice & Fairness,4
+Company Strategy,Organization of Work,2
+Company Strategy,Relationship With Peers & Colleagues,4
+"Diversity, Equity, and Inclusion",Employee Training & Development,1
+"Diversity, Equity, and Inclusion",Flexible Work Arrangements,1
+"Diversity, Equity, and Inclusion",Justice & Fairness,1
+"Diversity, Equity, and Inclusion",Organization of Work,2
+"Diversity, Equity, and Inclusion",Relationship With Peers & Colleagues,1
+"Diversity, Equity, and Inclusion",Resource Allocation Efficiency,1
+Employee Training & Development,Justice & Fairness,2
+Employee Training & Development,Organization of Work,2
+Employee Training & Development,Relationship With Peers & Colleagues,1
+Employee Training & Development,Workplace Culture,1
+Flexible Work Arrangements,Justice & Fairness,1
+Flexible Work Arrangements,Organization of Work,2
+Flexible Work Arrangements,Relationship With Peers & Colleagues,1
+Flexible Work Arrangements,Resource Allocation Efficiency,1
+Flexible Work Arrangements,Workplace Culture,1
+Justice & Fairness,Organization of Work,2
+Justice & Fairness,Relationship With Peers & Colleagues,1
+Justice & Fairness,Resource Allocation Efficiency,1
+Justice & Fairness,Workplace Culture,1
+Organization of Work,Relationship With Peers & Colleagues,2
+Organization of Work,Resource Allocation Efficiency,3
+Organization of Work,Workplace Culture,2
+Relationship With Peers & Colleagues,Resource Allocation Efficiency,1
+Resource Allocation Efficiency,Workplace Culture,2
+Organizational Processes Efficiency,Quality of Work,2
+Quality of Work,"Workload, Stress & Exhaustion",2
+Capacity Planning,Company Structure & Organization,2
+Compensation & Benefits,Flexible Work Arrangements,6
+Bureaucracy & Administrative Excess,Compensation & Benefits,4
+Bureaucracy & Administrative Excess,IT Support,2
+Compensation & Benefits,IT Support,2
+IT Support,"Workload, Stress & Exhaustion",2
+Company Strategy,Work Life Balance,2
+Compensation & Benefits,Relationship With Peers & Colleagues,3
+Compensation & Benefits,Organization of Work,1
+Staffing & Recruitment,Unclear Expectations,1
+Compensation & Benefits,"Diversity, Equity, and Inclusion",8
+Company Climate,Company Structure & Organization,1
+Justice & Fairness,"Workload, Stress & Exhaustion",2
+"Lateral Moves, Transfers & Relocations",Role Conflicts,2
+Promotion & Succession,Workplace Culture,1
+Leadership & Higher Management,Meaningfulness of Work,1
+Organizational Processes Efficiency,Staffing & Recruitment,1
+Support & Resources,"Workload, Stress & Exhaustion",1
+Career Development & Growth Opportunities,Organizational Processes Efficiency,3
+Career Development & Growth Opportunities,Employee Turnover,1
+"Lateral Moves, Transfers & Relocations","Workload, Stress & Exhaustion",2
+Compensation & Benefits,Staffing & Recruitment,4
+Career Development & Growth Opportunities,Work Life Balance,1
+"Lateral Moves, Transfers & Relocations",Support From Manager,1
+Performance Management,Work Life Balance,2
+Company Structure & Organization,Organizational Processes Efficiency,2
+Organizational Processes Efficiency,Variability of Work,1
+Unclear Expectations,Work Life Balance,1
+Unclear Expectations,"Workload, Stress & Exhaustion",1
+Recognition,Relationship With Direct Manager,1
+Flexible Work Arrangements,Working Tools & Equipment,1
+Career Development & Growth Opportunities,Employee Training & Development,2
+Company Structure & Organization,"Diversity, Equity, and Inclusion",1
+"Diversity, Equity, and Inclusion",Organizational Processes Efficiency,1
+Compensation & Benefits,Survey Fatigue,1
+Management Practices,Survey Fatigue,1
+Management Practices,Work Life Balance,1
+Survey Fatigue,Work Life Balance,1
+Survey Fatigue,"Workload, Stress & Exhaustion",1
+Performance Management,Promotion & Succession,1
+Compensation & Benefits,Working Tools & Equipment,2
+Working Tools & Equipment,"Workload, Stress & Exhaustion",1
+Capacity Planning,Compensation & Benefits,1
+Capacity Planning,Organizational Processes Efficiency,1
+Capacity Planning,Working Tools & Equipment,1
+Career Development & Growth Opportunities,Flexible Work Arrangements,2
+Career Development & Growth Opportunities,Psychological Safety,2
+Compensation & Benefits,Psychological Safety,2
+Flexible Work Arrangements,Psychological Safety,2
+Psychological Safety,"Workload, Stress & Exhaustion",3
+Company Structure & Organization,Team Climate,1
+Relationship With Peers & Colleagues,Team Climate,1
+Company Innovativeness,Organizational Processes Efficiency,1
+Relationship With Peers & Colleagues,Workplace Safety,1
+Company Strategy,Reorganization,1
+Compensation & Benefits,Reorganization,1
+Organization of Work,Performance Management,1
+Bureaucracy & Administrative Excess,Leadership & Higher Management,1
+"Lateral Moves, Transfers & Relocations",Organization of Work,2
+Management Practices,Resource Allocation Efficiency,1
+Resource Allocation Efficiency,Support & Resources,4
+Management Practices,Meaningfulness of Work,1
+Company Structure & Organization,"Lateral Moves, Transfers & Relocations",1
+Capacity Planning,"Workload, Stress & Exhaustion",2
+Change Management,"Workload, Stress & Exhaustion",3
+Career Development & Growth Opportunities,Justice & Fairness,1
+Company Strategy,Staffing & Recruitment,2
+Compensation & Benefits,Justice & Fairness,2
+Employee Training & Development,Staffing & Recruitment,1
+Justice & Fairness,Staffing & Recruitment,1
+Staffing & Recruitment,"Workload, Stress & Exhaustion",1
+Company Strategy,"Lateral Moves, Transfers & Relocations",1
+Compensation & Benefits,Variability of Work,2
+Recognition,Variability of Work,1
+Variability of Work,"Workload, Stress & Exhaustion",1
+Leadership & Higher Management,Relationship With Direct Manager,1
+Leadership & Higher Management,Management Practices,1
+Change Management,Company Structure & Organization,1
+Change Management,Compensation & Benefits,1
+Change Management,Meaningfulness of Work,1
+Change Management,Performance Management,1
+Change Management,Relationship With Peers & Colleagues,1
+Company Structure & Organization,Meaningfulness of Work,1
+Company Structure & Organization,Performance Management,1
+Meaningfulness of Work,Performance Management,1
+Meaningfulness of Work,Relationship With Peers & Colleagues,1
+Performance Management,Relationship With Peers & Colleagues,1
+Company Structure & Organization,Organization of Work,1
+Company Strategy,Leadership & Higher Management,1
+Company Strategy,Psychological Safety,1
+Leadership & Higher Management,Psychological Safety,1
+Leadership & Higher Management,Relationship With Peers & Colleagues,1
+Psychological Safety,Relationship With Peers & Colleagues,1
+"Company Brand, Prestige & Reputation",Relationship With Peers & Colleagues,2
+"Diversity, Equity, and Inclusion","Workload, Stress & Exhaustion",1
+"Diversity, Equity, and Inclusion",Management Practices,1
+"Company Brand, Prestige & Reputation",Variability of Work,1

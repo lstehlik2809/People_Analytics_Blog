@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Using network graph modeling to capture overarching thematic clusters in employee comments</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments</link>
+      <description>A showcase on how to use network analysis to display the co-occurrence of topics in employee comments.</description>
+      <category>employee survey</category>
+      <category>topic analysis</category>
+      <category>network analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments</guid>
+      <pubDate>Sun, 23 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments/./network_chart.png" medium="image" type="image/png" width="1089" height="930"/>
+    </item>
     <item>
       <title>Can there be too much cognitive diversity in teams?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>team performance</category>
       <category>team learning</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-04-cognitive-diversity</guid>
-      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 04 Jun 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-04-cognitive-diversity/./chart.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
