@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 23 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Does a stick work?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-07-01-job-insecurity-and-behavioral-outcomes</link>
+      <description>Probably each of us has experienced, or at least heard of, the practice of using job insecurity as a motivational tool at some point in our careers. A well-known example of this is stack-ranking performance reviews, where bonuses are given to top performers and those at the bottom are let go. While we may not personally like this method of motivation, it would be beneficial to have some data on its effectiveness.</description>
+      <category>motivation</category>
+      <category>meta-analysis</category>
+      <category>performance management</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-07-01-job-insecurity-and-behavioral-outcomes</guid>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-07-01-job-insecurity-and-behavioral-outcomes/./job_insecurity_plot.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Using network graph modeling to capture overarching thematic clusters in employee comments</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -22,7 +34,7 @@
       <category>python</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments</guid>
-      <pubDate>Sun, 23 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments/./network_chart.png" medium="image" type="image/png" width="1089" height="930"/>
     </item>
     <item>
