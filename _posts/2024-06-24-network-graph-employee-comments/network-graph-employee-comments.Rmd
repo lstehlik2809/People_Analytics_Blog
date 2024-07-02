@@ -2,7 +2,7 @@
 title: "Using network graph modeling to capture overarching thematic clusters in employee comments"
 description: |
   A showcase on how to use network analysis to display the co-occurrence of topics in employee comments.    
-preview: ./network_chart.png   
+preview: ./network_graph_animation.gif   
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/

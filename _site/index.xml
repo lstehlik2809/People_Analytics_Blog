@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 30 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Does a stick work?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +17,7 @@
       <category>meta-analysis</category>
       <category>performance management</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-07-01-job-insecurity-and-behavioral-outcomes</guid>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-07-01-job-insecurity-and-behavioral-outcomes/./job_insecurity_plot.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -34,8 +34,8 @@
       <category>python</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments</guid>
-      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments/./network_chart.png" medium="image" type="image/png" width="1089" height="930"/>
+      <pubDate>Sun, 23 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-06-24-network-graph-employee-comments/./network_graph_animation.gif" medium="image" type="image/gif"/>
     </item>
     <item>
       <title>Can there be too much cognitive diversity in teams?</title>
