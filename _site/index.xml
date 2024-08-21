@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Kohonen's Self-Organizing Maps</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-08-21-kohonen-self-organizing-maps</link>
+      <description>A brief demonstration of an awesome tool for exploring multidimensional data, using personality and work-life satisfaction data.</description>
+      <category>data visualization</category>
+      <category>data exploration</category>
+      <category>self-organizing maps</category>
+      <category>artificial neural networks</category>
+      <category>personality</category>
+      <category>big five</category>
+      <category>work-life satisfaction</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-21-kohonen-self-organizing-maps</guid>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-21-kohonen-self-organizing-maps/./som_plots.png" medium="image" type="image/png" width="5500" height="3000"/>
+    </item>
     <item>
       <title>Analyzing LinkedIn connections' jobs using LLMs and the BERTopic package</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +35,7 @@
       <category>linkedin</category>
       <category>networking</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-15-linkedin-contacts-job-positions</guid>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-15-linkedin-contacts-job-positions/./li_contacts_jobs.png" medium="image" type="image/png" width="1211" height="1211"/>
     </item>
     <item>
