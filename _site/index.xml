@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Insights from the Team Assessment Survey results of C-suite teams</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-08-29-tas-c-suit-teams</link>
+      <description>Results from the exploration of data on team effectiveness and efficiency across ~40 C-suite teams.</description>
+      <category>team performance</category>
+      <category>team effectiveness</category>
+      <category>team efficiency</category>
+      <category>rocket model</category>
+      <category>network modeling</category>
+      <category>partial correlation networks</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-29-tas-c-suit-teams</guid>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
+    </item>
     <item>
       <title>Kohonen's Self-Organizing Maps</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +36,7 @@
       <category>big five</category>
       <category>work-life satisfaction</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-21-kohonen-self-organizing-maps</guid>
-      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-21-kohonen-self-organizing-maps/./som_plots.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>
