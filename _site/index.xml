@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Insights from the Team Assessment Survey results of C-suite teams</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,8 +20,21 @@
       <category>network modeling</category>
       <category>partial correlation networks</category>
       <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-29-tas-c-suit-teams</guid>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
+    </item>
+    <item>
+      <title>People may signal their exit intentions not only by their actions but also by their inactions</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.com/posts/2024-08-29-survey-participation-and-attrition-prediction</link>
+      <description>A brief reflection on one of the predictors of voluntary employee attrition.</description>
+      <category>employee turnover</category>
+      <category>employee survey</category>
+      <category>turnover prediction</category>
+      <category>employee withdrawal</category>
+      <guid>https://blog-about-people-analytics.netlify.com/posts/2024-08-29-survey-participation-and-attrition-prediction</guid>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.com/posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png" medium="image" type="image/png" width="1577" height="775"/>
     </item>
     <item>
       <title>Kohonen's Self-Organizing Maps</title>
