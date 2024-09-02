@@ -33,7 +33,7 @@
       <category>network modeling</category>
       <category>partial correlation networks</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</guid>
-      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
     </item>
     <item>
@@ -252,6 +252,20 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct</guid>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct/./free_communication.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Fighting with faking in personality assessments</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-01-11-personality-assessments-and-faking</link>
+      <description>A brief summary of the main results of a meta-analysis comparing psychometric characteristics of forced-choice and single-stimulus personality assessments in relation to faking.</description>
+      <category>personality</category>
+      <category>assessment</category>
+      <category>psychometrics</category>
+      <category>faking</category>
+      <category>validity</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-01-11-personality-assessments-and-faking</guid>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-01-11-personality-assessments-and-faking/./faking_illustration.png" medium="image" type="image/png" width="1024" height="1024"/>
     </item>
     <item>
       <title>How should teams be designed to be creative and innovative?</title>
