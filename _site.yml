@@ -2,7 +2,7 @@ name: "People_Analytics_Blog"
 title: "Ludek's Blog About People Analytics"
 description: |
   Exploring People Analytics topics 
-base_url: https://blog-about-people-analytics.netlify.com/
+base_url: https://blog-about-people-analytics.netlify.app/
 output_dir: "_site"
 collections:
   posts:
