@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Unpacking surprises in the women’s 100m World Championships</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint</link>
+      <description>How surprising was Sha’Carri Richardson’s victory in the women’s 100m race at the World Athletics Championships in Budapest 2023? Let's check it out with some data.</description>
+      <category>sport</category>
+      <category>sprint</category>
+      <category>perfomance</category>
+      <category>variability</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint</guid>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint/./sprint_foto.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>People may signal their exit intentions not only by their actions but also by their inactions</title>
       <dc:creator>Luděk Stehlík</dc:creator>
