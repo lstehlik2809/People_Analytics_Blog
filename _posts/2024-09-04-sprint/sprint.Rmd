@@ -215,7 +215,7 @@ ggplot2::ggplot(
 
 Not sure if there are any deeper lessons to be drawn from these results, perhaps just that while patterns and predictability exist, there is always room for surprises, the awareness of which can help nurture resilience and flexibility, key qualities for navigating uncertain environments. But maybe I just have a limited imagination, so feel free to share any suggestions for a better lesson 🙂
 
-What I am 100% sure of, though, is that I enjoyed playing with the data a lot. If you'd like to play with them yourself, you can copy them for both women and men from the two tables below.
+What I am 100% sure of, though, is that I enjoyed playing with the data a lot. If you'd like to play with them yourself, you can download them for both women and men from the two tables below.
 
 <h3>Women's 100m Data</h3>
 
