@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 03 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Are people during exit surveys more honest in their responses than in engagement surveys?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-09-12-honesty-in-engagement-vs-exit-surveys</link>
+      <description>It is quite common to encounter the opinion that responses in exit surveys or interviews are more honest than those in regular engagement surveys, despite their anonymity and/or confidentiality, especially when it comes to more politically sensitive topics such as satisfaction with one's direct manager. It is usually argued that people no longer fear repercussions or negative consequences for speaking openly about their real experiences and opinions because they leave the organization and have less incentive to conceal critical feedback. Let's see if we can find any evidence of it in the data...</description>
+      <category>employee experience</category>
+      <category>exit survey</category>
+      <category>engagement survey</category>
+      <category>response style</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-12-honesty-in-engagement-vs-exit-surveys</guid>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-12-honesty-in-engagement-vs-exit-surveys/./pic2.png" medium="image" type="image/png" width="1000" height="600"/>
+    </item>
     <item>
       <title>Unpacking surprises in the women’s 100m World Championships</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>perfomance</category>
       <category>variability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint</guid>
-      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint/./sprint_foto.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
