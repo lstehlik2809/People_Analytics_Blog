@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Why are introverts often described in terms of negative emotionality, and should they be?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-09-18-extraversion-vs-neuroticism</link>
+      <description>If interested, here are a few quick thoughts of mine along with some light data exploration on the topic.</description>
+      <category>personality</category>
+      <category>introversion</category>
+      <category>extraversion</category>
+      <category>neuroticism</category>
+      <category>ipip</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-18-extraversion-vs-neuroticism</guid>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-18-extraversion-vs-neuroticism/./corrplot2.png" medium="image" type="image/png" width="3300" height="3000"/>
+    </item>
     <item>
       <title>Are people during exit surveys more honest in their responses than in engagement surveys?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>engagement survey</category>
       <category>response style</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-12-honesty-in-engagement-vs-exit-surveys</guid>
-      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-12-honesty-in-engagement-vs-exit-surveys/./pic2.png" medium="image" type="image/png" width="1000" height="600"/>
     </item>
     <item>
