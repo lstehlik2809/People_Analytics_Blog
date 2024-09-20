@@ -1,7 +1,7 @@
 ---
 title: "Motivation vs. Performance: What causes what?"
 description: |
-  An interesting article by Wang, Luan & Ma (2024) in Nature explores the causal relationship between work motivation and job performance using longitudinal data from 11 independent studies and meta-analytic structural equation modeling. 
+  An interesting research paper by Wang, Luan & Ma (2024) in Nature explores the causal relationship between work motivation and job performance using longitudinal data from 11 independent studies and meta-analytic structural equation modeling. 
 preview: ./performance_motivation.png    
 author:
   - name: Luděk Stehlík
@@ -21,7 +21,7 @@ output:
     code_folding: true
 ---
 
-The authors of the examined four competing hypotheses:
+The authors of the paper examined four competing hypotheses:
 
 1. Motivation causes performance.
 2. Performance causes motivation.
