@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 17 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Motivation vs. Performance: What causes what?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-09-20-performance-vs-motivation</link>
+      <description>An interesting article by Wang, Luan &amp; Ma (2024) in Nature explores the causal relationship between work motivation and job performance using longitudinal data from 11 independent studies and meta-analytic structural equation modeling.</description>
+      <category>performance</category>
+      <category>motivation</category>
+      <category>meta-analysis</category>
+      <category>causality</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-20-performance-vs-motivation</guid>
+      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-20-performance-vs-motivation/./performance_motivation.png" medium="image" type="image/png" width="877" height="454"/>
+    </item>
     <item>
       <title>Why are introverts often described in terms of negative emotionality, and should they be?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +32,7 @@
       <category>neuroticism</category>
       <category>ipip</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-18-extraversion-vs-neuroticism</guid>
-      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-18-extraversion-vs-neuroticism/./corrplot2.png" medium="image" type="image/png" width="3300" height="3000"/>
     </item>
     <item>
