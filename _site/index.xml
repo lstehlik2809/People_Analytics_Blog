@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Simulating the "survivorship" effect in employee satisfaction data over time</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-10-02-tenure-vs-satisfaction</link>
+      <description>How to align observations in organizational data with the results of one research on the relationship between tenure and employee satisfaction?</description>
+      <category>tenure</category>
+      <category>employee satisfaction</category>
+      <category>simulation</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-02-tenure-vs-satisfaction</guid>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-02-tenure-vs-satisfaction/./employee_satisfaction_10_200_0.25.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>Motivation vs. Performance: What causes what?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>meta-analysis</category>
       <category>causality</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-09-20-performance-vs-motivation</guid>
-      <pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-20-performance-vs-motivation/./performance_motivation.png" medium="image" type="image/png" width="877" height="454"/>
     </item>
     <item>
