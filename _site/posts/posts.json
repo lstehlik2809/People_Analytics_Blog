@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2024-10-29-job-personality-fit/",
+    "title": "Do people’s personalities vary across different jobs?",
+    "description": "And if they do, are those differences big enough to be useful for career counseling and personal development?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-10-29",
+    "categories": [
+      "personality",
+      "job-person fit",
+      "career counseling"
+    ],
+    "contents": "\r\nOver the years, it seems I’ve gravitated toward a job family that aligns well with my personality - or at least, that’s how it appears when you find job choices of other similarly-minded people as a validation of your own choices 😉\r\nAttached, you can see one of my results from an online tool that measures the Big Five personality traits and compares them with the personality profiles of individuals across various occupations.\r\n\r\n\r\n\r\nIt’s based on research by Anni, Vainik, & Mõttus (2024), which examined personality trait patterns across 263 occupations and yielded following key insights:\r\nCertain personality traits align predictably with specific jobs, supporting the person–job fit model. For instance, openness is more common in creative fields, while conscientiousness tends to be higher in managerial roles.\r\nOccupations account for 2%–7% of the variance in Big Five personality traits, suggesting modest but meaningful differences across roles.\r\nOccupations with high average levels of traits linked to job performance (e.g., conscientiousness) show greater homogeneity in these traits, indicating selective environments.\r\nThe results align with previous studies across different regions, suggesting that these occupational-personality trends are broadly applicable across cultures.\r\nDetailed personality traits beyond the Big Five (e.g., specific aspects of extraversion or conscientiousness) explain even more variance, illustrating nuanced differences among job incumbents.\r\nThese findings suggest that while personality explains only part of the variation among occupations, it may still offer valuable insights for career counseling and personal development.\r\nIf you’d like to try the tool yourself, here’s the link.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-10-29-job-personality-fit/./results_screenshot.jpg",
+    "last_modified": "2024-10-29T16:36:09+01:00",
+    "input_file": "job-personality-fit.knit.md"
+  },
+  {
     "path": "posts/2024-10-26-personality-and-non-linearities/",
     "title": "Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception",
     "description": "... at least in my projects 😉",

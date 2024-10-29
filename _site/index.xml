@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Do people’s personalities vary across different jobs?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit</link>
+      <description>And if they do, are those differences big enough to be useful for career counseling and personal development?</description>
+      <category>personality</category>
+      <category>job-person fit</category>
+      <category>career counseling</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit</guid>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit/./results_screenshot.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +33,7 @@
       <category>hogan</category>
       <category>hpi</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-26-personality-and-non-linearities</guid>
-      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-26-personality-and-non-linearities/./plots.png" medium="image" type="image/png" width="1174" height="694"/>
     </item>
     <item>
