@@ -21,6 +21,30 @@
     "input_file": "job-personality-fit.knit.md"
   },
   {
+    "path": "posts/2024-10-30-xmr-charts-in-people-analytics/",
+    "title": "Do you use XmR charts for People Analytics use cases?",
+    "description": "Looking for tips from those who answered \"Yes\" to the question in the title of this post 🙂",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-10-30",
+    "categories": [
+      "xmr chart",
+      "signal and noise",
+      "statistical inference",
+      "data vizualization"
+    ],
+    "contents": "\r\nI’m curious if anyone in People Analytics space has experience - good, bad, or a bit of both - using XmR charts for tracking and interpreting HR-related metrics and guiding follow-up process improvements, especially among non-technical end users.\r\nI stumbled upon this interesting tool, originally rooted in statistical process control in industrial engineering and manufacturing, through posts by Frank Corrigan, and recently dug a bit deeper into it through a series of email lectures from Commoncog.\r\nFrom the get-go, it struck me as a potentially effective way for HR or business people - who may not have deep data expertise - to become more data-driven, as it simplifies the task of separating signal from noise and makes it straightforward for even laypeople to determine whether changes in metrics are due to real shifts or just random fluctuations. In effect, it helps users address the “So what?” question by validating when data points signify something meaningful, like a trend, shift, or outlier that warrants further action or adjustment.\r\nAs the attached charts illustrate (based on a sample of dummy data tracking internal mobility), it is pretty intuitive to spot if a metric should (or should not) require further investigation into the process behind it, or whether a change introduced at the start of 2024 is actually impacting the numbers. All you really need to do is keep an eye on the limit lines and follow some basic rules, such as:\r\nInvestigate when a point is outside the limit lines.\r\nTake a closer look if three out of four successive points are near the limits rather than the center.\r\nIf eight consecutive points appear on one side of the average, that may signal a meaningful shift.\r\n\r\n\r\n\r\nWould love to hear any experiences you might’ve had with XmR charts in the PA space! 🙏\r\nP.S. The attached charts were created with Xmrit, a free online tool from Commoncog, whose website also has more useful information about this analytical tool.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-10-30-xmr-charts-in-people-analytics/./charts.png",
+    "last_modified": "2024-10-30T11:18:09+01:00",
+    "input_file": "xmr-charts-in-people-analytics.knit.md",
+    "preview_width": 888,
+    "preview_height": 652
+  },
+  {
     "path": "posts/2024-10-26-personality-and-non-linearities/",
     "title": "Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception",
     "description": "... at least in my projects 😉",

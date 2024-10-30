@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Do people’s personalities vary across different jobs?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,8 +17,21 @@
       <category>job-person fit</category>
       <category>career counseling</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit</guid>
-      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit/./results_screenshot.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Do you use XmR charts for People Analytics use cases?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics</link>
+      <description>Looking for tips from those who answered "Yes" to the question in the title of this post 🙂</description>
+      <category>xmr chart</category>
+      <category>signal and noise</category>
+      <category>statistical inference</category>
+      <category>data vizualization</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics</guid>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/./charts.png" medium="image" type="image/png" width="888" height="652"/>
     </item>
     <item>
       <title>Nonlinear relationships between personality traits and business outcomes seem to be the norm rather than the exception</title>
