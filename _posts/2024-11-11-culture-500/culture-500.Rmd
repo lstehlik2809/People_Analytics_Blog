@@ -47,6 +47,6 @@ With a standardized scale, one can quickly see how their company’s culture com
 
 This tool can be a nice complement to an internal employee listening program, giving an outside perspective. That said, if your listening program is on point, the results shouldn’t come as a big surprise 😉 Also could be a helpful resource for anyone weighing job offers and looking to understand a company’s culture before joining.
 
-When using the tool, one should keep in mind its limits, like potential review bias, limited cross-industry comparability, constraints in capturing nuanced sentiments and emerging cultural dimensions, the freshness of data reflecting real-time changes, dependency on Glassdoor’s review policies, focus restricted to nine core values, and exclusion of global employee perspectives. And as its name suggests, it includes results for only around 500 leading companies.
+⚠️ When using the tool, one should keep in mind its limits, like potential review bias, limited cross-industry comparability, constraints in capturing nuanced sentiments and emerging cultural dimensions, the freshness of data reflecting real-time changes, dependency on Glassdoor’s review policies, focus restricted to nine core values, and exclusion of global employee perspectives. And as its name suggests, it includes results for only around 500 leading companies.
 
-You can find the methodology behind the tool described [here](https://sloanreview.mit.edu/projects/measuring-culture-in-leading-companies/){target="_blank"}.
+To learn more about the methodology behind the tool, check out [this site](https://sloanreview.mit.edu/projects/measuring-culture-in-leading-companies/){target="_blank"}.
