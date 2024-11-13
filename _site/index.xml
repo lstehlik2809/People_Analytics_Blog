@@ -7,7 +7,24 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 10 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>ChatGPT as a new email writing coach?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy</link>
+      <description>Using CausalPy package to test the plausibility of the hypothesis that Stack Overflow may not be the only “victim” of ChatGPT and the GenAI likes 😉</description>
+      <category>email communication</category>
+      <category>genai</category>
+      <category>chatgpt</category>
+      <category>llm</category>
+      <category>google trends</category>
+      <category>causal inference</category>
+      <category>causalpy</category>
+      <category>python</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy</guid>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy/./output_plot.png" medium="image" type="image/png" width="4558" height="5058"/>
+    </item>
     <item>
       <title>How does your company stack up in the Big Nine Cultural Values?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +35,7 @@
       <category>glassdoor</category>
       <category>nlp</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-11-11-culture-500</guid>
-      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-11-11-culture-500/./chart2.png" medium="image" type="image/png" width="1309" height="763"/>
     </item>
     <item>
