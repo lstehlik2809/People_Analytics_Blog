@@ -1,8 +1,32 @@
 [
   {
+    "path": "posts/2024-11-21-instrumental-and-expressive-networks/",
+    "title": "Not all workplace relationships are created equal when it comes to retaining talent",
+    "description": "A brief sneak peek into an interesting and potentially useful meta-analysis that explored the specific mechanisms through which two types of workplace networks are related to employee turnover.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-11-21",
+    "categories": [
+      "ona",
+      "networks",
+      "employee turnover",
+      "meta-analysis"
+    ],
+    "contents": "\r\nI recently came across an interesting and potentially useful meta-analysis by Porter et al. (2018) that used meta-analytic path analysis to explore specific mechanisms through which two types of workplace networks are related to employee turnover:\r\nInstrumental networks: These are job-related connections that provide resources like advice, expertise, or work-related information, built through initiatives like knowledge-sharing programs, access to key stakeholders, and attending external conferences.\r\nExpressive networks: These are connections with focus on emotional support, friendships, and social bonding, developed through activities like company social events, cross-team job rotations, and peer mentorship programs.\r\n\r\n\r\n\r\nThe study found that both network types are connected with turnover but through different mechanisms. Instrumental ties reduce turnover by improving job performance (thanks to access to work-related resources) and strengthening organizational commitment. Meanwhile, expressive ties lower turnover by increasing job satisfaction (through emotional support and social bonds) and boosting organizational commitment.\r\nWhat also stood out: Expressive network ties appear to be nearly three times as “sticky” (95% CI: [-0.60, -0.37]) as instrumental ties (95% CI: [-0.23, -0.07]) based on simple bivariate correlations. Moreover, after accounting for turnover antecedents such as job performance and satisfaction, only expressive ties maintained a negative association with turnover (b = -0.47, SE = 0.02).\r\nWhile there are some limitations to consider - such as the relatively small number of studies, variability in how networks were measured, sampling bias, or missing contextual moderators - these estimates may still be useful for setting priors when considering the shape of retention strategies before conducting a similar analysis on your own data. Meanwhile, with only these results in hand, we might assume that, while instrumental ties help employees succeed in their jobs, they don’t generate the same level of ‘stickiness’ as expressive ties.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-11-21-instrumental-and-expressive-networks/./model_to_be_tested.png",
+    "last_modified": "2024-11-21T11:05:11+01:00",
+    "input_file": "instrumental-and-expressive-networks.knit.md",
+    "preview_width": 1150,
+    "preview_height": 739
+  },
+  {
     "path": "posts/2024-11-13-chatgpt-emails-and-causalpy/",
     "title": "ChatGPT as a new email writing coach?",
-    "description": "Using CausalPy package to test the plausibility of the hypothesis that Stack Overflow may not be the only “victim” of ChatGPT and the GenAI likes 😉",
+    "description": "Using CausalPy package to test the plausibility of the hypothesis that Stack Overflow may not be the only “victim” of ChatGPT and the GenAI likes.",
     "author": [
       {
         "name": "Luděk Stehlík",
@@ -22,7 +46,7 @@
     ],
     "contents": "\r\nI wanted to try out the new CausalPy package for causal inference and was brainstorming interesting research questions to apply it to. My inspiration came from a recent wave of LI posts in my feed, all sharing a chart showing a drop in Stack Overflow traffic after ChatGPT’s release in November 2022.\r\n\r\n\r\n\r\nGiven that many studies - including one we conducted internally at Sanofi - show that one of the most frequent use cases for GenAI in the business world is helping with email writing (we’ve probably all seen the hilarious meme on this topic shown below 😁), I got curious about whether a similar pattern might show up in Google Trends for searches like “How to write an email.”\r\n\r\n\r\n\r\nFor the analysis, I used an interrupted time series method, which examines the effect of an intervention by comparing time series data before and after the intervention that happened at a known point in time, allowing us to assess any shifts in level or trend.\r\nAs the resulting charts below show, there does seem to be a noticeable drop in searches on how to write emails following ChatGPT’s official release. In fact, the shift is so pronounced that it’s clear even with a quick eyeballing analysis. Sure, we can speculate about other factors to be involved - maybe we’re sending fewer emails because we’re relying more on platforms like Slack or Teams - but as other available stats suggest (see, for example, this one), we can only wish that were the case 😉\r\n\r\n\r\n\r\nEither way, CausalPy turned out to be a super easy-to-use and user-friendly tool. I’m looking forward to using it in my future projects. Kudos to the entire CausalPy team! 👏\r\nP.S. To replicate the analysis, you can use the Python code below.\r\n\r\n\r\nShow code\r\n\r\n# uploading the reticulate package for running Python in .Rmd file\r\nlibrary(reticulate)\r\n\r\n\r\n\r\n\r\nShow code\r\n# uploading libraries\r\nimport pandas as pd\r\nimport numpy as np\r\nfrom pytrends.request import TrendReq\r\nimport matplotlib.pyplot as plt\r\nimport arviz as az\r\nimport causalpy as cp\r\n\r\n# getting global Google Trends data for a key phrase of interest\r\n# initializing the TrendReq object\r\npytrends = TrendReq(hl='en-US', tz=360, requests_args={'verify': False})\r\n\r\n# specifying keyword and time range\r\nkeywords = ['How to write email']\r\ntimeframe = '2020-01-01 2024-10-31'\r\n\r\n# creating payload and fetching data\r\npytrends.build_payload(keywords, cat=0, timeframe=timeframe, geo='', gprop='')\r\ndata = pytrends.interest_over_time()\r\n\r\n# data overview\r\n# data.head()\r\n# data.info()\r\n\r\n# creating month variable for capturing seasonality in the data\r\ndata['month'] = data.index.month\r\n\r\n# creating time variable\r\ndata['t'] = np.arange(len(data))\r\n\r\n# renaming target variable\r\ndata.rename(columns={'How to write email': 'y'}, inplace=True)\r\n\r\n# saving the data for later usage\r\n# data.to_csv('google_trends_data.csv', index=True)\r\n\r\n# specifying the date of intervention\r\ntreatment_time = pd.to_datetime(\"2022-10-30\")\r\n\r\n# specifying and fitting the model\r\nseed = 2024\r\nresult = cp.InterruptedTimeSeries(\r\n    data,\r\n    treatment_time,\r\n    formula=\"y ~ 1 + t + C(month)\",\r\n    model=cp.pymc_models.LinearRegression(\r\n      sample_kwargs={\r\n        \"random_seed\": seed, \r\n        \"draws\": 5000,\r\n        \"tune\": 1000, \r\n        \"chains\": 4 \r\n      }\r\n    ),\r\n)\r\n\r\n# summary of the fitted model\r\nresult.summary()\r\n\r\n# plotting the results\r\nfig, ax = result.plot()\r\nplt.show()\r\n\r\n# summary statistics of the causal impact over the entire post-intervention period\r\naz.summary(result.post_impact.mean(\"obs_ind\"))\r\n\r\n# summary statistics of the cumulative causal impact\r\n# getting index of the final time point\r\nindex = result.post_impact_cumulative.obs_ind.max()\r\n# grabbing the posterior distribution of the cumulative impact at this final time point\r\nlast_cumulative_estimate = result.post_impact_cumulative.sel({\"obs_ind\": index})\r\n# getting summary stats\r\naz.summary(last_cumulative_estimate)\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2024-11-13-chatgpt-emails-and-causalpy/./output_plot.png",
-    "last_modified": "2024-11-13T12:32:14+01:00",
+    "last_modified": "2024-11-21T11:04:26+01:00",
     "input_file": "chatgpt-emails-and-causalpy.knit.md",
     "preview_width": 4558,
     "preview_height": 5058

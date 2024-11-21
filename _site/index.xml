@@ -7,12 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Not all workplace relationships are created equal when it comes to retaining talent</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-11-21-instrumental-and-expressive-networks</link>
+      <description>A brief sneak peek into an interesting and potentially useful meta-analysis that explored the specific mechanisms through which two types of workplace networks are related to employee turnover.</description>
+      <category>ona</category>
+      <category>networks</category>
+      <category>employee turnover</category>
+      <category>meta-analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-11-21-instrumental-and-expressive-networks</guid>
+      <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-11-21-instrumental-and-expressive-networks/./model_to_be_tested.png" medium="image" type="image/png" width="1150" height="739"/>
+    </item>
     <item>
       <title>ChatGPT as a new email writing coach?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy</link>
-      <description>Using CausalPy package to test the plausibility of the hypothesis that Stack Overflow may not be the only “victim” of ChatGPT and the GenAI likes 😉</description>
+      <description>Using CausalPy package to test the plausibility of the hypothesis that Stack Overflow may not be the only “victim” of ChatGPT and the GenAI likes.</description>
       <category>email communication</category>
       <category>genai</category>
       <category>chatgpt</category>
@@ -22,7 +35,7 @@
       <category>causalpy</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy</guid>
-      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-11-13-chatgpt-emails-and-causalpy/./output_plot.png" medium="image" type="image/png" width="4558" height="5058"/>
     </item>
     <item>
