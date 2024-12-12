@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>"A new broom sweeps clean"</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-12-12-managers-and-performance-evaluations</link>
+      <description>Does the saying above also apply to new managers and how they evaluate their direct reports?</description>
+      <category>performance evaluation</category>
+      <category>performance management</category>
+      <category>employee feedback</category>
+      <category>organizational behavior</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-12-12-managers-and-performance-evaluations</guid>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-12-12-managers-and-performance-evaluations/./performance_eval_estimates.png" medium="image" type="image/png" width="5500" height="3000"/>
+    </item>
     <item>
       <title>Not all workplace relationships are created equal when it comes to retaining talent</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>employee turnover</category>
       <category>meta-analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-11-21-instrumental-and-expressive-networks</guid>
-      <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-11-21-instrumental-and-expressive-networks/./model_to_be_tested.png" medium="image" type="image/png" width="1150" height="739"/>
     </item>
     <item>
