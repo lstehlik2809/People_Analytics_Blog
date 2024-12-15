@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Divorce usually impacts both sides - but does that hold true for Brexit?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-12-15-brexit-uk-eurozone</link>
+      <description>We can often come across analyses highlighting the negative effects of Brexit on the UK’s economic performance as measured by GDP. But what about the reverse perspective? How has Brexit impacted the economies of EU member countries?</description>
+      <category>causal inference</category>
+      <category>synthetic control</category>
+      <category>causalpy</category>
+      <category>brexit</category>
+      <category>eurozone</category>
+      <category>oecd</category>
+      <category>gdp</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-12-15-brexit-uk-eurozone</guid>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-12-15-brexit-uk-eurozone/./brexit.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>"A new broom sweeps clean"</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +34,7 @@
       <category>employee feedback</category>
       <category>organizational behavior</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-12-12-managers-and-performance-evaluations</guid>
-      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-12-12-managers-and-performance-evaluations/./performance_eval_estimates.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>
