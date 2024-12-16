@@ -36,7 +36,7 @@ To my surprise, the results for the eurozone countries contrast pretty starkly w
 
 Maybe it reflects what we often see in personal relationships: divorce usually affects both sides, but the costs are only rarely distributed equally and/or in the same ways 🤔
 
-If interested, you can find below the data and code for replicating this analysis.
+P.S. If interested, the data from the [OECD Data Explorer](https://data-explorer.oecd.org/){target="_blank"} and the code for replicating this analysis are provided below.
 
 
 ```{r}
@@ -47,7 +47,7 @@ library(reticulate)
 library(tidyverse)
 library(DT)
 
-# uploading the data from the DataBank of the World Bank Group (https://databank.worldbank.org/)
+# uploading the data from the OECD Data Explorer at https://data-explorer.oecd.org/
 df <- readr::read_csv("oecd_data.csv")
 
 # table view of two rows of the data
@@ -81,7 +81,7 @@ import arviz as az
 import causalpy as cp
 az.style.use("arviz-white")
 
-# uploading the data from the DataBank of the World Bank Group (https://databank.worldbank.org/)
+# uploading the data from the OECD Data Explorer at https://data-explorer.oecd.org/
 data = pd.read_csv('oecd_data.csv')
 data.info()
 data.head()
