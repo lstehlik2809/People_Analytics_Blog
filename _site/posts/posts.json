@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2024-12-30-new-years-resolution/",
+    "title": "Stop. Start. Continue.",
+    "description": "A brief, year-end reflection on the 'what,' 'why,' and 'how' behind our personal growth journeys.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-12-30",
+    "categories": [
+      "change",
+      "resolution",
+      "development",
+      "google trends"
+    ],
+    "contents": "\r\nAs we enter this part of the year when the ‘fresh start’ effect can kick in and help us make some desirable changes in our lives, I began to wonder what types of changes people are most inclined to pursue. One way to approach this question is through the well-known Stop, Start, Continue framework, commonly used in employee feedback and development.\r\nLooking at Google Trends data and examining the frequency of search terms related to these three actions, it seems that people most often search for ways to stop doing things, followed by how to start doing things, and least often, how to continue doing things.\r\n\r\n\r\n\r\nAny hypotheses as to why this might be the case? Here are my ‘three cents’, based on my personal experience:\r\nThe things we want to stop doing may feel more urgent because we are already experiencing their negative impact in our lives.\r\nStopping certain behaviors can be perceived as more challenging, as it often requires overcoming deeply ingrained habits formed through repeated actions – habits we tend to revert to, especially under stress or cognitive load.\r\nThe availability heuristic might play a role, as behaviors we already engage in are more easily brought to mind for reflection.\r\nMore importantly, whatever stops, starts, and continues make it onto your New Year’s resolution list – and for whatever reason – I wish you success in achieving them! 🖖🙂\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-12-30-new-years-resolution/./google_trends.png",
+    "last_modified": "2024-12-30T15:29:15+01:00",
+    "input_file": "new-years-resolution.knit.md",
+    "preview_width": 1065,
+    "preview_height": 330
+  },
+  {
     "path": "posts/2024-12-15-brexit-uk-eurozone/",
     "title": "Divorce usually impacts both sides - but does that hold true for Brexit?",
     "description": "We can often come across analyses highlighting the negative effects of Brexit on the UK’s economic performance as measured by GDP. But what about the reverse perspective? How has Brexit impacted the economies of EU member countries?",
