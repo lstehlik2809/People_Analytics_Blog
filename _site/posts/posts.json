@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2025-01-15-managerial-quality/",
+    "title": "Unexpected protective effect of having a good manager?",
+    "description": "Imagine that your direct manager recently left your company voluntarily, and she was among those who excelled in her managerial duties. Do you think that her above-average managerial skills would make you more or less likely to leave the company in the following months?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-01-15",
+    "categories": [
+      "people management",
+      "employee attrition",
+      "manager",
+      "causal analysis",
+      "heterogeneity"
+    ],
+    "contents": "\r\nUntil now, based on my personal experience and common sense, I would have been quite certain that it would increase the odds of a direct report’s departure. After all, we like good bosses so much that we might follow them – even outside our current company, right?\r\nSo I was quite surprised when I examined a real-world dataset and checked the impact of managers’ voluntary departure on employees’ probability of leaving, in interaction with manager quality as measured by multi-rater feedback, while controlling for some typical organizational confounders.\r\nAs expected, a manager’s departure increased the odds of an employee leaving later. However, managerial quality actually had a protective effect and decreased the employee’s risk of leaving when their manager left. Interestingly, more “technical” skills – such as communicating expectations, goal setting, or providing feedback – seemed to be more important in this respect than “softer” skills – like coaching, psychological safety, or wellbeing support.\r\nNow, besides cross-validating the results, I am trying to understand the potential reasons (including missed confounders) behind this pattern. What would be your favorite hypotheses to test?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-01-15-managerial-quality/./mng_attrition_illustration.png",
+    "last_modified": "2025-01-15T20:35:30+01:00",
+    "input_file": "managerial-quality.knit.md",
+    "preview_width": 1029,
+    "preview_height": 618
+  },
+  {
     "path": "posts/2025-01-09-self-leadership/",
     "title": "Self-Leadership: A New Superpower?",
     "description": "In today’s world of hybrid work and freelancing, people can no longer rely solely on external supervision. Instead, they need to build and cultivate self-leadership — the skill to guide themselves toward better performance and personal fulfillment by actively influencing their thoughts, emotions, and actions.",
