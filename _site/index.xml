@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>We are probably more similar - and different - than expected</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-01-17-personality-and-cultural-values</link>
+      <description>A brief summary of the key findings from the research paper on the multilevel exploration of Big Five personality traits and cultural values.</description>
+      <category>personality</category>
+      <category>culture values</category>
+      <category>multi-level modeling</category>
+      <category>intercultural psychology</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-01-17-personality-and-cultural-values</guid>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-01-17-personality-and-cultural-values/./correlations.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Unexpected protective effect of having a good manager?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +32,7 @@
       <category>causal analysis</category>
       <category>heterogeneity</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-01-15-managerial-quality</guid>
-      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-01-15-managerial-quality/./mng_attrition_illustration.png" medium="image" type="image/png" width="1029" height="618"/>
     </item>
     <item>

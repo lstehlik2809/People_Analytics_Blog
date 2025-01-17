@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2025-01-17-personality-and-cultural-values/",
+    "title": "We are probably more similar - and different - than expected",
+    "description": "A brief summary of the key findings from the research paper on the multilevel exploration of Big Five personality traits and cultural values.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-01-17",
+    "categories": [
+      "personality",
+      "culture values",
+      "multi-level modeling",
+      "intercultural psychology"
+    ],
+    "contents": "\r\nAn interesting research paper by Stackhouse et al. (2024) looked at the sources of variance in people’s Big Five personality and Hofstede cultural values (individual-level vs nation-level differences), and at the relationship between these two types of individual characteristics, while taking into account the multi-level nature of the data.\r\nThe authors used intraclass correlation (ICC1) to decompose the source of variance in these two constructs. Unsurprisingly, they found that personality only shows small variability that can be attributed to differences between nations (for individual traits, it ranged between 3.1% and 11%). However, surprisingly, similar results were found also for cultural values (from 3.6% to 9.7%)! We thus differ in our cultural values within nations more than we would have expected.\r\n\r\n\r\n\r\nTo assess the strength and direction of the association between personality and cultural values characteristics, the authors used multilevel correlation analysis and found that the correlations are much weaker than those suggested by previous studies that used only aggregated, nation-level data. The top three correlations - between uncertainty avoidance and agreeableness (r = 0.25), gender egalitarianism and agreeableness (r = −0.23), and teamwork preference and extraversion (r = 0.20) - made it only into the ‘weak effect’ area.\r\n\r\n\r\n\r\nMultilevel associations between the Five Factor Model and cultural values.\r\nAll this suggests that the next time you feel an urge to guess someone’s personality or cultural values from their nationality, or to infer one from another, think of this paper and maybe try to base your guess on other information about them 😉\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-01-17-personality-and-cultural-values/./correlations.jpg",
+    "last_modified": "2025-01-17T09:11:26+01:00",
+    "input_file": "personality-and-cultural-values.knit.md"
+  },
+  {
     "path": "posts/2025-01-15-managerial-quality/",
     "title": "Unexpected protective effect of having a good manager?",
     "description": "Imagine that your direct manager recently left your company voluntarily, and she was among those who excelled in her managerial duties. Do you think that her above-average managerial skills would make you more or less likely to leave the company in the following months?",
