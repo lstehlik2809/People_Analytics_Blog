@@ -61,6 +61,6 @@ To better understand the effects found, take a look at the scatter plots with fi
 ![](./adjustment_scatter_plot.png){width=100%}
 </div>
 
-These results are, IMO, pretty intuitive and not all that surprising—at least in hindsight 😉—though I personally expected a stronger effect of adjustment and inquisitive traits. What would be your take on it? 
+These results are, IMO, pretty intuitive and not all that surprising—at least in hindsight 😉—though I personally expected a stronger effect of adjustment and inquisitive traits. What would be your take on it? Have you done a similar type of analysis? If so, what were your results? 
 
 Caveat: The sample used was very small (just 72 people!) and highly specific—managers from a single company, industry, country, and region—so the results can’t be easily generalized to a broader population. Still, IMO, the findings offer some useful hints about when we should be more mindful of the possibility of misjudging our self-evaluation, whether by overestimating or underestimating ourselves.
