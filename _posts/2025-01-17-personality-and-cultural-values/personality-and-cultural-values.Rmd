@@ -10,7 +10,7 @@ date: 01-17-2025
 categories:
   - personality
   - culture values
-  - multi-level modeling
+  - multilevel modeling
   - intercultural psychology
 output:
   distill::distill_article:
