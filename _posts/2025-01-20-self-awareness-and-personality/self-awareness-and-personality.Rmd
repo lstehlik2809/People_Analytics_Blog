@@ -21,7 +21,7 @@ output:
     code_folding: true
 ---
 
-Many wise people (starting with Plato?) say that [self-awareness](https://journals.sagepub.com/doi/full/10.1177/1052562921990065){target="_blank"} is one of the key ingredients for psychological well-being, career success, and effective leadership, among other things.
+Many wise people (starting with Plato and his 'Know thyself' idea?) suggest that [self-awareness](https://journals.sagepub.com/doi/full/10.1177/1052562921990065){target="_blank"} is one of the key ingredients for psychological well-being, career success, and effective leadership, among other things.
 
 If that’s true (see, for example, [this research paper](https://www.econstor.eu/handle/10419/251923){target="_blank"} on the impact of self-awareness on leadership behavior and effectiveness), it would be useful to understand what might get in the way of well-calibrated self-awareness. One potential obstacle could be our habitual patterns of feelings, thoughts, and behaviors, i.e., our personality.
 
@@ -63,4 +63,4 @@ To better understand the effects found, take a look at the scatter plots with fi
 
 These results are, IMO, pretty intuitive and not all that surprising—at least in hindsight 😉—though I personally expected a stronger effect of adjustment and inquisitive traits. What would be your take on it? Have you done a similar type of analysis? If so, what were your results? 
 
-Caveat: The sample used was very small (just 72 people!) and highly specific—managers from a single company, industry, country, and region—so the results can’t be easily generalized to a broader population. Still, IMO, the findings offer some useful hints about when we should be more mindful of the possibility of misjudging our self-evaluation, whether by overestimating or underestimating ourselves.
+Caveat: The sample used was very small (just 72 people!) and highly specific—managers from a single company, industry, country, and region—so the results can’t be easily generalized to a broader population. Still, IMO, the findings offer some useful hints about when we should be more mindful of the possibility of misjudging our self-evaluation, whether by overestimating or underestimating ourselves. That said, we shouldn’t forget that overly optimistic self-deception can sometimes be useful, in the “fake it till you make it” spirit 😉
