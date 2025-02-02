@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How variations in analytic choices affect results?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-02-02-analytical-choices-and-variability</link>
+      <description>It’s human nature to take things at face value, assuming they are exactly as they appear, without noticing the assumptions and choices shaping that appearance. Remember Kahneman’s WYSIATI principle—What You See Is All There Is?</description>
+      <category>reproducibility</category>
+      <category>open science</category>
+      <category>data science</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-02-analytical-choices-and-variability</guid>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-02-analytical-choices-and-variability/./results_chart.jpeg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Does your personality interfere with your self-awareness?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +30,7 @@
       <category>multi-rater feedback</category>
       <category>hpi</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-01-20-self-awareness-and-personality</guid>
-      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-01-20-self-awareness-and-personality/./density_plots.png" medium="image" type="image/png" width="5500" height="5000"/>
     </item>
     <item>

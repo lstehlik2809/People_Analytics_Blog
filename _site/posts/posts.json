@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2025-02-02-analytical-choices-and-variability/",
+    "title": "How variations in analytic choices affect results?",
+    "description": "It’s human nature to take things at face value, assuming they are exactly as they appear, without noticing the assumptions and choices shaping that appearance. Remember Kahneman’s WYSIATI principle—What You See Is All There Is?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-02-02",
+    "categories": [
+      "reproducibility",
+      "open science",
+      "data science"
+    ],
+    "contents": "\r\nUnfortunately, the same bias can also creep into data analysis. Along the way, we make numerous decisions—some small, some significant—that impact our results. Yet, we often act as if none of these choices happened, believing we’ve arrived at the one true, objective finding.\r\nA great example of this comes from Silberzahn et al. (2018), who set out to expose these subjective analytical choices and their influence on results. They asked 29 teams, comprising 61 analysts, to analyze the same dataset and answer the same question: Are soccer referees more likely to give red cards to players with darker skin tones than to those with lighter skin tones?\r\nThey found that analytical approaches varied widely, leading to effect size estimates ranging from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, while nine teams (31%) did not. Interestingly, neither the analysts’ prior beliefs nor their level of expertise explained the variation. Even peer ratings of analysis quality failed to account for the differences.\r\n\r\n\r\n\r\nThis study highlights an important reality: even defensible, well-intentioned analytical choices can lead to vastly different results. What should we take from this? Should sensitivity analysis be a standard practice? Should we crowdsource high-profile analyses? What do you think?\r\nP.S. If you want to see how your own approach would shape the results, you can download the original dataset from OSF and give it a try!\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-02-analytical-choices-and-variability/./results_chart.jpeg",
+    "last_modified": "2025-02-02T18:35:00+01:00",
+    "input_file": "analytical-choices-and-variability.knit.md"
+  },
+  {
     "path": "posts/2025-01-20-self-awareness-and-personality/",
     "title": "Does your personality interfere with your self-awareness?",
     "description": "A brief data-driven exploration of personality factors that might negatively affect self-awareness.",

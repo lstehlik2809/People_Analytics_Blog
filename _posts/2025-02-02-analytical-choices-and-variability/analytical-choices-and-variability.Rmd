@@ -1,0 +1,35 @@
+---
+title: 'How variations in analytic choices affect results?'
+description: |
+  It’s human nature to take things at face value, assuming they are exactly as they appear, without noticing the assumptions and choices shaping that appearance. Remember Kahneman’s WYSIATI principle—What You See Is All There Is?   
+preview: ./results_chart.jpeg    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 02-02-2025
+categories:
+  - reproducibility
+  - open science
+  - data science
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+Unfortunately, the same bias can also creep into data analysis. Along the way, we make numerous decisions—some small, some significant—that impact our results. Yet, we often act as if none of these choices happened, believing we've arrived at the one true, objective finding.
+
+A great example of this comes from [Silberzahn et al. (2018)](https://journals.sagepub.com/doi/10.1177/2515245917747646){target="_blank"}, who set out to expose these subjective analytical choices and their influence on results. They asked 29 teams, comprising 61 analysts, to analyze the same dataset and answer the same question: Are soccer referees more likely to give red cards to players with darker skin tones than to those with lighter skin tones?
+
+They found that analytical approaches varied widely, leading to effect size estimates ranging from 0.89 to 2.93 (Mdn = 1.31) in odds-ratio units. Twenty teams (69%) found a statistically significant positive effect, while nine teams (31%) did not. Interestingly, neither the analysts’ prior beliefs nor their level of expertise explained the variation. Even peer ratings of analysis quality failed to account for the differences.
+
+<div style="text-align:center">
+![](./results_chart.jpeg){width=100%}
+</div>
+
+This study highlights an important reality: even defensible, well-intentioned analytical choices can lead to vastly different results. What should we take from this? Should sensitivity analysis be a standard practice? Should we crowdsource high-profile analyses? What do you think?
+
+P.S. If you want to see how your own approach would shape the results, you can download the [original dataset from OSF](https://osf.io/47tnc/?view_only=){target="_blank"} and give it a try!
