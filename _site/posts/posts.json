@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2025-02-05-career-hurdles/",
+    "title": "And what are your career hurdles?",
+    "description": "Visualization of the results from a meta-analytic review of the hurdles to subjective career success.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-02-05",
+    "categories": [
+      "subjective career success",
+      "io psychology",
+      "meta-analysis"
+    ],
+    "contents": "\r\nI came across an interesting meta-analytic review by Ng & Feldman (2014) that might be useful for setting priors about the hurdles people face when it comes to their perception of subjective career success (SCS). The authors estimated the impact of 54 specific hurdles, grouped into six categories that can potentially lower people’s SCS:\r\nTrait-related\r\nSocial-network-related\r\nSkill-related\r\nOrganizational and job-related\r\nMotivational\r\nBackground-related hurdles\r\nOn average, the strongest negative effects were found in the social and organizational hurdle groups, followed by trait-related and motivational hurdles. Interestingly, background-related and skill-related hurdles weren’t strongly associated with SCS. I’d say that’s good news, considering how non/malleable some of these types of hurdles can be 🤔\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(tidyverse)\r\nlibrary(ggtext)\r\nlibrary(readxl)\r\n\r\n# uploading the dataset with stats extracted from the research paper\r\ndata <- readxl::read_excel('career_hurdles_95CI.xlsx')\r\n\r\n# defining colors for individual groups of career hurdles\r\ncategory_colors <- c(\r\n  \"Background-related hurdles\" = \"#1B39A6\", \r\n  \"Motivational hurdles\" = \"#289ECC\", \r\n  \"Organizational and job hurdles\" = \"#B13AA0\",\r\n  \"Skill-related hurdles\" = \"#73A239\",\r\n  \"Social network hurdles\" = \"#895F22\",\r\n  \"Trait-related hurdles\" = \"#D08311\"\r\n  \r\n) \r\n\r\n# enriching the dataset for coloring the value labels\r\ndata <- data %>%\r\n  dplyr::arrange(Category, desc(`95% CI Upper`)) %>%\r\n  dplyr::mutate(\r\n    Hurdle_ordered = factor(Hurdle, levels = unique(Hurdle)),\r\n    Hurdle_colored = paste0(\"<span style='color:\", category_colors[Category], \"'>\", Hurdle, \"<\/span>\")\r\n  )\r\n\r\n# dataviz\r\ndata %>% \r\n  ggplot2::ggplot(aes(x = Hurdle_ordered, y = rc, color = Category)) +\r\n  ggplot2::geom_point(size = 3) +\r\n  ggplot2::geom_errorbar(aes(ymin = `95% CI Lower`, ymax = `95% CI Upper`), width = 0.2, position = position_dodge(0.05), linewidth = 1) +\r\n  ggplot2::geom_hline(yintercept = 0, linetype = \"dashed\", color = \"grey\") +\r\n  ggplot2::scale_color_manual(values = category_colors) +\r\n  ggplot2::coord_flip() +\r\n  ggplot2::labs(\r\n    x = \"\",\r\n    y = \"SAMPLE-SIZE WEIGHTED CORRECTED CORRELATION\",\r\n    title = \"Relationships of career hurdles with subjective career success\",\r\n    caption = \"\\nThe bars around the point estimates represent the 2.5% lower and 97.5% upper limits of the 95% confidence interval.\\nThe hurdles are listed by groups and in ascending order based on the upper bound of the 95% confidence interval for effect size.\",\r\n    color = \"\"\r\n  ) +\r\n  ggplot2::theme(\r\n    plot.title = ggtext::element_markdown(face = \"bold\", size = 18, margin = margin(0, 0, 10, 0)),\r\n    plot.subtitle = element_text(color = '#2C2F46', face = \"plain\", size = 16, margin = margin(0, 0, 20, 0)),\r\n    plot.caption = element_text(color = '#2C2F46', face = \"plain\", size = 10, hjust = 0),\r\n    axis.title.x.bottom = element_text(margin = margin(t = 15), color = '#2C2F46', face = \"plain\", size = 13),\r\n    axis.title.y.left = element_text(margin = margin(r = 15), color = '#2C2F46', face = \"plain\", size = 13),\r\n    axis.text.y = element_markdown(size = 12, lineheight = 1.2),  # Apply markdown here\r\n    axis.line = element_line(colour = \"#E0E1E6\"),\r\n    legend.position = \"top\", \r\n    legend.box = \"horizontal\",\r\n    legend.justification = \"right\",\r\n    legend.key = element_blank(),\r\n    legend.text = element_text(size = 12),\r\n    panel.background = element_blank(),\r\n    panel.grid.major.y = element_blank(),\r\n    panel.grid.major.x = element_blank(),\r\n    panel.grid.minor = element_blank(),\r\n    axis.ticks = element_line(color = \"#E0E1E6\"),\r\n    plot.margin = unit(c(5, 5, 5, 5), \"mm\"), \r\n    plot.title.position = \"plot\",\r\n    plot.caption.position = \"plot\"\r\n  ) +\r\n  ggplot2::scale_x_discrete(labels = function(x) data$Hurdle_colored[match(x, data$Hurdle_ordered)])  +\r\n  ggplot2::guides(color = guide_legend(reverse = TRUE))\r\n\r\n\r\n\r\nP.S. As is evident from the code snippet above, the attached chart isn’t straight from the paper. I made it based on the results presented there, so any mistakes in the chart are on me!\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-05-career-hurdles/career-hurdles_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2025-02-05T14:19:21+01:00",
+    "input_file": "career-hurdles.knit.md",
+    "preview_width": 2112,
+    "preview_height": 1920
+  },
+  {
     "path": "posts/2025-02-02-analytical-choices-and-variability/",
     "title": "How variations in analytic choices affect results?",
     "description": "It’s human nature to take things at face value, assuming they are exactly as they appear, without noticing the assumptions and choices shaping that appearance. Remember Kahneman’s WYSIATI principle—What You See Is All There Is?",
