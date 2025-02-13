@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 04 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A way to make prediction models more precise and interpretable at the same time?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-02-13-causal-identification-and-feature-selection</link>
+      <description>An interesting and potentially useful combination of causal identification algorithms and prediction modeling in the machine learning pipeline.</description>
+      <category>causal identification</category>
+      <category>causal inference</category>
+      <category>feature selection</category>
+      <category>prediction models</category>
+      <category>ml interpretability</category>
+      <category>machine learning</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-13-causal-identification-and-feature-selection</guid>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-13-causal-identification-and-feature-selection/./fig1.png" medium="image" type="image/png" width="916" height="850"/>
+    </item>
     <item>
       <title>And what are your career hurdles?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +32,7 @@
       <category>io psychology</category>
       <category>meta-analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-05-career-hurdles</guid>
-      <pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-05-career-hurdles/career-hurdles_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1920"/>
     </item>
     <item>
