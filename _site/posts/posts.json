@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2025-02-26-team-maps/",
+    "title": "Experiencing and seeing team similarities and differences",
+    "description": "A brief reflection on an effective method for presenting team personality profiles during team development workshops.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-02-26",
+    "categories": [
+      "personality",
+      "team development",
+      "data visualization",
+      "feedback"
+    ],
+    "contents": "\r\nOne of the most powerful and impactful ways to present team personality profiles during team development workshops—at least in my experience—is by allowing people to experience their similarities and differences as spatial distances in the real world.\r\nA simple exercise for this is having the team stand in a line based on their scores for each personality dimension. This way, people can better see and “digest” how they relate to one another in psychological space.\r\nThis exercise can then be further supported with a multidimensional team map that translates individuals’ profile similarities and differences across all personality dimensions into an easily understandable spatial layout. The map visually represents these dis/similarities as distances, with color coding to indicate how each person scored on different personality traits.\r\nThis kind of dataviz can also help people recognize existing subgroups of like-minded individuals within the team. This process can even be automatized by applying a clustering algorithm to the personality profiles and displaying the results directly on the team map.\r\n\r\n\r\n\r\nThe GIF above shows several maps illustrating team members’ psychological similarities across all HPI dimensions at once, their respective scores on individual HPI dimensions, and information about identified subgroups.\r\nTo sum it up, if you run team development workshops, give it a try—your clients might find it valuable, and it could become a regular part of your practice.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-26-team-maps/./team_maps.gif",
+    "last_modified": "2025-02-26T16:07:26+01:00",
+    "input_file": "team-maps.knit.md"
+  },
+  {
     "path": "posts/2025-02-13-causal-identification-and-feature-selection/",
     "title": "A way to make prediction models more precise and interpretable at the same time?",
     "description": "An interesting and potentially useful combination of causal identification algorithms and prediction modeling in the machine learning pipeline.",

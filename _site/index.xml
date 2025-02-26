@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Experiencing and seeing team similarities and differences</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-02-26-team-maps</link>
+      <description>A brief reflection on an effective method for presenting team personality profiles during team development workshops.</description>
+      <category>personality</category>
+      <category>team development</category>
+      <category>data visualization</category>
+      <category>feedback</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-26-team-maps</guid>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-26-team-maps/./team_maps.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>A way to make prediction models more precise and interpretable at the same time?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +33,7 @@
       <category>ml interpretability</category>
       <category>machine learning</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-13-causal-identification-and-feature-selection</guid>
-      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-13-causal-identification-and-feature-selection/./fig1.png" medium="image" type="image/png" width="916" height="850"/>
     </item>
     <item>
