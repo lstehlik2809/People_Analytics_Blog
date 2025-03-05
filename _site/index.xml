@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Are age and gender variables really so non-actionable in the context of People Analytics?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</link>
+      <description>A short musing on which variables in People Analytics should—or should not—be considered non-actionable.</description>
+      <category>hr data</category>
+      <category>hr metrics</category>
+      <category>demographics</category>
+      <category>actionability</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
+      <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+    </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>data visualization</category>
       <category>feedback</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-02-26-team-maps</guid>
-      <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-02-26-team-maps/./team_maps.gif" medium="image" type="image/gif"/>
     </item>
     <item>
