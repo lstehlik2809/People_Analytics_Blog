@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 04 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How to analyze employee survey results with less (selection) bias?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-03-10-psw-and-selection-bias-in-employee-surveys</link>
+      <description>About a simple method for correcting non-response bias in employee survey analysis, based on causal inference, that estimates the average satisfaction if everyone had responded.</description>
+      <category>employee survey</category>
+      <category>selection bias</category>
+      <category>causal inference</category>
+      <category>propensity score</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-10-psw-and-selection-bias-in-employee-surveys</guid>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-10-psw-and-selection-bias-in-employee-surveys/./plot.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Are age and gender variables really so non-actionable in the context of People Analytics?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>demographics</category>
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
-      <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
