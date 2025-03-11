@@ -2196,7 +2196,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>When analyzing employee survey results, do you systematically account for the fact that your response rate isn’t 100% and that participation isn’t random, as employees probably decide to participate based on their satisfaction levels—the very thing you’re aiming to measure?</p>
 <p>Personally, I haven’t been rigorous about this. At best, I’ve checked the representativeness of survey respondents across various demographic factors. This allowed me to identify which groups within the organization were underrepresented and speculate which might be less satisfied, assuming less satisfied employees are less likely to participate (though it’s possible the opposite scenario could be true as well!).</p>
 <p>Recently, while exploring <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3144483/" target="_blank">propensity score weighting</a> (PSW) in the context of causal inference, I discovered that this method isn’t only useful for reducing confounding bias but also selection bias. This makes it highly relevant for analysis of employee surveys, where a significant portion of the workforce often doesn’t participate, and participation itself is likely linked to the very attitudes and behaviors you’re investigating.</p>
-<p>By modeling response behavior using demographic and other relevant variables, and weighting responses inversely to their probability of participating, you can achieve a more accurate—neither overly optimistic or pessimistic—estimate of average employee satisfaction, essentially approximating what you’d observe if everyone participated. (You can hear in this the echoes of causal inference—aiming to estimate a counterfactual scenario, one that didn’t actually happen but is important to consider to make proper conclusions about the world).</p>
+<p>By modeling response behavior using demographic and other relevant variables and weighting responses inversely to the employees’ probability of participating, you can achieve a more accurate—neither overly optimistic nor pessimistic—estimate of average employee satisfaction, essentially approximating what you would observe if everyone had participated. (You can hear in this the echoes of causal inference—aiming to estimate a counterfactual scenario, one that didn’t actually happen but is important to consider to make proper conclusions about the world).</p>
 <p>The implementation isn’t overly complex. If you’re interested in a quick start, you can check out illustrative Python code I’ve prepared using dummy data that simulates employee responses with a non-random likelihood of participation.</p>
 <p>First, let’s prepare the data to fit our selection bias scenario—left-skewed engagement scores of 10,000 employees, along with demographic variables that influence the probability of employees’ participation in the survey.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2347,7 +2347,7 @@ Show code
 </details>
 <p><img src="psw-and-selection-bias-in-employee-surveys_files/figure-html5/unnamed-chunk-5-5.png" width="624" /></p>
 </div>
-<p>To improve our estimation, let’s use PSW, which will allow us to simulate and get closer to a scenario in which all employees participate.</p>
+<p>To improve our estimation, let’s use PSW, which will enable us to approximate a scenario in which all employees participate, while relying solely on data from participating employees.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
