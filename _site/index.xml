@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How to get causal interpretation for the Employee Attrition dataset?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-03-18-econml-and-employee-attriton</link>
+      <description>An interesting demonstration of causal inference in the People Analytics space using the famous IBM Employee Attrition dataset.</description>
+      <category>causality</category>
+      <category>causal ml</category>
+      <category>econml</category>
+      <category>python</category>
+      <category>employee attrition</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-18-econml-and-employee-attriton</guid>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-18-econml-and-employee-attriton/./causal_effect_chart_combo.png" medium="image" type="image/png" width="1117" height="525"/>
+    </item>
     <item>
       <title>How to analyze employee survey results with less (selection) bias?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>causal inference</category>
       <category>propensity score</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-10-psw-and-selection-bias-in-employee-surveys</guid>
-      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-10-psw-and-selection-bias-in-employee-surveys/./plot.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>

@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2025-03-18-econml-and-employee-attriton/",
+    "title": "How to get causal interpretation for the Employee Attrition dataset?",
+    "description": "An interesting demonstration of causal inference in the People Analytics space using the famous IBM Employee Attrition dataset.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-03-18",
+    "categories": [
+      "causality",
+      "causal ml",
+      "econml",
+      "python",
+      "employee attrition"
+    ],
+    "contents": "\r\nTo be honest, whenever I see an analysis using the popular IBM Employee Attrition dataset, I tend to ignore it and quickly skip to something more interesting and engaging. A classic search for shiny new things in action. 😉\r\nBtw, did you know this dataset has already been with us for about 10 years? Pretty nice milestone anniversary! At least, that’s what my OpenAI deep research found—it seems it was first released by IBM around September 2015 on its blog to showcase the IBM Watson Analytics platform’s capabilities in an HR context. So, please take this finding with a grain of salt. However, after checking the sources (including my own memory), it seems pretty plausible to me. But feel free to correct me/us if I’m/we’re wrong.\r\nRecently, however, I broke this habit when I came across a Jupyter notebook on EconML’s GitHub showcasing how to effectively combine classical ML—providing a list of strongest predictors—with their subsequent causal interpretation using Double ML (DML) and Heterogeneous Treatment Effect (HTE) estimation, nicely packaged into the CausalAnalysis class.\r\nThe entire pipeline includes the following steps:\r\nFine-tuning and training a traditional ML model.\r\nUsing SHAP values for correlation interpretation of the results, identifying the top predictors highlighted by the ML model.\r\nEmploying DML combined with HTE to test whether these top predictors actually have a direct causal effect on attrition. While these may be strong predictors of employee departure, they don’t necessarily drive employees to leave.\r\nUsing the HTE component for employee segmentation by specific risk factors, enabling individualized plans to reduce attrition. For instance, salary might have a higher causal impact on shorter-tenured employees, whereas overtime could show the opposite pattern.\r\nFinally, cohort analysis, enabling assessment of causal effects of selected factors on new datasets, even down to the individual employee level.\r\n\r\n\r\n\r\nIMO, pretty cool stuff. It seems we indeed live not only in an AI revolution but also in a causal one ✊🙂\r\n⚠️ Just a small (or big?) warning at the end: Despite the smooth and easy analytical workflow enabled by the CausalAnalysis class, it doesn’t replace the need for strong domain knowledge and understanding which variables make sense to include in the model in the first place.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-03-18-econml-and-employee-attriton/./causal_effect_chart_combo.png",
+    "last_modified": "2025-03-18T11:53:37+01:00",
+    "input_file": "econml-and-employee-attriton.knit.md",
+    "preview_width": 1117,
+    "preview_height": 525
+  },
+  {
     "path": "posts/2025-03-10-psw-and-selection-bias-in-employee-surveys/",
     "title": "How to analyze employee survey results with less (selection) bias?",
     "description": "About a simple method for correcting non-response bias in employee survey analysis, based on causal inference, that estimates the average satisfaction if everyone had responded.",
