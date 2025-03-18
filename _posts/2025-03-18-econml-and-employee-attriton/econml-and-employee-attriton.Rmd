@@ -22,7 +22,7 @@ output:
     code_folding: true
 ---
 
-To be honest, whenever I see an analysis using the popular IBM Employee Attrition dataset, I tend to ignore it and quickly skip to something more interesting and engaging. A classic search for shiny new things in action. 😉
+To be honest, whenever I see an analysis using the popular [IBM Employee Attrition dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset){target="_blank"}, I tend to ignore it and quickly skip to something more interesting and engaging. A classic search for shiny new things in action. 😉
 
 Btw, did you know this dataset has already been with us for about 10 years? Pretty nice milestone anniversary! At least, that's what my OpenAI deep research found—it seems it was first released by IBM around September 2015 on its blog to showcase the IBM Watson Analytics platform's capabilities in an HR context. So, please take this finding with a grain of salt. However, after checking the sources (including my own memory), it seems pretty plausible to me. But feel free to correct me/us if I’m/we’re wrong.
 
