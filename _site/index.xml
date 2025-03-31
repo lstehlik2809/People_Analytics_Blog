@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Did the Nobel Prize put causal inference on the public radar?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-03-30-nobel-prize-and-causal-inference-popularity</link>
+      <description>Applying Bayesian segmented regression analysis of interrupted time series data to Google Trends data to test the hypothesis of a positive impact of the 2021 Nobel Prize in Economics on public interest in causal inference, while accounting for changes in Google's data collection methods and seasonal variations.</description>
+      <category>causal inference</category>
+      <category>econometrics</category>
+      <category>nobel prize</category>
+      <category>segmented regression</category>
+      <category>time series data</category>
+      <category>bayesian inference</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-30-nobel-prize-and-causal-inference-popularity</guid>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-30-nobel-prize-and-causal-inference-popularity/./plot.png" medium="image" type="image/png" width="7000" height="3000"/>
+    </item>
     <item>
       <title>How to get causal interpretation for the Employee Attrition dataset?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -1774,11 +1790,11 @@
       <category>work-life balance</category>
       <category>covid pandemic</category>
       <category>segmented regression</category>
-      <category>interrupted time series data</category>
+      <category>time series data</category>
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2020-12-31-segmentedregression</guid>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2020-12-31-segmentedregression/./wellBeingData.jpeg" medium="image" type="image/jpeg"/>
     </item>
     <item>

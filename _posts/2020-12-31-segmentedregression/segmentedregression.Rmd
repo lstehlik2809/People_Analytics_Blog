@@ -12,7 +12,7 @@ categories:
   - work-life balance
   - covid pandemic
   - segmented regression
-  - interrupted time series data
+  - time series data
   - bayesian inference
   - r
 output:
@@ -53,11 +53,11 @@ Based solely on the visual inspection of the graphs, it is pretty difficult to t
 
 Before conducting the analysis itself, we need to wrangle the data from Google Trends a little bit using the recipe presented in [the Wagner et. al (2002) paper](https://www.researchgate.net/publication/227681545_Segmented_Regression_Analysis_of_Interrupted_Time_Series_Studies_in_Medication_Use_Research){target="_blank"}. Specifically, we need the following five variables (or six, given that we have two dependent variables):  
 
-* **search interest** – numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;  
-* **elapsed time** – numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
-* **pandemic** – dichotomic variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables estimation of the level change in the interest in work-life balance and well-being immediately after the pandemic outbreak;  
-* **elapsed time after pandemic outbreak** – numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the change in the trend in the interest in work-life balance and well-being after the outbreak of pandemic;
-* **month** – categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
+* **search interest** – a numerical variable representing search interest relative to the highest point on the chart for the given region and time; this variable is truncated within the interval between values of 0 and 100; a value of 100 is the peak popularity for the term; a value of 50 means that the term is half as popular; a score of 0 means that there was not enough data for this term; this variable serves as a dependent (criterion) variable;  
+* **elapsed time** – a numerical variable representing the number of months that elapsed from the beginning of the time series; this variable enables estimation of the size and direction of the overall trend in the data;  
+* **pandemic** – a binary variable indicating the presence/absence of pandemic; as already mentioned above, for the purpose of this analysis, the beginning of the pandemic is assumed to have started in March 2020; this variable enables estimation of the level change in the interest in work-life balance and well-being immediately after the pandemic outbreak;  
+* **elapsed time after pandemic outbreak** – a numerical variable representing the number of months that elapsed from the beginning of pandemic; this variable enables estimation of the change in the trend in the interest in work-life balance and well-being after the outbreak of pandemic;
+* **month** – a categorical variable representing specific month within a year; this variable enables controlling for the effect of seasonality.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 
