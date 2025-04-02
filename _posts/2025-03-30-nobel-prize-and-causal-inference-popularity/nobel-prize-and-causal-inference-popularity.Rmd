@@ -40,7 +40,9 @@ By the way, if you haven't jumped on the causality bandwagon yet, there's plenty
 
 ----------------------------------
 
-First, let's import the necessary packages for our analysis, along with the dataset. The data was downloaded from Google Trends and includes global web search interest from March 2015 to March 2025 for the following three search terms: “*causal inference*”, “*causal analysis*”, and “*data analysis”*.
+### Appendix: Deep dive for the curious 🤓
+
+Let's import the necessary packages for our analysis, along with the dataset. The data was downloaded from Google Trends and includes global web search interest from March 2015 to March 2025 for the following three search terms: “*causal inference*”, “*causal analysis*”, and “*data analysis”*.
 
 ```{r  warning=FALSE, message=FALSE}
 
@@ -101,7 +103,7 @@ DT::datatable(
 
 ```
 
-Now, let's visually examine how interest in these three search terms has evolved over time, including two key events: the announcement of NP in March 2021 and the change in data collection methods in January 2022. At a glance, the search patterns appear fairly similar across the three terms, though there seem to be subtle differences—particularly in the steepness of the slope following the NP announcement and the method change. However, our eyes and brains can easily be misled by random noise, so to more reliably tell signal from noise in the data, it’s safer to take the help of statistical modeling.
+First, let's visually examine how interest in these three search terms has evolved over time, including two key events: the announcement of NP in October 2021 and the change in data collection methods in January 2022. At a glance, the search patterns appear fairly similar across the three terms, though there seem to be subtle differences—particularly in the steepness of the slope following the NP announcement and the method change. However, our eyes and brains can easily be misled by random noise, so to more reliably tell signal from noise in the data, it’s safer to take the help of statistical modeling.
 
 ```{r  warning=FALSE, message=FALSE, fig.width=10, fig.height=7}
 
