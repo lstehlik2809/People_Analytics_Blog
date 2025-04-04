@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2025-04-04-siop-2025-conference-events/",
+    "title": "What topics might you encounter at the SIOP 2025 conference?",
+    "description": "A quick check of the topics covered at this year's SIOP conference.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-04-04",
+    "categories": [
+      "siop",
+      "conference",
+      "i/o psychology",
+      "topic analysis",
+      "bertopic"
+    ],
+    "contents": "\r\nMy LinkedIn bubble these days is full of posts from the SIOP 2025 conference. Unfortunately, it’s too far for me to attend in person. So, to participate at least symbolically, I quickly ran a BERTopic pipeline on the SIOP event schedule to see what some of the major topics are and what I’ll be missing. 😁\r\n\r\n\r\n\r\nApparently, a large part is devoted to AI & ML, workplace experience, I/O psychology career-building, and networking—some really nice ones!\r\nFortunately, things aren’t as hopeless as they might sound. We have a secret (or maybe not-so-secret) agent there: Marissa Post, our US colleague and an awesome member of our Sanofi People Insights team. She’s attending in person, so we’ll at least get the industry news and gossip secondhand. 😉\r\nTo everyone attending, enjoy the conference—and please share some summaries on LinkedIn later! 🙏\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-04-04-siop-2025-conference-events/./plot.png",
+    "last_modified": "2025-04-04T16:46:46+02:00",
+    "input_file": "siop-2025-conference-events.knit.md",
+    "preview_width": 5058,
+    "preview_height": 5058
+  },
+  {
     "path": "posts/2025-03-30-nobel-prize-and-causal-inference-popularity/",
     "title": "Did the Nobel Prize put causal inference on the public radar?",
     "description": "Applying Bayesian segmented regression analysis of interrupted time series data to Google Trends data to test the hypothesis of a positive impact of the 2021 Nobel Prize in Economics on public interest in causal inference, while accounting for changes in Google's data collection methods and seasonal variations.",

@@ -1,0 +1,36 @@
+---
+title: 'What topics might you encounter at the SIOP 2025 conference?'
+description: |
+  A quick check of the topics covered at this year's SIOP conference.      
+preview: ./plot.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 04-04-2025
+categories:
+  - siop
+  - conference
+  - i/o psychology
+  - topic analysis
+  - bertopic
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+My LinkedIn bubble these days is full of posts from the [SIOP](https://www.siop.org/){target="_blank"} 2025 conference. Unfortunately, it’s too far for me to attend in person. So, to participate at least symbolically, I quickly ran a [BERTopic](https://maartengr.github.io/BERTopic/index.html){target="_blank"} pipeline on the SIOP event schedule to see what some of the major topics are and what I'll be missing. 😁
+
+<div style="text-align:center">
+![](./plot.png){width=100%}
+</div>
+
+Apparently, a large part is devoted to AI & ML, workplace experience, I/O psychology career-building, and networking—some really nice ones!
+
+Fortunately, things aren't as hopeless as they might sound. We have a secret (or maybe not-so-secret) agent there: Marissa Post, our US colleague and an awesome member of our Sanofi People Insights team. She’s attending in person, so we'll at least get the industry news and gossip secondhand. 😉
+
+To everyone attending, enjoy the conference—and please share some summaries on LinkedIn later! 🙏
+
