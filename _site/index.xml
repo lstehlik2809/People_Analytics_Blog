@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 03 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Putting the "ideal" personality for high work engagement in a broader context</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-04-08-personality-and-work-engagement</link>
+      <description>Ever wondered whether or how personality affects your enthusiasm at work? If yes, then keep reading. 🤓</description>
+      <category>work engagement</category>
+      <category>personality</category>
+      <category>meta-analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-08-personality-and-work-engagement</guid>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-08-personality-and-work-engagement/./interactions.png" medium="image" type="image/png" width="883" height="685"/>
+    </item>
     <item>
       <title>What topics might you encounter at the SIOP 2025 conference?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>topic analysis</category>
       <category>bertopic</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-04-siop-2025-conference-events</guid>
-      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-04-siop-2025-conference-events/./plot.png" medium="image" type="image/png" width="5058" height="5058"/>
     </item>
     <item>
