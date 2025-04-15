@@ -1,7 +1,7 @@
 ---
 title: 'Causal insights with no code?'
 description: |
-  Causal insights without writing a single line of code? Well… maybe. In this post, I walk through how a simple method called difference-in-differences (DiD) can help you get closer to understanding cause and effect—even if you’re not a data scientist. Using just a BI tool and some domain knowledge, you can sometimes spot meaningful patterns that suggest whether a policy or change really made a difference. It’s not perfect, and it won’t replace rigorous analysis—but in the right context, it can be a surprisingly useful starting point.     
+  Causal insights without writing a single line of code? Well… maybe. In this post, I walk through how a simple method called difference-in-differences can help you get closer to understanding cause and effect—even if you’re not a data scientist. Using just a BI tool and some domain knowledge, you can sometimes spot meaningful patterns that suggest whether a policy or change really made a difference. It’s not perfect, and it won’t replace rigorous analysis—but in the right context, it can be a surprisingly useful starting point.     
 preview: ./plot2.png    
 author:
   - name: Luděk Stehlík
