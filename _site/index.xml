@@ -12,7 +12,7 @@
       <title>Causal insights with no code?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff</link>
-      <description>Causal insights without writing a single line of code? Well… maybe. In this post, I walk through how a simple method called difference-in-differences can help you get closer to understanding cause and effect—even if you’re not a data scientist. Using just a BI tool and some domain knowledge, you can sometimes spot meaningful patterns that suggest whether a policy or change really made a difference. It’s not perfect, and it won’t replace rigorous analysis—but in the right context, it can be a surprisingly useful starting point.</description>
+      <description>Causal insights without writing a single line of code? Well… maybe. In this post, I walk through how a simplified, visual version of a method called difference-in-differences can help you better understand cause and effect—even if you're not a data scientist. Using just a BI tool and some domain knowledge, you can sometimes identify meaningful patterns that suggest whether a policy or change truly made a difference. It's not perfect, and it won't replace rigorous analysis—but in the right context, it can be a surprisingly useful starting point.</description>
       <category>data literacy</category>
       <category>causal inference</category>
       <category>difference-in-differences</category>
