@@ -22,7 +22,7 @@ output:
     code_folding: true
 ---
 
-An interesting new study published in *Nature Human Behaviour* by [Sulik et al. (2025)](https://doi.org/10.1038/s41562-025-02153-1) suggests the answer might lie within the psychologists themselves.
+An interesting new study published in *Nature Human Behaviour* by [Sulik et al. (2025)](https://doi.org/10.1038/s41562-025-02153-1){target="_blank"} suggests the answer might lie within the psychologists themselves.
 
 Researchers surveyed nearly 8,000 psychologists and found their positions on key scientific debates—such as whether behavior is best explained by biology or social context—were consistently (though modestly) linked to their cognitive traits.
 
