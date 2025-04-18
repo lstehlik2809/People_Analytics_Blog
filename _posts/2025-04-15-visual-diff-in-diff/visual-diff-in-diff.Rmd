@@ -6,7 +6,7 @@ preview: ./plot2.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 04-18-2025
+date: 04-15-2025
 categories:
   - data literacy
   - causal inference
