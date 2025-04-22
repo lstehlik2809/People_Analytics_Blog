@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 17 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>RWA – A go-to tool for key drivers analysis of employee surveys data?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa</link>
+      <description>A brief showcase of a useful method for analyzing (not only) employee survey data.</description>
+      <category>employee survey</category>
+      <category>employee listening</category>
+      <category>key drivers analysis</category>
+      <category>relative weights analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa</guid>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa/./rwa_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
+    </item>
     <item>
       <title>Why do psychologists disagree—even when they use the same data and methods?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,8 +32,8 @@
       <category>cognitive diversity</category>
       <category>epistemology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-18-scientific-divides-and-cognitive-traits</guid>
-      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-18-scientific-divides-and-cognitive-traits/./charts.webp" medium="image" type="application/octet-stream"/>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-18-scientific-divides-and-cognitive-traits/./charts.png" medium="image" type="image/png" width="2167" height="2090"/>
     </item>
     <item>
       <title>Causal insights with no code?</title>
