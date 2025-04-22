@@ -1,5 +1,5 @@
 ---
-title: 'RWA – A go-to tool for key drivers analysis of employee surveys data?'
+title: 'RWA – A go-to tool for key drivers analysis of employee survey data?'
 description: |
   A brief showcase of a useful method for analyzing (not only) employee survey data.      
 preview: ./rwa_plot.png    
@@ -23,21 +23,19 @@ output:
 
 If you've been working with employee survey data for a while, you're probably familiar with [Relative Weights Analysis (RWA)](https://www.scotttonidandel.com/rwa-web){target="_blank"}. But for those of us who started working with this type of data on a regular basis more recently, discovering RWA can be a (very welcome) surprise. 🤓
 
-RWA is a statistical technique used to assess the relative importance of predictor variables in multiple regression models, particularly when multicollinearity is present. When predictors are correlated—which is very common in employee survey data—traditional regression coefficients can be misleading and may obscure the unique contribution of each variable.
+RWA is a statistical technique used to assess the relative importance of predictor variables in multiple regression models, particularly when multicollinearity is present. When predictors are highly correlated—which is very common in employee survey data—traditional regression coefficients can be misleading and may obscure the unique contribution of each variable.
 
 RWA tackles this by transforming the correlated predictors into a set of orthogonal (uncorrelated) variables that are maximally related to the originals. From there, it estimates the proportion of the model’s explained variance attributable to each predictor.
 
-As you can imagine, this makes RWA especially useful for key drivers analysis of employee survey data, when we want to determine the relative importance of (typically highly intercorrelated) survey items or indices for overall scores or external outcomes. 
+As you can imagine, this makes RWA especially useful for key drivers analysis of employee survey data when we want to determine the relative importance of (typically highly intercorrelated) survey items or indices for prediction of overall scores or external outcomes. 
 
-One just needs to remember that these weights still reflect only association, not causation. Also, determining the statistical significance of individual relative weights isn’t trivial, since their sampling distribution isn’t well-defined, but with bootstrapping, it’s actually very easy to estimate corresponding confidence intervals.
+One just needs to remember that these weights still reflect only association, not causation. Moreover, determining the statistical significance of individual relative weights isn’t straightforward, as their sampling distribution isn’t well-defined. However, with bootstrapping, estimating the corresponding confidence intervals becomes quite easy.
 
-Any helpful tips from folks who’ve used RWA more extensively?
+Any helpful tips from folks who’ve used RWA more extensively? If so, feel free to share them in the comments.
 
 P.S. If interested, you can find an example of this method in action using the *rwa* R package below.
 
 ----------------------------------
-
-### Appendix: Deep dive for the curious 🤓
 
 We will use a sample dataset that accompanies the book [Predictive HR Analytics: Mastering the HR Metric](https://www.amazon.com/Predictive-HR-Analytics-Mastering-Metric/dp/0749484446){target="_blank"} by Edwards & Edwards (2019). It contains the survey responses of 832 employees on a 1 ‘strongly disagree’ to 5 ‘strongly agree’ response scale for a following set of statements.
 
