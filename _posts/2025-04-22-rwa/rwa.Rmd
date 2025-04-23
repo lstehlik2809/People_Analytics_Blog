@@ -138,7 +138,7 @@ DT::datatable(
 
 ```
 
-Now let’s use a pair plot to examine the relationships between the individual scales. We’re particularly interested in the predictors of quitting intentions, but also in the correlations between other scales, as they can indicate how much RWA might help us address potential multicollinearity.
+In our example, we’ll focus on selected relevant predictors of quitting intentions. First, we’ll use a pair plot to explore the relationships among the individual scales. Our main interest lies in the correlations between these predictors and quitting intentions, but we’ll also examine the intercorrelations among the predictors themselves, as these can indicate how much RWA might help us address potential multicollinearity.
 
 ```{r warning=FALSE, message=FALSE, fig.height=12, fig.width=12}
 
