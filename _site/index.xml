@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>I’ve finally lived to see the day…</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-04-30-people-analytics-and-market-basket-analysis</link>
+      <description>... and found a People Analytics use case for market basket analysis 🛒</description>
+      <category>market basket analysis</category>
+      <category>machine learning</category>
+      <category>team profile analysis</category>
+      <category>motivation</category>
+      <category>mvpi</category>
+      <category>hogan assessment</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-30-people-analytics-and-market-basket-analysis</guid>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-30-people-analytics-and-market-basket-analysis/./mvpi_basket_analysis.png" medium="image" type="image/png" width="4244" height="2438"/>
+    </item>
     <item>
       <title>RWA – A go-to tool for key drivers analysis of employee survey data?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +33,7 @@
       <category>key drivers analysis</category>
       <category>relative weights analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa</guid>
-      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa/./rwa_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>

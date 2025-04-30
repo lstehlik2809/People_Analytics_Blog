@@ -1,0 +1,34 @@
+---
+title: 'I’ve finally lived to see the day…'
+description: |
+  ... and found a People Analytics use case for market basket analysis 🛒    
+preview: ./mvpi_basket_analysis.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 04-30-2025
+categories:
+  - market basket analysis
+  - machine learning
+  - team profile analysis
+  - motivation
+  - mvpi
+  - hogan assessment
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+Early in my data science journey, one method that kept popping up in courses and materials was market basket analysis—a simple technique designed to identify items that commonly occur together, typically in retail scenarios.
+
+Despite its popularity, up until recently, I never really found a practical use for this method in my day-to-day work. But now, after many years, I finally came across a situation in a PA project where it actually came in handy. The task was to identify, within a team profile analysis, which pairs or trios of motives—as measured by the MVPI method—tend to show up together in a team within individual team members. This was meant to support interpretation for those running a series of team workshops (see the illustrative chart below).
+
+<div style="text-align:center">
+![](./mvpi_basket_analysis.png){width=100%}
+</div>
+
+The long wait was probably simply because the PA problems I’d worked on hadn’t really called for it before. But maybe it was also partly down to a lack of imagination on my part 🤔 What about you? Curious if you've found this method useful in any of the common PA tasks.
