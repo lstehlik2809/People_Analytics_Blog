@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What actually makes us happier?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-05-06-systematic-review-of-happiness-interventions</link>
+      <description>A quick rundown of some surprising and not-so-surprising findings from a recent systematic review on how well happiness interventions work.</description>
+      <category>happiness</category>
+      <category>wellbeing</category>
+      <category>psychology</category>
+      <category>systematic review</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-06-systematic-review-of-happiness-interventions</guid>
+      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-06-systematic-review-of-happiness-interventions/./results_plot.png" medium="image" type="image/png" width="7000" height="5000"/>
+    </item>
     <item>
       <title>I’ve finally lived to see the day…</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +33,7 @@
       <category>mvpi</category>
       <category>hogan assessment</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-30-people-analytics-and-market-basket-analysis</guid>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-30-people-analytics-and-market-basket-analysis/./mvpi_basket_analysis.png" medium="image" type="image/png" width="4244" height="2438"/>
     </item>
     <item>
