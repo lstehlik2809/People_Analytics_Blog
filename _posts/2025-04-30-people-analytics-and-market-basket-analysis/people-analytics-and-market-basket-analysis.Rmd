@@ -23,7 +23,7 @@ output:
     code_folding: true
 ---
 
-Early in my data science journey, one method that kept popping up in courses and materials was market basket analysis—a simple technique designed to identify items that commonly occur together, typically in retail scenarios.
+Early in my data science journey, one method that kept popping up in courses and study materials was market basket analysis—a simple technique designed to identify items that commonly occur together, typically in retail scenarios. In this context, many of you probably remember the famous “beer and diapers” example from the ’90s—the finding that young dads were often picking up a six-pack and diapers in the same trip to the store.
 
 Despite its popularity, up until recently, I never really found a practical use for this method in my day-to-day work. But now, after many years, I finally came across a situation in a PA project where it actually came in handy. The task was to identify, within a team profile analysis, which pairs or trios of motives—as measured by the MVPI method—tend to show up together in a team within individual team members. This was meant to support interpretation for those running a series of team workshops (see the illustrative chart below).
 
