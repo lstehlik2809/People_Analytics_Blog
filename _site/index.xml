@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Can a simple algorithm read your personality from your face?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face</link>
+      <description>A post describing a small experiment on ML-based recognition of personality traits from facial photographs, inspired by an older research paper that explored the use of composite images to assess the accuracy of personality attributions to faces.</description>
+      <category>personality</category>
+      <category>big five</category>
+      <category>deep neural networks</category>
+      <category>convolutional neural networks</category>
+      <category>machine learning</category>
+      <category>python</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/./schema.png" medium="image" type="image/png" width="1127" height="648"/>
+    </item>
     <item>
       <title>What actually makes us happier?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -116,7 +132,7 @@
       <category>bayesian inference</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-30-nobel-prize-and-causal-inference-popularity</guid>
-      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-30-nobel-prize-and-causal-inference-popularity/./plot.png" medium="image" type="image/png" width="7000" height="3000"/>
     </item>
     <item>
