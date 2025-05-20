@@ -296,51 +296,50 @@ brms::pp_check(
 ```{r warning=FALSE, message=FALSE, fig.width=10, fig.height=5}
 
 # visualizing original data overlaid with draws from the posterior fit of the model
-
-data_with_fitted_model <- function(model, search_term_name){
+data_with_fitted_model <- function(model, search_term_name) {
   
   g <- modeling_data %>%
-      tidybayes::add_epred_draws(model, ndraws = 100) %>% 
-      ggplot2::ggplot(aes_string(x = "date", y = search_term_name)) +
-      ggplot2::geom_line(aes(y = .epred, group = .draw), alpha = 1/20, color = "#08519C") +
-      ggplot2::geom_point(data = modeling_data) +
-      ggplot2::geom_vline(
-        xintercept = as.Date('2021-10-01'), 
-        linetype='dashed'
-      ) +
-      ggplot2::geom_vline(
-        xintercept = as.Date('2022-01-01'), 
-        linetype='dashed'
-      ) +
-      ggplot2::annotate(
-        "text", 
-        x = as.Date("2021-10-01"), 
-        y = 105, 
-        label = "Nobel Prize", 
-        hjust = 1.1,  
-        vjust = 0.1
-      ) +
-      ggplot2::annotate(
-        "text", 
-        x = as.Date("2022-01-01"), 
-        y = 105, 
-        label = "Method change", 
-        hjust = -0.1,  
-        vjust = 0
-      ) +
-      ggplot2::scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
-      ggplot2::labs(
-        title = stringr::str_glue("Google search interest in '{stringr::str_replace_all(search_term_name, '_', ' ')}' term over time"),
-        subtitle = "With 100 draws from the posterior fit of the segmented regression model",
-        x="",
-        y="INTEREST",
-        caption = "Source: Google Trends (global web search between 03-2015 and 03-2025)."
-      ) +
-      ggplot2::theme_minimal() 
+    tidybayes::add_epred_draws(model, ndraws = 100) %>% 
+    ggplot2::ggplot(aes(x = date, y = .data[[search_term_name]])) +
+    ggplot2::geom_line(aes(y = .epred, group = .draw), alpha = 1/20, color = "#08519C") +
+    ggplot2::geom_point(data = modeling_data) +
+    ggplot2::geom_vline(
+      xintercept = as.Date('2021-10-01'), 
+      linetype = 'dashed'
+    ) +
+    ggplot2::geom_vline(
+      xintercept = as.Date('2022-01-01'), 
+      linetype = 'dashed'
+    ) +
+    ggplot2::annotate(
+      "text", 
+      x = as.Date("2021-10-01"), 
+      y = 105, 
+      label = "Nobel Prize", 
+      hjust = 1.1,  
+      vjust = 0.1
+    ) +
+    ggplot2::annotate(
+      "text", 
+      x = as.Date("2022-01-01"), 
+      y = 105, 
+      label = "Method change", 
+      hjust = -0.1,  
+      vjust = 0
+    ) +
+    ggplot2::scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+    ggplot2::labs(
+      title = stringr::str_glue("Google search interest in '{stringr::str_replace_all(search_term_name, '_', ' ')}' term over time"),
+      subtitle = "With 100 draws from the posterior fit of the segmented regression model",
+      x = "",
+      y = "INTEREST",
+      caption = "Source: Google Trends (global web search between 03-2015 and 03-2025)."
+    ) +
+    ggplot2::theme_minimal()
   
   return(g)
-  
 }
+
 
 data_with_fitted_model(model=causal_inference_model, search_term_name = "causal_inference")
 
