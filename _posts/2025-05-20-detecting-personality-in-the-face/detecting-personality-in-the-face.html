@@ -1554,7 +1554,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>Recently, I happened to stumble across some data I collected during my general psychology lab sessions with my students, where we explored whether our faces really show traces of our personalities.</p>
+<p>Recently, I happened to stumble across some data I collected during my general psychology lab sessions with my students, where we explored whether our faces really show detectable traces of our personalities.</p>
 <p>It was a partial replication of the <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/10.1348/000712606X109648" target="_blank">Little &amp; Perrett (2007)</a> study on how accurately people can judge personality based purely on facial features. We re-used their pairs of composite images—faces averaging people high and low in Big Five traits (see the picture from the original research paper below). With this setup, the signal was artificially boosted, so the test situation wasn’t exactly ecologically valid. Plus, students were only ever asked about the relevant trait, and they always saw the high/low images side by side. Still, it was interesting to see whether people (here, psychologists in training) could pick up the signal from these images, even under such idealized conditions.</p>
 <div style="text-align:center">
 <p><img src="composite_images.gif" style="width:85.0%" /></p>
@@ -1678,6 +1678,7 @@ Show code
 <span>      .width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.5</span>, <span class='fl'>0.8</span>, <span class='fl'>0.95</span><span class='op'>)</span>,</span>
 <span>      interval_size_domain <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>4</span><span class='op'>)</span></span>
 <span>    <span class='op'>)</span> <span class='op'>+</span></span>
+<span>    <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_vline</a></span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fl'>0.5</span>, linetype<span class='op'>=</span><span class='st'>'dashed'</span>, color<span class='op'>=</span><span class='st'>'grey'</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>    <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>    <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
 <span>      title <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_glue.html'>str_glue</a></span><span class='op'>(</span><span class='st'>"Posterior distribution of the success rate parameter for {task}"</span><span class='op'>)</span>,</span>
@@ -1713,7 +1714,7 @@ Show code
 <span><span class='va'>final_plot</span> <span class='op'>&lt;-</span> <span class='va'>all_g</span> <span class='op'>/</span> <span class='va'>ope_g</span>  <span class='op'>/</span> <span class='va'>agr_g</span> <span class='op'>/</span> <span class='va'>ext_g</span> <span class='op'>/</span> <span class='va'>con_g</span> <span class='op'>/</span> <span class='va'>neu_g</span></span>
 <span></span>
 <span><span class='va'>final_plot</span> <span class='op'>+</span> </span>
-<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>caption <span class='op'>=</span> <span class='st'>"The horizontal lines represent the 50%, 80%, and 95% credible intervals, respectively."</span><span class='op'>)</span></span></code></pre>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>caption <span class='op'>=</span> <span class='st'>"The output from a Bayesian hierarchical binomial regression model.\nThe horizontal lines represent the 50%, 80%, and 95% credible intervals, respectively.\nThe vertical lines represent the success rate corresponding to random guessing."</span><span class='op'>)</span></span></code></pre>
 </div>
 </details>
 <p><img src="detecting-personality-in-the-face_files/figure-html5/unnamed-chunk-1-1.png" width="1056" /></p>

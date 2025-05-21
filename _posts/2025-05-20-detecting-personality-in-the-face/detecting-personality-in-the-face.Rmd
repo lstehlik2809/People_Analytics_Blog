@@ -24,7 +24,7 @@ output:
     code_folding: true
 ---
 
-Recently, I happened to stumble across some data I collected during my general psychology lab sessions with my students, where we explored whether our faces really show traces of our personalities.
+Recently, I happened to stumble across some data I collected during my general psychology lab sessions with my students, where we explored whether our faces really show detectable traces of our personalities.
 
 It was a partial replication of the [Little & Perrett (2007)](https://bpspsychub.onlinelibrary.wiley.com/doi/10.1348/000712606X109648){target="_blank"} study on how accurately people can judge personality based purely on facial features. We re-used their pairs of composite images—faces averaging people high and low in Big Five traits (see the picture from the original research paper below). With this setup, the signal was artificially boosted, so the test situation wasn’t exactly ecologically valid. Plus, students  were only ever asked about the relevant trait, and they always saw the high/low images side by side. Still, it was interesting to see whether people (here, psychologists in training) could pick up the signal from these images, even under such idealized conditions.
 
@@ -148,6 +148,7 @@ plot_post_distribution <- function(fitted_model, task){
       .width = c(0.5, 0.8, 0.95),
       interval_size_domain = c(1,4)
     ) +
+    ggplot2::geom_vline(xintercept = 0.5, linetype='dashed', color='grey') +
     ggplot2::scale_x_continuous(limits = c(0,1)) +
     ggplot2::labs(
       title = stringr::str_glue("Posterior distribution of the success rate parameter for {task}"),
@@ -183,7 +184,7 @@ con_g <- plot_post_distribution(fitted_model = con_model, task = 'Conscientiousn
 final_plot <- all_g / ope_g  / agr_g / ext_g / con_g / neu_g
 
 final_plot + 
-  plot_annotation(caption = "The horizontal lines represent the 50%, 80%, and 95% credible intervals, respectively.")
+  plot_annotation(caption = "The output from a Bayesian hierarchical binomial regression model.\nThe horizontal lines represent the 50%, 80%, and 95% credible intervals, respectively.\nThe vertical lines represent the success rate corresponding to random guessing.")
 
 ```
 
