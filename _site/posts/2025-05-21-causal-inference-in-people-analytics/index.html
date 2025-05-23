@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+<title>Ludek's Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics</title>
+
+<meta property="description" itemprop="description" content="Sharing an article I co-authored with Cole Napper on causal inference in people analytics."/>
+
+<link rel="canonical" href="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2025-05-23"/>
+<meta property="article:created" itemprop="dateCreated" content="2025-05-23"/>
+<meta name="article:author" content="Luděk Stehlík &amp; Cole Napper"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Ludek&#39;s Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Sharing an article I co-authored with Cole Napper on causal inference in people analytics."/>
+<meta property="og:url" content="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"/>
+<meta property="og:image" content="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/./intro_pic.png"/>
+<meta property="og:image:width" content="509"/>
+<meta property="og:image:height" content="500"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Ludek&#39;s Blog About People Analytics"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:title" content="Ludek&#39;s Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics"/>
+<meta property="twitter:description" content="Sharing an article I co-authored with Cole Napper on causal inference in people analytics."/>
+<meta property="twitter:url" content="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"/>
+<meta property="twitter:image" content="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/./intro_pic.png"/>
+<meta property="twitter:image:width" content="509"/>
+<meta property="twitter:image:height" content="500"/>
+
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Ludek&#39;s Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics"/>
+<meta name="citation_fulltext_html_url" content="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"/>
+<meta name="citation_online_date" content="2025/05/23"/>
+<meta name="citation_publication_date" content="2025/05/23"/>
+<meta name="citation_author" content="Luděk Stehlík &amp; Cole Napper"/>
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Beyond prediction: Exploiting organizational events for causal inference in people analytics"]},{"type":"character","attributes":{},"value":["Sharing an article I co-authored with Cole Napper on causal inference in people analytics."]},{"type":"character","attributes":{},"value":["./intro_pic.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík & Cole Napper"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-23-2025"]},{"type":"character","attributes":{},"value":["causal inference","experiments","data science","people analytics","hr analytics","python","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["causal-inference-in-people-analytics_files/anchor-4.2.2/anchor.min.js","causal-inference-in-people-analytics_files/bowser-1.9.3/bowser.min.js","causal-inference-in-people-analytics_files/distill-2.2.21/template.v2.js","causal-inference-in-people-analytics_files/header-attrs-2.25/header-attrs.js","causal-inference-in-people-analytics_files/jquery-3.6.0/jquery-3.6.0.js","causal-inference-in-people-analytics_files/jquery-3.6.0/jquery-3.6.0.min.js","causal-inference-in-people-analytics_files/jquery-3.6.0/jquery-3.6.0.min.map","causal-inference-in-people-analytics_files/popper-2.6.0/popper.min.js","causal-inference-in-people-analytics_files/tippy-6.2.7/tippy-bundle.umd.min.js","causal-inference-in-people-analytics_files/tippy-6.2.7/tippy-light-border.css","causal-inference-in-people-analytics_files/tippy-6.2.7/tippy.css","causal-inference-in-people-analytics_files/tippy-6.2.7/tippy.umd.min.js","causal-inference-in-people-analytics_files/webcomponents-2.0.0/webcomponents.js","causal_effect_chart_combo.png","collider_plot.png","dagitty_example.png","dagitty_model_legend.png","dagitty_model_legend2.png","did.png","intro_pic.png","iptw.png","matching.png","output_plot.png","rct_illustration.png","rdd.png","segmented_regression.png","shap.png","sketchplanations-sampling-bias.png","staggered_rollout.png","staggered_rollout2.png","uk_chart.png"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
+</style>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description || ''}
+                </div>
+                <div class="search-item-preview">
+                  ${img}
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+  font-size: 100%;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+hr.section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0px;
+}
+
+
+d-byline {
+  border-top: none;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+  border-top: none;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+/* tweak for Pandoc numbered line within distill */
+d-article pre.numberSource code > span {
+    left: -2em;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // separator
+  var separator = '<hr class="section-separator" style="clear: both"/>';
+  // prepend separator above appendix
+  $('.d-byline').before(separator);
+  $('.d-article').before(separator);
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme, except when numbering line
+  // in code chunk
+  $('pre:not(.numberLines) code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      var author_name = front_matter.authors[i].author
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+      }).join("\n");
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Beyond prediction: Exploiting organizational events for causal inference in people analytics","description":"Sharing an article I co-authored with Cole Napper on causal inference in people analytics.","authors":[{"author":"Luděk Stehlík & Cole Napper","authorURL":"https://www.linkedin.com/in/ludekstehlik/","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2025-05-23T00:00:00.000+02:00","citationText":"Stehlík & Napper, 2025"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<span class="logo">
+<img src="../../images/ludekstehlik.jpg"/>
+</span>
+<a href="../../index.html" class="title">Ludek's Blog About People Analytics</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="../../bio.html">Bio</a>
+<a href="../../index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Beyond prediction: Exploiting organizational events for causal inference in people analytics</h1>
+
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+  <a href="../../index.html#category:causal_inference" class="dt-tag">causal inference</a>
+  <a href="../../index.html#category:experiments" class="dt-tag">experiments</a>
+  <a href="../../index.html#category:data_science" class="dt-tag">data science</a>
+  <a href="../../index.html#category:people_analytics" class="dt-tag">people analytics</a>
+  <a href="../../index.html#category:hr_analytics" class="dt-tag">hr analytics</a>
+  <a href="../../index.html#category:python" class="dt-tag">python</a>
+  <a href="../../index.html#category:r" class="dt-tag">r</a>
+</div>
+<!--/radix_placeholder_categories-->
+<p><p>Sharing an article I co-authored with Cole Napper on causal inference in people analytics.</p></p>
+</div>
+
+<div class="d-byline">
+  Luděk Stehlík &amp; Cole Napper <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  
+<br/>05-23-2025
+</div>
+
+<div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a>
+<ul>
+<li><a href="#the-trouble-with-experiments" id="toc-the-trouble-with-experiments">The Trouble with Experiments</a></li>
+<li><a href="#correlation-causation-still-true-still-annoying" id="toc-correlation-causation-still-true-still-annoying">Correlation ≠ Causation (Still True, Still Annoying)</a></li>
+<li><a href="#getting-clever-with-observational-data" id="toc-getting-clever-with-observational-data">Getting Clever with Observational Data</a></li>
+</ul></li>
+<li><a href="#spotting-quasi-experiments-in-the-wild" id="toc-spotting-quasi-experiments-in-the-wild">Spotting Quasi-Experiments in the Wild</a>
+<ul>
+<li><a href="#selectively-affected-teams-when-change-plays-favorites" id="toc-selectively-affected-teams-when-change-plays-favorites">Selectively Affected Teams (When Change Plays Favorites)</a>
+<ul>
+<li><a href="#difference-in-differences" id="toc-difference-in-differences">Difference-in-Differences</a></li>
+<li><a href="#synthetic-control" id="toc-synthetic-control">Synthetic Control</a></li>
+</ul></li>
+<li><a href="#staggered-rollouts-when-change-doesnt-happen-all-at-once" id="toc-staggered-rollouts-when-change-doesnt-happen-all-at-once">Staggered Rollouts (When Change Doesn’t Happen All at Once)</a>
+<ul>
+<li><a href="#adjusting" id="toc-adjusting">Adjusting</a></li>
+<li><a href="#staggered-adoption-did-model" id="toc-staggered-adoption-did-model">Staggered Adoption DiD Model</a></li>
+</ul></li>
+<li><a href="#policy-thresholds-and-eligibility-cutoffs-when-a-small-step-can-mean-a-big-shift" id="toc-policy-thresholds-and-eligibility-cutoffs-when-a-small-step-can-mean-a-big-shift">Policy Thresholds and Eligibility Cutoffs (When a Small Step Can Mean a Big Shift)</a>
+<ul>
+<li><a href="#regression-discontinuity-design" id="toc-regression-discontinuity-design">Regression Discontinuity Design</a></li>
+</ul></li>
+<li><a href="#abrupt-organizational-changes-breaking-the-routine-with-a-bang" id="toc-abrupt-organizational-changes-breaking-the-routine-with-a-bang">Abrupt Organizational Changes (Breaking the Routine with a Bang)</a>
+<ul>
+<li><a href="#segmented-regression-analysis-of-interrupted-time-series" id="toc-segmented-regression-analysis-of-interrupted-time-series">Segmented Regression Analysis of Interrupted Time Series</a></li>
+</ul></li>
+<li><a href="#instrumental-variables-the-hard-to-find-helpers-of-causal-inference" id="toc-instrumental-variables-the-hard-to-find-helpers-of-causal-inference">Instrumental Variables (The Hard-to-Find Helpers of Causal Inference)</a></li>
+<li><a href="#tailoring-impact-one-size-usually-doesnt-fit-all" id="toc-tailoring-impact-one-size-usually-doesnt-fit-all">Tailoring Impact (One Size Usually Doesn’t Fit All)</a>
+<ul>
+<li><a href="#traditional-econometric-approaches" id="toc-traditional-econometric-approaches">Traditional Econometric Approaches</a></li>
+<li><a href="#machine-learning-based-approaches" id="toc-machine-learning-based-approaches">Machine Learning-Based Approaches</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
+<li><a href="#further-resources-and-readings" id="toc-further-resources-and-readings">Further Resources and Readings</a>
+<ul>
+<li><a href="#foundational-concepts" id="toc-foundational-concepts">Foundational Concepts</a></li>
+<li><a href="#technical-toolkits" id="toc-technical-toolkits">Technical Toolkits</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>When we worked as consultants using the most common people analytics maturity model—you probably know the drill by now: moving from descriptive analytics (<em>what happened</em>), to diagnostic (<em>why it happened</em>), predictive (<em>what will happen</em>), and finally prescriptive analytics (<em>how to make it happen</em>)—one thing that always seemed odd to us was how predictive analytics was so heavily promoted as more advanced and desirable than diagnostic analytics. But as any analyst will tell you, figuring out the actual causes behind events is way tougher—and a lot more uncertain—than just making accurate predictions. Also, understanding why something happened is typically more practical and actionable than just having predictions. Knowing the causes not only allows you to forecast events—often in a more explainable and interpretable way—but also enables effective interventions to make those events actually happen. In fact, once you have the root causes nailed down, you’re much closer to the “ultimate” prescriptive stage than you’d be by just having predictions.</p>
+<p>This obsession with prediction might be part of the reason why people analytics still struggles to consistently deliver real business impact. Predictions (let alone descriptives) can only take us so far when it comes to actually changing our organizations in a meaningful way. Take the ever-popular employee attrition prediction use case. Sure, knowing which parts of the organization are at higher risk of voluntary turnover is better than flying blind—but if that’s all you bring to the table, the typical response from HRBPs or business stakeholders is something like, “Okay, that’s interesting. We kind of suspected that already, but what should we actually do about it?” The real impact of your predictive insight hinges on your ability to answer that question clearly and convincingly. And the truth is, in many, if not most, situations, you can only do that through causal inference: a systematic and principled approach to answering “why” questions.</p>
+<h2 id="the-trouble-with-experiments">The Trouble with Experiments</h2>
+<p>The good news is, we do have a method for answering causal, or “why”, questions. The less good news? In practice, causal inference is harder and less straightforward than making predictions. If you have a background in the social sciences, you probably remember from your methods classes that the gold standard for establishing causality is the experiment—specifically, the <em>randomized controlled trial</em> (RCT), also known in the business world as <em>A/B testing</em>. RCTs are powerful because they can effectively simulate comparison between factual and counterfactual scenarios—imagine being able to see what would happen to your headache both <em>with</em> and <em>without</em> taking aspirin. They do this by randomly assigning interventions to people (or other units of analysis), which helps break any systematic link between the outcome and all factors other than the intervention itself.</p>
+<div style="text-align:center">
+<p><img src="rct_illustration.png" style="width:85.0%" /></p>
+</div>
+<p><em>Fig. 1: A diagram illustrating the design of a Randomized Controlled Trial (RCT). Patients are randomly assigned to either a treatment group receiving an intervention or a control group receiving a comparison, allowing for the assessment of the intervention’s causal effect on outcomes. Randomization helps balance both known and unknown confounding variables across groups, reducing bias and making it more likely that any observed differences in outcomes are due to the intervention itself—not other factors. (Source: <a href="https://www.simplypsychology.org/randomized-controlled-trial.html" target="_blank">SimplyPsychology</a>)</em></p>
+<p>But as you can imagine, this kind of setup is often impractical, unethical, or technically or politically unfeasible in real organizational settings—especially when it involves employees. For example, try convincing your L&amp;D colleagues to randomly assign eligible employees to either an expensive training program or a waiting list, just to estimate the program’s effectiveness, and see how that conversation goes. That said, if you’re on the other side of this imaginary barricade, like those hypothetical L&amp;D folks above, it’s worth remembering that rolling out a program without testing it properly is still an experiment, just a sloppy and uncontrolled one. So if it’s feasible, running an RCT is at least worth considering.</p>
+<h2 id="correlation-causation-still-true-still-annoying">Correlation ≠ Causation (Still True, Still Annoying)</h2>
+<p>So, if we often can’t run experiments, what are we left with? Observational data—a lot of it. Most organizations today are sitting on heaps of information about their employees and their behavior, coming from HRIS, survey platform, LMS, CRM systems, recognition tools, collaboration platforms like calendar, chat, email—you name it. However, at this point, many of you are probably hearing a mental alarm bell and recalling the age-old warning: “<em>Correlation is not causation.</em>” And you’d be absolutely right. Sifting through this kind of data is a bit like staring at a clear night sky, looking for familiar shapes—you’ll always find some patterns that resemble real things, but it’d be naive to think they’re actually up there. Same goes for observational data: We can’t just simply assume that any relationship we spot is causal. What could possibly go wrong?</p>
+<p>There could easily be a third, unmeasured variable, a so-called <em>confounder</em>, lurking in the background—driving two variables of interest and creating the illusion of a causal link between them (e.g., at first glance, it looks like remote employees chat with their coworkers less than their in-office peers, but it may be that the kind of work, some jobs needing more back-and-forth, others less, drives both the choice to work remotely and the overall volume of communication). Or the relationship might be causal, but in the opposite direction from what we assume (e.g., are people performing well because they’re engaged, or just more engaged because they keep winning Employee of the Month?).</p>
+<p>Then there’s the infamous <em>self-selection</em> effect: When people opt into a program for reasons tied to the very issue the program is meant to fix. That can make even a solid intervention look like it’s backfiring—not because it doesn’t work, but because those who join are systematically different from those who don’t, especially when it comes to the outcome of interest (e.g., if an optional manager coaching program seems to lower team satisfaction, it’s probably not the coaching that’s the problem—more likely, the only managers signing up are already struggling, and their teams were less satisfied from the start).</p>
+<div style="text-align:center">
+<p><img src="sketchplanations-sampling-bias.png" style="width:85.0%" /></p>
+</div>
+<p><em>Fig. 2: A lighthearted illustration of the self-selection effect—where only a specific type of person ends up in the sample. (Source: <a href="https://sketchplanations.com/sampling-bias" target="_blank">sketchplanations</a>)</em></p>
+<p>Even if we try to get clever and use our good old friend, regression analysis, to statistically control for everything we can measure, we might still end up with biased estimates—not despite controlling for variables, but because we’re controlling for variables we shouldn’t. For instance, if we control for a <em>collider</em>—a variable influenced by both the outcome and the intervention—we can actually introduce bias rather than eliminate it (e.g., when looking at the relationship between technical and teamwork skills in job candidates, both might independently boost their chances of getting selected; but if we only analyze those who got through, we’re effectively controlling for selection, which can create a fake negative link between technical and teamwork skills, even if there’s no such relationship in the broader pool of applicants; see <em>Fig. 3</em>).</p>
+<div style="text-align:center">
+<p><img src="collider_plot.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 3: Here we’ve plotted normally distributed technical versus teamwork scores for 1,000 simulated candidates—blue dots are all candidates, red dots are the selected candidates (you needed at least a 115 on one skill and no less than 100 on the other). The blue regression line is basically flat, but once we cherry-pick by our “either/or” rule (i.e., condition on selection), the red line tilts downward, showing a fake trade-off between skills that only crops up because of how we picked people, not because the skills are actually at odds.</em></p>
+<p>Another potential trap in this category is controlling for a <em>mediator</em>—a variable that legitimately carries part of the causal effect. Doing so blocks a real causal pathway and biases the estimated effect downward (e.g., one way flexible work arrangements may help reduce unplanned absenteeism is by lowering occupational stress for employees who have more control over their time; in this case, stress acts as a causal middleman between the policy and absenteeism—if we control for it, we block this indirect pathway and risk biasing our estimates toward “flex time has little or no effect.”)</p>
+<h2 id="getting-clever-with-observational-data">Getting Clever with Observational Data</h2>
+<p>But things aren’t as bleak as they might seem. When we enrich observational data with some well-grounded assumptions—based on how we understand the data-generating process—we can get pretty close to simulating the counterfactual scenarios needed for causal inference. Some of these assumptions come from our general knowledge about how the world works (like the fact that causes precede effects). Others are rooted in our domain-specific knowledge drawn from prior research (for example, goal-setting typically boosts performance). And some come from nitty-gritty, context-specific knowledge about the details of how the data were collected (say, participants only got assigned to a training program if they met a certain cutoff score). By combining these assumptions with the data, we can start to rule out alternative, purely correlational explanations for the patterns we see—and, with some caution, move closer to a causal interpretation. It’s not unlike what the famous fictional detective Sherlock Holmes did to solve his cases: piecing together bits of evidence, applying prior knowledge, and methodically ruling out false leads—until only one plausible explanation remained.</p>
+<div style="text-align:center">
+<p><img src="dagitty_example.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 4: Researchers and analysts looking to figure out causal effects often use Directed Acyclic Graphs (DAGs) to lay out their assumptions about how different variables might be causally connected. A DAG is a visual and formal tool that shows the assumed causal relationships—where the nodes stand for variables and the arrows (or edges) indicate which ones are influencing others. By building a DAG, researchers can more clearly think through their causal claims, spot potential confounders, and figure out the right way to adjust their analysis. This approach helps make assumptions more transparent and supports solid causal reasoning from observational data. While most DAGs are manually constructed based on domain expertise, there is a growing body of work around causal discovery—automated methods that attempt to infer plausible causal structures directly from data. These algorithms (e.g., PC, FCI, GES, or more recent neural-based models) can be helpful for generating hypotheses, especially when theory is sparse or data complexity is high. That said, causal discovery comes with its own assumptions and limitations, and a full discussion is beyond the scope of this article. The attached example DAG shows the assumed causal structure for estimating the average treatment effect of training performance on productivity. It was created using <a href="https://www.dagitty.net/dags.html" target="_blank">DAGitty</a>—a great browser-based tool for building and analyzing causal diagrams.</em></p>
+<p>By the way, this kind of knowledge, rooted in the rich, nuanced world models we carry around in our heads, might be one reason current AI still struggles to fully replace (good) business analysts. Their grasp of the world is in many respects still pretty shallow in comparison with humans—at least for now. But who knows what’ll be true by the time this article comes out… or even a month later.</p>
+<h1 id="spotting-quasi-experiments-in-the-wild">Spotting Quasi-Experiments in the Wild</h1>
+<p>In the rest of this article, we’ll focus on the third type of assumptions mentioned above. Specifically, we’ll look at several common organizational events and practices—and the analytical techniques that go with them—that often provide a natural foundation for robust causal analysis. This won’t be a comprehensive overview, but it still should give HR professionals a useful lens for spotting and leveraging these naturally occurring quasi-experiments for better, more impactful decision-making. For those more technically inclined, an accompanying public <a href="https://github.com/lstehlik2809/Beyond-Prediction-Exploiting-Organizational-Events-for-Causal-Inference-in-People-Analytics.git" target="_blank">GitHub repository</a> contains example Python and R code with dummy data illustrating some of these scenarios. Without further ado, let’s dive into the first type of events.</p>
+<h2 id="selectively-affected-teams-when-change-plays-favorites">Selectively Affected Teams (When Change Plays Favorites)</h2>
+<p>Despite ongoing efforts to standardize operations, employees in modern organizations often experience very different levels of exposure to various company policies and processes. A major driver of this variability is simply the nature of the role. A software developer, for example, might fully embrace the perks of a remote-work policy—coding in pajamas from a cabin in the woods—while a facilities manager still commutes daily to keep the lights on, the plumbing working, and the office ready for the inevitable “team-building week” return. Another common source of variability is the widespread practice of piloting new programs on a small scale before rolling them out company-wide, allowing organizations to test the waters, gather feedback, and fine-tune everything from design to implementation.</p>
+<p>While variability is often seen as something to be minimized—especially in contexts like manufacturing or quality control—it can be a real asset when it comes to causal inference. These natural differences can create for us groups that differ in one key aspect of interest (e.g., exposure to a policy), while remaining comparable in many other important ways, making them valuable for identifying potential causal effects.</p>
+<p>Take, for example, the much-debated and often controversial return-to-office (RTO) initiatives. Suppose a tech company rolls out an RTO policy and starts noticing that employees in the Digital department, who previously enjoyed full remote flexibility, are now quitting at higher rates. Leadership wants to know: Is this spike in attrition actually caused by the RTO policy, or is it just part of a broader company-wide trend? We dig into the data and see that voluntary attrition in the Digital department is indeed climbing. But that alone doesn’t tell us much—maybe attrition is up across the board, driven by other factors. To answer the question properly, we need a fair comparison—an apples-to-apples scenario. That means finding a suitable reference group: ideally, a department less affected by the RTO shift due to the nature of their work (say, Facilities), and one that historically followed a similar attrition pattern before the policy change. And just like that, we land on a well-established method for causal inference: <em>Difference-in-Differences</em> (DiD).</p>
+<h3 id="difference-in-differences">Difference-in-Differences</h3>
+<p>DiD looks at how things change over time for a group exposed to an intervention (the treatment group) compared to a group that isn’t (the control group). The core assumption is that, if the intervention hadn’t happened, both groups would have followed similar trends. We can get a sense of whether this holds by checking if their trends were roughly parallel before the intervention. If they were—and we then see a distinct shift in the treatment group that goes beyond what we’d expect from the usual pattern—it’s reasonable to attribute that change to the intervention. Beyond the “<em>parallel trends</em>” assumption, there are a few other key ones to keep in mind—like no spillover effects between groups, no overlapping interventions, shared external conditions (common “shocks”), and stable group composition over time—but these can usually be assessed with solid domain knowledge.</p>
+<p>Let’s bring this back to our RTO example. The chart below shows the trailing 12-month voluntary attrition rate for our two departments—only one of which was supposed to be affected by a remote-work policy change, based on the nature of their work. Before the policy change, Department A (Facilities) had slightly higher attrition than Department B (Digital), but both were trending downward in parallel. After the change, the trend diverged sharply: attrition in Department B went up, while it continued downward in Department A. If we can reasonably confirm the other DiD assumptions, this gives us pretty solid evidence that the policy change caused the increase in attrition in Department B.</p>
+<div style="text-align:center">
+<p><img src="did.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 5: A figure showing the DiD method’s “parallel trends” assumption (red dotted line), which helps us imagine what would have happened in department B if the policy change hadn’t taken place. By comparing that hypothetical, counterfactual scenario to what actually happened (red vertical line), we can estimate the effect of the policy change on voluntary attrition in department B.</em></p>
+<h3 id="synthetic-control">Synthetic Control</h3>
+<p>If it seems to you that relying on just one comparison group (like department A in our earlier example) is a bit shaky, you can reach for a more robust alternative: <em>Synthetic control</em> method. Instead of using a single control group, this method constructs a synthetic version of the control group by combining multiple control units, each weighted based on how closely they mirror the treatment group’s behavior prior to the intervention. The principle is similar to what we already saw with DiD: we still want to estimate what department B’s attrition would have looked like had the policy not changed, and then compare that counterfactual to what actually happened. But rather than relying solely on department A, we bring in several departments whose historical attrition trends most closely align with department B’s. Using a method like linear regression—or another machine learning (ML) algorithm—we assign weights to these control units based on how well they predict department B’s attrition before the policy change. We then use this weighted combination to forecast department B’s attrition after the policy shift, creating a counterfactual baseline to compare against the actual outcomes.</p>
+<p>Below is an example of how this method was used to estimate the negative impact of Brexit on the UK’s economic performance, using GDP as the outcome measure. To model the UK’s pre-Brexit GDP, we used data from countries unlikely to be strongly affected by Brexit but whose GDP trends closely mirrored the UK’s during the pre-Brexit period (e.g., the US, Costa Rica, Germany, New Zealand, Sweden, Austria, etc.). As shown in the top chart, the model explains 99% of the variability in UK’s GDP from 2008 to 2020. This model was then used to predict what UK’s GDP would have looked like after Brexit (January 31, 2020) if Brexit hadn’t happened, and these predictions were compared to the actual observed values. The second and third charts from the top show how the predicted and actual values diverge—quarter by quarter and cumulatively over time—including uncertainty around the estimates. From these charts, it’s clear that the data and the analysis support the hypothesis that Brexit had a negative effect on the UK economy, as measured by GDP.</p>
+<div style="text-align:center">
+<p><img src="uk_chart.png" style="width:85.0%" /></p>
+</div>
+<p><em>Fig. 6: A set of charts showing the estimated causal impact of Brexit on the UK’s GDP using a Bayesian synthetic control method implemented in the <a href="https://causalpy.readthedocs.io/en/stable/" target="_blank">CausaPy</a> package. Top chart: It compares actual UK’s GDP (black dots) with a counterfactual scenario (orange line) — i.e., what GDP would likely have looked like had Brexit not occurred. The vertical red line marks the Brexit date (January 2020). The fit before that is very tight (R² = 0.99), indicating a very good approximation. Middle chart: This shows the instantaneous causal impact — the difference between actual and counterfactual GDP for each quarter. Post-Brexit, GDP is consistently below what it would have been otherwise, shown by the orange shaded area. Bottom chart: This plots the cumulative causal impact — essentially, how much GDP has been “lost” over time due to Brexit. By 2024, the cumulative loss reaches over 2 trillion USD.</em></p>
+<h2 id="staggered-rollouts-when-change-doesnt-happen-all-at-once">Staggered Rollouts (When Change Doesn’t Happen All at Once)</h2>
+<p>When HR teams launch new programs—like a transformation training for senior managers designed to boost their change readiness—they rarely implement them company-wide all at once. Organizational and technical constraints typically get in the way: A limited number of trainers, room availability, scarce training materials, and the need to keep business operations running smoothly, just to name a few. Instead, these programs are usually implemented in a staggered fashion, meaning different employee groups participate at different times. This staggered rollout presents us with a valuable opportunity: we can compare more or less similar employees who have participated in the program to those who haven’t—yet.</p>
+<p>The “more or less similar” part is key. We can only make valid causal claims about a program’s impact if the groups we’re comparing are similar in factors that could influence both their participation and the outcome of interest. And we should never assume that this similarity holds by default. We need to test for it and/or adjust for relevant differences in the analysis. As program managers, we have an advantage. We’re close to the nomination process and usually have a solid understanding of the selection criteria. That puts us in a good position to spot which factors need to be accounted for. However, when self-selection comes into play, things get trickier. There may be hidden factors influencing both participation and outcomes, so we should be cautious in drawing final conclusions.</p>
+<p>To illustrate this kind of scenario, imagine that—due to the capacity constraints mentioned earlier—a subgroup of managers starts and completes the transformation training before the regular annual employee survey is administered, while another subgroup begins and finishes it only afterward (see <em>Fig. 7</em>). In this case, only the first subgroup could potentially show a causal effect of the training in their survey scores for that year. That gives us a good opportunity to compare the change and transformation scores between the two groups.</p>
+<div style="text-align:center">
+<p><img src="staggered_rollout.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 7: An illustration of a possible staggered rollout scenario, where one group of training participants started and completed the training before the employee survey was administered, and the second group did so afterward. Only for the first group (A) could a potential causal effect of the training be reflected in the survey results.</em></p>
+<p>However, we need to make sure these groups are comparable in terms of factors that might influence both the timing of their training and their survey outcomes. For example, if all senior managers from Sales—where employee satisfaction is generally lower in our hypothetical organization—were scheduled to take the training later, it could bias the comparison. The same applies if managers who were already less satisfied with transformation efforts were more motivated to start their training earlier. We can address these issues by adjusting for such differences in the analysis.</p>
+<h3 id="adjusting">Adjusting</h3>
+<p>When we “adjust” for a variable, we’re statistically controlling for it in the analysis—basically holding it constant so it doesn’t muddy the waters when we’re trying to see what really drives the outcome. The way we do this can vary depending on the specific analytical technique, but within causal inference the goal is always the same—to approximate random assignment as closely as possible. For instance, we might include the variable as a covariate in a regression model, match individuals based on that variable (see <em>Fig. 8</em>), re-weight the data with <em>Inverse-Probability-of-Treatment Weighting</em> (IPTW), where the weights are the inverse of each person’s estimated probability of receiving the treatment they actually got (see <em>Fig. 9</em>), split the data into subgroups (stratification), or condition on the variable in a ML model. With such adjustment, we can be more confident that we’re comparing apples to apples and make some causal conclusions.</p>
+<div style="text-align:center">
+<p><img src="matching.png" style="width:85.0%" /></p>
+</div>
+<p><em>Fig. 8: An illustration of matching based on two covariates (X1 and X2). Each dotted circle represents a matched set containing individuals from the treated (red) and control (blue) populations with similar characteristics (X1 and X2), facilitating a fair, apple-to-apple comparison. (Source: <a href="https://appliedcausalinference.github.io/aci_book_kr/03-causal-estimation-process.html" target="_blank">Applied Causal Inference</a>)</em></p>
+<div style="text-align:center">
+<p><img src="iptw.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 9: An illustration of the Inverse-Probability-of-Treatment Weighting method (IPTW). Each person is given a weight equal to the inverse of the estimated probability—based on their observed characteristics—of receiving the treatment they actually received. After weighting, the treated and control groups look alike on those characteristics, so we can learn about cause and effect from observational data (assuming two extra assumptions hold: ignorability—i.e. there aren’t hidden factors that influence both treatment and outcome—and positivity—i.e. everyone had some chance to get each option). A chart: Observed data before reweighting. B chart: Observed data after reweighting. (Source: <a href="https://appliedcausalinference.github.io/aci_book_kr/03-causal-estimation-process.html" target="_blank">Applied Causal Inference</a>)</em></p>
+<h3 id="staggered-adoption-did-model">Staggered Adoption DiD Model</h3>
+<p>Another technique that can be used for causal analysis of staggered rollout data is a specific type of DiD model tailored to handle the fact that we implemented changes or interventions at different times across various parts of an organization. The classic DiD works best when all members of the treatment group are exposed to the intervention at the same time. But what if, like in many real-world situations, a new policy is rolled out gradually? Imagine that Department A adopts it in January, Department B in April, Department C in July, and Department D either never adopts it—or does so much later (see <em>Fig. 10</em>).</p>
+<div style="text-align:center">
+<p><img src="staggered_rollout2.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 10: An illustration of a staggered rollout of a new policy across several departments: Department A adopts it in January, Department B in April, Department C in July, and Department D either never adopts it—or does so much later.</em></p>
+<p>If we tried to use the simple DiD method here, we might get confusing or misleading results. Why? Because who are we comparing Department A to in February? Department B hasn’t adopted the policy yet, so they seem like a good control. But by May, Department B has also adopted the policy, so they’re no longer a clean “untreated” comparison group for Department A. The Staggered Adoption DiD model is specifically built to handle these kinds of messy, real-world rollouts. It introduces several key adjustments to give us a clearer and more accurate picture:</p>
+<ol type="1">
+<li><em>Everyone starts at their own “day zero”:</em> Instead of aligning all departments by calendar date, the analysis aligns them based on when they actually adopted the policy. So, Department A’s “Month 1 after adoption” is January, while for Department B it’s April. This allows a fair comparison of each department’s progress relative to its own start.</li>
+<li><em>Using the “not yet treated” as a proper control group:</em> At any given time point, the model compares departments that have already adopted the policy to those that haven’t yet. For example, in February (one month after Department A’s adoption), Departments B, C, and D—who are still untreated—can serve as the control group. By May, when Department B is in its first post-policy month, Department A is already treated, but Departments C and D still haven’t adopted the policy and can act as the comparison group. This ensures we’re always making the best possible comparison given who’s received the policy and who hasn’t.</li>
+<li><em>Tracking the effect over time for different “waves”:</em> The model doesn’t just provide a single estimate. It tracks the average effect of the policy for each wave of adopters (e.g., January adopters, April adopters), and how that effect evolves over time. This helps us understand whether the policy’s impact is immediate, builds up, or fades as time goes on.</li>
+</ol>
+<p>By implementing these adjustments, the Staggered Adoption DiD model provides a more accurate and nuanced understanding of the intervention’s impact over time and across various units. However, as with traditional DiD, we still rely on the assumption that, in the absence of the intervention, the treated and control groups would have followed similar trends over time.</p>
+<h2 id="policy-thresholds-and-eligibility-cutoffs-when-a-small-step-can-mean-a-big-shift">Policy Thresholds and Eligibility Cutoffs (When a Small Step Can Mean a Big Shift)</h2>
+<p>Another type of situation that can help us obtain comparable groups—differing only in exposure to the intervention of interest—involves scenarios where employees must surpass a specific threshold or cutoff to qualify. For instance, eligibility for a coaching program might require not only a minimum management level but also a certain tenure. Or consider a case where employees become eligible for a leadership development initiative only if their performance evaluation score exceeds 85 on a scale from 0 to 100. In such situations, individuals just above and just below the threshold are likely similar in most respects, except for their exposure to the intervention. This setup is ideal for applying a <em>Regression Discontinuity Design</em> (RDD), which allows for estimating the causal effect of the intervention by comparing outcomes around the cutoff point (see <em>Fig. 11</em>).</p>
+<h3 id="regression-discontinuity-design">Regression Discontinuity Design</h3>
+<p>To implement RDD, we start by identifying a continuous assignment variable (like tenure or performance score) and the specific cutoff that determines who gets the intervention. Then we collect data on individuals just above and just below that threshold (in a region called the “bandwidth”)—people who are otherwise very similar except for whether they received the intervention. Next, we visualize the relationship between the assignment variable and the outcome to see if there’s a clear jump at the cutoff. If there is, that’s a signal the treatment may have had an effect. To formally estimate this, we fit two separate regression lines—one on each side of the cutoff—using only data near the threshold, and then calculate the size of the jump between them at the cutoff. This estimated difference gives us the treatment effect.</p>
+<div style="text-align:center">
+<p><img src="rdd.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 11: An illustration of the Regression Discontinuity Design (RDD) method using a hypothetical leadership development initiative where eligibility is determined by employee performance (the assignment variable, x-axis) crossing a specific threshold. Employees below the threshold (red dots) were ineligible, while those above (green dots) were eligible. RDD isolates the program’s impact by comparing the leadership effectiveness (the outcome variable, y-axis) of employees just below the threshold to those just above it; the distinct jump, or discontinuity, observed between the fitted regression lines (red and green) precisely at the threshold represents the estimated treatment effect of the initiative.</em></p>
+<p>Given the somewhat arbitrary nature of the chosen bandwidth, it’s often a good idea to run robustness checks—like varying the bandwidth—to make sure the estimated effect isn’t overly sensitive to those choices. We should also run a few validity checks to make sure the assumptions behind RDD hold up, because even RDD-based causal inference doesn’t come for free—it relies on three key assumptions. First, the relationship between the assignment variable and the outcome should be smooth; any sharp jump at the cutoff should be caused by the treatment itself, not some other factor. Second, people shouldn’t be able to game the system to end up just above or below the cutoff. And third, individuals near the cutoff should be very similar in all other respects, making the comparison almost like random assignment (ironically, this might be one of the few cases where having a somewhat noisy performance evaluation can actually be helpful). Even when these assumptions hold, it’s important to remember that RDD estimates a <em>Local Average Treatment Effect</em> (LATE)—the observed causal effect applies specifically to individuals near the cutoff and may not generalize to the broader population.</p>
+<h2 id="abrupt-organizational-changes-breaking-the-routine-with-a-bang">Abrupt Organizational Changes (Breaking the Routine with a Bang)</h2>
+<p>A great way to explore causal relationships is by looking at sudden, discrete organizational changes that disrupt the usual way of doing things—especially in systems that have been relatively stable or at least somewhat predictable over time. One timely example is the introduction of advanced, AI-driven automation to help employees get support for administrative or technical issues they face at work. Another example in this category is a company-wide initiative to support employees in using GenAI tools to generate their personal goals in alignment with the organization’s strategic objectives, hoping to improve goal cascading—a known weak spot in many performance management systems.</p>
+<p>We can make use of these abrupt changes—and the stable/predictable patterns that came before them—to get a rough idea of the counterfactual comparison we need for causal inference. But that only works if it makes sense to think that, without the change, things would’ve just kept going as usual. And if that’s not the case, we at least need a good sense of what else might’ve thrown things off, so we can factor that into the analysis.</p>
+<h3 id="segmented-regression-analysis-of-interrupted-time-series">Segmented Regression Analysis of Interrupted Time Series</h3>
+<p>One useful method for analyzing data in this kind of scenario is <em>segmented regression analysis of interrupted time series</em>. It lets us model changes in outcomes that happen after a specific intervention at a known point in time, while also accounting for other possible influences—like seasonal patterns that would’ve happened anyway, or external “shocks” that might explain the changes too. In effect, it helps us spot shifts in both level and trend, and see how things played out compared to how they likely would’ve gone if nothing had been introduced at all (see <em>Fig. 12</em>).</p>
+<div style="text-align:center">
+<p><img src="segmented_regression.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 12: A general structure of the segmented regression model. The β0 coefficient estimates the baseline level of the outcome variable at time zero; β1 coefficient estimates the change in the mean of the outcome variable that occurs with each unit of time before the intervention (i.e. the baseline trend); β2 coefficient estimates the level change in the mean of the outcome variable immediately after the intervention (i.e. from the end of the preceding segment); and β3 estimates the change in the trend in the mean of the outcome variable per unit of time after the intervention, compared with the trend before the intervention (thus, the sum of β1 and β3 equals to the post-intervention slope). Since time series data often exhibit autocorrelation and seasonal patterns, the model should include terms to account for both—such as an autoregressive term to handle autocorrelation, and a seasonal indicator (e.g., month) to capture recurring seasonal effects. If we know that other external ‘shocks’ may have occurred around the same time as the main intervention, we should also include those as additional covariates to isolate their potential impact. (Source: <a href="https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01306-w" target="_blank">Turner et al. (2021)</a>)</em></p>
+<p>Let’s illustrate this kind of analysis by looking at the supposed impact of GenAI on how people write emails. Since plenty of <a href="https://seosandwitch.com/microsoft-copilot-statistics/" target="_blank">studies</a> show that one of the most common business uses of GenAI is helping with email writing, it makes sense to think that people might be turning to the internet less often for advice on the topic. One way to check that is by looking at <a href="https://trends.google.com/trends/" target="_blank">Google Trends</a> data for searches like “how to write an email” and seeing if there’s a noticeable drop after ChatGPT was officially released. As the output charts from the Bayesian interrupted time series analysis below show, there’s indeed a clear decline in this type of search activity. In fact, the shift is so pronounced that even a quick eyeballing analysis picks it up. Sure, we could imagine alternative explanations—maybe people are just sending fewer emails because they’re relying more on tools like Slack or Teams—but <a href="https://financesonline.com/email-statistics/" target="_blank">other available stats</a> suggest that’s more wishful thinking than reality.</p>
+<div style="text-align:center">
+<p><img src="output_plot.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 13: Charts showing the estimated causal impact of ChatGPT availability on the popularity of Google searches for ‘how to write an email.’, using a Bayesian interrupted time series analysis implemented in the <a href="https://causalpy.readthedocs.io/en/stable/" target="_blank">CausalPy</a> package. Top chart: This compares the actual popularity of the search term (black dots) with a counterfactual scenario (orange line)—basically, an estimate of what search interest would have looked like if ChatGPT hadn’t been released. The vertical red line marks the official release of ChatGPT (November 2022). The model fits the pre-release data fairly well (R² = 0.66), suggesting it’s a good approximation. Middle chart: This shows the immediate causal impact—week by week, it displays the difference between actual search interest and the counterfactual. After ChatGPT’s release, the actual search interest stays consistently below the expected level, as shown by the orange shaded area. Note: As far as we know, the InterruptedTimeSeries class from the CausalPy library used here assumes independent observations and does not account for autocorrelation, which may lead to underestimated and time-insensitive uncertainty. The model also does not consider the truncated nature of the data, with possible values limited to the 0–100 range. These specifics could be better addressed in a more flexible modeling environment, such as the brms library in R or the PyMC library in Python.</em></p>
+<h2 id="instrumental-variables-the-hard-to-find-helpers-of-causal-inference">Instrumental Variables (The Hard-to-Find Helpers of Causal Inference)</h2>
+<p>Suppose we’re trying to estimate the causal impact of a leadership training program on team productivity. While it may sound straightforward, in practice, people are rarely selected into such programs at random—those who participate may already be more motivated, capable, or open to change. These unobserved traits could independently influence both their likelihood of attending the training and their team’s productivity. That introduces <em>unmeasured confounding</em>, which can bias even the most sophisticated statistical models, including many we covered in the previous causal inference examples.</p>
+<p>Fortunately, all is not lost. There’s a clever workaround that can help us untangle causality even when lurking variables like motivation or inherent ability are hiding in the background: <em>instrumental variables</em> (IVs). We can think of them as hidden helpers—factors that push people toward receiving a certain treatment or policy but don’t influence the outcome in any other direct or indirect way, except through the treatment or policy of interest.</p>
+<p>A valid instrument affects the <em>likelihood of receiving the treatment</em> (e.g., joining a program) but doesn’t have a <em>direct effect</em> on the outcome (e.g., team productivity)—only an <em>indirect one</em>, through the treatment itself. In other words, if we find a factor that moves treatment status without independently moving the outcome, we’ve got a potential instrument. How does this help? By leveraging this instrumental variable, we can estimate what the effect of the treatment would be in a world where it was randomly assigned. And we can do this using a technique called <em>two-stage least squares</em> (2SLS). In the first stage, we predict treatment assignments based on the instrument. In the second stage, we use this predicted treatment (now purged of confounding) to estimate the effect on the outcome.</p>
+<p>But there’s a catch (or two). Finding good instruments is hard. There are two big boxes to tick:</p>
+<ol type="1">
+<li><em>Relevance:</em> The instrument must strongly influence the treatment. If it doesn’t move the needle, it won’t help us identify anything.</li>
+<li><em>Exclusion restriction:</em> The instrument must affect the outcome only through the treatment—not directly or via some other variables.</li>
+</ol>
+<p>Relevance can often be tested statistically, but the exclusion restriction leans heavily on domain expertise and theoretical justification, as it often can’t be empirically verified. As a result, using IVs demands careful scrutiny and well-defended assumptions. In practice, satisfying both conditions is pretty tough. In fact, it’s so tough that IV-based methods are used relatively rarely—not just in organizational research, but across the board. Still, when we get lucky, IVs can be a powerful addition to our causal toolbox. So be on the lookout!</p>
+<p>As an example of this analytical approach, consider a study by <a href="https://link.springer.com/article/10.1007/s12122-018-9273-z#:~:text=crucial%20factors%20to%20improve%20firm,the%20ordinary%20least%20square%20estimation" target="_blank">Chang &amp; Kang (2019)</a>, which tackled the classic chicken-or-egg problem in organizational research: Do better management and HR practices actually cause higher productivity, or do already successful firms simply tend to adopt them? The researchers suspected <em>endogeneity</em>—unobserved factors like culture or leadership quality might drive both. To get around this, they used firms’ historical change experiences as instrumental variables—specifically, whether the company had previously undergone major reorganizations, implemented empowerment programs, invested in IT, or had strong motivation for change. These factors predicted current management practices but were unlikely to directly affect present-day productivity except through those practices (see <em>Fig. 14</em>). Using 2SLS, they found that once this endogeneity was accounted for, structured HR and management practices had a clear, positive impact on productivity—an effect that standard regression analysis had missed entirely.</p>
+<div style="text-align:center">
+<p><img src="dagitty_model_legend.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 14: A DAG capturing Chang &amp; Kang’s (2019) IV-based approach to answering the causal question of whether better management and HR practices actually cause higher productivity. For more context, see the details in the main text.</em></p>
+<p>A second, more unexpected example comes from the world of CEO succession. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=925650" target="_blank">Bennedsen et al. (2007)</a> examined whether appointing a family member as CEO in family-owned firms impacts firm performance. The catch? Succession choices aren’t random—stronger firms might be more (or less) inclined to keep leadership in the family, and hidden factors like founder legacy or firm culture could influence both who gets the top job and how the firm performs. To isolate a source of random variation, the researchers used a surprisingly clever instrument: the gender of the outgoing CEO’s firstborn child. In Denmark, because of the societal preference for male heirs at the time, having a firstborn son significantly boosted the chances of a family CEO being appointed—by around 30%—but was otherwise unlikely to affect firm performance, either directly or through any other indirect channels (see <em>Fig. 15</em>). With this instrument, their 2SLS analysis revealed that family CEO appointments caused a substantial drop in firm performance—at least 4 percentage points in operating return on assets, especially in fast-growing or large firms. Once again, the IV approach helped cut through the noise, showing that what might look like a neutral or even positive correlation at first glance actually hides a meaningful causal effect in the opposite direction.</p>
+<div style="text-align:center">
+<p><img src="dagitty_model_legend2.png" style="width:100.0%" /></p>
+</div>
+<p><em>Fig. 15: A DAG capturing Bennedsen et al.’s (2007) IV-based approach to answering the causal question of whether appointing a family member as CEO in family-owned firms impacts firm performance. For more context, see the details in the main text.</em></p>
+<h2 id="tailoring-impact-one-size-usually-doesnt-fit-all">Tailoring Impact (One Size Usually Doesn’t Fit All)</h2>
+<p>While estimating an overall treatment effect can be informative, it misses a key point: HR interventions likely don’t affect all employees in the same way. That’s where <em>Heterogeneous Treatment Effect</em> (HTE) or <em>Conditional Average Treatment Effect</em> (CATE) come in—they help us understand how treatment effects vary across subgroups or individual characteristics. Instead of just asking “what works?”, this approach shifts the question to “what works for whom?” The key added value is that, by estimating HTE, organizations can target interventions more precisely, reduce unnecessary costs, and boost overall impact.</p>
+<p>Imagine a situation where a company rolls out a new leadership training program aimed at boosting managerial effectiveness. While the average results might suggest a modest improvement in leadership ratings, a deeper HTE analysis could reveal that the program had a much stronger impact on first-time managers in technical departments than on seasoned leaders in sales. This kind of insight allows HR to refine the rollout strategy—perhaps focusing future training efforts on those likely to benefit most, adapting the content for other groups, or even discontinuing the program where it shows little effect.</p>
+<h3 id="traditional-econometric-approaches">Traditional Econometric Approaches</h3>
+<p>One straightforward way to implement this type of analysis is by running a subgroup analysis—i.e., estimating treatment effects within predefined subgroups (e.g., age bins). Another option is to include interaction terms between the intervention and the characteristics of interest in the adjustment formula of the regression analysis, along with other relevant control and precision variables. The downside of these approaches is that they typically assume linearity and often lack flexibility when dealing with a large number of confounding variables.</p>
+<h3 id="machine-learning-based-approaches">Machine Learning-Based Approaches</h3>
+<p>ML-based approaches—often referred to as <em>Causal ML</em>—can help overcome these limitations. For example, methods like <em>Causal Forests</em> are specifically designed to estimate heterogeneous treatment effects in a flexible, data-driven way. A Causal Forest is an adaptation of the traditional <em>Random Forest</em> algorithm, repurposed for causal inference rather than prediction. Instead of minimizing prediction error, it focuses on partitioning the data to uncover subpopulations where treatment effects vary. At a high level, the algorithm builds many decision trees, each recursively splitting the data based on covariates to maximize differences in estimated treatment effects—not just differences in outcomes. Each tree acts as a “weak learner” that captures local treatment heterogeneity. These are then aggregated to produce stable HTE estimates for each observation—effectively answering the question: given this person’s characteristics, what is the likely effect of the treatment on them? A key strength of Causal Forests is their ability to automatically model complex, nonlinear interactions between variables without the need to predefine subgroups or interaction terms—especially handy when dealing with high-dimensional confounding in the data.</p>
+<p>A nice example of repurposing ML for causal inference is available on <a href="https://github.com/py-why/EconML/blob/main/notebooks/Solutions/Causal%20Interpretation%20for%20Employee%20Attrition%20Dataset.ipynb" target="_blank">EconML’s GitHub</a>. It showcases, in the context of employee attrition analysis using the popular <a href="https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset" target="_blank">IBM Employee Attrition dataset</a>, how to effectively combine classical ML—providing a list of strongest predictors—with their subsequent causal interpretation using <em>Double ML</em> (DML) and the HTE estimation. The entire pipeline includes the following steps:</p>
+<ol type="1">
+<li>Fine-tuning and training a traditional ML model.</li>
+<li>Using SHAP values for a purely correlational interpretation of the results—identifying the top predictors flagged by the ML model and helping to surface candidates for follow-up causal exploration (see <em>Fig. 16</em>).
+<div style="text-align:center">
+<p><img src="shap.png" style="width:100.0%" /></p>
+</div>
+<em>Fig. 16: A SHAP (SHapley Additive exPlanations) summary plot illustrating feature importance and impact on the ML model’s prediction of employee attrition. Features are ranked by decreasing importance vertically, with “OverTime_Yes” appearing as the most impactful and “HourlyRate” as the least impactful. Each point represents an individual observation; its horizontal position indicates the feature’s impact on the model’s prediction of attrition (positive values increase the prediction, negative values decrease it). The color indicates the feature’s value for that observation, with red representing high values and blue representing low values. For example, high values for “OverTime_Yes” (indicating an employee works overtime) and low values for features like “JobSatisfaction,” “MonthlyIncome/1K,” or “StockOptionLevel” generally show a positive SHAP value, thus contributing to a higher predicted risk of attrition. (Source: <a href="https://github.com/py-why/EconML/blob/main/notebooks/Solutions/Causal%20Interpretation%20for%20Employee%20Attrition%20Dataset.ipynb" target="_blank">EconML</a>)</em></li>
+<li>Employing DML—which uses ML with sample splitting to control for confounders in treatment and outcome models—combined with HTE estimation to test whether these top predictors actually have a direct causal effect on attrition. While these might be strong predictors of employee departure, that doesn’t mean they’re actually driving people to leave.</li>
+<li>Using the HTE component to segment employees by specific risk factors, enabling individualized plans to reduce attrition. For instance, salary might have a higher causal impact on short-tenured employees, whereas overtime could matter more for long-tenured ones.
+<div style="text-align:center">
+<p><img src="causal_effect_chart_combo.png" style="width:100.0%" /></p>
+</div>
+<em>Fig. 17: Causal analysis of employee attrition. The left chart displays the estimated ATE of five strong attrition predictors (e.g., “OverTime”, “StockOptionLevel”), along with their 95% confidence intervals; from these, “OverTime” demonstrates the most pronounced positive causal impact on attrition. The right chart presents a shallow tree interpreter for the HTE of a salary-related intervention. Despite salary (represented as “MonthlyIncome/1K” on the left, showing a non-significant average effect) not being universally impactful, this HTE analysis identifies subgroups who may respond more favorably to an income raise (i.e., exhibit a greater reduction in attrition risk). The tree illustrates how the CATE mean of this salary intervention on attrition varies across subgroups defined by “YearsAtCompany” and “TotalWorkingYears,” suggesting that the impact of salary adjustments differs depending on employee tenure and overall experience. Specifically, the intervention appears most effective in reducing attrition (CATE mean = -0.051) for employees with 1.5 years or less at the company and 1.5 years or less of total working experience. Conversely, its effect is minimal (CATE mean = -0.002) for employees with more than 6.5 years at the company. (Source: <a href="https://github.com/py-why/EconML/blob/main/notebooks/Solutions/Causal%20Interpretation%20for%20Employee%20Attrition%20Dataset.ipynb" target="_blank">EconML</a>)</em></li>
+</ol>
+<p>Just a small (or big?) warning to end on: Despite the smooth and easy analytical workflow enabled by tools like this, it doesn’t replace the need for solid domain knowledge—and a clear understanding of which variables actually make sense to include in the model to begin with.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Causal inference is the next frontier in people analytics. We have not yet mastered it as a discipline and it’s a reliable path to actionable insight and business impact. While predictive models can tell us who might leave, who might perform well, or who might engage, they often leave HR leaders and business partners stuck at the “so what?” moment. To truly move from insight to intervention, we need more than pattern recognition—we need <strong>causal understanding</strong>. And the good news is, organizations are full of opportunities to generate it. Whether it’s staggered rollouts, policy thresholds, sudden organizational shocks, or naturally occurring differences across teams and roles, real-world business operations frequently provide the ingredients for quasi-experiments. We just need to be ready, and trained, to recognize them, model them correctly, and extract causal lessons with care.</p>
+<p>But we must also be wary. Causal inference from observational data is never perfect. It’s a practice rooted in informed assumptions, careful testing, and relentless scrutiny—not just sophisticated math or cutting-edge algorithms. It requires both statistical know-how and deep domain understanding. And frankly, sometimes it just takes too long for the process of business decision making. The goal isn’t to replace randomized experiments entirely (when possible, they’re still the gold standard), but to make the most of the messiness of the real world. In doing so, we can shift people analytics from being interesting to being indispensable to organizational decision making—from being merely predictive to being powerfully diagnostic. And that’s the difference between analytics that sits on a dashboard and analytics that shapes the future of work.</p>
+<h1 id="further-resources-and-readings">Further Resources and Readings</h1>
+<p>Looking to go deeper? Here are some tips on resources for expanding your understanding of causal inference methods and their application in organizational contexts.</p>
+<h2 id="foundational-concepts">Foundational Concepts</h2>
+<ul>
+<li><em>The Book of Why: The New Science of Cause and Effect</em> by Judea Pearl and Dana Mackenzie</li>
+<li><em>The Effect: An Introduction to Research Design and Causality</em> by Nick Huntington-Klein</li>
+<li><em>Causal Inference: The Mixtape</em> by Scott Cunningham</li>
+<li><em>Causal Inference</em> by Paul R. Rosenbaum</li>
+<li><em>Mastering ’Metrics: The Path from Cause to Effect</em> by Joshua D. Angrist &amp; Jörn-Steffen Pischke</li>
+<li><em>Mostly Harmless Econometrics: An Empiricist’s Companion</em> by Joshua D. Angrist &amp; Jörn-Steffen Pischke</li>
+<li><em><a href="https://www.youtube.com/playlist?list=PL-uRhZ_p-BM5ovNRg-G6hDib27OCvcyW8" target="_blank">Mastering Econometrics</a></em> video series by Joshua Angrist</li>
+<li><em>Statistical Rethinking: A Bayesian Course with Examples in R and Stan</em> by Richard McElreath</li>
+<li><em>Causal Inference for Data Science</em> by Aleix Ruiz de Villa</li>
+</ul>
+<h2 id="technical-toolkits">Technical Toolkits</h2>
+<p>Python:</p>
+<ul>
+<li><em>Causal Inference and Discovery in Python</em> by Aleksander Molak</li>
+<li><em>Causal Inference in Python: Applying Causal Inference in the Tech Industry</em> by Matheus Facure</li>
+<li><em><a href="https://matheusfacure.github.io/python-causality-handbook/landing-page.html" target="_blank">Causal Inference for the Brave and True</a></em> by Matheus Facure</li>
+<li><code>DoWhy</code>: A causal inference framework supporting DAGs, propensity scores, and IVs.</li>
+<li><code>EconML</code> by Microsoft: A package implementing Double Machine Learning (DML) and other modern estimation techniques.</li>
+<li><code>CausalPy</code>: A package focussing on causal inference for quasi-experiments allowing users to use different model types.</li>
+<li><code>DoubleML</code>: A package implementing the double / debiased machine learning framework.</li>
+</ul>
+<p>R:</p>
+<ul>
+<li><em>Causal Analysis: Impact Evaluation and Causal Machine Learning with Applications in R</em> by Martin Huber</li>
+<li><em>Impact Evaluation in Firms and Organizations With Applications in R and Python</em> by Martin Huber</li>
+<li><em>Causal Inference in R: Decipher Complex Relationships with Advanced R Techniques for Data-Driven Decision-Making</em> by Subhajit Das</li>
+<li><code>causalimpact</code>: A package useful for ITS designs.</li>
+<li><code>ivreg</code>: A package for instrumental variable analysis.</li>
+<li><code>ptetools</code>: A package streamlining causal inference based on panel data.</li>
+<li><code>DoubleM</code>L: A package implementing the double / debiased machine learning framework.</li>
+<li><a href="https://www.dagitty.net/" target="_blank">DAGitty</a>: A browser-based environment for creating and analysing causal diagrams (but is available also via R).</li>
+</ul>
+<p>A <a href="https://github.com/lstehlik2809/Beyond-Prediction-Exploiting-Organizational-Events-for-Causal-Inference-in-People-Analytics.git" target="_blank">GitHub repository</a> with example Python and R code and dummy data illustrating some of the scenarios discussed in this article. (Note: Individual examples will be added gradually over time.)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="disqus-comments">
+      <i class="fas fa-comments"></i>
+      &nbsp;
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2025-05-21-causal-inference-in-people-analytics/">Comment on this article</span>
+    </span>
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.app%2Fposts%2F2025-05-21-causal-inference-in-people-analytics%2F&amp;title=Beyond%20prediction%3A%20Exploiting%20organizational%20events%20for%20causal%20inference%20in%20people%20analytics" aria-label="share on linkedin">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/share?text=Beyond%20prediction%3A%20Exploiting%20organizational%20events%20for%20causal%20inference%20in%20people%20analytics&amp;url=https%3A%2F%2Fblog-about-people-analytics.netlify.app%2Fposts%2F2025-05-21-causal-inference-in-people-analytics%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fblog-about-people-analytics.netlify.app%2Fposts%2F2025-05-21-causal-inference-in-people-analytics%2F" aria-label="share on facebook">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </span>
+  </p>
+  <script id="dsq-count-scr" src="https://ludeks-peopleanalyticsblog.disqus.com/count.js" async></script>
+  <div id="disqus_thread" class="hidden"></div>
+  <script type="text/javascript" cookie-consent="functionality">
+var disqus_config = function () {
+  this.page.url = 'https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/';
+  this.page.identifier = 'posts/2025-05-21-causal-inference-in-people-analytics/';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://ludeks-peopleanalyticsblog.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+  <p>
+    <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://blog-about-people-analytics.netlify.app/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form></div>
+  </p>
+</div>
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Stehlík & Napper (2025, May 23). Ludek's Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics. Retrieved from https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{napper2025beyond,
+  author = {Luděk Stehlík, &amp; Cole Napper},
+  title = {Ludek's Blog About People Analytics: Beyond prediction: Exploiting organizational events for causal inference in people analytics},
+  url = {https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/},
+  year = {2025}
+}</pre>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

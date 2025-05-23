@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Beyond prediction: Exploiting organizational events for causal inference in people analytics</title>
+      <dc:creator>Luděk Stehlík &amp; Cole Napper</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics</link>
+      <description>Sharing an article I co-authored with Cole Napper on causal inference in people analytics.</description>
+      <category>causal inference</category>
+      <category>experiments</category>
+      <category>data science</category>
+      <category>people analytics</category>
+      <category>hr analytics</category>
+      <category>python</category>
+      <category>r</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics</guid>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/./intro_pic.png" medium="image" type="image/png" width="509" height="500"/>
+    </item>
     <item>
       <title>Can a simple algorithm read your personality from your face?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +37,7 @@
       <category>python</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face</guid>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/./schema.png" medium="image" type="image/png" width="1127" height="648"/>
     </item>
     <item>
