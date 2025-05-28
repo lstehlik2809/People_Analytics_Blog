@@ -29,7 +29,7 @@ Instead, I wanted to see whether the drivers of intention to stay—the stronges
 
 The idea was to spot potential blind spots—where employees might be over- or underestimating the influence of specific workplace experiences on their actual decision to stay or leave. Kind of like those classic findings on how bad we are at predicting what really makes us happy or unhappy (a.k.a. *[affective forecasting](https://en.wikipedia.org/wiki/Affective_forecasting){target="_blank"}*).
 
-Preliminary results? The rank-order correlation between the estimated predictive strength of these factors for the two criteria was fairly high—around -0.6—but far from perfect, with a few notable outliers suggesting interesting mismatches between perceived and actual “impact”.
+Preliminary results? The rank-order correlation between the estimated predictive strength of these factors for the two criteria was fairly high—around -0.6—but far from perfect, with a few notable outliers suggesting interesting mismatches between perceived and actual “impact”. The difference seems to relate to a dimension we might call 'closeness to one's day-to-day functioning in their role'. The higher a factor is on this dimension, the more likely it is to be underestimated—and vice versa (for obvious reasons, I cannot be more specific 😉).
 
 <div style="text-align:center">
 ![](./plot_results_unlabeled_blank.png){width=100%}
