@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 May 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-05-28-predictors-of-stay-intentions-vs-actual-resignations</link>
+      <description>Is there a gap between what predicts employees' stated intentions to stay with their organization and their actual quitting behavior? And if so, how big is it?</description>
+      <category>attrition</category>
+      <category>retention</category>
+      <category>attitude-behavior gap</category>
+      <category>predictive analytics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-28-predictors-of-stay-intentions-vs-actual-resignations</guid>
+      <pubDate>Tue, 27 May 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-28-predictors-of-stay-intentions-vs-actual-resignations/./plot_results_unlabeled_blank.png" medium="image" type="image/png" width="5500" height="3250"/>
+    </item>
     <item>
       <title>Beyond prediction: Exploiting organizational events for causal inference in people analytics</title>
       <dc:creator>Luděk Stehlík &amp; Cole Napper</dc:creator>
@@ -21,7 +34,7 @@
       <category>python</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics</guid>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/./intro_pic.png" medium="image" type="image/png" width="509" height="500"/>
     </item>
     <item>

@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2025-05-28-predictors-of-stay-intentions-vs-actual-resignations/",
+    "title": "Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior",
+    "description": "Is there a gap between what predicts employees' stated intentions to stay with their organization and their actual quitting behavior? And if so, how big is it?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-05-28",
+    "categories": [
+      "attrition",
+      "retention",
+      "attitude-behavior gap",
+      "predictive analytics"
+    ],
+    "contents": "\r\nAt least since Richard LaPiere’s 1934 study comparing what hotel and restaurant staff said about ethnic minorities with how they actually treated them*, we’ve known that people’s stated attitudes and intentions can be worlds apart from their actual behavior.\r\nA recent revisit of that study got me thinking about a similar disconnect: the relationship between employees’ declared intention to stay and their actual quitting behavior. But I wasn’t interested in whether intention to stay can predict attrition—that’s already fairly well established, with loyalty-related survey items ranking among the strongest predictors of resignations (though even those, unfortunately, tend to be relatively weak in absolute terms 🫤).\r\nInstead, I wanted to see whether the drivers of intention to stay—the strongest predictors among other survey items—are also the top predictors of actual resignations (while controlling for standard demographic and organizational variables in both cases).\r\nThe idea was to spot potential blind spots—where employees might be over- or underestimating the influence of specific workplace experiences on their actual decision to stay or leave. Kind of like those classic findings on how bad we are at predicting what really makes us happy or unhappy (a.k.a. affective forecasting).\r\nPreliminary results? The rank-order correlation between the estimated predictive strength of these factors for the two criteria was fairly high—around -0.6—but far from perfect, with a few notable outliers suggesting interesting mismatches between perceived and actual “impact”.\r\n\r\n\r\n\r\nCurious if anyone has done a similar analysis on their data and put the findings to practical use. Feel free to share your experiences in the comments.\r\n* LaPiere famously traveled across the United States with a young Chinese couple, visiting 251 hotels and restaurants. They were refused service only once. However, six months later, when he sent a questionnaire to these same establishments asking, ‘Will you accept members of the Chinese race as guests in your establishment?’, over 90% of those who responded said ‘No’.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-05-28-predictors-of-stay-intentions-vs-actual-resignations/./plot_results_unlabeled_blank.png",
+    "last_modified": "2025-05-28T10:38:22+02:00",
+    "input_file": "predictors-of-stay-intentions-vs-actual-resignations.knit.md",
+    "preview_width": 5500,
+    "preview_height": 3250
+  },
+  {
     "path": "posts/2025-05-21-causal-inference-in-people-analytics/",
     "title": "Beyond prediction: Exploiting organizational events for causal inference in people analytics",
     "description": "Sharing an article I co-authored with Cole Napper on causal inference in people analytics.",
