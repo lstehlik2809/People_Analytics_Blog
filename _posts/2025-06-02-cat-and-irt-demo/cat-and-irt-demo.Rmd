@@ -36,7 +36,7 @@ The app illustrates the estimation of a psychological trait of [learning agility
 ![](./cat_irt_demo_app_screenshot.png){width=100%}
 </div>
 
-Here’s the [link](https://cat-irt-demo.streamlit.app/){target="_blank"} to the app (it may ). If you’re interested, you can copy the full code from [GitHub](https://github.com/lstehlik2809/Computerized-Adaptive-Testing-Demo.git){target="_blank"} and customize the app to better suit your needs.
+Here’s the [link](https://cat-irt-demo.streamlit.app/){target="_blank"} to the app (given that the app is hosted on Streamlit Community Cloud, it doesn’t stay awake all the time regardless of traffic—so if it hasn’t been used recently, you might need to wake it up and wait a few minutes). If you’re interested, you can copy the full code from [GitHub](https://github.com/lstehlik2809/Computerized-Adaptive-Testing-Demo.git){target="_blank"} and customize the app to better suit your needs.
 
 ⚠️ Caveat: The app isn't intended as a valid and reliable measure of learning agility - it's purely for illustration purposes!
 
