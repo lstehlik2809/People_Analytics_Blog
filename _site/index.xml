@@ -16,11 +16,12 @@
       <category>psychometrics</category>
       <category>item response theory</category>
       <category>computerized adaptive testing</category>
+      <category>bayesian statistics</category>
       <category>streamlit</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo</guid>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo/./cat_irt_demo_screenshot.png" medium="image" type="image/png" width="1791" height="879"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo/./cat_irt_demo_app_screenshot.png" medium="image" type="image/png" width="1180" height="693"/>
     </item>
     <item>
       <title>Talk vs. Walk: Predictors of staying intentions vs. actual quitting behavior</title>
