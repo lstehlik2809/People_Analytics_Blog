@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Novel way to measure leadership skills via causal inference (and AI)?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-12-causal-impact-of-leadership-skills</link>
+      <description>A post about a new, potentially useful method for measuring leadership skills, along with complementary findings highlighting the importance of objective, skill-based selection of future leaders.</description>
+      <category>leadership</category>
+      <category>psychometrics</category>
+      <category>assessment</category>
+      <category>causality</category>
+      <category>ai</category>
+      <category>llm</category>
+      <category>ai agent</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-12-causal-impact-of-leadership-skills</guid>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-12-causal-impact-of-leadership-skills/./leadership_skill_assessment_scheme.png" medium="image" type="image/png" width="862" height="645"/>
+    </item>
     <item>
       <title>An interactive demo of Computerized Adaptive Testing</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +36,7 @@
       <category>streamlit</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo</guid>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo/./cat_irt_demo_app_screenshot.png" medium="image" type="image/png" width="1180" height="693"/>
     </item>
     <item>
