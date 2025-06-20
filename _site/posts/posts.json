@@ -1,5 +1,31 @@
 [
   {
+    "path": "posts/2025-06-20-ona-skills-exploration/",
+    "title": "ONA as a tool for exploring the skill space in your company?",
+    "description": "As we move toward a skill-based organization at Sanofi, it prompted me to think about new opportunities for applying Organizational Network Analysis (ONA).",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-06-20",
+    "categories": [
+      "skills",
+      "skills-based organization",
+      "organisational network analysis",
+      "network analysis",
+      "career pathing",
+      "learning and development"
+    ],
+    "contents": "\r\nWhat if ONA could help us explore the skill space—finding more viable and/or more strategic development paths within it? Just like we use ONA to understand how long or “passable” the connections between people are in social networks, or who might be the informal influencer to involve in strategic transformation efforts, maybe we could apply the same approach to connections between skills—based on how often certain skills show up together across jobs or individual employees’ profiles.\r\nPicture visualizing a skill’s ego-network (with radius = 1), centered on something you’ve already mastered, to spark ideas for other skills often developed alongside it and that have high closeness centrality—i.e., skills you might pick up fairly easily and through which you can reach a wide swath of other skills in just a couple of steps—ideal for incremental growth (see the attached dataviz skill ego-network for illustration).\r\n\r\n\r\n\r\nOr flip it around and imagine exploring weaker ties, “high-betweenness” bridging skills connecting disparate skill domains, or more distant parts of the skill network to uncover less common or totally unexpected skills to go after.\r\nCurious if anyone’s already used ONA techniques with skill data like this—especially to uncover patterns of skill adjacency or learning pathways—or in any other creative way. Feel free to share your experiences or ideas in this area in the comments.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-06-20-ona-skills-exploration/./skills_ona_plot.png",
+    "last_modified": "2025-06-20T09:47:53+02:00",
+    "input_file": "ona-skills-exploration.knit.md",
+    "preview_width": 4000,
+    "preview_height": 3000
+  },
+  {
     "path": "posts/2025-06-12-causal-impact-of-leadership-skills/",
     "title": "Novel way to measure leadership skills via causal inference (and AI)?",
     "description": "A post about a new, potentially useful method for measuring leadership skills, along with complementary findings highlighting the importance of objective, skill-based selection of future leaders.",
