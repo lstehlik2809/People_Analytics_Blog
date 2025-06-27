@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2025-06-27-job-fit/",
+    "title": "Are you crazy enough and in the right way to fit the craziness required by your job?",
+    "description": "Listing some key takeaways from an insightful article by Adam Mastroianni on job fit.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-06-27",
+    "categories": [
+      "job fit",
+      "career advisory",
+      "cognitive biases"
+    ],
+    "contents": "\r\nJust read a funny and sharp article on job fit by Adam Mastroianni, packed with practical wisdom. Here are some of my key takeaways:\r\n🚁 We usually describe our jobs in a shallow, high-level way—saying things like, “I’m a liaison between development and sales,” or imagining a professor as someone who just strolls around in a tweed jacket. Classic cognitive economy: our brains flatten all the complex details to keep things simple and manageable, but there’s always the risk of leaving out some key details.\r\n🙈 The catch? Most of us fall for the illusion of explanatory depth—we think we deeply understand what a job is, but we don’t really ‘get it’ until we dig into the specifics.\r\n📦 To really know what a job’s like, you need to unpack it. That means asking about the actual day-to-day tasks. If you want to run a café, do you care about sourcing beans, handling 6am staffing crises, or picking the right point-of-sale software? If you’re not interested in these details, maybe that job isn’t for you.\r\n👥 When at a job interview, ask people, “What did you do this morning?” or “What will you do after this meeting?”—not just what their job sounds like, but what they actually do. Then ask yourself, “Would I enjoy those tasks, or just tolerate them?”\r\n🤪 Once you unpack a role, you see that every job needs its own kind of “crazy.” Surgeons repeat the same procedure for decades. Successful novelists write five books a year. Even my son dreams of professional football, but would he love endless drills and warming the bench?\r\n📊 Truth is, we’re all crazy in some way—usually not clinically, but statistically. We just don’t notice, since, due to the false consensus effect, we assume our preferences are more or less normal, but most people wouldn’t enjoy what we love.\r\n👩‍🔧 The fix: Ask yourself more concrete questions. Not, “Do I want to be a professor?” but, “Do I want to write research papers all day?” Not, “Should I run a café?” but, “Do I want to deal with staffing and supplies every morning?” Don’t ask if you like the idea of a job—ask if you’ll actually like the reality of the daily work.\r\nTo sum it up: Find out your unique flavor of crazy, and match it to the job. Don’t trust the highlight reel—dig into the reality.\r\nDefinitely worth reading!\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-06-27-job-fit/./monty-python-ministry-of-silly-walks.jpg",
+    "last_modified": "2025-06-27T11:51:09+02:00",
+    "input_file": "job-fit.knit.md"
+  },
+  {
     "path": "posts/2025-06-20-ona-skills-exploration/",
     "title": "ONA as a tool for exploring the skill space in your company?",
     "description": "As we move toward a skill-based organization at Sanofi, it prompted me to think about new opportunities for applying Organizational Network Analysis (ONA).",
