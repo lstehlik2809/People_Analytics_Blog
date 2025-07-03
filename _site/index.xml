@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 26 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When self-selected behavior is a blessing, not a headache</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures</link>
+      <description>Self-selection as a measurement opportunity?</description>
+      <category>measurement</category>
+      <category>self-selection</category>
+      <category>proxy measures</category>
+      <category>employee data</category>
+      <category>behavioral data</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures</guid>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures/./growth_gig_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
+    </item>
     <item>
       <title>Are you crazy enough and in the right way to fit the craziness required by your job?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +31,7 @@
       <category>career advisory</category>
       <category>cognitive biases</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-27-job-fit</guid>
-      <pubDate>Thu, 26 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-27-job-fit/./monty-python-ministry-of-silly-walks.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
