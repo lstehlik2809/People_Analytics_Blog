@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What does a typical people manager value chain look like?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-07-09-people-manager-value-chain</link>
+      <description>Sharing a working draft of a people manager value chain—mapping how specific manager actions drive people outcomes, team performance, and ultimately business results. Feedback and suggestions welcome 🙂</description>
+      <category>people management</category>
+      <category>manager</category>
+      <category>value chain</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-09-people-manager-value-chain</guid>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-09-people-manager-value-chain/./manager.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>When self-selected behavior is a blessing, not a headache</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>employee data</category>
       <category>behavioral data</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures</guid>
-      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures/./growth_gig_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>

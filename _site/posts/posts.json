@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2025-07-09-people-manager-value-chain/",
+    "title": "What does a typical people manager value chain look like?",
+    "description": "Sharing a working draft of a people manager value chain—mapping how specific manager actions drive people outcomes, team performance, and ultimately business results. Feedback and suggestions welcome 🙂",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-07-09",
+    "categories": [
+      "people management",
+      "manager",
+      "value chain"
+    ],
+    "contents": "\r\nOne of the projects I’m currently working on involves generating specific people-related insights to help managers be more successful at what they do—delivering results through others.\r\nAs you can imagine, it would be extremely useful to have a well-established and thoroughly researched model of a people manager value chain that clearly describes how individual managers contribute to organizational effectiveness. Unfortunately, my search for such a model wasn’t very fruitful—I mostly found isolated pieces of information and evidence.\r\nThe notable exception was a 2010 article, “The Leadership Value Chain,” by Kaiser & Overfield. They provided a comprehensive framework showing how leadership creates value, moving from individual leader characteristics through leadership style, team processes, unit results, and ultimately organizational effectiveness. However, their framework wasn’t detailed enough and lacked specific day-to-day managerial activities, which we needed to inspire practical ideas for our specific use case.\r\nSo, using the sources I found, I decided to put together my own model—a draft of which is attached. It starts with specific activities or processes that people managers more or less control or influence, driving people-related outcomes, which in turn fuel team-level results and ultimately contribute to firm performance.\r\n\r\n\r\n\r\nLike any model, it’s a simplification of reality. It undoubtedly misses some key factors due to the chosen level of granularity or simply my ignorance. It’s static, doesn’t capture external moderators, and the relationships among variables are in reality multi-directional and reciprocal. Nevertheless, I believe the model can serve as a useful starting point for discussions and decision-making regarding manager selection, development, performance appraisals, or broader organizational interventions.\r\nWould love to hear if you’ve come across any solid sources on this topic—or if you’ve tried building something similar in your own organization and are up for sharing. Also, feel free to suggest any key factors you think are missing from this draft—or maybe don’t belong there at all.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-07-09-people-manager-value-chain/./manager.jpg",
+    "last_modified": "2025-07-09T13:32:29+02:00",
+    "input_file": "people-manager-value-chain.knit.md"
+  },
+  {
     "path": "posts/2025-07-03-self-selection-and-proxy-measures/",
     "title": "When self-selected behavior is a blessing, not a headache",
     "description": "Self-selection as a measurement opportunity?",
