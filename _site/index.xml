@@ -7,23 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <item>
-      <title>How personality risks co-occur?</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2025-07-15-how-personality-risks-co-occur</link>
-      <description>Some highlights from exploring a larger sample of Hogan Development Survey data.</description>
-      <category>leadership risks</category>
-      <category>derailers</category>
-      <category>hogan assessment</category>
-      <category>hogan development survey</category>
-      <category>personality psychology</category>
-      <category>psychometrics</category>
-      <category>network analysis</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-15-how-personality-risks-co-occur</guid>
-      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-15-how-personality-risks-co-occur/./hds_network_plot.png" medium="image" type="image/png" width="4500" height="4000"/>
-    </item>
+    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 +0000</lastBuildDate>
     <item>
       <title>What does a typical people manager value chain look like?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -33,7 +17,7 @@
       <category>manager</category>
       <category>value chain</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-09-people-manager-value-chain</guid>
-      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-09-people-manager-value-chain/./manager.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -63,6 +47,17 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-27-job-fit/./monty-python-ministry-of-silly-walks.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Using Doppelgänger for career pathing?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</link>
+      <description>Exploring an idea around using counterfactual and hypothetical scenarios to help employees navigate their career options.</description>
+      <category>career pathing</category>
+      <category>causal inference</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</guid>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing/./poster.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>ONA as a tool for exploring the skill space in your company?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration</link>
@@ -76,17 +71,6 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration</guid>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration/./skills_ona_plot.png" medium="image" type="image/png" width="4000" height="3000"/>
-    </item>
-    <item>
-      <title>Using Doppelgänger for career pathing?</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</link>
-      <description>Exploring an idea around using counterfactual and hypothetical scenarios to help employees navigate their career options.</description>
-      <category>career pathing</category>
-      <category>causal inference</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</guid>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing/./poster.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Novel way to measure leadership skills via causal inference (and AI)?</title>
