@@ -24,7 +24,7 @@ output:
     code_folding: true
 ---
 
-Some of you might be familiar with the psychometric tool [Hogan Development Survey (HDS)](https://www.hoganassessments.com/assessment/hogan-development-survey/){target="_blank"}, which measures the so‑called “dark side” of personality—essentially strengths overused under stress or when self-control wears thin, leading to behaviors that can derail performance, relationships, and leadership effectiveness. For example, a skeptical person’s vigilance and critical thinking can morph into distrust, negativity, or expecting betrayal, while a colorful person’s charisma and expressiveness can shift into being dramatic, attention-seeking, and overly bold.
+Some of you might be familiar with the psychometric tool [Hogan Development Survey (HDS)](https://www.hogandarkside.com/?lang=en){target="_blank"}, which measures the so‑called “dark side” of personality—essentially strengths overused under stress or when self-control wears thin, leading to behaviors that can derail performance, relationships, and leadership effectiveness. For example, a skeptical person’s vigilance and critical thinking can morph into distrust, negativity, or expecting betrayal, while a colorful person’s charisma and expressiveness can shift into being dramatic, attention-seeking, and overly bold.
 
 <div style="text-align:center">
 ![](./hds_scales_description.png){width=100%}
