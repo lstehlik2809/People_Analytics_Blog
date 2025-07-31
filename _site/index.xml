@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 14 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Happy today, richer tomorrow?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-07-31-happiness-and-income</link>
+      <description>☀️ As many of us now take a summer break to recharge and boost our happiness, here’s some good news: it might even pay off financially 🤑</description>
+      <category>happiness research</category>
+      <category>positive psychology</category>
+      <category>life satisfaction</category>
+      <category>causal inference</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-31-happiness-and-income</guid>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-31-happiness-and-income/./results_table_marked.png" medium="image" type="image/png" width="880" height="574"/>
+    </item>
     <item>
       <title>How personality risks co-occur?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +34,7 @@
       <category>psychometrics</category>
       <category>network analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-15-how-personality-risks-co-occur</guid>
-      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-15-how-personality-risks-co-occur/./hds_network_plot.png" medium="image" type="image/png" width="4500" height="4000"/>
     </item>
     <item>
