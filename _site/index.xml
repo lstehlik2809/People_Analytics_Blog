@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Adjusting priors on your “emotional radar” for smoother cross-cultural encounters</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-08-20-expressive-differences-around-the-world</link>
+      <description>On interesting research that may come in handy during summer vacations abroad.</description>
+      <category>expressiveness</category>
+      <category>cross-cultural differences</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-08-20-expressive-differences-around-the-world</guid>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-08-20-expressive-differences-around-the-world/./chart_scatterplot.png" medium="image" type="image/png" width="789" height="685"/>
+    </item>
     <item>
       <title>Tracking talent moves in the (in)famous 9-box grid over time</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -16,7 +27,7 @@
       <category>data visualization</category>
       <category>talent management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-08-20-9-box-grid-dataviz-over-time</guid>
-      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-08-20-9-box-grid-dataviz-over-time/9-box-grid-dataviz-over-time_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1536" height="1344"/>
     </item>
     <item>

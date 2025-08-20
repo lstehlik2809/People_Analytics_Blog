@@ -2,7 +2,6 @@
 title: 'Tracking talent moves in the (in)famous 9-box grid over time'
 description: |
   Crowdsourcing ideas for effective ways to visualize talent moves in the 9-box grid over time.   
-preview: ./results_table_marked.png    
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
