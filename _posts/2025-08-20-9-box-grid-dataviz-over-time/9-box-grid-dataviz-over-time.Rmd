@@ -18,7 +18,7 @@ output:
     code_folding: true
 ---
 
-In one of my projects, I’m really struggling to find an effective and intuitive way to visualize YoY movements of people within the 9-box grid - a well-known talent management tool combining information about people’s performance and potential.
+In one of my projects, I’m really struggling to find an effective and intuitive way to visualize YoY movements of people within the [9-box grid](https://www.aihr.com/blog/9-box-grid/){target="_blank"} - a well-known talent management tool combining information about people’s performance and potential.
 
 Putting aside all the conceptual and philosophical objections to the 9-box - has anyone come across a good way to visualize this? Or had a good experience with something that worked?
 

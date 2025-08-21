@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Want to maximize your impact as a leader?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-08-21-impact-of-leaders</link>
+      <description>Forget the CEO chair and become a sports coach or a politician in an autocracy instead 🙃</description>
+      <category>leadership effectiveness</category>
+      <category>causal inference</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-08-21-impact-of-leaders</guid>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-08-21-impact-of-leaders/./plot.png" medium="image" type="image/png" width="705" height="577"/>
+    </item>
     <item>
       <title>Adjusting priors on your “emotional radar” for smoother cross-cultural encounters</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -16,7 +27,7 @@
       <category>expressiveness</category>
       <category>cross-cultural differences</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-08-20-expressive-differences-around-the-world</guid>
-      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-08-20-expressive-differences-around-the-world/./chart_scatterplot.png" medium="image" type="image/png" width="789" height="685"/>
     </item>
     <item>
