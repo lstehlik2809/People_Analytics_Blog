@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Big Five vs. HEXACO</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-02-big-five-vs-hexaco</link>
+      <description>Is one of them actually better at predicting work behavior?</description>
+      <category>personality</category>
+      <category>big five</category>
+      <category>hexaco</category>
+      <category>predictive validity</category>
+      <category>job performance</category>
+      <category>counterproductive work behavior</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-02-big-five-vs-hexaco</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-02-big-five-vs-hexaco/big-five-vs-hexaco_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="2304" height="2304"/>
+    </item>
     <item>
       <title>Want to maximize your impact as a leader?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -16,7 +31,7 @@
       <category>leadership effectiveness</category>
       <category>causal inference</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-08-21-impact-of-leaders</guid>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-08-21-impact-of-leaders/./plot.png" medium="image" type="image/png" width="705" height="577"/>
     </item>
     <item>
