@@ -2311,15 +2311,124 @@ Show code
 </details>
 <p><img src="big-five-vs-hexaco_files/figure-html5/unnamed-chunk-2-1.png" width="1152" /></p>
 </div>
-<p><em>Note: The attached charts aren’t from the paper itself—I made them using the paper’s data, so any discrepancies are on me.</em></p>
+<p><em>Note: The charts aren’t from the paper itself—I made them using the paper’s data, so any discrepancies are on me.</em></p>
 <p>But when you combine inter-correlations from the sample-size–weighted meta-analytic correlation matrix below and estimate explained variance, the conclusion flips: HEXACO outperforms the Big Five in predicting both CWB (20.1%* vs. 14.9%) and task performance (6.7% vs. 4.3%).</p>
-<p>* <em>When using the authors’ approach to estimating explained variance, i.e. <span class="math inline">\(R^2 = R_{xy}^T R_{xx}^{-1} R_{xy}\)</span>, where <span class="math inline">\(R_{xx}\)</span> is the correlation matrix of the predictor traits (e.g., the 5x5 matrix for the Big Five) and <span class="math inline">\(R_{xy}\)</span> is the vector of correlations between each trait and the outcome (CWB or task performance), I obtained a slightly higher estimate of 20.3%.</em></p>
+<p>* <em>When using the authors’ approach to estimating explained variance, i.e. <span class="math inline">\(R^2 = R_{xy}^T R_{xx}^{-1} R_{xy}\)</span>, where <span class="math inline">\(R_{xx}\)</span> is the correlation matrix of the predictor traits (e.g., the 5x5 matrix for the Big Five) and <span class="math inline">\(R_{xy}\)</span> is the vector of correlations between each trait and the outcome (CWB or task performance), I obtained a slightly higher estimate of 20.3%. But maybe I made an error in the code—you can check it out for yourself below</em> 🤔</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Big Five Analysis for CWB ---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the predictor inter-correlation matrix (Rxx) for the Big Five traits</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Order: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>R_xx_b5 <span class="op">=</span> np.array([</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">1.00</span>, <span class="fl">0.10</span>, <span class="fl">0.25</span>, <span class="fl">0.18</span>, <span class="op">-</span><span class="fl">0.08</span>],</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.10</span>, <span class="fl">1.00</span>, <span class="fl">0.23</span>, <span class="fl">0.27</span>, <span class="op">-</span><span class="fl">0.29</span>],</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.25</span>, <span class="fl">0.23</span>, <span class="fl">1.00</span>, <span class="fl">0.19</span>, <span class="op">-</span><span class="fl">0.34</span>],</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.18</span>, <span class="fl">0.27</span>, <span class="fl">0.19</span>, <span class="fl">1.00</span>, <span class="op">-</span><span class="fl">0.24</span>],</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    [<span class="op">-</span><span class="fl">0.08</span>, <span class="op">-</span><span class="fl">0.29</span>, <span class="op">-</span><span class="fl">0.34</span>, <span class="op">-</span><span class="fl">0.24</span>, <span class="fl">1.00</span>]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the vector of correlations between predictors and outcome (Rxy)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># CWB correlations for Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>R_xy_b5 <span class="op">=</span> np.array([<span class="op">-</span><span class="fl">0.07</span>, <span class="op">-</span><span class="fl">0.31</span>, <span class="op">-</span><span class="fl">0.04</span>, <span class="op">-</span><span class="fl">0.29</span>, <span class="fl">0.16</span>])</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate R-squared using the formula: R^2 = Rxy^T * Rxx^-1 * Rxy</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>R_xx_b5_inv <span class="op">=</span> np.linalg.inv(R_xx_b5)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>R_squared_b5 <span class="op">=</span> R_xy_b5.T <span class="op">@</span> R_xx_b5_inv <span class="op">@</span> R_xy_b5</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co"># --- HEXACO Analysis for CWB ---</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the predictor inter-correlation matrix (Rxx) for the HEXACO traits</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Order: Honesty-Humility, Emotionality, eXtraversion, Agreeableness, Conscientiousness, Openness</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>R_xx_hexaco <span class="op">=</span> np.array([</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">1.00</span>, <span class="fl">0.04</span>, <span class="fl">0.01</span>, <span class="fl">0.30</span>, <span class="fl">0.20</span>, <span class="fl">0.10</span>],</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.04</span>, <span class="fl">1.00</span>, <span class="op">-</span><span class="fl">0.14</span>, <span class="op">-</span><span class="fl">0.12</span>, <span class="fl">0.03</span>, <span class="op">-</span><span class="fl">0.06</span>],</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.01</span>, <span class="op">-</span><span class="fl">0.14</span>, <span class="fl">1.00</span>, <span class="fl">0.16</span>, <span class="fl">0.17</span>, <span class="fl">0.16</span>],</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.30</span>, <span class="op">-</span><span class="fl">0.12</span>, <span class="fl">0.16</span>, <span class="fl">1.00</span>, <span class="fl">0.07</span>, <span class="fl">0.07</span>],</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.20</span>, <span class="fl">0.03</span>, <span class="fl">0.17</span>, <span class="fl">0.07</span>, <span class="fl">1.00</span>, <span class="fl">0.11</span>],</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.10</span>, <span class="op">-</span><span class="fl">0.06</span>, <span class="fl">0.16</span>, <span class="fl">0.07</span>, <span class="fl">0.11</span>, <span class="fl">1.00</span>]</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the vector of correlations between predictors and outcome (Rxy)</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># CWB correlations for HH, E, X, A, C, O</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>R_xy_hexaco <span class="op">=</span> np.array([<span class="op">-</span><span class="fl">0.35</span>, <span class="op">-</span><span class="fl">0.08</span>, <span class="op">-</span><span class="fl">0.08</span>, <span class="op">-</span><span class="fl">0.17</span>, <span class="op">-</span><span class="fl">0.33</span>, <span class="op">-</span><span class="fl">0.05</span>])</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate R-squared</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>R_xx_hexaco_inv <span class="op">=</span> np.linalg.inv(R_xx_hexaco)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>R_squared_hexaco <span class="op">=</span> R_xy_hexaco.T <span class="op">@</span> R_xx_hexaco_inv <span class="op">@</span> R_xy_hexaco</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Print Results ---</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Replication of Explained Variance (R^2) for CWB ---&quot;</span>)</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Big Five Model: </span><span class="sc">{</span>R_squared_b5<span class="sc">:.1%}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;HEXACO Model:   </span><span class="sc">{</span>R_squared_hexaco<span class="sc">:.1%}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Big Five Analysis for Task Performance ---</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the predictor inter-correlation matrix (Rxx) for the Big Five traits</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co"># This matrix remains the same as in the CWB analysis.</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Order: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>R_xx_b5 <span class="op">=</span> np.array([</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">1.00</span>, <span class="fl">0.10</span>, <span class="fl">0.25</span>, <span class="fl">0.18</span>, <span class="op">-</span><span class="fl">0.08</span>],</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.10</span>, <span class="fl">1.00</span>, <span class="fl">0.23</span>, <span class="fl">0.27</span>, <span class="op">-</span><span class="fl">0.29</span>],</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.25</span>, <span class="fl">0.23</span>, <span class="fl">1.00</span>, <span class="fl">0.19</span>, <span class="op">-</span><span class="fl">0.34</span>],</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.18</span>, <span class="fl">0.27</span>, <span class="fl">0.19</span>, <span class="fl">1.00</span>, <span class="op">-</span><span class="fl">0.24</span>],</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    [<span class="op">-</span><span class="fl">0.08</span>, <span class="op">-</span><span class="fl">0.29</span>, <span class="op">-</span><span class="fl">0.34</span>, <span class="op">-</span><span class="fl">0.24</span>, <span class="fl">1.00</span>]</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the vector of correlations between predictors and outcome (Rxy)</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="co"># Task Performance correlations for Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>R_xy_b5_tp <span class="op">=</span> np.array([<span class="fl">0.09</span>, <span class="fl">0.19</span>, <span class="fl">0.10</span>, <span class="fl">0.08</span>, <span class="op">-</span><span class="fl">0.07</span>])</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate R-squared using the formula: R^2 = Rxy^T * Rxx^-1 * Rxy</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>R_xx_b5_inv <span class="op">=</span> np.linalg.inv(R_xx_b5)</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>R_squared_b5_tp <span class="op">=</span> R_xy_b5_tp.T <span class="op">@</span> R_xx_b5_inv <span class="op">@</span> R_xy_b5_tp</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="co"># --- HEXACO Analysis for Task Performance ---</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the predictor inter-correlation matrix (Rxx) for the HEXACO traits</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="co"># This matrix also remains the same.</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Order: Honesty-Humility, Emotionality, eXtraversion, Agreeableness, Conscientiousness, Openness</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>R_xx_hexaco <span class="op">=</span> np.array([</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">1.00</span>, <span class="fl">0.04</span>, <span class="fl">0.01</span>, <span class="fl">0.30</span>, <span class="fl">0.20</span>, <span class="fl">0.10</span>],</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.04</span>, <span class="fl">1.00</span>, <span class="op">-</span><span class="fl">0.14</span>, <span class="op">-</span><span class="fl">0.12</span>, <span class="fl">0.03</span>, <span class="op">-</span><span class="fl">0.06</span>],</span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.01</span>, <span class="op">-</span><span class="fl">0.14</span>, <span class="fl">1.00</span>, <span class="fl">0.16</span>, <span class="fl">0.17</span>, <span class="fl">0.16</span>],</span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.30</span>, <span class="op">-</span><span class="fl">0.12</span>, <span class="fl">0.16</span>, <span class="fl">1.00</span>, <span class="fl">0.07</span>, <span class="fl">0.07</span>],</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.20</span>, <span class="fl">0.03</span>, <span class="fl">0.17</span>, <span class="fl">0.07</span>, <span class="fl">1.00</span>, <span class="fl">0.11</span>],</span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>    [<span class="fl">0.10</span>, <span class="op">-</span><span class="fl">0.06</span>, <span class="fl">0.16</span>, <span class="fl">0.07</span>, <span class="fl">0.11</span>, <span class="fl">1.00</span>]</span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the vector of correlations between predictors and outcome (Rxy)</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="co"># Task Performance correlations for HH, E, X, A, C, O</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>R_xy_hexaco_tp <span class="op">=</span> np.array([<span class="fl">0.06</span>, <span class="fl">0.03</span>, <span class="fl">0.08</span>, <span class="fl">0.01</span>, <span class="fl">0.24</span>, <span class="fl">0.11</span>])</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate R-squared</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>R_xx_hexaco_inv <span class="op">=</span> np.linalg.inv(R_xx_hexaco)</span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>R_squared_hexaco_tp <span class="op">=</span> R_xy_hexaco_tp.T <span class="op">@</span> R_xx_hexaco_inv <span class="op">@</span> R_xy_hexaco_tp</span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Print Results ---</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Replication of Explained Variance (R^2) for Task Performance ---&quot;</span>)</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Big Five Model: </span><span class="sc">{</span>R_squared_b5_tp<span class="sc">:.1%}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;HEXACO Model:   </span><span class="sc">{</span>R_squared_hexaco_tp<span class="sc">:.1%}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+</details>
+</div>
 <div style="text-align:center">
 <p><img src="table.png" style="width:100.0%" /></p>
 </div>
 <p>The reason seems to be that HEXACO includes the extra Honesty–Humility trait (which captures ethical variance and is a decent predictor of negative workplace behaviors), shows higher predictive validity for the generally most predictive trait (Conscientiousness), and has less inter-correlation between traits (so their predictive power overlaps less).</p>
 <p>Curious about others’ experiences with switching from the Big Five to HEXACO. What motivated the change for you, and was it worth it? Asking for a friend (and myself) 🙏🙂</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">

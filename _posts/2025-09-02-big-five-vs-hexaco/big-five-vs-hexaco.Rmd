@@ -133,11 +133,119 @@ plt.show()
 
 ```
 
-*Note: The attached charts aren’t from the paper itself—I made them using the paper’s data, so any discrepancies are on me.*
+*Note: The charts aren’t from the paper itself—I made them using the paper’s data, so any discrepancies are on me.*
 
 But when you combine inter-correlations from the sample-size–weighted meta-analytic correlation matrix below and estimate explained variance, the conclusion flips: HEXACO outperforms the Big Five in predicting both CWB (20.1%* vs. 14.9%) and task performance (6.7% vs. 4.3%).
 
-\* *When using the authors' approach to estimating explained variance, i.e. $R^2 = R_{xy}^T R_{xx}^{-1} R_{xy}$, where $R_{xx}$ is the correlation matrix of the predictor traits (e.g., the 5x5 matrix for the Big Five) and $R_{xy}$ is the vector of correlations between each trait and the outcome (CWB or task performance), I obtained a slightly higher estimate of 20.3%.*
+\* *When using the authors' approach to estimating explained variance, i.e. $R^2 = R_{xy}^T R_{xx}^{-1} R_{xy}$, where $R_{xx}$ is the correlation matrix of the predictor traits (e.g., the 5x5 matrix for the Big Five) and $R_{xy}$ is the vector of correlations between each trait and the outcome (CWB or task performance), I obtained a slightly higher estimate of 20.3%. But maybe I made an error in the code—you can check it out for yourself below* 🤔
+
+```{python eval=FALSE}
+
+import numpy as np
+
+# --- Big Five Analysis for CWB ---
+
+# Define the predictor inter-correlation matrix (Rxx) for the Big Five traits
+# Order: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism
+R_xx_b5 = np.array([
+    [1.00, 0.10, 0.25, 0.18, -0.08],
+    [0.10, 1.00, 0.23, 0.27, -0.29],
+    [0.25, 0.23, 1.00, 0.19, -0.34],
+    [0.18, 0.27, 0.19, 1.00, -0.24],
+    [-0.08, -0.29, -0.34, -0.24, 1.00]
+])
+
+# Define the vector of correlations between predictors and outcome (Rxy)
+# CWB correlations for Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism
+R_xy_b5 = np.array([-0.07, -0.31, -0.04, -0.29, 0.16])
+
+# Calculate R-squared using the formula: R^2 = Rxy^T * Rxx^-1 * Rxy
+R_xx_b5_inv = np.linalg.inv(R_xx_b5)
+R_squared_b5 = R_xy_b5.T @ R_xx_b5_inv @ R_xy_b5
+
+
+# --- HEXACO Analysis for CWB ---
+
+# Define the predictor inter-correlation matrix (Rxx) for the HEXACO traits
+# Order: Honesty-Humility, Emotionality, eXtraversion, Agreeableness, Conscientiousness, Openness
+R_xx_hexaco = np.array([
+    [1.00, 0.04, 0.01, 0.30, 0.20, 0.10],
+    [0.04, 1.00, -0.14, -0.12, 0.03, -0.06],
+    [0.01, -0.14, 1.00, 0.16, 0.17, 0.16],
+    [0.30, -0.12, 0.16, 1.00, 0.07, 0.07],
+    [0.20, 0.03, 0.17, 0.07, 1.00, 0.11],
+    [0.10, -0.06, 0.16, 0.07, 0.11, 1.00]
+])
+
+# Define the vector of correlations between predictors and outcome (Rxy)
+# CWB correlations for HH, E, X, A, C, O
+R_xy_hexaco = np.array([-0.35, -0.08, -0.08, -0.17, -0.33, -0.05])
+
+# Calculate R-squared
+R_xx_hexaco_inv = np.linalg.inv(R_xx_hexaco)
+R_squared_hexaco = R_xy_hexaco.T @ R_xx_hexaco_inv @ R_xy_hexaco
+
+
+# --- Print Results ---
+print("--- Replication of Explained Variance (R^2) for CWB ---")
+print(f"Big Five Model: {R_squared_b5:.1%}")
+print(f"HEXACO Model:   {R_squared_hexaco:.1%}")
+
+
+
+
+# --- Big Five Analysis for Task Performance ---
+
+# Define the predictor inter-correlation matrix (Rxx) for the Big Five traits
+# This matrix remains the same as in the CWB analysis.
+# Order: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism
+R_xx_b5 = np.array([
+    [1.00, 0.10, 0.25, 0.18, -0.08],
+    [0.10, 1.00, 0.23, 0.27, -0.29],
+    [0.25, 0.23, 1.00, 0.19, -0.34],
+    [0.18, 0.27, 0.19, 1.00, -0.24],
+    [-0.08, -0.29, -0.34, -0.24, 1.00]
+])
+
+# Define the vector of correlations between predictors and outcome (Rxy)
+# Task Performance correlations for Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism
+R_xy_b5_tp = np.array([0.09, 0.19, 0.10, 0.08, -0.07])
+
+# Calculate R-squared using the formula: R^2 = Rxy^T * Rxx^-1 * Rxy
+R_xx_b5_inv = np.linalg.inv(R_xx_b5)
+R_squared_b5_tp = R_xy_b5_tp.T @ R_xx_b5_inv @ R_xy_b5_tp
+
+
+# --- HEXACO Analysis for Task Performance ---
+
+# Define the predictor inter-correlation matrix (Rxx) for the HEXACO traits
+# This matrix also remains the same.
+# Order: Honesty-Humility, Emotionality, eXtraversion, Agreeableness, Conscientiousness, Openness
+R_xx_hexaco = np.array([
+    [1.00, 0.04, 0.01, 0.30, 0.20, 0.10],
+    [0.04, 1.00, -0.14, -0.12, 0.03, -0.06],
+    [0.01, -0.14, 1.00, 0.16, 0.17, 0.16],
+    [0.30, -0.12, 0.16, 1.00, 0.07, 0.07],
+    [0.20, 0.03, 0.17, 0.07, 1.00, 0.11],
+    [0.10, -0.06, 0.16, 0.07, 0.11, 1.00]
+])
+
+# Define the vector of correlations between predictors and outcome (Rxy)
+# Task Performance correlations for HH, E, X, A, C, O
+R_xy_hexaco_tp = np.array([0.06, 0.03, 0.08, 0.01, 0.24, 0.11])
+
+# Calculate R-squared
+R_xx_hexaco_inv = np.linalg.inv(R_xx_hexaco)
+R_squared_hexaco_tp = R_xy_hexaco_tp.T @ R_xx_hexaco_inv @ R_xy_hexaco_tp
+
+
+# --- Print Results ---
+print("--- Replication of Explained Variance (R^2) for Task Performance ---")
+print(f"Big Five Model: {R_squared_b5_tp:.1%}")
+print(f"HEXACO Model:   {R_squared_hexaco_tp:.1%}")
+
+
+```
 
 <div style="text-align:center">
 ![](./table.png){width=100%}
