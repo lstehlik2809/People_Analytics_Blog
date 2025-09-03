@@ -5,23 +5,23 @@
       "title": "About this blog",
       "description": "Exploring people management topics through data and their analysis",
       "author": [],
-      "contents": "\r\nBased on general advice from more experienced colleagues from data-science community (Matt Dancho and Keith McNulty, to name just a few) I have decided to set up my own blog about people analytics topics, so that I can at least partially give back to others what I have learned myself through the blogging of others. Besides that, it also gives me an opportunity - and indeed a bit of an excuse - to explore and try new things related to people analytics and at the same time to better organize my thoughts about the subject.\r\nOn this blog I plan to publish articles (mainly in English, but from time to time also in Czech) that will be more about technical and analytic aspects of people analytics, nevertheless, I will always try to present individual topics in the context of practical issues that keep busy all those HR professionals who want to enhance both efficiency and effectiveness of HR processes in organizations. In general, my goal is to promote the idea that when combination of critical thinking, reliable, valid and relevant data and their rigorous analysis is applied to people management, organizations have better chance of achieving their strategic and business goals through and with their people.\r\nThe views and attitudes presented on this blog are just my own and do not necessarily reflect the official views and attitudes of any of my current or former employers.\r\n\r\n\r\n\r\n",
-      "last_modified": "2023-09-16T13:24:38+02:00"
+      "contents": "\r\nBased on advice from more experienced colleagues in the data-science community, I decided to set up my own blog about people analytics topics, so I can at least partially give back what I’ve learned myself through the blogging of others. Besides that, it also gives me an opportunity – and, honestly, a bit of an excuse – to explore and try new things related to people analytics, while at the same time better organizing my thoughts about the subject.\r\nOn this blog, I plan to publish articles (mainly in English, but from time to time also in Czech) that will focus more on the technical and analytic aspects of people analytics. Nevertheless, I’ll always try to present individual topics in the context of practical issues that keep HR professionals busy as they work to enhance both efficiency and effectiveness of HR processes in organizations. In general, my goal is to promote the idea that when critical thinking, reliable and relevant data, and rigorous analysis are combined in people management, organizations stand a much better chance of achieving their strategic and business goals through and with their people.\r\nThe views and opinions presented on this blog are solely my own and do not necessarily reflect those of any of my current or former employers.\r\n\r\n\r\n\r\n",
+      "last_modified": "2025-09-03T18:50:32+02:00"
     },
     {
       "path": "bio.html",
       "title": "Bio",
       "description": "Shortly about me",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\nI am a psychologist who is quite good friend with mathematics and statistics - in the past, as a researcher and lecturer at the Department of Psychology at Charles University in Prague, I have relied on both disciplines to study and teach the workings of the human mind, and now, as a people & data scientist, I use them to help organisations improve the efficiency and effectiveness of their people-related processes. You can find more information about me on my LinkedIn profile. In addition to this blog, I’ve also put some people analytics related stuff on my GitHub page. You can contact me at ludek.stehlik@gmail.com.\r\n\r\n\r\n\r\n",
-      "last_modified": "2023-09-16T13:24:38+02:00"
+      "contents": "\r\n\r\n\r\n\r\nI’m a psychologist who’s on pretty good terms with mathematics and statistics. In the past, as a researcher and lecturer at the Department of Psychology at Charles University in Prague, I relied on both disciplines to study and teach the workings of the human mind. Now, as a people & data scientist, I use them to help organizations improve the efficiency and effectiveness of their people-related processes. You can find more about me on my LinkedIn profile. In addition to this blog, I’ve also shared some people analytics–related stuff on my GitHub page. Feel free to contact me at ludek.stehlik@gmail.com.\r\n\r\n\r\n\r\n",
+      "last_modified": "2025-09-03T18:55:57+02:00"
     },
     {
       "path": "index.html",
       "title": "Ludek's Blog About People Analytics",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2024-09-02T09:43:03+02:00"
+      "last_modified": "2025-09-03T13:15:03+02:00"
     }
   ],
   "collections": ["posts/posts.json"]
