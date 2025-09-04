@@ -124,6 +124,17 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-27-job-fit/./monty-python-ministry-of-silly-walks.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
+      <title>Using Doppelgänger for career pathing?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</link>
+      <description>Exploring an idea around using counterfactual and hypothetical scenarios to help employees navigate their career options.</description>
+      <category>career pathing</category>
+      <category>causal inference</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</guid>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing/./poster.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
       <title>ONA as a tool for exploring the skill space in your company?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration</link>
@@ -137,17 +148,6 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration</guid>
       <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-ona-skills-exploration/./skills_ona_plot.png" medium="image" type="image/png" width="4000" height="3000"/>
-    </item>
-    <item>
-      <title>Using Doppelgänger for career pathing?</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</link>
-      <description>Exploring an idea around using counterfactual and hypothetical scenarios to help employees navigate their career options.</description>
-      <category>career pathing</category>
-      <category>causal inference</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing</guid>
-      <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-06-20-doppelganger-for-career-pathing/./poster.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Novel way to measure leadership skills via causal inference (and AI)?</title>
