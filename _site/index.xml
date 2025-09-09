@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When to forgive, when to close the book</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-trust-errors-learning-reflection</link>
+      <description>A short rant-ish post about trust, mistakes, and knowing when to stop reading.</description>
+      <category>nerd rant</category>
+      <category>thinking out loud</category>
+      <category>p-values</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-trust-errors-learning-reflection</guid>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-09-trust-errors-learning-reflection/./chatgpt_check.png" medium="image" type="image/png" width="810" height="584"/>
+    </item>
     <item>
       <title>Big Five vs. HEXACO</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +32,7 @@
       <category>job performance</category>
       <category>counterproductive work behavior</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-02-big-five-vs-hexaco</guid>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-02-big-five-vs-hexaco/big-five-vs-hexaco_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="2304" height="2304"/>
     </item>
     <item>
