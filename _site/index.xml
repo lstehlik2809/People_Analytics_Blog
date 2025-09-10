@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 08 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Dimensional Traits vs. Personality Types</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types</link>
+      <description>Sharing an interactive dataviz showing why cramming the complexity of personality into a few types just doesn’t work.</description>
+      <category>personality</category>
+      <category>big five</category>
+      <category>ipip</category>
+      <category>typology</category>
+      <category>clustering</category>
+      <category>dimensionality reduction</category>
+      <category>psychometrics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types</guid>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types/./interactive_dataviz.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>When to forgive, when to close the book</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +33,7 @@
       <category>thinking out loud</category>
       <category>p-values</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-trust-errors-learning-reflection</guid>
-      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-09-trust-errors-learning-reflection/./chatgpt_check.png" medium="image" type="image/png" width="810" height="584"/>
     </item>
     <item>

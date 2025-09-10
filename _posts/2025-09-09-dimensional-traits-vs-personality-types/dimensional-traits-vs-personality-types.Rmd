@@ -1,0 +1,38 @@
+---
+title: 'Dimensional Traits vs. Personality Types'
+description: |
+  Sharing an interactive dataviz showing why cramming the complexity of personality into a few types just doesn’t work.   
+preview: ./interactive_dataviz.gif    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 09-10-2025
+categories:
+  - personality
+  - big five
+  - ipip
+  - typology
+  - clustering
+  - dimensionality reduction
+  - psychometrics
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+For a guest lecture I’m giving on personality in the business world, I built a [simple interactive dataviz](https://sanofi-people-analytics.shinyapps.io/personality-mapping/){target="_blank"} that clearly demonstrates just how futile (and a bit naïve) it is to try to squeeze the huge variability of personality characteristics into a handful of types like… [insert your favorite typology 😉].
+
+The dashboard uses a random sample of 10k Big Five profiles from [Johnson’s IPIP-NEO-300 dataset](https://osf.io/wxvth/files/osfstorage){target="_blank"}. With a 3D scatter plot, profile line chart, UMAP dimensionality reduction, and the HDBSCAN clustering algorithm, it shows that even when groups of people with similar profiles do appear—and are large enough to matter (say, at least 1% of the population)—they still show pretty high within-group variability. On top of that, a big chunk (actually, the majority) of profiles can’t be assigned to any stable cluster at all, ending up as “noise” points in HDBSCAN’s terms.
+
+<div style="text-align:center;">
+<video autoplay loop muted playsinline width="600">
+  <source src="interactive_dataviz.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+</div>
+
+If you find it useful for your teaching or training, check out the dataviz [here](https://sanofi-people-analytics.shinyapps.io/personality-mapping/){target="_blank"}. If you want to download the data and code to run it locally, take a look at [this GitHub repo](https://github.com/lstehlik2809/personality-mapping.git){target="_blank"}.
