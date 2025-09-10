@@ -21,7 +21,7 @@
     ],
     "contents": "\r\nFor a guest lecture I’m giving on personality in the business world, I built a simple interactive dataviz that clearly demonstrates just how futile (and a bit naïve) it is to try to squeeze the huge variability of personality characteristics into a handful of types like… [insert your favorite typology 😉].\r\nThe dashboard uses a random sample of 10k Big Five profiles from Johnson’s IPIP-NEO-300 dataset. With a 3D scatter plot, profile line chart, UMAP dimensionality reduction, and the HDBSCAN clustering algorithm, it shows that even when groups of people with similar profiles do appear—and are large enough to matter (say, at least 1% of the population)—they still show pretty high within-group variability. On top of that, a big chunk (actually, the majority) of profiles can’t be assigned to any stable cluster at all, ending up as “noise” points in HDBSCAN’s terms.\r\n\r\n\r\nYour browser does not support the video tag.\r\n\r\nIf you find it useful for your teaching or training, check out the dataviz here. If you want to download the data and code to run it locally, take a look at this GitHub repo.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-09-09-dimensional-traits-vs-personality-types/./interactive_dataviz.gif",
-    "last_modified": "2025-09-10T11:43:27+02:00",
+    "last_modified": "2025-09-10T13:45:25+02:00",
     "input_file": "dimensional-traits-vs-personality-types.knit.md"
   },
   {
