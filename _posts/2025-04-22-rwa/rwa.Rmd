@@ -23,9 +23,9 @@ output:
 
 If you've been working with employee survey data for a while, you're probably familiar with [Relative Weights Analysis (RWA)](https://www.scotttonidandel.com/rwa-web){target="_blank"}. But for those of us who started working with this type of data on a regular basis more recently, discovering RWA can be a (very welcome) surprise. 🤓
 
-RWA is a statistical technique used to assess the relative importance of predictor variables in multiple regression models, particularly when multicollinearity is present. When predictors are highly correlated—which is very common in employee survey data—traditional regression coefficients can be misleading and may obscure the unique contribution of each variable.
+RWA is a statistical technique used to assess the relative importance of predictor variables in multiple regression models, particularly when multicollinearity is present. When predictors are highly correlated—which is very common in employee survey data—traditional regression coefficients (beta weights) can become unstable and difficult to interpret, making it nearly impossible to gauge the true importance of any single predictor.
 
-RWA tackles this by transforming the correlated predictors into a set of orthogonal (uncorrelated) variables that are maximally related to the originals. From there, it estimates the proportion of the model’s explained variance attributable to each predictor.
+RWA tackles this by transforming the correlated predictors into a set of orthogonal (uncorrelated) variables that are maximally related to the originals. From there, it partitions the model’s total explained variance ($R^2$), attributing a specific percentage to each predictor. A key advantage is that these percentages—the relative weights—conveniently sum to 100% of the explained variance, providing a complete and intuitive breakdown of what drives the outcome. Crucially, each predictor's resulting weight represents its total share of the credit—both its unique power and its portion of the shared, overlapping power—for explaining the outcome. 
 
 As you can imagine, this makes RWA especially useful for key drivers analysis of employee survey data when we want to determine the relative importance of (typically highly intercorrelated) survey items or indices for prediction of overall scores or external outcomes. 
 
@@ -183,7 +183,7 @@ GGally::ggpairs(
 
 In the top row of the pair plot, we can see that *Quitting Intentions* are moderately negatively correlated with the other scales—most strongly with *Perceived Organizational Support* (around *r*=-0.35), followed by *Management* and *Procedural Justice* (around *r*=-0.25), and finally with *Management Motivation* and *Autonomy* (around *r*=-0.20). Correlations between the predictor variables themselves are slightly higher but still fall within the moderate range. The highest correlation is around *r*=0.5 between *Procedural Justice* and *Management*. This suggests that multicollinearity should not be an issue, but still, the intercorrelations are big enough to have an impact on our efforts to estimate relative importance of individual predictors. Let’s see how it plays out. 
 
-After running the RWA, we can see from the table below that the overall regression model explains about 16% of the variability in quitting intentions, and nearly 50% of that explained variability can be uniquely attributed to *Perceived Organizational Support*, while the remaining predictors each account for between 10% and 15%. 
+After running the RWA, we can see from the table below that the overall regression model explains about 16% of the variability in quitting intentions, and nearly 50% of this predictive power is attributable to *Perceived Organizational Support*, while the remaining predictors each contribute between 10% and 15%. 
 
 ```{r warning=FALSE, message=FALSE}
 

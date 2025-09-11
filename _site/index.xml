@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Dimensional Traits vs. Personality Types</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +21,7 @@
       <category>dimensionality reduction</category>
       <category>psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types</guid>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types/./interactive_dataviz.gif" medium="image" type="image/gif"/>
     </item>
     <item>
@@ -291,7 +291,7 @@
       <category>key drivers analysis</category>
       <category>relative weights analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa</guid>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-22-rwa/./rwa_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>
