@@ -116,7 +116,7 @@ Sure, the correlations are far from perfect, so you can find plenty of exception
 
 ---
 
-P.S. If you want to replicate the analysis, run your own, or add additional external data, you can use the table below. ⚠️ But please keep in mind that I did not obtain the data officially from *CultureX*—I scraped/downloaded them from the [webpage with the charts](https://www.economist.com/interactive/business/2025/06/16/corporate-culture){target="_blank"}, so I cannot guarantee that the data are 100% accurate.
+P.S. If you want to replicate the analysis, run your own, or add additional external data, you can use the table below. ⚠️ But please keep in mind that I did not obtain the data officially from *CultureX*—I scraped/downloaded them from [*The Economist's* webpage](https://www.economist.com/interactive/business/2025/06/16/corporate-culture){target="_blank"}, so I cannot guarantee that the data are 100% accurate.
 
 ```{r}
 
