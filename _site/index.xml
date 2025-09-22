@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 16 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Can genAI help people managers lead better?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement</link>
+      <description>Sharing results from testing genAI’s leadership judgment.</description>
+      <category>leadership</category>
+      <category>leadership effectiveness</category>
+      <category>leadership judgement indicator</category>
+      <category>generative ai</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement</guid>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement/genai-and-leadership-judgement_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1536" height="768"/>
+    </item>
     <item>
       <title>The hidden trade-offs in corporate culture?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>employee experience</category>
       <category>glassdoor</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-17-corporate-culture-trade-offs</guid>
-      <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-17-corporate-culture-trade-offs/corporate-culture-trade-offs_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1344"/>
     </item>
     <item>
