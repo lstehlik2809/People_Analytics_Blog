@@ -23,9 +23,9 @@ output:
 
 Many of us have probably read about recent [OpenAI research](https://go.sparkpostmail2.com/f/a/2coy4p_7T3W9fFCvydrRxA~~/AAA-fBA~/SrWxfCzqkYIc4YBJbUbAcKC1heZK5iLCyQsE-BKLz5oLGJBugTP8-oWsMWMPo6mGTQFbvhUFGRY3qhVAmCLhEOkN9ijhDjGtO_0yfkjWxeCCZfeAMyUmEuSFgFCNsAcqrU-LvdmeplQkrvKnoJPh3Kc1t4ejHe9lGQUoP_UEdzNlbsl6rMBJlLXlr5SYECoCEUSth9AdamjpMrCzNT5HQHexqveh27VgiSIXdCNi_Vo~){target="_blank"} on how customers are using their tool. The study found, among other things, that asking for information or advice to support decision-making is the single biggest use case, making up 49% of all user interactions. 
 
-That got me wondering: how good could genAI be at helping people managers make better people-management decisions?
+That got me wondering: how good could genAI be at helping managers make better decisions about their teams?
 
-To get a more tangible sense of this, I put ChatGPT-5 (in thinking mode) through the *Leadership Judgement Indicator* (LJI) - a well-known situational judgment test that presents people-related decision-making scenarios, offers several possible solutions, and asks respondents to rate how adequate those solutions are. (Note for the psychometricians among you: I ran the test in temporary chat mode, so nothing was saved or used to train OpenAI’s models, reducing the risk of the testing material being exposed. 🫡)
+To get a more tangible sense of this, I put ChatGPT-5 (in thinking mode) through the *Leadership Judgement Indicator* (LJI) - a well-known situational judgment test that presents people-related decision-making scenarios, offers several possible solutions, and asks respondents to rate how adequate those solutions are. (And for the psychometricians out there: I ran the test in temporary chat mode, so nothing was saved or used to train OpenAI’s models - lowering the risk of the test material being exposed 🫡)
 
 For those who don’t know the tool, it’s based on the theory that leadership effectiveness depends on the ability to adapt decision-making styles to the situation, the task, and the people involved. Specifically, it assumes that…
 
