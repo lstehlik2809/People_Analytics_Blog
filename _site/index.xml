@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Agentic AI for visual data exploration</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration</link>
+      <description>For those who might be interested, I'm sharing an output from my experimentation with agentic AI for data insights democratization.</description>
+      <category>agentic ai</category>
+      <category>generative ai</category>
+      <category>corporate culture</category>
+      <category>employee experience</category>
+      <category>glassdoor</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration</guid>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration/./app_pic.png" medium="image" type="image/png" width="1825" height="943"/>
+    </item>
     <item>
       <title>Can genAI help people managers lead better?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>leadership judgement indicator</category>
       <category>generative ai</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement</guid>
-      <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement/genai-and-leadership-judgement_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1536" height="768"/>
     </item>
     <item>
