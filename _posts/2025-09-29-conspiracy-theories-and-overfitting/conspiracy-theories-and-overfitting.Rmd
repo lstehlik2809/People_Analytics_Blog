@@ -1,0 +1,39 @@
+---
+title: 'Conspiracy theories as a specific example of overfitting?'
+description: |
+  An interesting perspective on the nature of conspiracy theories, in the spirit of the book 'Algorithms to Live By' from Brian Christian and Tom Griffiths.  
+preview: ./pic.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 09-29-2025
+categories:
+  - bayesian brain hypothesis
+  - computational psychiatry
+  - cognitive science 
+  - data science
+  - conspiracy theories
+  - anxiety
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+I came across this idea when reading another great book, [*A Trick of the Mind*](https://www.amazon.com/Trick-Mind-Brain-Invents-Reality/dp/1538725207){target="_blank"} by Daniel Yon.
+
+One currently popular [conception of mind](https://en.wikipedia.org/wiki/Bayesian_approaches_to_brain_function){target="_blank"} treats human experience as a result of (Bayesian) combination of higher-level world models and lower-level incoming information originating from the world around us, the former trying to predict the latter, with errors leading to model adjustments and better future predictions.
+
+But when people try to reconcile existing world models with new incoming data, they must decide what they will give bigger weight. Is contradictory new data just a random fluke that doesn’t invalidate existing beliefs or is it something that should lead us to come up with new models that will better fit the world around us? You can imagine that a bad decision in this respect can quickly lead to crazy beliefs trying to explain each random fluke or, on the other hand, to a fixed mind that fails to adapt to new information and circumstances.
+
+There is experimental evidence that when making this decision, people take into account (meta)information about how uncertain, volatile, and unpredictable the world around them is. The more predictable it is, the more weight is given to existing beliefs, and the more volatile and unpredictable, the more weight is given to new incoming information, which is a rational way to combine these two.
+
+However, what if you are led by your biological predispositions or by situational circumstances to the impression that the world around you is uncertain and unpredictable? Well, you can end up with very peculiar theories, because each data point loudly calls for revision of existing beliefs. There is some evidence that this can really happen:
+
+1. [Browning et al. (2015)](https://www.nature.com/articles/nn.3961){target="_blank"} showed that anxious individuals struggled to adapt their learning to the stability of the environment. Instead of learning slowly in predictable settings and quickly in volatile ones, they showed a more rigid learning style, failing to make this crucial adjustment between different contexts.
+2. [Suthaharan et al. (2021)](https://www.nature.com/articles/s41562-021-01176-8?utm_source=chatgpt.com){target="_blank"} found that during the COVID-19 pandemic, paranoia increased and was linked to more erratic belief updating in experimental tasks. People with higher paranoia tended to treat the world as unstable — a bias also associated with greater endorsement of conspiracy theories.
+
+From this perspective, eccentric conspiracy theories are a specific example of overfitting when we give too much weight to random noise in the world. Thinking now what we could get from this insight. In data science, we fight overfitting usually with regularization, decreasing learning rate, model simplification, cross-validation, ensembling models, feature selection & engineering, getting more and better data, noise injection to inputs or model parameters. Can there be analogs of some of these techniques that could be used in the case of human cognition? Or am I pushing the analogy too far?

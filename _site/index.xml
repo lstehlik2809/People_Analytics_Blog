@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Conspiracy theories as a specific example of overfitting?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-29-conspiracy-theories-and-overfitting</link>
+      <description>An interesting perspective on the nature of conspiracy theories, in the spirit of the book 'Algorithms to Live By' from Brian Christian and Tom Griffiths.</description>
+      <category>bayesian brain hypothesis</category>
+      <category>computational psychiatry</category>
+      <category>cognitive science</category>
+      <category>data science</category>
+      <category>conspiracy theories</category>
+      <category>anxiety</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-29-conspiracy-theories-and-overfitting</guid>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-29-conspiracy-theories-and-overfitting/./pic.png" medium="image" type="image/png" width="980" height="893"/>
+    </item>
     <item>
       <title>Agentic AI for visual data exploration</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -45,7 +60,7 @@
       <category>employee experience</category>
       <category>glassdoor</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-17-corporate-culture-trade-offs</guid>
-      <pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-17-corporate-culture-trade-offs/corporate-culture-trade-offs_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1344"/>
     </item>
     <item>
