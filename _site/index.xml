@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Big consultancies in the skills semantic space</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space</link>
+      <description>A quick experiment showing how transformer-based embeddings can reveal the semantic identity of major consulting firms within a skill taxonomy.</description>
+      <category>skills</category>
+      <category>skills taxonomy</category>
+      <category>consulting</category>
+      <category>embeddings</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space</guid>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space/./plot.png" medium="image" type="image/png" width="1283" height="742"/>
+    </item>
     <item>
       <title>Testing my genAI skepticism</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>gewnerative ai</category>
       <category>data science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant</guid>
-      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant/./data_exploration.gif" medium="image" type="image/gif"/>
     </item>
     <item>
