@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Getting (more) causal insights from employee survey data (without an RCT)</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-21-cross-lagged-panel-modeling</link>
+      <description>While I was recently in the middle of processing our annual employee survey data, I started thinking about how to make the analysis results even more actionable and impactful.</description>
+      <category>employee experience</category>
+      <category>survey data</category>
+      <category>causal inference</category>
+      <category>panel data</category>
+      <category>longitudinal research</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-21-cross-lagged-panel-modeling</guid>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-21-cross-lagged-panel-modeling/./sem_plot.png" medium="image" type="image/png" width="3600" height="2400"/>
+    </item>
     <item>
       <title>Big consultancies in the skills semantic space</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>consulting</category>
       <category>embeddings</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space</guid>
-      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space/./plot.png" medium="image" type="image/png" width="1283" height="742"/>
     </item>
     <item>
