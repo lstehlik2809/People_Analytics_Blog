@@ -2482,6 +2482,22 @@ Show code
 <div style="text-align:center">
 <p><img src="sem_plot.png" style="width:100.0%" /></p>
 </div>
+<hr />
+<p><strong>Update</strong></p>
+<p>After sharing this post, Joerg Wittkewitz pointed me to <a href="https://replicationindex.com/2020/08/22/cross-lagged/" target="_blank">critical work</a> highlighting important weaknesses of CLPM. While CLPM can provide stronger directional insights than simple cross-sectional regression, it also comes with structural limitations that can produce misleading causal stories if not handled carefully.</p>
+<p>Key weaknesses to be aware of:</p>
+<ul>
+<li>Underestimation of stability: CLPM often underestimates how stable constructs are over time, especially when one variable (e.g., engagement) is more stable than another (e.g., satisfaction or intention to stay).</li>
+<li>Spurious cross-lagged paths: To “compensate” for this, CLPM can produce artificial directional effects, making one variable look like a driver when it isn’t.</li>
+<li>No modeling of short-term fluctuations: Temporary ups and downs (e.g., seasonal workload, reorganizations) are treated as noise rather than meaningful variance, distorting directional paths.</li>
+<li>Bad model fit often ignored: Many applied studies use CLPM even when model fit is poor - which invalidates the interpretation of the cross-lagged effects.</li>
+</ul>
+<p>Practical implication:</p>
+<ul>
+<li>If you have 3+ waves of data, moving to Random Intercept Cross-Lagged Panel Model (RI-CLPM) or fixed-effects panel approaches can help separate stable between-person differences from actual within-person change - where causal signals are more trustworthy.</li>
+<li>With only 2 waves, be extra cautious in interpretation, and consider alternative designs (e.g., latent change models, FE panel models) or sensitivity checks.</li>
+</ul>
+<p>Bottom line: CLPM can still be useful as a starting point, but directional effects should be interpreted with care. A significant cross-lagged path ≠ proof of causality - and model misfit can make it worse.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
