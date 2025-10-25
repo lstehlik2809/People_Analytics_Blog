@@ -1,7 +1,7 @@
 ---
 title: 'Agentic AI for visual data exploration'
 description: |
-  For those who might be interested, I'm sharing an output from my experimentation with agentic AI for data insights democratization.      
+  For those who might be interested, I'm sharing an output from my experimentation with agentic AI frameworks like LangChain and LangGraph in the context of data insights democratization.      
 preview: ./app_pic.png    
 author:
   - name: Luděk Stehlík
@@ -22,17 +22,18 @@ output:
     code_folding: true
 ---
 
-It’s a [simple agentic app](https://ai-dataviz-exploration.streamlit.app/){target="_blank"} for plain-language exploration of a dataset from [*CultureX*](https://www.culturex.com/){target="_blank"}, containing corporate culture values across companies from different industries, measured through anonymous [*Glassdoor*](https://www.glassdoor.com){target="_blank"} reviews between Jan 1, 2023, and Apr 4, 2025.
+It’s a [simple app](https://ai-dataviz-exploration.streamlit.app/){target="_blank"} for plain-language exploration of a dataset from [*CultureX*](https://www.culturex.com/){target="_blank"}, containing corporate culture values across companies from different industries, measured through anonymous [*Glassdoor*](https://www.glassdoor.com){target="_blank"} reviews between Jan 1, 2023, and Apr 4, 2025.
  
-It consists of several agents (powered by the ChatGPT-5-mini model for inference), each responsible for a different aspect of the insight-generation process and using inputs from other agents:
+It consists of several agent-like components (powered by the ChatGPT-5-mini model), each responsible for a different aspect of the insight-generation process:
 
-* one agent plans the analysis steps based on the user’s request, data characteristics, and broader context,
+* one component plans the analysis steps based on the user’s request, data characteristics, and broader context,
+* another evaluates the quality of the proposed plan and suggests adjustments if necessary,
 * another turns this plan into runnable code,
-* another fixes potential errors in the code based on error messages,
-* another creates code for accompanying analyses to support explanation of the dataviz,
-* and another transforms everything into a concise, clear narrative for a non-technical audience.
+* another fixes potential errors in the code based on received error messages,
+* another creates code for accompanying analyses to support explanation of the dataviz, and
+* another transforms the results of these analyses into a concise, clear narrative for a non-technical audience.
 
-As already mentioned above, it runs on a public dataset from *CultureX* with corporate culture values across companies in different industries, measured through anonymous *Glassdoor* reviews between Jan 1, 2023, and Apr 4, 2025. You can see it in action in the attached video below, but feel free to try it out with your own questions [here](https://ai-dataviz-exploration.streamlit.app/){target="_blank"}. (Note: Since the app is hosted on Streamlit Community Cloud, it doesn’t stay awake continuously. If it hasn’t been used recently, you may need to wake it up and wait a few minutes.)
+You can see it in action in the attached video below, but feel free to try it out with your own questions [here](https://ai-dataviz-exploration.streamlit.app/){target="_blank"}. (Note: Since the app is hosted on Streamlit Community Cloud, it doesn’t stay awake continuously. If it hasn’t been used recently, you may need to wake it up and wait a few minutes.)
 
 <div style="text-align: center;">
   <video autoplay loop muted playsinline style="max-width:100%; height:auto; margin-bottom:20px;">

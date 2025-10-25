@@ -2190,10 +2190,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>As a data scientist and analyst who spends a lot of time knee-deep in data, trying to figure out how to use it to answer stakeholders’ questions and help them solve the problems they’re facing, I used to be pretty skeptical about the quality and actual value that generative AI could bring to data analysis.</p>
-<p>But to challenge my assumptions and get a better sense of what today’s genAIs and agentic frameworks can actually do, I decided to experiment a bit and built a simple AI-driven insight assistant for data-insight democratization, that lets non-technical users explore data through basic tools for visualization and descriptive and inferential statistics, all using plain language.</p>
-<p>For that purpose I built a simple app consisting of several agent-like components (powered by the ChatGPT-5-mini model), each responsible for a different aspect of the insight-generation process and using inputs from the others:</p>
+<p>But to challenge my assumptions and get a better sense of what today’s genAIs and agentic frameworks like <em>LangChain</em> and <em>LangGraph</em> can actually do, I decided to experiment a bit and built a simple AI-driven assistant for data-insight democratization, that lets non-technical users explore data through basic tools for visualization and descriptive and inferential statistics, all using plain language.</p>
+<p>For that purpose I built a simple app consisting of several agent-like components (powered by the ChatGPT-5-mini model), each responsible for a different aspect of the insight-generation process:</p>
 <ul>
-<li>one component plans the analysis steps, including data cleaning, based on the user’s request, data characteristics, and broader context,</li>
+<li>one component plans the analysis steps based on the user’s request, data characteristics, and broader context,</li>
+<li>another evaluates the quality of the proposed plan and suggests adjustments if necessary,</li>
 <li>another turns this plan into runnable code,</li>
 <li>another fixes potential errors in the code based on received error messages,</li>
 <li>another creates code for accompanying analyses to support explanation of the dataviz, and</li>
