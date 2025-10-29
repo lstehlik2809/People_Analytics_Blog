@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Can a simple coin flip help you decide and avoid overanalyzing?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-29-coin-flip-as-a-decision-aid</link>
+      <description>We all, at least occasionally, find ourselves stuck between two options - endlessly weighing the pros and cons, searching for additional information, or asking everyone around us for advice.</description>
+      <category>decision making</category>
+      <category>behavioral science</category>
+      <category>cognitive science</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-29-coin-flip-as-a-decision-aid</guid>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-29-coin-flip-as-a-decision-aid/./coin_flip_experiment1.png" medium="image" type="image/png" width="677" height="520"/>
+    </item>
     <item>
       <title>Getting (more) causal insights from employee survey data (without an RCT)</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -74,7 +86,7 @@
       <category>employee experience</category>
       <category>glassdoor</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration</guid>
-      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration/./app_pic.png" medium="image" type="image/png" width="1825" height="943"/>
     </item>
     <item>

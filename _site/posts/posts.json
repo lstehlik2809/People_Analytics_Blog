@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2025-10-29-coin-flip-as-a-decision-aid/",
+    "title": "Can a simple coin flip help you decide and avoid overanalyzing?",
+    "description": "We all, at least occasionally, find ourselves stuck between two options - endlessly weighing the pros and cons, searching for additional information, or asking everyone around us for advice.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-10-29",
+    "categories": [
+      "decision making",
+      "behavioral science",
+      "cognitive science"
+    ],
+    "contents": "\r\nResearch by Douneva et al. (2019) suggests there might be a surprisingly simple decision aid to help us move forward: a coin flip 🪙\r\nAcross five experiments with nearly 1,000 participants, people who flipped a coin between preliminary and final decision - whether about renewing a manager’s contract, choosing a product, or donating to a charity - showed less need to keep gathering more information compared to those who didn’t.️\r\nEffect sizes were small to moderate, but pretty consistent across different decision types and samples.️\r\nParticipants didn’t just blindly follow the coin’s outcome - they usually stuck with their original preference as much as or even more than the control group, suggesting that the decision aid didn’t determine the decision outcome.️\r\nThe coin didn’t make decisions more/less accurate, even when there was an objectively correct answer, but it made people feel ready to decide.\r\nWhat might be happening behind the scenes? The authors connect the effect to well-established psychological theories:\r\nChoice Closure: Flipping a coin acts like a mental “stop sign” - a psychological closure cue. It signals that the deliberation phase is over, cutting the urge to keep collecting more data.\r\nMindset Transition: The coin flip nudges people from a deliberative mindset (weighing options) to an implemental one (gearing up for action).\r\nIt might also help people tune into their “gut feeling” by forcing an emotional reaction to a specific outcome.\r\nCurious if anyone here has experience with this specific decision aid and how it works for them outside the lab.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-10-29-coin-flip-as-a-decision-aid/./coin_flip_experiment1.png",
+    "last_modified": "2025-10-29T14:57:37+01:00",
+    "input_file": "coin-flip-as-a-decision-aid.knit.md",
+    "preview_width": 677,
+    "preview_height": 520
+  },
+  {
     "path": "posts/2025-10-21-cross-lagged-panel-modeling/",
     "title": "Getting (more) causal insights from employee survey data (without an RCT)",
     "description": "While I was recently in the middle of processing our annual employee survey data, I started thinking about how to make the analysis results even more actionable and impactful.",
