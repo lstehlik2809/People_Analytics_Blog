@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2025-10-31-org-stats-and-graph-analysis/",
+    "title": "A graph approach to reporting structures: stop wrestling recursion",
+    "description": "About a cleaner, faster way to compute some org metrics.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-10-31",
+    "categories": [
+      "organizational analytics",
+      "graph analysis",
+      "python"
+    ],
+    "contents": "\r\nFrom time to time, I need to compute organizational stats related to manager-report relationships.\r\nI used to do this with nested loops or a recursive walk through the org chart plus memoization (i.e., caching results to avoid recomputation). It works - but it’s verbose and easy to get wrong (recursion limits, cycle guards, cache invalidation).\r\nRecently I came upon a much more elegant and clear solution: rely on graph libraries like NetworkX, whose built-in functions let me easily traverse manager-report relationships and compute the metrics I need.\r\nSome quick wins with this approach:️\r\nSpan of control: direct reports (number of outgoing links from a manager) vs. total reports (number of unique people reachable by following those links through all levels).️\r\nOrg depth / layers: shortest-path lengths from a chosen root to its descendants.️\r\nDotted-line structures: multiple managers are fine; compute totals via unique descendants (no double-counting).️\r\nData quality checks: detect cycles (impossible loops) and find disconnected sub-orgs.️\r\nFewer footguns: no hand-rolled recursion, cycle guards, or bespoke caches.️\r\nExtensibility: once it’s a graph, adding metrics (e.g., centralities, bridges) is just another function call.️\r\nClarity & auditability: easier to review than nested recursion with custom memoization.\r\nSo if you’re computing org stats and your code is full of nested loops, NetworkX and other similar libraries can make it shorter, safer, and more expressive. I only wish I’d discovered this earlier - I could have saved myself a lot of headaches 🫣\r\nP.S. Below is a minimal working example of Python code that builds edges from manager_id → employee_id, followed by a simple loop to compute direct, indirect, and total reports for every manager.\r\n\r\n\r\nimport pandas as pd\r\nimport networkx as nx\r\n\r\n# mydata: columns ['manager_id', 'employee_id']\r\ndf = (mydata.dropna(subset=['manager_id','employee_id'])  \r\n              .drop_duplicates(['manager_id','employee_id']))\r\ndf = df[df['manager_id'] != df['employee_id']]  # drop self-loops just in case\r\n\r\nG = nx.DiGraph()\r\nG.add_edges_from(df[['manager_id','employee_id']].itertuples(index=False, name=None))\r\n\r\n# Managers = anyone who manages at least one person\r\nmanagers = set(df['manager_id'])\r\n\r\nrows = []\r\nfor m in managers:\r\n    total = len(nx.descendants(G, m))    # all reports at any depth (unique people)\r\n    direct = G.out_degree(m)             # direct reports\r\n    rows.append((m, direct, total - direct, total))\r\n\r\nout = (pd.DataFrame(rows, columns=['manager_id','direct','indirect','total'])\r\n         .sort_values(['total','direct'], ascending=False))\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-10-31-org-stats-and-graph-analysis/./code.png",
+    "last_modified": "2025-10-31T12:02:07+01:00",
+    "input_file": "org-stats-and-graph-analysis.knit.md",
+    "preview_width": 1143,
+    "preview_height": 615
+  },
+  {
     "path": "posts/2025-10-29-coin-flip-as-a-decision-aid/",
     "title": "Can a simple coin flip help you decide and avoid overanalyzing?",
     "description": "We all, at least occasionally, find ourselves stuck between two options - endlessly weighing the pros and cons, searching for additional information, or asking everyone around us for advice.",

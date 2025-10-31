@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A graph approach to reporting structures: stop wrestling recursion</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis</link>
+      <description>About a cleaner, faster way to compute some org metrics.</description>
+      <category>organizational analytics</category>
+      <category>graph analysis</category>
+      <category>python</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis</guid>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis/./code.png" medium="image" type="image/png" width="1143" height="615"/>
+    </item>
     <item>
       <title>Can a simple coin flip help you decide and avoid overanalyzing?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +29,7 @@
       <category>behavioral science</category>
       <category>cognitive science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-29-coin-flip-as-a-decision-aid</guid>
-      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-29-coin-flip-as-a-decision-aid/./coin_flip_experiment1.png" medium="image" type="image/png" width="677" height="520"/>
     </item>
     <item>
