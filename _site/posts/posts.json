@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/",
+    "title": "Making talk cheap: How GenAI may disrupt labor-market signalling",
+    "description": "About a super interesting recent study by Silbert & Galdin (2025) - \"Making Talk Cheap: Generative AI and Labor Market Signaling\" - that examines how LLMs are altering the economics of hiring.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-11-06",
+    "categories": [
+      "ai",
+      "generative ai",
+      "labor economics",
+      "future of work",
+      "job market"
+    ],
+    "contents": "\r\nHistorically, written communication served as a costly signal of competence. Producing a tailored proposal required effort, skill and relevance, and employers used this as a cue of ability. With LLMs, that cost has effectively dropped to zero.\r\nThe analysis focuses on coding-related freelance jobs on a major digital labour platform (Freelancer.com). The authors observe that before widespread LLM adoption, employers paid a premium for more customised applications. After the rollout of AI-writing tools, that premium disappeared - writing quality generally increased and no longer differentiated good and bad candidates, as measured by actual job performance and completion outcomes.\r\n\r\n\r\n\r\nThe authors developed a large-scale scoring method to assess application quality: using Meta’s Llama 4 model, each job proposal was evaluated on nine criteria capturing both customisation (relevance to the specific task) and generic writing quality (clarity, tone). Proposals re-used across jobs were flagged and scored zero for customised relevance. This quantitative measure approximates what employers infer about candidate effort.\r\nIn their structural model the results are stark: when writing becomes practically free due to GenAI, high-ability workers are hired 19 % less often, and low-ability workers 14 % more often - pointing to a decline in meritocratic sorting.\r\nThere are obvious limitations - the study focuses on one platform and one type of job signal (short, text-based applications in coding projects); it doesn’t capture richer selection stages or potential productivity gains from AI, etc. Still, it’s a good reminder that organisations should re-examine what candidates’ behaviour actually signals - and look for alternative, new (or perhaps old 😉) signals.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/./chart.png",
+    "last_modified": "2025-11-06T12:51:03+01:00",
+    "input_file": "genai-and-disrupt-of-labor-market-signalling.knit.md",
+    "preview_width": 998,
+    "preview_height": 762
+  },
+  {
     "path": "posts/2025-10-31-org-stats-and-graph-analysis/",
     "title": "A graph approach to reporting structures: stop wrestling recursion",
     "description": "About a cleaner, faster way to compute some org metrics.",

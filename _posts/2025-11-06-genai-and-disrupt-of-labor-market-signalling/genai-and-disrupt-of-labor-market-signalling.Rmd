@@ -1,0 +1,38 @@
+---
+title: 'Making talk cheap: How GenAI may disrupt labor-market signalling'
+description: |
+  About a super interesting recent study by Silbert & Galdin (2025) - "Making Talk Cheap: Generative AI and Labor Market Signaling" - that examines how LLMs are altering the economics of hiring.      
+preview: ./chart.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 11-06-2025
+categories:
+  - ai
+  - generative ai
+  - labor economics
+  - future of work
+  - job market 
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+Historically, written communication served as a costly signal of competence. Producing a tailored proposal required effort, skill and relevance, and employers used this as a cue of ability. With LLMs, that cost has effectively dropped to zero.
+
+The [analysis](https://jesse-silbert.github.io/website/silbert_jmp.pdf){target="_blank"} focuses on coding-related freelance jobs on a major digital labour platform ([*Freelancer.com*](https://www.freelancer.com/){target="_blank"}). The authors observe that before widespread LLM adoption, employers paid a premium for more customised applications. After the rollout of AI-writing tools, that premium disappeared - writing quality generally increased and no longer differentiated good and bad candidates, as measured by actual job performance and completion outcomes.
+
+<div style="text-align:center">
+![](./charts.png){width=100%}
+</div>
+
+
+The authors developed a large-scale scoring method to assess application quality: using Meta’s Llama 4 model, each job proposal was evaluated on nine criteria capturing both customisation (relevance to the specific task) and generic writing quality (clarity, tone). Proposals re-used across jobs were flagged and scored zero for customised relevance. This quantitative measure approximates what employers infer about candidate effort.
+
+In their structural model the results are stark: when writing becomes practically free due to GenAI, high-ability workers are hired 19 % less often, and low-ability workers 14 % more often - pointing to a decline in meritocratic sorting.
+
+There are obvious limitations - the study focuses on one platform and one type of job signal (short, text-based applications in coding projects); it doesn’t capture richer selection stages or potential productivity gains from AI, etc. Still, it’s a good reminder that organisations should re-examine what candidates’ behaviour actually signals - and look for alternative, new (or perhaps old 😉) signals.
