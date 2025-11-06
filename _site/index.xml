@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Making talk cheap: How GenAI may disrupt labor-market signalling</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +19,7 @@
       <category>future of work</category>
       <category>job market</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling</guid>
-      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/./chart.png" medium="image" type="image/png" width="998" height="762"/>
     </item>
     <item>
@@ -74,16 +74,16 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-15-big-consultancies-in-the-skills-semantic-space/./plot.png" medium="image" type="image/png" width="1283" height="742"/>
     </item>
     <item>
-      <title>Testing my genAI skepticism</title>
+      <title>Testing my GenAI skepticism</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant</link>
       <description>About my hands-on test of agentic AI in data analysis.</description>
       <category>agentic ai</category>
       <category>data analysis</category>
-      <category>gewnerative ai</category>
+      <category>generative ai</category>
       <category>data science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant</guid>
-      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant/./data_exploration.gif" medium="image" type="image/gif"/>
     </item>
     <item>
