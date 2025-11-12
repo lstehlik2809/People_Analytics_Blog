@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2025-11-12-insights-discovery-and-skills/",
+    "title": "Do Insights Discovery ‘colors’ relate to self-reported skills?",
+    "description": "A mini validity check from a curious data dive.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-11-12",
+    "categories": [
+      "insights discovery",
+      "skills",
+      "psychometrics",
+      "validity"
+    ],
+    "contents": "\r\nRecently, I had a chance to take a quick look at a small piece of criterion-related validity evidence for the (in)famous psychometric tool known as Insights Discovery (ID).\r\nFor those unfamiliar with the tool, here’s a quick rundown - ID is a Jungian-based typological model that maps behavior onto four “color energies”: Red (driven), Yellow (enthusiastic), Green (caring), and Blue (analytical). It’s popular in corporate training and team development, but also somewhat controversial - engaging and easy to relate to, yet supported by limited peer-reviewed evidence, much like the MBTI.\r\nHaving access to data on self-reported skills and ID profiles for a team of about 40 people, I couldn’t resist exploring the relationship between the two 🤓\r\nTo make the analysis workable given the limited sample size, I simplified the data a bit (maybe too much 🤔):\r\nI used only each person’s most dominant color.\r\nI reduced roughly 600 unique skills across the team to seven broader skill categories: Interpersonal (e.g., Mentorship), Intrapersonal (e.g., Multitasking), Cognitive (e.g., Critical Thinking), Functional/Technical (e.g., Azure DevOps), Digital & Data Literacy (e.g., Data Visualization), Business & Strategy (e.g., Budgeting), and Leadership & Management (e.g., Change Strategy).\r\nI didn’t have any strong hypotheses in advance, so at best this is exploratory work, the results of which should be tested on an independent and much larger sample. That said, I still expected to see at least the following patterns:\r\nRed individuals would self-report the greatest number of skills, while Green individuals would report the fewest.\r\nCompared with other colors, Red individuals would show a higher proportion of skills in Leadership & Management and Business & Strategy.\r\nGreen and Yellow individuals would report a relatively higher proportion of Interpersonal skills compared with other colors.\r\nBlue individuals would report a relatively higher proportion of Functional/Technical and Cognitive skills compared with other colors.\r\nTo my surprise, the majority of these expectations were more or less met, as illustrated in the two charts below, although the effects are often not large enough to be reliably detected with such a small number of observations.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nBesides that, some other interesting patterns emerged. For example:\r\nAll colors followed quite similar patterns across skill categories, suggesting that certain types of skills are generally more or less common among people, regardless of their behavioral profile.\r\nSkill profiles were more tightly correlated along the Introversion/Extraversion dimension than along the Thinking/Feeling dimension of Jungian preferences (i.e., Blue + Green vs. Red + Yellow).\r\n⚠️ As already suggested above, the results should by no means be overinterpreted - whether by supporters or critics of this method - as the analysis is far too limited and simplified for that. It’s primarily an exploratory look at an interesting dataset, intended mainly to satisfy my curiosity and to spark further ideas, questions, or potential analyses related to today’s popular topic of employee skills.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-11-12-insights-discovery-and-skills/./skills_totals_by_dominant_color.png",
+    "last_modified": "2025-11-12T10:54:43+01:00",
+    "input_file": "insights-discovery-and-skills.knit.md",
+    "preview_width": 4000,
+    "preview_height": 2500
+  },
+  {
     "path": "posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/",
     "title": "Making talk cheap: How GenAI may disrupt labor-market signalling",
     "description": "About a super interesting recent study by Silbert & Galdin (2025) - \"Making Talk Cheap: Generative AI and Labor Market Signaling\" - that examines how LLMs are altering the economics of hiring.",
@@ -19,7 +43,7 @@
     ],
     "contents": "\r\nHistorically, written communication served as a costly signal of competence. Producing a tailored proposal required effort, skill and relevance, and employers used this as a cue of ability. With LLMs, that cost has basically dropped to zero, which might weaken the signal it used to carry.\r\nThat this may already be happening - at least in some parts of the job market - is supported by the results of a super interesting study by Silbert & Galdin (2025) - “Making Talk Cheap: Generative AI and Labor Market Signaling” -, which focuses on coding-related freelance jobs on a major digital labor platform (Freelancer.com).\r\nThe authors observe that before widespread LLM adoption, employers paid a premium for more customised applications. After the rollout of AI-writing tools, that premium disappeared - writing quality generally increased and no longer differentiated good and bad candidates, as measured by actual job performance and completion outcomes.\r\n\r\n\r\n\r\nTo measure the quality of applications at scale, the authors developed a specialized large-scale scoring method: using Meta’s Llama 4 model, each job proposal was evaluated on nine criteria capturing both customisation (relevance to the specific task) and generic writing quality (clarity, tone). Proposals re-used across jobs were flagged and scored zero for customised relevance. This quantitative measure approximates what employers infer about candidate effort.\r\nIn their structural model the results are pretty stark: when writing becomes practically free due to GenAI, high-ability workers are hired 19 % less often, and low-ability workers 14 % more often - pointing to a decline in meritocratic sorting.\r\nThere are obvious limitations - the study focuses on one platform and one type of job signal (short, text-based applications in coding projects); it doesn’t capture richer selection stages or potential productivity gains from AI, etc. Still, it’s a good reminder that organisations should re-examine what candidates’ behaviour actually signals - and look for alternative, new (or perhaps old 😉) signals.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-11-06-genai-and-disrupt-of-labor-market-signalling/./chart.png",
-    "last_modified": "2025-11-06T19:34:31+01:00",
+    "last_modified": "2025-11-12T10:00:08+01:00",
     "input_file": "genai-and-disrupt-of-labor-market-signalling.knit.md",
     "preview_width": 998,
     "preview_height": 762

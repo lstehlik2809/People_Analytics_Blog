@@ -24,7 +24,7 @@ output:
 
 Historically, written communication served as a costly signal of competence. Producing a tailored proposal required effort, skill and relevance, and employers used this as a cue of ability. With LLMs, that cost has basically dropped to zero, which might weaken the signal it used to carry.
 
-That this may already be happening - at least in some parts of the job market - is supported by the results of a super interesting [study  by Silbert & Galdin (2025)](https://jesse-silbert.github.io/website/silbert_jmp.pdf){target="_blank"} - “Making Talk Cheap: Generative AI and Labor Market Signaling” -, which focuses on coding-related freelance jobs on a major digital labor platform ([*Freelancer.com*](https://www.freelancer.com/){target="_blank"}). 
+That this may already be happening - at least in some parts of the job market - is supported by the results of a super interesting [study  by Silbert & Galdin (2025)](https://jesse-silbert.github.io/website/silbert_jmp.pdf){target="_blank"} - “*Making Talk Cheap: Generative AI and Labor Market Signaling*” -, which focuses on coding-related freelance jobs on a major digital labor platform ([*Freelancer.com*](https://www.freelancer.com/){target="_blank"}). 
 
 The authors observe that before widespread LLM adoption, employers paid a premium for more customised applications. After the rollout of AI-writing tools, that premium disappeared - writing quality generally increased and no longer differentiated good and bad candidates, as measured by actual job performance and completion outcomes.
 
