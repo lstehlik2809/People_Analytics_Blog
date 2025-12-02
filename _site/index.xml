@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How AI is reshaping HR-tech</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift</link>
+      <description>Tracing one concrete example of AI’s growing influence in HR-tech.</description>
+      <category>workplace</category>
+      <category>ai</category>
+      <category>generative ai</category>
+      <category>agentic ai</category>
+      <category>worklytics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift</guid>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift/./ai_trends_annotated.png" medium="image" type="image/png" width="5500" height="3000"/>
+    </item>
     <item>
       <title>Do Insights Discovery ‘colors’ relate to self-reported skills?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>psychometrics</category>
       <category>validity</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-11-12-insights-discovery-and-skills</guid>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-11-12-insights-discovery-and-skills/./skills_totals_by_dominant_color.png" medium="image" type="image/png" width="4000" height="2500"/>
     </item>
     <item>
