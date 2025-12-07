@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Loftus &amp; Palmer 2.0: Replicating human bias in AI</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility</link>
+      <description>"Replicating" 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus &amp; Palmer "car crash" paradigm to see if verb intensity biases speed estimation. The short answer: Yes. The long answer: It’s a little bit more complicated.</description>
+      <category>generative ai</category>
+      <category>behavioral science</category>
+      <category>data science</category>
+      <category>prompt engineering</category>
+      <category>cognitive science</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility</guid>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility/./speed_estimations_chart_gpt51.png" medium="image" type="image/png" width="3000" height="1800"/>
+    </item>
     <item>
       <title>How AI is reshaping HR-tech</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +33,7 @@
       <category>agentic ai</category>
       <category>worklytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift</guid>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift/./ai_trends_annotated.png" medium="image" type="image/png" width="5500" height="3000"/>
     </item>
     <item>
