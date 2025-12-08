@@ -1,7 +1,7 @@
 ---
 title: 'Loftus & Palmer 2.0: Replicating human bias in AI'
 description: |
-  Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus & Palmer "car crash" paradigm to see if verb intensity biases speed estimation. The short answer: Yes. The long answer: It’s a little bit more complicated. 
+  Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus & Palmer "car crash" paradigm to see if verb intensity biases speed estimation. Did the effect replicate? The short answer: Yes. The long answer: It’s a little bit more complicated. 
 preview: ./illustration_pic.png    
 author:
   - name: Luděk Stehlík

@@ -12,7 +12,7 @@
       <title>Loftus &amp; Palmer 2.0: Replicating human bias in AI</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility</link>
-      <description>Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus &amp; Palmer "car crash" paradigm to see if verb intensity biases speed estimation. The short answer: Yes. The long answer: It’s a little bit more complicated.</description>
+      <description>Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus &amp; Palmer "car crash" paradigm to see if verb intensity biases speed estimation. Did the effect replicate? The short answer: Yes. The long answer: It’s a little bit more complicated.</description>
       <category>generative ai</category>
       <category>behavioral science</category>
       <category>data science</category>
