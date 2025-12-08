@@ -1,7 +1,7 @@
 ---
 title: 'Loftus & Palmer 2.0: Replicating human bias in AI'
 description: |
-  "Replicating" 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus & Palmer "car crash" paradigm to see if verb intensity biases speed estimation. The short answer: Yes. The long answer: It’s a little bit more complicated. 
+  Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus & Palmer "car crash" paradigm to see if verb intensity biases speed estimation. The short answer: Yes. The long answer: It’s a little bit more complicated. 
 preview: ./speed_estimations_chart_gpt51.png    
 author:
   - name: Luděk Stehlík
@@ -22,7 +22,7 @@ output:
     code_folding: true
 ---
 
-We’ve all seen how GenAI chatbot responses can shift depending on the exact phrasing of our prompts. A recent complaint from a friend about this behavior inspired me to “replicate” a classic psychological experiment - but with GenAI as the subject instead of humans.
+We’ve all seen how GenAI chatbot responses can shift depending on the exact phrasing of our prompts. A recent complaint from a friend about this behavior inspired me to partially replicate a classic psychological experiment - but with GenAI as the subject instead of humans.
 
 I’m referring to the [Loftus & Palmer (1974)](https://psycnet.apa.org/record/1975-04498-001){target="_blank"} study (*Reconstruction of Automobile Destruction*), which examined how language shapes memory. For those unfamiliar with it, participants watched short films of car accidents and were asked to estimate the cars’ speed. The key manipulation was the intensity of the verb in the question. Those asked how fast the cars were going when they **“smashed”** gave higher estimates (~40.5 mph) than those asked with the verbs **“collided”** (39.3 mph), **“bumped”** (38.1 mph), **“hit”** (~34.0 mph), or **“contacted”** (~31.8 mph).
 
@@ -56,5 +56,5 @@ I also wondered whether the muted effect in the other verbs might arise from GPT
 
 This is just one small experiment with two specific models and one narrow task, so the conclusions definitely cannot be overstated. Still, imo, it demonstrates that the wording of our prompts can, at least in some cases, systematically bias GenAI outputs. So next time you craft a prompt, choose your words wisely - your leading questions can lead your favorite chatbot astray 😉
 
-P.S. By coincidence, while working on this post I stumbled upon a much more rigorous and complex study on prompt framing effect in the context of misinformation correction - check it out [here](https://arxiv.org/abs/2511.22746){target="_blank"}. 
+P.S. By coincidence, while working on this post I stumbled upon a much more rigorous and complex study on prompt framing effect in the context of misinformation correction - you can check it out [here](https://arxiv.org/abs/2511.22746){target="_blank"}. 
 

@@ -38,6 +38,6 @@ This isn’t meant to shame a vendor for jumping on a bandwagon - quite the oppo
 
 Curious whether any of you are already using collaboration metadata for this purpose in a systematic way - for example, tracking AI tool adoption alongside meeting patterns, focus time, or cross-team collaboration. And if so, what insights have surprised you the most? Feel free to share your experiences in the comments.
 
-P.S. This post wasn’t paid or sponsored by Worklytics in any way - it was purely driven by my curiosity 🤓
+Note: This post wasn’t paid or sponsored by Worklytics in any way - it was purely driven by my curiosity 🤓
 
-Note: This was also a nice test of current agentic tools (Google [Antigravity](https://www.googleantigravity.org/){target="_blank"} with Gemini 3 Pro, in this case). And I can confirm what many of you have probably experienced firsthand - it’s a serious efficiency booster. The posts were scraped and analyzed in under 30 minutes, and the real bottleneck was actually the ideation and narrative phase, although AI helped there too 😉
+P.S. This was also a nice test of current agentic tools (Google [Antigravity](https://www.googleantigravity.org/){target="_blank"} with Gemini 3 Pro, in this case). And I can confirm what many of you have probably experienced firsthand - it’s a serious efficiency booster. The posts were scraped and analyzed in under 30 minutes, and the real bottleneck was actually the ideation and narrative phase, although AI helped there too 😉
