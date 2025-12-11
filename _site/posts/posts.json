@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2025-12-11-ona-and-face-similarity/",
+    "title": "When facial similarity meets Network Science",
+    "description": "A playful look at political lookalikes.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-12-11",
+    "categories": [
+      "social psychology",
+      "similarity attraction",
+      "social network analysis",
+      "facial recognition",
+      "fun with data"
+    ],
+    "contents": "\r\nAs psychological research suggests, we tend to be drawn to people who are like us - psychologically, sociodemographically, and physically.\r\nThis so-called similarity-attraction principle makes us more comfortable with, and more likely to interact with those we perceive as similar, which often leads to more frequent and more positive communication.\r\nYou can think of these similarities as “avenues” between us that make it easier (or harder) to reach out to others. And from that perspective, it’s just one step to operationalize this phenomenon via social network analysis.\r\nFor illustration - and to have some fun 🤓 - I focused only on the physical (facial) aspect of similarity and used a group of 16 well-known world politicians as my volunteers (well, not literally).\r\nFrom a technical perspective, I used DeepFace with Facenet512 to extract facial embeddings and computed cosine similarity between all pairs. Then I built a network graph where edges connect politicians with positive facial similarity (thicker lines = stronger resemblance), and a Spring layout algorithm positioned lookalikes closer together. To identify groups of faces with shared features, I applied Greedy Modularity community detection.\r\nThe result? See the network graph below - I’ll leave it to you to decide how these discovered similarities might translate into real-world relationships between individual politicians 😉\r\n\r\n\r\n\r\nNote: Given the methodology, if you averaged all the faces, you’d get an “ideal” politician who should, on average, be in the best (central) position to align with the group as a whole. To get a better idea of what such a politician might look like, I also generated the morphed “average face” of this specific set of politicians - see the pic below. If you think your face looks similar, maybe you should consider entering politics 🙃 But don’t wait too long - politics isn’t exactly a stable profession, this crew can change fast, and your face might not fit as well later on 😁\r\n\r\n\r\n\r\nP.S. Out of curiosity, I also ran the analysis with my own photo, and it seems I should soon head to Mexico or Germany 🙂\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-12-11-ona-and-face-similarity/./group_photos_network.png",
+    "last_modified": "2025-12-11T18:25:59+01:00",
+    "input_file": "ona-and-face-similarity.knit.md",
+    "preview_width": 3644,
+    "preview_height": 3396
+  },
+  {
     "path": "posts/2025-12-07-ai-suggestibility/",
     "title": "Loftus & Palmer 2.0: Replicating human bias in AI",
     "description": "Replicating 1974 psychology with 2025 technology. I tested GPT-5.1 and GPT-4.1 using the Loftus & Palmer \"car crash\" paradigm to see if verb intensity biases speed estimation. Did the effect replicate? The short answer: Yes. The long answer: It’s a little bit more complicated.",
