@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2025-12-15-nudge-effectiveness/",
+    "title": "Signal vs. Noise: Why we can’t yet identify effective nudges",
+    "description": "Another evidence that nudges may not be as effective as often assumed.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2025-12-15",
+    "categories": [
+      "nudge",
+      "meta-analysis",
+      "behavioral science",
+      "behavioral economics",
+      "research methods"
+    ],
+    "contents": "\r\nA recent second-order meta-analysis synthesizing 14 meta-analyses, 1,600+ primary studies, and ~30 million participants finds that nudges show a small positive average effect (see the corresponding forest plot below).\r\n\r\n\r\n\r\nForest plot of the effects of the nudging intervention.\r\nHowever, after correcting for publication bias (see the corresponding funnel plot below), the pooled effect is statistically indistinguishable from zero.\r\n\r\n\r\n\r\nFunnel plot of nudging intervention.\r\nA common critique is that “nudging” is too broad - like meta-analyzing all medicines at once - and that we should focus on specific interventions that work.\r\nThis study challenges that optimism. The authors found no robust moderators to identify successful contexts. This is likely because the foundation itself is shaky: the majority of existing meta-analyses were rated as low or critically low in methodological quality. The signal is simply lost in the noise of low-quality methods.\r\nThe implication is stark: We cannot currently distinguish the “winners” from the statistical artifacts.\r\nFor policy and practice, we must stop assuming “what works” and demand fundamental rigor. We need valid measurement before we can even begin to identify effective interventions.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-12-15-nudge-effectiveness/./metaanalyses.jpg",
+    "last_modified": "2025-12-15T11:42:53+01:00",
+    "input_file": "nudge-effectiveness.knit.md"
+  },
+  {
     "path": "posts/2025-12-11-ona-and-face-similarity/",
     "title": "When facial similarity meets Network Science",
     "description": "A playful look at political lookalikes.",

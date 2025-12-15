@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Signal vs. Noise: Why we can’t yet identify effective nudges</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-nudge-effectiveness</link>
+      <description>Another evidence that nudges may not be as effective as often assumed.</description>
+      <category>nudge</category>
+      <category>meta-analysis</category>
+      <category>behavioral science</category>
+      <category>behavioral economics</category>
+      <category>research methods</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-nudge-effectiveness</guid>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-15-nudge-effectiveness/./metaanalyses.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>When facial similarity meets Network Science</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -33,7 +47,7 @@
       <category>prompt engineering</category>
       <category>cognitive science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility</guid>
-      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-07-ai-suggestibility/./illustration_pic.png" medium="image" type="image/png" width="2752" height="1536"/>
     </item>
     <item>
