@@ -41,9 +41,9 @@
       "graph theory",
       "systems thinking"
     ],
-    "contents": "\r\nNot being a heavy Git user, I was surprised to learn that to gain a deeper understanding and a solid mental model of how Git works, DAGs - well known from the world of causal inference, where I feel a bit more at home - are very handy. They make it much easier to deal with more complex operations like rebasing or fixing merge conflicts - at its core, it’s just graph manipulation.\r\nMaybe I’m not the only one who was ignorant of this, so I’m sharing this small but useful learning of mine 🤓\r\nIf interested, check out, for example, the following video, which, imo, does a decent job of explaining Git through a DAG lens.\r\nYour browser does not support the video tag.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nNot being a heavy Git user, I was surprised to learn that to gain a deeper understanding and a solid mental model of how Git works, DAGs - well known from the world of causal inference, where I feel a bit more at home - are very handy. They make it much easier to deal with more complex operations like rebasing or fixing merge conflicts - at its core, it’s just graph manipulation.\r\nMaybe I’m not the only one who was ignorant of this, so I’m sharing this small but useful learning of mine 🤓\r\nIf interested, check out, for example, the following video, which, imo, does a decent job of explaining Git through a DAG lens.\r\n\r\n\r\nYour browser does not support the video tag.\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-12-15-git-and-dags/./git_dag.png",
-    "last_modified": "2025-12-15T13:30:52+01:00",
+    "last_modified": "2025-12-15T13:53:48+01:00",
     "input_file": "git-and-dags.knit.md",
     "preview_width": 1450,
     "preview_height": 507

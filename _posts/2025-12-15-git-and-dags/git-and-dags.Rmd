@@ -29,7 +29,9 @@ Maybe I’m not the only one who was ignorant of this, so I’m sharing this sma
 
 If interested, check out, for example, the [following video](https://www.youtube.com/watch?v=Ala6PHlYjmw&t=8s){target="_blank"}, which, imo, does a decent job of explaining Git through a DAG lens. 
 
-<video width="640" height="480" controls>
-  <source src="git_dag_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="text-align: center;">
+  <video controls style="width: 100%; max-width: 100%; height: auto;">
+    <source src="git_dag_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
