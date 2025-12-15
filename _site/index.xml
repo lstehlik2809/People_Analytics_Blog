@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Signal vs. Noise: Why we can’t yet identify effective nudges</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,8 +19,23 @@
       <category>behavioral economics</category>
       <category>research methods</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-nudge-effectiveness</guid>
-      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-15-nudge-effectiveness/./metaanalyses.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Hidden DAG geometry of version control</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-git-and-dags</link>
+      <description>Sharing a small learning of mine 🤓</description>
+      <category>data science</category>
+      <category>git</category>
+      <category>version control</category>
+      <category>causal inference</category>
+      <category>graph theory</category>
+      <category>systems thinking</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-git-and-dags</guid>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-15-git-and-dags/./git_dag.png" medium="image" type="image/png" width="1450" height="507"/>
     </item>
     <item>
       <title>When facial similarity meets Network Science</title>
