@@ -21,15 +21,13 @@ output:
     code_folding: true
 ---
 
-Reading the book Existential Physics (btw, highly recommended) made me rethink the popular image many people (including myself) use to signal their openness to new career and life directions - a “garden of forking paths” where the future is a blank canvas of almost infinite potential, constrained only by our imagination.
+Reading the book [*Existential Physics: A Scientist's Guide to Life's Biggest Questions*](https://en.wikipedia.org/wiki/Existential_Physics){target="_blank"} (btw, highly recommended) made me rethink the popular image many people (including myself) use to signal their openness to new career and life directions - a [“garden of forking paths”](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths){target="_blank"} where the future is a blank canvas of almost infinite potential, constrained only by our imagination.
 
 <div style="text-align:center">
 ![](./forking_paths_original.jfif){width=100%}
 </div>
 
-My update tries to make this image more honestly reflect the reality we’re facing in such situations 🤓
-
-Specifically, that some paths are effectively unreachable for us (e.g., in my late forties, becoming a professional brain surgeon, no matter how much I might wish it), and others are far more probable than others (for example, for me it’s more likely that my next job will again be at the intersection of data and psychology than in psychotherapeutic care).
+My update tries to make this image more honestly reflect the reality we’re facing in such situations 🤓 Specifically, that some paths are effectively unreachable for us (e.g., in my late forties, becoming a professional brain surgeon, no matter how much I might wish it), and others are far more probable than others (for example, for me it’s more likely that my next job will again be at the intersection of data and psychology than in psychotherapeutic care).
 
 <div style="text-align:center">
 ![](./forking_paths_updated.png){width=100%}
