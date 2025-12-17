@@ -1,0 +1,38 @@
+---
+title: 'Refactoring the "Garden of Forking Paths"'
+description: |
+  An updated look at the popular "Forking Paths" image to reflect probability and the reality of closed doors. 
+preview: ./forking_paths_updated.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 12-17-2025
+categories:
+  - career transitions
+  - constraints matter
+  - probabilistic futures
+  - still optimistic
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+Reading the book Existential Physics (btw, highly recommended) made me rethink the popular image many people (including myself) use to signal their openness to new career and life directions - a “garden of forking paths” where the future is a blank canvas of almost infinite potential, constrained only by our imagination.
+
+<div style="text-align:center">
+![](./forking_paths_original.jfif){width=100%}
+</div>
+
+My update tries to make this image more honestly reflect the reality we’re facing in such situations 🤓
+
+Specifically, that some paths are effectively unreachable for us (e.g., in my late forties, becoming a professional brain surgeon, no matter how much I might wish it), and others are far more probable than others (for example, for me it’s more likely that my next job will again be at the intersection of data and psychology than in psychotherapeutic care).
+
+<div style="text-align:center">
+![](./forking_paths_updated.png){width=100%}
+</div>
+
+Not sure if you’ll be interested in using this updated version of the image - after all, it removes a large part of the positive vibe of the original 🙃 - but if so, feel free to copy the image above and use it in your announcement 😊

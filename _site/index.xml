@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Refactoring the "Garden of Forking Paths"</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2025-12-17-garden-of-forking-paths-redo</link>
+      <description>An updated look at the popular "Forking Paths" image to reflect probability and the reality of closed doors.</description>
+      <category>career transitions</category>
+      <category>constraints matter</category>
+      <category>probabilistic futures</category>
+      <category>still optimistic</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-17-garden-of-forking-paths-redo</guid>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-17-garden-of-forking-paths-redo/./forking_paths_updated.png" medium="image" type="image/png" width="2592" height="1632"/>
+    </item>
     <item>
       <title>Signal vs. Noise: Why we can’t yet identify effective nudges</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -34,7 +47,7 @@
       <category>graph theory</category>
       <category>systems thinking</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-15-git-and-dags</guid>
-      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-15-git-and-dags/./git_dag.png" medium="image" type="image/png" width="1450" height="507"/>
     </item>
     <item>
