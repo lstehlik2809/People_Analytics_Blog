@@ -34,3 +34,11 @@ My update tries to make this image more honestly reflect the reality we’re fac
 </div>
 
 Not sure if you’ll be interested in using this updated version of the image - after all, it removes a large part of the positive vibe of the original 🙃 - but if so, feel free to copy the image above and use it in your announcement 😊
+
+----
+
+**Update**: After posting this on LinkedIn, Eric-Jan Wagenmakers pointed me to his article *A Deterministic View on Life*, which, imo, provides an even more honest account of the issue. It defends a deterministic perspective while explaining why uncertainty, choice, and responsibility remain meaningful despite the absence of genuine alternative possibilities. The core argument is that while life unfolds along a single, fully determined trajectory, our experience of uncertainty, deliberation, and choice arises from our incomplete knowledge, not from genuinely open alternatives. We reason, decide, and feel responsible because we must infer outcomes under uncertainty - even though, in retrospect, only one outcome was ever possible (see visualization of this deterministic perspective on life by Viktor Beekman below). But best to read it in full [here](https://www.bayesianspectacles.org/a-deterministic-view-on-life/){target="_blank"}.
+
+<div style="text-align:center">
+![](./LifePathLightningLandscape.jpg){width=100%}
+</div>
