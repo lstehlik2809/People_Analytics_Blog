@@ -1553,7 +1553,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <p>As a data scientist and analyst who spends a lot of time knee-deep in data, trying to figure out how to use it to answer stakeholders’ questions and help them solve the problems they’re facing, I used to be pretty skeptical about the quality and actual value that GenAI could bring to data analysis.</p>
 <p>But to challenge my assumptions and get a better sense of what today’s GenAIs and agentic frameworks like <em>LangChain</em> and <em>LangGraph</em> can actually do, I decided to experiment a bit and built a simple AI-driven assistant for data-insight democratization, that lets non-technical users explore data through basic tools for visualization and descriptive and inferential statistics, all using plain language.</p>
-<p>For that purpose I built a simple app consisting of several agent-like components (powered by the ChatGPT-5-mini model), each responsible for a different aspect of the insight-generation process:</p>
+<p>For that purpose I built a simple app consisting of several agent-like components (powered by the GPT-5-mini model), each responsible for a different aspect of the insight-generation process:</p>
 <ul>
 <li>one component plans the analysis steps based on the user’s request, data characteristics, and broader context,</li>
 <li>another evaluates the quality of the proposed plan and suggests adjustments if necessary,</li>
@@ -1571,6 +1571,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Personally, this experiment made me update my priors, and now I can imagine that with properly prepared data and guardrails preventing certain ways of handling or interpreting results, you could have a tool that’s very useful in low-stakes situations - when stakeholders use plain language to explore data and test their hypotheses, leaving the most promising ones for deeper examination by human analysts who can factor in broader context and domain knowledge.</p>
 <p>Curious where you currently stand on this - feel free to share in the comments.</p>
 <p>P.S. If you’re interested, you can grab the code behind the app from my <a href="https://github.com/lstehlik2809/AI-Powered-Data-Exploration" target="_blank">GitHub repo</a>. Just plug in your OpenAI API key, and you can play around with your own data locally.</p>
+<hr />
+<p><strong>Update</strong>: After Google’s release of Gemini 3 Flash Preview, which demonstrates a superior performance-to-price ratio, I replaced GPT-5-mini with this model. Its higher “intelligence” is readily apparent in the quality of the app’s outputs - specifically through better chart selection and more nuanced data interpretations. It’s a perfect example of the ongoing commoditization of “intelligence.”</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
