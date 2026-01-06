@@ -24,7 +24,7 @@ output:
 
 It’s a [simple app](https://ai-dataviz-exploration.streamlit.app/){target="_blank"} for plain-language exploration of a dataset from [*CultureX*](https://www.culturex.com/){target="_blank"}, containing corporate culture values across companies from different industries, measured through anonymous [*Glassdoor*](https://www.glassdoor.com){target="_blank"} reviews between Jan 1, 2023, and Apr 4, 2025.
  
-It consists of several agent-like components (powered by the ChatGPT-5-mini model), each responsible for a different aspect of the insight-generation process:
+It consists of several agent-like components (powered by the GPT-5-mini model), each responsible for a different aspect of the insight-generation process:
 
 * one component plans the analysis steps based on the user’s request, data characteristics, and broader context,
 * another evaluates the quality of the proposed plan and suggests adjustments if necessary,
@@ -49,3 +49,7 @@ Happy exploring 🕵️‍♀️
 P.S. As usual, genAI can make mistakes, so don’t trust the outputs blindly - always double-check 😉
 
 P.P.S Click the GitHub icon in the top right corner of the app to get to the code repo, or go directly [here](https://github.com/lstehlik2809/AI-Dataviz-Exploration/tree/main){target="_blank"}.
+
+----
+
+**Update**: After Google's release of Gemini 3 Flash Preview, which demonstrates a superior performance-to-price ratio, I replaced GPT-5-mini with this model. Its higher "intelligence" is readily apparent in the quality of the app's outputs - specifically through better chart selection and more nuanced data interpretations. It's a perfect example of the ongoing commoditization of "intelligence."
