@@ -1,0 +1,41 @@
+---
+title: 'Can flatter orgs undermine people management?'
+description: |
+  Flat orgs offer speed, but do they kill coaching? A causal look at how wide spans of control may impact people management quality - and how to bridge the gap with better design and/or AI. 
+preview: ./charts.png    
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 01-08-2026
+categories:
+  - org design
+  - span of control
+  - leadership
+  - people management
+  - future of work
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+Many companies these days are pushing to flatten their org structures, hoping it will bring the well-known benefits of a leaner org profile - e.g., faster decision-making, reduced bureaucratic overhead, and greater employee autonomy.
+
+With a flatter org structure, however, the resulting larger spans of control can negatively affect managers’ capacity to handle the people-related parts of their job - clarifying expectations, providing support and consideration, removing obstacles, securing resources, supporting development - you name it.
+
+To illustrate this trade-off, see the four plots below showing [G-computation](https://medium.com/@akif.iips/a-short-introduction-to-g-computation-in-causal-inference-9a67bd9e2233){target="_blank"} dose-response curves that estimate the causal effect of span of control (ranging from 1 to 22 direct reports) on four specific managerial behaviors (coaching, setting goals, communicating expectations, and providing feedback), as rated by direct reports, while controlling for common factors such as managers’ tenure, management level, department, performance rating, gender, age, region, job family, etc.
+
+<div style="text-align:center">
+![](./charts.png){width=100%}
+</div>
+
+As you can see, there is a negative - though non-linear and modest in absolute magnitude but very meaningful relative to the variability in the data - relationship between managers’ span of control and these managerial behaviors: the larger the former, the lower the latter.
+
+The existence of this trade-off, imo, doesn’t mean we should avoid flatter org designs. Rather, it means we should account for it and adjust other parts of organizational functioning to compensate for managers’ reduced capacity for people management - for example, by decoupling people development from administrative reporting lines, implementing peer-based feedback and coaching loops to distribute the support load, or maybe using AI to offload managers’ analytical, coordination, and administrative work so they can reallocate time and attention to high-quality people management.
+
+Curious whether anyone has dealt - successfully or unsuccessfully - with these negative consequences of organizational flattening. What worked, and what didn’t? Did you try AI as part of the solution?
+
+Note: If you’re interested, check [one of my previous posts](https://blog-about-people-analytics.netlify.app/posts/2023-02-08-span-of-control/){target="_blank"} that examines this topic from the perspective of 1:1 meeting frequency, as measured via collaboration metadata.
