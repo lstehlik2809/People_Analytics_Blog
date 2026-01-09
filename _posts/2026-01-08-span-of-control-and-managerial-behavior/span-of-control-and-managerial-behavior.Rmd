@@ -26,7 +26,7 @@ Many companies these days are pushing to flatten their org structures, hoping it
 
 With a flatter org structure, however, the resulting larger spans of control can negatively affect managers’ capacity to handle the people-related parts of their job - clarifying expectations, providing support and consideration, removing obstacles, securing resources, supporting development - you name it.
 
-To illustrate this trade-off, see the four plots below showing [G-computation](https://medium.com/@akif.iips/a-short-introduction-to-g-computation-in-causal-inference-9a67bd9e2233){target="_blank"} dose-response curves that estimate the causal effect of span of control (ranging from 1 to 22 direct reports) on four specific managerial behaviors (coaching, setting goals, communicating expectations, and providing feedback), as rated by direct reports, while controlling for common factors such as managers’ tenure, management level, department, performance rating, gender, age, region, job family, etc.
+To illustrate this trade-off, see the four plots below showing [G-computation](https://medium.com/@akif.iips/a-short-introduction-to-g-computation-in-causal-inference-9a67bd9e2233){target="_blank"} dose-response curves estimated using a Random Forest outcome model, which capture the causal effect of span of control (ranging from 1 to 22 direct reports) on four specific managerial behaviors (coaching, setting goals, communicating expectations, and providing feedback), as rated by direct reports, while controlling for common factors such as managers’ tenure, management level, department, performance rating, gender, age, region, job family, etc.
 
 <div style="text-align:center">
 ![](./charts.png){width=100%}
@@ -38,4 +38,437 @@ The existence of this trade-off, imo, doesn’t mean we should avoid flatter org
 
 Curious whether anyone has dealt - successfully or unsuccessfully - with these negative consequences of organizational flattening. What worked, and what didn’t? Did you try AI as part of the solution?
 
-Note: If you’re interested, check [one of my previous posts](https://blog-about-people-analytics.netlify.app/posts/2023-02-08-span-of-control/){target="_blank"} that examines this topic from the perspective of 1:1 meeting frequency, as measured via collaboration metadata.
+**Notes**:
+
+* If you’re interested in how the dose-response curves are computed using a Random Forest as the outcome model, check the code below.
+
+```{python, eval=FALSE}
+"""
+G-COMPUTATION FOR DOSE-RESPONSE CURVES WITH RANDOM FOREST
+===========================================================
+
+This script demonstrates how to implement G-computation (also known as 
+standardization or the g-formula) to estimate causal dose-response curves
+using Random Forest models.
+
+G-computation is a causal inference method that estimates the effect of an
+intervention by:
+1. Fitting a model for the outcome given exposure and confounders
+2. Predicting outcomes under counterfactual exposure scenarios for all individuals
+3. Averaging these predictions to get population-level causal effects
+
+This approach properly adjusts for confounding and can capture non-linear
+relationships using flexible machine learning models like Random Forest.
+
+"""
+
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+# Set plot style
+sns.set_style("white")
+
+
+def prepare_data(data, outcome_var, exposure_var, confounders):
+    """
+    Prepare data for G-computation analysis.
+    
+    Parameters:
+    -----------
+    data : pd.DataFrame
+        Raw dataset
+    outcome_var : str
+        Name of the outcome variable
+    exposure_var : str
+        Name of the exposure/treatment variable
+    confounders : list
+        List of confounder variable names
+        
+    Returns:
+    --------
+    X : pd.DataFrame
+        Feature matrix (exposure + confounders, with categorical variables encoded)
+    y : pd.Series
+        Outcome variable
+    modeling_data : pd.DataFrame
+        Complete dataset after preprocessing
+    """
+    # Select relevant variables
+    vars_of_interest = [outcome_var, exposure_var] + confounders
+    modeling_data = data[vars_of_interest].dropna()
+    
+    # Prepare features: one-hot encode categorical variables
+    # This creates dummy variables for categorical predictors while keeping numeric ones as-is
+    X = pd.get_dummies(
+        modeling_data.drop(columns=[outcome_var]), 
+        drop_first=True  # Avoid multicollinearity by dropping first category
+    )
+    
+    y = modeling_data[outcome_var]
+    
+    print(f"Dataset prepared: {len(modeling_data)} observations")
+    print(f"Features: {X.shape[1]} (after encoding)")
+    
+    return X, y, modeling_data
+
+
+def fit_outcome_model(X, y, n_estimators=200, random_state=2026):
+    """
+    Fit a Random Forest model for the outcome.
+    
+    Parameters:
+    -----------
+    X : pd.DataFrame
+        Feature matrix
+    y : pd.Series
+        Outcome variable
+    n_estimators : int
+        Number of trees in the random forest
+    random_state : int
+        Random seed for reproducibility
+        
+    Returns:
+    --------
+    model : RandomForestRegressor
+        Fitted Random Forest model
+    """
+    print(f"\nFitting Random Forest with {n_estimators} trees...")
+    
+    model = RandomForestRegressor(
+        n_estimators=n_estimators,
+        random_state=random_state,
+        n_jobs=-1  # Use all CPU cores
+    )
+    
+    model.fit(X, y)
+    
+    # Calculate R² on training data as a sanity check
+    r2 = model.score(X, y)
+    print(f"Model R²: {r2:.3f}")
+    
+    return model
+
+
+def gcomputation_dose_response(model, X, exposure_var, exposure_range, 
+                                n_bootstrap=100, random_state=2026):
+    """
+    Perform G-computation to estimate causal dose-response curve.
+    
+    The key idea: For each exposure level in the range, we:
+    1. Create a "counterfactual world" where everyone has that exposure level
+    2. Predict outcomes for everyone in this world
+    3. Average these predictions to get the expected outcome if the whole 
+       population was exposed at that level
+    4. Repeat for each exposure level to trace out the dose-response curve
+    
+    Parameters:
+    -----------
+    model : fitted model
+        Trained outcome model (e.g., Random Forest)
+    X : pd.DataFrame
+        Feature matrix with original data
+    exposure_var : str
+        Name of the exposure variable in X
+    exposure_range : array-like
+        Range of exposure values to evaluate (e.g., range(1, 23))
+    n_bootstrap : int
+        Number of bootstrap iterations for confidence intervals
+    random_state : int
+        Random seed for reproducibility
+        
+    Returns:
+    --------
+    results_df : pd.DataFrame
+        DataFrame with columns: exposure level, expected outcome, CI_lower, CI_upper
+    """
+    print(f"\n{'='*70}")
+    print("PERFORMING G-COMPUTATION")
+    print(f"{'='*70}")
+    print(f"Exposure variable: {exposure_var}")
+    print(f"Exposure range: {min(exposure_range)} to {max(exposure_range)}")
+    print(f"Bootstrap iterations: {n_bootstrap}")
+    
+    # Check if exposure variable exists in the data
+    if exposure_var not in X.columns:
+        raise ValueError(f"Exposure variable '{exposure_var}' not found in data")
+    
+    # Storage for results
+    causal_effects = []
+    causal_effects_lower = []
+    causal_effects_upper = []
+    
+    np.random.seed(random_state)
+    
+    # Loop through each exposure level (the "dose" in dose-response)
+    for exposure_level in exposure_range:
+        
+        # STEP 1: Create counterfactual dataset
+        # Copy the entire dataset and set the exposure to this specific level for everyone
+        X_counterfactual = X.copy()
+        X_counterfactual[exposure_var] = exposure_level
+        
+        # STEP 2: Predict outcomes under this intervention
+        # This gives us "what would happen if everyone had this exposure level"
+        y_pred = model.predict(X_counterfactual)
+        
+        # STEP 3: Average the predictions (standardization/marginal mean)
+        # This is the causal effect at this exposure level
+        causal_effects.append(y_pred.mean())
+        
+        # STEP 4: Bootstrap for confidence intervals
+        # We resample with replacement to account for sampling uncertainty
+        bootstrap_means = []
+        for _ in range(n_bootstrap):
+            # Resample observations
+            idx = np.random.choice(len(X_counterfactual), size=len(X_counterfactual), replace=True)
+            y_boot = model.predict(X_counterfactual.iloc[idx])
+            bootstrap_means.append(y_boot.mean())
+        
+        # Calculate 95% confidence interval from bootstrap distribution
+        causal_effects_lower.append(np.percentile(bootstrap_means, 2.5))
+        causal_effects_upper.append(np.percentile(bootstrap_means, 97.5))
+    
+    # Create results dataframe
+    results_df = pd.DataFrame({
+        'exposure_level': list(exposure_range),
+        'expected_outcome': causal_effects,
+        'ci_lower': causal_effects_lower,
+        'ci_upper': causal_effects_upper
+    })
+    
+    print(f"\nG-computation complete!")
+    print(f"Estimated dose-response curve for {len(exposure_range)} exposure levels")
+    
+    return results_df
+
+
+def plot_dose_response(results_df, exposure_var, outcome_var, 
+                       save_path=None, figsize=(10, 6)):
+    """
+    Plot the estimated causal dose-response curve.
+    
+    Parameters:
+    -----------
+    results_df : pd.DataFrame
+        Results from gcomputation_dose_response
+    exposure_var : str
+        Name of exposure variable (for axis labels)
+    outcome_var : str
+        Name of outcome variable (for axis labels)
+    save_path : str, optional
+        Path to save the figure
+    figsize : tuple
+        Figure size (width, height)
+    """
+    fig, ax = plt.subplots(figsize=figsize)
+    
+    # Plot the dose-response curve
+    ax.plot(
+        results_df['exposure_level'], 
+        results_df['expected_outcome'], 
+        color='darkblue', 
+        linewidth=2.5, 
+        label='Expected Outcome'
+    )
+    
+    # Add confidence interval band
+    ax.fill_between(
+        results_df['exposure_level'],
+        results_df['ci_lower'], 
+        results_df['ci_upper'], 
+        alpha=0.3, 
+        color='lightblue', 
+        label='95% CI (Bootstrap)'
+    )
+    
+    # Labels and formatting
+    ax.set_xlabel(exposure_var, fontsize=12)
+    ax.set_ylabel(f'Expected {outcome_var}', fontsize=12, weight='bold')
+    ax.set_title(f'Causal Dose-Response Curve: {outcome_var} vs {exposure_var}', 
+                fontsize=14, weight='normal')
+    
+    ax.legend(loc='best', fontsize=10)
+    ax.grid(True, alpha=0.3, linestyle='--')
+    
+    # Remove top and right spines for cleaner look
+    sns.despine()
+    
+    plt.tight_layout()
+    
+    # Save if path provided
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        print(f"Plot saved to: {save_path}")
+    
+    plt.show()
+    
+    return fig, ax
+
+
+def run_gcomputation_analysis(data, outcome_var, exposure_var, confounders, 
+                               exposure_range, n_estimators=200, n_bootstrap=100,
+                               save_results_path=None, save_plot_path=None,
+                               random_state=2026):
+    """
+    Complete pipeline for G-computation dose-response analysis.
+    
+    This function orchestrates the entire analysis:
+    1. Data preparation
+    2. Model fitting
+    3. G-computation estimation
+    4. Visualization
+    5. Results export
+    
+    Parameters:
+    -----------
+    data : pd.DataFrame
+        Raw dataset
+    outcome_var : str
+        Name of outcome variable
+    exposure_var : str
+        Name of exposure/treatment variable
+    confounders : list
+        List of confounder variable names
+    exposure_range : array-like
+        Range of exposure values to evaluate
+    n_estimators : int
+        Number of trees in Random Forest
+    n_bootstrap : int
+        Number of bootstrap iterations for CIs
+    save_results_path : str, optional
+        Path to save results CSV
+    save_plot_path : str, optional
+        Path to save plot
+    random_state : int
+        Random seed for reproducibility
+        
+    Returns:
+    --------
+    results_df : pd.DataFrame
+        G-computation results
+    model : fitted model
+        Trained outcome model
+    """
+    print(f"\n{'='*70}")
+    print("G-COMPUTATION DOSE-RESPONSE ANALYSIS")
+    print(f"{'='*70}")
+    print(f"Outcome: {outcome_var}")
+    print(f"Exposure: {exposure_var}")
+    print(f"Confounders: {len(confounders)}")
+    
+    # Step 1: Prepare data
+    X, y, modeling_data = prepare_data(data, outcome_var, exposure_var, confounders)
+    
+    # Step 2: Fit outcome model
+    model = fit_outcome_model(X, y, n_estimators=n_estimators, random_state=random_state)
+    
+    # Step 3: G-computation
+    results_df = gcomputation_dose_response(
+        model, X, exposure_var, exposure_range, 
+        n_bootstrap=n_bootstrap, random_state=random_state
+    )
+    
+    # Step 4: Visualization
+    plot_dose_response(
+        results_df, exposure_var, outcome_var, 
+        save_path=save_plot_path
+    )
+    
+    # Step 5: Save results
+    if save_results_path:
+        results_df.to_csv(save_results_path, index=False)
+        print(f"\nResults saved to: {save_results_path}")
+    
+    print(f"\n{'='*70}")
+    print("ANALYSIS COMPLETE")
+    print(f"{'='*70}\n")
+    
+    return results_df, model
+
+
+# ============================================================================
+# EXAMPLE USAGE
+# ============================================================================
+
+if __name__ == "__main__":
+    """
+    Example usage with simulated data.
+    Replace this with your actual data loading and variable specification.
+    """
+    
+    # Example: Simulate data (replace with your actual data)
+    # np.random.seed(2026)
+    # n = 1000
+    # 
+    # data = pd.DataFrame({
+    #     'outcome': np.random.randn(n) + 0.1 * np.random.randint(1, 20, n),
+    #     'exposure': np.random.randint(1, 20, n),
+    #     'age': np.random.randint(25, 65, n),
+    #     'gender': np.random.choice(['Male', 'Female'], n),
+    #     'department': np.random.choice(['A', 'B', 'C'], n),
+    #     'tenure': np.random.randint(1, 30, n)
+    # })
+    # 
+    # # Define variables
+    # outcome_var = 'outcome'
+    # exposure_var = 'exposure'
+    # confounders = ['age', 'gender', 'department', 'tenure']
+    # exposure_range = range(1, 20)
+    # 
+    # # Run analysis
+    # results, model = run_gcomputation_analysis(
+    #     data=data,
+    #     outcome_var=outcome_var,
+    #     exposure_var=exposure_var,
+    #     confounders=confounders,
+    #     exposure_range=exposure_range,
+    #     n_estimators=200,
+    #     n_bootstrap=100,
+    #     save_results_path='gcomputation_results.csv',
+    #     save_plot_path='gcomputation_plot.png',
+    #     random_state=2026
+    # )
+    # 
+    # # View results
+    # print(results.head())
+    
+    print("Please uncomment the example code above or provide your own data.")
+    print("\nKey steps:")
+    print("1. Load your data")
+    print("2. Specify outcome, exposure, and confounders")
+    print("3. Call run_gcomputation_analysis()")
+    print("4. Interpret the dose-response curve")
+
+
+"""
+INTERPRETATION GUIDE
+====================
+
+The resulting dose-response curve shows:
+- X-axis: Different levels of exposure (the "dose")
+- Y-axis: Expected value of the outcome if everyone had that exposure level
+- Shaded area: 95% confidence interval (uncertainty in the estimate)
+
+KEY POINTS:
+- The curve represents causal effects under standard causal assumptions:
+  * No unmeasured confounding (all confounders are measured and included)
+  * Correct model specification (Random Forest helps with flexibility)
+  * Positivity (all individuals could theoretically receive any exposure level)
+  * Consistency (well-defined interventions)
+
+- Non-linear patterns: If the curve is not a straight line, this indicates 
+  non-linear dose-response relationships that might be missed by linear models
+
+- Optimal exposure: Look for peaks or plateaus in the curve to identify 
+  exposure levels associated with best outcomes
+
+- Clinical/practical significance: Consider whether differences across the 
+  curve are large enough to matter in practice, not just statistically significant
+
+"""
+```
+* You can also check [one of my previous posts](https://blog-about-people-analytics.netlify.app/posts/2023-02-08-span-of-control/){target="_blank"} that examines this topic from the perspective of 1:1 meeting frequency, as measured via collaboration metadata.
