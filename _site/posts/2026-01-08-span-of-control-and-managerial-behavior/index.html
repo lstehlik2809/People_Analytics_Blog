@@ -105,8 +105,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:description" content="Flat orgs offer speed, but do they kill coaching? A causal look at how wide spans of control may impact people management quality - and how to bridge the gap with better design and/or AI."/>
 <meta property="og:url" content="https://blog-about-people-analytics.netlify.app/posts/2026-01-08-span-of-control-and-managerial-behavior/"/>
 <meta property="og:image" content="https://blog-about-people-analytics.netlify.app/posts/2026-01-08-span-of-control-and-managerial-behavior/./charts.png"/>
-<meta property="og:image:width" content="1285"/>
-<meta property="og:image:height" content="747"/>
+<meta property="og:image:width" content="1277"/>
+<meta property="og:image:height" content="743"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ludek&#39;s Blog About People Analytics"/>
 
@@ -116,8 +116,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="twitter:description" content="Flat orgs offer speed, but do they kill coaching? A causal look at how wide spans of control may impact people management quality - and how to bridge the gap with better design and/or AI."/>
 <meta property="twitter:url" content="https://blog-about-people-analytics.netlify.app/posts/2026-01-08-span-of-control-and-managerial-behavior/"/>
 <meta property="twitter:image" content="https://blog-about-people-analytics.netlify.app/posts/2026-01-08-span-of-control-and-managerial-behavior/./charts.png"/>
-<meta property="twitter:image:width" content="1285"/>
-<meta property="twitter:image:height" content="747"/>
+<meta property="twitter:image:width" content="1277"/>
+<meta property="twitter:image:height" content="743"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
 <meta name="citation_title" content="Ludek&#39;s Blog About People Analytics: Can flatter orgs undermine people management?"/>
@@ -2196,14 +2196,14 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-article">
 <p>Many companies these days are pushing to flatten their org structures, hoping it will bring the well-known benefits of a leaner org profile - e.g., faster decision-making, reduced bureaucratic overhead, and greater employee autonomy.</p>
 <p>With a flatter org structure, however, the resulting larger spans of control can negatively affect managers’ capacity to handle the people-related parts of their job - clarifying expectations, providing support and consideration, removing obstacles, securing resources, supporting development - you name it.</p>
-<p>To illustrate this trade-off, see the four plots below showing <a href="https://medium.com/@akif.iips/a-short-introduction-to-g-computation-in-causal-inference-9a67bd9e2233" target="_blank">G-computation</a> dose-response curves estimated using a Random Forest outcome model, which capture the causal effect of span of control (ranging from 1 to 22 direct reports) on four specific managerial behaviors (coaching, setting goals, communicating expectations, and providing feedback), as rated by direct reports, while controlling for common factors such as managers’ tenure, management level, department, performance rating, gender, age, region, job family, etc.</p>
+<p>To illustrate this trade-off, see the four plots below showing <a href="https://medium.com/@akif.iips/a-short-introduction-to-g-computation-in-causal-inference-9a67bd9e2233" target="_blank">G-computation</a> dose-response curves estimated using a Random Forest outcome model with bootstrapped uncertainty intervals that account for both sampling variability and model estimation error. The plots capture the causal effect of span of control (ranging from 1 to 22 direct reports) on four specific managerial behaviors (coaching, setting goals, communicating expectations, and providing feedback), as rated by direct reports, while controlling for common factors such as managers’ tenure, management level, department, performance rating, gender, age, region, job family, etc.</p>
 <div style="text-align:center">
 <p><img src="charts.png" style="width:100.0%" /></p>
 </div>
 <p>As you can see, there is a negative - though non-linear and modest in absolute magnitude but very meaningful relative to the variability in the data - relationship between managers’ span of control and these managerial behaviors: the larger the former, the lower the latter.</p>
 <p>The existence of this trade-off, imo, doesn’t mean we should avoid flatter org designs. Rather, it means we should account for it and adjust other parts of organizational functioning to compensate for managers’ reduced capacity for people management - for example, by decoupling people development from administrative reporting lines, implementing peer-based feedback and coaching loops to distribute the support load, or maybe using AI to offload managers’ analytical, coordination, and administrative work so they can reallocate time and attention to high-quality people management.</p>
 <p>Curious whether anyone has dealt - successfully or unsuccessfully - with these negative consequences of organizational flattening. What worked, and what didn’t? Did you try AI as part of the solution?</p>
-<p>P.S. What’s interesting is the “hook” at the start of the dose-response curve - the depressed expected outcome scores at minimal spans (1–3). IMO, there are three plausible and likely converging mechanisms: role conflict, dyadic intensity, and selection bias. In smaller teams, managers are more often in “player–coach” roles, which entail significant resource-allocation conflicts: dominant individual-contributor duties crowd out the cognitive bandwidth required for high-quality people management. At the same time, the lack of distributed attention in a 1:1 dynamic can create a “surveillance effect,” where standard oversight is perceived by direct reports as hyper-scrutiny or micromanagement rather than developmental support. Finally, this cohort may reflect a maturity confound, even after accounting for the available control variables—effectively acting as “training wheels” for novice leaders or as containment roles for specific performance contexts—thereby skewing the behavioral signal downward. I’m curious what your hypothesis is, and how you’re thinking about what might be driving this.</p>
+<p>P.S. You might notice the distinct “hook” at the start of the dose-response curves - expected management quality actually dips for very small spans (1–3) before peaking around 4–6. While the wider confidence intervals in this region (the light blue bands) reflect the natural variability of smaller sample sizes, the fact that this dip appears consistently across multiple distinct behaviors suggests a structural signal, not just noise. IMO, there are three plausible and likely converging mechanisms: role conflict, dyadic intensity, and selection bias. In smaller teams, managers are more often in “player–coach” roles, which entail significant resource-allocation conflicts: dominant individual-contributor duties crowd out the cognitive bandwidth required for high-quality people management. At the same time, the lack of distributed attention in a 1:1 dynamic can create a “surveillance effect,” where standard oversight is perceived by direct reports as hyper-scrutiny or micromanagement rather than developmental support. Finally, this cohort may reflect a maturity confound, even after accounting for the available control variables—effectively acting as “training wheels” for novice leaders or as containment roles for specific performance contexts—thereby skewing the behavioral signal downward. I’m curious what your hypothesis is, and how you’re thinking about what might be driving this.</p>
 <p><strong>Notes</strong>:</p>
 <ul>
 <li>If you’re interested in how the dose-response curves are computed using a Random Forest as the outcome model, check the code below.</li>
@@ -2217,9 +2217,9 @@ Show code
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">G-COMPUTATION FOR DOSE-RESPONSE CURVES WITH RANDOM FOREST</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">===========================================================</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">This script demonstrates how to implement G-computation (also known as </span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">standardization or the g-formula) to estimate causal dose-response curves</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">using Random Forest models.</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">This script demonstrates how to implement G-computation (also known as standardization </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">or the g-formula) to estimate causal dose-response curves using Random Forest models </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">with robust bootstrapping for uncertainty estimation.</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">G-computation is a causal inference method that estimates the effect of an</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">intervention by:</span></span>
@@ -2228,418 +2228,240 @@ Show code
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">3. Averaging these predictions to get population-level causal effects</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">This approach properly adjusts for confounding and can capture non-linear</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">relationships using flexible machine learning models like Random Forest.</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">relationships. Crucially, this version bootstraps the *estimator* (refitting the model)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">to capture both sampling and model uncertainty.</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;&quot;&quot;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> joblib <span class="im">import</span> Parallel, delayed</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Set plot style</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">&quot;white&quot;</span>)</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prepare_data(data, outcome_var, exposure_var, confounders):</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">    Prepare data for G-computation analysis.</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">    data : pd.DataFrame</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">        Raw dataset</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">    outcome_var : str</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of the outcome variable</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_var : str</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of the exposure/treatment variable</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">    confounders : list</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">        List of confounder variable names</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">    X : pd.DataFrame</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">        Feature matrix (exposure + confounders, with categorical variables encoded)</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co">    y : pd.Series</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co">        Outcome variable</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co">    modeling_data : pd.DataFrame</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co">        Complete dataset after preprocessing</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Select relevant variables</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    vars_of_interest <span class="op">=</span> [outcome_var, exposure_var] <span class="op">+</span> confounders</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    modeling_data <span class="op">=</span> data[vars_of_interest].dropna()</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Prepare features: one-hot encode categorical variables</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This creates dummy variables for categorical predictors while keeping numeric ones as-is</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> pd.get_dummies(</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>        modeling_data.drop(columns<span class="op">=</span>[outcome_var]), </span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>        drop_first<span class="op">=</span><span class="va">True</span>  <span class="co"># Avoid multicollinearity by dropping first category</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> modeling_data[outcome_var]</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Dataset prepared: </span><span class="sc">{</span><span class="bu">len</span>(modeling_data)<span class="sc">}</span><span class="ss"> observations&quot;</span>)</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Features: </span><span class="sc">{</span>X<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss"> (after encoding)&quot;</span>)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> prepare_data(data, outcome_var, exposure_var, confounders):</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">    Prepare data for G-computation analysis.</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Select relevant variables</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    vars_of_interest <span class="op">=</span> [outcome_var, exposure_var] <span class="op">+</span> confounders</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    modeling_data <span class="op">=</span> data[vars_of_interest].dropna()</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Prepare features: one-hot encode categorical variables</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> pd.get_dummies(</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        modeling_data.drop(columns<span class="op">=</span>[outcome_var]), </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        drop_first<span class="op">=</span><span class="va">True</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> modeling_data[outcome_var]</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Dataset prepared: </span><span class="sc">{</span><span class="bu">len</span>(modeling_data)<span class="sc">}</span><span class="ss"> observations&quot;</span>)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Features: </span><span class="sc">{</span>X<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss"> (after encoding)&quot;</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X, y, modeling_data</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> _bootstrap_iteration(X, y, exposure_var, exposure_range, n_estimators, random_state):</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co">    Helper function to run a single bootstrap iteration:</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co">    1. Resample data</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">    2. Refit model</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">    3. Predict counterfactuals</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Resample (Bootstrap)</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    boot_idx <span class="op">=</span> np.random.choice(<span class="bu">len</span>(X), size<span class="op">=</span><span class="bu">len</span>(X), replace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    X_boot <span class="op">=</span> X.iloc[boot_idx]</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    y_boot <span class="op">=</span> y.iloc[boot_idx]</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Fit Model on Bootstrap Sample</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note: n_jobs=1 here because we parallelize the outer loop</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> RandomForestRegressor(</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>        n_estimators<span class="op">=</span>n_estimators,</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>        random_state<span class="op">=</span>random_state,</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>        n_jobs<span class="op">=</span><span class="dv">1</span> </span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    model.fit(X_boot, y_boot)</span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> X, y, modeling_data</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fit_outcome_model(X, y, n_estimators<span class="op">=</span><span class="dv">200</span>, random_state<span class="op">=</span><span class="dv">2026</span>):</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">    Fit a Random Forest model for the outcome.</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co">    X : pd.DataFrame</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="co">        Feature matrix</span></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="co">    y : pd.Series</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="co">        Outcome variable</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="co">    n_estimators : int</span></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of trees in the random forest</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="co">    random_state : int</span></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="co">        Random seed for reproducibility</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="co">    model : RandomForestRegressor</span></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="co">        Fitted Random Forest model</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Fitting Random Forest with </span><span class="sc">{</span>n_estimators<span class="sc">}</span><span class="ss"> trees...&quot;</span>)</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> RandomForestRegressor(</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>        n_estimators<span class="op">=</span>n_estimators,</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>        random_state<span class="op">=</span>random_state,</span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>        n_jobs<span class="op">=-</span><span class="dv">1</span>  <span class="co"># Use all CPU cores</span></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>    model.fit(X, y)</span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate R² on training data as a sanity check</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>    r2 <span class="op">=</span> model.score(X, y)</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Model R²: </span><span class="sc">{</span>r2<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> model</span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gcomputation_dose_response(model, X, exposure_var, exposure_range, </span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>                                n_bootstrap<span class="op">=</span><span class="dv">100</span>, random_state<span class="op">=</span><span class="dv">2026</span>):</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="co">    Perform G-computation to estimate causal dose-response curve.</span></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="co">    The key idea: For each exposure level in the range, we:</span></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="co">    1. Create a &quot;counterfactual world&quot; where everyone has that exposure level</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">    2. Predict outcomes for everyone in this world</span></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="co">    3. Average these predictions to get the expected outcome if the whole </span></span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="co">       population was exposed at that level</span></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="co">    4. Repeat for each exposure level to trace out the dose-response curve</span></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="co">    model : fitted model</span></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="co">        Trained outcome model (e.g., Random Forest)</span></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="co">    X : pd.DataFrame</span></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co">        Feature matrix with original data</span></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_var : str</span></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of the exposure variable in X</span></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_range : array-like</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="co">        Range of exposure values to evaluate (e.g., range(1, 23))</span></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="co">    n_bootstrap : int</span></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of bootstrap iterations for confidence intervals</span></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="co">    random_state : int</span></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="co">        Random seed for reproducibility</span></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="co">    results_df : pd.DataFrame</span></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="co">        DataFrame with columns: exposure level, expected outcome, CI_lower, CI_upper</span></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;PERFORMING G-COMPUTATION&quot;</span>)</span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Exposure variable: </span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Exposure range: </span><span class="sc">{</span><span class="bu">min</span>(exposure_range)<span class="sc">}</span><span class="ss"> to </span><span class="sc">{</span><span class="bu">max</span>(exposure_range)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Bootstrap iterations: </span><span class="sc">{</span>n_bootstrap<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if exposure variable exists in the data</span></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> exposure_var <span class="kw">not</span> <span class="kw">in</span> X.columns:</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f&quot;Exposure variable &#39;</span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&#39; not found in data&quot;</span>)</span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Storage for results</span></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    causal_effects <span class="op">=</span> []</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>    causal_effects_lower <span class="op">=</span> []</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>    causal_effects_upper <span class="op">=</span> []</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Predict Counterfactuals</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    means <span class="op">=</span> []</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    X_cf <span class="op">=</span> X.copy() <span class="co"># Use original population structure for marginalization</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> level <span class="kw">in</span> exposure_range:</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>        X_cf[exposure_var] <span class="op">=</span> level</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Average prediction for this exposure level</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>        means.append(model.predict(X_cf).mean())</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> means</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gcomputation_dose_response(X, y, exposure_var, exposure_range, </span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>                               n_bootstrap<span class="op">=</span><span class="dv">100</span>, n_estimators<span class="op">=</span><span class="dv">50</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>,</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>                               random_state<span class="op">=</span><span class="dv">2026</span>):</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="co">    Perform G-computation with robust bootstrapping.</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">    X : pd.DataFrame</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="co">        Feature matrix</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="co">    y : pd.Series</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="co">        Outcome variable</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_var : str</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of the exposure variable</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_range : array-like</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co">        Range of exposure values to evaluate</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="co">    n_bootstrap : int</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of bootstrap iterations (refitting the model)</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">    n_estimators : int</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of trees for the bootstrap models (usually fewer than main model)</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co">    n_jobs : int</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of CPU cores to use (-1 for all)</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="co">    results_df : pd.DataFrame</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;PERFORMING ROBUST G-COMPUTATION&quot;</span>)</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Exposure variable: </span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Exposure range: </span><span class="sc">{</span><span class="bu">min</span>(exposure_range)<span class="sc">}</span><span class="ss"> to </span><span class="sc">{</span><span class="bu">max</span>(exposure_range)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Bootstrap iterations: </span><span class="sc">{</span>n_bootstrap<span class="sc">}</span><span class="ss"> (Refitting model each time)&quot;</span>)</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if exposure variable exists in the data</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> exposure_var <span class="kw">not</span> <span class="kw">in</span> X.columns:</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f&quot;Exposure variable &#39;</span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&#39; not found in data&quot;</span>)</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Calculate Point Estimate (Main Model)</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Fitting main model for point estimates...&quot;</span>)</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>    main_model <span class="op">=</span> RandomForestRegressor(n_estimators<span class="op">=</span><span class="dv">200</span>, random_state<span class="op">=</span>random_state, n_jobs<span class="op">=</span>n_jobs)</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>    main_model.fit(X, y)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>    expected_outcomes <span class="op">=</span> []</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>    X_cf <span class="op">=</span> X.copy()</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> level <span class="kw">in</span> exposure_range:</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>        X_cf[exposure_var] <span class="op">=</span> level</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>        expected_outcomes.append(main_model.predict(X_cf).mean())</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Bootstrap for Uncertainty (Parallelized)</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Running bootstrap iterations...&quot;</span>)</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Generate random seeds for each iteration to ensure diversity</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>    rng <span class="op">=</span> np.random.RandomState(random_state)</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>    seeds <span class="op">=</span> rng.randint(<span class="dv">0</span>, <span class="dv">100000</span>, size<span class="op">=</span>n_bootstrap)</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>    boot_results <span class="op">=</span> Parallel(n_jobs<span class="op">=</span>n_jobs, verbose<span class="op">=</span><span class="dv">1</span>)(</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>        delayed(_bootstrap_iteration)(</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>            X, y, exposure_var, exposure_range, n_estimators, seed</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>        ) <span class="cf">for</span> seed <span class="kw">in</span> seeds</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert list of lists to numpy array: (n_bootstrap, n_levels)</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>    boot_matrix <span class="op">=</span> np.array(boot_results)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate Confidence Intervals (Percentile Method)</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    ci_lower <span class="op">=</span> np.percentile(boot_matrix, <span class="fl">2.5</span>, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    ci_upper <span class="op">=</span> np.percentile(boot_matrix, <span class="fl">97.5</span>, axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create results dataframe</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    results_df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;exposure_level&#39;</span>: <span class="bu">list</span>(exposure_range),</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;expected_outcome&#39;</span>: expected_outcomes,</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;ci_lower&#39;</span>: ci_lower,</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;ci_upper&#39;</span>: ci_upper</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>    })</span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>    np.random.seed(random_state)</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop through each exposure level (the &quot;dose&quot; in dose-response)</span></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> exposure_level <span class="kw">in</span> exposure_range:</span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>        <span class="co"># STEP 1: Create counterfactual dataset</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Copy the entire dataset and set the exposure to this specific level for everyone</span></span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>        X_counterfactual <span class="op">=</span> X.copy()</span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>        X_counterfactual[exposure_var] <span class="op">=</span> exposure_level</span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>        <span class="co"># STEP 2: Predict outcomes under this intervention</span></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>        <span class="co"># This gives us &quot;what would happen if everyone had this exposure level&quot;</span></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>        y_pred <span class="op">=</span> model.predict(X_counterfactual)</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>        <span class="co"># STEP 3: Average the predictions (standardization/marginal mean)</span></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>        <span class="co"># This is the causal effect at this exposure level</span></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>        causal_effects.append(y_pred.mean())</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>        <span class="co"># STEP 4: Bootstrap for confidence intervals</span></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>        <span class="co"># We resample with replacement to account for sampling uncertainty</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>        bootstrap_means <span class="op">=</span> []</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_bootstrap):</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Resample observations</span></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>            idx <span class="op">=</span> np.random.choice(<span class="bu">len</span>(X_counterfactual), size<span class="op">=</span><span class="bu">len</span>(X_counterfactual), replace<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>            y_boot <span class="op">=</span> model.predict(X_counterfactual.iloc[idx])</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>            bootstrap_means.append(y_boot.mean())</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate 95% confidence interval from bootstrap distribution</span></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>        causal_effects_lower.append(np.percentile(bootstrap_means, <span class="fl">2.5</span>))</span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>        causal_effects_upper.append(np.percentile(bootstrap_means, <span class="fl">97.5</span>))</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create results dataframe</span></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    results_df <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;exposure_level&#39;</span>: <span class="bu">list</span>(exposure_range),</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;expected_outcome&#39;</span>: causal_effects,</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;ci_lower&#39;</span>: causal_effects_lower,</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;ci_upper&#39;</span>: causal_effects_upper</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">G-computation complete!&quot;</span>)</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Estimated dose-response curve for </span><span class="sc">{</span><span class="bu">len</span>(exposure_range)<span class="sc">}</span><span class="ss"> exposure levels&quot;</span>)</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results_df</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_dose_response(results_df, exposure_var, outcome_var, </span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>                       save_path<span class="op">=</span><span class="va">None</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>)):</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="co">    Plot the estimated causal dose-response curve.</span></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="co">    results_df : pd.DataFrame</span></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="co">        Results from gcomputation_dose_response</span></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_var : str</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of exposure variable (for axis labels)</span></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="co">    outcome_var : str</span></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of outcome variable (for axis labels)</span></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="co">    save_path : str, optional</span></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="co">        Path to save the figure</span></span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="co">    figsize : tuple</span></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="co">        Figure size (width, height)</span></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>figsize)</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the dose-response curve</span></span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>    ax.plot(</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;exposure_level&#39;</span>], </span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;expected_outcome&#39;</span>], </span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">&#39;darkblue&#39;</span>, </span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>        linewidth<span class="op">=</span><span class="fl">2.5</span>, </span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">&#39;Expected Outcome&#39;</span></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add confidence interval band</span></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    ax.fill_between(</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;exposure_level&#39;</span>],</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;ci_lower&#39;</span>], </span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;ci_upper&#39;</span>], </span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.3</span>, </span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">&#39;lightblue&#39;</span>, </span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">&#39;95% CI (Bootstrap)&#39;</span></span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">G-computation complete!&quot;</span>)</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results_df</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_dose_response(results_df, exposure_var, outcome_var, </span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>                        save_path<span class="op">=</span><span class="va">None</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>)):</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="co">    Plot the estimated causal dose-response curve.</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>figsize)</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the dose-response curve</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>    ax.plot(</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;exposure_level&#39;</span>], </span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;expected_outcome&#39;</span>], </span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">&#39;darkblue&#39;</span>, </span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>        linewidth<span class="op">=</span><span class="fl">2.5</span>, </span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">&#39;Expected Outcome (ATE)&#39;</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add confidence interval band</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    ax.fill_between(</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;exposure_level&#39;</span>],</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;ci_lower&#39;</span>], </span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>        results_df[<span class="st">&#39;ci_upper&#39;</span>], </span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>        alpha<span class="op">=</span><span class="fl">0.3</span>, </span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span><span class="st">&#39;lightblue&#39;</span>, </span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="st">&#39;95% CI (Model + Sampling Uncertainty)&#39;</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Labels and formatting</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(exposure_var, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="ss">f&#39;Expected </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss">&#39;</span>, fontsize<span class="op">=</span><span class="dv">12</span>, weight<span class="op">=</span><span class="st">&#39;bold&#39;</span>)</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f&#39;Causal Dose-Response Curve: </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss"> vs </span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&#39;</span>, </span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>                 fontsize<span class="op">=</span><span class="dv">14</span>, weight<span class="op">=</span><span class="st">&#39;normal&#39;</span>)</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    ax.legend(loc<span class="op">=</span><span class="st">&#39;best&#39;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>)</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove top and right spines for cleaner look</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    sns.despine()</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> save_path:</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>        plt.savefig(save_path, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">&#39;tight&#39;</span>)</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Plot saved to: </span><span class="sc">{</span>save_path<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fig, ax</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_gcomputation_analysis(data, outcome_var, exposure_var, confounders, </span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>                                exposure_range, n_bootstrap<span class="op">=</span><span class="dv">100</span>, </span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>                               save_results_path<span class="op">=</span><span class="va">None</span>, save_plot_path<span class="op">=</span><span class="va">None</span>,</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>                               random_state<span class="op">=</span><span class="dv">2026</span>):</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="co">    Complete pipeline for G-computation dose-response analysis.</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;G-COMPUTATION DOSE-RESPONSE ANALYSIS&quot;</span>)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 1: Prepare data</span></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>    X, y, _ <span class="op">=</span> prepare_data(data, outcome_var, exposure_var, confounders)</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 2: G-computation (Fit &amp; Bootstrap included)</span></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>    results_df <span class="op">=</span> gcomputation_dose_response(</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>        X, y, exposure_var, exposure_range, </span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>        n_bootstrap<span class="op">=</span>n_bootstrap, </span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>        random_state<span class="op">=</span>random_state</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 3: Visualization</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>    plot_dose_response(</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>        results_df, exposure_var, outcome_var, </span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>        save_path<span class="op">=</span>save_plot_path</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 4: Save results</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> save_results_path:</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>        results_df.to_csv(save_results_path, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">ANALYSIS COMPLETE&quot;</span>)</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Labels and formatting</span></span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(exposure_var, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="ss">f&#39;Expected </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss">&#39;</span>, fontsize<span class="op">=</span><span class="dv">12</span>, weight<span class="op">=</span><span class="st">&#39;bold&#39;</span>)</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f&#39;Causal Dose-Response Curve: </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss"> vs </span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&#39;</span>, </span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>                fontsize<span class="op">=</span><span class="dv">14</span>, weight<span class="op">=</span><span class="st">&#39;normal&#39;</span>)</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    ax.legend(loc<span class="op">=</span><span class="st">&#39;best&#39;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>    ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>)</span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove top and right spines for cleaner look</span></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    sns.despine()</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Save if path provided</span></span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> save_path:</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>        plt.savefig(save_path, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">&#39;tight&#39;</span>)</span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Plot saved to: </span><span class="sc">{</span>save_path<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fig, ax</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> run_gcomputation_analysis(data, outcome_var, exposure_var, confounders, </span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>                               exposure_range, n_estimators<span class="op">=</span><span class="dv">200</span>, n_bootstrap<span class="op">=</span><span class="dv">100</span>,</span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>                               save_results_path<span class="op">=</span><span class="va">None</span>, save_plot_path<span class="op">=</span><span class="va">None</span>,</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>                               random_state<span class="op">=</span><span class="dv">2026</span>):</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="co">    Complete pipeline for G-computation dose-response analysis.</span></span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="co">    This function orchestrates the entire analysis:</span></span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="co">    1. Data preparation</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="co">    2. Model fitting</span></span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="co">    3. G-computation estimation</span></span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="co">    4. Visualization</span></span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="co">    5. Results export</span></span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="co">    -----------</span></span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="co">    data : pd.DataFrame</span></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="co">        Raw dataset</span></span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="co">    outcome_var : str</span></span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of outcome variable</span></span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_var : str</span></span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="co">        Name of exposure/treatment variable</span></span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="co">    confounders : list</span></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="co">        List of confounder variable names</span></span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="co">    exposure_range : array-like</span></span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="co">        Range of exposure values to evaluate</span></span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="co">    n_estimators : int</span></span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of trees in Random Forest</span></span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="co">    n_bootstrap : int</span></span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="co">        Number of bootstrap iterations for CIs</span></span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="co">    save_results_path : str, optional</span></span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="co">        Path to save results CSV</span></span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="co">    save_plot_path : str, optional</span></span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="co">        Path to save plot</span></span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="co">    random_state : int</span></span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="co">        Random seed for reproducibility</span></span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="co">    --------</span></span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="co">    results_df : pd.DataFrame</span></span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="co">        G-computation results</span></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="co">    model : fitted model</span></span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="co">        Trained outcome model</span></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;G-COMPUTATION DOSE-RESPONSE ANALYSIS&quot;</span>)</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Outcome: </span><span class="sc">{</span>outcome_var<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Exposure: </span><span class="sc">{</span>exposure_var<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Confounders: </span><span class="sc">{</span><span class="bu">len</span>(confounders)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 1: Prepare data</span></span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    X, y, modeling_data <span class="op">=</span> prepare_data(data, outcome_var, exposure_var, confounders)</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 2: Fit outcome model</span></span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> fit_outcome_model(X, y, n_estimators<span class="op">=</span>n_estimators, random_state<span class="op">=</span>random_state)</span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 3: G-computation</span></span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>    results_df <span class="op">=</span> gcomputation_dose_response(</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>        model, X, exposure_var, exposure_range, </span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>        n_bootstrap<span class="op">=</span>n_bootstrap, random_state<span class="op">=</span>random_state</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 4: Visualization</span></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>    plot_dose_response(</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>        results_df, exposure_var, outcome_var, </span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>        save_path<span class="op">=</span>save_plot_path</span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Step 5: Save results</span></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> save_results_path:</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>        results_df.to_csv(save_results_path, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Results saved to: </span><span class="sc">{</span>save_results_path<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;ANALYSIS COMPLETE&quot;</span>)</span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;=&#39;</span><span class="op">*</span><span class="dv">70</span><span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results_df, model</span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================================</span></span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE USAGE</span></span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================================</span></span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="co">    Example usage with simulated data.</span></span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="co">    Replace this with your actual data loading and variable specification.</span></span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Example: Simulate data (replace with your actual data)</span></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>    <span class="co"># np.random.seed(2026)</span></span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>    <span class="co"># n = 1000</span></span>
-<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span></span>
-<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>    <span class="co"># data = pd.DataFrame({</span></span>
-<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;outcome&#39;: np.random.randn(n) + 0.1 * np.random.randint(1, 20, n),</span></span>
-<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;exposure&#39;: np.random.randint(1, 20, n),</span></span>
-<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;age&#39;: np.random.randint(25, 65, n),</span></span>
-<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;gender&#39;: np.random.choice([&#39;Male&#39;, &#39;Female&#39;], n),</span></span>
-<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;department&#39;: np.random.choice([&#39;A&#39;, &#39;B&#39;, &#39;C&#39;], n),</span></span>
-<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     &#39;tenure&#39;: np.random.randint(1, 30, n)</span></span>
-<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>    <span class="co"># })</span></span>
-<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span></span>
-<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>    <span class="co"># # Define variables</span></span>
-<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>    <span class="co"># outcome_var = &#39;outcome&#39;</span></span>
-<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>    <span class="co"># exposure_var = &#39;exposure&#39;</span></span>
-<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>    <span class="co"># confounders = [&#39;age&#39;, &#39;gender&#39;, &#39;department&#39;, &#39;tenure&#39;]</span></span>
-<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>    <span class="co"># exposure_range = range(1, 20)</span></span>
-<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span></span>
-<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>    <span class="co"># # Run analysis</span></span>
-<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>    <span class="co"># results, model = run_gcomputation_analysis(</span></span>
-<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     data=data,</span></span>
-<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     outcome_var=outcome_var,</span></span>
-<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     exposure_var=exposure_var,</span></span>
-<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     confounders=confounders,</span></span>
-<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     exposure_range=exposure_range,</span></span>
-<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     n_estimators=200,</span></span>
-<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     n_bootstrap=100,</span></span>
-<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     save_results_path=&#39;gcomputation_results.csv&#39;,</span></span>
-<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     save_plot_path=&#39;gcomputation_plot.png&#39;,</span></span>
-<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a>    <span class="co">#     random_state=2026</span></span>
-<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>    <span class="co"># )</span></span>
-<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span></span>
-<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a>    <span class="co"># # View results</span></span>
-<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print(results.head())</span></span>
-<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Please uncomment the example code above or provide your own data.&quot;</span>)</span>
-<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Key steps:&quot;</span>)</span>
-<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;1. Load your data&quot;</span>)</span>
-<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;2. Specify outcome, exposure, and confounders&quot;</span>)</span>
-<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;3. Call run_gcomputation_analysis()&quot;</span>)</span>
-<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;4. Interpret the dose-response curve&quot;</span>)</span>
-<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;&quot;&quot;</span></span>
-<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="co">INTERPRETATION GUIDE</span></span>
-<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a><span class="co">====================</span></span>
-<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="co">The resulting dose-response curve shows:</span></span>
-<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="co">- X-axis: Different levels of exposure (the &quot;dose&quot;)</span></span>
-<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="co">- Y-axis: Expected value of the outcome if everyone had that exposure level</span></span>
-<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="co">- Shaded area: 95% confidence interval (uncertainty in the estimate)</span></span>
-<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="co">KEY POINTS:</span></span>
-<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a><span class="co">- The curve represents causal effects under standard causal assumptions:</span></span>
-<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="co">  * No unmeasured confounding (all confounders are measured and included)</span></span>
-<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="co">  * Correct model specification (Random Forest helps with flexibility)</span></span>
-<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="co">  * Positivity (all individuals could theoretically receive any exposure level)</span></span>
-<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="co">  * Consistency (well-defined interventions)</span></span>
-<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="co">- Non-linear patterns: If the curve is not a straight line, this indicates </span></span>
-<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="co">  non-linear dose-response relationships that might be missed by linear models</span></span>
-<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="co">- Optimal exposure: Look for peaks or plateaus in the curve to identify </span></span>
-<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a><span class="co">  exposure levels associated with best outcomes</span></span>
-<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="co">- Clinical/practical significance: Consider whether differences across the </span></span>
-<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a><span class="co">  curve are large enough to matter in practice, not just statistically significant</span></span>
-<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;&quot;&quot;</span></span></code></pre></div>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results_df</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================================</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE USAGE</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="co"># ============================================================================</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;To use this script, load your dataframe and call run_gcomputation_analysis()&quot;</span>)</span></code></pre></div>
 </details>
 </div>
 <ul>
