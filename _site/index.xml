@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Making abstract ideas digestible with knobs and sliders</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-01-20-dunning-kruger-effect-simulation</link>
+      <description>With the currently available GenAI tools, it’s really a golden age for teachers who like using interactive demonstrations of abstract ideas they’re trying to convey to their students.</description>
+      <category>teaching</category>
+      <category>genai</category>
+      <category>ai in education</category>
+      <category>cognitive biases</category>
+      <category>learning design</category>
+      <category>dunning-kruger effect</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-01-20-dunning-kruger-effect-simulation</guid>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-01-20-dunning-kruger-effect-simulation/./app_pic.png" medium="image" type="image/png" width="802" height="1123"/>
+    </item>
     <item>
       <title>Can flatter orgs undermine people management?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -116,7 +131,7 @@
       <category>psychometrics</category>
       <category>validity</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-11-12-insights-discovery-and-skills</guid>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-11-12-insights-discovery-and-skills/./skills_totals_by_dominant_color.png" medium="image" type="image/png" width="4000" height="2500"/>
     </item>
     <item>
