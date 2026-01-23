@@ -1,5 +1,32 @@
 [
   {
+    "path": "posts/2026-01-23-matthew-effect-and-success-stories/",
+    "title": "Luck, cutoffs, and the stories we tell about success",
+    "description": "On relative age effects, cumulative advantage, and the narratives we build around merit.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-01-23",
+    "categories": [
+      "relative age effect",
+      "matthew effect",
+      "cumulative advantage",
+      "luck and merit",
+      "meritocracy",
+      "life outcomes",
+      "education"
+    ],
+    "contents": "\r\nIt’s easy to underestimate how much small, seemingly arbitrary factors shape long-term outcomes - especially when we’re used to telling clean stories about talent, effort, and merit.\r\nI was reminded of this recently while reading Determined by Robert Sapolsky. One striking example he discusses is school entry cutoffs. Because these dates are administrative rather than developmental, children in the same classroom can differ in age by up to ~12 months. In early childhood, that gap often translates into real differences in cognitive, emotional, and self-regulatory maturity.\r\nTeachers may understandably interpret those differences as indicators of ability or potential. That can lead to more encouragement, attention, and higher expectations for slightly older students - advantages that already start compounding by first grade, and can continue through tracking, confidence, and parental responses.\r\nIn the UK, where the cutoff date is August 31st, this “relative age effect” shows up clearly in the data. While the effect size decreases over time, it remains detectable on average through secondary school and even into university. It’s a classic example of cumulative advantage (the so-called Matthew Effect). See the attached chart for illustration - it shows a near-perfect linear decline in Oxford graduation rates, with the oldest students (September) being 15% overrepresented and the youngest (August) 15% underrepresented relative to the UK norm.\r\n\r\n\r\n\r\nAnd of course, school entry dates are just one example. We could start with being born into a middle-class family, in a WEIRD country, at the end of the 20th century which already places you on a very particular starting point in life. And we could keep going. If you want a better sense of the background conditions we tend to leave out of our success (and failure) narratives, Determined is highly recommended - even if you don’t follow Sapolsky all the way on free will.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-01-23-matthew-effect-and-success-stories/./plot.png",
+    "last_modified": "2026-01-23T10:09:16+01:00",
+    "input_file": "matthew-effect-and-success-stories.knit.md",
+    "preview_width": 990,
+    "preview_height": 599
+  },
+  {
     "path": "posts/2026-01-20-dunning-kruger-effect-simulation/",
     "title": "Making abstract ideas digestible with knobs and sliders",
     "description": "With the currently available GenAI tools, it’s really a golden age for teachers who like using interactive demonstrations of abstract ideas they’re trying to convey to their students.",
@@ -67,9 +94,9 @@
       "probabilistic futures",
       "still optimistic"
     ],
-    "contents": "\r\nReading the book Existential Physics: A Scientist’s Guide to Life’s Biggest Questions (btw, highly recommended) made me rethink the popular image many people (including myself) use to signal their openness to new career and life directions - a “garden of forking paths” where the future is a blank canvas of almost infinite potential, constrained only by our imagination.\r\n\r\n\r\n\r\nMy update tries to make this image more honestly reflect the reality we’re facing in such situations 🤓 Specifically, that some paths are effectively unreachable for us (e.g., in my late forties, becoming a professional brain surgeon, no matter how much I might wish it), and others are far more probable than others (for example, for me it’s more likely that my next job will again be at the intersection of data and psychology than in psychotherapeutic care).\r\n\r\n\r\n\r\nNot sure if you’ll be interested in using this updated version of the image - after all, it removes a large part of the positive vibe of the original 🙃 - but if so, feel free to copy the image above and use it in your announcement 😊\r\nUpdate: After posting this on LinkedIn, Eric-Jan Wagenmakers pointed me to his article A Deterministic View on Life, which, imo, provides an even more honest account of the issue. It defends a deterministic perspective while explaining why uncertainty, choice, and responsibility remain meaningful despite the absence of genuine alternative possibilities. The core argument is that while life unfolds along a single, fully determined trajectory, our experience of uncertainty, deliberation, and choice arises from our incomplete knowledge, not from genuinely open alternatives. We reason, decide, and feel responsible because we must infer outcomes under uncertainty - even though, in retrospect, only one outcome was ever possible (see visualization of this deterministic perspective on life by Viktor Beekman below). But best to read it in full here.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "contents": "\r\nReading the book Existential Physics: A Scientist’s Guide to Life’s Biggest Questions (btw, highly recommended) made me rethink the popular image many people (including myself) use to signal their openness to new career and life directions - a “garden of forking paths” where the future is a blank canvas of almost infinite potential, constrained only by our imagination.\r\n\r\n\r\n\r\nMy update tries to make this image more honestly reflect the reality we’re facing in such situations 🤓 Specifically, that some paths are effectively unreachable for us (e.g., in my middle forties, becoming a professional brain surgeon, no matter how much I might wish it), and others are far more probable than others (for example, for me it’s more likely that my next job will again be at the intersection of data and psychology than in psychotherapeutic care).\r\n\r\n\r\n\r\nNot sure if you’ll be interested in using this updated version of the image - after all, it removes a large part of the positive vibe of the original 🙃 - but if so, feel free to copy the image above and use it in your announcement 😊\r\nUpdate: After posting this on LinkedIn, Eric-Jan Wagenmakers pointed me to his article A Deterministic View on Life, which, imo, provides an even more honest account of the issue. It defends a deterministic perspective while explaining why uncertainty, choice, and responsibility remain meaningful despite the absence of genuine alternative possibilities. The core argument is that while life unfolds along a single, fully determined trajectory, our experience of uncertainty, deliberation, and choice arises from our incomplete knowledge, not from genuinely open alternatives. We reason, decide, and feel responsible because we must infer outcomes under uncertainty - even though, in retrospect, only one outcome was ever possible (see visualization of this deterministic perspective on life by Viktor Beekman below). But best to read it in full here.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-12-17-garden-of-forking-paths-redo/./forking_paths_updated.png",
-    "last_modified": "2025-12-18T18:51:06+01:00",
+    "last_modified": "2026-01-23T10:02:38+01:00",
     "input_file": "garden-of-forking-paths-redo.knit.md",
     "preview_width": 2592,
     "preview_height": 1632
