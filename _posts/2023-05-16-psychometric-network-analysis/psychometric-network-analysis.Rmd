@@ -2,6 +2,7 @@
 title: "Psychometric network analysis & employee survey data"
 description: |
   A demonstration of how psychometric network analysis can be used to gain insights into employee survey data.
+preview: ./pna_101.jpg
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
@@ -386,4 +387,4 @@ print(testGenderDiff)
 
 ```
 
-I hope you find this post useful and that it inspires you to try PNA on your own data. If you were looking for more authoritative sources on PNA, [Sacha Epskamp's site](http://sachaepskamp.com/){target="_blank"} is a good place to start. An excellent introduction to the topic can also be found in [Letouche & Wille (2022)](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.838093/full){target="_blank"} and [Dalege et al. (2017)](https://journals.sagepub.com/doi/pdf/10.1177/1948550617709827){target="_blank"}, respectively.
+I hope you find this post useful and that it inspires you to try PNA on your own data. If you were looking for more authoritative sources on PNA, [Epskamp & Fried's (2018) tutorial](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fmet0000167){target="_blank"} is a good place to start. An excellent introduction to the topic can also be found in [Letouche & Wille (2022)](https://www.frontiersin.org/articles/10.3389/fpsyg.2022.838093/full){target="_blank"} and [Dalege et al. (2017)](https://journals.sagepub.com/doi/pdf/10.1177/1948550617709827){target="_blank"}, respectively.
