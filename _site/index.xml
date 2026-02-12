@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>The Triple-Filter Test: How to prioritize HR interventions with panel data</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-02-12-the-triple-filter-test</link>
+      <description>About a data-driven framework for prioritizing HR interventions with limited budget.</description>
+      <category>evidence-based hr</category>
+      <category>panel data</category>
+      <category>employee survey</category>
+      <category>causal inference</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-02-12-the-triple-filter-test</guid>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-02-12-the-triple-filter-test/./ri_clpm_scheme.png" medium="image" type="image/png" width="1491" height="793"/>
+    </item>
     <item>
       <title>Is contagious turnover overrated? Probably only if you ignore the managers.</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,7 +34,7 @@
       <category>discrete time survival analysis</category>
       <category>causal inference</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-02-05-contagious-turnover</guid>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-02-05-contagious-turnover/./resignation_effects.png" medium="image" type="image/png" width="3300" height="1800"/>
     </item>
     <item>
