@@ -1,0 +1,37 @@
+---
+title: "AI as friction"
+description: |
+  The case for AI that slows you down. 
+preview: ./AI as friction.png
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 10-03-2026
+categories:
+  - ai
+  - desirable difficulties
+  - behavioral design
+  - productivity architecture
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+When we think about using AI, we often think about how to make things easier for us. But maybe we’re missing the use cases where AI can help us introduce some meaningful friction into our lives.
+
+We know this well from other domains: 
+
+* Think about learning, where desirable difficulties lead to deeper thinking, stronger encoding, and ultimately better acquisition of new skills and knowledge.
+* Think of the classic credit card frozen in a block of ice - helping us not act on hot emotions and preventing impulsive spending.
+* Or think of constraints forcing us to come up with more creative solutions.
+
+This clicked for me recently while participating in design workshops on reducing inefficient meetings. Many of the proposed solutions were tech/AI-oriented, and they fell neatly into two categories: enablers and something we could call 'Cognitive Speedbumps' - AI designed to break our autopilot and “lazy” defaults.
+
+Imagine an AI scheduling assistant that actively refuses to book a 60-minute meeting unless you provide a clear purpose and agenda and tag the specific decision-makers. It adds friction to the scheduler, but saves hours for the attendees downstream.
+
+Curious whether you’ve come across examples like this - or maybe you’re already using AI as friction in your own life?
+

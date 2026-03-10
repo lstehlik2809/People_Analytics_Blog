@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>AI as friction</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction</link>
+      <description>The case for AI that slows you down.</description>
+      <category>ai</category>
+      <category>desirable difficulties</category>
+      <category>behavioral design</category>
+      <category>productivity architecture</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction/./AI as friction.png" medium="image" type="image/png" width="2816" height="1536"/>
+    </item>
     <item>
       <title>Pay gap estimation for small worker categories</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +33,7 @@
       <category>hierarchical models</category>
       <category>bayesian statistics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-01-euptd-pay-gap-reporting</guid>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-01-euptd-pay-gap-reporting/./illustrative_chart.png" medium="image" type="image/png" width="1152" height="711"/>
     </item>
     <item>

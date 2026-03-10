@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2026-03-10-ai-as-friction/",
+    "title": "AI as friction",
+    "description": "The case for AI that slows you down.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-10-03",
+    "categories": [
+      "ai",
+      "desirable difficulties",
+      "behavioral design",
+      "productivity architecture"
+    ],
+    "contents": "\r\nWhen we think about using AI, we often think about how to make things easier for us. But maybe we’re missing the use cases where AI can help us introduce some meaningful friction into our lives.\r\nWe know this well from other domains:\r\nThink about learning, where desirable difficulties lead to deeper thinking, stronger encoding, and ultimately better acquisition of new skills and knowledge.\r\nThink of the classic credit card frozen in a block of ice - helping us not act on hot emotions and preventing impulsive spending.\r\nOr think of constraints forcing us to come up with more creative solutions.\r\nThis clicked for me recently while participating in design workshops on reducing inefficient meetings. Many of the proposed solutions were tech/AI-oriented, and they fell neatly into two categories: enablers and something we could call ‘Cognitive Speedbumps’ - AI designed to break our autopilot and “lazy” defaults.\r\nImagine an AI scheduling assistant that actively refuses to book a 60-minute meeting unless you provide a clear purpose and agenda and tag the specific decision-makers. It adds friction to the scheduler, but saves hours for the attendees downstream.\r\nCurious whether you’ve come across examples like this - or maybe you’re already using AI as friction in your own life?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-03-10-ai-as-friction/./AI as friction.png",
+    "last_modified": "2026-03-10T13:21:41+01:00",
+    "input_file": "ai-as-friction.knit.md",
+    "preview_width": 2816,
+    "preview_height": 1536
+  },
+  {
     "path": "posts/2026-03-01-euptd-pay-gap-reporting/",
     "title": "Pay gap estimation for small worker categories",
     "description": "A question for the People Analytics and Comp & Ben community:",
