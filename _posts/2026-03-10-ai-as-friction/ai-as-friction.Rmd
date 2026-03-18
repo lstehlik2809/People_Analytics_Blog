@@ -6,7 +6,7 @@ preview: ./AI as friction.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 10-03-2026
+date: 03-10-2026
 categories:
   - ai
   - desirable difficulties

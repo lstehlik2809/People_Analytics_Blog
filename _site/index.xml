@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 Dec 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>The hidden skill map - where life meets work</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-03-18-daily-activities-among-business-skills</link>
+      <description>What happens when you embed common daily activities among corporate business skills?</description>
+      <category>skills</category>
+      <category>skills taxonomy</category>
+      <category>daily activities</category>
+      <category>embeddings</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-18-daily-activities-among-business-skills</guid>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-18-daily-activities-among-business-skills/./parenting.png" medium="image" type="image/png" width="1920" height="1080"/>
+    </item>
     <item>
       <title>Encouragement Design using instrumental variables</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +32,7 @@
       <category>encouragement design</category>
       <category>instrumental variables</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs</guid>
-      <pubDate>Wed, 02 Dec 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs/./iv_encouragement_design_diagram.png" medium="image" type="image/png" width="2700" height="1260"/>
     </item>
     <item>
@@ -32,7 +45,7 @@
       <category>behavioral design</category>
       <category>productivity architecture</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction</guid>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction/./AI as friction.png" medium="image" type="image/png" width="2816" height="1536"/>
     </item>
     <item>

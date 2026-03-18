@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2026-03-18-daily-activities-among-business-skills/",
+    "title": "The hidden skill map - where life meets work",
+    "description": "What happens when you embed common daily activities among corporate business skills?",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-03-18",
+    "categories": [
+      "skills",
+      "skills taxonomy",
+      "daily activities",
+      "embeddings"
+    ],
+    "contents": "\r\nWhile stress-testing a team skills app, just for fun I tried searching in the semantic space of existing business skills for everyday activities like parenting and cooking.\r\nCheck out where these two landed in the attached pics. Does it resonate? 🙃 For me it’s pretty accurate 😅\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-03-18-daily-activities-among-business-skills/./parenting.png",
+    "last_modified": "2026-03-18T14:34:02+01:00",
+    "input_file": "daily-activities-among-business-skills.knit.md",
+    "preview_width": 1920,
+    "preview_height": 1080
+  },
+  {
     "path": "posts/2026-03-12-encouragement-design-and-ivs/",
     "title": "Encouragement Design using instrumental variables",
     "description": "A possible alternative to a \"full\" RCT in People Analytics.",
@@ -9,7 +33,7 @@
         "url": "https://www.linkedin.com/in/ludekstehlik/"
       }
     ],
-    "date": "2026-12-03",
+    "date": "2026-03-12",
     "categories": [
       "causal inference",
       "randomized control trial",
@@ -19,7 +43,7 @@
     ],
     "contents": "\r\nThis post can be seen as a follow-up to the article Cole Napper and I wrote on the use of causal inference methods in the People Analytics space. One of its sections discusses instrumental variables (IV) as a very useful and powerful - but also often very hard to find - method for estimating causal effects.\r\nFor those less familiar with IV, here’s the super-short version: instead of directly comparing participants with non-participants (which is usually biased), we look for a variable that shifts the probability of participating while being otherwise unrelated to the outcome. That variable then gives us a cleaner estimate of the causal effect - typically for the subgroup of people whose behavior was actually changed by that “push.”\r\nWhile reading a paper on using IV to estimate causal effects in situations where not everyone assigned to the treatment group actually complies with the assigned program, it hit me (yes, I know I’m late to the party - nobody’s perfect 😊) that treating assignment not as treatment itself, but merely as encouragement, can be relatively easily utilized in the People Analytics world.\r\nRather than randomly granting or denying access to a program - which would often be neither practical nor especially ethical in an HR context - we randomly select a subset of eligible employees to receive a targeted email (or another type of nudge) encouraging them to participate. The remaining eligible employees still have full access to the program; they just do not receive that specific encouragement.\r\n\r\n\r\n\r\nBy comparing outcomes between the encouraged and non-encouraged groups, and using random encouragement assignment as an instrumental variable for actual participation, we can estimate the causal effect of the program for those employees whose participation was actually driven by the encouragement.\r\nThis convenience doesn’t come without a price, though. We scale down from estimating the Average Treatment Effect (ATE) across the entire population to a Local Average Treatment Effect (LATE), also known as the Complier Average Causal Effect (CACE) - the effect specifically on those who participated because of the encouragement, not on everyone.\r\nMoreover, the validity of the LATE estimate rests on several assumptions that shouldn’t be taken for granted. First, the exclusion restriction: the instrument (in our case, the encouraging email) must affect outcomes only through its influence on participation, not through any other channel. In practice, this means the email itself shouldn’t, for example, boost employee morale or signal managerial support in a way that independently shifts the outcome we’re measuring. Second, monotonicity - or the “no defiers” assumption: the nudge shouldn’t cause anyone to do the opposite of what’s intended. In an HR context, this is worth thinking about seriously - if some employees see a corporate nudge and reflexively disengage, the estimate breaks down. And third, relevance: the instrument has to actually move the needle on participation. If the nudge barely changes sign-up rates, you’re dealing with a weak instrument, and your estimates become extremely noisy and unreliable.\r\nStill, even with these caveats, we preserve voluntary participation, avoid withholding opportunities from anyone, and get evidence that is much more credible than simple\r\nbefore–after comparisons or naive participant-versus-non-participant analyses.\r\nIf you want a good sense of how an encouragement design can be set up in a real-world business setting, check out, for example, the paper by Castro et al. (2022). They report a randomized field experiment in a large global healthcare company with 1,000+ teams and 7,000+ employees, where managers were randomly encouraged to hold specific types of 1:1 conversations to improve psychological safety. Note that their primary analysis uses an intent-to-treat (ITT) framework rather than IV/LATE, but the experimental structure itself is a great illustration of how randomized encouragement can be deployed at scale in a corporate environment.*\r\n❓ Curious whether anyone in my People Analytics network has been using encouragement designs (or similar IV-based approaches) when tackling causal estimation - I’d love to hear how it went in practice.\r\n* A note on ITT vs. IV/LATE: Both approaches answer different causal questions using the same encouragement design setup. ITT asks what the causal effect of being encouraged is, regardless of whether the person actually participated - you simply compare average outcomes between the encouraged and non-encouraged groups. Because assignment is random, this comparison is unbiased with no assumptions beyond randomization needed, but it comes at a cost: if only 30% of the encouraged group actually participates, you’re averaging a real treatment effect for those 30% with a zero effect for the 70% who ignored the nudge, yielding a clean but diluted estimate. IV/LATE, by contrast, asks what the causal effect of actually participating is for the people whose participation was changed by the encouragement (the compliers) - it essentially takes the ITT estimate and scales it up by the compliance rate (the Wald estimator: ITT effect divided by the first-stage effect on participation), giving you an undiluted effect, but only for compliers, and only if all three assumptions hold (exclusion restriction, monotonicity, and relevance). The tradeoff in a sentence: ITT is less informative but basically bulletproof; IV/LATE is more informative but fragile.\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-03-12-encouragement-design-and-ivs/./iv_encouragement_design_diagram.png",
-    "last_modified": "2026-03-12T13:33:09+01:00",
+    "last_modified": "2026-03-18T14:31:34+01:00",
     "input_file": "encouragement-design-and-ivs.knit.md",
     "preview_width": 2700,
     "preview_height": 1260
@@ -34,7 +58,7 @@
         "url": "https://www.linkedin.com/in/ludekstehlik/"
       }
     ],
-    "date": "2026-10-03",
+    "date": "2026-03-10",
     "categories": [
       "ai",
       "desirable difficulties",
@@ -43,7 +67,7 @@
     ],
     "contents": "\r\nWhen we think about using AI, we often think about how to make things easier for us. But maybe we’re missing the use cases where AI can help us introduce some meaningful friction into our lives.\r\nWe know this well from other domains:\r\nThink about learning, where desirable difficulties lead to deeper thinking, stronger encoding, and ultimately better acquisition of new skills and knowledge.\r\nThink of the classic credit card frozen in a block of ice - helping us not act on hot emotions and preventing impulsive spending.\r\nOr think of constraints forcing us to come up with more creative solutions.\r\nThis clicked for me recently while participating in design workshops on reducing inefficient meetings. Many of the proposed solutions were tech/AI-oriented, and they fell neatly into two categories: enablers and something we could call ‘Cognitive Speedbumps’ - AI designed to break our autopilot and “lazy” defaults.\r\nImagine an AI scheduling assistant that actively refuses to book a 60-minute meeting unless you provide a clear purpose and agenda and tag the specific decision-makers. It adds friction to the scheduler, but saves hours for the attendees downstream.\r\nCurious whether you’ve come across examples like this - or maybe you’re already using AI as friction in your own life?\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-03-10-ai-as-friction/./AI as friction.png",
-    "last_modified": "2026-03-10T13:21:41+01:00",
+    "last_modified": "2026-03-18T14:32:22+01:00",
     "input_file": "ai-as-friction.knit.md",
     "preview_width": 2816,
     "preview_height": 1536
