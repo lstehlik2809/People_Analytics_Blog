@@ -275,3 +275,6 @@ R:
 * [DAGitty](https://www.dagitty.net/){target="_blank"}: A browser-based environment for creating and analysing causal diagrams (but is available also via R).
 
 A [GitHub repository](https://github.com/lstehlik2809/Beyond-Prediction-Exploiting-Organizational-Events-for-Causal-Inference-in-People-Analytics.git){target="_blank"} with example Python and R code and dummy data illustrating some of the scenarios discussed in this article. (Note: Individual examples will be added gradually over time.) 
+
+----
+**Update**: Check out [this post on Encouragement Quasi-Experimental Design](https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs/){target="_blank"}, which shows that finding an instrumental variable may not be so hard after all—or at least that it’s not so difficult to set things up in a way that creates one in the PA and HR context.
