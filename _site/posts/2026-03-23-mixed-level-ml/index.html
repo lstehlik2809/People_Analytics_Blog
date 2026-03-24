@@ -2200,12 +2200,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul>
 <li><a href="#grouped-cross-validation" id="toc-grouped-cross-validation">Grouped Cross-Validation</a></li>
 <li><a href="#mixed-effects-ml" id="toc-mixed-effects-ml">Mixed-Effects ML</a></li>
-<li><a href="#cluster-aware-double-ml" id="toc-cluster-aware-double-ml">Cluster-Aware Double ML</a></li>
+<li><a href="#cluster-aware-causal-ml" id="toc-cluster-aware-causal-ml">Cluster-Aware Causal ML</a></li>
 <li><a href="#my-key-takeway" id="toc-my-key-takeway">My Key Takeway</a></li>
 </ul>
 </nav>
 </div>
-<p>I have to admit that, until recently, my approach to predictive machine learning (ML) tasks relied on a major simplification: I ignored the hierarchical structure in my data and treated observations as <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank">i.i.d.</a> Part of that was convenience, and part of it was the practical belief that standard ML often captures most of the predictive signal while being much simpler to implement than a full mixed-effects model.</p>
+<p>I have to admit that, until recently, my approach to predictive machine learning (ML) tasks relied on one major simplification: I ignored the hierarchical structure in my data and treated observations as <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank">i.i.d.</a> Part of that was convenience, and part of it was the practical belief that standard ML often captures most of the predictive signal while being much simpler to implement than a full mixed-effects model.</p>
 <p>But once I started using ML not just for prediction, but also for causal inference, the limits of that “flat-earth” view became hard to ignore. In People Analytics, data is usually nested: individuals within teams, teams within departments, and sometimes departments within business units. Ignoring that structure means ignoring a big part of the context that shapes human behavior.</p>
 <h2 id="grouped-cross-validation">Grouped Cross-Validation</h2>
 <p>The first requirement for working with clustered data in this context is recognizing that standard cross-validation (CV) can be misleading when observations within a cluster are correlated. If members of the same team appear in both the training and test sets, the model can effectively “peek” at the test distribution through shared group structure. That usually leads to performance estimates that are too optimistic.</p>
@@ -2391,11 +2391,11 @@ Show code
 <span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(merf_model.get_bhat_history_df().tail())</span></code></pre></div>
 </details>
 </div>
-<h2 id="cluster-aware-double-ml">Cluster-Aware Double ML</h2>
-<p>The hardest problem in People Analytics is usually causal: for example, estimating the effect of a leadership intervention in the presence of noisy, cluster-dependent data.</p>
-<p>Double Machine Learning (DML) helps by residualizing both the treatment (<span class="math inline">\(T\)</span>) and the outcome (<span class="math inline">\(Y\)</span>) using flexible nuisance models. In hierarchical data, those nuisance models and the sample-splitting strategy should respect the cluster structure. The final inference step should also account for within-cluster dependence so that standard errors and p-values are better calibrated.</p>
-<p>What cluster-aware DML gives you is better inference under clustered dependence. What it does <ins>not</ins> do is magically eliminate bias from unobserved cluster-level confounding. That still depends on whether your identification assumptions are credible.</p>
-<p><strong>Advantage:</strong> Cluster-aware DML does not make causal identification easy, but it does make ML-based causal estimation more defensible when your data are nested and observations within groups are dependent.</p>
+<h2 id="cluster-aware-causal-ml">Cluster-Aware Causal ML</h2>
+<p>The hardest problem in People Analytics is usually causal: for example, estimating the effect of a leadership intervention. Standard ML is not enough here. It must be harnessed in a specialized way, as in the Double Machine Learning (DML) framework, for example.</p>
+<p>DML helps by residualizing both the treatment (<span class="math inline">\(T\)</span>) and the outcome (<span class="math inline">\(Y\)</span>) using flexible nuisance models. However, with hierarchical data, those nuisance models and the sample-splitting strategy should respect the cluster structure. The final inference step should also account for within-cluster dependence so that standard errors and p-values are better calibrated.</p>
+<p>What cluster-aware causal ML gives you is better inference under clustered dependence. What it does <ins>not</ins> do is magically eliminate bias from unobserved cluster-level confounding. That still depends on whether your identification assumptions are credible.</p>
+<p><strong>Advantage:</strong> Cluster-aware causal ML does not make causal identification easy, but it does make ML-based causal estimation more defensible when your data are nested and observations within groups are dependent.</p>
 <h3 id="example-cluster-aware-dml">Example: Cluster-Aware DML</h3>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -2508,7 +2508,7 @@ Show code
 <ul>
 <li>If I just want a more realistic estimate of predictive performance across teams, I start with <strong>grouped cross-validation</strong>.</li>
 <li>If I want the model itself to reflect stable group-level differences, I look at <strong>mixed-effects ML</strong>.</li>
-<li>If I care about causal effects and the data are nested, I consider <strong>cluster-aware DML</strong>.</li>
+<li>If I care about causal effects and the data are nested, I consider <strong>cluster-aware causal ML</strong>.</li>
 </ul>
 <p>That is not because hierarchy always makes models better. It is because, in many real-world settings, hierarchy is part of the data-generating process, and pretending otherwise usually comes back to bite you.</p>
 <p>❓Curious what your usual approach is to ML tasks with hierarchical data.</p>
