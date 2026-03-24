@@ -28,7 +28,7 @@ But once I started using ML not just for prediction, but also for causal inferen
 
 ## Grouped Cross-Validation
 
-The first requirement for working with clustered data is recognizing that standard cross-validation (CV) can be misleading when observations within a cluster are correlated. If members of the same team appear in both the training and test sets, the model can effectively “peek” at the test distribution through shared group structure. That usually leads to performance estimates that are too optimistic.
+The first requirement for working with clustered data in this context is recognizing that standard cross-validation (CV) can be misleading when observations within a cluster are correlated. If members of the same team appear in both the training and test sets, the model can effectively “peek” at the test distribution through shared group structure. That usually leads to performance estimates that are too optimistic.
 
 The first practical fix is to move from standard K-fold CV to `GroupKFold`. This keeps entire clusters together, so the model is evaluated on genuinely unseen groups.
 
