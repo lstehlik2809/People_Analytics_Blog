@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Do we give more "Try This", "Knock It Off", or "Keep It Up" recommendations in 360-degree feedback?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-03-26-start-stop-continue-feedback</link>
+      <description>Some data-based insights into the types of feedback we may tend to give others in 360-degree feedback.</description>
+      <category>360-degree feedback</category>
+      <category>development</category>
+      <category>growth</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-26-start-stop-continue-feedback</guid>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-26-start-stop-continue-feedback/./response_rate_chart.png" medium="image" type="image/png" width="1563" height="668"/>
+    </item>
     <item>
       <title>Beyond the “flat Earth”</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>prediction</category>
       <category>mixed-level models</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-23-mixed-level-ml</guid>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-23-mixed-level-ml/./flat_hierarchical_ml.png" medium="image" type="image/png" width="1295" height="705"/>
     </item>
     <item>
