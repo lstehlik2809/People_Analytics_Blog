@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2026-03-29-david-green-hr-people-sna-network/",
+    "title": "Mapping the People Analytics universe",
+    "description": "Sharing an interactive network of 2,500+ professionals featured across 60 editions of David Green's newsletter.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-03-29",
+    "categories": [
+      "social network analysis",
+      "people analytics"
+    ],
+    "contents": "\r\nBeing featured in David Green’s “Best HR & People Analytics Articles” newsletter inspired me to put together a quick-and-dirty SNA based on the co-occurrence of people mentioned across all 60 editions, from April 2021 to March 2026.\r\nIMO, it nicely illustrates David’s ongoing and successful effort to bring together a remarkably wide and diverse pool of People Analytics professionals from around the globe - and yes, with some “heavyweights” sitting right in the middle of the network, but that’s how real-world networks work, right? 😉\r\nIf you’d like to explore it yourself, here it is.\r\n\r\n\r\n\r\nA few tips for navigating the network:\r\nNodes = people mentioned in articles; node size & color reflect total appearances across 60 articles\r\nEdges = co-occurrence in the same monthly article; edge thickness = number of months co-occurring\r\nUse the slider to adjust the minimum appearances threshold\r\nHover over nodes/edges for details; click a node to highlight its connections\r\nScroll to zoom in/out; use the search box (top right) to find a specific person\r\nP.S. You can consider this a prequel to the People Analytics Network Census (PANC), which is about to wrap up its second wave. If you haven’t participated yet, sign up here 🙂\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-03-29-david-green-hr-people-sna-network/./ona_david_green.png",
+    "last_modified": "2026-03-29T21:21:22+02:00",
+    "input_file": "david-green-hr-people-sna-network.knit.md",
+    "preview_width": 1857,
+    "preview_height": 900
+  },
+  {
     "path": "posts/2026-03-26-start-stop-continue-feedback/",
     "title": "Do we give more \"Try This\", \"Knock It Off\", or \"Keep It Up\" recommendations in 360-degree feedback?",
     "description": "Some data-based insights into the types of feedback we may tend to give others in 360-degree feedback.",

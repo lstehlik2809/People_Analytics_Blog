@@ -7,7 +7,18 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Mapping the People Analytics universe</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network</link>
+      <description>Sharing an interactive network of 2,500+ professionals featured across 60 editions of David Green's newsletter.</description>
+      <category>social network analysis</category>
+      <category>people analytics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network/./ona_david_green.png" medium="image" type="image/png" width="1857" height="900"/>
+    </item>
     <item>
       <title>Do we give more "Try This", "Knock It Off", or "Keep It Up" recommendations in 360-degree feedback?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +28,7 @@
       <category>development</category>
       <category>growth</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-26-start-stop-continue-feedback</guid>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-26-start-stop-continue-feedback/./response_rate_chart.png" medium="image" type="image/png" width="1563" height="668"/>
     </item>
     <item>
@@ -801,7 +812,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1290,7 +1301,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1876,7 +1887,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
