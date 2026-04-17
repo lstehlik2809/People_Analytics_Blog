@@ -2200,8 +2200,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#what-a-european-cigarette-tax-study-taught-me-about-employee-listening" id="toc-what-a-european-cigarette-tax-study-taught-me-about-employee-listening">What a European Cigarette Tax Study Taught Me About Employee Listening</a>
-<ul>
 <li><a href="#the-paper-and-the-part-that-matters-for-us" id="toc-the-paper-and-the-part-that-matters-for-us">The paper, and the part that matters for us</a></li>
 <li><a href="#why-this-speaks-to-our-listening-architecture" id="toc-why-this-speaks-to-our-listening-architecture">Why this speaks to our listening architecture</a></li>
 <li><a href="#what-counts-as-an-event" id="toc-what-counts-as-an-event">What counts as an “event”</a></li>
@@ -2210,11 +2208,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><a href="#what-the-pipeline-needs" id="toc-what-the-pipeline-needs">What the pipeline needs</a></li>
 <li><a href="#honest-caveats" id="toc-honest-caveats">Honest caveats</a></li>
 <li><a href="#the-reframe" id="toc-the-reframe">The reframe</a></li>
-</ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="what-a-european-cigarette-tax-study-taught-me-about-employee-listening">What a European Cigarette Tax Study Taught Me About Employee Listening</h1>
 <p>Recently, a LinkedIn recommendation algo brought a <a href="https://arxiv.org/abs/2604.05841" target="_blank">working paper</a> by Stoller and Huber (April 2026) to my feed. It’s a Difference-in-Differences study estimating how cigarette tax increases affected smoking rates across 27 EU countries between 2012 and 2020. The topic was outside my day job at Sanofi. The methodology wasn’t. By the second read, I was redrawing how we should think about impact evaluation in our employee listening architecture.</p>
 <p>Here’s why a tobacco policy paper belongs on the reading list of I/O psychologists working with modern pulse survey data.</p>
 <h2 id="the-paper-and-the-part-that-matters-for-us">The paper, and the part that matters for us</h2>
@@ -2280,7 +2276,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><strong>Power.</strong> Unit-level treatment assignment collapses effective sample size. For anything below country-level treatment, run the power calculation <em>before</em> fielding the pulse, not afterward when you’re rationalizing a null.</p>
 <p><strong>Multiple testing.</strong> Every event × every outcome × every subgroup inflates the false positive rate. Benjamini-Hochberg adjustments, as the paper uses, aren’t a nice-to-have.</p>
 <h2 id="the-reframe">The reframe</h2>
-<p>The shift to pulse-based listening feels like a methodological downgrade because we lose the individual panel. It isn’t. What we gain is data whose structure matches a well-developed modern causal inference toolkit, one most I/O curricula don’t cover because it grew up in econometrics. The paper that pointed me at it was about cigarettes. What we do with it is about us.</p>
+<p>The shift to pulse-based listening can feel like a methodological downgrade because we lose the individual panel. For some questions, it is. But for evaluating the effects of unit-level events, it gives us data whose structure matches a modern causal inference toolkit that most I/O curricula barely touch. The paper that pointed me there was about cigarettes 🤓</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">

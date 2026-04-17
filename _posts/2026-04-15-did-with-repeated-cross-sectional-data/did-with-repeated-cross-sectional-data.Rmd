@@ -24,8 +24,6 @@ output:
     code_folding: true
 ---
 
-# What a European Cigarette Tax Study Taught Me About Employee Listening
-
 Recently, a LinkedIn recommendation algo brought a [working paper](https://arxiv.org/abs/2604.05841){target="_blank"} by Stoller and Huber (April 2026) to my feed. It's a Difference-in-Differences study estimating how cigarette tax increases affected smoking rates across 27 EU countries between 2012 and 2020. The topic was outside my day job at Sanofi. The methodology wasn't. By the second read, I was redrawing how we should think about impact evaluation in our employee listening architecture.
 
 Here's why a tobacco policy paper belongs on the reading list of I/O psychologists working with modern pulse survey data.
@@ -126,4 +124,4 @@ Three things have to be in place before the first event evaluation can be credib
 
 ## The reframe
 
-The shift to pulse-based listening feels like a methodological downgrade because we lose the individual panel. It isn't. What we gain is data whose structure matches a well-developed modern causal inference toolkit, one most I/O curricula don't cover because it grew up in econometrics. The paper that pointed me at it was about cigarettes. What we do with it is about us.
+The shift to pulse-based listening can feel like a methodological downgrade because we lose the individual panel. For some questions, it is. But for evaluating the effects of unit-level events, it gives us data whose structure matches a modern causal inference toolkit that most I/O curricula barely touch. The paper that pointed me there was about cigarettes 🤓
