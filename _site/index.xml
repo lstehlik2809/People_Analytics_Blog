@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What a European cigarette tax study taught me about employee listening</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data</link>
+      <description>Why our new pulse architecture isn't a methodological downgrade, and what Difference-in-Differences with Double Machine Learning has to do with it.</description>
+      <category>causal inference</category>
+      <category>impact evaluation</category>
+      <category>repeated cross-sectional design</category>
+      <category>panel design</category>
+      <category>employee survey</category>
+      <category>difference-in-differences</category>
+      <category>double machine learning</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data</guid>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/./Comparison-of-repeated-cross-sectional-and-panel-design-studies-dots-represent-survey.png" medium="image" type="image/png" width="682" height="327"/>
+    </item>
     <item>
       <title>Mapping the People Analytics universe</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -389,7 +405,7 @@
       <category>employee experience</category>
       <category>glassdoor</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration</guid>
-      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration/./app_pic.png" medium="image" type="image/png" width="1889" height="894"/>
     </item>
     <item>
