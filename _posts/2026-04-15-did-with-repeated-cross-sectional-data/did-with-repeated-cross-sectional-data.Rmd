@@ -124,4 +124,4 @@ Three things have to be in place before the first event evaluation can be credib
 
 ## The reframe
 
-The shift to pulse-based listening can feel like a methodological downgrade because we lose the individual panel. For some questions, it is. But for evaluating the effects of unit-level events, it gives us data whose structure matches a modern causal inference toolkit that most I/O curricula barely touch. The paper that pointed me there was about cigarettes 🤓
+The shift to pulse-based listening can feel like a methodological downgrade because we lose the individual panel. For some questions, it is. But for evaluating the effects of unit-level events, it gives us data whose structure matches a modern causal inference toolkit better than many of us might assume. Most I/O curricula still barely touch it. The paper that pointed me there happened to be about cigarettes 😅
