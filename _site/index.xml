@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
     <item>
       <title>What a European cigarette tax study taught me about employee listening</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -21,8 +21,19 @@
       <category>difference-in-differences</category>
       <category>double machine learning</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data</guid>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/./Comparison-of-repeated-cross-sectional-and-panel-design-studies-dots-represent-survey.png" medium="image" type="image/png" width="682" height="327"/>
+    </item>
+    <item>
+      <title>No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop</link>
+      <description>My first SIOP. Saturday 8 AM workshop. Causal inference. I clearly know how to ease into things 😅</description>
+      <category>causal inference</category>
+      <category>siop</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop</guid>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop/./siop_2026_invitation.png" medium="image" type="image/png" width="2752" height="1536"/>
     </item>
     <item>
       <title>Mapping the People Analytics universe</title>
@@ -828,7 +839,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1317,7 +1328,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1903,7 +1914,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
