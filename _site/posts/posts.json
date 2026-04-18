@@ -27,6 +27,28 @@
     "preview_height": 327
   },
   {
+    "path": "posts/2026-04-18-siop-2026-recommender/",
+    "title": "SIOP 2026 Recommender",
+    "description": "A practical AI assistant for finding the most relevant SIOP 2026 sessions and building a conflict-free personal schedule.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-04-18",
+    "categories": [
+      "siop",
+      "recommender"
+    ],
+    "contents": "\r\nAttending SIOP for the first time this year confronted me with something that more seasoned attendees are probably already used to and may even have a few tricks for handling.\r\nI’m talking about the need to sift through a huge number of interesting sessions packed into 3–4 days of the conference and choose the ones that best match my interests and needs.\r\nI’ll admit it freely: I was somewhat paralyzed by the sheer volume of options. The filtering options on the website did not help much either. Scrolling through everything was still endless and pretty mentally exhausting.\r\nI needed help narrowing things down. As you can probably guess, AI came to the rescue 🤖 During our last Friday afternoon dedicated to exploration and experimentation, and over part of the weekend, I managed to build and deploy an app designed to help with exactly that.\r\nWhat does it do?️\r\nIn the Profile section, you describe what you want from the conference: your goals, keywords, what to avoid, and optionally your CV. You can also include skills you want to develop or acquire.️\r\nYou can adjust how strongly each of these inputs influences the search.️\r\nYou get a ranked list of sessions, with schedule conflicts clearly marked.️\r\nYou get an optimized personal agenda that avoids overlapping sessions.️\r\nAs a bonus, you can explore an interactive SNA-style map of session similarity, with your top recommendations highlighted.\r\nGive it a try and let me know whether it makes your SIOP planning at least a little bit easier. In my case, it helped a lot 🤓 You can access it here, or for now, just check the screenshots below (double-click any slide to zoom in).\r\n⚠️ As is often the case with AI, treat its recommendations more as inspiration than as definitive guidance, and verify them against a reliable source such as the official SIOP schedule. The app works only with session titles, not abstracts; errors may have occurred during information extraction; and the embedding model used does not capture every semantic nuance. So there is plenty of room for mistakes.\r\n\r\n\r\nShow code\r\n\r\nlibrary(pdftools)\r\nlibrary(swipeR)\r\nlibrary(htmltools)\r\n\r\npdf_file <- \"siop_2026_recommender_screenshots.pdf\"\r\nimg_dir <- \"slides_img\"\r\n\r\nif (!dir.exists(img_dir)) dir.create(img_dir)\r\n\r\nn <- pdf_info(pdf_file)$pages\r\nfiles <- pdf_convert(\r\n  pdf_file,\r\n  format = \"png\",\r\n  dpi = 150,\r\n  filenames = sprintf(\"%s/page-%02d.png\", img_dir, seq_len(n)),\r\n  verbose = FALSE\r\n)\r\n\r\nwrapper <- do.call(\r\n  swipeRwrapper,\r\n  lapply(files, function(x) {\r\n    htmltools::tags$div(\r\n      class = \"swiper-zoom-container\",\r\n      htmltools::tags$img(\r\n        src = x,\r\n        style = \"width:100%; height:auto; display:block; margin:0 auto;\"\r\n      )\r\n    )\r\n  })\r\n)\r\n\r\nhtmltools::div(\r\n  style = \"max-width: 700px; margin: 0 auto;\",\r\n  swipeR(\r\n    wrapper = wrapper,\r\n    width = \"100%\",\r\n    height = \"800px\",\r\n    zoom = TRUE,\r\n    navigationColor = \"black\",\r\n    paginationColor = \"black\"\r\n  )\r\n)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-04-18-siop-2026-recommender/./pic.png",
+    "last_modified": "2026-04-18T20:58:44+02:00",
+    "input_file": "siop-2026-recommender.knit.md",
+    "preview_width": 1870,
+    "preview_height": 878
+  },
+  {
     "path": "posts/2026-04-18-siop-2026-causal-inference-workshop/",
     "title": "No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)",
     "description": "My first SIOP. Saturday 8 AM workshop. Causal inference. I clearly know how to ease into things 😅",
