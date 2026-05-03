@@ -39,6 +39,7 @@ Give it a try and let me know whether it makes your SIOP planning at least a lit
 
 ⚠️ As is often the case with AI, treat its recommendations more as inspiration than as definitive guidance, and verify them against a reliable source such as the official SIOP schedule. The app works only with session titles, not abstracts; errors may have occurred during information extraction; and the embedding model used does not capture every semantic nuance. So there is plenty of room for mistakes.
 
+**Update**: Now that SIOP 2026 has wrapped, the Recommender can officially retire. RIP, SIOP 2026 Recommender. You served us well 🫡 Thanks to everyone who tried it - it was fun building this.
 
 ```{r message=FALSE, error=FALSE, echo=FALSE}
 
