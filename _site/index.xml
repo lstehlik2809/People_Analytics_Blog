@@ -7,7 +7,31 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>SIOP through the wisdom of crowds: What I may have missed</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection</link>
+      <description>A brief “wisdom of crowds” reflection on which SIOP sessions and topics drew unusually high agenda interest - and what that suggests I may want to catch up on.</description>
+      <category>siop</category>
+      <category>topic analysis</category>
+      <category>lost opportunity cost</category>
+      <category>conference reflection</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection/./plot.png" medium="image" type="image/png" width="1156" height="813"/>
+    </item>
+    <item>
+      <title>SIOP 2026 Recommender</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</link>
+      <description>A practical AI assistant for finding the most relevant SIOP 2026 sessions and building a conflict-free personal schedule.</description>
+      <category>siop</category>
+      <category>recommender</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</guid>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender/./pic.png" medium="image" type="image/png" width="1870" height="878"/>
+    </item>
     <item>
       <title>What a European cigarette tax study taught me about employee listening</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -23,17 +47,6 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data</guid>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/./Comparison-of-repeated-cross-sectional-and-panel-design-studies-dots-represent-survey.png" medium="image" type="image/png" width="682" height="327"/>
-    </item>
-    <item>
-      <title>SIOP 2026 Recommender</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</link>
-      <description>A practical AI assistant for finding the most relevant SIOP 2026 sessions and building a conflict-free personal schedule.</description>
-      <category>siop</category>
-      <category>recommender</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</guid>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender/./pic.png" medium="image" type="image/png" width="1870" height="878"/>
     </item>
     <item>
       <title>No Experiment, No Problem? Causal Inference in Applied Quasi-Experimental Settings (Session ID 830)</title>
@@ -850,7 +863,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1339,7 +1352,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1925,7 +1938,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
