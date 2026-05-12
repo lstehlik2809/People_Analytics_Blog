@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Goals saved above expected… for managers?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling</link>
+      <description>What hockey goalies can teach People Analytics about manager evaluation, context, and the dangers of high-stakes metrics.</description>
+      <category>performance measurement</category>
+      <category>manager effectiveness</category>
+      <category>statistical modeling</category>
+      <category>causal inference</category>
+      <category>responsible ai</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling/./goalie-teacher-manager.png" medium="image" type="image/png" width="1122" height="1402"/>
+    </item>
     <item>
       <title>SIOP through the wisdom of crowds: What I may have missed</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +32,7 @@
       <category>lost opportunity cost</category>
       <category>conference reflection</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection</guid>
-      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection/./plot.png" medium="image" type="image/png" width="1156" height="813"/>
     </item>
     <item>
@@ -863,7 +877,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1352,7 +1366,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1938,7 +1952,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>

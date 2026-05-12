@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2026-05-12-value-added-modeling/",
+    "title": "Goals saved above expected… for managers?",
+    "description": "What hockey goalies can teach People Analytics about manager evaluation, context, and the dangers of high-stakes metrics.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-05-12",
+    "categories": [
+      "performance measurement",
+      "manager effectiveness",
+      "statistical modeling",
+      "causal inference",
+      "responsible ai"
+    ],
+    "contents": "\r\nA hockey stat sent me down a rabbit hole this weekend 🤓\r\nIt started with goalie trivia and ended with manager evaluation.\r\nThe trivia: you can’t judge a goalie on save percentage alone - a goalie behind a leaky defense faces harder shots and can look worse than he is. So analysts built models that score every shot’s observable difficulty - distance, angle, shot type, rebound/previous-event context, manpower, and in richer datasets, pre-shot movement - and predict the probability it becomes a goal. Sum the differences between expected and actual outcomes, and you’ve partially separated goalie performance from shot volume and shot quality (Goals Saved Above Expected).\r\nThen I learned this same basic logic has been used in education for ~30 years. It’s called Value-Added Modeling. Predict each student’s expected test score from prior achievement, demographics, peers, and other available context - then estimate the teacher effect from the remaining classroom-level difference.\r\nThe People Analytics application is obvious: strip out tenure, role, comp, market, etc. - and the residual may contain a manager effect.\r\nTempting, but also dangerous. What VAM taught education the hard way:️\r\nSingle-year estimates are noisy: year-to-year stability for individual teachers is often around 0.2-0.5, sometimes higher depending on grade, subject, and model.️\r\nThree years of data materially improves reliability - patience beats better models - but it doesn’t eliminate bias.️\r\nWhen test-based metrics became high-stakes, they created predictable gaming: more test prep, narrowed instruction, and in the broader test-based-accountability era, outright cheating scandals like Atlanta`.️\r\nThe American Statistical Association issued a formal caution in 2014 about overinterpreting VAMs for high-stakes individual decisions.️\r\nHouston teachers later won a favorable due-process ruling and settlement because the proprietary model/data behind their scores could not be meaningfully challenged.\r\nEvery one of those lessons applies to manager scorecards. The model can be useful, but the governance around it is where things usually break. I can see this working for surfacing patterns, validating training programs, and allocating coaching - but going wrong at the predictable next step: using it to gate promotions or trigger PIPs on thin data, which is where many orgs will be tempted to go first, for understandable reasons.\r\nQuestion for the PA folks here: Are you using “above expected” style models in PA today? For what - retention, hiring, sales, something else? If you tried and walked away, what was the deal-breaker? Sample size? Politics? Legal? The metric got gamed?\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-05-12-value-added-modeling/./goalie-teacher-manager.png",
+    "last_modified": "2026-05-12T16:23:33+02:00",
+    "input_file": "value-added-modeling.knit.md",
+    "preview_width": 1122,
+    "preview_height": 1402
+  },
+  {
     "path": "posts/2026-05-06-siop-2026-reflection/",
     "title": "SIOP through the wisdom of crowds: What I may have missed",
     "description": "A brief “wisdom of crowds” reflection on which SIOP sessions and topics drew unusually high agenda interest - and what that suggests I may want to catch up on.",

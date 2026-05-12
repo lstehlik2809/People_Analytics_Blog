@@ -1,0 +1,45 @@
+---
+title: "Goals saved above expected… for managers?"
+description: |
+  What hockey goalies can teach People Analytics about manager evaluation, context, and the dangers of high-stakes metrics. 
+preview: ./goalie-teacher-manager.png
+author:
+  - name: Luděk Stehlík
+    url: https://www.linkedin.com/in/ludekstehlik/
+date: 2026-05-12
+categories:
+  - performance measurement
+  - manager effectiveness
+  - statistical modeling
+  - causal inference
+  - responsible ai
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    code_folding: true
+---
+
+A hockey stat sent me down a rabbit hole this weekend 🤓
+
+It started with goalie trivia and ended with manager evaluation.
+
+The trivia: you can't judge a goalie on save percentage alone - a goalie behind a leaky defense faces harder shots and can look worse than he is. So analysts built models that score every shot's observable difficulty - distance, angle, shot type, rebound/previous-event context, manpower, and in richer datasets, pre-shot movement - and predict the [probability it becomes a goal](https://hockey-graphs.com/2019/08/12/expected-goals-model-with-pre-shot-movement-part-1-the-model/){target="_blank"}. Sum the differences between expected and actual outcomes, and you've partially separated goalie performance from shot volume and shot quality (*[Goals Saved Above Expected](https://moneypuck.com/glossary.htm){target="_blank"}*).
+
+Then I learned this same basic logic has been [used in education for ~30 years](https://link.springer.com/article/10.1007/BF00973726){target="_blank"}. It's called *[Value-Added Modeling](https://www.rand.org/education-employment-infrastructure/projects/measuring-teacher-effectiveness/value-added-modeling.html){target="_blank"}*. Predict each student's expected test score from prior achievement, demographics, peers, and other available context - then estimate the teacher effect from the remaining classroom-level difference.
+
+The People Analytics application is obvious: strip out tenure, role, comp, market, etc. - and the residual may contain a manager effect.
+
+Tempting, but also dangerous. What VAM taught education the hard way:️
+
+* Single-year estimates are noisy: year-to-year [stability for individual teachers](https://files.eric.ed.gov/fulltext/ED530401.pdf){target="_blank"} is often around 0.2-0.5, sometimes higher depending on grade, subject, and model.️
+* Three years of data materially improves [reliability](https://ies.ed.gov/use-work/resource-library/report/technical-methods-report/error-rates-measuring-teacher-and-school-performance-using-value-added-models?utm_source=chatgpt.com){target="_blank"} - patience beats better models - but it doesn't eliminate bias.️
+* When test-based metrics became high-stakes, they created predictable gaming: more test prep, narrowed instruction, and in the broader test-based-accountability era, outright cheating scandals like [Atlanta](https://kappanonline.org/saultz-murphy-aronson-what-can-we-learn-from-atlanta-cheating-scandal/){target="_blank"}`.️
+* The American Statistical Association issued a [formal caution in 2014](https://www.amstat.org/asa/files/pdfs/POL-ASAVAM-Statement.pdf){target="_blank"} about overinterpreting VAMs for high-stakes individual decisions.️
+* [Houston teachers](https://journals.sagepub.com/doi/10.3102/0013189X20923046){target="_blank"} later won a favorable due-process ruling and settlement because the proprietary model/data behind their scores could not be meaningfully challenged.
+
+Every one of those lessons applies to manager scorecards. The model can be useful, but the governance around it is where things usually break. I can see this working for surfacing patterns, validating training programs, and allocating coaching - but going wrong at the predictable next step: using it to gate promotions or trigger PIPs on thin data, which is where many orgs will be tempted to go first, for understandable reasons.
+
+Question for the PA folks here: Are you using "above expected" style models in PA today? For what - retention, hiring, sales, something else? If you tried and walked away, what was the deal-breaker? Sample size? Politics? Legal? The metric got gamed?
