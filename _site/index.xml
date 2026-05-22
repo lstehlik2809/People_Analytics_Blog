@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Can AI help us fight the bullshit asymmetry?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry</link>
+      <description>The bullshit asymmetry principle says it takes an order of magnitude more energy to refute nonsense than to produce it. Could AI start to close that gap? 🤔</description>
+      <category>causal inference</category>
+      <category>bullshit asymmetry</category>
+      <category>employee experience</category>
+      <category>ai</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry/./agent_pic.png" medium="image" type="image/png" width="547" height="319"/>
+    </item>
     <item>
       <title>Agentic workflow for causal inference</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>ai</category>
       <category>github copilot</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference</guid>
-      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference/./agentic_causal_inference_workflow_architecture.png" medium="image" type="image/png" width="2125" height="1469"/>
     </item>
     <item>
