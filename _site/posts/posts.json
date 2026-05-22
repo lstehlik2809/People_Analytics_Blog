@@ -460,10 +460,10 @@
     ],
     "contents": "\r\nAs an illustration from my own practice, I wanted to give the audience in a lecture on cognitive biases a tangible experience of the ideas behind the famous “debunking” of the even more famous phenomenon of the Dunning-Kruger Effect (DKE).\r\nSo I called Claude to the rescue and asked it to put together a simple simulator that would intuitively demonstrate how the typical DKE pattern can arise from measurement noise / regression to the mean, boundary constraints, and universal optimism bias (also known as the Better-Than-Average Effect) - without invoking any “dual burden of incompetence.”\r\nWithin two or three iterations, in about 5 minutes total, the simulator was good enough to use. You can check it out for yourself here.\r\n\r\n\r\n\r\n\r\nFor anyone who teaches, lectures, or explains abstract ideas for a living - or just for fun - this kind of workflow is becoming hard to ignore.\r\nIf you’ve come across or built simple simulators, demos, or visualizations that made a hard concept finally click, feel free to share them in the comments 🤓\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-01-20-dunning-kruger-effect-simulation/./app_pic.png",
-    "last_modified": "2026-01-20T13:18:25+01:00",
+    "last_modified": "2026-05-22T17:02:37+02:00",
     "input_file": "dunning-kruger-effect-simulation.knit.md",
-    "preview_width": 802,
-    "preview_height": 1123
+    "preview_width": 823,
+    "preview_height": 881
   },
   {
     "path": "posts/2026-01-08-span-of-control-and-managerial-behavior/",

@@ -27,10 +27,10 @@ As an illustration from my own practice, I wanted to give the audience in a lect
 
 So I called Claude to the rescue and asked it to put together a simple simulator that would intuitively demonstrate how the typical DKE pattern can arise from measurement noise / regression to the mean, boundary constraints, and universal optimism bias (also known as the Better-Than-Average Effect) - without invoking any “dual burden of incompetence.”
 
-Within two or three iterations, in about 5 minutes total, the simulator was good enough to use. You can check it out for yourself [here](https://claude.ai/public/artifacts/b82b79ef-d125-4aec-a4a1-57394f70cf63){target="_blank"}.
+Within two or three iterations, in about 5 minutes total, the simulator was good enough to use. You can check it out for yourself [here](https://lstehlik2809.github.io/Dunning-Kruger-Effect-Statistical-Artifact/index.html){target="_blank"}.
 
 <div style="text-align:center;">
-  <a href="https://claude.ai/public/artifacts/b82b79ef-d125-4aec-a4a1-57394f70cf63" target="_blank">
+  <a href="https://lstehlik2809.github.io/Dunning-Kruger-Effect-Statistical-Artifact/index.html" target="_blank">
     <img src="app_pic.png" style="width:80%;" alt="Claude artifact preview">
   </a>
 </div>
