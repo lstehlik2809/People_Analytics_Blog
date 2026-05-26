@@ -49,3 +49,13 @@ What I found more useful than the critique itself is the workflow: a structured 
 Happy to be pushed back on any of this - vendors with skin in the game often see things I don't.
 
 Curious what other frameworks you’ve made actionable in a similar way and found useful. Feel free to share links, if available.
+
+----
+
+**Update**: One of the commenters on the LinkedIn version of this post pointed me to the “*BS Detector*” created by Paul Sweeney, author of the excellent ["*Magnetic Nonsense: A Short History of Bullshit at Work and How to Make It Go Away*"](https://www.amazon.co.uk/MAGNETIC-NONSENSE-SHORT-HISTORY-BULLSHIT/dp/1068531037){target="_blank"}. You can access the tool [here](https://senselabs.co/bs-detector){target="_blank"} or find it among the publicly available GPTs on OpenAI’s platform under the name "*Sense Lab BS Detector*". Give it a try. I tested it on several papers, and it’s brutally honest and direct, just like its author 🤓
+
+<div style="text-align:center">
+![](./bs_detector.png){width=65%}
+</div>
+
+P.S. If you don’t follow Paul, you should. His LinkedIn posts may challenge some of your favorite and deeply entrenched beliefs about work-related topics. He regularly brings a much-needed dose of skepticism to how we think about what we do in the HRM space.
