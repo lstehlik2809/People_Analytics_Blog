@@ -28,9 +28,9 @@ I just finished reading Tom Griffiths’ amazing book, [*The Laws of Thought: Th
 
 In a compact and very accessible way, it covers roughly 300 years of human efforts to understand how and why the mind does what it does, using various mathematical tools and frameworks.
 
-Among other things, the book shows how attempts to understand human cognition have been deeply intertwined in both directions with attempts to build artificial minds. It also provides deeper context for understanding current LLMs, both their strengths and their limitations.
+Among other things, the book shows how attempts to understand human cognition and attempts to build artificial minds have deeply shaped each other. It also provides deeper context for understanding current LLMs - their strengths as well as their limitations - from the perspective of probability theory at the computational level of analysis.
 
-**Highly recommended!**
+**All in all, highly recommended!**
 
 The chart bellow represents a kind of knowledge graph generated from the book. It shows two layers at once: people, such as Chomsky, Boole, Turing, Skinner, Rumelhart, McClelland, Marr, and Tenenbaum; and major topics that organize the book, such as formal logic, symbolic AI, generative grammar, connectionism, and Bayesian cognition. Green edges mark supportive relationships, such as influence or collaboration; red edges mark critique; and gray dashed edges connect people to topics. The graph includes 48 people, 12 topics, 64 aggregated person-person edges, and 50 person-topic edges. You may need to click on the image and zoom in to see all the details.
 
