@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2026-05-31-the-laws-of-thought/",
+    "title": "The Laws of Thought: The Quest for a Mathematical Theory of the Mind",
+    "description": "A short book recommendation.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-05-31",
+    "categories": [
+      "cognitive science",
+      "ai",
+      "knowledge graph"
+    ],
+    "contents": "\r\nI just finished reading Tom Griffiths’ amazing book, The Laws of Thought: The Quest for a Mathematical Theory of the Mind, over the weekend.\r\n\r\n\r\n\r\nIn a compact and very accessible way, it covers roughly 300 years of human efforts to understand how and why the mind does what it does, using various mathematical tools and frameworks.\r\nAmong other things, the book shows how attempts to understand human cognition have been deeply intertwined in both directions with attempts to build artificial minds. It also provides deeper context for understanding current LLMs, both their strengths and their limitations.\r\nHighly recommended!\r\nThe chart bellow represents a kind of knowledge graph generated from the book. It shows two layers at once: people, such as Chomsky, Boole, Turing, Skinner, Rumelhart, McClelland, Marr, and Tenenbaum; and major topics that organize the book, such as formal logic, symbolic AI, generative grammar, connectionism, and Bayesian cognition. Green edges mark supportive relationships, such as influence or collaboration; red edges mark critique; and gray dashed edges connect people to topics. The graph includes 48 people, 12 topics, 64 aggregated person-person edges, and 50 person-topic edges. You may need to click on the image and zoom in to see all the details.\r\n\r\n\r\n\r\n\r\nMethodological note: The relationships were not inferred from simple co-occurrence. Every person-person edge had to be explicitly asserted in the text and backed by a verbatim quote. The pipeline extracted and cleaned the PDF, split it into chapters, induced a frozen 12-topic taxonomy, built an entity catalog, used an LLM to identify and classify evidence-backed relationships, and then ran code to verify that every evidence quote appeared in the source chapter. Mechanical steps were handled by code; semantic steps were handled by the LLM; and evidence quotes were checked by deterministic code.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-05-31-the-laws-of-thought/./network_the_laws_of_thought.png",
+    "last_modified": "2026-05-31T20:52:11+02:00",
+    "input_file": "the-laws-of-thought.knit.md",
+    "preview_width": 3600,
+    "preview_height": 2400
+  },
+  {
     "path": "posts/2026-05-22-ai-and-bullshit-asymmetry/",
     "title": "Can AI help us fight the bullshit asymmetry?",
     "description": "The bullshit asymmetry principle says it takes an order of magnitude more energy to refute nonsense than to produce it. Could AI start to close that gap? 🤔",

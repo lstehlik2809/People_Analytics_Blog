@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 21 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>The Laws of Thought: The Quest for a Mathematical Theory of the Mind</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-05-31-the-laws-of-thought</link>
+      <description>A short book recommendation.</description>
+      <category>cognitive science</category>
+      <category>ai</category>
+      <category>knowledge graph</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-31-the-laws-of-thought</guid>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-31-the-laws-of-thought/./network_the_laws_of_thought.png" medium="image" type="image/png" width="3600" height="2400"/>
+    </item>
     <item>
       <title>Can AI help us fight the bullshit asymmetry?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +30,7 @@
       <category>employee experience</category>
       <category>ai</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-22-ai-and-bullshit-asymmetry/./agent_pic.png" medium="image" type="image/png" width="547" height="319"/>
     </item>
     <item>
@@ -903,7 +915,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1392,7 +1404,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1978,7 +1990,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
