@@ -10,6 +10,14 @@ date: 2026-05-31
 categories:
   - cognitive science
   - ai
+  - mathematical psychology
+  - computational cognition
+  - machine learning
+  - llm 
+  - history of ai
+  - symbolic ai
+  - connectionism
+  - bayesian cognition
   - knowledge graph
 output:
   distill::distill_article:
@@ -32,7 +40,7 @@ Among other things, the book shows how attempts to understand human cognition an
 
 **All in all, highly recommended!**
 
-P.S. The chart bellow represents a kind of knowledge graph generated from the book. It shows two layers at once: key figures, such as Chomsky, Boole, Turing, Skinner, Rumelhart, McClelland, Marr, and Tenenbaum; and major topics that organize the book, such as formal logic, symbolic AI, generative grammar, connectionism, and Bayesian cognition. Green edges mark supportive relationships, such as influence or collaboration; red edges mark critique; and gray dashed edges connect people to topics. The graph includes 48 people, 12 topics, 64 aggregated figure-to-figure edges, and 50 person-topic edges. You may need to click on the image and zoom in to see all the details.
+P.S. The chart bellow represents a kind of knowledge graph generated from the book. It shows two layers at once: key figures, such as Chomsky, Boole, Turing, Skinner, Rumelhart, McClelland, Marr, and Tenenbaum; and major topics that organize the book, such as formal logic, symbolic AI, generative grammar, connectionism, and Bayesian cognition. Green edges mark supportive relationships, such as influence or collaboration; red edges mark critique; and gray dashed edges connect people to topics. The graph includes 48 people, 12 topics, 64 aggregated figure-to-figure edges, and 50 person-topic edges. You may need to click on the image and zoom in to see all the details 🕵️‍♂️
 
 <div style="text-align:center;">
   <a href="./network_the_laws_of_thought.png" target="_blank">
