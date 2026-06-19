@@ -23,7 +23,7 @@ output:
 
 Recently, I listened to a podcast episode featuring Nicholas Bloom, where he mentioned an interesting finding from his recent research with colleagues ([Zarate et al., 2025](https://www.pnas.org/doi/10.1073/pnas.2529036122){target="_blank"}):
 
-Countries scoring higher on individualism - as conceptualized in [Hofstede’s cultural-dimensions model](https://geerthofstede.com/culture-geert-hofstede-gert-jan-hofstede/6d-model-of-national-culture/){target="_blank"} - tend to have more work-from-home days per week. This association remains in models that include GDP per capita, the share of jobs suitable for WFH, population density, commuting time, and pandemic lockdown stringency.
+Countries scoring higher on individualism - as conceptualized in [Hofstede’s cultural-dimensions model](https://geerthofstede.com/culture-geert-hofstede-gert-jan-hofstede/6d-model-of-national-culture/){target="_blank"} - tend to have more work-from-home days per week. This association remains in a model that includes GDP per capita, the share of jobs suitable for WFH, population density, commuting time, and pandemic lockdown stringency.
 
 Intuitively, this makes sense: individualistic cultures may place greater value on autonomy and personal control, while their organizations may be more comfortable evaluating employees by outcomes rather than physical presence. Still, this intuitive explanation deserves a generous grain of salt. Even with these controls, many potential confounding paths remain.
 
