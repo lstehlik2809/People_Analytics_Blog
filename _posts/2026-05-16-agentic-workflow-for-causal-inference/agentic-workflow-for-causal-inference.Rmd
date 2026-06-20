@@ -2,7 +2,7 @@
 title: "Agentic workflow for causal inference"
 description: |
   A longer note on our's team first experiment with an agentic workflow for causal inference. 
-preview: ./agentic_causal_inference_workflow_architecture.png
+preview: ./causal_inference_agentic_workflow.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
@@ -57,10 +57,9 @@ The second layer is an `AGENTS.md` file with rules that apply across agents. Thi
 
 The goal is to make the workflow more disciplined and easier to audit. Many causal analysis problems originate before estimation: vague treatment definitions, unclear assignment mechanisms, inappropriate controls, post-treatment covariates, positivity problems, or unsupported identification claims. The invariants file is meant to catch some of these issues before they are buried in code.
 
-### 3. Four agent roles
-The third layer is a set of four agent roles with explicit handoffs.
+### 3. Three agent roles
+The third layer is a set of three agent roles with explicit handoffs.
 
-* **Orchestrator** routes the work.
 * **Planner** handles the design stage. It covers the causal question, target trial emulation where appropriate, DAG, identification, estimator choice, and design decisions. It writes a versioned plan and a `design.yaml` file containing the key answered design questions.
 * **Implementer** handles estimation, diagnostics, robustness checks, interpretation, and report preparation. It should only proceed after the design has been approved.
 * **Reviewer** audits both the design and the implementation. Each finding is classified as either design-level or code-level. Design-level findings are routed back to the Planner. Code-level findings are routed back to the Implementer. The Reviewer continues routing findings until the analysis is ready to finalize.
@@ -68,7 +67,7 @@ The third layer is a set of four agent roles with explicit handoffs.
 In practice, this creates an iterative workflow rather than a single long prompt. The process usually involves several rounds between the Planner, Implementer, Reviewer, and the human analyst.
 
 <div style="text-align:center">
-![](./agentic_causal_inference_workflow_architecture.png){width=100%}
+![](./causal_inference_agentic_workflow.png){width=100%}
 </div>
 
 ### Project structure
