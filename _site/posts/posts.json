@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2026-06-21-cultural-traveler/",
+    "title": "A nerdy way to choose your next holiday destination",
+    "description": "How I sacrificed an hour of Netflix to build a weird travel app.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-06-21",
+    "categories": [
+      "hofstede",
+      "culture",
+      "holiday planning",
+      "vibe coding"
+    ],
+    "contents": "\r\nMy recent encounter with Hofstede’s cultural dimensions model in the context of the work-from-home topic reminded me of a nerdy and probably not very practical idea I had some time ago.\r\nI wanted an app that could find cultural doppelgangers of countries I’d like to visit - but closer to home. The idea was to reduce travel distance, potentially save money, and perhaps make the trip a little friendlier to the environment.\r\nAnd because these days what separates you from materializing even the craziest app idea you have is just your willingness to sacrifice one hour of Netflix, I built it 🤓 Check out the resulting app here.\r\nIt answers three questions:️\r\nCultural twin: Which countries near my home culturally resemble a more distant country I’d like to visit?️\r\nMaximum otherness: Within a chosen radius, which country is culturally least similar to my home?\r\nHome away from home: If I want to travel abroad without encountering too many cultural surprises - yes, even such travelers exist 😲 - which nearby countries are the best candidates?\r\n\r\n\r\n\r\nThe search radius is based on distances between capital cities. You can also decide which cultural dimensions matter more to you. The app optionally considers differences in local price levels using World Bank PPP-based household-consumption data, but this is only a rough affordability indicator: it does not include flights, accommodation choices, seasonality, or your talent for finding suspiciously cheap restaurants 😉\r\nIdeally, the app would also consider flight prices, but I’m not willing to sacrifice another one or two hours of Netflix watching 😁\r\nGive it a try and let me know whether it sparks some inspiration for your upcoming summer holiday season.\r\nP.S. Hofstede’s country scores are broad national averages. They capture only a small part of what shapes a travel experience and say nothing about every individual, city, or neighborhood, so please treat the results just as a playful source of inspiration. I don’t want to receive complaint letters later saying that I ruined someone’s vacation 😁\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-06-21-cultural-traveler/./cultural-traveler-app.png",
+    "last_modified": "2026-06-21T21:32:19+02:00",
+    "input_file": "cultural-traveler.knit.md",
+    "preview_width": 1238,
+    "preview_height": 1232
+  },
+  {
     "path": "posts/2026-06-18-hofstede-wfh/",
     "title": "What does national culture have to do with working from home?",
     "description": "A small extension of a research paper on why working from home varies across countries and people.",
