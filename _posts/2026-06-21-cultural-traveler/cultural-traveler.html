@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["cultural-traveler-app.gif","cultural-traveler-app.png","cultural-traveler_files/anchor-4.2.2/anchor.min.js","cultural-traveler_files/bowser-1.9.3/bowser.min.js","cultural-traveler_files/distill-2.2.21/template.v2.js","cultural-traveler_files/header-attrs-2.30/header-attrs.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.min.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.min.map","cultural-traveler_files/popper-2.6.0/popper.min.js","cultural-traveler_files/tippy-6.2.7/tippy-bundle.umd.min.js","cultural-traveler_files/tippy-6.2.7/tippy-light-border.css","cultural-traveler_files/tippy-6.2.7/tippy.css","cultural-traveler_files/tippy-6.2.7/tippy.umd.min.js","cultural-traveler_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["cultural-traveler-app.gif","cultural-traveler-app.png","cultural-traveler_files/anchor-4.2.2/anchor.min.js","cultural-traveler_files/bowser-1.9.3/bowser.min.js","cultural-traveler_files/distill-2.2.21/template.v2.js","cultural-traveler_files/header-attrs-2.30/header-attrs.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.min.js","cultural-traveler_files/jquery-3.6.0/jquery-3.6.0.min.map","cultural-traveler_files/popper-2.6.0/popper.min.js","cultural-traveler_files/tippy-6.2.7/tippy-bundle.umd.min.js","cultural-traveler_files/tippy-6.2.7/tippy-light-border.css","cultural-traveler_files/tippy-6.2.7/tippy.css","cultural-traveler_files/tippy-6.2.7/tippy.umd.min.js","cultural-traveler_files/webcomponents-2.0.0/webcomponents.js","distance_similarity_all_pairs.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1567,6 +1567,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Ideally, the app would also consider flight prices, but I’m not willing to sacrifice another one or two hours of Netflix watching 😁</p>
 <p>Give it a try and let me know whether it sparks some inspiration for your upcoming summer holiday season.</p>
 <p>P.S. Hofstede’s country scores are broad national averages. They capture only a small part of what shapes a travel experience and say nothing about every individual, city, or neighborhood, so please treat the results just as a playful source of inspiration. I don’t want to receive complaint letters later saying that I ruined someone’s vacation 😁</p>
+<hr />
+<p><strong>Update</strong>: One of the commenters on the LinkedIn version of this post asked an interesting question relevant to the first and third use cases covered by the app: “<em>how often are ‘similar countries’ not neighboring countries?</em>” That question sent me back to the data to check. What were the results? Across all 69 countries, 78% had a closest cultural twin that wasn’t a neighbor, and even among countries with at least one land neighbor, the figure was 73%. However, that doesn’t mean geography and culture are unrelated, just less strongly related than one might expect - the rank correlation was fairly weak (<em>ρ</em> = -0.23), but robustly negative (95% HDI: -0.34 to -0.12), even after accounting for the non-independence of country pairs.</p>
+<div style="text-align:center">
+<p><img src="distance_similarity_all_pairs.png" style="width:100.0%" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
