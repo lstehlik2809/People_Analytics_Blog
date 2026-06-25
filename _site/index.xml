@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Company culture as a forward signal of financial performance?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-06-25-company-culture-and-financial-performance</link>
+      <description>Exploring which aspects of company culture are forward-associated with later financial outcomes.</description>
+      <category>corporate culture</category>
+      <category>glassdoor</category>
+      <category>financial performance</category>
+      <category>bayesian statistics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-06-25-company-culture-and-financial-performance</guid>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-06-25-company-culture-and-financial-performance/./forest_primary.png" medium="image" type="image/png" width="2400" height="1800"/>
+    </item>
     <item>
       <title>A nerdy way to choose your next holiday destination</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>holiday planning</category>
       <category>vibe coding</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-06-21-cultural-traveler</guid>
-      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-06-21-cultural-traveler/./cultural-traveler-app.png" medium="image" type="image/png" width="1238" height="1232"/>
     </item>
     <item>
