@@ -7,7 +7,20 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Before you blame the driver, check the denominator</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-06-29-car-accidents-near-home</link>
+      <description>A short, nerdy reflection on a family discussion about why so many car accidents happen relatively close to home.</description>
+      <category>car accidents</category>
+      <category>cognitive bias</category>
+      <category>base-rate neglect</category>
+      <category>fundamental attribution error</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-06-29-car-accidents-near-home</guid>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-06-29-car-accidents-near-home/./car-travel-sim-cut.gif" medium="image" type="image/gif"/>
+    </item>
     <item>
       <title>Company culture as a forward signal of financial performance?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -18,7 +31,7 @@
       <category>financial performance</category>
       <category>bayesian statistics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-06-25-company-culture-and-financial-performance</guid>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-06-25-company-culture-and-financial-performance/./forest_primary.png" medium="image" type="image/png" width="2400" height="1800"/>
     </item>
     <item>
@@ -974,7 +987,7 @@
       <category>actionability</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1463,7 +1476,7 @@
       <category>astrology</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -2049,7 +2062,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
