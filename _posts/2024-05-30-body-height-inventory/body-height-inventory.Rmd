@@ -9,8 +9,7 @@ author:
 date: 05-30-2024
 categories:
   - psychometrics
-  - measurement
-  - education
+  - learning and development
 output:
   distill::distill_article:
     self_contained: false

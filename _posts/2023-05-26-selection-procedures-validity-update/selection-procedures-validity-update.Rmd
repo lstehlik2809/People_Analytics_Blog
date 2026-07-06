@@ -9,7 +9,7 @@ date: 05-26-2023
 categories:
   - i/o psychology
   - validity
-  - employee selection 
+  - employee selection
   - meta-analysis
   - data visualization
 output:

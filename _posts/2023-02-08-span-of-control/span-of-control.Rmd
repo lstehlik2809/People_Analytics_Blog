@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 01-24-2023
 categories:
-  - span of control
+  - organizational design
   - collaboration
   - meetings
 output:

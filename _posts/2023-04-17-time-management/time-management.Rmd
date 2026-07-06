@@ -10,10 +10,9 @@ date: 04-17-2023
 categories:
   - time management
   - meta-analysis
-  - job satisfaction
-  - job performance
-  - stress
-  - burnout
+  - employee satisfaction
+  - performance
+  - well-being
 output:
   distill::distill_article:
     self_contained: false

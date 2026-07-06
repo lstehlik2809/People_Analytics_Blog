@@ -8,12 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-18-2022
 categories:
-  - conditional inference tree
-  - decision tree
   - machine learning
   - statistics
   - interpretability
-  - prediction
+  - predictive analytics
   - r
 output:
   distill::distill_article:

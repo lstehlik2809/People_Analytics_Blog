@@ -9,9 +9,8 @@ author:
 date: 09-17-2023
 categories:
   - bayesian statistics
-  - business process simulation
+  - simulation
   - python
-  - pymc
 output:
   distill::distill_article:
     self_contained: false

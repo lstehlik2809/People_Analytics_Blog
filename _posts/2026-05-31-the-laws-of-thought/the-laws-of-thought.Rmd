@@ -10,15 +10,8 @@ date: 2026-05-31
 categories:
   - cognitive science
   - ai
-  - mathematical psychology
-  - computational cognition
   - machine learning
-  - llm 
-  - history of ai
-  - symbolic ai
-  - connectionism
-  - bayesian cognition
-  - knowledge graph
+  - generative ai
 output:
   distill::distill_article:
     self_contained: false

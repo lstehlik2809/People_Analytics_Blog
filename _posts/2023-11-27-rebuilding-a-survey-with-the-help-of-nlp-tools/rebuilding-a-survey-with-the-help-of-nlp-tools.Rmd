@@ -10,7 +10,7 @@ date: 11-27-2023
 categories:
   - employee survey
   - nlp
-  - llm 
+  - generative ai
   - psychometrics
 output:
   distill::distill_article:

@@ -8,8 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-27-2025
 categories:
-  - job fit
-  - career advisory
+  - career development
   - cognitive biases
 output:
   distill::distill_article:

@@ -8,11 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-11-2023
 categories:
-  - gpt
+  - generative ai
   - ai
   - personality
-  - self-awareness
-  - hogan personality inventory
   - shiny app
   - r
 output:

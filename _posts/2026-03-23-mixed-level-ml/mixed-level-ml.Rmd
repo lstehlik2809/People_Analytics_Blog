@@ -9,10 +9,9 @@ author:
 date: 03-23-2026
 categories:
   - machine learning
-  - hierarchical data
+  - multilevel modeling
   - causal inference
-  - prediction
-  - mixed-level models
+  - predictive analytics
 output:
   distill::distill_article:
     self_contained: false

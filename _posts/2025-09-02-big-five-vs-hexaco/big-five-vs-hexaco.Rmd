@@ -10,10 +10,9 @@ date: 09-02-2025
 categories:
   - personality
   - big five
-  - hexaco
-  - predictive validity
-  - job performance
-  - counterproductive work behavior 
+  - validity
+  - performance
+  - i/o psychology
 output:
   distill::distill_article:
     self_contained: false

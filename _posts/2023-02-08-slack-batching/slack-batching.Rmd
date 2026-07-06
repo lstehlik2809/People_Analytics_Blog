@@ -8,12 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 01-17-2023
 categories:
-  - instant messaging
+  - communication
   - collaboration
-  - focus time
-  - distractions
-  - operationalization
-  - measurement
+  - time management
+  - psychometrics
 output:
   distill::distill_article:
     self_contained: false

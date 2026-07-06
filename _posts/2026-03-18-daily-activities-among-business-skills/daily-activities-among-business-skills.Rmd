@@ -9,8 +9,7 @@ author:
 date: 03-18-2026
 categories:
   - skills
-  - skills taxonomy
-  - daily activities
+  - time management
   - embeddings
 output:
   distill::distill_article:

@@ -8,11 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 07-15-2025
 categories:
-  - leadership risks
-  - derailers 
-  - hogan assessment 
-  - hogan development survey
-  - personality psychology
+  - leadership
+  - personality
   - psychometrics
   - network analysis
 output:

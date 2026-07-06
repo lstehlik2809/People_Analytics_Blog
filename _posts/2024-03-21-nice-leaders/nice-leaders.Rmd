@@ -9,9 +9,8 @@ author:
 date: 03-21-2024
 categories:
   - personality
-  - agreeableness
-  - leadership emergence
-  - leadership effectiveness
+  - big five
+  - leadership
 output:
   distill::distill_article:
     self_contained: false

@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 01-20-2023
 categories:
-  - slack
-  - instant messaging
-  - best practices
+  - communication
+  - evidence-based management
 output:
   distill::distill_article:
     self_contained: false

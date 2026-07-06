@@ -11,7 +11,7 @@ categories:
   - causal inference
   - agentic ai
   - ai
-  - github copilot
+  - generative ai
 output:
   distill::distill_article:
     self_contained: false

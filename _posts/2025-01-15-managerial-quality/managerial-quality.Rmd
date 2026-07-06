@@ -9,10 +9,9 @@ author:
 date: 01-15-2025
 categories:
   - people management
-  - employee attrition
-  - manager
-  - causal analysis
-  - heterogeneity
+  - employee turnover
+  - causal inference
+  - statistics
 output:
   distill::distill_article:
     self_contained: false

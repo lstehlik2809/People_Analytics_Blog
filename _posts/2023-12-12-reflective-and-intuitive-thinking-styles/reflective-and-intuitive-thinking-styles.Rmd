@@ -11,7 +11,7 @@ categories:
   - meta-analysis
   - performance
   - employee selection
-  - employee development
+  - learning and development
   - psychometrics
 output:
   distill::distill_article:

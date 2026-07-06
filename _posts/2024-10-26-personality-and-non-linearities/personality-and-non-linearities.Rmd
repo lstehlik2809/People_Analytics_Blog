@@ -9,12 +9,10 @@ author:
 date: 10-26-2024
 categories:
   - personality
-  - prediction
-  - nonlinearity 
-  - machine learning 
-  - interpretable ml
-  - hogan
-  - hpi
+  - predictive analytics
+  - regression analysis
+  - machine learning
+  - interpretability
 output:
   distill::distill_article:
     self_contained: false

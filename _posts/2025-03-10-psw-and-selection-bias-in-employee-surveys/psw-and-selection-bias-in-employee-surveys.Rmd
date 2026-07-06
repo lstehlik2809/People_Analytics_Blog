@@ -9,9 +9,7 @@ author:
 date: 03-10-2025
 categories:
   - employee survey
-  - selection bias
   - causal inference
-  - propensity score 
 output:
   distill::distill_article:
     self_contained: false

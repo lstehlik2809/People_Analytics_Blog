@@ -10,7 +10,7 @@ date: 07-01-2024
 categories:
   - motivation
   - meta-analysis
-  - performance management 
+  - performance management
 output:
   distill::distill_article:
     self_contained: false

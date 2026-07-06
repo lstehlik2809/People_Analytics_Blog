@@ -9,9 +9,8 @@ author:
 date: 09-12-2024
 categories:
   - employee experience
-  - exit survey 
-  - engagement survey
-  - response style
+  - employee survey
+  - psychometrics
 output:
   distill::distill_article:
     self_contained: false

@@ -8,8 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 01-08-2026
 categories:
-  - org design
-  - span of control
+  - organizational design
   - leadership
   - people management
   - future of work

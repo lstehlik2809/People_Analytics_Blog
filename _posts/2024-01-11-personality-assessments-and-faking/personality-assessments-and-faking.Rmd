@@ -9,9 +9,7 @@ author:
 date: 01-11-2024
 categories:
   - personality
-  - assessment
   - psychometrics
-  - faking
   - validity
 output:
   distill::distill_article:

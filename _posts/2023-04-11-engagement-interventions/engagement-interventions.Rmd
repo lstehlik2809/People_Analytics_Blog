@@ -9,8 +9,7 @@ author:
 date: 03-27-2023
 categories:
   - employee engagement
-  - work engagement
-  - interventions
+  - causal inference
   - meta-analysis
   - i/o psychology
 output:

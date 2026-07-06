@@ -8,8 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 03-17-2023
 categories:
-  - meeting culture
-  - meeting overload
+  - meetings
 output:
   distill::distill_article:
     self_contained: false

@@ -10,7 +10,7 @@ date: 2026-06-14
 categories:
   - causal inference
   - research methods
-  - critical thinking 
+  - critical thinking
 output:
   distill::distill_article:
     self_contained: false

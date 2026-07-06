@@ -9,10 +9,9 @@ author:
 date: 10-21-2025
 categories:
   - employee experience
-  - survey data
+  - employee survey
   - causal inference
   - panel data
-  - longitudinal research
 output:
   distill::distill_article:
     self_contained: false

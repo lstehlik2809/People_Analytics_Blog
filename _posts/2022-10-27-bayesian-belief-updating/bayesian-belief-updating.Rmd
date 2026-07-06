@@ -8,10 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-27-2022
 categories:
-  - bayesian belief updating
-  - bayesian inference
-  - judgment
-  - forecasting
+  - bayesian statistics
+  - decision making
+  - time series
   - critical thinking
   - r
 output:

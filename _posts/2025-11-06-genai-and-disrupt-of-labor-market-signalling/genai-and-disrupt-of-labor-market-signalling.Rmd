@@ -12,7 +12,6 @@ categories:
   - generative ai
   - labor economics
   - future of work
-  - job market 
 output:
   distill::distill_article:
     self_contained: false

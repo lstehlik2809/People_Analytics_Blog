@@ -9,11 +9,9 @@ author:
 date: 02-29-2024
 categories:
   - personality
-  - predictive validity
+  - validity
   - big five
-  - enneagram
-  - mbti
-  - astrology
+  - critical thinking
 output:
   distill::distill_article:
     self_contained: false

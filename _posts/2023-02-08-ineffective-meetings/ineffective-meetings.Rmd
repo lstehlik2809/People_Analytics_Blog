@@ -9,8 +9,6 @@ author:
 date: 01-03-2023
 categories:
   - meetings
-  - meeting culture
-  - meeting overload
   - collaboration
 output:
   distill::distill_article:

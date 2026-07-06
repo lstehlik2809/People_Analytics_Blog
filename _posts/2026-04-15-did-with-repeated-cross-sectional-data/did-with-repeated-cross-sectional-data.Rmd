@@ -9,9 +9,7 @@ author:
 date: 2026-04-17
 categories:
   - causal inference
-  - impact evaluation
-  - repeated cross-sectional design
-  - panel design
+  - panel data
   - employee survey
   - difference-in-differences
   - double machine learning

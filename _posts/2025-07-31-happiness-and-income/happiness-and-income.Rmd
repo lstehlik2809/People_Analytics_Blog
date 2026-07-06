@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 07-31-2025
 categories:
-  - happiness research
-  - positive psychology
-  - life satisfaction
+  - well-being
+  - psychology
   - causal inference
 output:
   distill::distill_article:

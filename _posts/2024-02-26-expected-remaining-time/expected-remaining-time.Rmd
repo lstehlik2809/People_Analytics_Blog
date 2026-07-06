@@ -9,9 +9,8 @@ author:
 date: 02-26-2024
 categories:
   - employee turnover
-  - statistical analysis
+  - statistics
   - python
-  - book tip
 output:
   distill::distill_article:
     self_contained: false

@@ -8,12 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-30-2025
 categories:
-  - market basket analysis
   - machine learning
-  - team profile analysis
+  - teams
   - motivation
-  - mvpi
-  - hogan assessment
+  - personality
 output:
   distill::distill_article:
     self_contained: false

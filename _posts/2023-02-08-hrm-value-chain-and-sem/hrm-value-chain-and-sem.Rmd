@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 02-08-2023
 categories:
-  - hrm value chain
+  - hr management
   - people analytics
-  - path analysis
   - structural equation modeling
   - bayesian statistics
   - r

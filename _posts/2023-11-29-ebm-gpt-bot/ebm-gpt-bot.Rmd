@@ -9,8 +9,8 @@ author:
 date: 11-29-2023
 categories:
   - evidence-based management
-  - organizational science
-  - gpt
+  - i/o psychology
+  - generative ai
   - ai
 output:
   distill::distill_article:

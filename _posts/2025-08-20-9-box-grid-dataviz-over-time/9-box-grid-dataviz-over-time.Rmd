@@ -8,7 +8,7 @@ author:
 date: 08-06-2025
 categories:
   - data visualization
-  - talent management
+  - hr management
 output:
   distill::distill_article:
     self_contained: false

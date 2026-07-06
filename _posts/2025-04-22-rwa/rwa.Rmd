@@ -9,9 +9,7 @@ author:
 date: 04-22-2025
 categories:
   - employee survey
-  - employee listening
-  - key drivers analysis
-  - relative weights analysis 
+  - regression analysis
 output:
   distill::distill_article:
     self_contained: false

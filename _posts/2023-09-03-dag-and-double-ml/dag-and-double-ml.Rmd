@@ -9,7 +9,6 @@ date: 09-03-2023
 categories:
   - causal inference
   - double machine learning
-  - dag
   - python
 output:
   distill::distill_article:

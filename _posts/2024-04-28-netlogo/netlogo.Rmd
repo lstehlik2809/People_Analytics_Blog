@@ -9,8 +9,7 @@ author:
 date: 04-28-2024
 categories:
   - simulation
-  - netlogo
-  - education
+  - learning and development
 output:
   distill::distill_article:
     self_contained: false

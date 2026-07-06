@@ -8,10 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 05-06-2025
 categories:
-  - happiness
-  - wellbeing
+  - well-being
   - psychology
-  - systematic review
+  - meta-analysis
 output:
   distill::distill_article:
     self_contained: false

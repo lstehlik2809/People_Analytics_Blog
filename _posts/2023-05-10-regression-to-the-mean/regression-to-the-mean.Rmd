@@ -10,7 +10,7 @@ date: 05-10-2023
 categories:
   - people analytics
   - critical thinking
-  - regression to the mean
+  - statistics
   - r
 output:
   distill::distill_article:

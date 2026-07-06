@@ -9,8 +9,7 @@ author:
 date: 07-09-2025
 categories:
   - people management
-  - manager
-  - value chain
+  - hr management
 output:
   distill::distill_article:
     self_contained: false

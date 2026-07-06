@@ -9,9 +9,8 @@ author:
 date: 07-03-2023
 categories:
   - employee turnover
-  - hr reporting
   - hr metrics
-  - bayesian inference
+  - bayesian statistics
   - r
 output:
   distill::distill_article:

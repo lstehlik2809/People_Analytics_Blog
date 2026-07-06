@@ -10,8 +10,7 @@ date: 11-10-2023
 categories:
   - machine learning
   - interpretability
-  - personas
-  - storytelling
+  - data visualization
   - r
   - python
 output:

@@ -9,9 +9,9 @@ author:
 date: 03-10-2026
 categories:
   - ai
-  - desirable difficulties
-  - behavioral design
-  - productivity architecture
+  - learning and development
+  - behavioral science
+  - time management
 output:
   distill::distill_article:
     self_contained: false

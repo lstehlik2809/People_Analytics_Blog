@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 12-17-2022
 categories:
-  - google
-  - oxygen project
-  - collaboration data
+  - people management
+  - collaboration
   - performance management
 output:
   distill::distill_article:

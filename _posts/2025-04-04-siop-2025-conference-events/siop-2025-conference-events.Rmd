@@ -9,10 +9,8 @@ author:
 date: 04-04-2025
 categories:
   - siop
-  - conference
   - i/o psychology
   - topic analysis
-  - bertopic
 output:
   distill::distill_article:
     self_contained: false

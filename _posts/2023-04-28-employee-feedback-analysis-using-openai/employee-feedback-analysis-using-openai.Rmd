@@ -8,10 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-28-2023
 categories:
-  - openai 
-  - gpt 
+  - generative ai
   - embeddings
-  - employee feedback
   - employee survey
   - topic analysis
   - python

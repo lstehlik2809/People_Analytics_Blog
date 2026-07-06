@@ -10,8 +10,7 @@ date: 2026-05-06
 categories:
   - siop
   - topic analysis
-  - lost opportunity cost
-  - conference reflection
+  - decision making
 output:
   distill::distill_article:
     self_contained: false

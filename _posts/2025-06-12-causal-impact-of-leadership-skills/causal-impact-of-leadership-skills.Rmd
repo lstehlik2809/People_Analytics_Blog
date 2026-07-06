@@ -10,11 +10,10 @@ date: 06-12-2025
 categories:
   - leadership
   - psychometrics
-  - assessment
-  - causality
+  - causal inference
   - ai
-  - llm
-  - ai agent
+  - generative ai
+  - agentic ai
 output:
   distill::distill_article:
     self_contained: false

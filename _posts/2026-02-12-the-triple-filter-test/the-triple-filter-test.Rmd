@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 02-12-2026
 categories:
-  - evidence-based hr
+  - evidence-based management
   - panel data
   - employee survey
   - causal inference

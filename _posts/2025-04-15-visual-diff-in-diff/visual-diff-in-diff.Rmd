@@ -8,11 +8,11 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-15-2025
 categories:
-  - data literacy
+  - data science
   - causal inference
   - difference-in-differences
-  - data-driven HR
-  - evidence-based HR
+  - people analytics
+  - evidence-based management
 output:
   distill::distill_article:
     self_contained: false

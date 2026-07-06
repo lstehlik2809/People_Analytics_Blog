@@ -8,10 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 11-26-2022
 categories:
-  - employee retention
   - employee turnover
   - layoffs
-  - downsizing
   - people analytics
   - evidence-based management
 output:

@@ -8,11 +8,11 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 11-22-2023
 categories:
-  - gender discrimination
-  - field experiment
+  - diversity
+  - experiments
   - meta-analysis
   - open science
-  - forecasting
+  - time series
 output:
   distill::distill_article:
     self_contained: false

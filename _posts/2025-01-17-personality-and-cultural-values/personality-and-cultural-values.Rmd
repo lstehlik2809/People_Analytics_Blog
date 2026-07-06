@@ -9,9 +9,9 @@ author:
 date: 01-17-2025
 categories:
   - personality
-  - culture values
+  - organizational culture
   - multilevel modeling
-  - intercultural psychology
+  - cross-cultural differences
 output:
   distill::distill_article:
     self_contained: false

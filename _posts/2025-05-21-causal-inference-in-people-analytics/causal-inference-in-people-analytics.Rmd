@@ -12,7 +12,6 @@ categories:
   - experiments
   - data science
   - people analytics
-  - hr analytics
   - python
   - r
 output:

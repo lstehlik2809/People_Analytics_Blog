@@ -9,12 +9,12 @@ author:
 date: 02-06-2022
 categories:
   - predictive analytics
-  - feature engineering
+  - machine learning
   - employee experience
   - employee engagement
   - employee satisfaction
-  - employee attrition
-  - collaboration data
+  - employee turnover
+  - collaboration
 
 output:
   distill::distill_article:

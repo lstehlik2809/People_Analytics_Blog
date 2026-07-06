@@ -10,8 +10,6 @@ date: 08-29-2024
 categories:
   - employee turnover
   - employee survey
-  - turnover prediction
-  - employee withdrawal
 output:
   distill::distill_article:
     self_contained: false

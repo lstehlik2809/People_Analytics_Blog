@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-13-2022
 categories:
-  - statistical inference
-  - visual statistical inference
-  - bayesian inference
+  - statistics
+  - bayesian statistics
   - r
 
 output:

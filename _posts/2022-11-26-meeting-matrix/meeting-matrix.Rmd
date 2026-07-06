@@ -8,10 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 11-26-2022
 categories:
-  - meeting culture
-  - meeting overload
-  - focus time
-  - collaboration culture
+  - meetings
+  - time management
+  - collaboration
 output:
   distill::distill_article:
     self_contained: false

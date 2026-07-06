@@ -9,10 +9,7 @@ author:
 date: 09-18-2024
 categories:
   - personality
-  - introversion
-  - extraversion
-  - neuroticism
-  - ipip
+  - big five
 output:
   distill::distill_article:
     self_contained: false

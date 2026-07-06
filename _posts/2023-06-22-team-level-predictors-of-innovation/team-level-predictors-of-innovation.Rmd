@@ -8,8 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-22-2023
 categories:
-  - innovation 
-  - team 
+  - innovation
+  - teams
   - meta-analysis
   - people analytics
 output:

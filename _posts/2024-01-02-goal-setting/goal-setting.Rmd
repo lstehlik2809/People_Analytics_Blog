@@ -9,9 +9,7 @@ author:
 date: 12-29-2023
 categories:
   - goal setting
-  - resolution
   - motivation
-  - persistence
 output:
   distill::distill_article:
     self_contained: false

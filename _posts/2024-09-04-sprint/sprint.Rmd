@@ -8,10 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 09-04-2024
 categories:
-  - sport
-  - sprint
-  - perfomance
-  - variability
+  - fun with data
+  - project management
+  - performance
+  - statistics
 output:
   distill::distill_article:
     self_contained: false

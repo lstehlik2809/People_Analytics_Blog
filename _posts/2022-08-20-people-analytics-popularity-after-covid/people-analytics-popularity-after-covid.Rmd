@@ -9,11 +9,10 @@ author:
 date: 08-29-2022
 categories:
   - people analytics
-  - hr analytics
-  - covid pandemic
+  - remote work
   - segmented regression
-  - time series data
-  - bayesian inference
+  - time series
+  - bayesian statistics
   - r
 output:
   distill::distill_article:

@@ -9,10 +9,7 @@ author:
 date: 09-17-2022
 categories:
   - multilevel modeling
-  - hierarchical modeling
-  - mixed models
-  - nested data
-  - bayesian inference
+  - bayesian statistics
   - collaboration
   - employee engagement
   - r

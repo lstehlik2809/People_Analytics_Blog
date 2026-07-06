@@ -9,10 +9,9 @@ author:
 date: 10-24-2022
 categories:
   - people analytics
-  - data
+  - data science
   - recruitment
-  - hiring
-  - training
+  - learning and development
 output:
   distill::distill_article:
     self_contained: false

@@ -9,10 +9,8 @@ author:
 date: 03-01-2023
 categories:
   - remote work
-  - in-office work
   - collaboration
-  - focus time
-  - distraction
+  - time management
 output:
   distill::distill_article:
     self_contained: false

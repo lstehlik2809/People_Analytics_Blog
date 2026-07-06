@@ -10,10 +10,7 @@ date: 09-10-2025
 categories:
   - personality
   - big five
-  - ipip
-  - typology
-  - clustering
-  - dimensionality reduction
+  - machine learning
   - psychometrics
 output:
   distill::distill_article:

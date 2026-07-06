@@ -8,12 +8,11 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 12-07-2022
 categories:
-  - team assessment survey
-  - mission
-  - purpose
-  - goals
-  - metrics
-  - review
+  - teams
+  - organizational culture
+  - motivation
+  - goal setting
+  - hr metrics
 output:
   distill::distill_article:
     self_contained: false

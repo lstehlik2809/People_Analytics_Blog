@@ -9,11 +9,9 @@ author:
 date: 12-15-2025
 categories:
   - data science
-  - git
-  - version control
   - causal inference
-  - graph theory
-  - systems thinking
+  - network analysis
+  - critical thinking
 output:
   distill::distill_article:
     self_contained: false

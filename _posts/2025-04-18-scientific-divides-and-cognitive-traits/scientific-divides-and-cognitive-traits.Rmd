@@ -9,10 +9,9 @@ author:
 date: 04-18-2025
 categories:
   - psychology
-  - scientific thinking
-  - cognitive styles
-  - cognitive diversity
-  - epistemology
+  - critical thinking
+  - cognitive science
+  - diversity
 output:
   distill::distill_article:
     self_contained: false

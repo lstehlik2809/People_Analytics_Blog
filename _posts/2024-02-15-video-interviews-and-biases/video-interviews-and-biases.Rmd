@@ -9,8 +9,7 @@ author:
 date: 02-15-2024
 categories:
   - employee selection
-  - video interview
-  - bias
+  - cognitive biases
 output:
   distill::distill_article:
     self_contained: false

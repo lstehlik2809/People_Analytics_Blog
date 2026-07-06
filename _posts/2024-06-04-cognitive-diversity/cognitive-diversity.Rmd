@@ -8,11 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-04-2024
 categories:
-  - diversity 
-  - cognitive styles
-  - collective intelligence
-  - team performance
-  - team learning
+  - diversity
+  - cognitive science
+  - teams
 output:
   distill::distill_article:
     self_contained: false

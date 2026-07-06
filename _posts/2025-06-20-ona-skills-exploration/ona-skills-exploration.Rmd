@@ -8,11 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-20-2025
 categories:
-  - skills 
-  - skills-based organization
-  - organisational network analysis
+  - skills
   - network analysis
-  - career pathing
+  - career development
   - learning and development
 output:
   distill::distill_article:

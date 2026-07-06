@@ -9,12 +9,7 @@ author:
 date: 12-15-2024
 categories:
   - causal inference
-  - synthetic control
-  - causalpy 
-  - brexit 
-  - eurozone 
-  - oecd
-  - gdp
+  - fun with data
 output:
   distill::distill_article:
     self_contained: false

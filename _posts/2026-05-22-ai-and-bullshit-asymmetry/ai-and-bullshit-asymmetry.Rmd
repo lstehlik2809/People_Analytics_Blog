@@ -9,7 +9,7 @@ author:
 date: 2026-05-22
 categories:
   - causal inference
-  - bullshit asymmetry
+  - critical thinking
   - employee experience
   - ai
 output:

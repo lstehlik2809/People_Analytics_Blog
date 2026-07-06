@@ -11,7 +11,7 @@ categories:
   - performance
   - motivation
   - meta-analysis
-  - causality
+  - causal inference
 output:
   distill::distill_article:
     self_contained: false

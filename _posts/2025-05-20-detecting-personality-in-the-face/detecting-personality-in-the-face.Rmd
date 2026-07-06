@@ -10,8 +10,6 @@ date: 05-20-2025
 categories:
   - personality
   - big five
-  - deep neural networks
-  - convolutional neural networks
   - machine learning
   - python
   - r

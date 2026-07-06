@@ -8,11 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 03-18-2025
 categories:
-  - causality 
-  - causal ml
-  - econml
+  - causal inference
   - python
-  - employee attrition
+  - employee turnover
 output:
   distill::distill_article:
     self_contained: false

@@ -9,12 +9,11 @@ author:
 date: 08-21-2024
 categories:
   - data visualization
-  - data exploration
-  - self-organizing maps
-  - artificial neural networks
+  - data science
+  - machine learning
   - personality
   - big five
-  - work-life satisfaction
+  - work-life balance
 output:
   distill::distill_article:
     self_contained: false

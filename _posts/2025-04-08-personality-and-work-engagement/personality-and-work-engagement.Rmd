@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-08-2025
 categories:
-  - work engagement
+  - employee engagement
   - personality
   - meta-analysis
 output:

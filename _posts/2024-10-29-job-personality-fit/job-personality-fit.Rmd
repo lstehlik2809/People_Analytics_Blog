@@ -9,8 +9,7 @@ author:
 date: 10-29-2024
 categories:
   - personality
-  - job-person fit
-  - career counseling
+  - career development
 output:
   distill::distill_article:
     self_contained: false

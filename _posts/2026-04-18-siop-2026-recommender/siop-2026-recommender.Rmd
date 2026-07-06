@@ -9,7 +9,7 @@ author:
 date: 2026-04-18
 categories:
   - siop
-  - recommender
+  - machine learning
 output:
   distill::distill_article:
     self_contained: false

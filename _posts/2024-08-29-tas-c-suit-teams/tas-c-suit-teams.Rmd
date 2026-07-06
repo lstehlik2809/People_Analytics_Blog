@@ -7,12 +7,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 08-29-2024
 categories:
-  - team performance 
-  - team effectiveness
-  - team efficiency
-  - rocket model
-  - network modeling
-  - partial correlation networks
+  - teams
+  - network analysis
 output:
   distill::distill_article:
     self_contained: false

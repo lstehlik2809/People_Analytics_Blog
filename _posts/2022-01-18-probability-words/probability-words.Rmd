@@ -8,8 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2022-01-18
 categories:
-  - probability
-  - perception
+  - statistics
+  - cognitive science
 output:
   distill::distill_article:
     self_contained: false

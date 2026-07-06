@@ -8,8 +8,6 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 03-03-2023
 categories:
-  - micro-break
-  - workplace
   - well-being
   - performance
   - meta-analysis

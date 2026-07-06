@@ -8,9 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2021-12-12
 categories:
-  - great resignation
   - employee turnover
-  - turnover predictors
   - meta-analysis
   - shiny app
 output:

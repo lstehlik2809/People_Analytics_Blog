@@ -8,11 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 12-02-2025
 categories:
-  - workplace
   - ai
   - generative ai
   - agentic ai
-  - worklytics
+  - collaboration
 output:
   distill::distill_article:
     self_contained: false

@@ -8,9 +8,8 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 04-18-2023
 categories:
-  - correlation
-  - multilevel analysis
-  - hierarchical analysis
+  - statistics
+  - multilevel modeling
   - r
 output:
   distill::distill_article:

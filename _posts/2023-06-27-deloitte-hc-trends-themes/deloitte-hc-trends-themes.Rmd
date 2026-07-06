@@ -8,10 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-27-2023
 categories:
-  - global hc trends
-  - deloitte
-  - openai
-  - r 
+  - future of work
+  - generative ai
+  - r
   - python
 output:
   distill::distill_article:

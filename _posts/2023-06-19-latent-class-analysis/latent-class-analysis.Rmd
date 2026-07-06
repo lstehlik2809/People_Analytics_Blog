@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-19-2023
 categories:
-  - latent class analysis
+  - psychometrics
   - employee survey
   - people analytics
   - r

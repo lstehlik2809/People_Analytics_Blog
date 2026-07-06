@@ -9,10 +9,7 @@ author:
 date: 06-02-2025
 categories:
   - psychometrics
-  - item response theory
-  - computerized adaptive testing
   - bayesian statistics
-  - streamlit
   - python
 output:
   distill::distill_article:

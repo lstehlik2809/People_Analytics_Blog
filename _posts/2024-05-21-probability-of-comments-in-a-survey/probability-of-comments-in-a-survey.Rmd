@@ -11,7 +11,7 @@ categories:
   - employee survey
   - employee experience
   - machine learning
-  - ml interpretation
+  - interpretability
   - python
 output:
   distill::distill_article:

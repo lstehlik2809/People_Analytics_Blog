@@ -9,9 +9,8 @@ author:
 date: 10-09-2025
 categories:
   - agentic ai
-  - data analysis
-  - generative ai
   - data science
+  - generative ai
 output:
   distill::distill_article:
     self_contained: false

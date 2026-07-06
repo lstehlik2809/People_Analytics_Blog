@@ -8,9 +8,9 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-10-2023
 categories:
-  - onboarding
+  - employee experience
   - nlp
-  - llm
+  - generative ai
   - embeddings
   - ai
 output:

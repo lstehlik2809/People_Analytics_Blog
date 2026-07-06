@@ -9,10 +9,10 @@ author:
 date: 08-15-2024
 categories:
   - nlp
-  - llm
-  - topic modeling
+  - generative ai
+  - topic analysis
   - linkedin
-  - networking
+  - collaboration
 output:
   distill::distill_article:
     self_contained: false

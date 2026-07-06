@@ -8,7 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-02-2024
 categories:
-  - tenure 
+  - employee turnover
   - employee satisfaction
   - simulation
   - r

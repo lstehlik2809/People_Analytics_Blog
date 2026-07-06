@@ -9,10 +9,7 @@ author:
 date: 03-12-2026
 categories:
   - causal inference
-  - randomized control trial
-  - experiment
-  - encouragement design
-  - instrumental variables
+  - experiments
 output:
   distill::distill_article:
     self_contained: false
