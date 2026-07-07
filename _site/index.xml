@@ -7,7 +7,24 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>‘You Said, We Did’ matters - maybe just not as distinctly as we assume</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-07-07-you-said-we-did</link>
+      <description>A brief look at whether perceived responsiveness to employee feedback really predicts future survey participation - or mostly rides along with general engagement.</description>
+      <category>employee survey</category>
+      <category>employee engagement</category>
+      <category>employee experience</category>
+      <category>employee listening</category>
+      <category>survey participation</category>
+      <category>regression analysis</category>
+      <category>psychometrics</category>
+      <category>statistics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-07-07-you-said-we-did</guid>
+      <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-07-07-you-said-we-did/./you-said-we-did.png" medium="image" type="image/png" width="1154" height="804"/>
+    </item>
     <item>
       <title>Before you blame the driver, check the denominator</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -297,11 +314,12 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-01-23-matthew-effect-and-success-stories</link>
       <description>On relative age effects, cumulative advantage, and the narratives we build around merit.</description>
-      <category>luck and merit</category>
-      <category>personality</category>
-      <category>learning and development</category>
+      <category>meritocracy</category>
+      <category>cumulative advantage</category>
+      <category>education</category>
+      <category>inequality</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-01-23-matthew-effect-and-success-stories</guid>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-01-23-matthew-effect-and-success-stories/./plot.png" medium="image" type="image/png" width="990" height="599"/>
     </item>
     <item>
@@ -896,7 +914,7 @@
       <category>hr metrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1344,7 +1362,7 @@
       <category>critical thinking</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1897,7 +1915,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
