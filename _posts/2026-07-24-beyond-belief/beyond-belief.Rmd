@@ -32,16 +32,17 @@ The first point is a reminder that the latest trends and shiny new ideas in the 
 *These are all fairly obvious and, in most cases, says Barends, they are good enough. The biggest gains in management, he argues, are to be found in following basic evidence-backed principles rather than the latest trend.*”
 
 <div style="text-align:center">
-![](./mng_hygiene_pic.png){width=50%}
+![](./mng_hygiene_pic.png){width=65%}
 </div>
 *A graphical illustration of the point described above - not from the book, but AI-generated.* 
 
-The second point is a recommendation to use a simple set of questions to make better-informed decisions, thereby increasing the likelihood of a favorable outcome. Pearson cites in this context Denise Rousseau, an organizational psychologist and pioneer of evidence-based management, who suggests that, “*when facing a decision, [take] a few minutes to ask these questions: What’s the problem I’m trying to solve? What’s the evidence for the problem? What solutions are appropriate? What’s the evidence for the solutions? [...]* 
+And the second point is about a recommendation to use a simple set of questions to make better-informed decisions, thereby increasing the likelihood of a favorable outcome. Pearson cites in this context Denise Rousseau, an organizational psychologist and pioneer of evidence-based management, who suggests that, “*when facing a decision, [take] a few minutes to ask these questions: What’s the problem I’m trying to solve? What’s the evidence for the problem? What solutions are appropriate? What’s the evidence for the solutions? [...]* 
 
 *For instance, a CEO might require that everyone attend the office five days a week based on the assumption that face-to-face interactions lead to more innovation. The evidence-based manager first unpacks the assumptions underlying this decision: the company is insufficiently innovative; this is damaging business objectives; face-to-face interactions will boost innovation and are more effective than other solutions, such as virtual meetings. Then they would look, even briefly, for research that backs each one.* 
 
 *Spending just a few minutes thinking about the problem, generating more than one solution, and seeking a little information on them can help people think more deeply and critically.*”
 
-If you still have a free slot on your summer reading list and want to learn more about the stories behind the evidence revolution that began several decades ago, I can only recommend adding Pearson’s book to it.
+There are plenty more gems and learnings in the book itself - so if you still have a free slot on your summer reading list and want to learn more about the stories behind the evidence revolution that began several decades ago, I can only recommend adding Pearson’s book to it.
+
 
 
