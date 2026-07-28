@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>My second People Analytics brain - both for people and AI agents</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain</link>
+      <description>So I finally gave the “second brain” idea a try - to see how it works in practice and whether it’s actually useful.</description>
+      <category>people analytics</category>
+      <category>ai</category>
+      <category>agentic ai</category>
+      <category>embeddings</category>
+      <category>nlp</category>
+      <category>knowledge management</category>
+      <category>data visualization</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain/./knowledge_graph.png" medium="image" type="image/png" width="839" height="721"/>
+    </item>
     <item>
       <title>Evidence-Based Management: Boring basics and better questions</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -16,7 +32,7 @@
       <category>evidence-based management</category>
       <category>hr management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-07-24-beyond-belief</guid>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-07-24-beyond-belief/./beyond-belief-pic.png" medium="image" type="image/png" width="301" height="464"/>
     </item>
     <item>
