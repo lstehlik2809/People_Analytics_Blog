@@ -26,7 +26,7 @@ It’s a [simple agentic app](https://ai-dataviz-exploration.streamlit.app/){tar
 
 It runs on a public dataset from [*CultureX*](https://www.culturex.com/){target="_blank"} with corporate culture scores across companies in different industries, measured through anonymous [*Glassdoor*](https://www.glassdoor.com){target="_blank"} reviews between Jan 1, 2023, and Apr 4, 2025.
  
-The app uses several AI agents (powered by Google's Gemini 3 Flash Preview), each responsible for a different step:
+The app uses several AI agents, powered by one of Google’s Gemini models, each responsible for a different step:
 
 * **Clarifier** - asks 2–3 sharpening questions to understand exactly what you want (which companies, which metrics, what chart type, etc.)
 * **Planner** - designs the analysis strategy based on your request and the data
