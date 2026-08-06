@@ -7,7 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Women, men, and sixteen sinking ships</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</link>
+      <description>A reproducible reanalysis of Elinder &amp; Erixson (2012).</description>
+      <category>statistics</category>
+      <category>causal-inference</category>
+      <category>research-methods</category>
+      <category>multilevel-modeling</category>
+      <category>regression-analysis</category>
+      <category>critical-thinking</category>
+      <category>r</category>
+      <category>replication</category>
+      <category>open-science</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="image/avif"/>
+    </item>
     <item>
       <title>My second People Analytics brain - both for people and AI agents</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -533,7 +551,7 @@
       <category>data science</category>
       <category>generative ai</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant</guid>
-      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant/./data_exploration.gif" medium="image" type="image/gif"/>
     </item>
     <item>
@@ -941,7 +959,7 @@
       <category>hr metrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1389,7 +1407,7 @@
       <category>critical thinking</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1942,7 +1960,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
