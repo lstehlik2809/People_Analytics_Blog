@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Turning 152 Directionally Correct podcast episodes into an interactive topic explorer</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</link>
+      <description>On using GenAI, topic analysis, and network visualization to make 152 Directionally Correct podcast episodes easier to explore.</description>
+      <category>knowledge-management</category>
+      <category>topic-analysis</category>
+      <category>network-analysis</category>
+      <category>data-visualization</category>
+      <category>generative-ai</category>
+      <category>embeddings</category>
+      <category>people-analytics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/./illustrative_pic.png" medium="image" type="image/png" width="1473" height="885"/>
+    </item>
     <item>
       <title>Turning Outlook calendar data into a collaboration map</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +35,7 @@
       <category>generative-ai</category>
       <category>people-analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/./calendar_ego_network_pic.png" medium="image" type="image/png" width="1375" height="829"/>
     </item>
     <item>
