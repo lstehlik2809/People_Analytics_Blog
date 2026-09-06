@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/about.html</loc>
-    <lastmod>2026-08-06T20:59:45+02:00</lastmod>
+    <lastmod>2026-09-06T15:18:55+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/bio.html</loc>
-    <lastmod>2025-09-22T21:12:32+02:00</lastmod>
+    <lastmod>2026-09-06T15:15:22+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/</loc>
-    <lastmod>2026-08-10T10:52:00+02:00</lastmod>
+    <lastmod>2026-08-10T12:32:51+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain/</loc>
@@ -462,7 +462,7 @@
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2024-04-28-netlogo/</loc>
-    <lastmod>2026-08-28T15:32:27+02:00</lastmod>
+    <lastmod>2026-08-28T15:32:30+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2024-04-21-feedback-effect-on-performance/</loc>
@@ -534,7 +534,7 @@
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2023-11-22-gender-gap-in-hiring-decisions/</loc>
-    <lastmod>2026-08-31T00:31:50+02:00</lastmod>
+    <lastmod>2026-08-31T00:31:53+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2023-11-18-job-demands-job-control-wellbeing/</loc>
@@ -762,7 +762,7 @@
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap/</loc>
-    <lastmod>2026-08-31T00:32:10+02:00</lastmod>
+    <lastmod>2026-08-31T00:32:13+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2022-11-15-people-related-metrics-distribution/</loc>
@@ -842,7 +842,7 @@
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2021-01-29-paygap/</loc>
-    <lastmod>2026-09-02T11:52:14+02:00</lastmod>
+    <lastmod>2026-09-02T11:52:20+02:00</lastmod>
   </url>
   <url>
     <loc>https://blog-about-people-analytics.netlify.app/posts/2020-12-31-segmentedregression/</loc>
