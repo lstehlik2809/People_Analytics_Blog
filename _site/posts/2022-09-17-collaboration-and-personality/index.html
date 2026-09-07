@@ -20,6 +20,7 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -50,16 +51,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +75,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -129,7 +131,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["collaboration-and-personality_files/anchor-4.2.2/anchor.min.js","collaboration-and-personality_files/bowser-1.9.3/bowser.min.js","collaboration-and-personality_files/distill-2.2.21/template.v2.js","collaboration-and-personality_files/figure-html5/unnamed-chunk-1-1.png","collaboration-and-personality_files/header-attrs-2.11/header-attrs.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.min.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.min.map","collaboration-and-personality_files/popper-2.6.0/popper.min.js","collaboration-and-personality_files/tippy-6.2.7/tippy-bundle.umd.min.js","collaboration-and-personality_files/tippy-6.2.7/tippy-light-border.css","collaboration-and-personality_files/tippy-6.2.7/tippy.css","collaboration-and-personality_files/tippy-6.2.7/tippy.umd.min.js","collaboration-and-personality_files/webcomponents-2.0.0/webcomponents.js","interactionAmount.csv","networkingBehavior.csv","personalityandcollaboration.jpeg"]}
+  {"type":"character","attributes":{},"value":["collaboration-and-personality_files/anchor-4.2.2/anchor.min.js","collaboration-and-personality_files/bowser-1.9.3/bowser.min.js","collaboration-and-personality_files/distill-2.2.21/template.v2.js","collaboration-and-personality_files/figure-html5/unnamed-chunk-1-1.png","collaboration-and-personality_files/header-attrs-2.11/header-attrs.js","collaboration-and-personality_files/header-attrs-2.30/header-attrs.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.min.js","collaboration-and-personality_files/jquery-3.6.0/jquery-3.6.0.min.map","collaboration-and-personality_files/popper-2.6.0/popper.min.js","collaboration-and-personality_files/tippy-6.2.7/tippy-bundle.umd.min.js","collaboration-and-personality_files/tippy-6.2.7/tippy-light-border.css","collaboration-and-personality_files/tippy-6.2.7/tippy.css","collaboration-and-personality_files/tippy-6.2.7/tippy.umd.min.js","collaboration-and-personality_files/webcomponents-2.0.0/webcomponents.js","interactionAmount.csv","networkingBehavior.csv","personalityandcollaboration.jpeg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2117,7 +2119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.30/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2169,6 +2171,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-title">
 <h1>Collaboration and personality</h1>
+
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:collaboration" class="dt-tag">collaboration</a>
@@ -2177,253 +2180,203 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="../../index.html#category:big_five" class="dt-tag">big five</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Personality is not fate, at least when it comes to the level of
-engagement in corporate communication and collaboration.</p></p>
+<p><p>Personality is not fate, at least when it comes to the level of engagement in corporate communication and collaboration.</p></p>
 </div>
 
 <div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/"
-class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
   
 <br/>09-15-2022
 </div>
 
 <div class="d-article">
-<p>One of <a href="https://www.timeisltd.com/">our</a> clients once
-asked us to what extent employees’ level of engagement in corporate
-communication and collaboration is driven by their personality and to
-what extent by their job role, the conditions in which they work, and
-other factors outside their personality.</p>
-<p>Our first answer was that the latter probably plays a more
-significant role than the former, but it was difficult to answer more
-specifically because we did not yet have all the data we needed to
-quantify the tightness of this relationship. This motivated me to look
-at existing research on this topic to help us better set our apriori
-expectations on this issue.</p>
-<p>With the help of <a href="http://metabus.org/">metaBus</a>, an
-amazing platform for curating, searching, and summarizing research
-findings from the social and organizational sciences, I was able to get
-the results of over 100 studies on the relationship between employees’
-<a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Big
-5 personality traits</a> and the amount of interaction and networking
-behavior they engage in. Among the criteria for the amount of
-interaction were variables like contact frequency, frequency of
-participation, communication frequency, meeting frequency, hours of
-interaction, interaction duration, etc. For networking behavior there
-were criteria as liaison, building networks, relationship building,
-network activity, maintaining contacts, increasing internal visibility,
-network ability, and informal network.</p>
+<p>One of <a href="https://www.timeisltd.com/">our</a> clients once asked us to what extent employees’ level of engagement in corporate communication and collaboration is driven by their personality and to what extent by their job role, the conditions in which they work, and other factors outside their personality.</p>
+<p>Our first answer was that the latter probably plays a more significant role than the former, but it was difficult to answer more specifically because we did not yet have all the data we needed to quantify the tightness of this relationship. This motivated me to look at existing research on this topic to help us better set our apriori expectations on this issue.</p>
+<p>With the help of <a href="http://metabus.org/">metaBus</a>, an amazing platform for curating, searching, and summarizing research findings from the social and organizational sciences, I was able to get the results of over 100 studies on the relationship between employees’ <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Big 5 personality traits</a> and the amount of interaction and networking behavior they engage in. Among the criteria for the amount of interaction were variables like contact frequency, frequency of participation, communication frequency, meeting frequency, hours of interaction, interaction duration, etc. For networking behavior there were criteria as liaison, building networks, relationship building, network activity, maintaining contacts, increasing internal visibility, network ability, and informal network.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
 Show code
 </summary>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># The following concepts were used to search for relevant studies on the metaBus platform (their respective codes are given in brackets):</span>
-<span class='co'># Big 5 (20443)  </span>
-<span class='co'># Amount of interaction (20287) </span>
-<span class='co'># Networking behavior (80017)</span>
-
-<span class='co'># uploading libraries</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span> <span class='co'># for data manipulation and visualization </span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/ggridges/'>ggridges</a></span><span class='op'>)</span> <span class='co'># for data visualization</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/ggtext/'>ggtext</a></span><span class='op'>)</span> <span class='co'># for enabling markdown in ggplots</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span> <span class='co'>#  for combining ggplots</span>
-
-<span class='co'># data preparation</span>
-<span class='co'># uploading data</span>
-<span class='va'>interaction</span> <span class='op'>&lt;-</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='st'>"./interactionAmount.csv"</span><span class='op'>)</span>
-<span class='va'>networking</span> <span class='op'>&lt;-</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='st'>"./networkingBehavior.csv"</span><span class='op'>)</span>
-
-<span class='co'># preparing dataset for amount of interaction concept</span>
-<span class='va'>interactionPrep</span> <span class='op'>&lt;-</span> <span class='va'>interaction</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span>
-    <span class='co'># removing non-relevant personality characteristics </span>
-    <span class='op'>!</span><span class='va'>Var1</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Empathic concern"</span><span class='op'>)</span>,
-    <span class='co'># limiting to studies conducted at the individual level</span>
-    <span class='va'>Var2Unit</span> <span class='op'>==</span> <span class='st'>"Individual"</span>
-  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='co'># reversing Neuroticism to Emotional Stability</span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-    r <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
-      <span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"Neuroticism"</span> <span class='op'>~</span> <span class='va'>r</span><span class='op'>*</span><span class='op'>-</span><span class='fl'>1</span>,
-      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>r</span>
-    <span class='op'>)</span>
-  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='co'># uniting the names of personality characteristics across the studies</span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-    Var1 <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Extraversion"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Extroversion"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"extraversion"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Extraversion"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Openness to experience"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"openness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Openness"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"agreeableness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Agreeableness"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"emotional stability"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Neuroticism"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Emotional Stability"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Conscientious"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Consciousness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Conscientiousness"</span>,
-      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>Var1</span>
-    <span class='op'>)</span>
-  <span class='op'>)</span>
-
-<span class='co'># preparing dataset for networking behavior concept</span>
-<span class='va'>networkingPrep</span> <span class='op'>&lt;-</span> <span class='va'>networking</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span>
-    <span class='va'>Var2Unit</span> <span class='op'>==</span> <span class='st'>"Individual"</span>
-  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='co'># reversing Neuroticism to Emotional Stability</span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-    r <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
-      <span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"Neuroticism"</span> <span class='op'>~</span> <span class='va'>r</span><span class='op'>*</span><span class='op'>-</span><span class='fl'>1</span>,
-      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>r</span>
-    <span class='op'>)</span>
-  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='co'># uniting the names of personality characteristics across the studies</span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-    Var1 <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Openness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Openness"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Emotional stability"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Neuroticism"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Emotional Stability"</span>,
-      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Conscientious"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Consciousness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Conscientiousness"</span>,
-      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>Var1</span>
-    <span class='op'>)</span>
-  <span class='op'>)</span>
-
-<span class='co'># data visualization</span>
-<span class='co'># creating chart for the amount of interaction concept</span>
-<span class='va'>interactionChart</span> <span class='op'>&lt;-</span> <span class='va'>interactionPrep</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>r</span>, y <span class='op'>=</span> <span class='va'>Var1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_vline</a></span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fl'>0</span>, linetype <span class='op'>=</span> <span class='st'>"dashed"</span>, size <span class='op'>=</span> <span class='fl'>0.56</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggridges</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggridges/reference/geom_density_ridges.html'>geom_density_ridges</a></span><span class='op'>(</span>
-    fill <span class='op'>=</span> <span class='st'>"#e56b61"</span>,
-    alpha <span class='op'>=</span> <span class='fl'>0.5</span>,
-    scale <span class='op'>=</span> <span class='fl'>1</span>,
-    jittered_points <span class='op'>=</span> <span class='cn'>TRUE</span>,
-    position <span class='op'>=</span> <span class='fu'><a href='https://wilkelab.org/ggridges/reference/position_points_jitter.html'>position_points_jitter</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='fl'>0</span>, height <span class='op'>=</span> <span class='fl'>0</span>,seed <span class='op'>=</span> <span class='fl'>123</span><span class='op'>)</span>,
-    point_shape <span class='op'>=</span> <span class='st'>'|'</span>, point_size <span class='op'>=</span> <span class='fl'>1</span>, point_alpha <span class='op'>=</span> <span class='fl'>1</span>, 
-    quantile_lines <span class='op'>=</span><span class='cn'>TRUE</span>, vline_linetype <span class='op'>=</span> <span class='st'>"solid"</span>, vline_color <span class='op'>=</span> <span class='st'>"black"</span>, vline_size <span class='op'>=</span> <span class='fl'>0.55</span>
-    <span class='co'>#quantile_fun=function(x,...)median(x)</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span><span class='op'>)</span>, breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0.2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    x <span class='op'>=</span> <span class='st'>"PEARSON CORRELATION COEFFICIENT"</span>,
-    y <span class='op'>=</span> <span class='st'>""</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
-    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"bold"</span>, size <span class='op'>=</span> <span class='fl'>20</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='fl'>0.5</span><span class='op'>)</span>,
-    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>16</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,
-    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-    axis.title.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-    axis.title.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,
-    legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span>,
-    legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span>,
-    axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,
-    axis.text.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span><span class='op'>)</span>,
-    legend.position <span class='op'>=</span> <span class='st'>"right"</span>,
-    axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>, 
-    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,
-    plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span>
-<span class='op'>)</span>
-
-<span class='co'># creating chart for the networking behavior concept</span>
-<span class='va'>networkingChart</span> <span class='op'>&lt;-</span> <span class='va'>networkingPrep</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>r</span>, y <span class='op'>=</span> <span class='va'>Var1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_vline</a></span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fl'>0</span>, linetype <span class='op'>=</span> <span class='st'>"dashed"</span>, size <span class='op'>=</span> <span class='fl'>0.56</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggridges</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggridges/reference/geom_density_ridges.html'>geom_density_ridges</a></span><span class='op'>(</span>
-    fill <span class='op'>=</span> <span class='st'>"#32b2c7"</span>,
-    alpha <span class='op'>=</span> <span class='fl'>0.5</span>,
-    scale <span class='op'>=</span> <span class='fl'>1</span>,
-    jittered_points <span class='op'>=</span> <span class='cn'>TRUE</span>,
-    position <span class='op'>=</span> <span class='fu'><a href='https://wilkelab.org/ggridges/reference/position_points_jitter.html'>position_points_jitter</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='fl'>0</span>, height <span class='op'>=</span> <span class='fl'>0</span>,seed <span class='op'>=</span> <span class='fl'>123</span><span class='op'>)</span>,
-    point_shape <span class='op'>=</span> <span class='st'>'|'</span>, point_size <span class='op'>=</span> <span class='fl'>1</span>, point_alpha <span class='op'>=</span> <span class='fl'>1</span>, 
-    quantile_lines <span class='op'>=</span><span class='cn'>TRUE</span>, vline_linetype <span class='op'>=</span> <span class='st'>"solid"</span>, vline_color <span class='op'>=</span> <span class='st'>"black"</span>, vline_size <span class='op'>=</span> <span class='fl'>0.55</span>
-    <span class='co'>#quantile_fun=function(x,...)median(x)</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span><span class='op'>)</span>, breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0.2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    x <span class='op'>=</span> <span class='st'>"PEARSON CORRELATION COEFFICIENT"</span>,
-    y <span class='op'>=</span> <span class='st'>""</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
-    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"bold"</span>, size <span class='op'>=</span> <span class='fl'>20</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='fl'>0.5</span><span class='op'>)</span>,
-    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>16</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,
-    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-    axis.title.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-    axis.title.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,
-    legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span>,
-    legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span>,
-    axis.text.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,
-    legend.position <span class='op'>=</span> <span class='st'>"right"</span>,
-    axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-    axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-    plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>, 
-    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,
-    plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span>
-  <span class='op'>)</span>
-
-<span class='co'># combining the charts together</span>
-<span class='va'>g</span> <span class='op'>&lt;-</span> <span class='va'>interactionChart</span> <span class='op'>+</span> <span class='va'>networkingChart</span> 
-
-<span class='co'># adding title and caption</span>
-<span class='va'>g</span> <span class='op'>&lt;-</span> <span class='va'>g</span> <span class='op'>+</span> <span class='fu'>patchwork</span><span class='fu'>::</span><span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>
-  title <span class='op'>=</span> <span class='st'>"&lt;span style='font-size:20pt;font-weight:bold;'&gt;**Do Big 5 traits predict** 
-    &lt;span style='color:#e56b61;'&gt;**the amount of interaction**&lt;/span&gt; **&amp;**
-    &lt;span style='color:#32b2c7;'&gt;**networking behavior**&lt;/span&gt; **of employees?**
-    &lt;/span&gt;"</span>,
-  
-  caption <span class='op'>=</span> <span class='st'>"The solid vertical lines represent quartile values.\nBased on studies found on the metaBus platform using the concepts 'Big 5' (code: 20443), 'Amount of interaction' (code: 20287), and 'Networking behavior' (code: 80017)."</span>,
-  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>
-    plot.title <span class='op'>=</span> <span class='fu'>ggtext</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggtext/reference/element_markdown.html'>element_markdown</a></span><span class='op'>(</span>lineheight <span class='op'>=</span> <span class='fl'>1.1</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>10</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,
-    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>9</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>
-    <span class='op'>)</span>
-  <span class='op'>)</span>
-
-<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># The following concepts were used to search for relevant studies on the metaBus platform (their respective codes are given in brackets):</span></span>
+<span><span class='co'># Big 5 (20443)  </span></span>
+<span><span class='co'># Amount of interaction (20287) </span></span>
+<span><span class='co'># Networking behavior (80017)</span></span>
+<span></span>
+<span><span class='co'># uploading libraries</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span> <span class='co'># for data manipulation and visualization </span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/ggridges/'>ggridges</a></span><span class='op'>)</span> <span class='co'># for data visualization</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://wilkelab.org/ggtext/'>ggtext</a></span><span class='op'>)</span> <span class='co'># for enabling markdown in ggplots</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span> <span class='co'>#  for combining ggplots</span></span>
+<span></span>
+<span><span class='co'># data preparation</span></span>
+<span><span class='co'># uploading data</span></span>
+<span><span class='va'>interaction</span> <span class='op'>&lt;-</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='st'>"./interactionAmount.csv"</span><span class='op'>)</span></span>
+<span><span class='va'>networking</span> <span class='op'>&lt;-</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='st'>"./networkingBehavior.csv"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># preparing dataset for amount of interaction concept</span></span>
+<span><span class='va'>interactionPrep</span> <span class='op'>&lt;-</span> <span class='va'>interaction</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span></span>
+<span>    <span class='co'># removing non-relevant personality characteristics </span></span>
+<span>    <span class='op'>!</span><span class='va'>Var1</span> <span class='op'><a href='https://rdrr.io/r/base/match.html'>%in%</a></span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Empathic concern"</span><span class='op'>)</span>,</span>
+<span>    <span class='co'># limiting to studies conducted at the individual level</span></span>
+<span>    <span class='va'>Var2Unit</span> <span class='op'>==</span> <span class='st'>"Individual"</span></span>
+<span>  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='co'># reversing Neuroticism to Emotional Stability</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    r <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case-and-replace-when.html'>case_when</a></span><span class='op'>(</span></span>
+<span>      <span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"Neuroticism"</span> <span class='op'>~</span> <span class='va'>r</span><span class='op'>*</span><span class='op'>-</span><span class='fl'>1</span>,</span>
+<span>      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>r</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='co'># uniting the names of personality characteristics across the studies</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    Var1 <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case-and-replace-when.html'>case_when</a></span><span class='op'>(</span></span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Extraversion"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Extroversion"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"extraversion"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Extraversion"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Openness to experience"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"openness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Openness"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"agreeableness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Agreeableness"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"emotional stability"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Neuroticism"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Emotional Stability"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Conscientious"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Consciousness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Conscientiousness"</span>,</span>
+<span>      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>Var1</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  <span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># preparing dataset for networking behavior concept</span></span>
+<span><span class='va'>networkingPrep</span> <span class='op'>&lt;-</span> <span class='va'>networking</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span></span>
+<span>    <span class='va'>Var2Unit</span> <span class='op'>==</span> <span class='st'>"Individual"</span></span>
+<span>  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='co'># reversing Neuroticism to Emotional Stability</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    r <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case-and-replace-when.html'>case_when</a></span><span class='op'>(</span></span>
+<span>      <span class='va'>Var1</span> <span class='op'>==</span> <span class='st'>"Neuroticism"</span> <span class='op'>~</span> <span class='va'>r</span><span class='op'>*</span><span class='op'>-</span><span class='fl'>1</span>,</span>
+<span>      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>r</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  <span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='co'># uniting the names of personality characteristics across the studies</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    Var1 <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case-and-replace-when.html'>case_when</a></span><span class='op'>(</span></span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Openness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Openness"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Emotional stability"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Neuroticism"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Emotional Stability"</span>,</span>
+<span>      <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Conscientious"</span><span class='op'>)</span> <span class='op'>|</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_detect.html'>str_detect</a></span><span class='op'>(</span><span class='va'>Var1</span>, <span class='st'>"Consciousness"</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Conscientiousness"</span>,</span>
+<span>      <span class='cn'>TRUE</span> <span class='op'>~</span> <span class='va'>Var1</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  <span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># data visualization</span></span>
+<span><span class='co'># creating chart for the amount of interaction concept</span></span>
+<span><span class='va'>interactionChart</span> <span class='op'>&lt;-</span> <span class='va'>interactionPrep</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>r</span>, y <span class='op'>=</span> <span class='va'>Var1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_vline</a></span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fl'>0</span>, linetype <span class='op'>=</span> <span class='st'>"dashed"</span>, size <span class='op'>=</span> <span class='fl'>0.56</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggridges</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggridges/reference/geom_density_ridges.html'>geom_density_ridges</a></span><span class='op'>(</span></span>
+<span>    fill <span class='op'>=</span> <span class='st'>"#e56b61"</span>,</span>
+<span>    alpha <span class='op'>=</span> <span class='fl'>0.5</span>,</span>
+<span>    scale <span class='op'>=</span> <span class='fl'>1</span>,</span>
+<span>    jittered_points <span class='op'>=</span> <span class='cn'>TRUE</span>,</span>
+<span>    position <span class='op'>=</span> <span class='fu'><a href='https://wilkelab.org/ggridges/reference/position_points_jitter.html'>position_points_jitter</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='fl'>0</span>, height <span class='op'>=</span> <span class='fl'>0</span>,seed <span class='op'>=</span> <span class='fl'>123</span><span class='op'>)</span>,</span>
+<span>    point_shape <span class='op'>=</span> <span class='st'>'|'</span>, point_size <span class='op'>=</span> <span class='fl'>1</span>, point_alpha <span class='op'>=</span> <span class='fl'>1</span>, </span>
+<span>    quantile_lines <span class='op'>=</span><span class='cn'>TRUE</span>, vline_linetype <span class='op'>=</span> <span class='st'>"solid"</span>, vline_color <span class='op'>=</span> <span class='st'>"black"</span>, vline_size <span class='op'>=</span> <span class='fl'>0.55</span></span>
+<span>    <span class='co'>#quantile_fun=function(x,...)median(x)</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span><span class='op'>)</span>, breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0.2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
+<span>    x <span class='op'>=</span> <span class='st'>"PEARSON CORRELATION COEFFICIENT"</span>,</span>
+<span>    y <span class='op'>=</span> <span class='st'>""</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
+<span>    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"bold"</span>, size <span class='op'>=</span> <span class='fl'>20</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='fl'>0.5</span><span class='op'>)</span>,</span>
+<span>    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>16</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    axis.title.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    axis.title.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,</span>
+<span>    legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span>,</span>
+<span>    legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span>,</span>
+<span>    axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>    axis.text.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    legend.position <span class='op'>=</span> <span class='st'>"right"</span>,</span>
+<span>    axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>, </span>
+<span>    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,</span>
+<span>    plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span></span>
+<span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># creating chart for the networking behavior concept</span></span>
+<span><span class='va'>networkingChart</span> <span class='op'>&lt;-</span> <span class='va'>networkingPrep</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>r</span>, y <span class='op'>=</span> <span class='va'>Var1</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_vline</a></span><span class='op'>(</span>xintercept <span class='op'>=</span> <span class='fl'>0</span>, linetype <span class='op'>=</span> <span class='st'>"dashed"</span>, size <span class='op'>=</span> <span class='fl'>0.56</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggridges</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggridges/reference/geom_density_ridges.html'>geom_density_ridges</a></span><span class='op'>(</span></span>
+<span>    fill <span class='op'>=</span> <span class='st'>"#32b2c7"</span>,</span>
+<span>    alpha <span class='op'>=</span> <span class='fl'>0.5</span>,</span>
+<span>    scale <span class='op'>=</span> <span class='fl'>1</span>,</span>
+<span>    jittered_points <span class='op'>=</span> <span class='cn'>TRUE</span>,</span>
+<span>    position <span class='op'>=</span> <span class='fu'><a href='https://wilkelab.org/ggridges/reference/position_points_jitter.html'>position_points_jitter</a></span><span class='op'>(</span>width <span class='op'>=</span> <span class='fl'>0</span>, height <span class='op'>=</span> <span class='fl'>0</span>,seed <span class='op'>=</span> <span class='fl'>123</span><span class='op'>)</span>,</span>
+<span>    point_shape <span class='op'>=</span> <span class='st'>'|'</span>, point_size <span class='op'>=</span> <span class='fl'>1</span>, point_alpha <span class='op'>=</span> <span class='fl'>1</span>, </span>
+<span>    quantile_lines <span class='op'>=</span><span class='cn'>TRUE</span>, vline_linetype <span class='op'>=</span> <span class='st'>"solid"</span>, vline_color <span class='op'>=</span> <span class='st'>"black"</span>, vline_size <span class='op'>=</span> <span class='fl'>0.55</span></span>
+<span>    <span class='co'>#quantile_fun=function(x,...)median(x)</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span><span class='op'>)</span>, breaks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0.2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
+<span>    x <span class='op'>=</span> <span class='st'>"PEARSON CORRELATION COEFFICIENT"</span>,</span>
+<span>    y <span class='op'>=</span> <span class='st'>""</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
+<span>    plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"bold"</span>, size <span class='op'>=</span> <span class='fl'>20</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='fl'>0.5</span><span class='op'>)</span>,</span>
+<span>    plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>16</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>20</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    axis.title.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>    axis.title.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,</span>
+<span>    legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span>,</span>
+<span>    legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span>,</span>
+<span>    axis.text.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>    legend.position <span class='op'>=</span> <span class='st'>"right"</span>,</span>
+<span>    axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>    axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>    plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>, </span>
+<span>    plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,</span>
+<span>    plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span></span>
+<span>  <span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># combining the charts together</span></span>
+<span><span class='va'>g</span> <span class='op'>&lt;-</span> <span class='va'>interactionChart</span> <span class='op'>+</span> <span class='va'>networkingChart</span> </span>
+<span></span>
+<span><span class='co'># adding title and caption</span></span>
+<span><span class='va'>g</span> <span class='op'>&lt;-</span> <span class='va'>g</span> <span class='op'>+</span> <span class='fu'>patchwork</span><span class='fu'>::</span><span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span></span>
+<span>  title <span class='op'>=</span> <span class='st'>"&lt;span style='font-size:20pt;font-weight:bold;'&gt;**Do Big 5 traits predict** </span></span>
+<span><span class='st'>    &lt;span style='color:#e56b61;'&gt;**the amount of interaction**&lt;/span&gt; **&amp;**</span></span>
+<span><span class='st'>    &lt;span style='color:#32b2c7;'&gt;**networking behavior**&lt;/span&gt; **of employees?**</span></span>
+<span><span class='st'>    &lt;/span&gt;"</span>,</span>
+<span>  </span>
+<span>  caption <span class='op'>=</span> <span class='st'>"The solid vertical lines represent quartile values.\nBased on studies found on the metaBus platform using the concepts 'Big 5' (code: 20443), 'Amount of interaction' (code: 20287), and 'Networking behavior' (code: 80017)."</span>,</span>
+<span>  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
+<span>    plot.title <span class='op'>=</span> <span class='fu'>ggtext</span><span class='fu'>::</span><span class='fu'><a href='https://wilkelab.org/ggtext/reference/element_markdown.html'>element_markdown</a></span><span class='op'>(</span>lineheight <span class='op'>=</span> <span class='fl'>1.1</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>10</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>    plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>9</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  <span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>)</span></span></code></pre>
 </div>
 </details>
-<p><img src="collaboration-and-personality_files/figure-html5/unnamed-chunk-1-1.png" width="1152" /></p>
+<p><img src="collaboration-and-personality_files/figure-html5/unnamed-chunk-1-1.png" alt="" width="1152" /></p>
 </div>
-<p>As can be seen from the graphs above, the relationship between
-personality and the amount of interaction and networking behavior goes
-in the expected direction. Agreeable, open, and extraverted employees
-and to some extent also conscientious and emotionally stable employees
-tend to engage more in interactions with others and in networking.
-However, the relationships found are relatively weak. The middle 80% of
-observed effects range from an absolute value of .02 to .24, so across
-the studies shown, small effects prevail. And even in the case of the
-strongest effect (<em>r</em> = .38), personality “explains” only 14% of
-the variability in the networking behavior. There is therefore ample
-scope for the influence of a range of other factors.</p>
-<p>How about you? Are you able to engage in interactions and networking
-in a way that supports your career, work performance, or other positive
-outcomes, perhaps despite your natural tendencies due to your
-personality setup? Feel free to share your experience and thoughts in
-the comments. Btw, you can find interesting information on this topic in
-the excellent book <a
-href="https://www.amazon.com/Steps-High-Performance-Change-Ignore/dp/163369397X">8
-Steps to High Performance</a> by <a
-href="https://www.linkedin.com/in/effron/">Marc Effron</a>, specifically
-in chapters 4 and 6.</p>
-<p><strong>Caveat:</strong> The graphs represent only a simple summary
-of the effects observed in the selected studies, not a proper
-meta-analysis. If you’re interested in the specific analysis steps and
-choices behind the graphs shown, you can check the code above or go to
-my <a
-href="https://github.com/lstehlik2809/Personality-interaction-and-networking">GitHub
-page</a>.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>As can be seen from the graphs above, the relationship between personality and the amount of interaction and networking behavior goes in the expected direction. Agreeable, open, and extraverted employees and to some extent also conscientious and emotionally stable employees tend to engage more in interactions with others and in networking. However, the relationships found are relatively weak. The middle 80% of observed effects range from an absolute value of .02 to .24, so across the studies shown, small effects prevail. And even in the case of the strongest effect (<em>r</em> = .38), personality “explains” only 14% of the variability in the networking behavior. There is therefore ample scope for the influence of a range of other factors.</p>
+<p>How about you? Are you able to engage in interactions and networking in a way that supports your career, work performance, or other positive outcomes, perhaps despite your natural tendencies due to your personality setup? Feel free to share your experience and thoughts in the comments. Btw, you can find interesting information on this topic in the excellent book <a href="https://www.amazon.com/Steps-High-Performance-Change-Ignore/dp/163369397X">8 Steps to High Performance</a> by <a href="https://www.linkedin.com/in/effron/">Marc Effron</a>, specifically in chapters 4 and 6.</p>
+<p><strong>Caveat:</strong> The graphs represent only a simple summary of the effects observed in the selected studies, not a proper meta-analysis. If you’re interested in the specific analysis steps and choices behind the graphs shown, you can check the code above or go to my <a href="https://github.com/lstehlik2809/Personality-interaction-and-networking">GitHub page</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">

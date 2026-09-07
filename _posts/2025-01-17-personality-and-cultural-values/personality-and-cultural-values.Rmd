@@ -9,6 +9,7 @@ author:
 date: 01-17-2025
 categories:
   - personality
+  - big five
   - organizational culture
   - multilevel modeling
   - cross-cultural differences

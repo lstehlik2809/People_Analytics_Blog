@@ -9,6 +9,7 @@ author:
 date: 11-29-2023
 categories:
   - personality
+  - big five
   - labor economics
   - meta-analysis
 output:

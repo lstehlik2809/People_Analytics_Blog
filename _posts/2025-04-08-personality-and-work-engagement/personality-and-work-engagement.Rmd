@@ -10,6 +10,7 @@ date: 04-08-2025
 categories:
   - employee engagement
   - personality
+  - big five
   - meta-analysis
 output:
   distill::distill_article:
