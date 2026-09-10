@@ -11,7 +11,7 @@ categories:
   - personality
   - big five
   - meta-analysis
-  - career-development
+  - career development
   - psychometrics
 output:
   distill::distill_article:

@@ -7,7 +7,7 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 07 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
     <item>
       <title>The Big Five and different ways of succeeding</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -16,10 +16,10 @@
       <category>personality</category>
       <category>big five</category>
       <category>meta-analysis</category>
-      <category>career-development</category>
+      <category>career development</category>
       <category>psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles</guid>
-      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles/./chart_pic.png" medium="image" type="image/png" width="553" height="772"/>
     </item>
     <item>
@@ -27,10 +27,10 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-06-causal-inference-with-bayesian-networks</link>
       <description>A short book review.</description>
-      <category>causal-inference</category>
-      <category>bayesian-statistics</category>
-      <category>bayesian-networks</category>
-      <category>research-methods</category>
+      <category>causal inference</category>
+      <category>bayesian statistics</category>
+      <category>bayesian networks</category>
+      <category>research methods</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-06-causal-inference-with-bayesian-networks</guid>
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-06-causal-inference-with-bayesian-networks/./book_pic.jpg" medium="image" type="image/jpeg"/>
@@ -40,11 +40,11 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-30-the-daughter-effect</link>
       <description>Can having a daughter make a manager more gender-equal?</description>
-      <category>causal-inference</category>
-      <category>gender-bias</category>
+      <category>causal inference</category>
+      <category>gender bias</category>
       <category>diversity</category>
-      <category>people-management</category>
-      <category>gender-pay-gap</category>
+      <category>people management</category>
+      <category>gender pay gap</category>
       <category>recruitment</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-30-the-daughter-effect</guid>
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
@@ -55,10 +55,10 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-28-passive-versus-active-information-acquisition</link>
       <description>Using what we know to choose what to observe next.</description>
-      <category>bayesian-statistics</category>
+      <category>bayesian statistics</category>
       <category>psychometrics</category>
       <category>simulation</category>
-      <category>adaptive-methods</category>
+      <category>adaptive methods</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-28-passive-versus-active-information-acquisition</guid>
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-28-passive-versus-active-information-acquisition/./bayesianPassiveVsActive_matched_information.gif" medium="image" type="image/gif"/>
@@ -68,13 +68,13 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</link>
       <description>On using GenAI, topic analysis, and network visualization to make 152 Directionally Correct podcast episodes easier to explore.</description>
-      <category>knowledge-management</category>
-      <category>topic-analysis</category>
-      <category>network-analysis</category>
-      <category>data-visualization</category>
-      <category>generative-ai</category>
+      <category>knowledge management</category>
+      <category>topic analysis</category>
+      <category>network analysis</category>
+      <category>data visualization</category>
+      <category>generative ai</category>
       <category>embeddings</category>
-      <category>people-analytics</category>
+      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/./illustrative_pic.png" medium="image" type="image/png" width="1473" height="885"/>
@@ -84,11 +84,11 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app</link>
       <description>About another example of how generative AI is commoditizing previously specialized data products - this time, turning Outlook calendar data into a simple collaboration ego-network.</description>
-      <category>network-analysis</category>
+      <category>network analysis</category>
       <category>collaboration</category>
       <category>meetings</category>
-      <category>generative-ai</category>
-      <category>people-analytics</category>
+      <category>generative ai</category>
+      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/./calendar_ego_network_pic.png" medium="image" type="image/png" width="1375" height="829"/>
@@ -99,16 +99,16 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</link>
       <description>A reproducible reanalysis of Elinder &amp; Erixson (2012).</description>
       <category>statistics</category>
-      <category>causal-inference</category>
-      <category>research-methods</category>
-      <category>multilevel-modeling</category>
-      <category>regression-analysis</category>
-      <category>critical-thinking</category>
+      <category>causal inference</category>
+      <category>research methods</category>
+      <category>multilevel modeling</category>
+      <category>regression analysis</category>
+      <category>critical thinking</category>
       <category>r</category>
       <category>replication</category>
-      <category>open-science</category>
+      <category>open science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</guid>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="image/avif"/>
     </item>
     <item>
@@ -1665,7 +1665,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-11-22-gender-gap-in-hiring-decisions</link>
       <description>Interesting results from a pre-registered meta-analysis of 44 years of field experiments on gender gaps in hiring decisions.</description>
-      <category>gender-bias</category>
+      <category>gender bias</category>
       <category>diversity</category>
       <category>experiments</category>
       <category>meta-analysis</category>
@@ -2390,7 +2390,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap</link>
       <description>Pay inequality between men and women is not only an ethical and legal issue for companies, but also a marketing issue - it can have a negative impact on their "employer brand" and attractiveness as an employer. This means that if companies want to attract and retain talented employees, they must be able to ensure that they treat men and women equally in this respect. Let's look at what the existing evidence tells us about what might help us with this.</description>
       <category>gender pay gap</category>
-      <category>gender-bias</category>
+      <category>gender bias</category>
       <category>evidence-based management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap</guid>
       <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
@@ -2642,7 +2642,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2021-01-29-paygap</link>
       <description>Platová nerovnost mezi muži a ženami není pro firmy jen záležitostí etickou a právní, ale také marketingovou - může mít totiž negativní dopad na jejich "employer brand" a atraktivitu coby zaměstnavatele. To znamená, že pokud firmy chtějí přilákat a také si udržet talentované zaměstnance, musí být schopny zajistit, že se u nich s muži a ženami bude v tomto ohledu zacházet stejně. Prvním krokem k tomu je zjistit, jak velký je rozdíl mezi platy mužů a žen ve firmě a do jaké míry ho lze vysvětlit jinými faktory než je samotné pohlaví zaměstnance. V tomto článku demonstruji, jak takovou analýzu provést s pomocí analytického nástroje R a dat, která má většina firem běžně k dispozici. Stručně se zmiňuji rovněž o tom, jaké mohou být případné další kroky a doporučení vyplývající z výsledků provedné analýzy.</description>
       <category>gender pay gap</category>
-      <category>gender-bias</category>
+      <category>gender bias</category>
       <category>regression analysis</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2021-01-29-paygap</guid>

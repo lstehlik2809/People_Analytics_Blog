@@ -9,14 +9,14 @@ author:
 date: 2026-08-06
 categories:
   - statistics
-  - causal-inference
-  - research-methods
-  - multilevel-modeling
-  - regression-analysis
-  - critical-thinking
+  - causal inference
+  - research methods
+  - multilevel modeling
+  - regression analysis
+  - critical thinking
   - r
   - replication
-  - open-science
+  - open science
 output:
   distill::distill_article:
     toc: true

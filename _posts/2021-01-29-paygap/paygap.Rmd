@@ -9,7 +9,7 @@ author:
 date: 05-17-2021
 categories:
   - gender pay gap
-  - gender-bias
+  - gender bias
   - regression analysis
   - r
 output:

@@ -8,10 +8,10 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-09-06
 categories:
-  - causal-inference
-  - bayesian-statistics
-  - bayesian-networks
-  - research-methods
+  - causal inference
+  - bayesian statistics
+  - bayesian networks
+  - research methods
 output:
   distill::distill_article:
     toc: true

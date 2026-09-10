@@ -8,11 +8,11 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-08-31
 categories:
-  - causal-inference
-  - gender-bias
+  - causal inference
+  - gender bias
   - diversity
-  - people-management
-  - gender-pay-gap
+  - people management
+  - gender pay gap
   - recruitment
 output:
   distill::distill_article:

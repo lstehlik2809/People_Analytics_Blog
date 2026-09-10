@@ -8,11 +8,11 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-08-11
 categories:
-  - network-analysis
+  - network analysis
   - collaboration
   - meetings
-  - generative-ai
-  - people-analytics
+  - generative ai
+  - people analytics
 output:
   distill::distill_article:
     toc: true
