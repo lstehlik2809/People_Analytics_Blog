@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Did 'Freefall' documentary move Boeing's share price?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-13-boeing-freefall-stock-market-event-study</link>
+      <description>Netflix’s "Freefall: A Reckoning for Boeing" documentary changed how I saw a company I personally had long admired, mainly for its major role in space exploration. I wondered whether others shared that reaction more broadly, and whether it might show up in Boeing’s share price. So I tested it 🧐</description>
+      <category>causal inference</category>
+      <category>bayesian statistics</category>
+      <category>time series</category>
+      <category>python</category>
+      <category>event study</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-13-boeing-freefall-stock-market-event-study</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-13-boeing-freefall-stock-market-event-study/./documentary_pic.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>The Big Five and different ways of succeeding</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -108,7 +122,7 @@
       <category>replication</category>
       <category>open science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</guid>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="image/avif"/>
     </item>
     <item>
