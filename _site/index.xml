@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Bayesian Thinking for People Analytics</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics</link>
+      <description>A recommendation for a free online book on Bayesian thinking in people analytics.</description>
+      <category>bayesian statistics</category>
+      <category>people analytics</category>
+      <category>decision making</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/./Bayesian Thinking for PA.png" medium="image" type="image/png" width="860" height="906"/>
+    </item>
     <item>
       <title>Did 'Freefall' documentary move Boeing's share price?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +31,7 @@
       <category>python</category>
       <category>event study</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-13-boeing-freefall-stock-market-event-study</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-13-boeing-freefall-stock-market-event-study/./documentary_pic.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

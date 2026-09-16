@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2026-09-16-bayesian-thinking-for-people-analytics/",
+    "title": "Bayesian Thinking for People Analytics",
+    "description": "A recommendation for a free online book on Bayesian thinking in people analytics.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-09-16",
+    "categories": [
+      "bayesian statistics",
+      "people analytics",
+      "decision making"
+    ],
+    "contents": "\r\nIf you are a PA professional and you don’t know about it yet, then I highly recommend to your attention a free online book, Bayesian Thinking for People Analytics, by Andrew Marritt.\r\nIMO, there are three key things that distinguish it from other similar books:\r\nIt’s not just a technical guide to statistics/analytics, or its specific Bayesian flavour, to be more precise, but firmly embeds it within the broader decision-making framework and PA context.\r\nIt gently and comprehensibly introduces you to the mindset and tools of Bayesians, which can make your PA life easier in many respects, and does so in a way that lets you immediately start using them in your practice.\r\nIt gives plenty of attention to the judgement calls we face in practice: which assumptions we make, when a simpler analysis is good enough, and how to explain the results to stakeholders.\r\nOn top of that, there is a lot of practical wisdom and also fun throughout the book.\r\nSo, highly recommended - I can only wish I’d had something like that available when I was entering the field.\r\nThanks to Andrew for putting something like this together and sharing it with the PA community 🙏\r\n\r\n\r\n",
+    "preview": "posts/2026-09-16-bayesian-thinking-for-people-analytics/./Bayesian Thinking for PA.png",
+    "last_modified": "2026-09-16T11:58:53+02:00",
+    "input_file": "bayesian-thinking-for-people-analytics.knit.md",
+    "preview_width": 860,
+    "preview_height": 906
+  },
+  {
     "path": "posts/2026-09-13-boeing-freefall-stock-market-event-study/",
     "title": "Did 'Freefall' documentary move Boeing's share price?",
     "description": "Netflix’s \"Freefall: A Reckoning for Boeing\" documentary changed how I saw a company I personally had long admired, mainly for its major role in space exploration. I wondered whether others shared that reaction more broadly, and whether it might show up in Boeing’s share price. So I tested it 🧐",
