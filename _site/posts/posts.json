@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2026-09-18-job-ai-exposure/",
+    "title": "How exposed are your job and other jobs to AI?",
+    "description": "I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-09-18",
+    "categories": [
+      "ai",
+      "future of work",
+      "skills",
+      "labor economics",
+      "data visualization"
+    ],
+    "contents": "\r\nAs part of a recent training on using AI effectively, I created Work & AI - a small app for anyone curious about how AI might affect our jobs.\r\nIt combines AI exposure categories and 2025–2035 employment projections from the U.S. Bureau of Labor Statistics with job descriptions, tasks and skills from O*NET.\r\nYou can look up a job title, select skills you use, or describe what you actually do. Then explore questions like:\r\nHow exposed is this occupation to AI, and is employment expected to grow or shrink?\r\nIn which occupational families and occupations with similar skill requirements is AI exposure concentrated?\r\nWhich skills are relatively more/less common in occupations with higher or lower AI exposure?\r\nThe “Take a tour” button will show you around.\r\nJust a few things that caught my eye so far:\r\nIn occupations least exposed to AI, the most disproportionately represented skills overlap pretty nicely with what programmers are often said to do these days when working with AI agents: operations control and monitoring, quality control, and troubleshooting 😅\r\nSoftware developers sit in the “very high” AI exposure category, yet employment is projected to grow by 10.2% between 2025 and 2035. High exposure and growing demand can coexist 😯 (The supplementary descriptive stats also suggested that higher AI exposure does not line up with a simple pattern of lower employment growth - median projected growth is 1.9% in Low-exposure occupations, 3.35% in both Moderate and High, and 2.7% in Very high - see chart below.)\r\nWithin several occupational families - e.g., healthcare practitioners or personal care and service - the picture varies quite a bit, with occupations more or less evenly spread across all four AI exposure levels 🤔\r\n\r\nEach point is one BLS occupation. Boxes show the middle half of occupations; diamonds mark empirical medians. The dashed line marks zero projected growth. Differences between growth percentages are percentage points (pp).\r\n⚠️ Several things to keep in mind: Exposure can mean AI helping with the work as well as doing parts of it, so it doesn’t measure replacement probability. These are U.S. occupational estimates that might not generalize well to other parts of the world. Also, things are moving pretty quickly, so what was true - even just roughly - last year or this year may no longer be true next year.\r\nIf you want to play with it, go here.\r\n\r\n\r\n",
+    "preview": "posts/2026-09-18-job-ai-exposure/./app_pic.jpg",
+    "last_modified": "2026-09-18T17:32:07+02:00",
+    "input_file": "job-ai-exposure.knit.md"
+  },
+  {
     "path": "posts/2026-09-16-bayesian-thinking-for-people-analytics/",
     "title": "Bayesian Thinking for People Analytics",
     "description": "A recommendation for a free online book on Bayesian thinking in people analytics.",

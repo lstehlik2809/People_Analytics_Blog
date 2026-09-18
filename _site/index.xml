@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>How exposed are your job and other jobs to AI?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure</link>
+      <description>I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.</description>
+      <category>ai</category>
+      <category>future of work</category>
+      <category>skills</category>
+      <category>labor economics</category>
+      <category>data visualization</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure</guid>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/./app_pic.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Bayesian Thinking for People Analytics</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -17,7 +31,7 @@
       <category>people analytics</category>
       <category>decision making</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics</guid>
-      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics/./Bayesian Thinking for PA.png" medium="image" type="image/png" width="860" height="906"/>
     </item>
     <item>
