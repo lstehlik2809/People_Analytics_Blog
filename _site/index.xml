@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Before weighting employee priorities, test what the rating actually means</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-23-importance-vs-satisfaction</link>
+      <description>Stable answers are not automatically useful intervention weights.</description>
+      <category>employee survey</category>
+      <category>psychometrics</category>
+      <category>panel data</category>
+      <category>multilevel modeling</category>
+      <category>validity</category>
+      <category>bayesian statistics</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-23-importance-vs-satisfaction</guid>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-23-importance-vs-satisfaction/./linkedin_03_sensitivity -adjusted.png" medium="image" type="image/png" width="2400" height="1168"/>
+    </item>
     <item>
       <title>How exposed are your job and other jobs to AI?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +34,7 @@
       <category>labor economics</category>
       <category>data visualization</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure</guid>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/./app_pic.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
