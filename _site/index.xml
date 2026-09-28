@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Nothing changed. The dashboard disagrees.</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise</link>
+      <description>Sharing an app that grew out of an internal discussion about how to report and interpret turnover rates.</description>
+      <category>employee turnover</category>
+      <category>hr metrics</category>
+      <category>statistics</category>
+      <category>time series</category>
+      <category>simulation</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise/./app_pic.png" medium="image" type="image/png" width="984" height="832"/>
+    </item>
     <item>
       <title>Before weighting employee priorities, test what the rating actually means</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -20,7 +34,7 @@
       <category>validity</category>
       <category>bayesian statistics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-23-importance-vs-satisfaction</guid>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-23-importance-vs-satisfaction/./linkedin_03_sensitivity -adjusted.png" medium="image" type="image/png" width="2400" height="1168"/>
     </item>
     <item>
