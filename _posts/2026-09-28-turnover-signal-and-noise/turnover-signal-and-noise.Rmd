@@ -1,7 +1,7 @@
 ---
 title: "Nothing changed. The dashboard disagrees."
 description: |
-  Sharing an app that grew out of an internal discussion about how to report and interpret turnover rates.
+  Sharing an app that grew as a byproduct of an internal discussion about how to report and interpret turnover rates.
 preview: ./app_pic.png
 author:
   - name: Luděk Stehlík
@@ -43,6 +43,6 @@ The second part of the app is a small game: 24 months of a monthly dashboard, ha
 
 You can play with it [here](https://lstehlik2809.github.io/turnover-signal-noise/){target="_blank"}.
 
-How do you report TR in your org - monthly annualized, rolling 12 months, control charts, something else? And how do you keep people from reacting to every wiggle? 🙂
+How do you report TR in your org - monthly annualized, rolling 12 months, control charts, something else? And how do you keep people from reacting to every wiggle? 🤔
 
 P.S. The first part builds on a neat Monte Carlo illustration credited to Lipinski (2017).
