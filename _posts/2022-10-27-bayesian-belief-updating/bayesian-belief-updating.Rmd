@@ -13,6 +13,7 @@ categories:
   - time series
   - critical thinking
   - r
+  - rationality
 output:
   distill::distill_article:
     self_contained: false

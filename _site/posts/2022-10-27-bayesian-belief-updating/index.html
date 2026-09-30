@@ -20,6 +20,7 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -50,16 +51,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +75,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -124,7 +126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["A visual introduction to Bayesian belief updating"]},{"type":"character","attributes":{},"value":["Teacher: \"Bayesian belief updating involves combining existing or prior beliefs with an assessment of the strength of new evidence.\" Student: \"And could I please see this in action?\""]},{"type":"character","attributes":{},"value":["./bayesian-belief-updating.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-27-2022"]},{"type":"character","attributes":{},"value":["bayesian statistics","decision making","time series","critical thinking","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["A visual introduction to Bayesian belief updating"]},{"type":"character","attributes":{},"value":["Teacher: \"Bayesian belief updating involves combining existing or prior beliefs with an assessment of the strength of new evidence.\" Student: \"And could I please see this in action?\""]},{"type":"character","attributes":{},"value":["./bayesian-belief-updating.jpg"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["10-27-2022"]},{"type":"character","attributes":{},"value":["bayesian statistics","decision making","time series","critical thinking","r","rationality"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/"]},{"type":"character","attributes":{},"value":["https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2117,7 +2119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.30/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2169,6 +2171,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-title">
 <h1>A visual introduction to Bayesian belief updating</h1>
+
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../index.html#category:bayesian_statistics" class="dt-tag">bayesian statistics</a>
@@ -2176,50 +2179,22 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="../../index.html#category:time_series" class="dt-tag">time series</a>
   <a href="../../index.html#category:critical_thinking" class="dt-tag">critical thinking</a>
   <a href="../../index.html#category:r" class="dt-tag">r</a>
+  <a href="../../index.html#category:rationality" class="dt-tag">rationality</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Teacher: “Bayesian belief updating involves combining existing or
-prior beliefs with an assessment of the strength of new evidence.”
-Student: “And could I please see this in action?”</p></p>
+<p><p>Teacher: “Bayesian belief updating involves combining existing or prior beliefs with an assessment of the strength of new evidence.” Student: “And could I please see this in action?”</p></p>
 </div>
 
 <div class="d-byline">
-  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/"
-class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
+  Luděk Stehlík <a href="https://www.linkedin.com/in/ludekstehlik/" class="uri">https://www.linkedin.com/in/ludekstehlik/</a> 
   
 <br/>10-27-2022
 </div>
 
 <div class="d-article">
-<p>When trying to reduce uncertainty, even very small pieces of
-information count if you are patient and have some tool to combine them
-effectively. I recently re-read <a
-href="https://en.wikipedia.org/wiki/Philip_E._Tetlock">Philip
-Tetlock’s</a> book <a
-href="https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction">Superforecasting</a>
-and came across an excellent illustration of such a tool: <a
-href="https://en.wikipedia.org/wiki/Bayesian_inference">Bayesian belief
-updating</a>.</p>
-<p>“<em>Imagine you are sitting with your back to a billiards table. A
-friend rolls a ball onto the table and it stops at a random spot. You
-want to locate the ball without looking. How? Your friend rolls a second
-ball, which stops at another random spot. You ask, “Is the second ball
-to the left or the right of the first?” Your friend says, “To the left.”
-That’s an almost trivial scrap of information. But it’s not nothing. It
-tells you that the first ball is not on the extreme left edge of the
-table. And it makes it just a tad more likely that the first ball is on
-the right side of the table. If your friend rolls another ball on the
-table and the procedure is repeated, you get another scrap of
-information. If he says, “It’s to the left,” the likelihood of the first
-ball being on the right side of the table increases a little more. Keep
-repeating the process and you slowly narrow the range of the possible
-locations, zeroing in on the truth—although you will never eliminate
-uncertainty entirely.</em>”</p>
-<p>After reading this paragraph, I thought it would be much more
-pedagogically compelling (and fun 😉) to see this update process live
-and in action. What a great opportunity to learn how to work with the <a
-href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/gganimate/gganimate.pdf">gganimate</a>
-R package.</p>
+<p>When trying to reduce uncertainty, even very small pieces of information count if you are patient and have some tool to combine them effectively. I recently re-read <a href="https://en.wikipedia.org/wiki/Philip_E._Tetlock">Philip Tetlock’s</a> book <a href="https://en.wikipedia.org/wiki/Superforecasting:_The_Art_and_Science_of_Prediction">Superforecasting</a> and came across an excellent illustration of such a tool: <a href="https://en.wikipedia.org/wiki/Bayesian_inference">Bayesian belief updating</a>.</p>
+<p>“<em>Imagine you are sitting with your back to a billiards table. A friend rolls a ball onto the table and it stops at a random spot. You want to locate the ball without looking. How? Your friend rolls a second ball, which stops at another random spot. You ask, “Is the second ball to the left or the right of the first?” Your friend says, “To the left.” That’s an almost trivial scrap of information. But it’s not nothing. It tells you that the first ball is not on the extreme left edge of the table. And it makes it just a tad more likely that the first ball is on the right side of the table. If your friend rolls another ball on the table and the procedure is repeated, you get another scrap of information. If he says, “It’s to the left,” the likelihood of the first ball being on the right side of the table increases a little more. Keep repeating the process and you slowly narrow the range of the possible locations, zeroing in on the truth—although you will never eliminate uncertainty entirely.</em>”</p>
+<p>After reading this paragraph, I thought it would be much more pedagogically compelling (and fun 😉) to see this update process live and in action. What a great opportunity to learn how to work with the <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/gganimate/gganimate.pdf">gganimate</a> R package.</p>
 <p>Here is the code I put together.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -2227,163 +2202,155 @@ R package.</p>
 Show code
 </summary>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># uploading libraries</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span> <span class='co'># data manipulation and visualization</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://gganimate.com'>gganimate</a></span><span class='op'>)</span> <span class='co'># animation of the charts</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://easystats.github.io/bayestestR/'>bayestestR</a></span><span class='op'>)</span> <span class='co'># Highest Density Interval computation</span>
-
-<span class='co'># specifying the width of the billiards table  </span>
-<span class='va'>field</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>178</span>,<span class='fl'>1</span><span class='op'>)</span>
-
-<span class='co'># likelihoood function for the situation when the second ball stops to the right of the first one </span>
-<span class='va'>rightLikelihood</span> <span class='op'>&lt;-</span> <span class='op'>(</span><span class='fl'>178</span><span class='op'>-</span><span class='va'>field</span><span class='op'>)</span><span class='op'>/</span><span class='fl'>178</span>
-<span class='co'># likelihoood function for the situation when the second ball stops to the left of the first one </span>
-<span class='va'>leftLikelihood</span> <span class='op'>&lt;-</span> <span class='fl'>1</span><span class='op'>-</span><span class='va'>rightLikelihood</span>
-<span class='co'># flat prior for the very beginning of the updating process  </span>
-<span class='va'>firstPrior</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>/</span><span class='fl'>179</span>, <span class='fl'>179</span><span class='op'>)</span>
-
-<span class='co'># position where the first ball stopped</span>
-<span class='va'>point</span> <span class='op'>&lt;-</span> <span class='fl'>88</span>
-
-<span class='co'># Bayesian belief updating</span>
-<span class='co'># creating shell dataframe for final results</span>
-<span class='va'>posteriors</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='op'>)</span>
-
-<span class='co'># setting random seed for ensuring reproducibility</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1234</span><span class='op'>)</span>
-
-<span class='co'># specifying the number of trials</span>
-<span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>500</span><span class='op'>)</span><span class='op'>{</span>
-  
-  <span class='co'># throwing the second ball</span>
-  <span class='va'>pointTrial</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span>n <span class='op'>=</span> <span class='fl'>1</span>, min <span class='op'>=</span> <span class='fl'>0</span>, max <span class='op'>=</span> <span class='fl'>178</span><span class='op'>)</span>
-  
-  <span class='co'># determining whether the second ball stopped to the left or to the right of the first one </span>
-  <span class='va'>side</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>pointTrial</span> <span class='op'>&gt;</span> <span class='va'>point</span>, <span class='st'>"right"</span>, <span class='st'>"left"</span><span class='op'>)</span>
-  
-  <span class='co'># selecting appropriate prior</span>
-  <span class='kw'>if</span><span class='op'>(</span><span class='va'>i</span><span class='op'>==</span><span class='fl'>1</span><span class='op'>)</span><span class='op'>{</span>
-    
-    <span class='va'>prior</span> <span class='op'>&lt;-</span> <span class='va'>firstPrior</span>
-    
-  <span class='op'>}</span> <span class='kw'>else</span><span class='op'>{</span>
-    
-    <span class='va'>prior</span> <span class='op'>&lt;-</span> <span class='va'>posteriors</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
-      <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>trial</span> <span class='op'>==</span> <span class='va'>i</span><span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> 
-      <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/pull.html'>pull</a></span><span class='op'>(</span><span class='va'>posterior</span><span class='op'>)</span>
-    
-  <span class='op'>}</span>
-  
-  <span class='co'># combining prior and likelihood (evidence) and transforming the result into probabilities</span>
-  <span class='kw'>if</span><span class='op'>(</span><span class='va'>side</span> <span class='op'>==</span> <span class='st'>"right"</span><span class='op'>)</span><span class='op'>{</span>
-    
-    <span class='va'>likelihood</span> <span class='op'>&lt;-</span> <span class='va'>rightLikelihood</span> <span class='op'>*</span> <span class='va'>prior</span> 
-    <span class='va'>probability</span> <span class='op'>&lt;-</span> <span class='va'>likelihood</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>likelihood</span><span class='op'>)</span>
-    
-  <span class='op'>}</span> <span class='kw'>else</span><span class='op'>{</span>
-    
-    <span class='va'>likelihood</span> <span class='op'>&lt;-</span> <span class='va'>leftLikelihood</span> <span class='op'>*</span> <span class='va'>prior</span>
-    <span class='va'>probability</span> <span class='op'>&lt;-</span> <span class='va'>likelihood</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>likelihood</span><span class='op'>)</span>
-    
-  <span class='op'>}</span>
-  
-  <span class='co'># putting results into the dataframe</span>
-  <span class='va'>suppDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>
-    posterior <span class='op'>=</span> <span class='va'>probability</span>,
-    trial <span class='op'>=</span> <span class='va'>i</span>,
-    side <span class='op'>=</span> <span class='va'>side</span>,
-    pointTrial <span class='op'>=</span> <span class='va'>pointTrial</span>
-  <span class='op'>)</span>
-  
-  <span class='co'># computing Highest Density Interval</span>
-  <span class='va'>sampling</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>field</span>, size <span class='op'>=</span> <span class='fl'>10000</span>, replace <span class='op'>=</span> <span class='cn'>TRUE</span>, prob <span class='op'>=</span> <span class='va'>probability</span><span class='op'>)</span>
-  
-  <span class='va'>hdi</span> <span class='op'>&lt;-</span> <span class='fu'>bayestestR</span><span class='fu'>::</span><span class='fu'><a href='https://easystats.github.io/bayestestR/reference/hdi.html'>hdi</a></span><span class='op'>(</span><span class='va'>sampling</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span><span class='op'>)</span>
-  
-  <span class='va'>suppDf</span> <span class='op'>&lt;-</span> <span class='va'>suppDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-      lhdi <span class='op'>=</span> <span class='va'>hdi</span><span class='op'>$</span><span class='va'>CI_low</span>,
-      hhdi <span class='op'>=</span> <span class='va'>hdi</span><span class='op'>$</span><span class='va'>CI_high</span>
-    <span class='op'>)</span>
-  
-  <span class='co'># putting results into the shell dataframe </span>
-  <span class='va'>posteriors</span> <span class='op'>&lt;-</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/bind.html'>bind_rows</a></span><span class='op'>(</span><span class='va'>posteriors</span>, <span class='va'>suppDf</span><span class='op'>)</span>
-
-<span class='op'>}</span>
-
-<span class='co'># adjusting data for visualization purposes</span>
-<span class='va'>posteriorsDf</span> <span class='op'>&lt;-</span> <span class='va'>posteriors</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>trial</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>place <span class='op'>=</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/ranking.html'>row_number</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span>
-  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
-    hdi <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>place</span> <span class='op'>&gt;=</span> <span class='va'>lhdi</span> <span class='op'>&amp;</span> <span class='va'>place</span> <span class='op'>&lt;=</span> <span class='va'>hhdi</span>, <span class='st'>"yes"</span>, <span class='st'>"no"</span><span class='op'>)</span>
-  <span class='op'>)</span>
-
-<span class='co'># creating charts</span>
-<span class='va'>myAnimation</span> <span class='op'>&lt;-</span> <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>posteriorsDf</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>place</span>, y <span class='op'>=</span> <span class='va'>posterior</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_ribbon.html'>geom_area</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>posteriorsDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>hdi</span> <span class='op'>==</span> <span class='st'>'yes'</span><span class='op'>)</span>, fill <span class='op'>=</span> <span class='st'>'light blue'</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>pointTrial</span>, y <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>4</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>point</span>, y <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>4</span>, color <span class='op'>=</span> <span class='st'>"red"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_text.html'>geom_text</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>8</span>, y <span class='op'>=</span> <span class='fl'>0.1</span>, label <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_glue.html'>str_glue</a></span><span class='op'>(</span><span class='st'>"Trial: {trial}\n95% HDI: [{lhdi}, {hhdi}]"</span><span class='op'>)</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>"grey"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0.105</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/comma.html'>number_format</a></span><span class='op'>(</span>suffix <span class='op'>=</span> <span class='st'>" cm"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>19</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,
-                 plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>15</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,
-                 plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-                 axis.title.x.bottom <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-                 axis.title.y.left <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>15</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,
-                 axis.title.y.right <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>15</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,
-                 axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,
-                 axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-                 axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-                 legend.position<span class='op'>=</span> <span class='st'>"bottom"</span>,
-                 legend.key <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span>,
-                 legend.key.width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1.6</span>, <span class='st'>"line"</span><span class='op'>)</span>,
-                 legend.margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>, unit<span class='op'>=</span><span class='st'>"cm"</span><span class='op'>)</span>,
-                 legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,
-                 legend.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"transparent"</span><span class='op'>)</span>,
-                 panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-                 panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-                 panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-                 panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-                 axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-                 axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,
-                 plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>,
-                 plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,
-                 plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span>
-  <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
-    title <span class='op'>=</span> <span class='st'>"Bayesian belief updating in the billiards table thought experiment"</span>,
-    subtitle <span class='op'>=</span> <span class='st'>"Target place: 88 cm"</span>,
-    x <span class='op'>=</span> <span class='st'>'PLACE ON THE BILLIARDS TABLE'</span>, 
-    y <span class='op'>=</span> <span class='st'>'POSTERIOR PROBABILITY'</span>,
-    caption <span class='op'>=</span> <span class='st'>"\n\nThe static red point corresponds to a random and unknown location of the first ball. The moving black point then corresponds to the location where the second,\nrepeatedly rolled ball randomly ended up. The area in blue corresponds to the 95% Highest Density Interval of the posterior distribution. All points inside this\ninterval have a higher probability density than points outside this interval."</span>
-    <span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/transition_time.html'>transition_time</a></span><span class='op'>(</span><span class='va'>trial</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/ease_aes.html'>ease_aes</a></span><span class='op'>(</span><span class='st'>'linear'</span><span class='op'>)</span>
-
-<span class='co'># animating chart</span>
-<span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/animate.html'>animate</a></span><span class='op'>(</span><span class='va'>myAnimation</span>, nframes <span class='op'>=</span> <span class='fl'>125</span>, fps <span class='op'>=</span> <span class='fl'>5</span>, height <span class='op'>=</span> <span class='fl'>6</span>, width <span class='op'>=</span> <span class='fl'>11</span>, units <span class='op'>=</span> <span class='st'>"in"</span>, res <span class='op'>=</span> <span class='fl'>125</span><span class='op'>)</span>
-
-<span class='co'># saving animated chart as a .gif file</span>
-<span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/anim_save.html'>anim_save</a></span><span class='op'>(</span>filename <span class='op'>=</span> <span class='st'>"./bayesianBelifUpdating.gif"</span>, animation <span class='op'>=</span> <span class='fu'><a href='https://gganimate.com/reference/last_animation.html'>last_animation</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># uploading libraries</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span> <span class='co'># data manipulation and visualization</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://gganimate.com'>gganimate</a></span><span class='op'>)</span> <span class='co'># animation of the charts</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://easystats.github.io/bayestestR/'>bayestestR</a></span><span class='op'>)</span> <span class='co'># Highest Density Interval computation</span></span>
+<span></span>
+<span><span class='co'># specifying the width of the billiards table  </span></span>
+<span><span class='va'>field</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>178</span>,<span class='fl'>1</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># likelihoood function for the situation when the second ball stops to the right of the first one </span></span>
+<span><span class='va'>rightLikelihood</span> <span class='op'>&lt;-</span> <span class='op'>(</span><span class='fl'>178</span><span class='op'>-</span><span class='va'>field</span><span class='op'>)</span><span class='op'>/</span><span class='fl'>178</span></span>
+<span><span class='co'># likelihoood function for the situation when the second ball stops to the left of the first one </span></span>
+<span><span class='va'>leftLikelihood</span> <span class='op'>&lt;-</span> <span class='fl'>1</span><span class='op'>-</span><span class='va'>rightLikelihood</span></span>
+<span><span class='co'># flat prior for the very beginning of the updating process  </span></span>
+<span><span class='va'>firstPrior</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>/</span><span class='fl'>179</span>, <span class='fl'>179</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># position where the first ball stopped</span></span>
+<span><span class='va'>point</span> <span class='op'>&lt;-</span> <span class='fl'>88</span></span>
+<span></span>
+<span><span class='co'># Bayesian belief updating</span></span>
+<span><span class='co'># creating shell dataframe for final results</span></span>
+<span><span class='va'>posteriors</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># setting random seed for ensuring reproducibility</span></span>
+<span><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1234</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># specifying the number of trials</span></span>
+<span><span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>500</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>  </span>
+<span>  <span class='co'># throwing the second ball</span></span>
+<span>  <span class='va'>pointTrial</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span>n <span class='op'>=</span> <span class='fl'>1</span>, min <span class='op'>=</span> <span class='fl'>0</span>, max <span class='op'>=</span> <span class='fl'>178</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='co'># determining whether the second ball stopped to the left or to the right of the first one </span></span>
+<span>  <span class='va'>side</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>pointTrial</span> <span class='op'>&gt;</span> <span class='va'>point</span>, <span class='st'>"right"</span>, <span class='st'>"left"</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='co'># selecting appropriate prior</span></span>
+<span>  <span class='kw'>if</span><span class='op'>(</span><span class='va'>i</span><span class='op'>==</span><span class='fl'>1</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>    </span>
+<span>    <span class='va'>prior</span> <span class='op'>&lt;-</span> <span class='va'>firstPrior</span></span>
+<span>    </span>
+<span>  <span class='op'>}</span> <span class='kw'>else</span><span class='op'>{</span></span>
+<span>    </span>
+<span>    <span class='va'>prior</span> <span class='op'>&lt;-</span> <span class='va'>posteriors</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> </span>
+<span>      <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>trial</span> <span class='op'>==</span> <span class='va'>i</span><span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> </span>
+<span>      <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/pull.html'>pull</a></span><span class='op'>(</span><span class='va'>posterior</span><span class='op'>)</span></span>
+<span>    </span>
+<span>  <span class='op'>}</span></span>
+<span>  </span>
+<span>  <span class='co'># combining prior and likelihood (evidence) and transforming the result into probabilities</span></span>
+<span>  <span class='kw'>if</span><span class='op'>(</span><span class='va'>side</span> <span class='op'>==</span> <span class='st'>"right"</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>    </span>
+<span>    <span class='va'>likelihood</span> <span class='op'>&lt;-</span> <span class='va'>rightLikelihood</span> <span class='op'>*</span> <span class='va'>prior</span> </span>
+<span>    <span class='va'>probability</span> <span class='op'>&lt;-</span> <span class='va'>likelihood</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>likelihood</span><span class='op'>)</span></span>
+<span>    </span>
+<span>  <span class='op'>}</span> <span class='kw'>else</span><span class='op'>{</span></span>
+<span>    </span>
+<span>    <span class='va'>likelihood</span> <span class='op'>&lt;-</span> <span class='va'>leftLikelihood</span> <span class='op'>*</span> <span class='va'>prior</span></span>
+<span>    <span class='va'>probability</span> <span class='op'>&lt;-</span> <span class='va'>likelihood</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>likelihood</span><span class='op'>)</span></span>
+<span>    </span>
+<span>  <span class='op'>}</span></span>
+<span>  </span>
+<span>  <span class='co'># putting results into the dataframe</span></span>
+<span>  <span class='va'>suppDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span></span>
+<span>    posterior <span class='op'>=</span> <span class='va'>probability</span>,</span>
+<span>    trial <span class='op'>=</span> <span class='va'>i</span>,</span>
+<span>    side <span class='op'>=</span> <span class='va'>side</span>,</span>
+<span>    pointTrial <span class='op'>=</span> <span class='va'>pointTrial</span></span>
+<span>  <span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='co'># computing Highest Density Interval</span></span>
+<span>  <span class='va'>sampling</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>field</span>, size <span class='op'>=</span> <span class='fl'>10000</span>, replace <span class='op'>=</span> <span class='cn'>TRUE</span>, prob <span class='op'>=</span> <span class='va'>probability</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>hdi</span> <span class='op'>&lt;-</span> <span class='fu'>bayestestR</span><span class='fu'>::</span><span class='fu'><a href='https://easystats.github.io/bayestestR/reference/hdi.html'>hdi</a></span><span class='op'>(</span><span class='va'>sampling</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>suppDf</span> <span class='op'>&lt;-</span> <span class='va'>suppDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>      lhdi <span class='op'>=</span> <span class='va'>hdi</span><span class='op'>$</span><span class='va'>CI_low</span>,</span>
+<span>      hhdi <span class='op'>=</span> <span class='va'>hdi</span><span class='op'>$</span><span class='va'>CI_high</span></span>
+<span>    <span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='co'># putting results into the shell dataframe </span></span>
+<span>  <span class='va'>posteriors</span> <span class='op'>&lt;-</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/bind_rows.html'>bind_rows</a></span><span class='op'>(</span><span class='va'>posteriors</span>, <span class='va'>suppDf</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='op'>}</span></span>
+<span></span>
+<span><span class='co'># adjusting data for visualization purposes</span></span>
+<span><span class='va'>posteriorsDf</span> <span class='op'>&lt;-</span> <span class='va'>posteriors</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>trial</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>place <span class='op'>=</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/row_number.html'>row_number</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>-</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span></span>
+<span>    hdi <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>place</span> <span class='op'>&gt;=</span> <span class='va'>lhdi</span> <span class='op'>&amp;</span> <span class='va'>place</span> <span class='op'>&lt;=</span> <span class='va'>hhdi</span>, <span class='st'>"yes"</span>, <span class='st'>"no"</span><span class='op'>)</span></span>
+<span>  <span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># creating charts</span></span>
+<span><span class='va'>myAnimation</span> <span class='op'>&lt;-</span> <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>posteriorsDf</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>place</span>, y <span class='op'>=</span> <span class='va'>posterior</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_ribbon.html'>geom_area</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>posteriorsDf</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>hdi</span> <span class='op'>==</span> <span class='st'>'yes'</span><span class='op'>)</span>, fill <span class='op'>=</span> <span class='st'>'light blue'</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span><span class='op'>(</span>size <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>pointTrial</span>, y <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>4</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>point</span>, y <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>4</span>, color <span class='op'>=</span> <span class='st'>"red"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_text.html'>geom_text</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fl'>8</span>, y <span class='op'>=</span> <span class='fl'>0.1</span>, label <span class='op'>=</span> <span class='fu'>stringr</span><span class='fu'>::</span><span class='fu'><a href='https://stringr.tidyverse.org/reference/str_glue.html'>str_glue</a></span><span class='op'>(</span><span class='st'>"Trial: {trial}\n95% HDI: [{lhdi}, {hhdi}]"</span><span class='op'>)</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>"grey"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_continuous</a></span><span class='op'>(</span>limits <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0.105</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/comma.html'>number_format</a></span><span class='op'>(</span>suffix <span class='op'>=</span> <span class='st'>" cm"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>19</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>12</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                 plot.subtitle <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, margin<span class='op'>=</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>15</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                 plot.caption <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>11</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>                 axis.title.x.bottom <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>15</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>                 axis.title.y.left <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>15</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>,</span>
+<span>                 axis.title.y.right <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span>t <span class='op'>=</span> <span class='fl'>0</span>, r <span class='op'>=</span> <span class='fl'>0</span>, b <span class='op'>=</span> <span class='fl'>0</span>, l <span class='op'>=</span> <span class='fl'>15</span><span class='op'>)</span>, color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>13</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span>, hjust <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span>                 axis.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>12</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>                 axis.line.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>                 axis.line.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>colour <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>                 legend.position<span class='op'>=</span> <span class='st'>"bottom"</span>,</span>
+<span>                 legend.key <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"white"</span><span class='op'>)</span>,</span>
+<span>                 legend.key.width <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fl'>1.6</span>, <span class='st'>"line"</span><span class='op'>)</span>,</span>
+<span>                 legend.margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span>, unit<span class='op'>=</span><span class='st'>"cm"</span><span class='op'>)</span>,</span>
+<span>                 legend.text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>'#2C2F46'</span>, face <span class='op'>=</span> <span class='st'>"plain"</span>, size <span class='op'>=</span> <span class='fl'>10</span>, lineheight <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span>,</span>
+<span>                 legend.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_rect</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"transparent"</span><span class='op'>)</span>,</span>
+<span>                 panel.background <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>                 panel.grid.major.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>                 panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>                 panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>                 axis.ticks.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>                 axis.ticks.y <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"#E0E1E6"</span><span class='op'>)</span>,</span>
+<span>                 plot.margin<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/grid/unit.html'>unit</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span>,<span class='fl'>5</span><span class='op'>)</span>,<span class='st'>"mm"</span><span class='op'>)</span>,</span>
+<span>                 plot.title.position <span class='op'>=</span> <span class='st'>"plot"</span>,</span>
+<span>                 plot.caption.position <span class='op'>=</span>  <span class='st'>"plot"</span></span>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span></span>
+<span>    title <span class='op'>=</span> <span class='st'>"Bayesian belief updating in the billiards table thought experiment"</span>,</span>
+<span>    subtitle <span class='op'>=</span> <span class='st'>"Target place: 88 cm"</span>,</span>
+<span>    x <span class='op'>=</span> <span class='st'>'PLACE ON THE BILLIARDS TABLE'</span>, </span>
+<span>    y <span class='op'>=</span> <span class='st'>'POSTERIOR PROBABILITY'</span>,</span>
+<span>    caption <span class='op'>=</span> <span class='st'>"\n\nThe static red point corresponds to a random and unknown location of the first ball. The moving black point then corresponds to the location where the second,\nrepeatedly rolled ball randomly ended up. The area in blue corresponds to the 95% Highest Density Interval of the posterior distribution. All points inside this\ninterval have a higher probability density than points outside this interval."</span></span>
+<span>    <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/transition_time.html'>transition_time</a></span><span class='op'>(</span><span class='va'>trial</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/ease_aes.html'>ease_aes</a></span><span class='op'>(</span><span class='st'>'linear'</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># animating chart</span></span>
+<span><span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/animate.html'>animate</a></span><span class='op'>(</span><span class='va'>myAnimation</span>, nframes <span class='op'>=</span> <span class='fl'>125</span>, fps <span class='op'>=</span> <span class='fl'>5</span>, height <span class='op'>=</span> <span class='fl'>6</span>, width <span class='op'>=</span> <span class='fl'>11</span>, units <span class='op'>=</span> <span class='st'>"in"</span>, res <span class='op'>=</span> <span class='fl'>125</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># saving animated chart as a .gif file</span></span>
+<span><span class='fu'>gganimate</span><span class='fu'>::</span><span class='fu'><a href='https://gganimate.com/reference/anim_save.html'>anim_save</a></span><span class='op'>(</span>filename <span class='op'>=</span> <span class='st'>"./bayesianBelifUpdating.gif"</span>, animation <span class='op'>=</span> <span class='fu'><a href='https://gganimate.com/reference/last_animation.html'>last_animation</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </details>
 </div>
-<p>And here is the resulting animation of the Bayesian belief updating
-process across 500 trials.</p>
+<p>And here is the resulting animation of the Bayesian belief updating process across 500 trials.</p>
 <p><img src="bayesianBelifUpdating.gif"></p>
-<p>For those who would like to incorporate Bayesian reasoning into their
-managerial decision-making under uncertainty, I can recommend <a
-href="https://journals.sagepub.com/doi/full/10.1177/0008125620948264">this
-article</a> by <a
-href="https://www.linkedin.com/in/brian-t-mccann-7a322617/">Brian T.
-McCann</a>.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>For those who would like to incorporate Bayesian reasoning into their managerial decision-making under uncertainty, I can recommend <a href="https://journals.sagepub.com/doi/full/10.1177/0008125620948264">this article</a> by <a href="https://www.linkedin.com/in/brian-t-mccann-7a322617/">Brian T. McCann</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">

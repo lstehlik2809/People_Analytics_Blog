@@ -7,7 +7,22 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When does a coincidence become evidence?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence</link>
+      <description>Why the same odd pattern can look like random noise to one person and a hidden cause to another - and what that says about human rationality. The topic of my dissertation that runs to more than 300 pages 😮 This is the version I wish I had ready whenever someone asked about it at a party 😉</description>
+      <category>cognitive science</category>
+      <category>bayesian statistics</category>
+      <category>critical thinking</category>
+      <category>rationality</category>
+      <category>cognitive biases</category>
+      <category>causal reasoning</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence</guid>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence/./intro_pic.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Nothing changed. The dashboard disagrees.</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +34,7 @@
       <category>time series</category>
       <category>simulation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise</guid>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise/./app_pic.png" medium="image" type="image/png" width="982" height="846"/>
     </item>
     <item>
@@ -717,6 +732,7 @@
       <category>data science</category>
       <category>critical thinking</category>
       <category>well-being</category>
+      <category>rationality</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-29-conspiracy-theories-and-overfitting</guid>
       <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-29-conspiracy-theories-and-overfitting/./pic.png" medium="image" type="image/png" width="980" height="893"/>
@@ -1672,6 +1688,7 @@
       <category>generative ai</category>
       <category>critical thinking</category>
       <category>decision making</category>
+      <category>rationality</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits</guid>
       <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png" medium="image" type="image/png" width="1024" height="1024"/>
@@ -2489,6 +2506,7 @@
       <category>time series</category>
       <category>critical thinking</category>
       <category>r</category>
+      <category>rationality</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating</guid>
       <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/./bayesian-belief-updating.jpg" medium="image" type="image/jpeg"/>

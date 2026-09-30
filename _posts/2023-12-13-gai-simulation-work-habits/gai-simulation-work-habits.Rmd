@@ -12,6 +12,7 @@ categories:
   - generative ai
   - critical thinking
   - decision making
+  - rationality
 output:
   distill::distill_article:
     self_contained: false
