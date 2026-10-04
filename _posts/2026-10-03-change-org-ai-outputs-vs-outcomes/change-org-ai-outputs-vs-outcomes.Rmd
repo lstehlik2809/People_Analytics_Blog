@@ -1,7 +1,7 @@
 ---
 title: "Change.org: AI outputs vs outcomes"
 description: |
-  With AI access, petitions got longer and were rated as better written and more persuasive, but signatures didn’t follow 🧐
+  Change.org introduced a “write with AI” tool for petition writers. With access to it, petitions got longer and were rated as more persuasive, yet early engagement didn’t improve 🧐
 preview: ./charts_preview.png
 author:
   - name: Luděk Stehlík
