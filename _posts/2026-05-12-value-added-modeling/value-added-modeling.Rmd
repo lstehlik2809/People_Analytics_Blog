@@ -13,6 +13,7 @@ categories:
   - statistics
   - causal inference
   - ai
+  - people analytics
 output:
   distill::distill_article:
     self_contained: false

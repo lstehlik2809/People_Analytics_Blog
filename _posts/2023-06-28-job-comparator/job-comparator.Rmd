@@ -12,6 +12,8 @@ categories:
   - bayesian statistics
   - r
   - shiny app
+  - decision making
+  - decision analysis
 output:
   distill::distill_article:
     self_contained: false

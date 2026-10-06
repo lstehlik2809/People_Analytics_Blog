@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What probability would change your mind about Sam?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback</link>
+      <description>A practical look at decision analysis in People Analytics, and a simple tool for comparing options, propagating uncertainty, and finding the assumptions that would actually change a people decision.</description>
+      <category>decision analysis</category>
+      <category>decision making</category>
+      <category>people analytics</category>
+      <category>simulation</category>
+      <category>performance management</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback/./foldback_pic.png" medium="image" type="image/png" width="1426" height="1232"/>
+    </item>
     <item>
       <title>Change.org: AI outputs vs outcomes</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -35,7 +49,7 @@
       <category>cognitive biases</category>
       <category>causal reasoning</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-30-coincidence-or-evidence/./intro_pic.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -365,6 +379,7 @@
       <category>statistics</category>
       <category>causal inference</category>
       <category>ai</category>
+      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling</guid>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling/./goalie-teacher-manager.png" medium="image" type="image/png" width="1122" height="1402"/>
@@ -1329,6 +1344,7 @@
       <category>time series</category>
       <category>statistics</category>
       <category>data visualization</category>
+      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics</guid>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/./charts.png" medium="image" type="image/png" width="888" height="652"/>
@@ -1848,6 +1864,7 @@
       <category>bayesian statistics</category>
       <category>simulation</category>
       <category>python</category>
+      <category>decision making</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-09-17-bayesian-simulation</guid>
       <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-09-17-bayesian-simulation/./plot.png" medium="image" type="image/png" width="1248" height="768"/>
@@ -1935,6 +1952,8 @@
       <category>bayesian statistics</category>
       <category>r</category>
       <category>shiny app</category>
+      <category>decision making</category>
+      <category>decision analysis</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator</guid>
       <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator/./decisionMaking.jpg" medium="image" type="image/jpeg"/>
