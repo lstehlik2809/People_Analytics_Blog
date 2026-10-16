@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 10 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What might we miss when assessment scores and job ratings are strongly correlated?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation</link>
+      <description>A police cadet dataset illustrates how a strong overall correlation can mask distinct patterns in job ratings and generate questions for further investigation.</description>
+      <category>people analytics</category>
+      <category>data visualization</category>
+      <category>statistics</category>
+      <category>performance management</category>
+      <category>causal reasoning</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation/./grades_and_job_ratings_structure.png" medium="image" type="image/png" width="2400" height="2400"/>
+    </item>
     <item>
       <title>The Coincidence Audit: my PhD dissertation, now with aliens</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -22,7 +36,7 @@
       <category>psychometrics</category>
       <category>cognitive psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-11-the-coincidence-audit</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-11-the-coincidence-audit/./page_00.png" medium="image" type="image/png" width="1024" height="1536"/>
     </item>
     <item>
