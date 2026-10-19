@@ -10,6 +10,7 @@ date: 2026-04-13
 categories:
   - causal inference
   - siop
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false

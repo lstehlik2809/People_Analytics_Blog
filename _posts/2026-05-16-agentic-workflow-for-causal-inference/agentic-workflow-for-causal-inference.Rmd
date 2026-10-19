@@ -12,6 +12,7 @@ categories:
   - agentic ai
   - ai
   - generative ai
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false

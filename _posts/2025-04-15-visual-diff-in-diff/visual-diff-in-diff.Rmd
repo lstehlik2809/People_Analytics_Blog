@@ -13,6 +13,7 @@ categories:
   - difference-in-differences
   - people analytics
   - evidence-based management
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false

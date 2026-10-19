@@ -12,6 +12,7 @@ categories:
   - causal inference
   - meta-analysis
   - i/o psychology
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false

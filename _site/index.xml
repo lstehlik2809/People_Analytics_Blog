@@ -7,7 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Some inspiration for your next HR impact evaluation</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map</link>
+      <description>An interactive map of 68 causal studies from 2025–26 on HR practices and business performance, with their findings, designs and limitations.</description>
+      <category>causal inference</category>
+      <category>evidence-based management</category>
+      <category>hr management</category>
+      <category>research methods</category>
+      <category>experiments</category>
+      <category>performance</category>
+      <category>people analytics</category>
+      <category>data visualization</category>
+      <category>impact evaluation</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map</guid>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map/./evidence-map2.png" medium="image" type="image/png" width="1151" height="818"/>
+    </item>
     <item>
       <title>What might we miss when assessment scores and job ratings are strongly correlated?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +37,7 @@
       <category>performance management</category>
       <category>causal reasoning</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation/./grades_and_job_ratings_structure.png" medium="image" type="image/png" width="2400" height="2400"/>
     </item>
     <item>
@@ -64,6 +82,7 @@
       <category>difference-in-differences</category>
       <category>embeddings</category>
       <category>evidence-based management</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes</guid>
       <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes/./charts_preview.png" medium="image" type="image/png" width="2000" height="1200"/>
@@ -398,6 +417,7 @@
       <category>agentic ai</category>
       <category>ai</category>
       <category>generative ai</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference</guid>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-16-agentic-workflow-for-causal-inference/./causal_inference_agentic_workflow.png" medium="image" type="image/png" width="2323" height="1348"/>
@@ -450,6 +470,7 @@
       <category>employee survey</category>
       <category>difference-in-differences</category>
       <category>double machine learning</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data</guid>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-15-did-with-repeated-cross-sectional-data/./Comparison-of-repeated-cross-sectional-and-panel-design-studies-dots-represent-survey.png" medium="image" type="image/png" width="682" height="327"/>
@@ -461,6 +482,7 @@
       <description>My first SIOP. Saturday 8 AM workshop. Causal inference. I clearly know how to ease into things 😅</description>
       <category>causal inference</category>
       <category>siop</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop</guid>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-causal-inference-workshop/./siop_2026_invitation.png" medium="image" type="image/png" width="2752" height="1536"/>
@@ -530,6 +552,7 @@
       <description>A possible alternative to a "full" RCT in People Analytics.</description>
       <category>causal inference</category>
       <category>experiments</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs</guid>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-12-encouragement-design-and-ivs/./iv_encouragement_design_diagram.png" medium="image" type="image/png" width="2700" height="1260"/>
@@ -1041,6 +1064,7 @@
       <category>people analytics</category>
       <category>python</category>
       <category>r</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics</guid>
       <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-21-causal-inference-in-people-analytics/./intro_pic.png" medium="image" type="image/png" width="509" height="500"/>
@@ -1118,6 +1142,7 @@
       <category>difference-in-differences</category>
       <category>people analytics</category>
       <category>evidence-based management</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff</guid>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff/./plot2.png" medium="image" type="image/png" width="749" height="435"/>
@@ -1691,6 +1716,7 @@
       <category>experiments</category>
       <category>evidence-based management</category>
       <category>causal inference</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct</guid>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-01-21-psychological-safety-and-rct/./free_communication.jpg" medium="image" type="image/jpeg"/>
@@ -2214,6 +2240,7 @@
       <category>causal inference</category>
       <category>meta-analysis</category>
       <category>i/o psychology</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-engagement-interventions</guid>
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-engagement-interventions/./training.jpg" medium="image" type="image/jpeg"/>
@@ -2238,6 +2265,7 @@
       <category>experiments</category>
       <category>difference-in-differences</category>
       <category>people analytics</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif</guid>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif/./impact.jpg" medium="image" type="image/jpeg"/>
@@ -2545,6 +2573,7 @@
       <category>gender pay gap</category>
       <category>gender bias</category>
       <category>evidence-based management</category>
+      <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap</guid>
       <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2022-11-18-interventions-reducing-gender-pay-gap/./genderPayGap.jpg" medium="image" type="image/jpeg"/>

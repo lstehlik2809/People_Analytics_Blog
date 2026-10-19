@@ -12,6 +12,7 @@ categories:
   - experiments
   - evidence-based management
   - causal inference
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false

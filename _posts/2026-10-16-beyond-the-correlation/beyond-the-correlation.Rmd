@@ -26,7 +26,7 @@ We all know that summary statistics such as correlation can be misleading and th
 
 ![A playful illustration of this: the Datasaurus Dozen morphs between different shapes while the means, standard deviations and Pearson correlation remain unchanged to two decimal places. Source: Matejka and Fitzmaurice (2017), Autodesk Research.](DinoSequentialSmaller.gif)
 
-I recently came across a nice illustration of this in a people analytics context while exploring a [historical dataset of 2,000 police cadets from the Netherlands](https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset/). The data were used to investigate whether information available at graduation could predict passing the standard five-year evaluation.
+I recently came across a nice illustration of this in a people analytics context while exploring a [historical dataset of 2,000 police cadets from the Netherlands](https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset/){target="_blank"}. The data were used to investigate whether information available at graduation could predict passing the standard five-year evaluation.
 
 Graduation grades and later job ratings correlate at approximately .92 in this dataset. The scatterplot shows a positive but nonlinear relationship. Each dot represents one person, with their average graduation grade and average annual evaluation score over the following five years.
 

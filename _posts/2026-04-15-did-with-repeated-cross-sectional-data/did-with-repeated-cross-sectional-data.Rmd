@@ -13,6 +13,7 @@ categories:
   - employee survey
   - difference-in-differences
   - double machine learning
+  - impact evaluation
 output:
   distill::distill_article:
     self_contained: false
