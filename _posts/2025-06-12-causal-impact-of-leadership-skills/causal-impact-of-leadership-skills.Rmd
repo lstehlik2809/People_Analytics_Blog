@@ -14,6 +14,7 @@ categories:
   - ai
   - generative ai
   - agentic ai
+  - human-ai interaction
 output:
   distill::distill_article:
     self_contained: false

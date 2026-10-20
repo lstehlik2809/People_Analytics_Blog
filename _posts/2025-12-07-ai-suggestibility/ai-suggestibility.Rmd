@@ -12,6 +12,7 @@ categories:
   - behavioral science
   - data science
   - cognitive science
+  - human-ai interaction
 output:
   distill::distill_article:
     self_contained: false

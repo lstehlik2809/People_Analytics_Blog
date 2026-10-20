@@ -13,6 +13,7 @@ categories:
   - critical thinking
   - decision making
   - rationality
+  - human-ai interaction
 output:
   distill::distill_article:
     self_contained: false

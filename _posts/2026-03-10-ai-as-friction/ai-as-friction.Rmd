@@ -12,6 +12,7 @@ categories:
   - learning and development
   - behavioral science
   - time management
+  - human-ai interaction
 output:
   distill::distill_article:
     self_contained: false
