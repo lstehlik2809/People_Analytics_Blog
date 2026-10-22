@@ -1,7 +1,7 @@
 ---
 title: "The Coincidence Audit: my PhD dissertation, now with aliens"
 description: |
-  Description: A comic version of my dissertation about coincidences, hidden causes, and human rationality. Apparently, summarizing a 300-page dissertation in a blog post was only the first step. The next one involved an alien inspector, two teenagers, and a device called the Belief-o-Meter 😉
+  A comic version of my dissertation about coincidences, hidden causes, and human rationality. Apparently, summarizing a 300-page dissertation in a blog post was only the first step. The next one involved an alien inspector, two teenagers, and a device called the Belief-o-Meter 😉
 preview: ./page_00.png
 author:
   - name: Luděk Stehlík
