@@ -7,7 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Good manager or lucky team?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab</link>
+      <description>Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.</description>
+      <category>leadership</category>
+      <category>human-ai interaction</category>
+      <category>generative ai</category>
+      <category>teams</category>
+      <category>decision making</category>
+      <category>communication</category>
+      <category>psychometrics</category>
+      <category>causal inference</category>
+      <category>learning and development</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab/./app-landing-page-screenshot.png" medium="image" type="image/png" width="1332" height="891"/>
+    </item>
     <item>
       <title>What happens to our own performance when the AI is suddenly gone?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -72,7 +90,7 @@
       <category>psychometrics</category>
       <category>cognitive psychometrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-11-the-coincidence-audit</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-11-the-coincidence-audit/./page_00.png" medium="image" type="image/png" width="1024" height="1536"/>
     </item>
     <item>

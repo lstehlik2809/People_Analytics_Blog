@@ -1,5 +1,34 @@
 [
   {
+    "path": "posts/2026-10-26-manager-effect-lab/",
+    "title": "Good manager or lucky team?",
+    "description": "Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-10-26",
+    "categories": [
+      "leadership",
+      "human-ai interaction",
+      "generative ai",
+      "teams",
+      "decision making",
+      "communication",
+      "psychometrics",
+      "causal inference",
+      "learning and development"
+    ],
+    "contents": "\r\nLast year I posted about two NBER working papers by Weidmann, Deming, and colleagues that tried to answer a simple-sounding question: how do you tell a good manager from one who just got lucky with their team?\r\nTheir answer borrowed from causal inference. Rotate managers at random across several teams, predict each team’s result from the individually tested skills of its members, and treat the gap between what the team actually achieved and what was predicted as the manager’s contribution. A good manager is one whose teams keep beating the prediction.\r\nThe part that stuck with me was the second study. Running this with human teams is a logistical nightmare, so the authors had people lead teams of AI agents instead - and leadership scores with AI teammates correlated 0.81 with scores from human teams. Since every leader gets the same AI teammates, there’s no team luck to remove, so the prediction comes from the leader’s own solo skills instead.\r\nSo I built a playful version you can try yourself 🤓\r\n\r\nYou lead three AI teammates through “hidden profile” puzzles. Everyone holds some clues, the decisive ones are scattered across the team, and nobody can solve it alone. Your job is to get the right information out of people and put it together. The Quick demo takes 10-15 minutes, no sign-up, no API key - but two puzzles are only a taste, not a measurement. For a fuller reading, try Standard (20-25 minutes) or Extended (about 40 minutes), which runs the study’s full set of six team puzzles.\r\nAt the end you get feedback based on your own chat - which question drew out which clue, which clues stayed hidden and who was sitting on them - plus a leading score that counts only the points lost in leading the team, not in your own reasoning, rough ratings on the three habits the study linked to effective leaders (asking questions, back-and-forth, drawing out hidden information) and a slightly tongue-in-cheek leadership style. Facilitator? Collector? Or a Broadcaster who keeps asking everyone for everything? 😉\r\n⚠️ A few honest caveats. This is NOT a validated assessment, and it’s not a copy of the study either. What it shares with the study: each puzzle copies the structure of one of the study’s published puzzles clue for clue, and the team score follows the authors’ own scoring code. Where it departs: the puzzles are new, the clues only make sense against a case file that just the leader sees, the AI teammates are a different model and don’t behave exactly like the study’s, the shorter versions use fewer puzzles, and the leading score is my own addition, not the study’s measure. There are no norms either. So the 0.81 belongs to the original study, not to this app.\r\nAnd even a validated version would cover only a small part of a manager’s job: pulling together what a team knows to make one short decision that has a right answer. Setting goals, coaching, motivating people, handling conflict, hiring, building trust over months - none of that is in here. Treat it as a practice mirror for one leadership habit, not a verdict on you as a manager.\r\nOn the research side, the first paper has since passed peer review and is out in the Quarterly Journal of Economics (as “How Do You Identify a Good Manager?”), but the AI-agent study, where the 0.81 comes from, is still a working paper under review.\r\nFor the people analytics and research crowd, there’s also a toolkit behind the test: a calculator showing how many teams each manager needs to lead before an individual estimate means much (spoiler: more than you’d like), a rotation generator, and an analysis tab that implements the full method on your own data.\r\n👉 Link to the app.\r\nIf you give it a go, I’d love to hear whether the feedback felt fair and where the AI teammates behaved weirdly - there are two quick ratings at the end, and you can send them anonymously with one click. Bug reports welcome too. And feel free to drop your result card in the comments - I’ll go first 👇\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-10-26-manager-effect-lab/./app-landing-page-screenshot.png",
+    "last_modified": "2026-10-26T21:00:17+01:00",
+    "input_file": "manager-effect-lab.knit.md",
+    "preview_width": 1332,
+    "preview_height": 891
+  },
+  {
     "path": "posts/2026-10-20-ai-assistance-reduces-persistence/",
     "title": "What happens to our own performance when the AI is suddenly gone?",
     "description": "A short stint with an AI assistant, and then it’s gone. Do we do worse on our own and give up sooner? 🤔",
