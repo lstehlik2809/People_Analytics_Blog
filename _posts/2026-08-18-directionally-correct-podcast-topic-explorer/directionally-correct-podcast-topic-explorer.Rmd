@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-08-18
 categories:
+  - web apps
   - knowledge management
   - topic analysis
   - network analysis

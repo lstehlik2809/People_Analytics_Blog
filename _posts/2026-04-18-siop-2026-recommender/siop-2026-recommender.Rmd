@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-04-18
 categories:
+  - web apps
   - siop
   - machine learning
 output:

@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-14-2018
 categories:
+  - web apps
   - employee turnover
   - evidence-based management
   - shiny app

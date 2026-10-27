@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-09-2025
 categories:
+  - web apps
   - agentic ai
   - data science
   - generative ai

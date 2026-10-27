@@ -7,12 +7,27 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Bayes in your browser</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser</link>
+      <description>Running Bayesian models for people analytics without a model-fitting server.</description>
+      <category>bayesian statistics</category>
+      <category>people analytics</category>
+      <category>regression analysis</category>
+      <category>multilevel modeling</category>
+      <category>web apps</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser/./title_page.png" medium="image" type="image/png" width="1143" height="854"/>
+    </item>
     <item>
       <title>Good manager or lucky team?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab</link>
       <description>Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.</description>
+      <category>web apps</category>
       <category>leadership</category>
       <category>human-ai interaction</category>
       <category>generative ai</category>
@@ -23,7 +38,7 @@
       <category>causal inference</category>
       <category>learning and development</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab</guid>
-      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-26-manager-effect-lab/./app-landing-page-screenshot.png" medium="image" type="image/png" width="1332" height="891"/>
     </item>
     <item>
@@ -49,6 +64,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map</link>
       <description>An interactive map of 68 causal studies from 2025–26 on HR practices and business performance, with their findings, designs and limitations.</description>
+      <category>web apps</category>
       <category>causal inference</category>
       <category>evidence-based management</category>
       <category>hr management</category>
@@ -98,6 +114,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback</link>
       <description>A practical look at decision analysis in People Analytics, and a simple tool for comparing options, propagating uncertainty, and finding the assumptions that would actually change a people decision.</description>
+      <category>web apps</category>
       <category>decision analysis</category>
       <category>decision making</category>
       <category>people analytics</category>
@@ -146,6 +163,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-28-turnover-signal-and-noise</link>
       <description>Sharing an app that grew as a byproduct of an internal discussion about how to report and interpret turnover rates.</description>
+      <category>web apps</category>
       <category>employee turnover</category>
       <category>hr metrics</category>
       <category>statistics</category>
@@ -175,6 +193,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure</link>
       <description>I built a small app to explore that using data from the U.S. Bureau of Labor Statistics and O*NET.</description>
+      <category>web apps</category>
       <category>ai</category>
       <category>future of work</category>
       <category>skills</category>
@@ -215,6 +234,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-07-life-success-personality-profiles</link>
       <description>See how your Big Five traits compare with 10 different success profiles from a large meta-analysis.</description>
+      <category>web apps</category>
       <category>personality</category>
       <category>big five</category>
       <category>meta-analysis</category>
@@ -270,6 +290,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</link>
       <description>On using GenAI, topic analysis, and network visualization to make 152 Directionally Correct podcast episodes easier to explore.</description>
+      <category>web apps</category>
       <category>knowledge management</category>
       <category>topic analysis</category>
       <category>network analysis</category>
@@ -286,6 +307,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app</link>
       <description>About another example of how generative AI is commoditizing previously specialized data products - this time, turning Outlook calendar data into a simple collaboration ego-network.</description>
+      <category>web apps</category>
       <category>network analysis</category>
       <category>collaboration</category>
       <category>meetings</category>
@@ -318,6 +340,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain</link>
       <description>So I finally gave the “second brain” idea a try - to see how it works in practice and whether it’s actually useful.</description>
+      <category>web apps</category>
       <category>people analytics</category>
       <category>ai</category>
       <category>agentic ai</category>
@@ -386,6 +409,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-06-21-cultural-traveler</link>
       <description>How I sacrificed an hour of Netflix to build a weird travel app.</description>
+      <category>web apps</category>
       <category>cross-cultural differences</category>
       <category>organizational culture</category>
       <category>work-life balance</category>
@@ -399,6 +423,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-06-18-hofstede-wfh</link>
       <description>A small extension of a research paper on why working from home varies across countries and people.</description>
+      <category>web apps</category>
       <category>remote work</category>
       <category>cross-cultural differences</category>
       <category>organizational culture</category>
@@ -481,6 +506,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-05-06-siop-2026-reflection</link>
       <description>A brief “wisdom of crowds” reflection on which SIOP sessions and topics drew unusually high agenda interest - and what that suggests I may want to catch up on.</description>
+      <category>web apps</category>
       <category>siop</category>
       <category>topic analysis</category>
       <category>decision making</category>
@@ -493,6 +519,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</link>
       <description>A practical AI assistant for finding the most relevant SIOP 2026 sessions and building a conflict-free personal schedule.</description>
+      <category>web apps</category>
       <category>siop</category>
       <category>machine learning</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-04-18-siop-2026-recommender</guid>
@@ -667,6 +694,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-01-20-dunning-kruger-effect-simulation</link>
       <description>With the currently available GenAI tools, it’s really a golden age for teachers who like using interactive demonstrations of abstract ideas they’re trying to convey to their students.</description>
+      <category>web apps</category>
       <category>learning and development</category>
       <category>generative ai</category>
       <category>ai</category>
@@ -844,6 +872,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-09-ai-powered-data-exploration-assistant</link>
       <description>About my hands-on test of agentic AI in data analysis.</description>
+      <category>web apps</category>
       <category>agentic ai</category>
       <category>data science</category>
       <category>generative ai</category>
@@ -871,6 +900,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-24-agentic-ai-for-visual-data-exploration</link>
       <description>For those who might be interested, I'm sharing an output from my experimentation with agentic AI frameworks like LangChain and LangGraph in the context of data insights democratization.</description>
+      <category>web apps</category>
       <category>agentic ai</category>
       <category>generative ai</category>
       <category>organizational culture</category>
@@ -910,6 +940,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-09-09-dimensional-traits-vs-personality-types</link>
       <description>Sharing an interactive dataviz showing why cramming the complexity of personality into a few types just doesn’t work.</description>
+      <category>web apps</category>
       <category>personality</category>
       <category>big five</category>
       <category>machine learning</category>
@@ -1079,6 +1110,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-06-02-cat-and-irt-demo</link>
       <description>Sharing a byproduct of my recent efforts to learn Streamlit—an interactive demo that might be useful for anyone teaching psychometrics or simply curious about how modern psychometrics (relatively speaking 😉) works.</description>
+      <category>web apps</category>
       <category>psychometrics</category>
       <category>bayesian statistics</category>
       <category>python</category>
@@ -1432,6 +1464,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-11-11-culture-500</link>
       <description>A quick intro to the Culture 500 - a tool for assessing company culture using Glassdoor reviews.</description>
+      <category>web apps</category>
       <category>organizational culture</category>
       <category>employee survey</category>
       <category>glassdoor</category>
@@ -1445,6 +1478,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics</link>
       <description>Looking for tips from those who answered "Yes" to the question in the title of this post 🙂</description>
+      <category>web apps</category>
       <category>time series</category>
       <category>statistics</category>
       <category>data visualization</category>
@@ -1458,6 +1492,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-10-29-job-personality-fit</link>
       <description>And if they do, are those differences big enough to be useful for career counseling and personal development?</description>
+      <category>web apps</category>
       <category>personality</category>
       <category>big five</category>
       <category>career development</category>
@@ -1542,17 +1577,6 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint/./sprint_foto.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>People may signal their exit intentions not only by their actions but also by their inactions</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</link>
-      <description>A brief reflection on one of the predictors of voluntary employee attrition.</description>
-      <category>employee turnover</category>
-      <category>employee survey</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</guid>
-      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png" medium="image" type="image/png" width="1577" height="775"/>
-    </item>
-    <item>
       <title>Insights from the Team Assessment Survey results of C-suite teams</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</link>
@@ -1562,6 +1586,18 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</guid>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
+    </item>
+    <item>
+      <title>People may signal their exit intentions not only by their actions but also by their inactions</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</link>
+      <description>A brief reflection on one of the predictors of voluntary employee attrition.</description>
+      <category>web apps</category>
+      <category>employee turnover</category>
+      <category>employee survey</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</guid>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png" medium="image" type="image/png" width="1577" height="775"/>
     </item>
     <item>
       <title>Kohonen's Self-Organizing Maps</title>
@@ -1637,6 +1673,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-05-30-body-height-inventory</link>
       <description>Why not?</description>
+      <category>web apps</category>
       <category>psychometrics</category>
       <category>learning and development</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-05-30-body-height-inventory</guid>
@@ -1943,6 +1980,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding</link>
       <description>How to make onboarding experience a little bit smoother with the help of NLP and LLM.</description>
+      <category>web apps</category>
       <category>employee experience</category>
       <category>nlp</category>
       <category>generative ai</category>
@@ -2030,6 +2068,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-07-11-searching-and-querying-aihr-blog-posts</link>
       <description>I'm sharing a by-product of my learning about vector database search that may be useful to some of you who want to learn something new about People Analytics.</description>
+      <category>web apps</category>
       <category>people analytics</category>
       <category>embeddings</category>
       <category>learning and development</category>
@@ -2055,6 +2094,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-06-28-job-comparator</link>
       <description>Sharing a by-product of my search for a new full-time job.</description>
+      <category>web apps</category>
       <category>career development</category>
       <category>bayesian statistics</category>
       <category>r</category>
@@ -2070,6 +2110,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-06-27-deloitte-hc-trends-themes</link>
       <description>Reading the latest release of Deloitte Global HC Trends made me wonder what common themes this regular series has been covering throughout its 12 years long history.</description>
+      <category>web apps</category>
       <category>future of work</category>
       <category>generative ai</category>
       <category>r</category>
@@ -2174,6 +2215,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-05-04-cv-job-match-career-site</link>
       <description>How my own experience of exploring new job opportunities gave me the idea of how the company's career site could be easily improved using OpenAI's tools.</description>
+      <category>web apps</category>
       <category>recruitment</category>
       <category>generative ai</category>
       <category>embeddings</category>
@@ -2202,6 +2244,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-04-28-employee-feedback-analysis-using-openai</link>
       <description>How to use GPT and embeddings from OpenAI for identifying topics and related sentiments in employee feedback.</description>
+      <category>web apps</category>
       <category>generative ai</category>
       <category>embeddings</category>
       <category>employee survey</category>
@@ -2257,12 +2300,13 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-04-13-interpretable-ml</link>
       <description>There's a new kid on the block in the R ecosystem that can help analysts understand the behavior of their ML models.</description>
+      <category>web apps</category>
       <category>interpretability</category>
       <category>machine learning</category>
       <category>predictive analytics</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-13-interpretable-ml</guid>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-13-interpretable-ml/./miracle.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -2270,6 +2314,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</link>
       <description>Can Generative AI like GPT meaningfully interpret personality profiles?</description>
+      <category>web apps</category>
       <category>generative ai</category>
       <category>ai</category>
       <category>personality</category>
@@ -2541,6 +2586,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-12-17-evidence-based-hrm-knowledge-test</link>
       <description>Interested in testing your knowledge of evidence-based HRM practices? If so, click and get started.</description>
+      <category>web apps</category>
       <category>evidence-based management</category>
       <category>hr management</category>
       <category>people management</category>
@@ -2605,6 +2651,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-11-26-resources-on-retention-and-downsizing</link>
       <description>Probably due to the current situation in the talent market, where many companies are laying people off and at the same time are worried about losing their key employees, a few people have contacted me in recent weeks asking for some tips on evidence-based approaches to dealing with retention and downsizing.</description>
+      <category>web apps</category>
       <category>employee turnover</category>
       <category>layoffs</category>
       <category>people analytics</category>
@@ -2825,6 +2872,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-01-03-hofstede-theory-of-cultural-dimensions</link>
       <description>Cultural diversity brings both positive effects and some challenges. To deal with the latter, it is useful to have some kind of map to help people better navigate the cultural specificities of people from different societies. Hofstede's theory of cultural dimensions is useful for such a purpose. Let's check how dis/similar countries are on these cultural dimensions with a simple app that could help us better understand, manage and appreciate cultural differences a little better.</description>
+      <category>web apps</category>
       <category>cross-cultural differences</category>
       <category>shiny app</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-01-03-hofstede-theory-of-cultural-dimensions</guid>
@@ -2847,6 +2895,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2021-12-16-linkedin-connections-analysis</link>
       <description>An introduction of a simple R Shiny application for analysing LinkedIn connections.</description>
+      <category>web apps</category>
       <category>linkedin</category>
       <category>collaboration</category>
       <category>network analysis</category>
@@ -2860,6 +2909,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover</link>
       <description>An introduction of a simple R Shiny application to facilitate extraction and digestion of information from meta-analysis of predictors of voluntary employee turnover.</description>
+      <category>web apps</category>
       <category>employee turnover</category>
       <category>meta-analysis</category>
       <category>shiny app</category>
@@ -2901,6 +2951,7 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc</link>
       <description>Které faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí? Na tyto otázky se čím dál tím více firem snaží odpovědět pomocí analýzy dat o svých vlastních zaměstnancích. V tomto článku se prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny podíváme, jak může být tento druh HR analytického projektu pro firmy užitečný.</description>
+      <category>web apps</category>
       <category>employee turnover</category>
       <category>evidence-based management</category>
       <category>shiny app</category>

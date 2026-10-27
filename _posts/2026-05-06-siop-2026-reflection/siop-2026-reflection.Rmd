@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-05-06
 categories:
+  - web apps
   - siop
   - topic analysis
   - decision making

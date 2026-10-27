@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 06-02-2025
 categories:
+  - web apps
   - psychometrics
   - bayesian statistics
   - python

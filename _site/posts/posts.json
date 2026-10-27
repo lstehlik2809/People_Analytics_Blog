@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2026-10-27-bayes-in-your-browser/",
+    "title": "Bayes in your browser",
+    "description": "Running Bayesian models for people analytics without a model-fitting server.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-10-28",
+    "categories": [
+      "bayesian statistics",
+      "people analytics",
+      "regression analysis",
+      "multilevel modeling",
+      "web apps"
+    ],
+    "contents": "\r\nI know I’m a little bit late to the party, but I only recently learned that you can run Bayesian analyses directly in a web browser, including complex regression models whose posteriors we approximate through sampling.\r\nWhat caught my attention was the possibility of building small, accessible data products with Bayesian analyses, without maintaining an expensive backend to fit the models.\r\nThis seems useful for people analytics, where we often work with relatively small datasets. With a suitable model and defensible priors, we can use relevant prior knowledge and express uncertainty in quantities people actually care about. Small samples still leave us with uncertainty, of course, and make our assumptions matter more.\r\nTo try this out, I built a small site inspired by Andrew Marritt’s free online book, Bayesian Thinking for People Analytics, which I recommended here recently.\r\n\r\nIt uses the familiar IBM attrition dataset and lets you estimate attrition proportions, compare income between groups, and fit linear and logistic regressions. It also includes ordinal regression for satisfaction ratings and a hierarchical income model that makes partial pooling across groups visible.\r\nYou choose the variables, run the model, and inspect posterior distributions, credible intervals and results tables. You can follow the sampling progress, and diagnostics help you spot when a fit needs more attention.\r\nThe calculations run in your browser. The site is plain HTML, CSS and JavaScript hosted on GitHub Pages, with a background worker handling the sampling so the interface stays responsive. There’s no model-fitting server to set up or pay for.\r\nA couple of caveats: the IBM data are fictional, so this is a demonstration, not evidence about an actual workforce. And a friendly interface doesn’t remove the need to think about priors, model fit or what the data can and cannot tell us.\r\nI find this a useful way to make some Bayesian tools available to people who wouldn’t otherwise run R or Python themselves. It also reminded me how much can happen inside a browser these days 🤓\r\nFeel free to give it a try here.\r\n\r\n\r\n",
+    "preview": "posts/2026-10-27-bayes-in-your-browser/./title_page.png",
+    "last_modified": "2026-10-27T12:51:33+01:00",
+    "input_file": "bayes-in-your-browser.knit.md",
+    "preview_width": 1143,
+    "preview_height": 854
+  },
+  {
     "path": "posts/2026-10-26-manager-effect-lab/",
     "title": "Good manager or lucky team?",
     "description": "Lead three AI teammates through hidden-clue puzzles and see how you bring their knowledge together.",
@@ -11,6 +36,7 @@
     ],
     "date": "2026-10-26",
     "categories": [
+      "web apps",
       "leadership",
       "human-ai interaction",
       "generative ai",
@@ -23,7 +49,7 @@
     ],
     "contents": "\r\nLast year I posted about two NBER working papers by Weidmann, Deming, and colleagues that tried to answer a simple-sounding question: how do you tell a good manager from one who just got lucky with their team?\r\nTheir answer borrowed from causal inference. Rotate managers at random across several teams, predict each team’s result from the individually tested skills of its members, and treat the gap between what the team actually achieved and what was predicted as the manager’s contribution. A good manager is one whose teams keep beating the prediction.\r\nThe part that stuck with me was the second study. Running this with human teams is a logistical nightmare, so the authors had people lead teams of AI agents instead - and leadership scores with AI teammates correlated 0.81 with scores from human teams. Since every leader gets the same AI teammates, there’s no team luck to remove, so the prediction comes from the leader’s own solo skills instead.\r\nSo I built a playful version you can try yourself 🤓\r\n\r\nYou lead three AI teammates through “hidden profile” puzzles. Everyone holds some clues, the decisive ones are scattered across the team, and nobody can solve it alone. Your job is to get the right information out of people and put it together. The Quick demo takes 10-15 minutes, no sign-up, no API key - but two puzzles are only a taste, not a measurement. For a fuller reading, try Standard (20-25 minutes) or Extended (about 40 minutes), which runs the study’s full set of six team puzzles.\r\nAt the end you get feedback based on your own chat - which question drew out which clue, which clues stayed hidden and who was sitting on them - plus a leading score that counts only the points lost in leading the team, not in your own reasoning, rough ratings on the three habits the study linked to effective leaders (asking questions, back-and-forth, drawing out hidden information) and a slightly tongue-in-cheek leadership style. Facilitator? Collector? Or a Broadcaster who keeps asking everyone for everything? 😉\r\n⚠️ A few honest caveats. This is NOT a validated assessment, and it’s not a copy of the study either. What it shares with the study: each puzzle copies the structure of one of the study’s published puzzles clue for clue, and the team score follows the authors’ own scoring code. Where it departs: the puzzles are new, the clues only make sense against a case file that just the leader sees, the AI teammates are a different model and don’t behave exactly like the study’s, the shorter versions use fewer puzzles, and the leading score is my own addition, not the study’s measure. There are no norms either. So the 0.81 belongs to the original study, not to this app.\r\nAnd even a validated version would cover only a small part of a manager’s job: pulling together what a team knows to make one short decision that has a right answer. Setting goals, coaching, motivating people, handling conflict, hiring, building trust over months - none of that is in here. Treat it as a practice mirror for one leadership habit, not a verdict on you as a manager.\r\nOn the research side, the first paper has since passed peer review and is out in the Quarterly Journal of Economics (as “How Do You Identify a Good Manager?”), but the AI-agent study, where the 0.81 comes from, is still a working paper under review.\r\nFor the people analytics and research crowd, there’s also a toolkit behind the test: a calculator showing how many teams each manager needs to lead before an individual estimate means much (spoiler: more than you’d like), a rotation generator, and an analysis tab that implements the full method on your own data.\r\n👉 Link to the app.\r\nIf you give it a go, I’d love to hear whether the feedback felt fair and where the AI teammates behaved weirdly - there are two quick ratings at the end, and you can send them anonymously with one click. Bug reports welcome too. And feel free to drop your result card in the comments - I’ll go first 👇\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-10-26-manager-effect-lab/./app-landing-page-screenshot.png",
-    "last_modified": "2026-10-26T21:00:17+01:00",
+    "last_modified": "2026-10-27T12:55:30+01:00",
     "input_file": "manager-effect-lab.knit.md",
     "preview_width": 1332,
     "preview_height": 891
@@ -69,6 +95,7 @@
     ],
     "date": "2026-10-19",
     "categories": [
+      "web apps",
       "causal inference",
       "evidence-based management",
       "hr management",
@@ -81,7 +108,7 @@
     ],
     "contents": "\r\nI wanted some inspiration for causal impact evaluations of our internal people projects, so I took a look at recent research on HR practices and business performance.\r\nThat turned into the HR Causal Evidence Map, 2025–26. It’s a scoping overview of 68 papers first published online between January 2025 and mid of October 2026, found through a search of 49 selected journals in I/O psychology, organizational research and economics. It includes randomized experiments, quasi-experiments and observational studies using causal inference methods.\r\n31 of the papers measure business output, such as productivity, sales, quality or safety. Of these, 16 report an improvement, 7 report mixed results, 7 report a worse outcome and 1 finds no detectable effect. Public performance rankings and surprise bonuses are among the practices that backfired.\r\nFor anyone planning their own evaluation: only 6 of those 31 studies randomized who got the practice. 14 used natural or quasi-experiments, such as policy thresholds or staggered rollouts.\r\nOn the site you can scroll through these findings on an evidence map, then filter the studies and read each one’s finding, design and main limitation, with a link to the original paper. The result labels are a first-pass coding drafted with AI, mostly from abstracts, so check the paper before relying on any of them. It’s a one-off scoping review with gaps, not a systematic review.\r\nSharing it here in case you find something interesting, or an approach worth trying in a project of your own.\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-10-19-hr-causal-evidence-map/./evidence-map2.png",
-    "last_modified": "2026-10-19T12:36:15+02:00",
+    "last_modified": "2026-10-27T12:55:33+01:00",
     "input_file": "hr-causal-evidence-map.knit.md",
     "preview_width": 1151,
     "preview_height": 818
@@ -151,6 +178,7 @@
     ],
     "date": "2026-10-06",
     "categories": [
+      "web apps",
       "decision analysis",
       "decision making",
       "people analytics",
@@ -159,7 +187,7 @@
     ],
     "contents": "\r\nAndrew Marritt recently published a very useful article, Should you replace Sam?, that shows how to bring People Analytics insights closer to real impact on people-related decisions.\r\nIt shows how an old tool from decision analysis - a decision tree, but not the ML one most of us know - can turn an endless argument about a person into a disagreement about a number. A manager wants to exit an underperforming Sam, the HRBP believes in coaching, and it all boils down to whether the chance coaching works is above or below roughly 43%.\r\nWhile I highly appreciated the ideas in the article, I also wondered whether HR people will find enough time and patience in their day-to-day jobs to put them into practice. Drawing trees, eliciting ranges and running simulations is not exactly something you do between two meetings 😅\r\nSo I was thinking about how to make these ideas easier to use (or remove the friction, as it’s popular to say these days) for people who aren’t analysts by training but still want their decisions to be more data-informed.\r\nOne option I gave a try is Foldback, a simple app where you build the tree by typing into cards or by answering one question at a time (it asks for the two ends of each range before the most likely value, so you’re less tempted to anchor on a single number):\r\nYou type the options (e.g., keep, coach, exit), what could happen after each, and the chances and costs.\r\nNot sure about a number? Type a range, e.g. “-37k to -25k”, and it gets simulated across 10,000 plausible worlds.\r\nYou see which option leads, by how much, how often it comes out best across those worlds, and whether that makes the lead safe or far from settled.\r\nFor key estimates, you see the value that would change your mind, flagged when it falls inside your own range. IMO, this is the number the discussion should be about.\r\nIt tells you which estimate is most worth pinning down first, and whether a “diagnostic month” (e.g., a month of coaching with a clear check-in) is worth its cost.\r\nYou get a plain-text note to paste into meeting minutes or an email.\r\n\r\n  Your browser does not support the video tag.\r\n⚠️ A few things to keep in mind: The app catches mechanical slips (chances that don’t add up to 100% stop the result instead of giving you a confident verdict), but it doesn’t make your inputs any better - as Andrew puts it, a confident, narrow, invented range produces a confident, narrow, invented answer, only a more rigorous-looking one. It works with averages only, treats your estimates as independent, allows one decision at the start of the tree, and prices only what you put into it, so fairness or the impact on people stays outside unless you add it. And as Andrew stresses, the tree should be built with the decision-maker, not presented at them. Andrew, who saw an early version, also thinks users will need a knowledgeable facilitator, and the step-by-step guide may not be enough on its own: it makes the tree easier to build, but it won’t tell you that you’ve missed an option or that your ranges are too narrow.\r\nEverything runs in your browser, nothing you type is sent anywhere, and the tree is gone when you close the tab, which is probably not unimportant when the tree is about a real person.\r\nIf you want to play with it, go 👉 here.\r\nLet me know what works, what’s confusing, or what’s missing. I’d especially like to hear from HRBPs and managers whether they could imagine using it in a real conversation about a real Sam 🤔\r\n\r\n\r\n",
     "preview": "posts/2026-10-06-decision-tree-foldback/./foldback_pic.png",
-    "last_modified": "2026-10-06T22:16:16+02:00",
+    "last_modified": "2026-10-27T12:55:39+01:00",
     "input_file": "decision-tree-foldback.knit.md",
     "preview_width": 1426,
     "preview_height": 1232
@@ -230,6 +258,7 @@
     ],
     "date": "2026-09-28",
     "categories": [
+      "web apps",
       "employee turnover",
       "hr metrics",
       "statistics",
@@ -238,7 +267,7 @@
     ],
     "contents": "\r\nThe question sounded simple: is it OK to show monthly TR annualized, next to the annual number, and react when it jumps? To make the answer tangible, I built a small interactive app. It simulates a company of 1,000 people with a true turnover of 10% that never changes, and then measures it annually, quarterly and monthly (the latter two annualized).\r\nA few things it shows:\r\nThe shorter the window, the noisier the number. Precision depends on the leavers behind it: ~100 a year, ~25 a quarter, ~8 a month. One person more or less moves the annualized monthly rate by 1.2 pp. The typical swing (1 SD) is about ±1 pp for annual, ±2 pp for quarterly and ±3.5 pp for monthly TR.\r\nThings go wrong when we read monthly numbers with an annual sense of “normal”. Using the annual mean ±2 SD as the normal range for TR, about 37% of quarters and 60% of months fall outside it - in a company where nothing changed. Each of them can trigger a meeting or an intervention. After an unusually high month, the next reading will often be lower even without intervention (hello, regression to the mean), which can make an intervention look effective.\r\nSmall teams are the same trap in disguise. A team of ~80 people measured once a year is about as noisy as the whole 1,000-person company measured monthly.\r\nSo the issue is less how often we look and more which yardstick we use. A rolling 12-month TR has the same variability as the annual one, but spreads a real change over several months. Window-specific reference bands - or XmR limits estimated from monthly data - give us a more appropriate yardstick, but there’s no free lunch. At the app’s default settings, with XmR limits based on one year of data, relying only on points outside the limits misses ~58% of real 25-60% relative shifts starting between months 7 and 18 of a 24-month dashboard: no signal at or after the change before the dashboard ends. Adding the other two rules used here cuts those misses to ~20%, but then at least one rule also fires in ~4 in 10 dashboards where nothing changed at all. More ways to look, more chances to see something.\r\nThe second part is a game: 24 monthly readings, half the time with a hidden real change, and a scoreboard comparing your calls with the XmR rules. After answering, you can hide or show a rolling 12-month line beside the true rate to explore smoothing and the gradual response to change. Telling signal from noise by eye is hard, yet an approximate model that knows the true baseline and how rounds are generated gets ~94% right by combining evidence across months.\r\nYou can play with it here.\r\nMaybe you’ll find it useful for your own internal discussions or for some edu purposes.\r\nHow do you report TR in your org - monthly annualized, rolling 12 months, control charts, something else? And how do you keep people from reacting to every wiggle? 🤔\r\nP.S. The first part of the app builds on a neat Monte Carlo illustration credited to Lipinski (2017).\r\n\r\n\r\n",
     "preview": "posts/2026-09-28-turnover-signal-and-noise/./app_pic.png",
-    "last_modified": "2026-09-29T07:57:36+02:00",
+    "last_modified": "2026-10-27T12:55:46+01:00",
     "input_file": "turnover-signal-and-noise.knit.md",
     "preview_width": 982,
     "preview_height": 846
@@ -281,6 +310,7 @@
     ],
     "date": "2026-09-18",
     "categories": [
+      "web apps",
       "ai",
       "future of work",
       "skills",
@@ -289,7 +319,7 @@
     ],
     "contents": "\r\nAs part of a recent training on using AI effectively, I created Work & AI - a small app for anyone curious about how AI might affect our jobs.\r\nIt combines AI exposure categories and 2025–2035 employment projections from the U.S. Bureau of Labor Statistics with job descriptions, tasks and skills from O*NET.\r\nYou can look up a job title, select skills you use, or describe what you actually do. Then explore questions like:\r\nHow exposed is this occupation to AI, and is employment expected to grow or shrink?\r\nIn which occupational families and occupations with similar skill requirements is AI exposure concentrated?\r\nWhich skills are relatively more/less common in occupations with higher or lower AI exposure?\r\nThe “Take a tour” button will show you around.\r\nJust a few things that caught my eye so far:\r\nIn occupations least exposed to AI, the most disproportionately represented skills overlap pretty nicely with what programmers are often said to do these days when working with AI agents: operations control and monitoring, quality control, and troubleshooting 😅\r\nSoftware developers sit in the “very high” AI exposure category, yet employment is projected to grow by 10.2% between 2025 and 2035. High exposure and growing demand can coexist 😯 (The supplementary descriptive stats also suggested that higher AI exposure does not line up with a simple pattern of lower employment growth - median projected growth is 1.9% in Low-exposure occupations, 3.35% in both Moderate and High, and 2.7% in Very high - see chart below.)\r\nWithin several occupational families - e.g., healthcare practitioners or personal care and service - the picture varies quite a bit, with occupations more or less evenly spread across all four AI exposure levels 🤔\r\n\r\nEach point is one BLS occupation. Boxes show the middle half of occupations; diamonds mark empirical medians. The dashed line marks zero projected growth. Differences between growth percentages are percentage points (pp).\r\n⚠️ Several things to keep in mind: Exposure can mean AI helping with the work as well as doing parts of it, so it doesn’t measure replacement probability. These are U.S. occupational estimates that might not generalize well to other parts of the world. Also, things are moving pretty quickly, so what was true - even just roughly - last year or this year may no longer be true next year.\r\nIf you want to play with it, go here.\r\n\r\n\r\n",
     "preview": "posts/2026-09-18-job-ai-exposure/./app_pic.jpg",
-    "last_modified": "2026-09-18T17:32:07+02:00",
+    "last_modified": "2026-10-27T12:55:51+01:00",
     "input_file": "job-ai-exposure.knit.md"
   },
   {
@@ -350,6 +380,7 @@
     ],
     "date": "2026-09-08",
     "categories": [
+      "web apps",
       "personality",
       "big five",
       "meta-analysis",
@@ -358,7 +389,7 @@
     ],
     "contents": "\r\nRecently, I came across a study by Michael Wilmot, Brenton Wiernik and Deniz Ones (2025) that looks at how Big Five personality traits relate to different forms of life success.\r\nThe authors combined 111 meta-analyses covering 206 variables, more than 3,300 studies and over 2.25 million participants. They identified ten clusters of success-related variables across three broader families: Contentment, Agentic Engagement and Self-Transcendence.\r\nOne thing I found interesting, though not super-surprising, is that there isn’t a single personality profile associated with all forms of success. The pattern linked to leadership, for example, looks different from those linked to ingenuity, balance, inclusion or high performance.\r\nSpecifically, they estimated the contributions of both profile shape (the relative peaks and valleys across the five traits) and elevation (the average level across those traits).\r\n\r\nThe figure showing Big Five personality patterns for representative outcomes within three broad families of life success and their ten constituent clusters. The different peaks and valleys illustrate how the relative contributions of the five traits vary across outcomes such as life satisfaction, salary, job performance and leadership. Each panel represents one example outcome, rather than the average profile of its entire cluster. These patterns describe associations, not causal effects or a person’s probability of success. ES = emotional stability; A = agreeableness; C = conscientiousness; Ex = extraversion; O = openness. Source: Wilmot, Wiernik & Ones (2025), Figure 6.\r\nFor context, the two together explained an average of 8.2% of the variance in the success-related variables: about 5.8 percentage points from elevation and 2.4 from shape. The figures varied substantially across domains, but most of the variation remained unexplained. That puts “personality is your destiny” into perspective, though, to be fair, these estimates only cover five broad traits, not every aspect of personality.\r\nStill, the authors suggest that matching people’s Big Five profiles to the cluster patterns could help inform some people-related practices like career counselling.\r\nHowever, they didn’t provide a tool for doing the comparison, so I made one 🤓\r\nYou enter your Big Five percentiles and the app converts them into standardized scores. It then compares the shape of your profile with the average trait pattern associated with each success type.\r\nUnder the hood, it uses a Pearson correlation across the five traits, based on the study’s centred regression profiles. Overall personality elevation is shown separately, and there’s also an optional exploratory regression view that includes both level and pattern effects.\r\nIn the default view, what you get is a ranking of how closely your profile resembles the research profiles.\r\nIf you want to try it, go 👉 here.\r\n\r\n\r\nYour browser cannot display this PDF.\r\nDownload the PDF.\r\n\r\n\r\n\r\n⚠️ A few caveats are worth keeping in mind. Most of the evidence in the study is cross-sectional and correlational. A strong match may suggest greater aptitude for that form of success, but it doesn’t give you a precise probability of achieving it, and it doesn’t mean that changing a personality trait would cause a particular outcome.\r\nThe ten profiles are clusters of success-related variables, not ten types of people. And while the matching method in the app is based on the paper’s results, the individual-level use of it hasn’t been independently validated.\r\nI’d treat it as something useful for reflection and conversation, rather than a hiring filter or a verdict on what you should do.\r\n\r\n\r\n",
     "preview": "posts/2026-09-07-life-success-personality-profiles/./chart_pic.png",
-    "last_modified": "2026-09-10T18:35:13+02:00",
+    "last_modified": "2026-10-27T12:55:55+01:00",
     "input_file": "life-success-personality-profiles.knit.md",
     "preview_width": 553,
     "preview_height": 772
@@ -445,6 +476,7 @@
     ],
     "date": "2026-08-18",
     "categories": [
+      "web apps",
       "knowledge management",
       "topic analysis",
       "network analysis",
@@ -455,7 +487,7 @@
     ],
     "contents": "\r\nCurrently, I’m exploring different ways to represent, visualize, and make knowledge and ideas easier to consume and navigate. As part of that, I recently shared the result of my attempt to build a second brain rooted in my People Analytics blog, accessible to both people and AI agents.\r\nThis time, I wanted to try something a bit different: a visual knowledge interface that turns a collection of content into an interactive network, complementary charts, and a searchable catalog.\r\nSo I needed a good knowledge source to test it on. Being a big fan of the Directionally Correct podcast, I quickly converged on its archive as a perfect test case. The episodes contain a huge amount of interesting and useful material for people analytics practitioners, but a lot of that knowledge is buried inside individual episodes and can be hard to rediscover later.\r\nThe result is a webpage where you can explore 152 episodes published between April 9, 2023, and August 17, 2026. A user can…️\r\nExplore a network of topics based on how often they appear together in the same episodes. ️\r\nSelect a topic to read an AI synthesis of the extracted topic-related ideas - including shared ground, divergence, tensions, and distinctive perspectives - and see its strongest connections and relevant episodes. From there, you can open an episode, read its main ideas, or follow the link to the original source.️\r\nSearch for topics and filter the exploration by publication date, guest, or thematic cluster.️\r\nBrowse charts to see which topics occurred most often, which were relatively niche, and how the share of episodes containing each topic changed over time.️\r\nSearch and filter the complete episode catalog by guest, topic, title, or summary content. Open any episode to explore its topics and main ideas, along with five semantically related episodes that can take you further through the archive.\r\nHere is a link to the webpage.\r\n\r\n\r\nYour browser cannot display this PDF.\r\nDownload the PDF.\r\n\r\n\r\n\r\n⚠️ The topic assignments, topic syntheses, cluster labels, structured summaries, and related-episode recommendations were created with the help of GenAI. That makes it possible to process this amount of material, but it also means there will almost inevitably be some mistakes and imprecisions. So, treat the explorer as a tool for exploration rather than a substitute for the original episodes, which are linked throughout the app.\r\nHave a look and let me know whether it helps you get more out of the podcast - which view is most useful, what works, what’s missing, what’s confusing, or what could be improved. And who knows - if Cole Napper likes it, maybe he’ll decide to polish it, push it further, and turn it into a live, continuously updated companion to his awesome podcast 😉\r\nP.S. To be clear: any mistakes, omissions, or rough edges in the topic assignments, summaries, methodology, recommendations, or visualizations are mine alone 🙋\r\nP.P.S. The repo for this explorer is public, with an asterisk: it contains the deployed app and browser-ready data, but not the raw transcripts or local processing code. The stack used was fairly lean: Apify for YouTube transcripts, the OpenAI API for structured idea extraction, controlled topic tagging, embeddings, and evidence-linked syntheses, and Codex for building the pipeline and interface. The explorer itself is React/TypeScript with a force-graph library, hosted on GitHub Pages. For more details, check a proper pipeline write-up in the README.\r\n\r\n\r\n",
     "preview": "posts/2026-08-18-directionally-correct-podcast-topic-explorer/./illustrative_pic.png",
-    "last_modified": "2026-09-10T18:21:22+02:00",
+    "last_modified": "2026-10-27T12:55:59+01:00",
     "input_file": "directionally-correct-podcast-topic-explorer.knit.md",
     "preview_width": 1473,
     "preview_height": 885
@@ -472,6 +504,7 @@
     ],
     "date": "2026-08-11",
     "categories": [
+      "web apps",
       "network analysis",
       "collaboration",
       "meetings",
@@ -480,7 +513,7 @@
     ],
     "contents": "\r\nRecently, at work, I came across another example of GenAI-driven commoditization of a data product that was once relatively rare and accessible only through collaboration with a third-party vendor or an internal expert equipped with highly specialized software.\r\nSpecifically, I’m talking about a meeting ego-network app that originated as an experimental side product of our efforts within the Sanofi AI Catalysts network to build an MVP of an AI-assisted planner helping people better manage their work time and priorities.\r\nTo use it, one just needs to export their Outlook calendar data for a given time range, for example the last quarter, as a CSV file, use a pre-prepared prompt to process the data in a company-internal GenAI with access to a Python sandbox, and upload the resulting Excel file with nodes, edges, and some additional information into the prepared app. Yeah, the workflow isn’t exactly user-friendly, but it’s good enough for an experimental POC 😉\r\nThe resulting view gives an employee an easy-to-digest helicopter view of their longer-term collaboration through meetings and allows them to see where, with whom, and in what context they spent their meeting time, and whether they actually spent that time with the people they needed to meet with. All of this comes with obvious limitations, given that calendar data is just one limited and relatively noisy signal of real collaboration, which is important to keep in mind so that one does not overinterpret what appears in the chart and stats.\r\nOf course, this is only one relatively limited use of ONA methodology, and for a full-fledged, company-wide ONA you would still need the help of experienced vendors or internal teams with the right expertise and resources. But still, the fact that you can set up something like this in two or three hours and make the potentially useful insights it generates broadly accessible is pretty amazing. And who knows how quickly AI will become capable of safely and reliably supporting the more ambitious and larger-scale ONA use cases as well 🤔\r\nP.S. To get a better sense of how the app works, you can check it out here using sample calendar data.\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-08-11-meeting-ego-network-app/./calendar_ego_network_pic.png",
-    "last_modified": "2026-09-10T18:22:22+02:00",
+    "last_modified": "2026-10-27T12:56:04+01:00",
     "input_file": "meeting-ego-network-app.knit.md",
     "preview_width": 1375,
     "preview_height": 829
@@ -524,6 +557,7 @@
     ],
     "date": "2026-07-28",
     "categories": [
+      "web apps",
       "people analytics",
       "ai",
       "agentic ai",
@@ -534,7 +568,7 @@
     ],
     "contents": "\r\nSpecifically, I built a public knowledge base from more than 200 posts on this People Analytics blog. It is browsable as a knowledge graph, searchable by keywords or meaning, and accessible to AI agents through a public MCP server. The complete corpus is also available as llms-full.txt - roughly 290k tokens, so it fits in one go only in the largest context windows - plus a compact llms.txt index.\r\nI used a small pipeline that converts the .Rmd sources of my blog posts into clean Markdown notes, embeds each note, and links it to its closest semantic neighbours. Post categories become topic nodes, so themes like causal inference, psychometrics or employee turnover turn into hubs in the network. The result is published with Quartz on GitHub Pages, and semantic search runs entirely in the visitor’s browser (transformers.js + a small MiniLM model - no server, no API keys). The MCP server is a tiny Cloudflare Worker that fetches the published corpus at runtime and indexes it in memory, so new posts show up without redeploying it. Its tools are shaped for how agents actually work: search for candidates, triage them by snippet, then read the one or two notes that matter in full.\r\nIn this setting, it enables two ways of using it:\r\n🧠 Directly - explore the graph to see how ~300 notes and topics connect, jump between them, search by keyword or by meaning, and follow the related-notes trail at the end of each note. Every note links back to the original post with the full outputs.\r\n🤖 Via AI agents - add the MCP server as a connector in any MCP-capable AI client (e.g., Claude Code/Cowork, Codex/Work, Cursor, etc.) and just ask questions. The agent can search the knowledge base, retrieve the relevant full notes, and produce an answer grounded in them - with links back to the original sources. If MCP isn’t available in your preferred tool, you can instead point an LLM with a sufficiently large context window at llms-full.txt.\r\nIt’s too early to make any definite judgments, but so far this setup seems pretty useful for ideation, discovering connections across topics, reusing previous work instead of starting from scratch, and grounding AI-agent outputs in domain-specific knowledge that was curated independently of the agent itself 🤔\r\nEverything is publicly available, so feel free to give it a try for yourself\r\n👉 https://lstehlik2809.github.io/people-analytics-second-brain\r\nMCP endpoint, streamable HTTP, no authentication required\r\n👉 https://people-analytics-brain-mcp.ludek-stehlik.workers.dev/mcp\r\nGitHub repo\r\n👉 https://github.com/lstehlik2809/people-analytics-second-brain\r\n\r\n\r\nYour browser cannot display this PDF.\r\nDownload the PDF.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-07-28-people-analytics-second-brain/./knowledge_graph.png",
-    "last_modified": "2026-09-08T06:20:54+02:00",
+    "last_modified": "2026-10-27T12:56:09+01:00",
     "input_file": "people-analytics-second-brain.knit.md",
     "preview_width": 839,
     "preview_height": 721
@@ -645,6 +679,7 @@
     ],
     "date": "2026-06-21",
     "categories": [
+      "web apps",
       "cross-cultural differences",
       "organizational culture",
       "work-life balance",
@@ -652,8 +687,8 @@
     ],
     "contents": "\r\nMy recent encounter with Hofstede’s cultural dimensions model in the context of the work-from-home topic reminded me of a nerdy and probably not very practical idea I had some time ago.\r\nI wanted an app that could find cultural doppelgangers of countries I’d like to visit - but closer to home. The idea was to reduce travel distance, potentially save money, and perhaps make the trip a little friendlier to the environment.\r\nAnd because these days what separates you from materializing even the craziest app idea you have is just your willingness to sacrifice one hour of Netflix, I built it 🤓 Check out the resulting app here.\r\nIt answers three questions:️\r\nCultural twin: Which countries near my home culturally resemble a more distant country I’d like to visit?️\r\nMaximum otherness: Within a chosen radius, which country is culturally least similar to my home?\r\nHome away from home: If I want to travel abroad without encountering too many cultural surprises - yes, even such travelers exist 😲 - which nearby countries are the best candidates?\r\n\r\n\r\n\r\nThe search radius is based on distances between capital cities. You can also decide which cultural dimensions matter more to you. The app optionally considers differences in local price levels using World Bank PPP-based household-consumption data, but this is only a rough affordability indicator: it does not include flights, accommodation choices, seasonality, or your talent for finding suspiciously cheap restaurants 😉\r\nIdeally, the app would also consider flight prices, but I’m not willing to sacrifice another one or two hours of Netflix watching 😁\r\nGive it a try and let me know whether it sparks some inspiration for your upcoming summer holiday season.\r\nP.S. Hofstede’s country scores are broad national averages. They capture only a small part of what shapes a travel experience and say nothing about every individual, city, or neighborhood, so please treat the results just as a playful source of inspiration. I don’t want to receive complaint letters later saying that I ruined someone’s vacation 😁\r\nUpdate: One of the commenters on the LinkedIn version of this post asked an interesting question relevant to the first and third use cases covered by the app: “how often are ‘similar countries’ not neighboring countries?” That question sent me back to the data to check. What were the results? Across all 69 countries, 78% had a closest cultural twin that wasn’t a neighbor, and even among countries with at least one land neighbor, the figure was 73%. However, that doesn’t mean geography and culture are unrelated, just less strongly related than one might expect - the rank correlation was fairly weak (ρ = -0.23), but robustly negative (95% HDI: -0.34 to -0.12), even after accounting for the non-independence of country pairs.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-06-21-cultural-traveler/./cultural-traveler-app.png",
-    "last_modified": "2026-07-06T21:43:51+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:13+01:00",
+    "input_file": "cultural-traveler.knit.md",
     "preview_width": 1238,
     "preview_height": 1232
   },
@@ -669,6 +704,7 @@
     ],
     "date": "2026-06-18",
     "categories": [
+      "web apps",
       "remote work",
       "cross-cultural differences",
       "organizational culture",
@@ -676,8 +712,8 @@
     ],
     "contents": "\r\nRecently, I listened to a podcast episode featuring Nicholas Bloom, where he mentioned an interesting finding from his recent research with colleagues (Zarate et al., 2025):\r\nCountries scoring higher on individualism - as conceptualized in Hofstede’s cultural-dimensions model - tend to have more work-from-home days per week. This association remains in a model that includes GDP per capita, the share of jobs suitable for WFH, population density, commuting time, and pandemic lockdown stringency.\r\nIntuitively, this makes sense: individualistic cultures may place greater value on autonomy and personal control, while their organizations may be more comfortable evaluating employees by outcomes rather than physical presence. Still, this intuitive explanation deserves a generous grain of salt. Even with these controls, many potential confounding paths remain.\r\nThis sparked my curiosity about Hofstede’s remaining cultural dimensions. Several of them could plausibly matter for WFH decisions. For example:️\r\nPower distance may shape how comfortable managers are with granting autonomy.️\r\nUncertainty avoidance may affect tolerance for the less visible and less standardized nature of remote work.️\r\nLong-term orientation may influence how organizations balance immediate flexibility against long-term coordination, learning, and social cohesion.\r\nHowever, these other dimensions were not examined in the paper. Fortunately, the authors shared their data. It was therefore fairly straightforward to enrich their dataset with the remaining Hofstede dimensions and run an analogous analysis for each one.\r\nThe results? The chart below presents posterior estimates from six separate Bayesian Gaussian regressions. Individualism emerged as the clearest positive correlate: 99.3% of posterior draws were above zero. Long-term orientation showed the most suggestive negative association, with 96.4% of draws below zero. Power distance and uncertainty avoidance also leaned negative, but with considerably more uncertainty. The estimates for masculinity and indulgence were weakly positive and highly uncertain.\r\n\r\n\r\n\r\nTo get a clearer view of whether WFH frequency is related to specific Hofstede dimensions, we need to account for the fact that the six cultural scores are correlated. In separate models, the coefficient for one dimension may partly capture variation that it shares with other dimensions. For example, an individualism coefficient may reflect not only individualism itself, but also the fact that more individualistic countries often differ systematically on power distance, uncertainty avoidance, or long-term orientation.\r\nA complementary approach is therefore to include all six Hofstede dimensions in the same regression. This changes the interpretation of the cultural coefficients: each estimate now reflects the association between WFH and the part of that dimension that is not shared with the other five dimensions, while also conditioning on the available country-level covariates.\r\nHowever, with only 37 countries and several correlated cultural predictors, the joint model can become unstable and sensitive to model specification. To make this comparison more conservative, I used a regularized horseshoe prior on the six cultural coefficients. This prior shrinks the cultural block toward zero overall, while still allowing individual dimensions to retain larger estimates if the data contain a sufficiently distinct signal.\r\nThe chart below compares the estimates from the separate models with those from the joint shrinkage model. Individualism remains the largest cultural estimate in the joint model, but the evidence is much weaker than in the separate model. Long-term orientation retains the second-largest directional signal, although it also shrinks substantially. The remaining dimensions are estimated much closer to zero, suggesting that their apparent associations in the separate models may have partly reflected variation shared with other cultural dimensions.\r\n\r\n\r\n\r\nDo any of these findings surprise you - or do they mostly support your existing intuitions?\r\n⚠️ Note: Interesting as these patterns may be, they should be interpreted cautiously. The Hofstede dimensions are intercorrelated, hidden confounders may remain, the sample covers only 37 countries, and WFH was measured specifically among full-time, college-educated workers.\r\nP.S. If interested in exploring the data visually, visit this dashboard.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-06-18-hofstede-wfh/./posterior_cultural_densities.png",
-    "last_modified": "2026-07-06T21:43:51+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:19+01:00",
+    "input_file": "hofstede-wfh.knit.md",
     "preview_width": 3300,
     "preview_height": 1800
   },
@@ -817,14 +853,15 @@
     ],
     "date": "2026-05-06",
     "categories": [
+      "web apps",
       "siop",
       "topic analysis",
       "decision making"
     ],
     "contents": "\r\nAfter my first SIOP conference, I found myself wondering what useful content I might have missed simply because of the sessions I chose to attend. Think of it as a retrospective “lost opportunity cost” analysis 🤓\r\nA sidenote: this could easily turn into an unhealthy FOMO exercise, but I prefer to treat it more positively as a way to spot sessions or themes I may want to catch up on later through other channels 😉\r\nOne imperfect way to look at this is to use a kind of “wisdom of crowds”-ish signal: which sessions and topics attracted more agenda interest than we would expect, given their day and time slot?\r\nFor this, I used the number of times a session was added to personal agendas in Whova as a rough proxy for pre-attendance interest. Importantly, that is not the same as actual attendance, session quality, or scientific importance.\r\nSo what showed up?\r\nAt the topic level, the five biggest positive prediction residuals were:\r\nJob Analysis\r\nTalent Management\r\nArtificial Intelligence\r\nPeople Analytics\r\nCoaching and Mentoring\r\nFor me, the most relevant omission was probably Job Analysis, which I mostly missed in my own session choices. Given how much jobs are already changing because of AI, this may be one area where I should have followed the crowd a bit more.\r\nAt the session level, the five biggest positive residuals were:\r\nHot Takes, Hot Wings: A Spicy Conversation With I-O Psychology’s Thought Leaders\r\nProactive People Analytics Solutions: Addressing Tomorrow’s Problems Today\r\nFuture Storming Insights: Emerging Trends and the Future of I-O Psychology\r\nHow to Leverage Employee Listening Data to Effectively Drive Change\r\nBinge-Worthy Leadership Development: Enhancing Learning Through Popular TV Series\r\nThese seem to combine several strong attention drivers: the promise of learning something new in a fun and original way, the possibility of creating real-world impact, and curiosity about what the future holds - an ideal recipe for sparking people’s interest, right? 🙂 Personally, I attended the two most connected to impact, but apparently I left some fun and future-looking sessions on the table. Maybe next time?\r\nMethodological note: Results are based on Whova data from the three main conference days. Topics were identified through an LLM-assisted active-learning loop using only session titles, and topics are not mutually exclusive. Poster sessions were excluded because they likely come from a different data-generating process compared with other session types.\r\nP.S. If interested, you can check out this simple interactive dashboard, where you can explore the topics from other perspectives and drill down to individual sessions by topic and topic combinations.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-05-06-siop-2026-reflection/./plot.png",
-    "last_modified": "2026-07-06T21:43:51+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:23+01:00",
+    "input_file": "siop-2026-reflection.knit.md",
     "preview_width": 1156,
     "preview_height": 813
   },
@@ -840,13 +877,14 @@
     ],
     "date": "2026-04-18",
     "categories": [
+      "web apps",
       "siop",
       "machine learning"
     ],
     "contents": "\r\nAttending SIOP for the first time this year confronted me with something that more seasoned attendees are probably already used to and may even have a few tricks for handling.\r\nI’m talking about the need to sift through a huge number of interesting sessions packed into 3–4 days of the conference and choose the ones that best match my interests and needs.\r\nI’ll admit it freely: I was somewhat paralyzed by the sheer volume of options. The filtering options on the website did not help much either. Scrolling through everything was still endless and pretty mentally exhausting.\r\nI needed help narrowing things down. As you can probably guess, AI came to the rescue 🤖 During our last Friday afternoon dedicated to exploration and experimentation, and over part of the weekend, I managed to build and deploy an app designed to help with exactly that.\r\nWhat does it do?️\r\nIn the Profile section, you describe what you want from the conference: your goals, keywords, what to avoid, and optionally your CV. You can also include skills you want to develop or acquire.️\r\nYou can adjust how strongly each of these inputs influences the search.️\r\nYou get a ranked list of sessions, with schedule conflicts clearly marked.️\r\nYou get an optimized personal agenda that avoids overlapping sessions.️\r\nAs a bonus, you can explore an interactive SNA-style map of session similarity, with your top recommendations highlighted.\r\nGive it a try and let me know whether it makes your SIOP planning at least a little bit easier. In my case, it helped a lot 🤓 You can access it here, or for now, just check the screenshots below (double-click any slide to zoom in).\r\n⚠️ As is often the case with AI, treat its recommendations more as inspiration than as definitive guidance, and verify them against a reliable source such as the official SIOP schedule. The app works only with session titles, not abstracts; errors may have occurred during information extraction; and the embedding model used does not capture every semantic nuance. So there is plenty of room for mistakes.\r\nUpdate: Now that SIOP 2026 has wrapped, the Recommender can officially retire. RIP, SIOP 2026 Recommender. You served us well 🫡 Thanks to everyone who tried it - it was fun building this.\r\n\r\n\r\nShow code\r\n\r\nlibrary(pdftools)\r\nlibrary(swipeR)\r\nlibrary(htmltools)\r\n\r\npdf_file <- \"siop_2026_recommender_screenshots.pdf\"\r\nimg_dir <- \"slides_img\"\r\n\r\nif (!dir.exists(img_dir)) dir.create(img_dir)\r\n\r\nn <- pdf_info(pdf_file)$pages\r\nfiles <- pdf_convert(\r\n  pdf_file,\r\n  format = \"png\",\r\n  dpi = 150,\r\n  filenames = sprintf(\"%s/page-%02d.png\", img_dir, seq_len(n)),\r\n  verbose = FALSE\r\n)\r\n\r\nwrapper <- do.call(\r\n  swipeRwrapper,\r\n  lapply(files, function(x) {\r\n    htmltools::tags$div(\r\n      class = \"swiper-zoom-container\",\r\n      htmltools::tags$img(\r\n        src = x,\r\n        style = \"width:100%; height:auto; display:block; margin:0 auto;\"\r\n      )\r\n    )\r\n  })\r\n)\r\n\r\nhtmltools::div(\r\n  style = \"max-width: 700px; margin: 0 auto;\",\r\n  swipeR(\r\n    wrapper = wrapper,\r\n    width = \"100%\",\r\n    height = \"800px\",\r\n    zoom = TRUE,\r\n    navigationColor = \"black\",\r\n    paginationColor = \"black\"\r\n  )\r\n)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-04-18-siop-2026-recommender/./pic.png",
-    "last_modified": "2026-07-06T21:43:51+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:34+01:00",
+    "input_file": "siop-2026-recommender.knit.md",
     "preview_width": 1870,
     "preview_height": 878
   },
@@ -1168,6 +1206,7 @@
     ],
     "date": "2026-01-20",
     "categories": [
+      "web apps",
       "learning and development",
       "generative ai",
       "ai",
@@ -1175,8 +1214,8 @@
     ],
     "contents": "\r\nAs an illustration from my own practice, I wanted to give the audience in a lecture on cognitive biases a tangible experience of the ideas behind the famous “debunking” of the even more famous phenomenon of the Dunning-Kruger Effect (DKE).\r\nSo I called Claude to the rescue and asked it to put together a simple simulator that would intuitively demonstrate how the typical DKE pattern can arise from measurement noise / regression to the mean, boundary constraints, and universal optimism bias (also known as the Better-Than-Average Effect) - without invoking any “dual burden of incompetence.”\r\nWithin two or three iterations, in about 5 minutes total, the simulator was good enough to use. You can check it out for yourself here.\r\n\r\n\r\n\r\n\r\nFor anyone who teaches, lectures, or explains abstract ideas for a living - or just for fun - this kind of workflow is becoming hard to ignore.\r\nIf you’ve come across or built simple simulators, demos, or visualizations that made a hard concept finally click, feel free to share them in the comments 🤓\r\n\r\n\r\n\r\n",
     "preview": "posts/2026-01-20-dunning-kruger-effect-simulation/./app_pic.png",
-    "last_modified": "2026-07-06T21:43:50+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:39+01:00",
+    "input_file": "dunning-kruger-effect-simulation.knit.md",
     "preview_width": 823,
     "preview_height": 881
   },
@@ -1497,6 +1536,7 @@
     ],
     "date": "2025-10-09",
     "categories": [
+      "web apps",
       "agentic ai",
       "data science",
       "generative ai",
@@ -1504,7 +1544,7 @@
     ],
     "contents": "\r\nAs a data scientist and analyst who spends a lot of time knee-deep in data, trying to figure out how to use it to answer stakeholders’ questions and help them solve the problems they’re facing, I used to be pretty skeptical about the quality and actual value that GenAI could bring to data analysis.\r\nBut to challenge my assumptions and get a better sense of what today’s GenAIs and agentic frameworks like LangChain and LangGraph can actually do, I decided to experiment a bit and built a simple AI-driven assistant for data-insight democratization, that lets non-technical users explore data through basic tools for visualization and descriptive and inferential statistics, all using plain language.\r\nFor that purpose I built a simple app consisting of several agent-like components (powered by one of Google’s Gemini models), each responsible for a different aspect of the insight-generation process:\r\none component plans the analysis steps based on the user’s request, data characteristics, and broader context,\r\nanother evaluates the quality of the proposed plan and suggests adjustments if necessary,\r\nanother turns this plan into runnable code,\r\nanother fixes potential errors in the code based on received error messages,\r\nanother creates code for accompanying analyses to support explanation of the dataviz, and\r\nanother transforms the results of these analyses into a concise, clear narrative for a non-technical audience.\r\n\r\n\r\n\r\nThe attached video above shows the app in action, answering a question about the employee attitudes that are the most predictive of attrition using the IBM Employee Attrition dataset.\r\nI was surprised by how reasonably well the whole system worked. Sure, sometimes the AI chose - at least in my opinion - not exactly the best way to analyze the data or answer the question, but more often than not, it handled the tasks just fine, at a level I’d expect from a junior or mid-level data analyst.\r\nIn those less-than-ideal cases, I could always fix things by giving it more context or clearer instructions on what approach to use (though I admit that’s kind of cheating — you can’t really expect non-analysts to know that). Still, I can imagine the system being improved with an extra component whose job would be to ask users for more context before starting the analysis - similar to what some deep research tools do these days.\r\nPersonally, this experiment made me update my priors, and now I can imagine that with properly prepared data and guardrails preventing certain ways of handling or interpreting results, you could have a tool that’s very useful in low-stakes situations - when stakeholders use plain language to explore data and test their hypotheses, leaving the most promising ones for deeper examination by human analysts who can factor in broader context and domain knowledge.\r\nCurious where you currently stand on this - feel free to share in the comments.\r\nP.S. If you’re interested, you can grab the code behind the app from my GitHub repo. Just plug in your Gemini API key, and you can play around with your own data locally.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-10-09-ai-powered-data-exploration-assistant/./data_exploration.gif",
-    "last_modified": "2026-10-20T11:36:50+02:00",
+    "last_modified": "2026-10-27T12:56:43+01:00",
     "input_file": "ai-powered-data-exploration-assistant.knit.md"
   },
   {
@@ -1544,6 +1584,7 @@
     ],
     "date": "2025-09-24",
     "categories": [
+      "web apps",
       "agentic ai",
       "generative ai",
       "organizational culture",
@@ -1552,8 +1593,8 @@
     ],
     "contents": "\r\nIt’s a simple agentic app for plain-language exploration of corporate culture data. Ask a question in everyday language, and a team of AI agents will plan the analysis, generate the visualization, and explain the findings - all in a few seconds.\r\nIt runs on a public dataset from CultureX with corporate culture scores across companies in different industries, measured through anonymous Glassdoor reviews between Jan 1, 2023, and Apr 4, 2025.\r\nThe app uses several AI agents, powered by one of Google’s Gemini models, each responsible for a different step:\r\nClarifier — asks up to 3 sharpening questions when your request is ambiguous (which companies, which metrics, what chart type, etc.); clear requests go straight to analysis\r\nPlanner — designs the analysis strategy based on your request and the data\r\nCritic — reviews the plan and pushes back if something can be improved (review rounds adjustable in the sidebar, default 3)\r\nExecutor — turns the plan into runnable visualization code\r\nNarrative — computes statistics and writes a data-driven summary\r\nExplainer — synthesizes everything into a concise insight for a non-technical audience\r\nAfter the initial analysis, you can ask up to 5 follow-up questions. The AI keeps full context from previous turns - including your answers to sharpening questions - so it builds on what it already knows rather than starting from scratch. Hit ✨ New Analysis to start to a fresh exploration.\r\n\r\n\r\n\r\nIt usually provides good outputs even with really simple plain language - but based on my experiments, it helps if you know what kind of dataviz and insights you want and spell that out for the agents 😉\r\nHappy exploring 🕵️‍♀️ And as usual, genAI can make mistakes, so don’t trust the outputs blindly - always double-check 😉\r\nP.S. Since the app is hosted on Streamlit Community Cloud, it doesn’t stay awake continuously. If it hasn’t been used recently, you may need to wake it up and wait a few minutes.\r\nP.P.S. Click the GitHub icon in the top right corner of the app to get to the code repo, or go directly here.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-09-24-agentic-ai-for-visual-data-exploration/./app_pic.png",
-    "last_modified": "2026-08-05T15:09:31+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:48+01:00",
+    "input_file": "agentic-ai-for-visual-data-exploration.knit.md",
     "preview_width": 1889,
     "preview_height": 894
   },
@@ -1616,6 +1657,7 @@
     ],
     "date": "2025-09-10",
     "categories": [
+      "web apps",
       "personality",
       "big five",
       "machine learning",
@@ -1623,8 +1665,8 @@
     ],
     "contents": "\r\nFor a guest lecture I’m giving on personality in the business world, I built a simple interactive dataviz that clearly demonstrates just how futile (and a bit naïve) it is to try to squeeze the huge variability of personality characteristics into a handful of types like… [insert your favorite typology 😉].\r\nThe dashboard uses a random sample of 10k Big Five profiles from Johnson’s IPIP-NEO-300 dataset. With a 3D scatter plot, profile line chart, UMAP dimensionality reduction, and the HDBSCAN clustering algorithm, it shows that even when groups of people with similar profiles do appear—and are large enough to matter (say, at least 1% of the population)—they still show pretty high within-group variability. On top of that, a big chunk (actually, the majority) of profiles can’t be assigned to any stable cluster at all, ending up as “noise” points in HDBSCAN’s terms.\r\n\r\n\r\n\r\nIf you find it useful for your teaching or training, check out the dataviz here. If you want to download the data and code to run it locally, take a look at this GitHub repo.\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-09-09-dimensional-traits-vs-personality-types/./interactive_dataviz.gif",
-    "last_modified": "2026-09-07T21:19:11+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:56:53+01:00",
+    "input_file": "dimensional-traits-vs-personality-types.knit.md"
   },
   {
     "path": "posts/2025-09-09-trust-errors-learning-reflection/",
@@ -1931,14 +1973,15 @@
     ],
     "date": "2025-06-02",
     "categories": [
+      "web apps",
       "psychometrics",
       "bayesian statistics",
       "python"
     ],
     "contents": "\r\nSpecifically, I decided to reimplement in Streamlit a Computerized Adaptive Testing (CAT) and Item Response Theory (IRT) demo I originally built years ago in good old Excel.\r\nThe app illustrates the estimation of a psychological trait of learning agility and showcases several key ideas behind CAT and IRT-based testing:\r\nItem-level modeling – how individuals respond to questions is modeled based on both the characteristics of each item (e.g. difficulty, discrimination) and the test-taker’s underlying trait or ability.\r\nContinuous ability estimation – the app updates the trait estimate in a Bayesian way after each response, rather than only at the end of the test.\r\nAdaptive item selection – items are chosen based on how informative they are given the test-taker’s current estimated trait level.\r\nEfficiency and precision – fewer items are needed to reach a reliable estimate compared to traditional fixed-form tests.\r\n\r\n\r\n\r\nHere’s the link to the app (given that the app is hosted on Streamlit Community Cloud, it doesn’t stay awake all the time regardless of traffic—so if it hasn’t been used recently, you might need to wake it up and wait a few minutes). If you’re interested, you can copy the full code from GitHub and customize the app to better suit your needs.\r\n⚠️ Caveat: The app isn’t intended as a valid and reliable measure of learning agility - it’s purely for illustration purposes!\r\n\r\n\r\n\r\n",
     "preview": "posts/2025-06-02-cat-and-irt-demo/./cat_irt_demo_app_screenshot.png",
-    "last_modified": "2026-07-06T21:43:50+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:56:59+01:00",
+    "input_file": "cat-and-irt-demo.knit.md",
     "preview_width": 1180,
     "preview_height": 693
   },
@@ -2582,6 +2625,7 @@
     ],
     "date": "2024-11-11",
     "categories": [
+      "web apps",
       "organizational culture",
       "employee survey",
       "glassdoor",
@@ -2589,8 +2633,8 @@
     ],
     "contents": "\r\nI recently came across the Culture 500 - an interesting tool created by MIT Sloan Management Review and CultureX, which offers a data-driven evaluation of corporate culture across the Big Nine Cultural Values as assessed through analysis of over 1 million employee reviews on Glassdoor. The model used includes the following nine culture values:\r\nAgility: Employees can respond quickly and effectively to changes in the marketplace and seize new opportunities.\r\nCollaboration: Employees work well together within their team and across different parts of the organization.\r\nCustomer: Employees put customers at the center of everything they do, listening to them and prioritizing their needs.\r\nDiversity: The company promotes a diverse and inclusive workplace where no one is disadvantaged because of their gender, race, ethnicity, sexual orientation, religion, or nationality.\r\nExecution: Employees are empowered to act, have the resources they need, adhere to process discipline, and are held accountable for results.\r\nInnovation: The company pioneers novel products, services, technologies, or ways of working.\r\nIntegrity: Employees consistently act in an honest and ethical manner.\r\nPerformance: The company rewards results through compensation, informal recognition, and promotions, and deals effectively with underperforming employees.\r\nRespect: Employees demonstrate consideration and courtesy for others, and treat each other with dignity.\r\nThe tool’s primary chart visualizes each company’s results by showing, in standard deviations, the frequency of mentions and the sentiment toward each cultural value discussed in employee reviews. The resulting 2x2 matrix provides a clear dataviz that aids in identifying a company’s core strengths, critical weaknesses, emerging positives, and under-the-radar issues (see the example below).\r\nWith a standardized scale, one can quickly see how their company’s culture compares to that of other companies across individual values. The tool also allows side-by-side comparisons, helping leaders benchmark against both industry standards and standout peers (see the example below).\r\n\r\n\r\n\r\n\r\n\r\n\r\nThis tool can be a nice complement to an internal employee listening program, giving an outside perspective. That said, if your listening program is on point, the results shouldn’t come as a big surprise 😉 Also could be a helpful resource for anyone weighing job offers and looking to understand a company’s culture before joining.\r\n⚠️ When using the tool, one should keep in mind its limits, like potential review bias, limited cross-industry comparability, constraints in capturing nuanced sentiments and emerging cultural dimensions, the freshness of data reflecting real-time changes, dependency on Glassdoor’s review policies, focus restricted to nine core values, and exclusion of global employee perspectives. And as its name suggests, it includes results for only around 500 leading companies.\r\nTo learn more about the methodology behind the tool, check out this site.\r\n\r\n\r\n\r\n",
     "preview": "posts/2024-11-11-culture-500/./chart2.png",
-    "last_modified": "2026-07-06T21:43:49+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:57:03+01:00",
+    "input_file": "culture-500.knit.md",
     "preview_width": 1309,
     "preview_height": 763
   },
@@ -2606,6 +2650,7 @@
     ],
     "date": "2024-10-30",
     "categories": [
+      "web apps",
       "time series",
       "statistics",
       "data visualization",
@@ -2613,7 +2658,7 @@
     ],
     "contents": "\r\nI’m curious if anyone in People Analytics space has experience - good, bad, or a bit of both - using XmR charts for tracking and interpreting HR-related metrics and guiding follow-up process improvements, especially among non-technical end users.\r\nI stumbled upon this interesting tool, originally rooted in statistical process control in industrial engineering and manufacturing, through posts by Frank Corrigan, and recently dug a bit deeper into it through a series of email lectures from Commoncog.\r\nFrom the get-go, it struck me as a potentially effective way for HR or business people - who may not have deep data expertise - to become more data-driven, as it simplifies the task of separating signal from noise and makes it straightforward for even laypeople to determine whether changes in metrics are due to real shifts or just random fluctuations. In effect, it helps users address the “So what?” question by validating when data points signify something meaningful, like a trend, shift, or outlier that warrants further action or adjustment.\r\nAs the attached charts illustrate (based on a sample of dummy data tracking internal mobility), it is pretty intuitive to spot if a metric should (or should not) require further investigation into the process behind it, or whether a change introduced at the start of 2024 is actually impacting the numbers. All you really need to do is keep an eye on the limit lines and follow some basic rules, such as:\r\nInvestigate when a point is outside the limit lines.\r\nTake a closer look if three out of four successive points are near the limits rather than the center.\r\nIf eight consecutive points appear on one side of the average, that may signal a meaningful shift.\r\n\r\n\r\n\r\nWould love to hear any experiences you might’ve had with XmR charts in the PA space! 🙏\r\nP.S. The attached charts were created with Xmrit, a free online tool from Commoncog, whose website also has more useful information about this analytical tool.\r\n\r\n\r\n\r\n",
     "preview": "posts/2024-10-30-xmr-charts-in-people-analytics/./charts.png",
-    "last_modified": "2026-10-06T22:04:15+02:00",
+    "last_modified": "2026-10-27T12:58:17+01:00",
     "input_file": "xmr-charts-in-people-analytics.knit.md",
     "preview_width": 888,
     "preview_height": 652
@@ -2630,14 +2675,15 @@
     ],
     "date": "2024-10-29",
     "categories": [
+      "web apps",
       "personality",
       "big five",
       "career development"
     ],
     "contents": "\r\nOver the years, it seems I’ve gravitated toward a job family that aligns well with my personality - or at least, that’s how it appears when you find job choices of other similarly-minded people as a validation of your own choices 😉\r\nAttached, you can see one of my results from an online tool that measures the Big Five personality traits and compares them with the personality profiles of individuals across various occupations.\r\n\r\n\r\n\r\nIt’s based on research by Anni, Vainik, & Mõttus (2024), which examined personality trait patterns across 263 occupations and yielded following key insights:\r\nCertain personality traits align predictably with specific jobs, supporting the person–job fit model. For instance, openness is more common in creative fields, while conscientiousness tends to be higher in managerial roles.\r\nOccupations account for 2%–7% of the variance in Big Five personality traits, suggesting modest but meaningful differences across roles.\r\nOccupations with high average levels of traits linked to job performance (e.g., conscientiousness) show greater homogeneity in these traits, indicating selective environments.\r\nThe results align with previous studies across different regions, suggesting that these occupational-personality trends are broadly applicable across cultures.\r\nDetailed personality traits beyond the Big Five (e.g., specific aspects of extraversion or conscientiousness) explain even more variance, illustrating nuanced differences among job incumbents.\r\nThese findings suggest that while personality explains only part of the variation among occupations, it may still offer valuable insights for career counseling and personal development.\r\nIf you’d like to try the tool yourself, here’s the link.\r\n\r\n\r\n\r\n",
     "preview": "posts/2024-10-29-job-personality-fit/./results_screenshot.jpg",
-    "last_modified": "2026-09-07T21:18:58+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:16+01:00",
+    "input_file": "job-personality-fit.knit.md"
   },
   {
     "path": "posts/2024-10-26-personality-and-non-linearities/",
@@ -2778,28 +2824,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/2024-08-29-survey-participation-and-attrition-prediction/",
-    "title": "People may signal their exit intentions not only by their actions but also by their inactions",
-    "description": "A brief reflection on one of the predictors of voluntary employee attrition.",
-    "author": [
-      {
-        "name": "Luděk Stehlík",
-        "url": "https://www.linkedin.com/in/ludekstehlik/"
-      }
-    ],
-    "date": "2024-08-29",
-    "categories": [
-      "employee turnover",
-      "employee survey"
-    ],
-    "contents": "\r\nI recently came across a LI post discussing a more or less surprising fact about the relatively high predictive power of a single item from employee surveys in relation to employee turnover. The item in question was a simple question about the employee’s intention to stay with the company if they were offered the same job at another organization. An insight corresponding to my mom’s wise advice she gave me when I was a small child: If you don’t know, just ask, most people will be happy to answer 🙂\r\nTo expand on this post, I’d like to add another related fact that I’ve encountered in several real-world datasets. There is another aspect of employee surveys that is quite highly predictive of people’s intention to leave the company. However, this time, it’s not a specific survey item, but the team (or individual) survey participation rate. The lower the participation rate, the higher the probability of leaving, all other things being equal.\r\nWe can view it as one specific manifestation of employees’ withdrawal that is highly predictive of the intention to leave, as illustrated in the attached chart showing the strength, direction, and estimation precision of voluntary turnover predictors, as assessed in Rubenstein et al. (2017) meta-analysis.\r\n\r\n\r\n\r\n\r\nLink to the app with the interactive plot\r\n\r\nApparently, people may signal their exit intentions not only by their actions but also by their inactions. As Sherlock Holmes famously observed in one of his cases, what’s suspicious is not only the barking of the dog but also its silence.\r\nHave you noticed any other forms of inaction that might predict an intention to leave? For example, one might consider lateness and absenteeism as types of inaction as well (they are, btw, also included among the predictors in the chart and are performing pretty well).\r\n\r\n\r\n\r\n",
-    "preview": "posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png",
-    "last_modified": "2026-07-06T21:43:49+02:00",
-    "input_file": {},
-    "preview_width": 1577,
-    "preview_height": 775
-  },
-  {
     "path": "posts/2024-08-29-tas-c-suit-teams/",
     "title": "Insights from the Team Assessment Survey results of C-suite teams",
     "description": "Results from the exploration of data on team effectiveness and efficiency across ~40 C-suite teams.",
@@ -2820,6 +2844,29 @@
     "input_file": {},
     "preview_width": 2112,
     "preview_height": 1728
+  },
+  {
+    "path": "posts/2024-08-29-survey-participation-and-attrition-prediction/",
+    "title": "People may signal their exit intentions not only by their actions but also by their inactions",
+    "description": "A brief reflection on one of the predictors of voluntary employee attrition.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2024-08-29",
+    "categories": [
+      "web apps",
+      "employee turnover",
+      "employee survey"
+    ],
+    "contents": "\r\nI recently came across a LI post discussing a more or less surprising fact about the relatively high predictive power of a single item from employee surveys in relation to employee turnover. The item in question was a simple question about the employee’s intention to stay with the company if they were offered the same job at another organization. An insight corresponding to my mom’s wise advice she gave me when I was a small child: If you don’t know, just ask, most people will be happy to answer 🙂\r\nTo expand on this post, I’d like to add another related fact that I’ve encountered in several real-world datasets. There is another aspect of employee surveys that is quite highly predictive of people’s intention to leave the company. However, this time, it’s not a specific survey item, but the team (or individual) survey participation rate. The lower the participation rate, the higher the probability of leaving, all other things being equal.\r\nWe can view it as one specific manifestation of employees’ withdrawal that is highly predictive of the intention to leave, as illustrated in the attached chart showing the strength, direction, and estimation precision of voluntary turnover predictors, as assessed in Rubenstein et al. (2017) meta-analysis.\r\n\r\n\r\n\r\n\r\nLink to the app with the interactive plot\r\n\r\nApparently, people may signal their exit intentions not only by their actions but also by their inactions. As Sherlock Holmes famously observed in one of his cases, what’s suspicious is not only the barking of the dog but also its silence.\r\nHave you noticed any other forms of inaction that might predict an intention to leave? For example, one might consider lateness and absenteeism as types of inaction as well (they are, btw, also included among the predictors in the chart and are performing pretty well).\r\n\r\n\r\n\r\n",
+    "preview": "posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png",
+    "last_modified": "2026-10-27T12:59:04+01:00",
+    "input_file": "survey-participation-and-attrition-prediction.knit.md",
+    "preview_width": 1577,
+    "preview_height": 775
   },
   {
     "path": "posts/2024-08-21-kohonen-self-organizing-maps/",
@@ -2951,13 +2998,14 @@
     ],
     "date": "2024-05-30",
     "categories": [
+      "web apps",
       "psychometrics",
       "learning and development"
     ],
     "contents": "\r\nOut of curiosity and a bit for fun, I just completed the 11-item height inventory by Hynek Cigler from the Department of Psychology, FSS MU, a teaching aid designed to demonstrate some of the basics of measurement in psychology and related fields.\r\nInstead of using a ruler, you indicate how much you agree with statements like “I often have to stand on my tiptoes to see better.” or “I have plenty of legroom on the bus.”\r\nIts decent psychometric qualities showed up in a fairly accurate estimate of my actual height (193 cm): it estimated my body height at 189 cm with a 95% confidence interval of [182-197] cm. The attached pic illustrates where the test put me. In terms of the height quotient (IQ), I was at 117 with a 95% CI of [100-129], so it’s not up to Mensa, but at least I won’t have to pay membership fees 😁\r\n\r\n\r\n\r\nIf you are doing training in psychometrics or need to educate your audience in this area, this tool can be very handy.\r\nThe inventory is in Czech, but the online translation in Chrome does a pretty good job, so you can try it out for yourself even if you’re not a Czech speaker (with all the limitations given by non-standard localization and not 100% adequate norms). You can find it here.\r\n\r\n\r\n\r\n",
     "preview": "posts/2024-05-30-body-height-inventory/./height_histogram_results.jpg",
-    "last_modified": "2026-07-06T21:43:49+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:21+01:00",
+    "input_file": "body-height-inventory.knit.md"
   },
   {
     "path": "posts/2024-05-21-probability-of-comments-in-a-survey/",
@@ -3491,6 +3539,7 @@
     ],
     "date": "2023-10-10",
     "categories": [
+      "web apps",
       "employee experience",
       "nlp",
       "generative ai",
@@ -3499,8 +3548,8 @@
     ],
     "contents": "\r\nI believe that many of you have had a similar experience when you joined a new company: you have taken a ton of notes from various meetings and trainings, you know that the answer to your immediate question is in there somewhere, but it is too hard to find the right notes, so you capitulate and decide to try to find the answer in a different way, e.g. by asking a more tenured colleague.\r\nTo make better use of my notes from my current onboarding, I created a quick and dirty app that uses embeddings to find the relevant files with my notes and LLM to summarise answers to my questions.\r\nSo, for example, if I need to find out who owns a certain business process, I can just type my question into the app and quickly get an answer, including tips on what files to look at to verify the answer or find other related information.\r\n\r\nIf you want to check out the code behind the app, you can find it in this GitHub repo.\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-10-23-nlp-llm-and-onboarding/./lost_info.jpg",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:27+01:00",
+    "input_file": "nlp-llm-and-onboarding.knit.md"
   },
   {
     "path": "posts/2023-09-24-exploration-vs-exploitation-tradeoff/",
@@ -3653,14 +3702,15 @@
     ],
     "date": "2023-07-11",
     "categories": [
+      "web apps",
       "people analytics",
       "embeddings",
       "learning and development"
     ],
     "contents": "\r\nIt’s an app that allows you to quickly search for People Analytics topics in a database of almost 260 AIHR blog posts and get key ideas and insights from the posts that best match your search topic, with the possibility to go to the original post via a provided link.\r\n\r\nThe cluster analysis revealed that the posts cover more than 30 topics, so there’s a lot to choose from. Feel free to give it a try and let me know how it works for you. Here’s a link to the app.\r\nLast but not least, a big “thank you” goes to AIHR and all the contributing authors for putting together such an amazing resource on People Analytics 🙏\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-07-11-searching-and-querying-aihr-blog-posts/./search.jpg",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:31+01:00",
+    "input_file": "searching-and-querying-aihr-blog-posts.knit.md"
   },
   {
     "path": "posts/2023-07-03-bayesian-shrinkage/",
@@ -3698,6 +3748,7 @@
     ],
     "date": "2023-06-29",
     "categories": [
+      "web apps",
       "career development",
       "bayesian statistics",
       "r",
@@ -3707,7 +3758,7 @@
     ],
     "contents": "\r\nBeing in the final phase of my new job search, I wanted to be able to aggregate the information and impressions I gathered during the hiring process, with all the uncertainties, to make the best decision possible.\r\nTo do this, I put together a “back-of-the-envelope” calculation that combines, in a Bayesian way, the impressions one has of various aspects of the jobs one is applying for.\r\n\r\nIt works with several factors that research suggests are related to job satisfaction and that a person has the chance to estimate subjectively to some degree during the hiring process from job ads, interviews, sample tasks, company reviews from current or former employees on Glassdoor, etc. Specifically, it takes into account the following factors:\r\nSalary\r\nJob security\r\nWork-life balance\r\nCareer progression\r\nOrganizational culture\r\nJob content\r\nBenefits\r\nRelationships with supervisors\r\nRelationships with colleagues\r\nOne’s task is to simply determine, based on the available information, the range of how much he or she can expect to be satisfied with these factors in a given job. The app then aggregates the evidence and estimates the expected overall level of job satisfaction, including a level of uncertainty that can provide a guide as to where the person should try to obtain some additional information to reduce this uncertainty. One can also adjust the weights of each factor based on one’s personal preferences.\r\nIf you have at least two job offers to choose from, you may find the app as useful as I did. Here’s a link to the app.\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-06-28-job-comparator/./decisionMaking.jpg",
-    "last_modified": "2026-10-06T22:04:10+02:00",
+    "last_modified": "2026-10-27T12:57:36+01:00",
     "input_file": "job-comparator.knit.md"
   },
   {
@@ -3722,6 +3773,7 @@
     ],
     "date": "2023-06-27",
     "categories": [
+      "web apps",
       "future of work",
       "generative ai",
       "r",
@@ -3729,8 +3781,8 @@
     ],
     "contents": "\r\nAside from satisfying a simple curiosity, it was also a good opportunity to try out a nerdy combination of various cool DS tools: openAI’s embeddings for determining trends similarity, UMAP for dimensionality reduction, DBSCAN for cluster analysis, openAI’s chat completion for cluster summarization and naming, Plotly for interactive dataviz, Shiny for dashboarding, and Python and R for orchestrating it all.\r\nThe result? The analysis revealed 13 distinct themes among the 118 specific trends:\r\nGlobal Talent Management Strategies (23)\r\nLeadership Development and Talent Management (16)\r\nHR Transformation and Innovation (15)\r\nHuman Capital and Workforce Strategies (12)\r\nWorkforce Data and Analytics (10)\r\nCognitive Technologies and Workforce (8)\r\nEmployee-Centric Learning and Development (7)\r\nPerformance Management and Compensation (7)\r\nImproving Employee Experience and Well-being (6)\r\nCloud Computing and HR Transformation (4)\r\nEmployee Engagement and Retention (4)\r\nDiversity in Business Strategy (3)\r\nWorkplace Flexibility Strategies (3)\r\n\r\nIt’s no wonder I’ve had dejavu feelings about some trends over the years, but that’s why they are called trends, because they persist over time, right? 😉\r\nIf you would like to check the analysis output interactively and in greater detail, you can use this simple dashboard.\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-06-27-deloitte-hc-trends-themes/./dttHCTrends.png",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:57:40+01:00",
+    "input_file": "deloitte-hc-trends-themes.knit.md",
     "preview_width": 1000,
     "preview_height": 1000
   },
@@ -3906,6 +3958,7 @@
     ],
     "date": "2023-05-04",
     "categories": [
+      "web apps",
       "recruitment",
       "generative ai",
       "embeddings",
@@ -3914,8 +3967,8 @@
     ],
     "contents": "\r\nMy recent exploration of new job opportunities has inspired me to consider what I would appreciate as a job candidate when visiting the career site of a company I’d like to work for. Specifically, I would appreciate the following flow:\r\nUploading my CV on the company’s career site.\r\nReceiving a list of jobs sorted by the degree of match to my CV.\r\nObtaining an overview of my major mis/matches for the selected job.\r\nHaving the option to ask specific questions about the job (e.g. What could be the biggest challenge for me?)\r\nNot/Applying for the job after considering the provided information.\r\nIt’s clear that a process like this would make life easier not only for job candidates but also for companies, as more relevant candidates would likely apply for posted vacancies on average (as far as people are looking for similar jobs they have done in the past).\r\nI tested the feasibility of this idea by creating a functional POC career site, with OpenAI tools working behind the scenes, that supports this exact flow for 20 people-analytics-related job ads taken from One Model’s website with open roles in the people analytics space (by the way, kudos for that, One Model team 👏). You can try it for yourself with your own or sample CV on this webpage.\r\n\r\nLet me know in the comments what you think about the flow and/or how you would improve it to make it even more useful for job candidates and companies.\r\nP.S. It was also a good opportunity to try out Shiny for Python by Posit. Being a regular user of the R version of Shiny, I may be a little bit biased, but IMO it’s more user-friendly compared to Dash, so if you need to present the results of your Python code in an interactive web application, definitely give it a try.\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-05-04-cv-job-match-career-site/./search.jpg",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:44+01:00",
+    "input_file": "cv-job-match-career-site.knit.md"
   },
   {
     "path": "posts/2023-05-01-gpt4-and-e-b-hrm-practices/",
@@ -3952,6 +4005,7 @@
     ],
     "date": "2023-04-28",
     "categories": [
+      "web apps",
       "generative ai",
       "embeddings",
       "employee survey",
@@ -3962,8 +4016,8 @@
     ],
     "contents": "\r\nA while ago, I posted about the potential of using GPT for processing open-ended feedback from employees. I simply inputted a block of text into GPT and asked for a summary of the major topics found in the feedback. Although the output was quite accurate and the information compression achieved was very useful, this approach was somewhat limited in terms of scalability and granularity of the information provided.\r\nTo address these limitations, I experimented with another approach that includes the following steps:\r\nLooping over feedback from individual employees and sending them one by one to GPT.\r\nPrompting GPT to identify all present topics in each feedback, determining their respective sentiments (positive, negative, mixed, or neutral), and extracting the relevant parts of the feedback based on which the topic was identified.\r\nPrompting GPT to categorize identified topics using a provided list of topic categories (e.g., compensation and benefits, work-life balance, collaboration and teamwork, etc.), while taking into account contextual information in the relevant parts of the feedback. Alternatively, categorizing by matching embeddings of identified topics, contextual information, and topic categories.\r\nPlotting the topic categories by the number of their occurrences and type of associated sentiment.\r\nInteractive exploration of specific topics clustered by their semantic similarity based on their respective embeddings and visualized with the help of t-SNE dimensionality reduction technique.\r\nCreating a filterable table with identified topics and all original and extracted information that may be useful for further exploration of the feedback and for checking the precision of the topic identification.\r\nI had to experiment a bit with the prompts and include some data-munging inter-steps to get useful outputs, however, it now works relatively smoothly and provides pretty good results. To test the plausibility of this approach, I tried it on publicly available feedback from more than 300 current and former employees of an unnamed company published on Glassdoor and shared on Kaggle. You can check the results of the analysis yourself in this simple dashboard.\r\n\r\nIn my opinion, it works quite well and could represent a very time- and cost-effective way to gain useful insights from employee open-ended feedback at scale, with the caveat that one has to ensure the security of the processed data, for example, by using a local LLM. Let me know what you think about this approach. And if you are interested in the Python code behind the analysis so you can play with it on your own data, here’s the link to the GitHub page with the Python code.\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-04-28-employee-feedback-analysis-using-openai/./Screenshot.png",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:57:49+01:00",
+    "input_file": "employee-feedback-analysis-using-openai.knit.md",
     "preview_width": 1520,
     "preview_height": 895
   },
@@ -4049,15 +4103,16 @@
     ],
     "date": "2023-04-13",
     "categories": [
+      "web apps",
       "interpretability",
       "machine learning",
       "predictive analytics",
       "r"
     ],
-    "contents": "\r\nThere’s a great new R package, modelStudio, that makes it much easier for analysts to create both global and local interpretations of predictive models using an interactive interface.\r\nOnce you’ve trained the model, you just get the DALEX explainer object ready and start up modelStudio that will run the following analyses (among others) and show the corresponding plots:\r\nFeature Importance: A visual representation that ranks and displays the significance of each input variable in a predictive model, helping to identify the most influential features for model predictions.\r\nPartial Dependence: A visualization that shows the relationship between a feature and the predicted outcome while averaging out the effects of all other features, to understand the marginal impact of a specific feature on the model’s predictions.\r\nAccumulated Dependence: Similar to the previous method, but reducing the influence of the assumption of uncorrelated features, providing a more robust and reliable representation of the feature’s impact on the model’s predictions.\r\nBreak Down Plot: A graphical explanation tool that demonstrates the contribution of each feature to a specific instance’s prediction, allowing for individual-level interpretation of model outcomes.\r\nShapley Values: A cooperative game theory-based approach for fairly attributing each feature’s contribution to a specific prediction, providing interpretable and consistent explanations for machine learning models.\r\nCeteris Paribus: A method that helps with understanding the influence of individual features on specific predictions by isolating the effect of a single variable while holding all other variables constant.\r\nIf you use ML in HR or any other field where it’s crucial to explain why you make specific predictions, classifications, and the resulting recommendations or decisions, definitely give it a try.\r\nWhat follows is a short demonstration of the tool using the well-known artificial IBM attrition dataset. First, let’s import the attrition dataset from the modeldata library and change the coding of the criterion variable, which will later make it easier to set up the DALEX explainer, which requires numerical data type for criterion variable even in classification tasks.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(modeldata)\r\nlibrary(tidyverse)\r\n\r\n# uploading data\r\ndata(\"attrition\")\r\n\r\n# changing the coding of the criterion variable\r\nattrition <- attrition %>%\r\n  mutate(Attrition = recode(Attrition, \"Yes\" = \"1\", \"No\" = \"0\") %>% factor(levels = c(\"1\", \"0\")))\r\n\r\n\r\nWe now split the data into training, test, and validation datasets so that we can tune the prediction model, fit the model, and test its performance on new, previously unseen data.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(rsample)\r\n\r\n# splitting data into train, validation, and test datasets\r\nset.seed(123)\r\ndata_split <- rsample::initial_split(attrition, strata = Attrition, prop = 0.8)\r\n\r\ndata_train <- rsample::training(data_split)\r\ndata_test  <- rsample::testing(data_split)\r\ndata_val <- rsample::validation_split(data_train, strata = \"Attrition\", prop = 0.8)\r\n\r\n\r\nNow let’s define the whole model training workflow, which includes the data adjustment pipeline and the specification of the model used. We will use XGBoost, presumably the best ML algorithm for tabular type of data.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(recipes)\r\nlibrary(parsnip)\r\nlibrary(workflows)\r\n\r\nfmla <- as.formula(paste(\"Attrition\", \" ~ .\"))\r\n\r\n# defining recipe for adjusting data for fitting the model\r\nxgb_recipe <- \r\n  recipes::recipe(fmla, data = data_train) %>%\r\n  recipes::step_ordinalscore(recipes::all_ordered_predictors()) %>%\r\n  recipes::step_dummy(recipes::all_factor_predictors())\r\n\r\n# defining the model\r\nxgb_model <- \r\n  parsnip::boost_tree(mtry = tune(), min_n = tune(), tree_depth = tune(), trees = 1000) %>% \r\n  parsnip::set_engine(\"xgboost\") %>% \r\n  parsnip::set_mode(\"classification\")\r\n\r\nxgb_workflow <- \r\n  workflows::workflow() %>% \r\n  workflows::add_model(xgb_model) %>% \r\n  workflows::add_recipe(xgb_recipe)\r\n\r\n\r\nAlthough the XGBoost algorithm works quite well with the default hyper-parameters, we will use the validation dataset to tune some of its hyper-parameters to get the best performance out of it. As can be seen below, after tuning the best model performs quite well in terms of AUC, which has a value of around 0.8.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(tune)\r\nlibrary(yardstick)\r\n\r\n# tuning hyper-parameters\r\nset.seed(123)\r\nxgb_tuning <- \r\n  xgb_workflow %>% \r\n  tune::tune_grid(\r\n    data_val,\r\n    grid = 25,\r\n    control = control_grid(save_pred = TRUE),\r\n    metrics = yardstick::metric_set(roc_auc)\r\n    )\r\n\r\n# selecting the best combination of hyper-parameters \r\nxgb_best <- \r\n  xgb_tuning %>% \r\n  tune::select_best(metric = \"roc_auc\")\r\n\r\n# best model performance on validation dataset as measured by AUC \r\n(\r\n  xgb_tuning %>% \r\n  tune::collect_predictions(parameters = xgb_best) %>% \r\n  yardstick::roc_auc(truth = Attrition,  .pred_1) \r\n)\r\n\r\n# A tibble: 1 × 3\r\n  .metric .estimator .estimate\r\n  <chr>   <chr>          <dbl>\r\n1 roc_auc binary         0.802\r\n\r\nShow code\r\n\r\n# plotting the ROC curve\r\nxgb_tuning %>% \r\n  tune::collect_predictions(parameters = xgb_best) %>% \r\n  yardstick::roc_curve(truth = Attrition,  .pred_1) %>%\r\n  autoplot()\r\n\r\n\r\n\r\nNow we can set up the final model training workflow and fit the model to the entire training dataset and check its performance on out-of-sample data using k-fold cross-validation and testing dataset. As we see below, in both cases the model performance as measured by AUC is around the value of 0.8.\r\n\r\n\r\nShow code\r\n\r\n# setting the final model\r\nfinal_xgb_model <- \r\n  parsnip::boost_tree(mtry = xgb_best$mtry, min_n = xgb_best$min_n, tree_depth = xgb_best$tree_depth, trees = 1000) %>% \r\n  parsnip::set_engine(\"xgboost\") %>% \r\n  parsnip::set_mode(\"classification\")\r\n\r\n# updating the model training workflow\r\nfinal_xgb_workflow <- \r\n  xgb_workflow %>% \r\n  workflows::update_model(final_xgb_model)\r\n\r\n# fitting model on train set\r\nset.seed(123)\r\nxgb_fit <- \r\n  final_xgb_workflow %>% \r\n  fit(data_train)\r\n\r\n# checking the final model's performance (AUC) using k-fold cross-validation\r\nset.seed(123)\r\nfolds <- rsample::vfold_cv(data_train, v = 10)\r\n\r\nset.seed(123)\r\nxgb_fit_kf <- \r\n  final_xgb_workflow %>% \r\n  tune::fit_resamples(folds)\r\n\r\n(\r\n  tune::collect_metrics(xgb_fit_kf, summarize = TRUE) %>% dplyr::filter(.metric == \"roc_auc\")\r\n)\r\n\r\n# A tibble: 1 × 6\r\n  .metric .estimator  mean     n std_err .config             \r\n  <chr>   <chr>      <dbl> <int>   <dbl> <chr>               \r\n1 roc_auc binary     0.799    10  0.0166 Preprocessor1_Model1\r\n\r\nShow code\r\n\r\n# checking the final model's performance (AUC) using the testing dataset\r\nxgb_testing_pred <- \r\n  predict(xgb_fit, data_test) %>% \r\n  bind_cols(predict(xgb_fit, data_test, type = \"prob\")) %>% \r\n  dplyr::bind_cols(data_test %>% select(Attrition))\r\n\r\n(\r\n  xgb_testing_pred %>%           \r\n  yardstick::roc_auc(truth = Attrition, .pred_1)\r\n)\r\n\r\n# A tibble: 1 × 3\r\n  .metric .estimator .estimate\r\n  <chr>   <chr>          <dbl>\r\n1 roc_auc binary         0.871\r\n\r\nNow we’re ready to explore the inner workings of our trained model. After setting up the explainer from the DALEX package, we simply insert this object into the modelStudio function and run it. We then get an interactive interface in our browser that we can use to easily check what our model is doing to make its predictions. You can try it out for yourself using the interactive interface below.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(DALEX)\r\nlibrary(modelStudio)\r\n\r\n# setting up the DALEX explainer object\r\n# creating predict function\r\npred <- function(model, newdata)  {\r\n  results <- (predict(model, newdata, type = \"prob\")[[1]])\r\n  return(results)\r\n}\r\n\r\nexplainer <- DALEX::explain(\r\n  model = xgb_fit,\r\n  data = data_test %>% mutate(Attrition = as.integer(Attrition)),\r\n  y = data_test %>% mutate(Attrition = as.integer(Attrition)) %>% pull(Attrition),\r\n  predict_function = pred,\r\n  type = \"classification\",\r\n  verbose = FALSE \r\n)\r\n\r\n# running ModelStudio\r\nmodelStudio::modelStudio(\r\n  explainer,\r\n  max_features = 100, # Maximum number of features to be included in BD, SV, and FI plots\r\n  N = 300, # Number of observations used for the calculation of PD and AD\r\n  new_observation_n = 3, #Number of observations to be taken from the data\r\n  show_info = TRUE,\r\n  viewer = \"browser\",\r\n  facet_dim = c(2,2) # layout of the resultiing charts\r\n  )\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "contents": "\r\nThere’s a great new R package, modelStudio, that makes it much easier for analysts to create both global and local interpretations of predictive models using an interactive interface.\r\nOnce you’ve trained the model, you just get the DALEX explainer object ready and start up modelStudio that will run the following analyses (among others) and show the corresponding plots:\r\nFeature Importance: A visual representation that ranks and displays the significance of each input variable in a predictive model, helping to identify the most influential features for model predictions.\r\nPartial Dependence: A visualization that shows the relationship between a feature and the predicted outcome while averaging out the effects of all other features, to understand the marginal impact of a specific feature on the model’s predictions.\r\nAccumulated Dependence: Similar to the previous method, but reducing the influence of the assumption of uncorrelated features, providing a more robust and reliable representation of the feature’s impact on the model’s predictions.\r\nBreak Down Plot: A graphical explanation tool that demonstrates the contribution of each feature to a specific instance’s prediction, allowing for individual-level interpretation of model outcomes.\r\nShapley Values: A cooperative game theory-based approach for fairly attributing each feature’s contribution to a specific prediction, providing interpretable and consistent explanations for machine learning models.\r\nCeteris Paribus: A method that helps with understanding the influence of individual features on specific predictions by isolating the effect of a single variable while holding all other variables constant.\r\nIf you use ML in HR or any other field where it’s crucial to explain why you make specific predictions, classifications, and the resulting recommendations or decisions, definitely give it a try.\r\nWhat follows is a short demonstration of the tool using the well-known artificial IBM attrition dataset. First, let’s import the attrition dataset from the modeldata library and change the coding of the criterion variable, which will later make it easier to set up the DALEX explainer, which requires numerical data type for criterion variable even in classification tasks.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(modeldata)\r\nlibrary(tidyverse)\r\n\r\n# uploading data\r\ndata(\"attrition\")\r\n\r\n# changing the coding of the criterion variable\r\nattrition <- attrition %>%\r\n  mutate(Attrition = recode(Attrition, \"Yes\" = \"1\", \"No\" = \"0\") %>% factor(levels = c(\"1\", \"0\")))\r\n\r\n\r\nWe now split the data into training, test, and validation datasets so that we can tune the prediction model, fit the model, and test its performance on new, previously unseen data.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(rsample)\r\n\r\n# splitting data into train, validation, and test datasets\r\nset.seed(123)\r\ndata_split <- rsample::initial_split(attrition, strata = Attrition, prop = 0.8)\r\n\r\ndata_train <- rsample::training(data_split)\r\ndata_test  <- rsample::testing(data_split)\r\ndata_val <- rsample::validation_split(data_train, strata = \"Attrition\", prop = 0.8)\r\n\r\n\r\nNow let’s define the whole model training workflow, which includes the data adjustment pipeline and the specification of the model used. We will use XGBoost, presumably the best ML algorithm for tabular type of data.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(recipes)\r\nlibrary(parsnip)\r\nlibrary(workflows)\r\n\r\nfmla <- as.formula(paste(\"Attrition\", \" ~ .\"))\r\n\r\n# defining recipe for adjusting data for fitting the model\r\nxgb_recipe <- \r\n  recipes::recipe(fmla, data = data_train) %>%\r\n  recipes::step_ordinalscore(recipes::all_ordered_predictors()) %>%\r\n  recipes::step_dummy(recipes::all_factor_predictors())\r\n\r\n# defining the model\r\nxgb_model <- \r\n  parsnip::boost_tree(mtry = tune(), min_n = tune(), tree_depth = tune(), trees = 1000) %>% \r\n  parsnip::set_engine(\"xgboost\") %>% \r\n  parsnip::set_mode(\"classification\")\r\n\r\nxgb_workflow <- \r\n  workflows::workflow() %>% \r\n  workflows::add_model(xgb_model) %>% \r\n  workflows::add_recipe(xgb_recipe)\r\n\r\n\r\nAlthough the XGBoost algorithm works quite well with the default hyper-parameters, we will use the validation dataset to tune some of its hyper-parameters to get the best performance out of it. As can be seen below, after tuning the best model performs quite well in terms of AUC, which has a value of around 0.8.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(tune)\r\nlibrary(yardstick)\r\n\r\n# tuning hyper-parameters\r\nset.seed(123)\r\nxgb_tuning <- \r\n  xgb_workflow %>% \r\n  tune::tune_grid(\r\n    data_val,\r\n    grid = 25,\r\n    control = control_grid(save_pred = TRUE),\r\n    metrics = yardstick::metric_set(roc_auc)\r\n    )\r\n\r\n# selecting the best combination of hyper-parameters \r\nxgb_best <- \r\n  xgb_tuning %>% \r\n  tune::select_best(metric = \"roc_auc\")\r\n\r\n# best model performance on validation dataset as measured by AUC \r\n(\r\n  xgb_tuning %>% \r\n  tune::collect_predictions(parameters = xgb_best) %>% \r\n  yardstick::roc_auc(truth = Attrition,  .pred_1) \r\n)\r\n\r\n# A tibble: 1 × 3\r\n  .metric .estimator .estimate\r\n  <chr>   <chr>          <dbl>\r\n1 roc_auc binary         0.811\r\n\r\nShow code\r\n\r\n# plotting the ROC curve\r\nxgb_tuning %>% \r\n  tune::collect_predictions(parameters = xgb_best) %>% \r\n  yardstick::roc_curve(truth = Attrition,  .pred_1) %>%\r\n  autoplot()\r\n\r\n\r\n\r\nNow we can set up the final model training workflow and fit the model to the entire training dataset and check its performance on out-of-sample data using k-fold cross-validation and testing dataset. As we see below, in both cases the model performance as measured by AUC is around the value of 0.8.\r\n\r\n\r\nShow code\r\n\r\n# setting the final model\r\nfinal_xgb_model <- \r\n  parsnip::boost_tree(mtry = xgb_best$mtry, min_n = xgb_best$min_n, tree_depth = xgb_best$tree_depth, trees = 1000) %>% \r\n  parsnip::set_engine(\"xgboost\") %>% \r\n  parsnip::set_mode(\"classification\")\r\n\r\n# updating the model training workflow\r\nfinal_xgb_workflow <- \r\n  xgb_workflow %>% \r\n  workflows::update_model(final_xgb_model)\r\n\r\n# fitting model on train set\r\nset.seed(123)\r\nxgb_fit <- \r\n  final_xgb_workflow %>% \r\n  fit(data_train)\r\n\r\n# checking the final model's performance (AUC) using k-fold cross-validation\r\nset.seed(123)\r\nfolds <- rsample::vfold_cv(data_train, v = 10)\r\n\r\nset.seed(123)\r\nxgb_fit_kf <- \r\n  final_xgb_workflow %>% \r\n  tune::fit_resamples(folds)\r\n\r\n(\r\n  tune::collect_metrics(xgb_fit_kf, summarize = TRUE) %>% dplyr::filter(.metric == \"roc_auc\")\r\n)\r\n\r\n# A tibble: 1 × 6\r\n  .metric .estimator  mean     n std_err .config        \r\n  <chr>   <chr>      <dbl> <int>   <dbl> <chr>          \r\n1 roc_auc binary     0.776    10  0.0231 pre0_mod0_post0\r\n\r\nShow code\r\n\r\n# checking the final model's performance (AUC) using the testing dataset\r\nxgb_testing_pred <- \r\n  predict(xgb_fit, data_test) %>% \r\n  bind_cols(predict(xgb_fit, data_test, type = \"prob\")) %>% \r\n  dplyr::bind_cols(data_test %>% select(Attrition))\r\n\r\n(\r\n  xgb_testing_pred %>%           \r\n  yardstick::roc_auc(truth = Attrition, .pred_1)\r\n)\r\n\r\n# A tibble: 1 × 3\r\n  .metric .estimator .estimate\r\n  <chr>   <chr>          <dbl>\r\n1 roc_auc binary         0.856\r\n\r\nNow we’re ready to explore the inner workings of our trained model. After setting up the explainer from the DALEX package, we simply insert this object into the modelStudio function and run it. We then get an interactive interface in our browser that we can use to easily check what our model is doing to make its predictions. You can try it out for yourself using the interactive interface below.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(DALEX)\r\nlibrary(modelStudio)\r\n\r\n# setting up the DALEX explainer object\r\n# creating predict function\r\npred <- function(model, newdata)  {\r\n  results <- (predict(model, newdata, type = \"prob\")[[1]])\r\n  return(results)\r\n}\r\n\r\nexplainer <- DALEX::explain(\r\n  model = xgb_fit,\r\n  data = data_test %>% mutate(Attrition = as.integer(Attrition)),\r\n  y = data_test %>% mutate(Attrition = as.integer(Attrition)) %>% pull(Attrition),\r\n  predict_function = pred,\r\n  type = \"classification\",\r\n  verbose = FALSE \r\n)\r\n\r\n# running ModelStudio\r\nmodelStudio::modelStudio(\r\n  explainer,\r\n  max_features = 100, # Maximum number of features to be included in BD, SV, and FI plots\r\n  N = 300, # Number of observations used for the calculation of PD and AD\r\n  new_observation_n = 3, #Number of observations to be taken from the data\r\n  show_info = TRUE,\r\n  viewer = \"browser\",\r\n  facet_dim = c(2,2) # layout of the resultiing charts\r\n  )\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-04-13-interpretable-ml/./miracle.jpg",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T13:03:11+01:00",
+    "input_file": "interpretable-ml.knit.md"
   },
   {
     "path": "posts/2023-04-11-openai-personality-interpretation/",
@@ -4071,6 +4126,7 @@
     ],
     "date": "2023-04-11",
     "categories": [
+      "web apps",
       "generative ai",
       "ai",
       "personality",
@@ -4079,8 +4135,8 @@
     ],
     "contents": "\r\nOne of my friends recently asked me if I could provide him with an interpretation of a free personality test he took on the internet. As a joke, I asked him if he had already tried using GPT for this.\r\nThis sparked my interest in how GPT would actually handle this kind of task. So, I provided it with my Hogan Personality Inventory (HPI) profile (in percentile scores, as requested), and to my surprise, it performed quite well - even when asked about more complex questions like interactions between my scores on selected scales or my strengths and weaknesses for specific jobs and tasks.\r\nBased on this experience, I created a simple POC app where users can input their HPI profile and some contextual information, such as their current or desired job, and ask GPT predefined or their own questions about their personality.\r\nLink to the app: https://aanalytics.shinyapps.io/ask_your_personality/\r\n\r\nI’ve only tested it on a few profiles, so if you know your HPI profile (or your Big Five traits that are behind HPI), I would be happy to hear how you perceive the face validity and potential usefulness of the generated interpretations. Perhaps I have just become a victim of the well-known Barnum effect 😉\r\nI am well aware that there are clear risks associated with using a generic GPT for such a task. However, I believe that with proper fine-tuning, an explicit disclaimer, and access to a qualified professional for possible consultation, it could be a useful tool for helping people gain self-awareness more easily - in many situations a crucial prerequisite for high-quality decisions. What do you think?\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif",
-    "last_modified": "2026-07-06T21:43:48+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:53+01:00",
+    "input_file": "openai-personality-interpretation.knit.md"
   },
   {
     "path": "posts/2023-04-11-engagement-interventions/",
@@ -4548,6 +4604,7 @@
     ],
     "date": "2022-12-15",
     "categories": [
+      "web apps",
       "evidence-based management",
       "hr management",
       "people management",
@@ -4555,8 +4612,8 @@
     ],
     "contents": "\r\n\r\n\r\n\r\nIf you are interested in testing your knowledge of evidence-based HRM practices in the following five areas…\r\nManagement practices\r\nGeneral employment practices\r\nTraining & Employee development\r\nStaffing\r\nCompensation & Benefits\r\n… then give a try on the test, which is based on the items used in Rynes, Colbert, and Brown’s 2002 study “HR practitioners’ beliefs about effective HR practices: a comparison of research and practice”.\r\nI built a simple shiny app that administers you the test, scores your answers, and compares your results to the results of the participants in the original study (959 HR professionals, mostly HR managers, with an average of 13.8 years of experience in HR). You can also use it to check the accuracy of your answers at the item level to fill in specific gaps in your knowledge.\r\nHere is the link to the app.\r\nFeel free to share your results in the comments. Think of it as a form of public commitment to making some progress in evidence-based HRM in the coming year 😉 To walk the talk, I attached my own results. As you can see, it’s not bad, but there is still room for improvement, especially in the general employment practices area 😃\r\n\r\nP.S. Keep in mind that the test is based on evidence available up to 2002, so it is possible that some correct answers or their contingencies may have changed in that time. For all of them, consider, for example, the adjustment of the estimate of the magnitude of the predictive validity of personnel selection procedures in their most recent meta-analysis by Sackett et al. (2022). If you come across any such discrepancy, it would be great if you share it with others in the comments.\r\nUpdate: With more than 140 people completing the test, I was able to compare our current results with those of the participants in the original study. You can see the results of the comparison in the post Evaluation of the results of the evidence-based HRM knowledge test. Spoiler: It’s not very good 😯\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-12-17-evidence-based-hrm-knowledge-test/./manOnTheRoad.jpg",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T13:00:47+01:00",
+    "input_file": "evidence-based-hrm-knowledge-test.knit.md"
   },
   {
     "path": "posts/2022-12-17-collaboration-during-vacations/",
@@ -4659,15 +4716,16 @@
     ],
     "date": "2022-11-26",
     "categories": [
+      "web apps",
       "employee turnover",
       "layoffs",
       "people analytics",
       "evidence-based management"
     ],
-    "contents": "\r\nI referred them to the following resources - maybe some of you will\r\nfind them useful as well:\r\nEmployment\r\nDownsizing and Its Alternatives guideline from the SHRM’s Science-to-Practice\r\nSeries.\r\nRetaining\r\nTalent guideline from the SHRM’s Science-to-Practice\r\nSeries.\r\nRubenstein et al.’s meta-analysis\r\nof voluntary turnover predictors; you can also use this\r\napp visually summarizing its results.\r\nSpeer et al.’s article Here\r\nto stay or go? Connecting turnover research to applied attrition\r\nmodeling.\r\nDemo\r\ndashboard for analysis of employee turnover.\r\nFeel free to share any other resources on this topic you think might\r\nbe useful to others.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nI referred them to the following resources - maybe some of you will find them useful as well:\r\nEmployment Downsizing and Its Alternatives guideline from the SHRM’s Science-to-Practice Series.\r\nRetaining Talent guideline from the SHRM’s Science-to-Practice Series.\r\nRubenstein et al.’s meta-analysis of voluntary turnover predictors; you can also use this app visually summarizing its results.\r\nSpeer et al.’s article Here to stay or go? Connecting turnover research to applied attrition modeling.\r\nDemo dashboard for analysis of employee turnover.\r\nFeel free to share any other resources on this topic you think might be useful to others.\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-11-26-resources-on-retention-and-downsizing/./retentionDownsizing.png",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:59:08+01:00",
+    "input_file": "resources-on-retention-and-downsizing.knit.md",
     "preview_width": 1280,
     "preview_height": 720
   },
@@ -5040,13 +5098,14 @@
     ],
     "date": "2022-01-03",
     "categories": [
+      "web apps",
       "cross-cultural differences",
       "shiny app"
     ],
     "contents": "\r\nOne of the advantages of switch to remote working is that companies can expand the pool of talent from which they choose their employees, without being too constrained by country or even continental boundaries. However, the resulting cultural diversity can bring not only positive effects (e.g. a broader set of perspectives, a more diverse skill base, local market knowledge and insight, better creativity and innovation, etc.) but also some challenges (e.g. risk of prejudice or negative cultural stereotypes, misinterpretation of communication, conflicting work styles, different understanding of professional etiquette, etc.).\r\nBetter knowledge and awareness of the cultural specificities of the societies from which people come is one way of dealing with these challenges. In this respect, Hofstede’s theory of cultural dimensions may be useful to us. Just as Big-5 theory facilitates our understanding of other people’s personalities, Hofstede’s theory facilitates our understanding of their cultural background by describing their social values and releated behaviors through the following six cultural dimensions:\r\n\r\nImage source: https://corporatefinanceinstitute.com/resources/knowledge/other/hofstedes-cultural-dimensions-theory/\r\nYou can easily check how countries are doing on these six dimensions on the Hofstede Insights website. To make it easier to compare cultural differences/similarities between countries, I built a simple app that projects the cultural profiles of countries into 2D space using dimensionality reduction technique called UMAP (Uniform manifold approximation and projection). By selecting a specific cultural dimension, you can see how it is distributed across countries and continents. In addition, you can select some specific countries in the comparator and compare them across all six cultural dimensions.\r\nCheck it out here ➡️ https://peopleanalyticsblog.shinyapps.io/Hofstede_Cultural_Dimensions/\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-01-03-hofstede-theory-of-cultural-dimensions/./six-dimensions-hofstedes-cultural-dimensions-theory.jpg",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {}
+    "last_modified": "2026-10-27T12:57:58+01:00",
+    "input_file": "hofstede-theory-of-cultural-dimensions.knit.md"
   },
   {
     "path": "posts/2021-12-19-makers-and-managers-schedule/",
@@ -5080,6 +5139,7 @@
     ],
     "date": "2021-12-16",
     "categories": [
+      "web apps",
       "linkedin",
       "collaboration",
       "network analysis",
@@ -5087,8 +5147,8 @@
     ],
     "contents": "\r\nIf you like to use the end of the year as an opportunity for deeper self-reflection, you might enjoy this simple app I have put together over the past weekend.\r\nOnce you upload your LinkedIn connections data to the app (you can easily download the data by following the instructions in the app or in this video), it automatically generates basic descriptive statistics about your LinkedIn connections:\r\nCumulative number of connections over time\r\nNumber of established connections by years, months, and days of the week\r\nTop N companies by the number of established connections\r\nTop N positions by their frequency among your connections (based on whole position titles, bigrams and single words)\r\nProportion of connections by their gender (based on your connections’ first name)\r\n\r\n\r\nYour browser does not support the video tag.\r\n\r\n\r\n\r\nUnfortunately, since there is no information about your connections’ connections in the data, the app cannot perform more advanced SNA-type of analyses on it. Still, I think you may find some of the statistics useful, or at least interesting and entertaining.\r\nYou can take it as a kind of Christmas gift for my fellow LinkedIn users. Enjoy exploring your connections! And if you’d like to explore and better manage also your company’s internal collaboration networks, then check out what we do at Time is Ltd.\r\nP.S. The data you upload is not permanently stored anywhere. The app runs on the shinyapps.io server. If you don’t want to upload your own data, but would still like to see what the analysis output looks like, you can download and then upload ready-made sample data from the app.\r\nP.P.S. Big thanks to Sebastian Vorac for bringing me to this idea and for UX review. Any remaining errors are, of course, mine alone.\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-12-16-linkedin-connections-analysis/./linkedinLogo.png",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:58:02+01:00",
+    "input_file": "linkedin-connections-analysis.knit.md",
     "preview_width": 3753,
     "preview_height": 2352
   },
@@ -5104,14 +5164,15 @@
     ],
     "date": "2021-12-12",
     "categories": [
+      "web apps",
       "employee turnover",
       "meta-analysis",
       "shiny app"
     ],
     "contents": "\r\nAlthough the ‘Great Resignation’ in some parts of the world may be due in no small part to factors specific to the COVID-19 pandemic, it is still useful in this context to draw on the extensive research on employee turnover carried out in the run-up to the pandemic.\r\nA useful overview of such findings is provided, for example, by a 2017 meta-analysis by Rubenstein et al. that summarizes the significance of 57 predictors of voluntary turnover from 9 different domains based on 316 studies from 1975 to 2016 involving more than 300,000 people.\r\nTo make it easier to assimilate these findings, I extracted them from the original article and visualized them in a simple shiny app that helps one to quickly explore and grasp the estimated magnitude, direction, and reliability of the effect of each factor, along with information on the degree of their actionability. The last feature is based purely on my own judgement, so please take it with a grain of salt, or adjust it in your mind using your own judgement. Try it out and let me know if you find it useful.\r\n➡️ https://peopleanalyticsblog.shinyapps.io/voluntary_turnover_predictors/\r\n\r\nAnd here is the original research paper on which the shiny app is based.\r\n\r\n\r\nThis browser does not support PDFs. Please download the PDF to view it: Download PDF.\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-12-12-overview-of-predictors-of-voluntary-employee-turnover/./great_resignation.png",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:58:08+01:00",
+    "input_file": "overview-of-predictors-of-voluntary-employee-turnover.knit.md",
     "preview_width": 2700,
     "preview_height": 1800
   },
@@ -5176,14 +5237,15 @@
     ],
     "date": "2018-10-14",
     "categories": [
+      "web apps",
       "employee turnover",
       "evidence-based management",
       "shiny app"
     ],
     "contents": "\r\n\r\nContents\r\nCo je to HR analytika?\r\nOdchodovost zaměstnanců a její prediktory\r\nNa důkazech založená pro-retenční opatření\r\n\r\nCo je to HR analytika?\r\nHR analytika ve své podstatě vychází ze známé zásady managementu, že co nelze měřit, nelze ani (efektivně) řídit a zlepšovat, a aplikuje tuto zásadu na lidské zdroje. V několika posledních letech potom k tomu navíc přidává nadstavbu v podobě pokročilejších analytických postupů, které mají větší potenciál přijít s hlubšími vhledy a s doporučeními s větším efektem. Ale ať už využíváte pouze základní reporting nebo nějakou pokročilejší analytiku, cíl je vždy stejný – snažit se s pomocí dat a jejich analýzy žádoucím způsobem ovlivnit jednotlivé HR procesy, které organizacím pomáhají dosahovat jejich strategických cílů. Názorně to ilustruje níže uvedené schéma zachycující mechanismus propojující HR procesy s (nejen) finančními výsledky organizace (Paauwe & Richardson, 1997).\r\n\r\nHR analytika pomáhá optimalizovat nastavení tohoto mechanismu tím, že umožňuje nalézat odpovědi na některé klíčové otázky, jako např.:\r\nKterými kanály se k nám dostávají ti nejlepší kandidáti?\r\nJaké charakteristiky od sebe odlišují úspěšné a neúspěšné kandidáty?\r\nKteré faktory přispívají k úspěšnému onboardingu?\r\nKterá „kápéíčka“ mají nejsilnější vazbu na finanční výsledky firmy?\r\nJaké tréninky vedou s nejvyšší pravděpodobností ke zlepšení pracovního výkonu?\r\nKteré intervence mají největší dopad na zaměstnanci pociťovaný well-being nebo work-life balance?\r\nCo u zaměstnanců zvyšuje, nebo naopak snižuje míru jejich angažovanosti?\r\nKde se v organizaci nachází izolovaná sila a úzká hrdla znemožňující efektivní komunikaci a spolupráci mezi jednotlivými zaměstnanci, týmy nebo i celými odděleními?\r\nKdo představuje skrytý talent, který je potřeba podchytit a dále rozvíjet?\r\nKde lze očekávat odpor v souvislosti s plánovanými změnami ve firmě a kdo naopak může být jejich ambasadorem a katalyzátorem?\r\nKteré faktory přispívají k odchodovosti zaměstnanců a u kterých konkrétních zaměstnanců je zvýšené riziko, že firmu během několika příštích měsíců opustí?\r\nOdchodovost zaměstnanců a její prediktory\r\nPrávě posledně jmenovaný způsob využití HR analytiky často představuje jeden z prvních druhů HR analytických projektů, kterými se ve firmách s HR analytikou začíná, a to z dobře pochopitelného důvodu. S nežádoucími odchody zaměstnanců jsou totiž spojené vysoké přímé i nepřímé náklady, takže i poměrně mírné snížení odchodovosti zaměstnanců může představovat značnou úsporu, kterou ocení management každé firmy. Naléhavost tohoto problému navíc ještě zvyšuje současná fáze ekonomického cyklu s rekordně nízkou mírou nezaměstnanosti, která v kombinaci s různými on-line platformami na zprostředkování práce motivuje mnoho lidí k hledání nového místa, kde, jak doufají, bude práce zajímavější, smysluplnější a lépe placená a kde kolegové budou sympatičtější a šéfové inspirativnější. Viz také graf níže, který na datech z USA názorně dokládá těsnost vztahu mezi mírou nezaměstnanosti a mírou dobrovolné odchodovosti zaměstnanců (r = -0,95, p < 0,001 ).\r\n\r\n\r\n\r\nVzhledem k palčivosti tohoto problému, který trápí nejednu firmu, není žádným velkým překvapením, že se tématu odchodovosti zaměstnanců věnovalo a stále věnuje velké množství různých studií. Takto např. na konci roku 2017 vyšla rozsáhlá meta-analýza od autorů Rubensteina, Eberlyové a Leeho, kteří syntetizovali výsledky více než 300 dílčích výzkumů týkajících se prediktorů odchodovosti. Můžeme se tak oprávněně ptát, co nového nám může přinést HR analytika zaměřená na odchodovost zaměstnanců realizovaná pouze v jediné organizaci. Nebylo vše podstatné k tomuto tématu již objeveno? (K této otázce viz např. tento inspirativní a trochu provokativní článek od Thomase Rasmussena.) Je pravda, že není příliš pravděpodobné, že při analýze vašich vlastních dat narazíte na nějaký naprosto nový faktor související s odchodovostí. Na druhou stranu je rovněž pravda, že každá organizace je v něčem jedinečná, takže některé z retenčních faktorů pro danou organizaci budou pravděpodobně více a jiné méně důležité. Tato informace o relativní důležitosti jednotlivých retenčních faktorů je potom klíčová při nastavování retenčního plánu a HR analytika může být při tomto velice nápomocná.\r\nNa důkazech založená pro-retenční opatření\r\nS pomocí tohoto dashboardu - vytvořeného prostřednictvím analytického nástroje R a vizualizačního nástroje Shiny a za využití ukázkových dat od společnosti IBM - si můžete sami vyzkoušet, jak užitečné by pro Vás mohly být výstupy z takového HR analytického projektu zaměřeného na odchodovost zaměstnanců. Dashboard obsahuje informace, které pomáhají (nejen) managementu zodpovědět řadu klíčových otázek, které stojí na počátku každého účinného plánu na retenci zaměstnanců, jako např.:\r\nKolik zaměstnanců nás ročně opouští?\r\nKteré skupiny zaměstnanců odcházejí nejčastěji?\r\nJaký je externí benchmark? Jsme na tom podobě jako konkurence v oboru?\r\nPředstavuje pro nás stávající úroveň odchodovosti závažný problém, a vyplatí se nám ho tedy řešit?\r\nZ jakých důvodů lidé obecně nejčastěji odcházejí ze zaměstnání?\r\nJaké faktory přispívají k odchodu specificky našich zaměstnanců?\r\nJaká pro-retenční opatření jsou obecně k dispozici?\r\nJaká pro-retenční opatření bychom měli zvolit vzhledem k pravděpodobným důvodům odchodů našich zaměstnanců?\r\nNa jaké skupiny zaměstnanců se především zaměřit z hlediska prevence jejich odchodovosti?\r\nU kterých konkrétních zaměstnanců existuje zvýšené riziko, že odejdou, a na jaké konkrétní retenční faktory se u nich zaměřit v rámci pravidelného stay interview?\r\nJak je z výše uvedeného výčtu otázek patrné, dashboard obsahuje informace, které při svém rozhodování mohou využít nejen HR manažeři, ale také HR business partneři nebo přímo team-leadeři a linioví manažeři jednotlivých týmů či oddělení. Kromě toho dashboard obsahuje také řadu technických detailů o použitém predikčním modelu a samotná data, které stojí v pozadí všech prezentovaných vizualizací a analýz. S jejich pomocí tak HR/Business analytik může např. hledat optimální způsob, jak nastavit skórovací algoritmus, aby se maximalizoval pozitivní efekt pro-retenčních opatření, nebo může v dostupných datech sám hledat nějaké další užitečné informace. Více viz již samotný dashboard, z něhož můžete níže vidět několik screenshotů.\r\nScreenshot části dashboardu, která obsahuje různé řezy odchodovostí zaměstnanců, a dává tak dobrý přehled o tom, které skupiny zaměstnanců jsou odchodovostí nejvíce ohrožené.\r\nScreenshot části dashboardu, která obsahuje informace o pravděpodobnosti odchodu jednotlivých zaměstnanců společně s dalšími informacemi, které mohou posloužit jako podklad pro individuální intervence s cílem předejít nežádoucím odchodům zaměstnanců.\r\n\r\nScreenshot části dashboardu, která obsahuje informace o výkonu/kvalitě statistického modelu použitého k identifikaci významných prediktorů odchodovosti zaměstnanců a k odhadu pravděpodobnosti odchodu jednotlivých zaměstnanců.\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2018-10-14-hr-analytika-a-odchodovost-zamstnanc/./Types-of-Employee-Attrition.png",
-    "last_modified": "2026-07-06T21:43:47+02:00",
-    "input_file": {},
+    "last_modified": "2026-10-27T12:59:58+01:00",
+    "input_file": "hr-analytika-a-odchodovost-zamstnanc.knit.md",
     "preview_width": 860,
     "preview_height": 396
   },

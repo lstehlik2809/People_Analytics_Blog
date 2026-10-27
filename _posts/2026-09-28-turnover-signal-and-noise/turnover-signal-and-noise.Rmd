@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-09-28
 categories:
+  - web apps
   - employee turnover
   - hr metrics
   - statistics

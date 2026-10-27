@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 12-15-2022
 categories:
+  - web apps
   - evidence-based management
   - hr management
   - people management

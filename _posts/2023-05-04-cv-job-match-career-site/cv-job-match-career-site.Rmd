@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 05-04-2023
 categories:
+  - web apps
   - recruitment
   - generative ai
   - embeddings

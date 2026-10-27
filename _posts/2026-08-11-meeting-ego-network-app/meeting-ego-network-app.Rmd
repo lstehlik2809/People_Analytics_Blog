@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-08-11
 categories:
+  - web apps
   - network analysis
   - collaboration
   - meetings

@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2023-07-11
 categories:
+  - web apps
   - people analytics
   - embeddings
   - learning and development

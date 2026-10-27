@@ -8,6 +8,7 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 2026-10-26
 categories:
+  - web apps
   - leadership
   - human-ai interaction
   - generative ai
