@@ -1,5 +1,35 @@
 [
   {
+    "path": "posts/2026-10-29-ai-and-collaboration-networks/",
+    "title": "What happens to collaboration when AI joins the team?",
+    "description": "Giving people an AI assistant might leave them talking to more colleagues 🤔",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-10-30",
+    "categories": [
+      "ai",
+      "generative ai",
+      "collaboration",
+      "meetings",
+      "network analysis",
+      "human-ai interaction",
+      "people analytics",
+      "impact evaluation",
+      "causal inference",
+      "difference-in-differences"
+    ],
+    "contents": "\r\nA new preprint by Giuseppe Soda, Alessandro Iorio and Leonardo Rizzo followed 12,040 employees in one business unit of a multinational company over 13 months of a Microsoft Copilot rollout.\r\nThey compared changes among sustained adopters with changes among non-adopters using a staggered difference-in-differences design.\r\nIn the first three months, adopters:\r\ninitiated more collaboration, with most of the extra time in meetings and calls;\r\nreached roughly three additional colleagues per month, on average;\r\nhad less tightly clustered networks;\r\nput relatively more weight on relationships with a stronger history of collaboration.\r\nFigure 4 from Soda, Iorio & Rizzo (2026), p. 28. Cropped from the original PDF; the chart itself is unchanged. Blue circles show pre-adoption estimates and red squares show post-adoption estimates. Shaded bars are 95% confidence intervals. The dashed vertical line marks adoption. Each panel has its own vertical scale. Early post-adoption estimates indicate more distinct collaborators, less clustering among their contacts, and stronger alignment between current and historical collaboration weights. The collaborator-count estimate is close to zero and imprecise in month +2.I find that combination interesting: reaching more widely while also leaning more on familiar colleagues.\r\nThe authors’ explanation is quite relatable. AI gives you a polished answer, and then you ask someone you trust: “Does this actually make sense?”\r\nThat could be part of it. But the logs only show who interacted and for how long. People could also be discussing Copilot itself, coordinating more work, or using time saved on drafting to talk to others. A familiar colleague’s approval could also help a questionable answer travel further.\r\nA few reasons to keep the claims modest:\r\nAdoption timing was still a behavioral choice. A new project could increase both AI use and collaboration, even with similar trends beforehand.\r\nThis is one business unit, with the main results covering the first three months. Some overall estimates, including extra self-initiated collaboration time, were less conclusive.\r\nMore interaction tells us little on its own about whether the work improved.\r\nFor those of us evaluating AI rollouts, this makes a case for looking at collaboration networks alongside individual output. Time saved by one person may come with extra demands on colleagues, and those demands could be useful or costly.\r\nHas anyone checked what happened to their collaboration networks after an AI rollout? I’d be curious whether people are finding useful expertise more easily, or just generating more work for each other 😉\r\n\r\n\r\n",
+    "preview": "posts/2026-10-29-ai-and-collaboration-networks/./Copilot-and-collaboration-networks-Figure-4.png",
+    "last_modified": "2026-10-29T13:02:10+01:00",
+    "input_file": "ai-and-collaboration-networks.knit.md",
+    "preview_width": 1872,
+    "preview_height": 808
+  },
+  {
     "path": "posts/2026-10-27-bayes-in-your-browser/",
     "title": "Bayes in your browser",
     "description": "Running Bayesian models for people analytics without a model-fitting server.",

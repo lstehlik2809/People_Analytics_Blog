@@ -7,7 +7,26 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What happens to collaboration when AI joins the team?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks</link>
+      <description>Giving people an AI assistant might leave them talking to more colleagues 🤔</description>
+      <category>ai</category>
+      <category>generative ai</category>
+      <category>collaboration</category>
+      <category>meetings</category>
+      <category>network analysis</category>
+      <category>human-ai interaction</category>
+      <category>people analytics</category>
+      <category>impact evaluation</category>
+      <category>causal inference</category>
+      <category>difference-in-differences</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks/./Copilot-and-collaboration-networks-Figure-4.png" medium="image" type="image/png" width="1872" height="808"/>
+    </item>
     <item>
       <title>Bayes in your browser</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +38,7 @@
       <category>multilevel modeling</category>
       <category>web apps</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser/./title_page.png" medium="image" type="image/png" width="1143" height="854"/>
     </item>
     <item>
