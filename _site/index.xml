@@ -7,7 +7,23 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What if your bonus depended on being the office go-to person?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-02-pay-for-prominence</link>
+      <description>A closer look at pay-for-prominence incentives, wider advice networks, and an unexpected link to employee turnover.</description>
+      <category>network analysis</category>
+      <category>performance management</category>
+      <category>collaboration</category>
+      <category>employee turnover</category>
+      <category>causal inference</category>
+      <category>evidence-based management</category>
+      <category>incentives</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-02-pay-for-prominence</guid>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-02-pay-for-prominence/./table-2-advice-seeking-highlighted.png" medium="image" type="image/png" width="1800" height="1142"/>
+    </item>
     <item>
       <title>What happens to collaboration when AI joins the team?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -24,7 +40,7 @@
       <category>causal inference</category>
       <category>difference-in-differences</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks/./Copilot-and-collaboration-networks-Figure-4.png" medium="image" type="image/png" width="1872" height="808"/>
     </item>
     <item>
@@ -1655,8 +1671,9 @@
       <category>motivation</category>
       <category>meta-analysis</category>
       <category>performance management</category>
+      <category>incentives</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-07-01-job-insecurity-and-behavioral-outcomes</guid>
-      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-07-01-job-insecurity-and-behavioral-outcomes/./job_insecurity_plot.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
