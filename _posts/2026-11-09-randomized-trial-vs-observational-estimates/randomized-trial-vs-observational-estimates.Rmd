@@ -1,5 +1,5 @@
 ---
-title: "Can observational estimates get close to randomized trial results? "
+title: "Can observational estimates get close to randomized trial results?"
 description: |
   What 37 job-training RCTs say about observational estimates in the age of big data.
 preview: ./Chetty_et_al_2026_Figure_2.png
