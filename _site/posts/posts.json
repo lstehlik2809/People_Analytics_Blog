@@ -1,5 +1,33 @@
 [
   {
+    "path": "posts/2026-11-09-randomized-trial-vs-observational-estimates/",
+    "title": "Can observational estimates get close to randomized trial results? ",
+    "description": "What 37 job-training RCTs say about observational estimates in the age of big data.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-11-09",
+    "categories": [
+      "causal inference",
+      "impact evaluation",
+      "double machine learning",
+      "experiments",
+      "machine learning",
+      "learning and development",
+      "labor economics",
+      "people analytics"
+    ],
+    "contents": "\r\nFor job-training evaluations, the answer since LaLonde (1986) has mostly been “not really”. A new preprint by Raj Chetty and colleagues revisits this with U.S. tax records covering all adults and 37 randomized trials of 24 job-training and employment programs.\r\nThe bit I liked: for each trial, they kept the treatment group and swapped the randomized control group for a machine-learning prediction of what the same people would have earned without the program (the authors call it a “digital twin”). Then they compared the two estimates of the effect on earnings in years 2–5.\r\nFor the causal inference crowd: it’s cross-fitted DML (gradient-boosted trees + propensity score) on five years of earnings and employment history, industry, demographics and neighborhood data. Interestingly, the propensity model barely mattered. The gains came from long work histories and flexible models fitted on a huge comparison pool. Restricted to LaLonde’s covariates, or fitted on RCT-sized samples, the same trees did much worse.\r\nWhat they found:\r\nThe two sets of estimates line up well (r = .93, with the two ~$25K programs doing some of the lifting). Year Up United’s nine-site 2013–14 trial: ~$9,600 a year vs. ~$10,100 from the model.\r\nRather than assuming no unmeasured confounding, they used the trials to estimate how big the bias typically is: root mean squared bias ≈ $1,700, about 60% less than the LaLonde and Dehejia–Wahba specifications.\r\nAdd sampling noise and the model’s RMSE is $2,257 with the same number of trainees, or $2,073 with the larger cohorts available outside trials, vs. $2,126 for the trials themselves.\r\nWithin Year Up, effects varied by site and year and were larger where more trainees landed jobs in their target field.\r\nEach dot is one randomized trial. Both axes show the estimated effect of training on average annual earnings in years 2–5. The diagonal marks exact agreement, and vertical bars show 95% confidence intervals for the trial estimates. Figure 2 from Chetty et al. (2026).⚠️ A few wrinkles, though:\r\nThat’s a margin of error of roughly ±$4,000 a year. Fine for spotting big differences between programs, IMO not for judging a $500 gain.\r\nFor new settings, they assume bias looks like it did in the trials. Drop the welfare-to-work and subsidized-jobs trials and estimated bias falls to ~$0, so who enrolls and how seems to matter. In internal programs, managers often nominate people based on things HR records miss.\r\nStrong local hiring demand could raise both placement rates and gains (the authors flag this too).\r\nMost HR datasets are tiny next to national tax records, and scale did a lot of the work here.\r\nFor people analytics, I’d try this on an oversubscribed reskilling program: allocate places by lottery and check how well our HR records recover the result before trusting the method elsewhere.\r\nHas anyone benchmarked their observational estimates against an internal experiment? Curious how far off they were 🧐\r\n\r\n\r\n",
+    "preview": "posts/2026-11-09-randomized-trial-vs-observational-estimates/./Chetty_et_al_2026_Figure_2.png",
+    "last_modified": "2026-11-09T12:13:23+01:00",
+    "input_file": "randomized-trial-vs-observational-estimates.knit.md",
+    "preview_width": 1656,
+    "preview_height": 1320
+  },
+  {
     "path": "posts/2026-11-03-probability-words-humans-vs-ai/",
     "title": "Probability words: humans vs. AI",
     "description": "Comparing how people and three LLMs translate probability words into numbers.",

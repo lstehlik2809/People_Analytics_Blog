@@ -1,5 +1,10 @@
 {
   "sandbox": {
-    "enabled": false
+    "enabled": true
+  },
+  "permission": {
+    "executeCode": {
+      "*": "allow"
+    }
   }
 }
