@@ -7,7 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Reading personality from a face, now in your browser</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app</link>
+      <description>Please still don't take it seriously 😉</description>
+      <category>personality</category>
+      <category>big five</category>
+      <category>web apps</category>
+      <category>machine learning</category>
+      <category>embeddings</category>
+      <category>generative ai</category>
+      <category>fun with data</category>
+      <category>agentic ai</category>
+      <category>validity</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app/./personality_in_face_app.png" medium="image" type="image/png" width="666" height="870"/>
+    </item>
     <item>
       <title>Can observational estimates get close to randomized trial results?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -22,7 +40,7 @@
       <category>labor economics</category>
       <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates</guid>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates/./Chetty_et_al_2026_Figure_2.png" medium="image" type="image/png" width="1656" height="1320"/>
     </item>
     <item>
@@ -398,7 +416,7 @@
       <category>open science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</guid>
       <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="image/avif"/>
     </item>
     <item>
       <title>My second People Analytics brain - both for people and AI agents</title>
@@ -1360,7 +1378,7 @@
       <category>hr metrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1818,7 +1836,7 @@
       <category>critical thinking</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -2388,7 +2406,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
