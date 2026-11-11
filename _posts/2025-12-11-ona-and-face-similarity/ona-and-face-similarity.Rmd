@@ -12,6 +12,7 @@ categories:
   - network analysis
   - ai
   - fun with data
+  - computer vision
 output:
   distill::distill_article:
     self_contained: false

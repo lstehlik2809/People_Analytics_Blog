@@ -20,8 +20,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -113,7 +114,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Can a simple algorithm read your personality from your face?"]},{"type":"character","attributes":{},"value":["A post describing a small experiment on ML-based recognition of personality traits from facial photographs, inspired by an older research paper that explored the use of composite images to assess the accuracy of personality attributions to faces.    \n"]},{"type":"character","attributes":{},"value":["./schema.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-20-2025"]},{"type":"character","attributes":{},"value":["personality","big five","machine learning","python","r"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","categories","output"]}},"value":[{"type":"character","attributes":{},"value":["Can a simple algorithm read your personality from your face?"]},{"type":"character","attributes":{},"value":["A post describing a small experiment on ML-based recognition of personality traits from facial photographs, inspired by an older research paper that explored the use of composite images to assess the accuracy of personality attributions to faces.    \n"]},{"type":"character","attributes":{},"value":["./schema.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Luděk Stehlík"]},{"type":"character","attributes":{},"value":["https://www.linkedin.com/in/ludekstehlik/"]}]}]},{"type":"character","attributes":{},"value":["05-20-2025"]},{"type":"character","attributes":{},"value":["personality","big five","machine learning","python","r","computer vision"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","toc_float","code_folding"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1500,7 +1501,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="detecting-personality-in-the-face_files/header-attrs-2.25/header-attrs.js"></script>
+  <script src="detecting-personality-in-the-face_files/header-attrs-2.30/header-attrs.js"></script>
   <script src="detecting-personality-in-the-face_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="detecting-personality-in-the-face_files/popper-2.6.0/popper.min.js"></script>
   <link href="detecting-personality-in-the-face_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1540,6 +1541,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">machine learning</div>
 <div class="dt-tag">python</div>
 <div class="dt-tag">r</div>
+<div class="dt-tag">computer vision</div>
 </div>
 <!--/radix_placeholder_categories-->
 <p><p>A post describing a small experiment on ML-based recognition of personality traits from facial photographs, inspired by an older research paper that explored the use of composite images to assess the accuracy of personality attributions to faces.</p></p>
@@ -1590,16 +1592,16 @@ Show code
 <span><span class='va'>run_binomial_model</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>df</span>, <span class='va'>successes</span>, <span class='va'>trials</span><span class='op'>)</span> <span class='op'>{</span></span>
 <span>  </span>
 <span>  <span class='co'># constructing the formula dynamically</span></span>
-<span>  <span class='va'>formula</span> <span class='op'>&lt;-</span> <span class='fu'>brms</span><span class='fu'>::</span><span class='fu'><a href='https://paul-buerkner.github.io/brms/reference/brmsformula.html'>bf</a></span><span class='op'>(</span></span>
+<span>  <span class='va'>formula</span> <span class='op'>&lt;-</span> <span class='fu'>brms</span><span class='fu'>::</span><span class='fu'><a href='https://paulbuerkner.com/brms/reference/brmsformula.html'>bf</a></span><span class='op'>(</span></span>
 <span>    <span class='fu'><a href='https://rdrr.io/r/stats/formula.html'>as.formula</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>successes</span>, <span class='st'>" | trials("</span>, <span class='va'>trials</span>, <span class='st'>") ~ 1 + (1 | respondent_id)"</span><span class='op'>)</span><span class='op'>)</span></span>
 <span>    <span class='op'>)</span></span>
 <span>  </span>
 <span>  <span class='co'># fitting the model</span></span>
-<span>  <span class='va'>binomial_model</span> <span class='op'>&lt;-</span> <span class='fu'>brms</span><span class='fu'>::</span><span class='fu'><a href='https://paul-buerkner.github.io/brms/reference/brm.html'>brm</a></span><span class='op'>(</span></span>
+<span>  <span class='va'>binomial_model</span> <span class='op'>&lt;-</span> <span class='fu'>brms</span><span class='fu'>::</span><span class='fu'><a href='https://paulbuerkner.com/brms/reference/brm.html'>brm</a></span><span class='op'>(</span></span>
 <span>    formula <span class='op'>=</span> <span class='va'>formula</span>,</span>
 <span>    data <span class='op'>=</span> <span class='va'>df</span>,</span>
 <span>    family <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/stats/family.html'>binomial</a></span><span class='op'>(</span>link <span class='op'>=</span> <span class='st'>"logit"</span><span class='op'>)</span>,</span>
-<span>    prior <span class='op'>=</span> <span class='fu'><a href='https://paul-buerkner.github.io/brms/reference/set_prior.html'>prior</a></span><span class='op'>(</span><span class='fu'>normal</span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>5</span><span class='op'>)</span>, class <span class='op'>=</span> <span class='st'>"Intercept"</span><span class='op'>)</span>,</span>
+<span>    prior <span class='op'>=</span> <span class='fu'><a href='https://paulbuerkner.com/brms/reference/set_prior.html'>prior</a></span><span class='op'>(</span><span class='fu'>normal</span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>5</span><span class='op'>)</span>, class <span class='op'>=</span> <span class='st'>"Intercept"</span><span class='op'>)</span>,</span>
 <span>    chains <span class='op'>=</span> <span class='fl'>4</span>,</span>
 <span>    iter <span class='op'>=</span> <span class='fl'>2000</span>,</span>
 <span>    warmup <span class='op'>=</span> <span class='fl'>1000</span>,</span>
@@ -1715,7 +1717,7 @@ Show code
 <span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>caption <span class='op'>=</span> <span class='st'>"The output from a Bayesian hierarchical binomial regression model.\nThe horizontal lines represent the 50%, 80%, and 95% credible intervals, respectively.\nThe vertical lines represent the success rate corresponding to random guessing."</span><span class='op'>)</span></span></code></pre>
 </div>
 </details>
-<p><img src="detecting-personality-in-the-face_files/figure-html5/unnamed-chunk-1-1.png" width="1056" /></p>
+<p><img src="detecting-personality-in-the-face_files/figure-html5/unnamed-chunk-1-1.png" alt="" width="1056" /></p>
 </div>
 <p>That inspired me to put together a simple Python script that compares someone’s facial photo to the “prototypical” high/low trait faces, and then makes a guess about that person’s trait level—all powered by the <a href="https://huggingface.co/py-feat/facenet" target="_blank">FaceNet-512d</a> deep convolutional neural network (via the <a href="https://github.com/serengil/deepface" target="_blank">deepface</a> package), which generates 512-dimensional embeddings of facial images, capturing the unique features of a face, and facilitating tasks like face recognition, verification, and clustering.</p>
 <div style="text-align:center">

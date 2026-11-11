@@ -17,6 +17,7 @@ categories:
   - fun with data
   - agentic ai
   - validity
+  - computer vision
 output:
   distill::distill_article:
     toc: true

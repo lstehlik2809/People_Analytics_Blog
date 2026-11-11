@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>What does my face do in meetings?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader</link>
+      <description>A week of tracking my facial expressions with a webcam.</description>
+      <category>web apps</category>
+      <category>meetings</category>
+      <category>fun with data</category>
+      <category>validity</category>
+      <category>computer vision</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader/./face_reader_pic.png" medium="image" type="image/png" width="818" height="540"/>
+    </item>
     <item>
       <title>Reading personality from a face, now in your browser</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -22,8 +36,9 @@
       <category>fun with data</category>
       <category>agentic ai</category>
       <category>validity</category>
+      <category>computer vision</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-10-detecting-personality-in-the-face-app/./personality_in_face_app.png" medium="image" type="image/png" width="666" height="870"/>
     </item>
     <item>
@@ -844,6 +859,7 @@
       <category>network analysis</category>
       <category>ai</category>
       <category>fun with data</category>
+      <category>computer vision</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-11-ona-and-face-similarity</guid>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-11-ona-and-face-similarity/./group_photos_network.png" medium="image" type="image/png" width="3644" height="3396"/>
@@ -1239,8 +1255,9 @@
       <category>machine learning</category>
       <category>python</category>
       <category>r</category>
+      <category>computer vision</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face</guid>
-      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-05-20-detecting-personality-in-the-face/./schema.png" medium="image" type="image/png" width="1127" height="648"/>
     </item>
     <item>
