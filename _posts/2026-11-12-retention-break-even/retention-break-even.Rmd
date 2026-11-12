@@ -6,7 +6,8 @@ preview: ./shotspotter-figure-3.png
 author:
   - name: Luděk Stehlík
     url: https://www.linkedin.com/in/ludekstehlik/
-date: 2026-11-14
+date: 2026-11-13
+use_frontmatter_date: true
 categories:
   - bayesian statistics
   - causal inference
