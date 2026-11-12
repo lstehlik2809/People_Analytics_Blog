@@ -1,0 +1,136 @@
+---
+title: "People Analytics News"
+description: "Recent research and writing with practical implications for people analytics."
+output:
+  distill::distill_article:
+    includes:
+      in_header: _news-rss.html
+---
+
+<style>
+  .news-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.3rem;
+    margin: 0 0 1.8rem;
+    font-size: 0.95rem;
+  }
+  .news-day {
+    margin-bottom: 2.6rem;
+  }
+  .news-day > h2 {
+    margin: 0 0 0.55rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #cfd9dc;
+    font-size: 1.35rem;
+  }
+  .news-entry {
+    padding: 0.85rem 0 1rem;
+  }
+  .news-entry + .news-entry {
+    border-top: 1px solid #e5ebed;
+  }
+  .news-entry > h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .news-entry > h3 a {
+    border-bottom-color: currentColor;
+  }
+  .news-entry > p {
+    margin: 0.35rem 0 0;
+  }
+  .news-entry > .news-source {
+    font-size: 0.85rem;
+    color: #4c6067;
+  }
+</style>
+
+**Entirely AI-generated.** AI finds and selects the items, writes the summaries, and interprets what each might mean for people analytics practice. Check the original sources and verify the claims before using them in your work.
+
+```{=html}
+<div class="news-tools">
+  <a href="news-assets/news.xml">Subscribe via RSS</a>
+  <a href="news-assets/news-digest.md" download>Download the last 30 days as Markdown</a>
+</div>
+```
+
+<div id="news-status" role="status">Loading the latest news…</div>
+<div id="news-days"></div>
+
+<noscript><p>Enable JavaScript to see the news here, or open the RSS feed or Markdown digest above.</p></noscript>
+
+<script>
+(() => {
+  const status = document.getElementById('news-status');
+  const days = document.getElementById('news-days');
+  const dateFormatter = new Intl.DateTimeFormat('en', {
+    year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'
+  });
+
+  function timeLabel(date) {
+    const time = document.createElement('time');
+    time.dateTime = date;
+    time.textContent = dateFormatter.format(new Date(`${date}T12:00:00Z`));
+    return time;
+  }
+
+  function buildEntry(entry) {
+    const url = new URL(entry.url);
+    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) {
+      throw new Error('Invalid source URL');
+    }
+
+    const article = document.createElement('article');
+    article.className = 'news-entry';
+    const heading = document.createElement('h3');
+    const link = document.createElement('a');
+    link.href = url.href;
+    link.textContent = entry.title;
+    heading.append(link);
+
+    const source = document.createElement('p');
+    source.className = 'news-source';
+    source.append(`${entry.source} · ${entry.source_type} · `, timeLabel(entry.published_date));
+
+    const summary = document.createElement('p');
+    summary.textContent = entry.summary;
+    const practice = document.createElement('p');
+    const label = document.createElement('strong');
+    label.textContent = 'Why it matters for practice';
+    practice.append(label, ` — ${entry.why_it_matters}`);
+
+    article.append(heading, source, summary, practice);
+    return article;
+  }
+
+  fetch('news-assets/news-data.json', { cache: 'no-cache' })
+    .then(response => {
+      if (!response.ok) throw new Error('News data unavailable');
+      return response.json();
+    })
+    .then(data => {
+      if (data.days.length === 0) {
+        status.textContent = 'There are no news items in the last 30 days.';
+        return;
+      }
+
+      const sections = document.createDocumentFragment();
+      for (const day of data.days) {
+        const section = document.createElement('section');
+        section.className = 'news-day';
+        const heading = document.createElement('h2');
+        heading.append(timeLabel(day.date));
+        section.append(heading);
+        for (const entry of day.entries) section.append(buildEntry(entry));
+        sections.append(section);
+      }
+      days.append(sections);
+      status.hidden = true;
+    })
+    .catch(() => {
+      status.textContent = 'The news could not be loaded. Try refreshing the page or using the RSS feed or Markdown digest.';
+    });
+})();
+</script>

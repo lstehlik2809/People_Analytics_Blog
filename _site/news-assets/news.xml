@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>People Analytics News</title>
+    <link>https://blog-about-people-analytics.netlify.app/news.html</link>
+    <description>Recent research and writing with practical implications for people analytics.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uncovering the Mechanisms of Policy Interventions: A Difference-In-Differences Framework for Mediation Analysis</title>
+      <link>https://onlinelibrary.wiley.com/doi/full/10.1111/1748-8583.70073</link>
+      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/full/10.1111/1748-8583.70073</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Human Resource Management Journal · Peer-reviewed research · 2026-11-06&lt;/p&gt;&lt;p&gt;The authors develop a difference-in-differences framework for studying how HR interventions affect outcomes through intermediate mechanisms. The method accommodates some unobserved confounding but requires assumptions about untreated trends and changes over time.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — People analytics teams evaluating a training rollout could use the framework to examine whether skill acquisition helps explain performance changes, while making the required causal assumptions explicit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Organizational Benefits of Neurodiversity: A Strategic Human Capital–Based Systematic Review and Research Agenda</title>
+      <link>https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70075</link>
+      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70075</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Human Resource Management Journal · Peer-reviewed research · 2026-11-01&lt;/p&gt;&lt;p&gt;A systematic review of 88 studies examines how HR research has approached the organizational benefits of neurodiversity. It finds that evidence on organization-level outcomes remains limited and uneven.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Teams evaluating neuroinclusive hiring or workplace adjustments can use the review to plan measures of implementation and outcomes without assuming that organizational benefits are already established.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Watched by the algorithm: algorithmic monitoring, worker resistance and well-being in the gig economy</title>
+      <link>https://www.emerald.com/ijm/article-abstract/doi/10.1108/IJM-04-2026-0468/1407490/Watched-by-the-algorithm-algorithmic-monitoring?redirectedFrom=fulltext</link>
+      <guid isPermaLink="true">https://www.emerald.com/ijm/article-abstract/doi/10.1108/IJM-04-2026-0468/1407490/Watched-by-the-algorithm-algorithmic-monitoring?redirectedFrom=fulltext</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;International Journal of Manpower · Peer-reviewed research · 2026-11-10&lt;/p&gt;&lt;p&gt;A three-wave survey of 224 gig workers in Pakistan linked perceived algorithmic monitoring with worker resistance, while an experiment with 115 participants examined monitoring and fairness together. Resistance patterns in the experiment did not always match the researchers’ predictions.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Organizations assessing worker-monitoring systems could measure perceived fairness and resistance alongside well-being rather than relying on productivity indicators alone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The fluid emergence of GenAI roles in temporary teams: How teams calibrate delegation under shifting situational demands</title>
+      <link>https://link.springer.com/article/10.1007/s12525-026-00942-8</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s12525-026-00942-8</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Electronic Markets · Peer-reviewed research · 2026-11-09&lt;/p&gt;&lt;p&gt;Interviews with 28 teams during a 48-hour innovation sprint identified different roles that generative AI assumed as teams moved between tasks. Each role presented distinct opportunities and risks, including trivial advice and excessive reliance.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Managers designing AI-assisted teamwork can specify which tasks may be delegated, what output is expected, and who reviews it at each stage of a project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The new meaning of office: how hybrid work changes formal organizational structure from a place perspective</title>
+      <link>https://link.springer.com/article/10.1007/s11846-026-01074-1</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s11846-026-01074-1</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Review of Managerial Science · Peer-reviewed research · 2026-11-05&lt;/p&gt;&lt;p&gt;Across 49 interviews in two international organizations, researchers observed changes in how HR positions were grouped and centralized alongside shifts toward hybrid work. Employees also described the office as a place for social connection.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When reviewing a hybrid-work policy, people teams could track changes in reporting lines and collaboration alongside office attendance, rather than treating attendance as a sufficient measure of organizational impact.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

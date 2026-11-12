@@ -4,6 +4,7 @@ description: |
   Exploring People Analytics topics 
 base_url: https://blog-about-people-analytics.netlify.app/
 output_dir: "_site"
+exclude: [news_archive, scripts]
 collections:
   posts:
     disqus: 
@@ -17,6 +18,8 @@ navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "News"
+      href: news.html
     - text: "About"
       href: about.html
     - text: "Bio"
