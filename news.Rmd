@@ -47,6 +47,8 @@ output:
   }
 </style>
 
+**Entirely AI-generated.** AI finds and selects the items, writes the summaries, and interprets what each might mean for people analytics practice. Check the original sources and verify the claims before using them in your work.
+
 ```{=html}
 <div class="news-tools">
   <a href="news-assets/news.xml">Subscribe via RSS</a>
