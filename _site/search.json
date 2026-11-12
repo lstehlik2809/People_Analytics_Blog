@@ -22,6 +22,14 @@
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
       "last_modified": "2026-09-07T21:20:06+02:00"
+    },
+    {
+      "path": "news.html",
+      "title": "People Analytics News",
+      "description": "Recent research and writing with practical implications for people analytics.",
+      "author": [],
+      "contents": "\r\n\r\n  Subscribe via RSS\r\n  Download the last 30 days as Markdown\r\n\r\n\r\nLoading the latest news…\r\n\r\n\r\n\r\n\r\n\r\n\r\nEnable JavaScript to see the news here, or open the RSS feed or Markdown digest above.\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-11-12T17:02:07+01:00"
     }
   ],
   "collections": ["posts/posts.json"]

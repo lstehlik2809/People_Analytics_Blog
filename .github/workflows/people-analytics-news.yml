@@ -1,0 +1,49 @@
+name: People Analytics News
+
+on:
+  schedule:
+    - cron: '17 7 * * *'
+      timezone: 'Europe/Prague'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: people-analytics-news
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Test the collector
+        run: python -B -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Collect and render news
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/collect_news.py
+
+      - name: Publish generated news files
+        run: |
+          git add -- news_archive \
+            news-assets/news-data.json news-assets/news.xml news-assets/news-digest.md \
+            _site/news-assets/news-data.json _site/news-assets/news.xml _site/news-assets/news-digest.md
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update People Analytics News'
+          git push origin "HEAD:$GITHUB_REF"
