@@ -2242,6 +2242,8 @@ Enable JavaScript to see the news here, or open the RSS feed or Markdown digest 
     const heading = document.createElement('h3');
     const link = document.createElement('a');
     link.href = url.href;
+    link.target = '_blank';
+    link.rel = 'noopener';
     link.textContent = entry.title;
     heading.append(link);
 
