@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT = Path(__file__).with_name("news_prompt.txt")
-MODEL = "gpt-5.4-mini"
+MODEL = "gpt-6.1-terra"
 TITLE = "People Analytics News"
 BASE_URL = "https://blog-about-people-analytics.netlify.app/"
 MAX_ENTRIES = 5
@@ -194,8 +194,8 @@ def request_payload(day, archive):
     ]
     return {
         "model": MODEL,
-        "reasoning": {"effort": "medium"},
-        "max_output_tokens": 9000,
+        "reasoning": {"effort": "high"},
+        "max_output_tokens": 25_000,
         "store": False,
         "instructions": PROMPT.read_text(encoding="utf-8"),
         "input": json.dumps({

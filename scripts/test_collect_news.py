@@ -47,8 +47,8 @@ def response(entries, *, sources=(), citations=()):
 class ResponseTests(unittest.TestCase):
     def test_request_uses_required_web_search_and_strict_output(self):
         payload = news.request_payload(TODAY, {})
-        self.assertEqual(payload["model"], "gpt-5.4-mini")
-        self.assertEqual(payload["reasoning"], {"effort": "medium"})
+        self.assertEqual(payload["model"], "gpt-6.1-terra")
+        self.assertEqual(payload["reasoning"], {"effort": "high"})
         self.assertEqual(payload["tools"], [{"type": "web_search"}])
         self.assertEqual(payload["tool_choice"], "required")
         self.assertEqual(payload["include"], ["web_search_call.action.sources"])

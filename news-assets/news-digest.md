@@ -4,42 +4,42 @@
 
 ## 2026-11-12
 
-### [Uncovering the Mechanisms of Policy Interventions: A Difference-In-Differences Framework for Mediation Analysis](<https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70073>)
+### [Uncovering the Mechanisms of Policy Interventions: A Difference-In-Differences Framework for Mediation Analysis](<https://onlinelibrary.wiley.com/doi/full/10.1111/1748-8583.70073>)
 
 Human Resource Management Journal · Peer-reviewed research · 2026-11-06
 
-The paper develops a two-period difference-in-differences mediation framework that relaxes the usual sequential ignorability requirement by relying on change-based assumptions. It also extends the approach to staggered adoption and provides an open-source R package.
+The authors develop a difference-in-differences framework for studying how HR interventions affect outcomes through intermediate mechanisms. The method accommodates some unobserved confounding but requires assumptions about untreated trends and changes over time.
 
-**Why it matters for practice** — This gives people analytics teams a clearer way to test whether interventions such as training, policy changes, or staffing changes work through a proposed mechanism when pre-existing differences may confound levels. It is especially useful for evaluation designs that have pre/post data but cannot defend a standard cross-sectional mediation model.
-
-### [A Psychometric Evaluation of Single-Item Measures](<https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70071>)
-
-Human Resource Management Journal · Peer-reviewed research · 2026-11-10
-
-The manuscript reviews when single-item measures can and cannot support claims about reliability and validity, using classical test theory, item response theory, and generalizability theory. It argues that single-item measures cannot demonstrate latent factor structure or internal consistency, but can still be appropriate for some kinds of reliability and validity evidence.
-
-**Why it matters for practice** — This can inform survey design when you need ultra-short measures for pulse checks, repeated surveys, or respondent-burden constraints. It also cautions analysts against treating a single item like a full multi-item scale when interpreting people data.
+**Why it matters for practice** — People analytics teams evaluating a training rollout could use the framework to examine whether skill acquisition helps explain performance changes, while making the required causal assumptions explicit.
 
 ### [The Organizational Benefits of Neurodiversity: A Strategic Human Capital–Based Systematic Review and Research Agenda](<https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70075>)
 
 Human Resource Management Journal · Peer-reviewed research · 2026-11-01
 
-The review synthesizes 88 studies on HRM and neurodiversity and finds that the literature is growing but organizational-level evidence is still limited and uneven. It proposes a research agenda focused on how neurodivergent human capital may create organizational value and through what processes.
+A systematic review of 88 studies examines how HR research has approached the organizational benefits of neurodiversity. It finds that evidence on organization-level outcomes remains limited and uneven.
 
-**Why it matters for practice** — This can guide inclusion, accommodation, and talent strategy decisions by separating ethical inclusion goals from measurable business outcomes. It also shows where evidence is thin, which helps when choosing evaluation metrics or building an internal case for neurodiversity initiatives.
+**Why it matters for practice** — Teams evaluating neuroinclusive hiring or workplace adjustments can use the review to plan measures of implementation and outcomes without assuming that organizational benefits are already established.
 
-### [Job Demands-Resources, Well-Being and Work-Life Boundaries: The Pervasiveness of Social Networking Platforms](<https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70074>)
+### [Watched by the algorithm: algorithmic monitoring, worker resistance and well-being in the gig economy](<https://www.emerald.com/ijm/article-abstract/doi/10.1108/IJM-04-2026-0468/1407490/Watched-by-the-algorithm-algorithmic-monitoring?redirectedFrom=fulltext>)
 
-Human Resource Management Journal · Peer-reviewed research · 2026-11-10
+International Journal of Manpower · Peer-reviewed research · 2026-11-10
 
-Based on qualitative interviews with 67 managers, the paper links work-oriented social networking to job demands, resources, boundary blurring, and well-being through an integrated job demands-resources and boundary-theory lens. It identifies professional-personal, accessibility-inaccessibility, and control-autonomy boundary tensions.
+A three-wave survey of 224 gig workers in Pakistan linked perceived algorithmic monitoring with worker resistance, while an experiment with 115 participants examined monitoring and fairness together. Resistance patterns in the experiment did not always match the researchers’ predictions.
 
-**Why it matters for practice** — This can inform policy choices about after-hours messaging, platform norms, and manager training on boundary management. It is useful for diagnosing why a collaboration tool may function as a resource in one context and a demand in another.
+**Why it matters for practice** — Organizations assessing worker-monitoring systems could measure perceived fairness and resistance alongside well-being rather than relying on productivity indicators alone.
 
-### [How Can Talent Managers Create Organizational Value Throughout the Hype Cycles of Emerging and Innovative Industries?](<https://onlinelibrary.wiley.com/doi/10.1111/1748-8583.70076>)
+### [The fluid emergence of GenAI roles in temporary teams: How teams calibrate delegation under shifting situational demands](<https://link.springer.com/article/10.1007/s12525-026-00942-8>)
 
-Human Resource Management Journal · Peer-reviewed research · 2026-11-10
+Electronic Markets · Peer-reviewed research · 2026-11-09
 
-Using interviews with 14 experienced executives plus industry and media evidence, the paper argues that talent management systems in emerging industries need to shift across hype-cycle phases rather than stay fixed. It frames value creation as contingent on changing legitimacy, regulation, expectations, and resource availability.
+Interviews with 28 teams during a 48-hour innovation sprint identified different roles that generative AI assumed as teams moved between tasks. Each role presented distinct opportunities and risks, including trivial advice and excessive reliance.
 
-**Why it matters for practice** — This can help HR and talent leaders in emerging sectors decide when to emphasize hiring, retention, capability building, or restructuring as industry conditions change. It is useful for scenario planning and for aligning talent architecture to market maturity rather than copying a generic best-practice bundle.
+**Why it matters for practice** — Managers designing AI-assisted teamwork can specify which tasks may be delegated, what output is expected, and who reviews it at each stage of a project.
+
+### [The new meaning of office: how hybrid work changes formal organizational structure from a place perspective](<https://link.springer.com/article/10.1007/s11846-026-01074-1>)
+
+Review of Managerial Science · Peer-reviewed research · 2026-11-05
+
+Across 49 interviews in two international organizations, researchers observed changes in how HR positions were grouped and centralized alongside shifts toward hybrid work. Employees also described the office as a place for social connection.
+
+**Why it matters for practice** — When reviewing a hybrid-work policy, people teams could track changes in reporting lines and collaboration alongside office attendance, rather than treating attendance as a sufficient measure of organizational impact.
