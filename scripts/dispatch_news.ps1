@@ -22,9 +22,9 @@ try {
     if (-not $_.Exception.Response -or [int]$_.Exception.Response.StatusCode -ne 404) { throw }
 }
 
-$activeRuns = & $gh run list --repo $repo --workflow $workflow --branch $branch --limit 5 --json status --jq '[.[] | select(.status != "completed")] | length'
+$runs = & $gh run list --repo $repo --workflow $workflow --branch $branch --limit 5 --json status
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-if ([int]$activeRuns -gt 0) {
+if (($runs | ConvertFrom-Json) | Where-Object { $_.status -ne 'completed' }) {
     Write-Output 'A News run is already active.'
     exit 0
 }
