@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '17 7 * * *'
       timezone: 'Europe/Prague'
+    # Retry later if the morning trigger was missed. A saved day skips the API call.
+    - cron: '43 9 * * *'
   workflow_dispatch:
 
 permissions:
