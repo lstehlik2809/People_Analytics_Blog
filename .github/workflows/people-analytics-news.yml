@@ -6,8 +6,6 @@ on:
     - cron: '17 5,6 * * *'
     # Retry later if no edition has been saved today.
     - cron: '43 9 * * *'
-    # One-off verification slot on November 13, 2026. Remove after checking the run.
-    - cron: '19 10 13 11 *'
   workflow_dispatch:
 
 permissions:
