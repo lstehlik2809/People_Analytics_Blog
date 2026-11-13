@@ -24,6 +24,18 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/./shotspotter-figure-3.png" medium="image" type="image/png" width="2010" height="1260"/>
     </item>
     <item>
+      <title>A daily AI briefer for People Analytics</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</link>
+      <description>An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.</description>
+      <category>people analytics</category>
+      <category>agentic ai</category>
+      <category>knowledge management</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed/./people_analytics_news_pic.png" medium="image" type="image/png" width="1384" height="897"/>
+    </item>
+    <item>
       <title>What does my face do in meetings?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-11-face-reader</link>
