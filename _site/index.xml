@@ -7,7 +7,19 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A daily AI briefer for People Analytics</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</link>
+      <description>An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.</description>
+      <category>people analytics</category>
+      <category>agentic ai</category>
+      <category>knowledge management</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed/./people_analytics_news_pic.png" medium="image" type="image/png" width="1384" height="897"/>
+    </item>
     <item>
       <title>How many fewer people would have to quit for a retention pilot to pay for itself?</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -22,18 +34,6 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/./shotspotter-figure-3.png" medium="image" type="image/png" width="2010" height="1260"/>
-    </item>
-    <item>
-      <title>A daily AI briefer for People Analytics</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</link>
-      <description>An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.</description>
-      <category>people analytics</category>
-      <category>agentic ai</category>
-      <category>knowledge management</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</guid>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed/./people_analytics_news_pic.png" medium="image" type="image/png" width="1384" height="897"/>
     </item>
     <item>
       <title>What does my face do in meetings?</title>
@@ -2821,13 +2821,12 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating</link>
       <description>Teacher: "Bayesian belief updating involves combining existing or prior beliefs with an assessment of the strength of new evidence." Student: "And could I please see this in action?"</description>
       <category>bayesian statistics</category>
-      <category>decision making</category>
-      <category>time series</category>
+      <category>simulation</category>
       <category>critical thinking</category>
-      <category>r</category>
       <category>rationality</category>
+      <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating</guid>
-      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/./bayesian-belief-updating.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>

@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2026-11-13-people-analytics-news-feed/",
+    "title": "A daily AI briefer for People Analytics",
+    "description": "An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-11-14",
+    "categories": [
+      "people analytics",
+      "agentic ai",
+      "knowledge management"
+    ],
+    "contents": "\r\nRecently, I’ve been experimenting with a daily AI briefer to help me stay on top of new research that might be relevant for People Analytics practice. I thought some of you might find it useful too, so I added a News feed to my blog.\r\nAn agent runs daily on GitHub Actions with OpenAI web search. I asked it to find up to five recent pieces worth reading for people analytics, summarize each and suggest where it might be useful in practice. It has a shortlist of journals on work and organizations, personality, psychometrics, cognition and econometrics. It also looks at preprints, company case studies, expert newsletters and LinkedIn, and skips vendor marketing and repeat picks.\r\n⚠️ It’s all AI-generated, from search to presentation, so it can miss good papers, get details wrong or read too much into a finding. I’d check the originals before using any of its takeaways.\r\nIf you’re curious, have a look. You can follow it in your RSS reader or download the last 30 days as Markdown to save or give to your own favorite LLM.\r\nIf you fancy making your own, give your reading list and a brief about what’s worth your time to a more approachable tool like Grok Bot or ChatGPT dots.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2026-11-13-people-analytics-news-feed/./people_analytics_news_pic.png",
+    "last_modified": "2026-11-13T18:50:18+01:00",
+    "input_file": "people-analytics-news-feed.knit.md",
+    "preview_width": 1384,
+    "preview_height": 897
+  },
+  {
     "path": "posts/2026-11-12-retention-break-even/",
     "title": "How many fewer people would have to quit for a retention pilot to pay for itself?",
     "description": "What Chicago’s ShotSpotter study can teach us about using Bayesian analysis to make rollout decisions when the pilot data are noisy.",
@@ -24,29 +47,6 @@
     "input_file": "retention-break-even.knit.md",
     "preview_width": 2010,
     "preview_height": 1260
-  },
-  {
-    "path": "posts/2026-11-13-people-analytics-news-feed/",
-    "title": "A daily AI briefer for People Analytics",
-    "description": "An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.",
-    "author": [
-      {
-        "name": "Luděk Stehlík",
-        "url": "https://www.linkedin.com/in/ludekstehlik/"
-      }
-    ],
-    "date": "2026-11-14",
-    "categories": [
-      "people analytics",
-      "agentic ai",
-      "knowledge management"
-    ],
-    "contents": "\r\nRecently, I’ve been experimenting with a daily AI briefer to help me stay on top of new research that might be relevant for People Analytics practice. I thought some of you might find it useful too, so I added a News feed to my blog.\r\nAn agent runs daily on GitHub Actions with OpenAI web search. I asked it to find up to five recent pieces worth reading for people analytics, summarize each and suggest where it might be useful in practice. It has a shortlist of journals on work and organizations, personality, psychometrics, cognition and econometrics. It also looks at preprints, company case studies, expert newsletters and LinkedIn, and skips vendor marketing and repeat picks.\r\n⚠️ It’s all AI-generated, from search to presentation, so it can miss good papers, get details wrong or read too much into a finding. I’d check the originals before using any of its takeaways.\r\nIf you’re curious, have a look. You can follow it in your RSS reader or download the last 30 days as Markdown to save or give to your own favorite LLM.\r\nIf you fancy making your own, give your reading list and a brief about what’s worth your time to a more approachable tool like Grok Bot or ChatGPT dots.\r\n\r\n\r\n\r\n",
-    "preview": "posts/2026-11-13-people-analytics-news-feed/./people_analytics_news_pic.png",
-    "last_modified": "2026-11-13T18:50:18+01:00",
-    "input_file": "people-analytics-news-feed.knit.md",
-    "preview_width": 1384,
-    "preview_height": 897
   },
   {
     "path": "posts/2026-11-11-face-reader/",
@@ -5005,15 +5005,14 @@
     "date": "2022-10-27",
     "categories": [
       "bayesian statistics",
-      "decision making",
-      "time series",
+      "simulation",
       "critical thinking",
-      "r",
-      "rationality"
+      "rationality",
+      "r"
     ],
     "contents": "\r\nWhen trying to reduce uncertainty, even very small pieces of information count if you are patient and have some tool to combine them effectively. I recently re-read Philip Tetlock’s book Superforecasting and came across an excellent illustration of such a tool: Bayesian belief updating.\r\n“Imagine you are sitting with your back to a billiards table. A friend rolls a ball onto the table and it stops at a random spot. You want to locate the ball without looking. How? Your friend rolls a second ball, which stops at another random spot. You ask, “Is the second ball to the left or the right of the first?” Your friend says, “To the left.” That’s an almost trivial scrap of information. But it’s not nothing. It tells you that the first ball is not on the extreme left edge of the table. And it makes it just a tad more likely that the first ball is on the right side of the table. If your friend rolls another ball on the table and the procedure is repeated, you get another scrap of information. If he says, “It’s to the left,” the likelihood of the first ball being on the right side of the table increases a little more. Keep repeating the process and you slowly narrow the range of the possible locations, zeroing in on the truth—although you will never eliminate uncertainty entirely.”\r\nAfter reading this paragraph, I thought it would be much more pedagogically compelling (and fun 😉) to see this update process live and in action. What a great opportunity to learn how to work with the gganimate R package.\r\nHere is the code I put together.\r\n\r\n\r\nShow code\r\n\r\n# uploading libraries\r\nlibrary(tidyverse) # data manipulation and visualization\r\nlibrary(gganimate) # animation of the charts\r\nlibrary(bayestestR) # Highest Density Interval computation\r\n\r\n# specifying the width of the billiards table  \r\nfield <- seq(0,178,1)\r\n\r\n# likelihoood function for the situation when the second ball stops to the right of the first one \r\nrightLikelihood <- (178-field)/178\r\n# likelihoood function for the situation when the second ball stops to the left of the first one \r\nleftLikelihood <- 1-rightLikelihood\r\n# flat prior for the very beginning of the updating process  \r\nfirstPrior <- rep(1/179, 179)\r\n\r\n# position where the first ball stopped\r\npoint <- 88\r\n\r\n# Bayesian belief updating\r\n# creating shell dataframe for final results\r\nposteriors <- data.frame()\r\n\r\n# setting random seed for ensuring reproducibility\r\nset.seed(1234)\r\n\r\n# specifying the number of trials\r\nfor(i in 1:500){\r\n  \r\n  # throwing the second ball\r\n  pointTrial <- runif(n = 1, min = 0, max = 178)\r\n  \r\n  # determining whether the second ball stopped to the left or to the right of the first one \r\n  side <- ifelse(pointTrial > point, \"right\", \"left\")\r\n  \r\n  # selecting appropriate prior\r\n  if(i==1){\r\n    \r\n    prior <- firstPrior\r\n    \r\n  } else{\r\n    \r\n    prior <- posteriors %>% \r\n      dplyr::filter(trial == i-1) %>% \r\n      dplyr::pull(posterior)\r\n    \r\n  }\r\n  \r\n  # combining prior and likelihood (evidence) and transforming the result into probabilities\r\n  if(side == \"right\"){\r\n    \r\n    likelihood <- rightLikelihood * prior \r\n    probability <- likelihood/sum(likelihood)\r\n    \r\n  } else{\r\n    \r\n    likelihood <- leftLikelihood * prior\r\n    probability <- likelihood/sum(likelihood)\r\n    \r\n  }\r\n  \r\n  # putting results into the dataframe\r\n  suppDf <- data.frame(\r\n    posterior = probability,\r\n    trial = i,\r\n    side = side,\r\n    pointTrial = pointTrial\r\n  )\r\n  \r\n  # computing Highest Density Interval\r\n  sampling <- sample(x = field, size = 10000, replace = TRUE, prob = probability)\r\n  \r\n  hdi <- bayestestR::hdi(sampling, ci = 0.95)\r\n  \r\n  suppDf <- suppDf %>%\r\n    dplyr::mutate(\r\n      lhdi = hdi$CI_low,\r\n      hhdi = hdi$CI_high\r\n    )\r\n  \r\n  # putting results into the shell dataframe \r\n  posteriors <- dplyr::bind_rows(posteriors, suppDf)\r\n\r\n}\r\n\r\n# adjusting data for visualization purposes\r\nposteriorsDf <- posteriors %>%\r\n  dplyr::group_by(trial) %>%\r\n  dplyr::mutate(place = dplyr::row_number()-1) %>%\r\n  dplyr::ungroup() %>%\r\n  dplyr::mutate(\r\n    hdi = ifelse(place >= lhdi & place <= hhdi, \"yes\", \"no\")\r\n  )\r\n\r\n# creating charts\r\nmyAnimation <- ggplot2::ggplot(data = posteriorsDf, aes(x = place, y = posterior)) +\r\n  ggplot2::geom_area(data = posteriorsDf %>% dplyr::filter(hdi == 'yes'), fill = 'light blue') +\r\n  ggplot2::geom_line(size = 1) +\r\n  ggplot2::geom_point(aes(x = pointTrial, y = 0), size = 4) +\r\n  ggplot2::geom_point(aes(x = point, y = 0), size = 4, color = \"red\") +\r\n  ggplot2::geom_text(aes(x = 8, y = 0.1, label = stringr::str_glue(\"Trial: {trial}\\n95% HDI: [{lhdi}, {hhdi}]\")), color = \"grey\") +\r\n  ggplot2::scale_y_continuous(limits = c(0,0.105)) +\r\n  ggplot2::scale_x_continuous(labels = scales::number_format(suffix = \" cm\")) +\r\n  ggplot2::theme(plot.title = element_text(color = '#2C2F46', face = \"plain\", size = 19, margin=margin(0,0,12,0)),\r\n                 plot.subtitle = element_text(color = '#2C2F46', face = \"plain\", size = 13, margin=margin(0,0,15,0)),\r\n                 plot.caption = element_text(color = '#2C2F46', face = \"plain\", size = 11, hjust = 0),\r\n                 axis.title.x.bottom = element_text(margin = margin(t = 15, r = 0, b = 0, l = 0), color = '#2C2F46', face = \"plain\", size = 13, lineheight = 16, hjust = 0),\r\n                 axis.title.y.left = element_text(margin = margin(t = 0, r = 15, b = 0, l = 0), color = '#2C2F46', face = \"plain\", size = 13, lineheight = 16, hjust = 1),\r\n                 axis.title.y.right = element_text(margin = margin(t = 0, r = 0, b = 0, l = 15), color = '#2C2F46', face = \"plain\", size = 13, lineheight = 16, hjust = 0),\r\n                 axis.text = element_text(color = '#2C2F46', face = \"plain\", size = 12, lineheight = 16),\r\n                 axis.line.x = element_line(colour = \"#E0E1E6\"),\r\n                 axis.line.y = element_line(colour = \"#E0E1E6\"),\r\n                 legend.position= \"bottom\",\r\n                 legend.key = element_rect(fill = \"white\"),\r\n                 legend.key.width = unit(1.6, \"line\"),\r\n                 legend.margin = margin(0,0,0,0, unit=\"cm\"),\r\n                 legend.text = element_text(color = '#2C2F46', face = \"plain\", size = 10, lineheight = 16),\r\n                 legend.background = element_rect(fill = \"transparent\"),\r\n                 panel.background = element_blank(),\r\n                 panel.grid.major.y = element_blank(),\r\n                 panel.grid.major.x = element_blank(),\r\n                 panel.grid.minor = element_blank(),\r\n                 axis.ticks.x = element_line(color = \"#E0E1E6\"),\r\n                 axis.ticks.y = element_line(color = \"#E0E1E6\"),\r\n                 plot.margin=unit(c(5,5,5,5),\"mm\"),\r\n                 plot.title.position = \"plot\",\r\n                 plot.caption.position =  \"plot\"\r\n  ) +\r\n  ggplot2::labs(\r\n    title = \"Bayesian belief updating in the billiards table thought experiment\",\r\n    subtitle = \"Target place: 88 cm\",\r\n    x = 'PLACE ON THE BILLIARDS TABLE', \r\n    y = 'POSTERIOR PROBABILITY',\r\n    caption = \"\\n\\nThe static red point corresponds to a random and unknown location of the first ball. The moving black point then corresponds to the location where the second,\\nrepeatedly rolled ball randomly ended up. The area in blue corresponds to the 95% Highest Density Interval of the posterior distribution. All points inside this\\ninterval have a higher probability density than points outside this interval.\"\r\n    ) +\r\n  gganimate::transition_time(trial) +\r\n  gganimate::ease_aes('linear')\r\n\r\n# animating chart\r\ngganimate::animate(myAnimation, nframes = 125, fps = 5, height = 6, width = 11, units = \"in\", res = 125)\r\n\r\n# saving animated chart as a .gif file\r\ngganimate::anim_save(filename = \"./bayesianBelifUpdating.gif\", animation = last_animation())\r\n\r\n\r\nAnd here is the resulting animation of the Bayesian belief updating process across 500 trials.\r\n\r\nFor those who would like to incorporate Bayesian reasoning into their managerial decision-making under uncertainty, I can recommend this article by Brian T. McCann.\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-10-27-bayesian-belief-updating/./bayesian-belief-updating.jpg",
-    "last_modified": "2026-09-30T14:37:25+02:00",
+    "last_modified": "2026-11-13T19:17:13+01:00",
     "input_file": "bayesian-belief-updating.knit.md"
   },
   {
