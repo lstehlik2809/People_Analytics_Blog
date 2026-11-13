@@ -1,6 +1,48 @@
 # People Analytics News
 
-30-day digest through 2026-11-12 (Europe/Prague).
+30-day digest through 2026-11-13 (Europe/Prague).
+
+## 2026-11-13
+
+### [Role uncertainty in AI-enabled organizational change: linking perceived AI adoption to job stress](<https://www.emerald.com/jocm/article-abstract/doi/10.1108/JOCM-06-2026-0663/1407289/Role-uncertainty-in-AI-enabled-organizational?redirectedFrom=fulltext>)
+
+Journal of Organizational Change Management · Peer-reviewed research · 2026-11-06
+
+A three-wave survey of 355 employees in Japanese organizations found that perceived AI adoption was associated with greater role ambiguity and subsequent job stress. The association between adoption and ambiguity was weaker where change communication was rated more highly.
+
+**Why it matters for practice** — When evaluating an AI rollout, measure role clarity and change communication alongside stress. The observational design does not establish that communication caused the difference.
+
+### [How Safety Incident Reporting Decisions Are Made: A Multilevel, Process-Oriented Perspective](<https://link.springer.com/article/10.1007/s41542-026-00281-2>)
+
+Occupational Health Science · Peer-reviewed research · 2026-11-02
+
+Interviews with 34 shipbuilding and ship-repair employees examined how they decide whether to report safety incidents. Reasons for reporting and not reporting were not simply opposites, and workers described interacting personal, organizational and economic considerations.
+
+**Why it matters for practice** — Incident counts alone can miss reporting barriers. Safety teams could supplement them with confidential interviews about the effort, perceived consequences and practical constraints involved in reporting.
+
+### [Mental distress diverges by gender across the transition to first parenthood and is not consistently buffered by working from home](<https://www.nature.com/articles/s41598-026-78590-3_reference.pdf>)
+
+Scientific Reports · Peer-reviewed research · 2026-11-02
+
+A UK household-panel event study found differing distress trajectories for employed women and men after first parenthood, but no consistent evidence that working from home beforehand buffered those trajectories. Results for mothers were affected by selection into continued employment, and remote-work estimates were imprecise.
+
+**Why it matters for practice** — When assessing support for new parents, track well-being and employment exits rather than assuming remote work is sufficient. Interpret gender comparisons cautiously when leave and workforce exits affect who remains observable.
+
+### [Associations between digital and automated work and psychosocial outcomes: Cross-sectional results from the Gutenberg Health Study](<https://link.springer.com/article/10.1007/s00420-026-02252-0>)
+
+International Archives of Occupational and Environmental Health · Peer-reviewed research · 2026-11-10
+
+In a cross-sectional German study of 5,730 participants, digital work had mixed associations with job satisfaction, engagement and intentions to leave, while automated work was associated with higher burnout and lower satisfaction. Technical and skill-related demands were also associated with several adverse outcomes.
+
+**Why it matters for practice** — Workforce surveys can distinguish digital work, automation, technology-related demands and employees’ experiences instead of treating technology exposure as one measure. The associations do not establish that technology caused the outcomes.
+
+### [Today's Work, Tomorrow's Workforce: Incentivizing Learning in AI-Assisted Work](<https://arxiv.org/abs/2611.06346>)
+
+arXiv · Preprint · 2026-11-04
+
+This preprint models how choosing between independent work and AI answers could affect skill acquisition and retention over repeated tasks. Under its assumptions, incentives for independent practice can help sustain skill even when AI-assisted task accuracy remains high.
+
+**Why it matters for practice** — The model can inform decisions about protected practice time and how to measure skill retention during AI deployment. Its predictions need empirical testing before being treated as evidence of workplace effects.
 
 ## 2026-11-12
 
