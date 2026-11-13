@@ -4,7 +4,12 @@ $branch = 'master'
 $workflow = 'people-analytics-news.yml'
 $gh = (Get-Command gh.exe).Source
 $prague = [TimeZoneInfo]::FindSystemTimeZoneById('Central Europe Standard Time')
-$day = [TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $prague).ToString('yyyy-MM-dd')
+$now = [TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $prague)
+if ($now -lt $now.Date.AddHours(7).AddMinutes(27)) {
+    Write-Output 'Waiting for the 07:27 Prague fallback window.'
+    exit 0
+}
+$day = $now.ToString('yyyy-MM-dd')
 
 $file = "https://raw.githubusercontent.com/$repo/$branch/news_archive/$day.json"
 try {
