@@ -2,10 +2,8 @@ name: People Analytics News
 
 on:
   schedule:
-    # 07:17 Prague time is 05:17 UTC in summer and 06:17 UTC in winter.
-    - cron: '17 5,6 * * *'
-    # Retry later if no edition has been saved today.
-    - cron: '43 9 * * *'
+    - cron: '17 7 * * *'
+      timezone: 'Europe/Prague'
   workflow_dispatch:
 
 permissions:
@@ -35,13 +33,7 @@ jobs:
       - name: Collect and render news
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          prague_time=$(TZ=Europe/Prague date +%H%M)
-          if [[ "$GITHUB_EVENT_NAME" == 'schedule' && "$prague_time" < '0717' ]]; then
-            echo 'Waiting for the 07:17 Prague collection window.'
-            exit 0
-          fi
-          python scripts/collect_news.py
+        run: python scripts/collect_news.py
 
       - name: Publish generated news files
         run: |
