@@ -1,6 +1,48 @@
 # People Analytics News
 
-30-day digest through 2026-11-13 (Europe/Prague).
+30-day digest through 2026-11-14 (Europe/Prague).
+
+## 2026-11-14
+
+### [Development and validation of a measure of work decision styles](<https://www.emerald.com/md/article-abstract/doi/10.1108/MD-11-2025-3435/1407723/Development-and-validation-of-a-measure-of-work?redirectedFrom=fulltext>)
+
+Management Decision · Peer-reviewed research · 2026-11-10
+
+Four studies developed a 20-item measure of analytical, intuitive, collaborative, and decisive work decision styles. Validation included factor analysis, item response theory, and associations with self-reported job performance.
+
+**Why it matters for practice** — The measure could support research into decision-making and development needs at work. Its relationship with performance needs further testing against outcomes beyond self-reports.
+
+### [Work engagement and mental well-being in the ICT age: investigating the role of job resources among white-collar workers in Europe](<https://www.emerald.com/ijm/article-abstract/doi/10.1108/IJM-03-2025-0203/1406711/Work-engagement-and-mental-well-being-in-the-ICT?redirectedFrom=fulltext>)
+
+International Journal of Manpower · Peer-reviewed research · 2026-11-05
+
+An analysis of 20,347 white-collar workers across 36 countries found that opportunities to demonstrate competence were strongly associated with engagement, while trust and cooperation were important predictors of mental well-being.
+
+**Why it matters for practice** — Employee surveys and work-design reviews could measure opportunities to use skills and team cooperation alongside technology use. The observational findings do not establish that changing those resources will improve outcomes.
+
+### [Workplace AI Trust: Scale Development, Preliminary Psychometric Validation, and Associations with Employee AI Experience](<https://www.mdpi.com/2076-3387/16/11/557>)
+
+Administrative Sciences · Peer-reviewed research · 2026-11-08
+
+Researchers developed an eight-item workplace AI trust scale using a survey of Polish working adults. The items showed internal consistency, but model fit and evidence for comparisons between groups were mixed.
+
+**Why it matters for practice** — The scale offers candidate questions for research into employee AI experience. Practitioners should validate it locally before comparing groups or using scores to guide consequential decisions.
+
+### [Conservation in place: perceived pay inequity as a chronic occupational stressor in a high-unemployment labor market](<https://www.frontiersin.org/journals/organizational-psychology/articles/10.3389/forgp.2026.1972719/pdf>)
+
+Frontiers in Organizational Psychology · Peer-reviewed research · 2026-11-10
+
+A secondary analysis of interviews with ten employees and managers at one South African consumer-goods organization examined responses to perceived pay unfairness. Some participants described remaining in their jobs while reducing discretionary effort.
+
+**Why it matters for practice** — The findings suggest pairing retention metrics with confidential measures of perceived pay fairness and employee voice. The small, single-organization study cannot estimate how widespread these responses are.
+
+### [Exploring the ambivalence of job autonomy in agile work context: A qualitative study](<https://journals.sagepub.com/doi/full/10.1177/10519815261504405>)
+
+WORK · Peer-reviewed research · 2026-11-10
+
+Interviews with 20 employees in one agile organization found that participants valued autonomy but also described constraints and demands associated with self-organization and responsibility.
+
+**Why it matters for practice** — Work-design assessments could distinguish advertised autonomy from employees’ experienced discretion, support, and workload. The interviews provide context for survey design rather than evidence of effects across organizations.
 
 ## 2026-11-13
 
