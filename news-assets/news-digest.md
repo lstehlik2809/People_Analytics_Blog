@@ -1,6 +1,48 @@
 # People Analytics News
 
-30-day digest through 2026-11-14 (Europe/Prague).
+30-day digest through 2026-11-15 (Europe/Prague).
+
+## 2026-11-15
+
+### [Triggers of job insecurity: a latent transition approach to understanding how people construe threats to their jobs](<https://link.springer.com/article/10.1007/s10869-026-10162-8>)
+
+Journal of Business and Psychology · Peer-reviewed research · 2026-11-12
+
+Using worker surveys and latent profile and transition analyses, the researchers found that specific combinations of perceived threats were associated with greater job insecurity than diffuse uncertainty. Profiles also changed over time.
+
+**Why it matters for practice** — Employee surveys could distinguish concerns about personal job prospects, organizational changes and wider economic threats rather than relying on a single insecurity score. Repeated measurement may help teams see how concerns change during restructuring.
+
+### [Confidence intervals for the difference between proportions after multiple imputation: a simulation study comparing different strategies](<https://link.springer.com/article/10.1186/s12874-026-03072-z>)
+
+BMC Medical Research Methodology · Peer-reviewed research · 2026-11-11
+
+Simulations compared three confidence-interval methods for differences between proportions after multiple imputation. Wald intervals had inadequate coverage in small samples with extreme proportions, while Agresti-Caffo and Newcombe-Wilson methods performed better.
+
+**Why it matters for practice** — Analysts comparing promotion or attrition rates with missing data can consider alternatives to Wald intervals, especially for small groups or rare outcomes. The findings apply to the missing-data scenarios tested, not every imputation setting.
+
+### [The power of perception: the impact of inclusivity policies and diversity climate on employee well-being](<https://www.emerald.com/edi/article-abstract/doi/10.1108/EDI-02-2026-0123/1408508/The-power-of-perception-the-impact-of-inclusivity?redirectedFrom=fulltext>)
+
+Equality, Diversity and Inclusion: An International Journal · Peer-reviewed research · 2026-11-13
+
+A survey of 361 faculty and staff at a southeastern US university examined perceptions of inclusion policies, diversity climate and well-being. Favorable policy perceptions and diversity climate were associated with better reported outcomes, including job satisfaction and turnover intentions.
+
+**Why it matters for practice** — An inclusion assessment could measure employees’ experiences of policies and workplace climate alongside whether policies exist. The single-university survey cannot establish that policy perceptions caused the outcomes.
+
+### [Who Perceives Work Performance Improvements from Generative AI Use in Government, Early-Stage Diffusion? Exploring the Roles of Organizational Power and Motivation on Work Performance](<https://link.springer.com/article/10.1007/s11115-026-01060-x>)
+
+Public Organization Review · Peer-reviewed research · 2026-11-12
+
+In survey responses from 1,608 Korean civil servants, more frequent generative AI use and intrinsic motivation were associated with greater perceived performance benefits. The outcome was self-reported improvement, not independently measured productivity.
+
+**Why it matters for practice** — AI rollout evaluations can compare perceived benefits across usage and motivation levels while collecting separate evidence of work quality and productivity. The associations alone do not show that greater use causes better performance.
+
+### [The Coordination of Both Volunteers and Paid Staff in Nonprofit Organizations: A Scoping Review and Future Research Agenda](<https://onlinelibrary.wiley.com/doi/10.1002/nml.70073?af=R>)
+
+Nonprofit Management and Leadership · Peer-reviewed research · 2026-11-11
+
+A scoping review of 23 articles organized research on volunteer–staff coordination around organizational design, identity and culture, and relationships and communication. It found that structural and relational approaches are often studied separately.
+
+**Why it matters for practice** — Nonprofit workforce assessments can examine role boundaries and reporting structures alongside communication between volunteers and paid staff. The review identifies ways to frame an assessment rather than proving that a particular coordination practice works.
 
 ## 2026-11-14
 
