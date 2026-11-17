@@ -5,8 +5,40 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A technical framework for HR-driven imbalanced classification: pipeline architecture, oversampling algorithms, ablation analysis, and threshold engineering for data scientist job-change prediction</title>
+      <link>https://www.nature.com/articles/s41598-026-77466-w_reference.pdf</link>
+      <guid isPermaLink="true">https://www.nature.com/articles/s41598-026-77466-w_reference.pdf</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Scientific Reports · Peer-reviewed research · 2026-11-15&lt;/p&gt;&lt;p&gt;Using 19,158 records, the study compared 90 model–sampling configurations and directly demonstrated that oversampling before cross-validation inflated AUC enough to reverse model rankings. Feature ablations strengthen its engineering lessons, but the outcome is self-reported job-change propensity, not verified turnover.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When building retention-risk models, keep oversampling inside training folds and compare against an unresampled baseline before accepting apparent improvements. Evaluate decision thresholds separately rather than treating a model trained on intentions as a validated predictor of actual departures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Taxonomy-Driven Synthetic Dataset for Retrieval Effectiveness and Fairness Evaluation in Hiring</title>
+      <link>https://arxiv.org/abs/2611.09178</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.09178</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;arXiv · Preprint · 2026-11-06&lt;/p&gt;&lt;p&gt;This preprint benchmarks candidate retrieval using multilingual synthetic profiles, demographic counterfactual twins, and comparisons with real historical interactions. General-purpose embedding rankings did not reliably predict hiring-task performance; applicability is limited by synthetic relevance labels, small-scale human validation, and coverage concentrated in European languages and technology roles.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When selecting a model for multilingual talent search, test job-specific ranking quality alongside gender-perturbation sensitivity in each deployment language. Use the benchmark as an initial diagnostic, then validate shortlisted models on representative local profiles rather than choosing from general leaderboard scores alone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rethinking how employee innovation is enabled at work: a process analysis of HR bundles and innovative work behaviors</title>
+      <link>https://www.emerald.com/joepp/article-abstract/doi/10.1108/JOEPP-03-2026-0337/1406752/Rethinking-how-employee-innovation-is-enabled-at?redirectedFrom=fulltext</link>
+      <guid isPermaLink="true">https://www.emerald.com/joepp/article-abstract/doi/10.1108/JOEPP-03-2026-0337/1406752/Rethinking-how-employee-innovation-is-enabled-at?redirectedFrom=fulltext</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Journal of Organizational Effectiveness: People and Performance · Peer-reviewed research · 2026-11-04&lt;/p&gt;&lt;p&gt;A three-firm consulting case study combined 34 interviews across hierarchical levels with organizational documents to examine how innovation opportunities evolve. It identifies reciprocal patterns in which demonstrated innovation changes employees’ subsequent discretion, offering a contextual explanation rather than a causal estimate of HR-practice effectiveness.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When comparing innovation ratings across career stages, measure permission and opportunity to innovate alongside idea generation and implementation. In consulting work, investigate whether low observed innovation reflects restricted discretion before interpreting it as an individual capability deficit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Job resources and thriving sequentially explain the effects of on- and off-the-job embeddedness on performance</title>
+      <link>https://www.emerald.com/pr/article/doi/10.1108/PR-02-2026-0186/1407233/Job-resources-and-thriving-sequentially-explain</link>
+      <guid isPermaLink="true">https://www.emerald.com/pr/article/doi/10.1108/PR-02-2026-0186/1407233/Job-resources-and-thriving-sequentially-explain</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Personnel Review · Peer-reviewed research · 2026-11-06&lt;/p&gt;&lt;p&gt;Three-wave data from 340 employees and 111 supervisors in India linked workplace and community embeddedness with resources, thriving, and supervisor-rated performance. Multiple sources strengthen the evidence beyond a single employee questionnaire, but both proposed mediators were measured together, leaving their sequence and causality unresolved.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When investigating why well-connected employees perform better, distinguish workplace embeddedness from community ties and add autonomy, collaboration, development opportunities, learning, and vitality to the measurement plan. Measure these repeatedly before using mediation results to justify a particular intervention.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Does AI Reinforce Gender Stereotypes? Gender Bias in Job Descriptions Generated by 40+ Large Language Models</title>
       <link>https://onlinelibrary.wiley.com/doi/abs/10.1111/gwao.70291</link>

@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-17",
+  "entries": [
+    {
+      "title": "A technical framework for HR-driven imbalanced classification: pipeline architecture, oversampling algorithms, ablation analysis, and threshold engineering for data scientist job-change prediction",
+      "source": "Scientific Reports",
+      "summary": "Using 19,158 records, the study compared 90 model–sampling configurations and directly demonstrated that oversampling before cross-validation inflated AUC enough to reverse model rankings. Feature ablations strengthen its engineering lessons, but the outcome is self-reported job-change propensity, not verified turnover.",
+      "why_it_matters": "When building retention-risk models, keep oversampling inside training folds and compare against an unresampled baseline before accepting apparent improvements. Evaluate decision thresholds separately rather than treating a model trained on intentions as a validated predictor of actual departures.",
+      "url": "https://www.nature.com/articles/s41598-026-77466-w_reference.pdf",
+      "published_date": "2026-11-15",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1038/s41598-026-77466-w"
+    },
+    {
+      "title": "A Taxonomy-Driven Synthetic Dataset for Retrieval Effectiveness and Fairness Evaluation in Hiring",
+      "source": "arXiv",
+      "summary": "This preprint benchmarks candidate retrieval using multilingual synthetic profiles, demographic counterfactual twins, and comparisons with real historical interactions. General-purpose embedding rankings did not reliably predict hiring-task performance; applicability is limited by synthetic relevance labels, small-scale human validation, and coverage concentrated in European languages and technology roles.",
+      "why_it_matters": "When selecting a model for multilingual talent search, test job-specific ranking quality alongside gender-perturbation sensitivity in each deployment language. Use the benchmark as an initial diagnostic, then validate shortlisted models on representative local profiles rather than choosing from general leaderboard scores alone.",
+      "url": "https://arxiv.org/abs/2611.09178",
+      "published_date": "2026-11-06",
+      "source_type": "Preprint",
+      "doi": "10.48550/arxiv.2611.09178"
+    },
+    {
+      "title": "Rethinking how employee innovation is enabled at work: a process analysis of HR bundles and innovative work behaviors",
+      "source": "Journal of Organizational Effectiveness: People and Performance",
+      "summary": "A three-firm consulting case study combined 34 interviews across hierarchical levels with organizational documents to examine how innovation opportunities evolve. It identifies reciprocal patterns in which demonstrated innovation changes employees’ subsequent discretion, offering a contextual explanation rather than a causal estimate of HR-practice effectiveness.",
+      "why_it_matters": "When comparing innovation ratings across career stages, measure permission and opportunity to innovate alongside idea generation and implementation. In consulting work, investigate whether low observed innovation reflects restricted discretion before interpreting it as an individual capability deficit.",
+      "url": "https://www.emerald.com/joepp/article-abstract/doi/10.1108/JOEPP-03-2026-0337/1406752/Rethinking-how-employee-innovation-is-enabled-at?redirectedFrom=fulltext",
+      "published_date": "2026-11-04",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1108/joepp-03-2026-0337"
+    },
+    {
+      "title": "Job resources and thriving sequentially explain the effects of on- and off-the-job embeddedness on performance",
+      "source": "Personnel Review",
+      "summary": "Three-wave data from 340 employees and 111 supervisors in India linked workplace and community embeddedness with resources, thriving, and supervisor-rated performance. Multiple sources strengthen the evidence beyond a single employee questionnaire, but both proposed mediators were measured together, leaving their sequence and causality unresolved.",
+      "why_it_matters": "When investigating why well-connected employees perform better, distinguish workplace embeddedness from community ties and add autonomy, collaboration, development opportunities, learning, and vitality to the measurement plan. Measure these repeatedly before using mediation results to justify a particular intervention.",
+      "url": "https://www.emerald.com/pr/article/doi/10.1108/PR-02-2026-0186/1407233/Job-resources-and-thriving-sequentially-explain",
+      "published_date": "2026-11-06",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1108/pr-02-2026-0186"
+    }
+  ]
+}
