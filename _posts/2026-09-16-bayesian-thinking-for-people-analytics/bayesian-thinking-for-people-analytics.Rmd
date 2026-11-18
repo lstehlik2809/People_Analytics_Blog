@@ -9,7 +9,7 @@ author:
 date: 2026-09-16
 categories:
   - bayesian statistics
-  - people analytics
+  - people analytics practice
   - decision making
 output:
   distill::distill_article:

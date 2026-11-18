@@ -8,7 +8,6 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 08-29-2022
 categories:
-  - people analytics
   - remote work
   - segmented regression
   - time series

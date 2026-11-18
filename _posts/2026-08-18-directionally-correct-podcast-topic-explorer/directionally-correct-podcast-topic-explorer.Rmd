@@ -15,7 +15,7 @@ categories:
   - data visualization
   - generative ai
   - embeddings
-  - people analytics
+  - people analytics practice
 output:
   distill::distill_article:
     toc: true

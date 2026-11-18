@@ -13,7 +13,6 @@ categories:
   - collaboration
   - meetings
   - generative ai
-  - people analytics
 output:
   distill::distill_article:
     toc: true

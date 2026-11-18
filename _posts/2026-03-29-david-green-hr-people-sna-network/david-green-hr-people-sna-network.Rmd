@@ -9,7 +9,7 @@ author:
 date: 03-29-2026
 categories:
   - network analysis
-  - people analytics
+  - people analytics practice
 output:
   distill::distill_article:
     self_contained: false

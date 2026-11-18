@@ -9,7 +9,7 @@ author:
 date: 2023-07-11
 categories:
   - web apps
-  - people analytics
+  - people analytics practice
   - embeddings
   - learning and development
 output:

@@ -8,7 +8,6 @@ author:
     url: https://www.linkedin.com/in/ludekstehlik/
 date: 10-31-2025
 categories:
-  - people analytics
   - network analysis
   - python
 output:

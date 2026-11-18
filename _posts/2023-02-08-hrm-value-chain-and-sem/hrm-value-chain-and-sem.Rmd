@@ -9,7 +9,7 @@ author:
 date: 02-08-2023
 categories:
   - hr management
-  - people analytics
+  - people analytics practice
   - structural equation modeling
   - bayesian statistics
   - r

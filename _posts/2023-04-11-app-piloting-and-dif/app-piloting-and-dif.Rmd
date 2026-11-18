@@ -10,7 +10,6 @@ date: 03-20-2023
 categories:
   - experiments
   - difference-in-differences
-  - people analytics
   - impact evaluation
 output:
   distill::distill_article:

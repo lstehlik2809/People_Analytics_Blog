@@ -11,7 +11,7 @@ categories:
   - causal inference
   - experiments
   - data science
-  - people analytics
+  - people analytics practice
   - python
   - r
   - impact evaluation

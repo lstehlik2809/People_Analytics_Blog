@@ -9,7 +9,7 @@ author:
 date: 2026-11-14
 use_frontmatter_date: true
 categories:
-  - people analytics
+  - people analytics practice
   - agentic ai
   - knowledge management
 output:

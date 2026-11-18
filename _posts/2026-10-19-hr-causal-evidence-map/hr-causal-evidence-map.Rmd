@@ -15,7 +15,7 @@ categories:
   - research methods
   - experiments
   - performance
-  - people analytics
+  - people analytics practice
   - data visualization
   - impact evaluation
 output:

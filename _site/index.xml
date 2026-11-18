@@ -7,13 +7,25 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 14 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>AI implementation at work: worker preferences for task changes</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-18-ai-at-work-worker-preferences</link>
+      <description>How a choice experiment with 423 quality control operators can inform employee listening and AI-driven job redesign.</description>
+      <category>employee listening</category>
+      <category>human-ai interaction</category>
+      <category>ai at work</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-18-ai-at-work-worker-preferences</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-18-ai-at-work-worker-preferences/./ai-assisted-inspection-survey-results.png" medium="image" type="image/png" width="1080" height="1350"/>
+    </item>
     <item>
       <title>A daily AI briefer for People Analytics</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</link>
       <description>An experiment with an agent that runs on GitHub Actions, finds up to five recent reads a day, and suggests how each might be useful in People Analytics practice.</description>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>agentic ai</category>
       <category>knowledge management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-13-people-analytics-news-feed</guid>
@@ -30,7 +42,6 @@
       <category>impact evaluation</category>
       <category>decision analysis</category>
       <category>employee turnover</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-12-retention-break-even/./shotspotter-figure-3.png" medium="image" type="image/png" width="2010" height="1260"/>
@@ -80,7 +91,6 @@
       <category>machine learning</category>
       <category>learning and development</category>
       <category>labor economics</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates</guid>
       <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-09-randomized-trial-vs-observational-estimates/./Chetty_et_al_2026_Figure_2.png" medium="image" type="image/png" width="1656" height="1320"/>
@@ -125,10 +135,10 @@
       <category>meetings</category>
       <category>network analysis</category>
       <category>human-ai interaction</category>
-      <category>people analytics</category>
       <category>impact evaluation</category>
       <category>causal inference</category>
       <category>difference-in-differences</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks</guid>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-29-ai-and-collaboration-networks/./Copilot-and-collaboration-networks-Figure-4.png" medium="image" type="image/png" width="1872" height="808"/>
@@ -139,7 +149,6 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-27-bayes-in-your-browser</link>
       <description>Running Bayesian models for people analytics without a model-fitting server.</description>
       <category>bayesian statistics</category>
-      <category>people analytics</category>
       <category>regression analysis</category>
       <category>multilevel modeling</category>
       <category>web apps</category>
@@ -196,7 +205,7 @@
       <category>research methods</category>
       <category>experiments</category>
       <category>performance</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>data visualization</category>
       <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-19-hr-causal-evidence-map</guid>
@@ -208,7 +217,6 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-10-16-beyond-the-correlation</link>
       <description>A police cadet dataset illustrates how a strong overall correlation can mask distinct patterns in job ratings and generate questions for further investigation.</description>
-      <category>people analytics</category>
       <category>data visualization</category>
       <category>statistics</category>
       <category>performance management</category>
@@ -242,7 +250,6 @@
       <category>web apps</category>
       <category>decision analysis</category>
       <category>decision making</category>
-      <category>people analytics</category>
       <category>simulation</category>
       <category>performance management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-06-decision-tree-foldback</guid>
@@ -260,8 +267,6 @@
       <category>difference-in-differences</category>
       <category>embeddings</category>
       <category>evidence-based management</category>
-      <category>impact evaluation</category>
-      <category>human-ai interaction</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes</guid>
       <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-10-03-change-org-ai-outputs-vs-outcomes/./charts_preview.png" medium="image" type="image/png" width="2000" height="1200"/>
@@ -324,6 +329,7 @@
       <category>skills</category>
       <category>labor economics</category>
       <category>data visualization</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure</guid>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-09-18-job-ai-exposure/./app_pic.jpg" medium="image" type="image/jpeg"/>
@@ -334,7 +340,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics</link>
       <description>A recommendation for a free online book on Bayesian thinking in people analytics.</description>
       <category>bayesian statistics</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>decision making</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-09-16-bayesian-thinking-for-people-analytics</guid>
       <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
@@ -422,7 +428,7 @@
       <category>data visualization</category>
       <category>generative ai</category>
       <category>embeddings</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer</guid>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-18-directionally-correct-podcast-topic-explorer/./illustrative_pic.png" medium="image" type="image/png" width="1473" height="885"/>
@@ -437,7 +443,6 @@
       <category>collaboration</category>
       <category>meetings</category>
       <category>generative ai</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app</guid>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-11-meeting-ego-network-app/./calendar_ego_network_pic.png" medium="image" type="image/png" width="1375" height="829"/>
@@ -458,7 +463,7 @@
       <category>open science</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters</guid>
       <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-08-06-female-survival-in-marital-disasters/./sinking-of-the-titanic.avif" medium="image" type="image/avif"/>
     </item>
     <item>
       <title>My second People Analytics brain - both for people and AI agents</title>
@@ -466,7 +471,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-07-28-people-analytics-second-brain</link>
       <description>So I finally gave the “second brain” idea a try - to see how it works in practice and whether it’s actually useful.</description>
       <category>web apps</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>ai</category>
       <category>agentic ai</category>
       <category>embeddings</category>
@@ -621,7 +626,6 @@
       <category>statistics</category>
       <category>causal inference</category>
       <category>ai</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling</guid>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-05-12-value-added-modeling/./goalie-teacher-manager.png" medium="image" type="image/png" width="1122" height="1402"/>
@@ -684,7 +688,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network</link>
       <description>Sharing an interactive network of 2,500+ professionals featured across 60 editions of David Green's newsletter.</description>
       <category>network analysis</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network</guid>
       <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-29-david-green-hr-people-sna-network/./ona_david_green.png" medium="image" type="image/png" width="1857" height="900"/>
@@ -758,6 +762,7 @@
       <category>behavioral science</category>
       <category>time management</category>
       <category>human-ai interaction</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction</guid>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-03-10-ai-as-friction/./AI as friction.png" medium="image" type="image/png" width="2816" height="1536"/>
@@ -914,6 +919,7 @@
       <category>generative ai</category>
       <category>agentic ai</category>
       <category>collaboration</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift</guid>
       <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-12-02-hr-tech-ai-shift/./ai_trends_annotated.png" medium="image" type="image/png" width="5500" height="3000"/>
@@ -950,7 +956,6 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis</link>
       <description>About a cleaner, faster way to compute some org metrics.</description>
-      <category>people analytics</category>
       <category>network analysis</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-10-31-org-stats-and-graph-analysis</guid>
@@ -1044,6 +1049,7 @@
       <category>leadership</category>
       <category>generative ai</category>
       <category>human-ai interaction</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement</guid>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-09-22-genai-and-leadership-judgement/genai-and-leadership-judgement_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1536" height="768"/>
@@ -1175,7 +1181,6 @@
       <description>Self-selection as a measurement opportunity?</description>
       <category>psychometrics</category>
       <category>causal inference</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures</guid>
       <pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-07-03-self-selection-and-proxy-measures/./growth_gig_plot.png" medium="image" type="image/png" width="5500" height="3000"/>
@@ -1264,7 +1269,7 @@
       <category>causal inference</category>
       <category>experiments</category>
       <category>data science</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>python</category>
       <category>r</category>
       <category>impact evaluation</category>
@@ -1344,7 +1349,6 @@
       <category>data science</category>
       <category>causal inference</category>
       <category>difference-in-differences</category>
-      <category>people analytics</category>
       <category>evidence-based management</category>
       <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-04-15-visual-diff-in-diff</guid>
@@ -1418,11 +1422,11 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</link>
       <description>A short musing on which variables in People Analytics should—or should not—be considered non-actionable.</description>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>hr metrics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa</guid>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2025-03-05-non-actionable-vars-in-pa/./change_my_mind.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Experiencing and seeing team similarities and differences</title>
@@ -1609,7 +1613,6 @@
       <category>time series</category>
       <category>statistics</category>
       <category>data visualization</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics</guid>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-10-30-xmr-charts-in-people-analytics/./charts.png" medium="image" type="image/png" width="888" height="652"/>
@@ -1704,17 +1707,6 @@
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-09-04-sprint/./sprint_foto.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
-      <title>Insights from the Team Assessment Survey results of C-suite teams</title>
-      <dc:creator>Luděk Stehlík</dc:creator>
-      <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</link>
-      <description>Results from the exploration of data on team effectiveness and efficiency across ~40 C-suite teams.</description>
-      <category>teams</category>
-      <category>network analysis</category>
-      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</guid>
-      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
-    </item>
-    <item>
       <title>People may signal their exit intentions not only by their actions but also by their inactions</title>
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</link>
@@ -1725,6 +1717,17 @@
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction</guid>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-survey-participation-and-attrition-prediction/./plot_predictors_screenshot.png" medium="image" type="image/png" width="1577" height="775"/>
+    </item>
+    <item>
+      <title>Insights from the Team Assessment Survey results of C-suite teams</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</link>
+      <description>Results from the exploration of data on team effectiveness and efficiency across ~40 C-suite teams.</description>
+      <category>teams</category>
+      <category>network analysis</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams</guid>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-08-29-tas-c-suit-teams/tas-c-suit-teams_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="2112" height="1728"/>
     </item>
     <item>
       <title>Kohonen's Self-Organizing Maps</title>
@@ -1880,7 +1883,7 @@
       <category>critical thinking</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2024-02-29-personality-frameworks-contest/./phrenology.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Does your team belong among “light bulbs” or “wines”?</title>
@@ -1991,6 +1994,7 @@
       <category>decision making</category>
       <category>rationality</category>
       <category>human-ai interaction</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits</guid>
       <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-12-13-gai-simulation-work-habits/./rodin-thinker2.png" medium="image" type="image/png" width="1024" height="1024"/>
@@ -2114,6 +2118,7 @@
       <category>generative ai</category>
       <category>embeddings</category>
       <category>ai</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding</guid>
       <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-10-23-nlp-llm-and-onboarding/./lost_info.jpg" medium="image" type="image/jpeg"/>
@@ -2197,7 +2202,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-07-11-searching-and-querying-aihr-blog-posts</link>
       <description>I'm sharing a by-product of my learning about vector database search that may be useful to some of you who want to learn something new about People Analytics.</description>
       <category>web apps</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>embeddings</category>
       <category>learning and development</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-07-11-searching-and-querying-aihr-blog-posts</guid>
@@ -2255,7 +2260,6 @@
       <category>innovation</category>
       <category>teams</category>
       <category>meta-analysis</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-06-22-team-level-predictors-of-innovation</guid>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-06-22-team-level-predictors-of-innovation/./innovation.jpg" medium="image" type="image/jpeg"/>
@@ -2267,7 +2271,6 @@
       <description>How listening to a podcast about conspiracies and disinformation inspired me to try out a "new" statistical tool popular among sociologists.</description>
       <category>psychometrics</category>
       <category>employee survey</category>
-      <category>people analytics</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-06-19-latent-class-analysis</guid>
       <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
@@ -2291,7 +2294,6 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-06-05-bayesian-networks-in-people-analytics</link>
       <description>Bayesian networks seem to have some interesting properties that could make them useful for various people analytics use cases, but for some reason this is not the case.</description>
       <category>bayesian statistics</category>
-      <category>people analytics</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-06-05-bayesian-networks-in-people-analytics</guid>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-06-05-bayesian-networks-in-people-analytics/./plot.png" medium="image" type="image/png" width="1121" height="746"/>
@@ -2330,7 +2332,6 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-05-10-regression-to-the-mean</link>
       <description>A nice illustration of the regression to the mean phenomenon in the space of people analytics.</description>
-      <category>people analytics</category>
       <category>critical thinking</category>
       <category>statistics</category>
       <category>r</category>
@@ -2450,7 +2451,7 @@
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation</guid>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="application/octet-stream"/>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-04-11-openai-personality-interpretation/./introPic2.jfif" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>Effectiveness of interventions for encreasing employee engagement</title>
@@ -2485,7 +2486,6 @@
       <description>What is the benefit of using the difference-in-differences method in combination with piloting a new business app, and how can this help estimate the app's effectiveness on key outcomes like time spent with prospects or closed deals?</description>
       <category>experiments</category>
       <category>difference-in-differences</category>
-      <category>people analytics</category>
       <category>impact evaluation</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-04-11-app-piloting-and-dif</guid>
       <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
@@ -2571,9 +2571,9 @@
       <category>generative ai</category>
       <category>ai</category>
       <category>hr management</category>
-      <category>people analytics</category>
       <category>employee engagement</category>
       <category>employee survey</category>
+      <category>ai at work</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback</guid>
       <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2023-02-26-chatgpt-and-employee-feedback/./chatgpt_listening.jpg" medium="image" type="image/jpeg"/>
@@ -2594,7 +2594,7 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2023-02-08-hrm-value-chain-and-sem</link>
       <description>What's the link between the HRM value chain and structural equation modeling? Let’s check it out.</description>
       <category>hr management</category>
-      <category>people analytics</category>
+      <category>people analytics practice</category>
       <category>structural equation modeling</category>
       <category>bayesian statistics</category>
       <category>r</category>
@@ -2755,7 +2755,6 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-12-02-change-detection</link>
       <description>Let's take a look at some tips and tricks to make dasboards more useful for their users.</description>
       <category>data visualization</category>
-      <category>people analytics</category>
       <category>time series</category>
       <category>python</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-12-02-change-detection</guid>
@@ -2782,7 +2781,6 @@
       <category>web apps</category>
       <category>employee turnover</category>
       <category>layoffs</category>
-      <category>people analytics</category>
       <category>evidence-based management</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-11-26-resources-on-retention-and-downsizing</guid>
       <pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
@@ -2826,7 +2824,7 @@
       <category>rationality</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating</guid>
-      <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Oct 2022 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2022-10-27-bayesian-belief-updating/./bayesian-belief-updating.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
@@ -2834,7 +2832,6 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-10-24-police-cadet-evaluation-dataset</link>
       <description>A "new" real-world dataset useful for training in people analytics.</description>
-      <category>people analytics</category>
       <category>data science</category>
       <category>recruitment</category>
       <category>learning and development</category>
@@ -2922,7 +2919,6 @@
       <dc:creator>Luděk Stehlík</dc:creator>
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-popularity-after-covid</link>
       <description>Many people analytics professionals think that after the COVID pandemic, organizations are more willing to listen to their insights and recommendations. Can we find any empirical support for their hunch? Let's check it out with data provided by Google Trends and segmented regression of interrupted time series.</description>
-      <category>people analytics</category>
       <category>remote work</category>
       <category>segmented regression</category>
       <category>time series</category>
@@ -2938,7 +2934,6 @@
       <link>https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-challenge-from-orgnostic</link>
       <description>A brief summary of my participation in Orgnostic's People Analytics Challenge.</description>
       <category>recruitment</category>
-      <category>people analytics</category>
       <category>statistics</category>
       <category>r</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2022-08-20-people-analytics-challenge-from-orgnostic</guid>

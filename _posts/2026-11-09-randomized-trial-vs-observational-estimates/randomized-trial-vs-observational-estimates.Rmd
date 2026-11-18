@@ -15,7 +15,6 @@ categories:
   - machine learning
   - learning and development
   - labor economics
-  - people analytics
 output:
   distill::distill_article:
     toc: true

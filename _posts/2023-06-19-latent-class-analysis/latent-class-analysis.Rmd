@@ -10,7 +10,6 @@ date: 06-19-2023
 categories:
   - psychometrics
   - employee survey
-  - people analytics
   - r
 output:
   distill::distill_article:

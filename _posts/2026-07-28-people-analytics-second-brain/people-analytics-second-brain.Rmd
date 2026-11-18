@@ -9,7 +9,7 @@ author:
 date: 2026-07-28
 categories:
   - web apps
-  - people analytics
+  - people analytics practice
   - ai
   - agentic ai
   - embeddings

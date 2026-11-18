@@ -10,7 +10,6 @@ date: 07-03-2025
 categories:
   - psychometrics
   - causal inference
-  - people analytics
 output:
   distill::distill_article:
     self_contained: false
