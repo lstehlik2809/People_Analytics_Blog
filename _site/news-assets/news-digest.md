@@ -1,6 +1,48 @@
 # People Analytics News
 
-30-day digest through 2026-11-17 (Europe/Prague).
+30-day digest through 2026-11-18 (Europe/Prague).
+
+## 2026-11-18
+
+### [Autism and personality testing: Improving reactions and mitigating adverse impact risk in hiring contexts](<https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/joop.70171>)
+
+Journal of Occupational and Organizational Psychology · Peer-reviewed research · 2026-11-14
+
+Comparing general and work-contextualized personality tests under applicant-like conditions, the study found that contextualization improved reactions but widened autistic–non-autistic score gaps and showed measurement bias. Testing both reactions and measurement invariance makes this useful for assessment design, although it does not establish effects on actual hiring outcomes.
+
+**Why it matters for practice** — Before replacing a general personality assessment with work-specific wording, evaluate subgroup score differences and measurement invariance alongside applicant reactions. Better acceptance of a test should not be treated as evidence of more equitable measurement.
+
+### [Age bias in resume screening: are HR professionals more biased than ChatGPT?](<https://link.springer.com/article/10.1007/s10869-026-10164-6>)
+
+Journal of Business and Psychology · Peer-reviewed research · 2026-11-14
+
+Two studies compared 800 HR professionals with 3,200 ChatGPT evaluations across younger and older applicants: the model penalized older applicants under both qualification conditions, while professionals did so when qualifications were ambiguous. The human–AI comparison and qualification contrast offer useful audit scenarios, but resume ratings do not establish real-world hiring effects or generalize automatically to other models.
+
+**Why it matters for practice** — When auditing resume screening, test age differences separately for clearly qualified and borderline applicants, including intersections with gender and job type. Compare human and automated evaluations rather than assuming either provides an unbiased benchmark.
+
+### [Meta-analysis with JASP, Part I: Classical approaches](<https://www.cambridge.org/core/journals/research-synthesis-methods/article/metaanalysis-with-jasp-part-i-classical-approaches/9366F63BD4692440C84AD0AA2C118939>)
+
+Research Synthesis Methods · Peer-reviewed research · 2026-11-06
+
+This tutorial demonstrates graphical workflows for meta-analysis through three worked datasets, including multilevel and multivariate models with cluster-robust standard errors. Its concrete treatment of dependent effect sizes makes it worth opening for evidence synthesis, rather than as new evidence about any particular workforce intervention.
+
+**Why it matters for practice** — When pooling training, selection, or wellbeing evaluations that report multiple outcomes from the same participants, model the dependence instead of treating every effect as independent. The worked examples provide an accessible route to examining heterogeneity and reporting prediction intervals.
+
+### [Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits of Provider-Served Language Models](<https://arxiv.org/abs/2611.20901>)
+
+arXiv · Preprint · 2026-11-16
+
+This preprint repeats controlled founder-evaluation audits over 13 months, using 248,400 API calls, and finds that bias patterns changed even under an unchanged model identifier. Identical prompts, name-clustered inference, and a shorter-interval replication strengthen the comparison, but the task concerns investment rather than hiring and cannot identify the mechanism behind serving changes.
+
+**Why it matters for practice** — For LLM-assisted people decisions, retain a fixed audit set and rerun it periodically and after model replacements instead of treating an unchanged identifier as proof that earlier fairness results remain valid. Record the model identifier, collection date, prompts, and outputs so comparisons remain interpretable.
+
+### [Task reflexivity as a pathway linking task interdependence and knowledge sharing](<https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/joop.70173>)
+
+Journal of Occupational and Organizational Psychology · Peer-reviewed research · 2026-11-17
+
+A daily diary study of 156 South Korean construction workers, providing 1,404 observations, linked daily task interdependence with task reflection and knowledge sharing. Within-person analyses distinguish day-to-day fluctuations from stable employee differences, although the observational design does not establish that increasing reflection causes sharing.
+
+**Why it matters for practice** — When investigating coordination problems in interdependent work, measure daily task demands, reflection, and knowledge sharing rather than relying only on a one-time engagement survey. Use the findings to motivate a controlled pilot of brief task reviews, not to justify a company-wide intervention without testing.
 
 ## 2026-11-17
 
