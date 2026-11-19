@@ -1,6 +1,24 @@
 # People Analytics News
 
-30-day digest through 2026-11-18 (Europe/Prague).
+30-day digest through 2026-11-19 (Europe/Prague).
+
+## 2026-11-19
+
+### [AI Exposure and the Changing Responsibilities in Job Postings](<https://arxiv.org/abs/2611.09870>)
+
+arXiv · Preprint · 2026-11-06
+
+This preprint analyzes 50,000 job advertisements from 33 firms, finding that growing AI mentions often describe qualifications or company context rather than actual responsibilities. Human-annotation validation and checks on posting templates make its measurement approach worth examining, although advertised duties cannot establish actual task displacement.
+
+**Why it matters for practice** — When using job postings to plan skills investments, distinguish AI-related responsibilities from generic AI language and normalize for changes in posting length and templates. Otherwise, apparent changes in task demand may reflect rewritten advertisements rather than redesigned jobs.
+
+### [Effects of writing-based interventions on self-compassion and job burnout among psychotherapists: a three-arm randomized controlled trial and mediation analysis](<https://link.springer.com/article/10.1186/s40309-026-00311-w>)
+
+European Journal of Futures Research · Peer-reviewed research · 2026-11-07
+
+A randomized trial of 67 psychotherapists compared six weeks of self-compassion-oriented writing, free writing, and a control condition, with both writing groups reporting greater reductions in emotional exhaustion than controls. The direct comparison and one-month follow-up are useful, but the small, non-preregistered study lacked an attention-matched control and found limited immediate superiority of structured over free writing.
+
+**Why it matters for practice** — For a psychotherapy workforce considering a voluntary writing-based support pilot, compare structured prompts with simpler free writing rather than assuming the specialized format adds value. Measure exhaustion and cynicism separately at baseline, completion, and follow-up before deciding whether to expand the program.
 
 ## 2026-11-18
 

@@ -5,8 +5,24 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Exposure and the Changing Responsibilities in Job Postings</title>
+      <link>https://arxiv.org/abs/2611.09870</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.09870</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;arXiv · Preprint · 2026-11-06&lt;/p&gt;&lt;p&gt;This preprint analyzes 50,000 job advertisements from 33 firms, finding that growing AI mentions often describe qualifications or company context rather than actual responsibilities. Human-annotation validation and checks on posting templates make its measurement approach worth examining, although advertised duties cannot establish actual task displacement.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When using job postings to plan skills investments, distinguish AI-related responsibilities from generic AI language and normalize for changes in posting length and templates. Otherwise, apparent changes in task demand may reflect rewritten advertisements rather than redesigned jobs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Effects of writing-based interventions on self-compassion and job burnout among psychotherapists: a three-arm randomized controlled trial and mediation analysis</title>
+      <link>https://link.springer.com/article/10.1186/s40309-026-00311-w</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1186/s40309-026-00311-w</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;European Journal of Futures Research · Peer-reviewed research · 2026-11-07&lt;/p&gt;&lt;p&gt;A randomized trial of 67 psychotherapists compared six weeks of self-compassion-oriented writing, free writing, and a control condition, with both writing groups reporting greater reductions in emotional exhaustion than controls. The direct comparison and one-month follow-up are useful, but the small, non-preregistered study lacked an attention-matched control and found limited immediate superiority of structured over free writing.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — For a psychotherapy workforce considering a voluntary writing-based support pilot, compare structured prompts with simpler free writing rather than assuming the specialized format adds value. Measure exhaustion and cynicism separately at baseline, completion, and follow-up before deciding whether to expand the program.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Autism and personality testing: Improving reactions and mitigating adverse impact risk in hiring contexts</title>
       <link>https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/joop.70171</link>
