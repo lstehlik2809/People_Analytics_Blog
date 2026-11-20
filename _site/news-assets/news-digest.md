@@ -1,6 +1,24 @@
 # People Analytics News
 
-30-day digest through 2026-11-19 (Europe/Prague).
+30-day digest through 2026-11-20 (Europe/Prague).
+
+## 2026-11-20
+
+### [One Meeting That Should Not Be an Email: Manager–Direct Report One-on-One Meetings and Employee Engagement](<https://onlinelibrary.wiley.com/doi/10.1002/job.70134?af=R>)
+
+Journal of Organizational Behavior · Peer-reviewed research · 2026-11-15
+
+Two time-separated surveys of 303 employees found that one-on-one meeting quality was more consistently associated with engagement than meeting quantity, even after accounting for managers’ equivalent behaviors outside these meetings. That comparison makes the study useful for evaluating meeting practices, although the observational design cannot establish that better meetings cause higher engagement.
+
+**Why it matters for practice** — When evaluating manager one-on-ones, measure employees’ experience of task-focused and relationship-focused support alongside meeting frequency. Use those measures to identify practices to pilot and evaluate rather than assuming that adding meetings will improve engagement.
+
+### [The Rebundling of Freelance Work in the AI Age](<https://arxiv.org/abs/2611.14708>)
+
+OpenAI and Upwork · Preprint · 2026-11-10
+
+This preprint separates project budgets, posted hourly rates, and realized contract hours: AI-related work had approximately 52% higher fixed-price budgets and 41% more first-90-day hours after adjustment for work subcategory and month, but little hourly-rate difference. The distinction is useful for interpreting contractor spending, although these platform-specific observational comparisons do not identify AI’s causal effects.
+
+**Why it matters for practice** — When budgeting AI-related contractor work, analyze project scope, task combinations, hourly prices, and purchased hours separately. A larger project budget should prompt a scope-and-capacity review rather than automatically being interpreted as an AI skills pay premium.
 
 ## 2026-11-19
 

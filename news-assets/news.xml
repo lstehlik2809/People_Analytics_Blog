@@ -5,8 +5,24 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Meeting That Should Not Be an Email: Manager–Direct Report One-on-One Meetings and Employee Engagement</title>
+      <link>https://onlinelibrary.wiley.com/doi/10.1002/job.70134?af=R</link>
+      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1002/job.70134?af=R</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Journal of Organizational Behavior · Peer-reviewed research · 2026-11-15&lt;/p&gt;&lt;p&gt;Two time-separated surveys of 303 employees found that one-on-one meeting quality was more consistently associated with engagement than meeting quantity, even after accounting for managers’ equivalent behaviors outside these meetings. That comparison makes the study useful for evaluating meeting practices, although the observational design cannot establish that better meetings cause higher engagement.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When evaluating manager one-on-ones, measure employees’ experience of task-focused and relationship-focused support alongside meeting frequency. Use those measures to identify practices to pilot and evaluate rather than assuming that adding meetings will improve engagement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Rebundling of Freelance Work in the AI Age</title>
+      <link>https://arxiv.org/abs/2611.14708</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.14708</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;OpenAI and Upwork · Preprint · 2026-11-10&lt;/p&gt;&lt;p&gt;This preprint separates project budgets, posted hourly rates, and realized contract hours: AI-related work had approximately 52% higher fixed-price budgets and 41% more first-90-day hours after adjustment for work subcategory and month, but little hourly-rate difference. The distinction is useful for interpreting contractor spending, although these platform-specific observational comparisons do not identify AI’s causal effects.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When budgeting AI-related contractor work, analyze project scope, task combinations, hourly prices, and purchased hours separately. A larger project budget should prompt a scope-and-capacity review rather than automatically being interpreted as an AI skills pay premium.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AI Exposure and the Changing Responsibilities in Job Postings</title>
       <link>https://arxiv.org/abs/2611.09870</link>

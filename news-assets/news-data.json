@@ -1,6 +1,31 @@
 {
-  "as_of": "2026-11-19",
+  "as_of": "2026-11-20",
   "days": [
+    {
+      "date": "2026-11-20",
+      "entries": [
+        {
+          "title": "One Meeting That Should Not Be an Email: Manager–Direct Report One-on-One Meetings and Employee Engagement",
+          "source": "Journal of Organizational Behavior",
+          "summary": "Two time-separated surveys of 303 employees found that one-on-one meeting quality was more consistently associated with engagement than meeting quantity, even after accounting for managers’ equivalent behaviors outside these meetings. That comparison makes the study useful for evaluating meeting practices, although the observational design cannot establish that better meetings cause higher engagement.",
+          "why_it_matters": "When evaluating manager one-on-ones, measure employees’ experience of task-focused and relationship-focused support alongside meeting frequency. Use those measures to identify practices to pilot and evaluate rather than assuming that adding meetings will improve engagement.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/job.70134?af=R",
+          "published_date": "2026-11-15",
+          "source_type": "Peer-reviewed research",
+          "doi": "10.1002/job.70134"
+        },
+        {
+          "title": "The Rebundling of Freelance Work in the AI Age",
+          "source": "OpenAI and Upwork",
+          "summary": "This preprint separates project budgets, posted hourly rates, and realized contract hours: AI-related work had approximately 52% higher fixed-price budgets and 41% more first-90-day hours after adjustment for work subcategory and month, but little hourly-rate difference. The distinction is useful for interpreting contractor spending, although these platform-specific observational comparisons do not identify AI’s causal effects.",
+          "why_it_matters": "When budgeting AI-related contractor work, analyze project scope, task combinations, hourly prices, and purchased hours separately. A larger project budget should prompt a scope-and-capacity review rather than automatically being interpreted as an AI skills pay premium.",
+          "url": "https://arxiv.org/abs/2611.14708",
+          "published_date": "2026-11-10",
+          "source_type": "Preprint",
+          "doi": null
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "entries": [
