@@ -5,8 +5,32 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Musculoskeletal Pain Management in Physically Demanding Work: Workplace Practices, Social Relations, and Opportunities for Adjustment</title>
+      <link>https://link.springer.com/article/10.1007/s10926-026-10466-9</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s10926-026-10466-9</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Journal of Occupational Rehabilitation · Peer-reviewed research · 2026-11-19&lt;/p&gt;&lt;p&gt;Eighty interviews plus ethnographic fieldwork across eight Danish workplaces suggest that higher pain reporting can reflect greater openness, not simply worse working conditions. Sampling workplaces with different reported pain prevalence supports the comparison, although this qualitative design cannot establish causal effects.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When comparing occupational-health dashboards across sites, measure employees’ ability to discuss pain and obtain task adjustments alongside symptom prevalence. Avoid treating low reporting alone as evidence that a workplace is healthier.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests</title>
+      <link>https://arxiv.org/abs/2611.21545</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.21545</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;arXiv · Preprint · 2026-11-16&lt;/p&gt;&lt;p&gt;This preprint evaluates 20 language models against seven rule systems using an exact decision-function check, showing that a correct explanation can omit other barriers that would still prevent approval. The benchmark distinguishes factual correctness from actionable recourse, but uses abstractions of access-control and public-benefit policies rather than workplace deployments.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — For AI-generated explanations of employee eligibility or access denials, test whether changing the cited factors could actually change the decision while preserving the original request. Add this outcome-based check rather than relying only on accurate rule citations or an AI judge’s assessment of correctness.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Measurement Invariance of the Subjective Well-Being Scale in Low-Burden Settings: Psychometric Evaluation of the EBS-8 in Chile</title>
+      <link>https://mhgcj.org/index.php/MHGCJ/article/view/376</link>
+      <guid isPermaLink="true">https://mhgcj.org/index.php/MHGCJ/article/view/376</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Mental Health: Global Challenges Journal · Peer-reviewed research · 2026-11-09&lt;/p&gt;&lt;p&gt;A validation study of 861 Chilean adults examined factor structure, reliability, gender measurement invariance, and associations with psychological distress for an eight-item well-being scale. Configural and metric invariance were supported, but mixed scalar-invariance evidence and a young, non-probability sample limit confidence in group-mean comparisons and workforce generalization.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Teams considering a brief Spanish-language well-being measure for Chilean employees can use this study to plan a local validation pilot. Check measurement equivalence in the actual workforce before interpreting gender differences in average scores.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>One Meeting That Should Not Be an Email: Manager–Direct Report One-on-One Meetings and Employee Engagement</title>
       <link>https://onlinelibrary.wiley.com/doi/10.1002/job.70134?af=R</link>

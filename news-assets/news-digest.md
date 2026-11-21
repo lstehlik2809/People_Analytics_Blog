@@ -1,6 +1,32 @@
 # People Analytics News
 
-30-day digest through 2026-11-20 (Europe/Prague).
+30-day digest through 2026-11-21 (Europe/Prague).
+
+## 2026-11-21
+
+### [Musculoskeletal Pain Management in Physically Demanding Work: Workplace Practices, Social Relations, and Opportunities for Adjustment](<https://link.springer.com/article/10.1007/s10926-026-10466-9>)
+
+Journal of Occupational Rehabilitation · Peer-reviewed research · 2026-11-19
+
+Eighty interviews plus ethnographic fieldwork across eight Danish workplaces suggest that higher pain reporting can reflect greater openness, not simply worse working conditions. Sampling workplaces with different reported pain prevalence supports the comparison, although this qualitative design cannot establish causal effects.
+
+**Why it matters for practice** — When comparing occupational-health dashboards across sites, measure employees’ ability to discuss pain and obtain task adjustments alongside symptom prevalence. Avoid treating low reporting alone as evidence that a workplace is healthier.
+
+### [Right Reason, Wrong Advice: Evaluating Recourse in LLM Explanations of Denied Requests](<https://arxiv.org/abs/2611.21545>)
+
+arXiv · Preprint · 2026-11-16
+
+This preprint evaluates 20 language models against seven rule systems using an exact decision-function check, showing that a correct explanation can omit other barriers that would still prevent approval. The benchmark distinguishes factual correctness from actionable recourse, but uses abstractions of access-control and public-benefit policies rather than workplace deployments.
+
+**Why it matters for practice** — For AI-generated explanations of employee eligibility or access denials, test whether changing the cited factors could actually change the decision while preserving the original request. Add this outcome-based check rather than relying only on accurate rule citations or an AI judge’s assessment of correctness.
+
+### [Measurement Invariance of the Subjective Well-Being Scale in Low-Burden Settings: Psychometric Evaluation of the EBS-8 in Chile](<https://mhgcj.org/index.php/MHGCJ/article/view/376>)
+
+Mental Health: Global Challenges Journal · Peer-reviewed research · 2026-11-09
+
+A validation study of 861 Chilean adults examined factor structure, reliability, gender measurement invariance, and associations with psychological distress for an eight-item well-being scale. Configural and metric invariance were supported, but mixed scalar-invariance evidence and a young, non-probability sample limit confidence in group-mean comparisons and workforce generalization.
+
+**Why it matters for practice** — Teams considering a brief Spanish-language well-being measure for Chilean employees can use this study to plan a local validation pilot. Check measurement equivalence in the actual workforce before interpreting gender differences in average scores.
 
 ## 2026-11-20
 
