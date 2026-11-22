@@ -1,6 +1,40 @@
 # People Analytics News
 
-30-day digest through 2026-11-21 (Europe/Prague).
+30-day digest through 2026-11-22 (Europe/Prague).
+
+## 2026-11-22
+
+### [The Emergence of Psychological Safety or its Mirage](<https://pubsonline.informs.org/doi/10.1287/orsc.2024.19549>)
+
+Organization Science · Peer-reviewed research · 2026-11-13
+
+A two-year ethnographic comparison of two teams found that apparent openness could coexist with continued avoidance of interpersonal risk. Meeting transcripts and interviews trace how one team moved beyond this pattern, providing detailed process evidence rather than a generalizable intervention effect.
+
+**Why it matters for practice** — When evaluating psychological safety initiatives, supplement surveys and counts of speaking turns with qualitative checks on which risky contributions remain absent and what happens after someone challenges a decision. Use the observed process to develop and test changes that reduce the costs of contributing, rather than treating leaders' invitations to speak as evidence of safety.
+
+### [HireWatch: Evaluating LLM Compliance with U.S. Employment Law Under Contextual Pressure](<https://arxiv.org/abs/2611.24970>)
+
+arXiv · Preprint · 2026-11-16
+
+This preprint tested 18 models on interview-question selection using a 200-item bank audited by nine licensed U.S. attorneys; simulated organizational pressure increased selection of questions classified as unlawful. Its factorial comparisons and compliance-prompt tests make the benchmark useful, but fixed-choice tasks and context-dependent legal labels limit generalization to live interviews.
+
+**Why it matters for practice** — Before deploying AI interview assistance, test it with realistic manager requests and internal policy documents, not just neutral prompts. Compare explicit compliance instructions against the baseline and retain qualified human review rather than treating a low benchmark violation rate as legal clearance.
+
+### [Personality Was Robust to the Transition to Remote Work Under the COVID‐19 Pandemic](<https://onlinelibrary.wiley.com/doi/10.1111/jopy.70104>)
+
+Journal of Personality · Peer-reviewed research · 2026-11-16
+
+Longitudinal archival data from 1,475 working adults showed no evidence that the transition to remote work changed personality-item interpretation or average trait scores. Combining item-response-theory invariance analyses with mixed-effects models helps distinguish measurement changes from trait changes, although this was not a randomized work-location experiment.
+
+**Why it matters for practice** — When interpreting personality assessments across a move to remote work, do not assume that the location change alone requires new norms or explains score shifts. Check invariance and longitudinal patterns in the relevant workforce; this study does not establish that an assessment's job-performance validity transfers unchanged.
+
+### [Different but the same? Internal structure, measurement invariance, DIF, and reliability evidence across test modes](<https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1961544/full>)
+
+Frontiers in Psychology · Peer-reviewed research · 2026-11-16
+
+Comparisons of student assessments across online and face-to-face administration found that acceptable factor fit or similar reliability did not guarantee comparable scores. Ordinal invariance tests, item-level effect sizes and differential-item-functioning analyses provide a useful worked example, but nonrandom groups prevent attributing the differences to administration mode.
+
+**Why it matters for practice** — Before pooling assessment results across delivery modes or interpreting a change after digitizing a survey, test the level of invariance needed for the intended comparison rather than checking reliability alone. The supplied analysis syntax can inform a local validation study, but these student findings do not validate any employee instrument.
 
 ## 2026-11-21
 
