@@ -1,6 +1,32 @@
 # People Analytics News
 
-30-day digest through 2026-11-22 (Europe/Prague).
+30-day digest through 2026-11-23 (Europe/Prague).
+
+## 2026-11-23
+
+### [A differences-in-differences study of staff experience in the English NHS after investment in digital technologies](<https://www.nature.com/articles/s43856-026-01999-4_reference.pdf>)
+
+Communications Medicine · Peer-reviewed research · 2026-11-21
+
+Comparing 26 funded with 77 unfunded NHS trusts across 2018–2023, researchers found less favourable staff-experience scores associated with real-time location system funding, but no detectable associations for automation and AI funding. Event-study checks and entropy balancing strengthen the comparison, although nonrandom funding allocation, organisation-level data and short follow-up limit causal interpretation.
+
+**Why it matters for practice** — When evaluating workplace technology rollouts, separate technologies rather than pooling them into one digital-investment indicator, and track stressors, engagement and motivation alongside productivity. Establish comparison groups and inspect pre-intervention trends before attributing changes to the rollout.
+
+### [Multiple Sources, Mixed Signals: How Supervisor and Coworker Undermining (In)congruence Affects Employee Deviance](<https://onlinelibrary.wiley.com/doi/10.1002/job.70137?af=R>)
+
+Journal of Organizational Behavior · Peer-reviewed research · 2026-11-20
+
+Two field studies linked discrepancies between supervisor and coworker undermining with lower thriving and counterproductive behaviour: an eight-week US study provided 343 observations from 86 employees, and a preregistered Chinese study covered 403 employees in 122 teams. Replication across within-person and between-person designs supports examining these sources jointly, but self-reported observational data do not establish the proposed causal pathway.
+
+**Why it matters for practice** — In employee-listening analyses, measure supervisor and coworker undermining separately and examine their joint pattern rather than averaging them into an overall mistreatment score. When investigating poor team experiences, do not assume favourable treatment from a manager offsets undermining by peers.
+
+### [Leading an age-diverse workforce: evaluation of a leadership training intervention based on the Include, Individualize, and Integrate framework](<https://link.springer.com/article/10.1007/s10869-026-10166-4>)
+
+Journal of Business and Psychology · Peer-reviewed research · 2026-11-21
+
+A pre/post evaluation comparing 35 trained leaders with 19 controls found greater knowledge gains and reduced negative age stereotypes, but no significant group-by-time improvements in the three leadership behaviours assessed. Separate team-member ratings detected no improvements in age bias, psychological safety, intergenerational contact or information exchange; the small, nonrandomized study offers a useful evaluation template rather than definitive evidence of effectiveness.
+
+**Why it matters for practice** — When piloting age-inclusive leadership training, distinguish satisfaction and knowledge acquisition from behavioural transfer and employee experience. Include comparison leaders and delayed team-member assessments before treating positive participant feedback or within-group gains as evidence that the programme changed workplace outcomes.
 
 ## 2026-11-22
 

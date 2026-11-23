@@ -5,8 +5,32 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A differences-in-differences study of staff experience in the English NHS after investment in digital technologies</title>
+      <link>https://www.nature.com/articles/s43856-026-01999-4_reference.pdf</link>
+      <guid isPermaLink="true">https://www.nature.com/articles/s43856-026-01999-4_reference.pdf</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Communications Medicine · Peer-reviewed research · 2026-11-21&lt;/p&gt;&lt;p&gt;Comparing 26 funded with 77 unfunded NHS trusts across 2018–2023, researchers found less favourable staff-experience scores associated with real-time location system funding, but no detectable associations for automation and AI funding. Event-study checks and entropy balancing strengthen the comparison, although nonrandom funding allocation, organisation-level data and short follow-up limit causal interpretation.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When evaluating workplace technology rollouts, separate technologies rather than pooling them into one digital-investment indicator, and track stressors, engagement and motivation alongside productivity. Establish comparison groups and inspect pre-intervention trends before attributing changes to the rollout.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multiple Sources, Mixed Signals: How Supervisor and Coworker Undermining (In)congruence Affects Employee Deviance</title>
+      <link>https://onlinelibrary.wiley.com/doi/10.1002/job.70137?af=R</link>
+      <guid isPermaLink="true">https://onlinelibrary.wiley.com/doi/10.1002/job.70137?af=R</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Journal of Organizational Behavior · Peer-reviewed research · 2026-11-20&lt;/p&gt;&lt;p&gt;Two field studies linked discrepancies between supervisor and coworker undermining with lower thriving and counterproductive behaviour: an eight-week US study provided 343 observations from 86 employees, and a preregistered Chinese study covered 403 employees in 122 teams. Replication across within-person and between-person designs supports examining these sources jointly, but self-reported observational data do not establish the proposed causal pathway.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — In employee-listening analyses, measure supervisor and coworker undermining separately and examine their joint pattern rather than averaging them into an overall mistreatment score. When investigating poor team experiences, do not assume favourable treatment from a manager offsets undermining by peers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leading an age-diverse workforce: evaluation of a leadership training intervention based on the Include, Individualize, and Integrate framework</title>
+      <link>https://link.springer.com/article/10.1007/s10869-026-10166-4</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s10869-026-10166-4</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Journal of Business and Psychology · Peer-reviewed research · 2026-11-21&lt;/p&gt;&lt;p&gt;A pre/post evaluation comparing 35 trained leaders with 19 controls found greater knowledge gains and reduced negative age stereotypes, but no significant group-by-time improvements in the three leadership behaviours assessed. Separate team-member ratings detected no improvements in age bias, psychological safety, intergenerational contact or information exchange; the small, nonrandomized study offers a useful evaluation template rather than definitive evidence of effectiveness.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When piloting age-inclusive leadership training, distinguish satisfaction and knowledge acquisition from behavioural transfer and employee experience. Include comparison leaders and delayed team-member assessments before treating positive participant feedback or within-group gains as evidence that the programme changed workplace outcomes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Emergence of Psychological Safety or its Mirage</title>
       <link>https://pubsonline.informs.org/doi/10.1287/orsc.2024.19549</link>
