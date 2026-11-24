@@ -7,7 +7,21 @@
     <description>Exploring People Analytics topics 
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 21 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Tabular Foundation Models in People Analytics?</title>
+      <dc:creator>Luděk Stehlík</dc:creator>
+      <link>https://blog-about-people-analytics.netlify.app/posts/2026-11-24-tabular-foundation-models-in-people-analytics</link>
+      <description>A small browser app for comparing a tabular foundation model with random forest and regression on fictional employee data.</description>
+      <category>machine learning</category>
+      <category>ai</category>
+      <category>predictive analytics</category>
+      <category>web apps</category>
+      <category>employee turnover</category>
+      <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-24-tabular-foundation-models-in-people-analytics</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-24-tabular-foundation-models-in-people-analytics/./app_screenshot.png" medium="image" type="image/png" width="1336" height="1179"/>
+    </item>
     <item>
       <title>Personality in motion: body language and the Big Five</title>
       <dc:creator>Luděk Stehlík</dc:creator>
@@ -19,7 +33,7 @@
       <category>web apps</category>
       <category>data visualization</category>
       <guid>https://blog-about-people-analytics.netlify.app/posts/2026-11-22-personality-and-body-language</guid>
-      <pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
       <media:content url="https://blog-about-people-analytics.netlify.app/posts/2026-11-22-personality-and-body-language/./personality-in-motion.gif" medium="image" type="image/gif"/>
     </item>
     <item>

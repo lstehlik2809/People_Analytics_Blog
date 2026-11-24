@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2026-11-24-tabular-foundation-models-in-people-analytics/",
+    "title": "Tabular Foundation Models in People Analytics?",
+    "description": "A small browser app for comparing a tabular foundation model with random forest and regression on fictional employee data.",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-11-24",
+    "categories": [
+      "machine learning",
+      "ai",
+      "predictive analytics",
+      "web apps",
+      "employee turnover"
+    ],
+    "contents": "\r\nI’ve been seeing papers and posts about tabular foundation models (TFMs) for a while. They sounded interesting, but that was about as far as I got.\r\nI read a bit more about them recently, and it struck me that they might be useful for the sort of data we often work with in People Analytics. I was thinking especially of self-service, where someone might know their HR data well and have little experience with feature engineering or tuning hyperparameters for traditional ML models.\r\nSay you have a reasonably clean table with a few thousand employee records, and you’re curious whether overtime helps predict attrition. You could start with job role, department, and tenure, then add overtime and run the model again. Do the predictions get any better on the same test rows?\r\nUsing a TFM is a bit like giving a large language model (LLM) a few examples in a prompt. For a TFM, the examples are rows where you know who stayed and who left. The model uses those examples to predict outcomes for new rows without changing its pretrained weights. That’s called in-context learning.\r\nA TFM is pretrained on lots of prediction tasks, often using synthetic tables. The assumptions behind those tasks form a prior, which can help when you have few labeled examples.\r\nSome TFMs handle categorical columns directly, so you can leave job role and department as they are and start with the default settings. The model can also pick up nonlinear relationships and interactions without you having to specify them up front.\r\nMost of what I’d read was about TabPFN. Its Nature paper reported better results overall than tuned ML baselines on small and medium-sized tables. That’s the scale I had in mind, though newer versions have been tested on much bigger tables too.\r\nTo get a better feel for this, I built a small browser app using the familiar fictional IBM employee dataset. You choose what to predict and which columns to use, then compare a TFM (NVIDIA’s Kumo Tabular Small) with Random Forest and logistic or linear regression on the same test rows.\r\nAnimated walkthrough of the browser app, showing how to choose predictors and compare models on the same test rows.In the runs I tried, the TFM did about as well as the other models or better, depending on which predictors I used and how I scored the predictions.\r\nIf you’re interested, give it a try here 👉 People Analytics Model Lab\r\nI’m new to TFMs, so I’m curious what others have found. If you’ve tried them in People Analytics, what’s worked for you? What would you suggest I try next?\r\n\r\n\r\n",
+    "preview": "posts/2026-11-24-tabular-foundation-models-in-people-analytics/./app_screenshot.png",
+    "last_modified": "2026-11-24T09:23:05+00:00",
+    "input_file": "tabular-foundation-models-in-people-analytics.knit.md",
+    "preview_width": 1336,
+    "preview_height": 1179
+  },
+  {
     "path": "posts/2026-11-22-personality-and-body-language/",
     "title": "Personality in motion: body language and the Big Five",
     "description": "An interactive field guide to the facial, body and voice cues that a meta-analysis of 65 studies links to the Big Five traits - and to how small those links are.",
