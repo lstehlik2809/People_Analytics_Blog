@@ -1,6 +1,24 @@
 # People Analytics News
 
-30-day digest through 2026-11-23 (Europe/Prague).
+30-day digest through 2026-11-24 (Europe/Prague).
+
+## 2026-11-24
+
+### [Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems](<https://arxiv.org/abs/2611.20140>)
+
+arXiv · Preprint · 2026-11-15
+
+This preprint tested four LLMs using 210 constructed resumes across 14 job roles and six decision interfaces, alongside tests of unauthorized instructions. Scalar scores generally detected qualification changes better than pass/fail judgments, while comparative judgments were order-sensitive; the controlled audit supports configuration testing, not conclusions about actual hiring validity.
+
+**Why it matters for practice** — Before deploying an LLM resume screener, test whether controlled additions or removals of job-relevant qualifications change its assessments appropriately, and repeat comparisons with candidate order reversed. Separately test whether resume-embedded instructions or unauthorized requests can change screening rules, rather than treating demographic parity or plausible explanations as sufficient evidence of readiness.
+
+### [The Dark Side of Mindfulness at Work: How Mindfulness Training Enlivens Machiavellian Incivility](<https://link.springer.com/article/10.1007/s10551-026-06513-3>)
+
+Journal of Business Ethics · Peer-reviewed research · 2026-11-12
+
+A randomized workplace field experiment with 473 analyzed participants compared mindfulness training with matched breathing exercises and a waitlist, finding a conditional indirect association with self-reported incivility among employees higher in Machiavellianism. Active controls and alternative-mechanism checks strengthen the evidence, but one employer, one program, and self-reported outcomes limit generalization and leave reporting changes possible.
+
+**Why it matters for practice** — When evaluating workplace mindfulness programs, measure interpersonal mistreatment alongside intended benefits and examine variation rather than reporting average improvements alone. Add confidential coworker feedback or behavioral indicators where feasible; these findings warrant monitoring unintended consequences, not personality screening or restricting employee access.
 
 ## 2026-11-23
 

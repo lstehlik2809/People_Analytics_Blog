@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-24",
+  "entries": [
+    {
+      "title": "Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems",
+      "source": "arXiv",
+      "summary": "This preprint tested four LLMs using 210 constructed resumes across 14 job roles and six decision interfaces, alongside tests of unauthorized instructions. Scalar scores generally detected qualification changes better than pass/fail judgments, while comparative judgments were order-sensitive; the controlled audit supports configuration testing, not conclusions about actual hiring validity.",
+      "why_it_matters": "Before deploying an LLM resume screener, test whether controlled additions or removals of job-relevant qualifications change its assessments appropriately, and repeat comparisons with candidate order reversed. Separately test whether resume-embedded instructions or unauthorized requests can change screening rules, rather than treating demographic parity or plausible explanations as sufficient evidence of readiness.",
+      "url": "https://arxiv.org/abs/2611.20140",
+      "published_date": "2026-11-15",
+      "source_type": "Preprint",
+      "doi": null
+    },
+    {
+      "title": "The Dark Side of Mindfulness at Work: How Mindfulness Training Enlivens Machiavellian Incivility",
+      "source": "Journal of Business Ethics",
+      "summary": "A randomized workplace field experiment with 473 analyzed participants compared mindfulness training with matched breathing exercises and a waitlist, finding a conditional indirect association with self-reported incivility among employees higher in Machiavellianism. Active controls and alternative-mechanism checks strengthen the evidence, but one employer, one program, and self-reported outcomes limit generalization and leave reporting changes possible.",
+      "why_it_matters": "When evaluating workplace mindfulness programs, measure interpersonal mistreatment alongside intended benefits and examine variation rather than reporting average improvements alone. Add confidential coworker feedback or behavioral indicators where feasible; these findings warrant monitoring unintended consequences, not personality screening or restricting employee access.",
+      "url": "https://link.springer.com/article/10.1007/s10551-026-06513-3",
+      "published_date": "2026-11-12",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1007/s10551-026-06513-3"
+    }
+  ]
+}
