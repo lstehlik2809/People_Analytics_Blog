@@ -25,6 +25,31 @@
     "preview_height": 1179
   },
   {
+    "path": "posts/2026-11-24-mindfulness-and-machiavellianism/",
+    "title": "Wow, even mindfulness might have some “contraindications” 😯",
+    "description": "...at least when it’s used at work…",
+    "author": [
+      {
+        "name": "Luděk Stehlík",
+        "url": "https://www.linkedin.com/in/ludekstehlik/"
+      }
+    ],
+    "date": "2026-11-24",
+    "categories": [
+      "personality",
+      "well-being",
+      "experiments",
+      "causal inference",
+      "mindfulness"
+    ],
+    "contents": "\r\nNot an expert on mindfulness, especially in an org context. Most of what I’ve read about it has focused on the benefits, like being less likely to avoid uncomfortable information. So this particular finding caught me by surprise.\r\nIn a randomized field experiment, employees high in Machiavellianism who received mindfulness training reported more contempt, anger, and disgust toward coworkers than those in either control group (regulated breathing or a waitlist). Those feelings were also linked to more self-reported workplace incivility.\r\n\r\nChart showing predicted scores for contempt, anger, and disgust toward coworkers. In the mindfulness group, scores were about 1.6 at low Machiavellianism and 2.0 at high Machiavellianism. Scores stayed near 1.6 across Machiavellianism levels in both the breathing and waitlist groups.\r\nFigure 2 from Kay (2026). CC BY-NC-ND 4.0.\r\nA little reminder that what helps some people can backfire for others. Also a good selling point for estimating heterogeneous treatment effects. The average can hide who responds differently.\r\nAnd a separate point about having a testable theory of how things might work. Of all the things you could look at here, would Machiavellianism have come to mind? Kay’s theory gives a concrete reason to test it. His idea is that paying closer attention to what you’re feeling can bring existing contempt for coworkers into sharper focus.\r\nLink to the paper 👉 The Dark Side of Mindfulness at Work.\r\n\r\n\r\n",
+    "preview": "posts/2026-11-24-mindfulness-and-machiavellianism/./study_fig2_chart.png",
+    "last_modified": "2026-11-24T10:49:06+00:00",
+    "input_file": "mindfulness-and-machiavellianism.knit.md",
+    "preview_width": 685,
+    "preview_height": 684
+  },
+  {
     "path": "posts/2026-11-22-personality-and-body-language/",
     "title": "Personality in motion: body language and the Big Five",
     "description": "An interactive field guide to the facial, body and voice cues that a meta-analysis of 65 studies links to the Big Five traits - and to how small those links are.",
@@ -4149,12 +4174,13 @@
     "categories": [
       "decision making",
       "well-being",
-      "experiments"
+      "experiments",
+      "mindfulness"
     ],
     "contents": "\r\nMaybe, at least this is suggested by a pre-registered field experiment by Ash et al. (2023), where people practicing mindfulness meditation for 15 minutes a day for 2 weeks compared to an active control (listening to relaxing music) showed a reduced tendency to avoid painful information that may trigger worry or regret, with a likely mechanism for this effect being improved emotion regulation.\r\nIf this were the case, this would be great news for our decision making, as the ability to impartially evaluate all relevant information is one of the keys to good decision making.\r\nIt’s true that the observed effect was rather small and barely distinguishable from noise and we may be concerned about its reproducibility, but as a Trekkie and a big fan of Mr. Spock, I like the idea that there might be a method that could make us a little more like this cool half-Vulcan and half-human 😉🖖\r\n\r\n\r\n\r\n",
     "preview": "posts/2023-06-05-mindfulness-and-objectivity/./spock.jpg",
-    "last_modified": "2026-07-07T18:29:43+02:00",
-    "input_file": {}
+    "last_modified": "2026-11-24T10:42:59+00:00",
+    "input_file": "mindfulness-and-objectivity.knit.md"
   },
   {
     "path": "posts/2023-06-05-bayesian-networks-in-people-analytics/",
