@@ -1,6 +1,16 @@
 # People Analytics News
 
-30-day digest through 2026-11-24 (Europe/Prague).
+30-day digest through 2026-11-25 (Europe/Prague).
+
+## 2026-11-25
+
+### [Correcting Bias When Using Latent Regressors](<https://www.cambridge.org/core/journals/political-analysis/article/correcting-bias-when-using-latent-regressors/C6C42CD8A39396D3A2915471F68D5CD6>)
+
+Political Analysis · Peer-reviewed research · 2026-11-24
+
+The authors derive a split-indicator correction for regression models using estimated latent traits, comparing it with conventional regression and alternative corrections through simulations and empirical applications. It reduced bias under the studied assumptions, although confidence intervals could undercover with few indicators and the method requires suitable independent measurement errors across indicator splits.
+
+**Why it matters for practice** — When using multi-item engagement or psychological-safety scores as predictors in a linear model, compare conventional estimates with a measurement-error-corrected sensitivity analysis before ranking their associations with outcomes. Check whether the items support comparable indicator splits; do not automatically apply the correction to multidimensional scales or interpret corrected associations as causal effects.
 
 ## 2026-11-24
 
