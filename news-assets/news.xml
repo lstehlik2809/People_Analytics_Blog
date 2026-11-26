@@ -5,8 +5,32 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital inclusion and labor market performance: an experimental evaluation</title>
+      <link>https://link.springer.com/article/10.1007/s13209-026-00349-w</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s13209-026-00349-w</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;SERIEs · Peer-reviewed research · 2026-11-24&lt;/p&gt;&lt;p&gt;A randomized trial assigned more than 2,900 disadvantaged adults aged 45–64 to digital access, access plus training, or a control group; skills and job-search gains did not translate into detectable employment gains, including in administrative records. Six-month follow-up strengthens the evaluation, although employment effects below approximately 3.5 percentage points could remain undetected.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When evaluating digital upskilling or employment-support programs for older job seekers, measure actual employment separately from digital proficiency and search activity. Do not treat improvements in intermediate outcomes as sufficient evidence of placement impact.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Interpersonal incivility among trauma team members impairs performance and patient outcomes in crisis care settings</title>
+      <link>https://www.nature.com/articles/s41598-026-73686-2_reference.pdf</link>
+      <guid isPermaLink="true">https://www.nature.com/articles/s41598-026-73686-2_reference.pdf</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Scientific Reports · Peer-reviewed research · 2026-11-24&lt;/p&gt;&lt;p&gt;Real-time observations of trauma resuscitations linked team incivility to slower diagnostic imaging and greater patient pain, with team-level analyses covering 52 teams and individual-level observations covering 59 resuscitations. The connection to operational and patient outcomes makes this useful field evidence, but the observational design cannot establish causation.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — In crisis-care workforce analytics, supplement employee climate surveys with event-level behavioral observations linked to treatment latency and patient outcomes. Evaluate civility initiatives against these operational measures rather than assuming that better survey scores demonstrate better performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Process Data to Understand Faking in Questionnaires</title>
+      <link>https://kar.kent.ac.uk/116535/13/frick-et-al-2026-using-process-data-to-understand-faking-in-questionnaires.pdf</link>
+      <guid isPermaLink="true">https://kar.kent.ac.uk/116535/13/frick-et-al-2026-using-process-data-to-understand-faking-in-questionnaires.pdf</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Diagnostica · Peer-reviewed research · 2026-11-26&lt;/p&gt;&lt;p&gt;A preregistered reanalysis of five questionnaire datasets modeled response times and edits using cross-classified models and independently rated item desirability. Results illustrate an approach to assessment-process analysis, but mostly unsuccessful stakes manipulations and inconsistent effects substantially limit conclusions about detecting faking.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When auditing personality assessments used in selection, model item and block characteristics before interpreting fast responses or answer changes as suspicious. Treat such process measures as exploratory diagnostic evidence, not as validated grounds for rejecting applicants.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Correcting Bias When Using Latent Regressors</title>
       <link>https://www.cambridge.org/core/journals/political-analysis/article/correcting-bias-when-using-latent-regressors/C6C42CD8A39396D3A2915471F68D5CD6</link>

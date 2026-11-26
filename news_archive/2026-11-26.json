@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-26",
+  "entries": [
+    {
+      "title": "Digital inclusion and labor market performance: an experimental evaluation",
+      "source": "SERIEs",
+      "summary": "A randomized trial assigned more than 2,900 disadvantaged adults aged 45–64 to digital access, access plus training, or a control group; skills and job-search gains did not translate into detectable employment gains, including in administrative records. Six-month follow-up strengthens the evaluation, although employment effects below approximately 3.5 percentage points could remain undetected.",
+      "why_it_matters": "When evaluating digital upskilling or employment-support programs for older job seekers, measure actual employment separately from digital proficiency and search activity. Do not treat improvements in intermediate outcomes as sufficient evidence of placement impact.",
+      "url": "https://link.springer.com/article/10.1007/s13209-026-00349-w",
+      "published_date": "2026-11-24",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1007/s13209-026-00349-w"
+    },
+    {
+      "title": "Interpersonal incivility among trauma team members impairs performance and patient outcomes in crisis care settings",
+      "source": "Scientific Reports",
+      "summary": "Real-time observations of trauma resuscitations linked team incivility to slower diagnostic imaging and greater patient pain, with team-level analyses covering 52 teams and individual-level observations covering 59 resuscitations. The connection to operational and patient outcomes makes this useful field evidence, but the observational design cannot establish causation.",
+      "why_it_matters": "In crisis-care workforce analytics, supplement employee climate surveys with event-level behavioral observations linked to treatment latency and patient outcomes. Evaluate civility initiatives against these operational measures rather than assuming that better survey scores demonstrate better performance.",
+      "url": "https://www.nature.com/articles/s41598-026-73686-2_reference.pdf",
+      "published_date": "2026-11-24",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1038/s41598-026-73686-2"
+    },
+    {
+      "title": "Using Process Data to Understand Faking in Questionnaires",
+      "source": "Diagnostica",
+      "summary": "A preregistered reanalysis of five questionnaire datasets modeled response times and edits using cross-classified models and independently rated item desirability. Results illustrate an approach to assessment-process analysis, but mostly unsuccessful stakes manipulations and inconsistent effects substantially limit conclusions about detecting faking.",
+      "why_it_matters": "When auditing personality assessments used in selection, model item and block characteristics before interpreting fast responses or answer changes as suspicious. Treat such process measures as exploratory diagnostic evidence, not as validated grounds for rejecting applicants.",
+      "url": "https://kar.kent.ac.uk/116535/13/frick-et-al-2026-using-process-data-to-understand-faking-in-questionnaires.pdf",
+      "published_date": "2026-11-26",
+      "source_type": "Peer-reviewed research",
+      "doi": "10.1026/0012-1924/a000376"
+    }
+  ]
+}

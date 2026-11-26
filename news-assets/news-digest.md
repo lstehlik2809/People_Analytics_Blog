@@ -1,6 +1,32 @@
 # People Analytics News
 
-30-day digest through 2026-11-25 (Europe/Prague).
+30-day digest through 2026-11-26 (Europe/Prague).
+
+## 2026-11-26
+
+### [Digital inclusion and labor market performance: an experimental evaluation](<https://link.springer.com/article/10.1007/s13209-026-00349-w>)
+
+SERIEs · Peer-reviewed research · 2026-11-24
+
+A randomized trial assigned more than 2,900 disadvantaged adults aged 45–64 to digital access, access plus training, or a control group; skills and job-search gains did not translate into detectable employment gains, including in administrative records. Six-month follow-up strengthens the evaluation, although employment effects below approximately 3.5 percentage points could remain undetected.
+
+**Why it matters for practice** — When evaluating digital upskilling or employment-support programs for older job seekers, measure actual employment separately from digital proficiency and search activity. Do not treat improvements in intermediate outcomes as sufficient evidence of placement impact.
+
+### [Interpersonal incivility among trauma team members impairs performance and patient outcomes in crisis care settings](<https://www.nature.com/articles/s41598-026-73686-2_reference.pdf>)
+
+Scientific Reports · Peer-reviewed research · 2026-11-24
+
+Real-time observations of trauma resuscitations linked team incivility to slower diagnostic imaging and greater patient pain, with team-level analyses covering 52 teams and individual-level observations covering 59 resuscitations. The connection to operational and patient outcomes makes this useful field evidence, but the observational design cannot establish causation.
+
+**Why it matters for practice** — In crisis-care workforce analytics, supplement employee climate surveys with event-level behavioral observations linked to treatment latency and patient outcomes. Evaluate civility initiatives against these operational measures rather than assuming that better survey scores demonstrate better performance.
+
+### [Using Process Data to Understand Faking in Questionnaires](<https://kar.kent.ac.uk/116535/13/frick-et-al-2026-using-process-data-to-understand-faking-in-questionnaires.pdf>)
+
+Diagnostica · Peer-reviewed research · 2026-11-26
+
+A preregistered reanalysis of five questionnaire datasets modeled response times and edits using cross-classified models and independently rated item desirability. Results illustrate an approach to assessment-process analysis, but mostly unsuccessful stakes manipulations and inconsistent effects substantially limit conclusions about detecting faking.
+
+**Why it matters for practice** — When auditing personality assessments used in selection, model item and block characteristics before interpreting fast responses or answer changes as suspicious. Treat such process measures as exploratory diagnostic evidence, not as validated grounds for rejecting applicants.
 
 ## 2026-11-25
 
