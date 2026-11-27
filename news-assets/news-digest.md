@@ -1,6 +1,40 @@
 # People Analytics News
 
-30-day digest through 2026-11-26 (Europe/Prague).
+30-day digest through 2026-11-27 (Europe/Prague).
+
+## 2026-11-27
+
+### [Disclosing work-from-home flexibility to compete for talent? Evidence from job postings](<https://link.springer.com/article/10.1007/s11142-026-10001-4>)
+
+Review of Accounting Studies · Peer-reviewed research · 2026-11-21
+
+US job postings from 2017–2024, linked to employee flows, associate prominent work-from-home disclosures with higher vacancy-filling rates but also higher subsequent turnover. Multiple subsamples and external policy indicators strengthen the comparison, although the observational design cannot fully separate disclosure effects from underlying remote-work policies.
+
+**Why it matters for practice** — When testing how flexibility is presented in job advertisements, measure subsequent retention alongside hiring conversion. Compare advertisements within the same actual work policy rather than treating remote-work wording as a reliable measure of employee flexibility.
+
+### [Will AI Replace Juniors? How Task Complexity Reduces Automation Risk](<https://arxiv.org/abs/2611.34099>)
+
+arXiv · Preprint · 2026-11-25
+
+A preregistered survey experiment randomly assigned managers from 1,435 German firms to standardized or complex task scenarios; complexity reduced stated willingness to substitute AI for an entry-level hire by 0.54 points on a five-point scale. The randomization supports the scenario comparison, but this preprint measures hypothetical choices rather than actual hiring or technical automation capability.
+
+**Why it matters for practice** — Build entry-level workforce scenarios around task complexity, contextual judgment and oversight requirements rather than applying one automation assumption to all junior roles. Validate managers’ stated substitution plans against actual deployment costs, output quality and hiring decisions before changing headcount.
+
+### [Using multimodal passive workplace technologies for unobtrusive employee stress, anxiety and burnout monitoring: a systematic review of evidence and relevance](<https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.2011664/full>)
+
+Frontiers in Psychology · Peer-reviewed research · 2026-11-18
+
+This preregistered systematic review assessed 15 peer-reviewed publications and found preliminary stress-detection evidence, but no study directly assessed burnout and only one assessed anxiety. Its assessment of study quality and workplace realism makes it useful for evaluating sensing claims, although computing-focused databases were not systematically searched.
+
+**Why it matters for practice** — Before adopting passive employee well-being monitoring, require validation against the specific intended outcome in a real workplace rather than accepting laboratory classification accuracy. Treat burnout-detection claims as unvalidated by this evidence and establish employee participation, access restrictions and independent oversight before any pilot.
+
+### [The Rise of Agents and the Labor Market](<https://arxiv.org/abs/2611.27210>)
+
+arXiv · Preprint · 2026-11-20
+
+This preprint combines cross-model AI-consumption data with 34.8 million US job postings and finds that market-implied exposure to agentic AI predicts slower posting growth, concentrated in non-senior roles. Independent validation using corporate disclosures and an event-study comparison strengthen the evidence, but exposure is indirect and postings do not measure realized employment.
+
+**Why it matters for practice** — When evaluating AI-related workforce changes, distinguish tool-using agents from general AI use and segment recruitment outcomes by seniority. Track postings, actual hires and employment separately; use these findings to frame internal analyses, not as a causal estimate for staffing reductions.
 
 ## 2026-11-26
 

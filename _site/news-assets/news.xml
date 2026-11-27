@@ -5,8 +5,40 @@
     <link>https://blog-about-people-analytics.netlify.app/news.html</link>
     <description>Recent research and writing with practical implications for people analytics.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://blog-about-people-analytics.netlify.app/news-assets/news.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disclosing work-from-home flexibility to compete for talent? Evidence from job postings</title>
+      <link>https://link.springer.com/article/10.1007/s11142-026-10001-4</link>
+      <guid isPermaLink="true">https://link.springer.com/article/10.1007/s11142-026-10001-4</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Review of Accounting Studies · Peer-reviewed research · 2026-11-21&lt;/p&gt;&lt;p&gt;US job postings from 2017–2024, linked to employee flows, associate prominent work-from-home disclosures with higher vacancy-filling rates but also higher subsequent turnover. Multiple subsamples and external policy indicators strengthen the comparison, although the observational design cannot fully separate disclosure effects from underlying remote-work policies.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When testing how flexibility is presented in job advertisements, measure subsequent retention alongside hiring conversion. Compare advertisements within the same actual work policy rather than treating remote-work wording as a reliable measure of employee flexibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Will AI Replace Juniors? How Task Complexity Reduces Automation Risk</title>
+      <link>https://arxiv.org/abs/2611.34099</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.34099</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;arXiv · Preprint · 2026-11-25&lt;/p&gt;&lt;p&gt;A preregistered survey experiment randomly assigned managers from 1,435 German firms to standardized or complex task scenarios; complexity reduced stated willingness to substitute AI for an entry-level hire by 0.54 points on a five-point scale. The randomization supports the scenario comparison, but this preprint measures hypothetical choices rather than actual hiring or technical automation capability.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Build entry-level workforce scenarios around task complexity, contextual judgment and oversight requirements rather than applying one automation assumption to all junior roles. Validate managers’ stated substitution plans against actual deployment costs, output quality and hiring decisions before changing headcount.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using multimodal passive workplace technologies for unobtrusive employee stress, anxiety and burnout monitoring: a systematic review of evidence and relevance</title>
+      <link>https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.2011664/full</link>
+      <guid isPermaLink="true">https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.2011664/full</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Peer-reviewed research</category>
+      <description>&lt;p&gt;Frontiers in Psychology · Peer-reviewed research · 2026-11-18&lt;/p&gt;&lt;p&gt;This preregistered systematic review assessed 15 peer-reviewed publications and found preliminary stress-detection evidence, but no study directly assessed burnout and only one assessed anxiety. Its assessment of study quality and workplace realism makes it useful for evaluating sensing claims, although computing-focused databases were not systematically searched.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — Before adopting passive employee well-being monitoring, require validation against the specific intended outcome in a real workplace rather than accepting laboratory classification accuracy. Treat burnout-detection claims as unvalidated by this evidence and establish employee participation, access restrictions and independent oversight before any pilot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Rise of Agents and the Labor Market</title>
+      <link>https://arxiv.org/abs/2611.27210</link>
+      <guid isPermaLink="true">https://arxiv.org/abs/2611.27210</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <category>Preprint</category>
+      <description>&lt;p&gt;arXiv · Preprint · 2026-11-20&lt;/p&gt;&lt;p&gt;This preprint combines cross-model AI-consumption data with 34.8 million US job postings and finds that market-implied exposure to agentic AI predicts slower posting growth, concentrated in non-senior roles. Independent validation using corporate disclosures and an event-study comparison strengthen the evidence, but exposure is indirect and postings do not measure realized employment.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Why it matters for practice&lt;/strong&gt; — When evaluating AI-related workforce changes, distinguish tool-using agents from general AI use and segment recruitment outcomes by seniority. Track postings, actual hires and employment separately; use these findings to frame internal analyses, not as a causal estimate for staffing reductions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital inclusion and labor market performance: an experimental evaluation</title>
       <link>https://link.springer.com/article/10.1007/s13209-026-00349-w</link>
