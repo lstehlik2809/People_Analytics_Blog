@@ -1,6 +1,24 @@
 # People Analytics News
 
-30-day digest through 2026-11-27 (Europe/Prague).
+30-day digest through 2026-11-28 (Europe/Prague).
+
+## 2026-11-28
+
+### [Maintaining Effort Amid Shared Adversity: How Hyperinflation Alters the Motivational Influence of Economic Hardship](<https://onlinelibrary.wiley.com/doi/10.1111/peps.70049?af=R>)
+
+Personnel Psychology · Peer-reviewed research · 2026-11-25
+
+A nine-week field study in Turkish healthcare organizations and two experiments examined how shared economic adversity changes employees’ responses to financial hardship. The experiments supported context-dependent effects on effort, but the field study’s overall hardship–effort relationship was not statistically significant, cautioning against a general claim that hardship increases motivation.
+
+**Why it matters for practice** — When analyzing employee financial strain during an inflation shock, measure hardship and work effort separately and test whether their relationship varies with economic context. Maintained performance should not be treated as evidence that employees are financially secure or need less support.
+
+### [An E-learning intervention for reducing presenteeism behaviour among employees in a Swiss insurance company—a quasi-experimental study](<https://www.nature.com/articles/s41598-026-82049-w_reference.pdf>)
+
+Scientific Reports · Peer-reviewed research · 2026-11-26
+
+A pre–post evaluation involving 272 employees found a modest 6.1% reduction in presenteeism behaviour scores after tailored e-learning, but no statistically significant improvement in team health climate or supervision distrust. Mixed-effects models accounted for intervention exposure and relevant covariates, although the absence of a control group prevents attributing the change to training.
+
+**Why it matters for practice** — When piloting training intended to reduce working while ill, measure individual attendance behaviour separately from team climate and supervisor-related perceptions. Use a comparison group before claiming effectiveness, and do not assume that individual e-learning alone changes organizational attendance culture.
 
 ## 2026-11-27
 
